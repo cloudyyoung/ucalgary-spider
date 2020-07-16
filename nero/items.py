@@ -6,9 +6,9 @@
 import scrapy
 
 
-class ProgramItem(scrapy.Item):
+class CourseTitle(scrapy.Item):
     # define the fields for your item here like:
     title = scrapy.Field()
     code = scrapy.Field()
-    page = scrapy.Field()
+    faculty = scrapy.Field()
     pass

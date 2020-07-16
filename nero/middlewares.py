@@ -4,6 +4,7 @@
 # https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
+import os
 
 # useful for handling different item types with a single interface
 from itemadapter import is_item, ItemAdapter
@@ -53,7 +54,8 @@ class NeroSpiderMiddleware:
             yield r
 
     def spider_opened(self, spider):
-        spider.logger.info('Spider opened: %s' % spider.name)
+        # spider.logger.info('Spider opened: %s' % spider.name)
+        pass
 
 
 class NeroDownloaderMiddleware:
@@ -87,6 +89,19 @@ class NeroDownloaderMiddleware:
         # - return a Response object
         # - return a Request object
         # - or raise IgnoreRequest
+
+        ## Store webpage to local
+        page = response.url.split("/")
+        file = page[-1]
+        folder = "res/" + "/".join(page[2:-1])
+        print(folder)
+
+        if not os.path.exists(folder):
+            os.makedirs(folder)
+
+        with open(os.path.join(folder, file), 'wb') as f:
+            f.write(response.body)
+
         return response
 
     def process_exception(self, request, exception, spider):
@@ -100,4 +115,5 @@ class NeroDownloaderMiddleware:
         pass
 
     def spider_opened(self, spider):
-        spider.logger.info('Spider opened: %s' % spider.name)
+        # spider.logger.info('Spider opened: %s' % spider.name)
+        pass
