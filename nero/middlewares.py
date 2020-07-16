@@ -94,7 +94,6 @@ class NeroDownloaderMiddleware:
         page = response.url.split("/")
         file = page[-1]
         folder = "res/" + "/".join(page[2:-1])
-        print(folder)
 
         if not os.path.exists(folder):
             os.makedirs(folder)
