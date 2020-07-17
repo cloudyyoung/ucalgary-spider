@@ -10,7 +10,11 @@ class MySpider(scrapy.Spider):
         'https://www.ucalgary.ca/pubs/calendar/current/course-by-faculty.html'
     ]
 
-    def parse(self, response):
+    def start_requests(self):
+        for url in self.start_urls:
+            yield scrapy.Request(url, callback=self.parse_course_titles)
+
+    def parse_course_titles(self, response):
     
         body = str(response.body).strip()
         soup = BeautifulSoup(body, 'html.parser')
@@ -37,4 +41,8 @@ class MySpider(scrapy.Spider):
                 course_title_obj = CourseTitle(title=course_title, code=course_code, faculty=faculty_title)
                 yield course_title_obj
 
-        
+
+
+    def parse_course_introduction(self, response):
+
+        pass
