@@ -1,0 +1,308 @@
+{"title": "Architectural Studies", "code": "ARST", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Architecture", "code": "ARCH", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Architecture, Planning and Landscape", "code": "APLA", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Environmental Design", "code": "EVDS", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Environmental Design Architecture", "code": "EVDA", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Environmental Design Landscape", "code": "EVDL", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Environmental Design Planning", "code": "EVDP", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Landscape", "code": "LAND", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Planning", "code": "PLAN", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Sustainability Studies", "code": "SUST", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Academic Writing", "code": "ACWR", "faculty": "Faculty of Arts"}
+{"title": "African Studies", "code": "AFST", "faculty": "Faculty of Arts"}
+{"title": "American Sign Language", "code": "ASL", "faculty": "Faculty of Arts"}
+{"title": "Anthropology", "code": "ANTH", "faculty": "Faculty of Arts"}
+{"title": "Arabic Language and Muslim Cultures", "code": "ALMC", "faculty": "Faculty of Arts"}
+{"title": "Archaeology", "code": "ARKY", "faculty": "Faculty of Arts"}
+{"title": "Art", "code": "ART", "faculty": "Faculty of Arts"}
+{"title": "Art History", "code": "ARHI", "faculty": "Faculty of Arts"}
+{"title": "Arts", "code": "ARTS", "faculty": "Faculty of Arts"}
+{"title": "Arts and Science Honours", "code": "ASHA", "faculty": "Faculty of Arts"}
+{"title": "Canadian Studies", "code": "CNST", "faculty": "Faculty of Arts"}
+{"title": "Central and East European Studies", "code": "CEST", "faculty": "Faculty of Arts"}
+{"title": "Chinese", "code": "CHIN", "faculty": "Faculty of Arts"}
+{"title": "Communication and Culture", "code": "CMCL", "faculty": "Faculty of Arts"}
+{"title": "Communication and Media Studies", "code": "COMS", "faculty": "Faculty of Arts"}
+{"title": "Dance", "code": "DNCE", "faculty": "Faculty of Arts"}
+{"title": "Development Studies", "code": "DEST", "faculty": "Faculty of Arts"}
+{"title": "Drama", "code": "DRAM", "faculty": "Faculty of Arts"}
+{"title": "Earth Science", "code": "EASC", "faculty": "Faculty of Arts"}
+{"title": "East Asian Language Studies", "code": "EALS", "faculty": "Faculty of Arts"}
+{"title": "East Asian Studies", "code": "EAST", "faculty": "Faculty of Arts"}
+{"title": "Economics", "code": "ECON", "faculty": "Faculty of Arts"}
+{"title": "English", "code": "ENGL", "faculty": "Faculty of Arts"}
+{"title": "Film", "code": "FILM", "faculty": "Faculty of Arts"}
+{"title": "French", "code": "FREN", "faculty": "Faculty of Arts"}
+{"title": "Geography", "code": "GEOG", "faculty": "Faculty of Arts"}
+{"title": "German", "code": "GERM", "faculty": "Faculty of Arts"}
+{"title": "Greek", "code": "GREK", "faculty": "Faculty of Arts"}
+{"title": "Greek and Roman Studies", "code": "GRST", "faculty": "Faculty of Arts"}
+{"title": "History", "code": "HTST", "faculty": "Faculty of Arts"}
+{"title": "Indigenous Languages", "code": "INDL", "faculty": "Faculty of Arts"}
+{"title": "Indigenous Studies", "code": "INDG", "faculty": "Faculty of Arts"}
+{"title": "Innovation", "code": "INNO", "faculty": "Faculty of Arts"}
+{"title": "International Relations", "code": "INTR", "faculty": "Faculty of Arts"}
+{"title": "Italian", "code": "ITAL", "faculty": "Faculty of Arts"}
+{"title": "Japanese", "code": "JPNS", "faculty": "Faculty of Arts"}
+{"title": "Language", "code": "LANG", "faculty": "Faculty of Arts"}
+{"title": "Latin", "code": "LATI", "faculty": "Faculty of Arts"}
+{"title": "Latin American Studies", "code": "LAST", "faculty": "Faculty of Arts"}
+{"title": "Law and Society", "code": "LWSO", "faculty": "Faculty of Arts"}
+{"title": "Linguistics", "code": "LING", "faculty": "Faculty of Arts"}
+{"title": "Museum and Heritage Studies", "code": "MHST", "faculty": "Faculty of Arts"}
+{"title": "Music", "code": "MUSI", "faculty": "Faculty of Arts"}
+{"title": "Music Education", "code": "MUED", "faculty": "Faculty of Arts"}
+{"title": "Music Performance", "code": "MUPF", "faculty": "Faculty of Arts"}
+{"title": "Philosophy", "code": "PHIL", "faculty": "Faculty of Arts"}
+{"title": "Political Science", "code": "POLI", "faculty": "Faculty of Arts"}
+{"title": "Psychology", "code": "PSYC", "faculty": "Faculty of Arts"}
+{"title": "Religious Studies", "code": "RELS", "faculty": "Faculty of Arts"}
+{"title": "Romance Studies", "code": "ROST", "faculty": "Faculty of Arts"}
+{"title": "Russian", "code": "RUSS", "faculty": "Faculty of Arts"}
+{"title": "School of Creative and Performing Arts", "code": "SCPA", "faculty": "Faculty of Arts"}
+{"title": "Slavic", "code": "SLAV", "faculty": "Faculty of Arts"}
+{"title": "Sociology", "code": "SOCI", "faculty": "Faculty of Arts"}
+{"title": "South Asian Studies", "code": "SAST", "faculty": "Faculty of Arts"}
+{"title": "Spanish", "code": "SPAN", "faculty": "Faculty of Arts"}
+{"title": "Strategic Studies", "code": "STST", "faculty": "Faculty of Arts"}
+{"title": "Term Abroad Program", "code": "TAP", "faculty": "Faculty of Arts"}
+{"title": "Transportation Studies", "code": "TRAN", "faculty": "Faculty of Arts"}
+{"title": "Urban Studies", "code": "UBST", "faculty": "Faculty of Arts"}
+{"title": "Wellbeing", "code": "WELL", "faculty": "Faculty of Arts"}
+{"title": "Women's Studies", "code": "WMST", "faculty": "Faculty of Arts"}
+{"title": "Community Health Sciences", "code": "MDCH", "faculty": "Cumming School of Medicine"}
+{"title": "Community Rehabilitation", "code": "CORE", "faculty": "Cumming School of Medicine"}
+{"title": "Health and Society", "code": "HSOC", "faculty": "Cumming School of Medicine"}
+{"title": "Medical Science", "code": "MDSC", "faculty": "Cumming School of Medicine"}
+{"title": "Medicine", "code": "MDCN", "faculty": "Cumming School of Medicine"}
+{"title": "Accounting", "code": "ACCT", "faculty": "Haskayne School of Business"}
+{"title": "Business and Environment", "code": "BSEN", "faculty": "Haskayne School of Business"}
+{"title": "Business Technology Management", "code": "BTMA", "faculty": "Haskayne School of Business"}
+{"title": "Energy Management", "code": "ENMG", "faculty": "Haskayne School of Business"}
+{"title": "Entrepreneurship and Innovation", "code": "ENTI", "faculty": "Haskayne School of Business"}
+{"title": "Finance", "code": "FNCE", "faculty": "Haskayne School of Business"}
+{"title": "Management Studies", "code": "MGST", "faculty": "Haskayne School of Business"}
+{"title": "Marketing", "code": "MKTG", "faculty": "Haskayne School of Business"}
+{"title": "Operations Management", "code": "OPMA", "faculty": "Haskayne School of Business"}
+{"title": "Organizational Behaviour and Human Resources", "code": "OBHR", "faculty": "Haskayne School of Business"}
+{"title": "Professional Land Management", "code": "PLMA", "faculty": "Haskayne School of Business"}
+{"title": "Real Estate Studies", "code": "REAL", "faculty": "Haskayne School of Business"}
+{"title": "Risk Management and Insurance", "code": "RMIN", "faculty": "Haskayne School of Business"}
+{"title": "Strategy and Global Management", "code": "SGMA", "faculty": "Haskayne School of Business"}
+{"title": "Supply Chain Management", "code": "SCMA", "faculty": "Haskayne School of Business"}
+{"title": "Tourism Management", "code": "TOUR", "faculty": "Haskayne School of Business"}
+{"title": "Dance Education", "code": "DCED", "faculty": "Faculty of Kinesiology"}
+{"title": "Kinesiology", "code": "KNES", "faculty": "Faculty of Kinesiology"}
+{"title": "Physical Education", "code": "PHED", "faculty": "Faculty of Kinesiology"}
+{"title": "Law", "code": "LAW", "faculty": "Faculty of Law"}
+{"title": "Nursing", "code": "NURS", "faculty": "Faculty of Nursing"}
+{"title": "Biomedical Engineering", "code": "BMEN", "faculty": "Schulich School of Engineering"}
+{"title": "Chemical Engineering", "code": "ENCH", "faculty": "Schulich School of Engineering"}
+{"title": "Civil Engineering", "code": "ENCI", "faculty": "Schulich School of Engineering"}
+{"title": "Computer Engineering", "code": "ENCM", "faculty": "Schulich School of Engineering"}
+{"title": "Electrical Engineering", "code": "ENEL", "faculty": "Schulich School of Engineering"}
+{"title": "Energy and Environment, Engineering", "code": "ENEE", "faculty": "Schulich School of Engineering"}
+{"title": "Energy Engineering", "code": "ENER", "faculty": "Schulich School of Engineering"}
+{"title": "Engineering", "code": "ENGG", "faculty": "Schulich School of Engineering"}
+{"title": "Environmental Engineering", "code": "ENEN", "faculty": "Schulich School of Engineering"}
+{"title": "Geomatics Engineering", "code": "ENGO", "faculty": "Schulich School of Engineering"}
+{"title": "Manufacturing Engineering", "code": "ENMF", "faculty": "Schulich School of Engineering"}
+{"title": "Mechanical Engineering", "code": "ENME", "faculty": "Schulich School of Engineering"}
+{"title": "Petroleum Engineering", "code": "ENPE", "faculty": "Schulich School of Engineering"}
+{"title": "Software Engineering for Engineers", "code": "ENSF", "faculty": "Schulich School of Engineering"}
+{"title": "Actuarial Science", "code": "ACSC", "faculty": "Faculty of Science"}
+{"title": "Astronomy", "code": "ASTR", "faculty": "Faculty of Science"}
+{"title": "Astrophysics", "code": "ASPH", "faculty": "Faculty of Science"}
+{"title": "Biochemistry", "code": "BCEM", "faculty": "Faculty of Science"}
+{"title": "Biology", "code": "BIOL", "faculty": "Faculty of Science"}
+{"title": "Biostatistics", "code": "BIST", "faculty": "Faculty of Science"}
+{"title": "Cellular, Molecular and Microbial Biology", "code": "CMMB", "faculty": "Faculty of Science"}
+{"title": "Chemistry", "code": "CHEM", "faculty": "Faculty of Science"}
+{"title": "Computational Media Design", "code": "CMDA", "faculty": "Faculty of Science"}
+{"title": "Computer Science", "code": "CPSC", "faculty": "Faculty of Science"}
+{"title": "Data Science", "code": "DATA", "faculty": "Faculty of Science"}
+{"title": "Ecology", "code": "ECOL", "faculty": "Faculty of Science"}
+{"title": "Environmental Science", "code": "ENSC", "faculty": "Faculty of Science"}
+{"title": "Geology", "code": "GLGY", "faculty": "Faculty of Science"}
+{"title": "Geophysics", "code": "GOPH", "faculty": "Faculty of Science"}
+{"title": "Information Security and Privacy", "code": "ISEC", "faculty": "Faculty of Science"}
+{"title": "Marine Science", "code": "MRSC", "faculty": "Faculty of Science"}
+{"title": "Mathematics", "code": "MATH", "faculty": "Faculty of Science"}
+{"title": "Medical Physics", "code": "MDPH", "faculty": "Faculty of Science"}
+{"title": "Nanoscience", "code": "NANS", "faculty": "Faculty of Science"}
+{"title": "Neuroscience", "code": "NEUR", "faculty": "Faculty of Science"}
+{"title": "Physics", "code": "PHYS", "faculty": "Faculty of Science"}
+{"title": "Plant Biology", "code": "PLBI", "faculty": "Faculty of Science"}
+{"title": "Science", "code": "SCIE", "faculty": "Faculty of Science"}
+{"title": "Software Engineering", "code": "SENG", "faculty": "Faculty of Science"}
+{"title": "Space Physics", "code": "SPPH", "faculty": "Faculty of Science"}
+{"title": "Statistics", "code": "STAT", "faculty": "Faculty of Science"}
+{"title": "Zoology", "code": "ZOOL", "faculty": "Faculty of Science"}
+{"title": "Social Work", "code": "SOWK", "faculty": "Faculty of Social Work"}
+{"title": "Interprofessional Health Education", "code": "IPHE", "faculty": "Faculty of Social Work"}
+{"title": "Veterinary Medicine", "code": "VETM", "faculty": "Faculty of Veterinary Medicine"}
+{"title": "Education", "code": "EDUC", "faculty": "Werklund School of Education"}
+{"title": "Education Bridge to Teaching", "code": "EDBT", "faculty": "Werklund School of Education"}
+{"title": "Educational Psychology", "code": "EDPS", "faculty": "Werklund School of Education"}
+{"title": "Educational Research", "code": "EDER", "faculty": "Werklund School of Education"}
+{"title": "Co-operative Education", "code": "COOP", "faculty": "Other"}
+{"title": "Energy and Environmental Systems", "code": "EESS", "faculty": "Other"}
+{"title": "Internship", "code": "INTE", "faculty": "Other"}
+{"title": "Public Policy", "code": "PPOL", "faculty": "Other"}
+{"title": "Sustainable Energy Development", "code": "SEDV", "faculty": "Other"}
+{"title": "University", "code": "UNIV", "faculty": "Other"}
+{"title": "University Exchange", "code": "UNEX", "faculty": "Other"}
+{"title": "Architectural Studies", "code": "ARST", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Architecture", "code": "ARCH", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Architecture, Planning and Landscape", "code": "APLA", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Environmental Design", "code": "EVDS", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Environmental Design Architecture", "code": "EVDA", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Environmental Design Landscape", "code": "EVDL", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Environmental Design Planning", "code": "EVDP", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Landscape", "code": "LAND", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Planning", "code": "PLAN", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Sustainability Studies", "code": "SUST", "faculty": "School of Architecture, Planning and Landscape"}
+{"title": "Academic Writing", "code": "ACWR", "faculty": "Faculty of Arts"}
+{"title": "African Studies", "code": "AFST", "faculty": "Faculty of Arts"}
+{"title": "American Sign Language", "code": "ASL", "faculty": "Faculty of Arts"}
+{"title": "Anthropology", "code": "ANTH", "faculty": "Faculty of Arts"}
+{"title": "Arabic Language and Muslim Cultures", "code": "ALMC", "faculty": "Faculty of Arts"}
+{"title": "Archaeology", "code": "ARKY", "faculty": "Faculty of Arts"}
+{"title": "Art", "code": "ART", "faculty": "Faculty of Arts"}
+{"title": "Art History", "code": "ARHI", "faculty": "Faculty of Arts"}
+{"title": "Arts", "code": "ARTS", "faculty": "Faculty of Arts"}
+{"title": "Arts and Science Honours", "code": "ASHA", "faculty": "Faculty of Arts"}
+{"title": "Canadian Studies", "code": "CNST", "faculty": "Faculty of Arts"}
+{"title": "Central and East European Studies", "code": "CEST", "faculty": "Faculty of Arts"}
+{"title": "Chinese", "code": "CHIN", "faculty": "Faculty of Arts"}
+{"title": "Communication and Culture", "code": "CMCL", "faculty": "Faculty of Arts"}
+{"title": "Communication and Media Studies", "code": "COMS", "faculty": "Faculty of Arts"}
+{"title": "Dance", "code": "DNCE", "faculty": "Faculty of Arts"}
+{"title": "Development Studies", "code": "DEST", "faculty": "Faculty of Arts"}
+{"title": "Drama", "code": "DRAM", "faculty": "Faculty of Arts"}
+{"title": "Earth Science", "code": "EASC", "faculty": "Faculty of Arts"}
+{"title": "East Asian Language Studies", "code": "EALS", "faculty": "Faculty of Arts"}
+{"title": "East Asian Studies", "code": "EAST", "faculty": "Faculty of Arts"}
+{"title": "Economics", "code": "ECON", "faculty": "Faculty of Arts"}
+{"title": "English", "code": "ENGL", "faculty": "Faculty of Arts"}
+{"title": "Film", "code": "FILM", "faculty": "Faculty of Arts"}
+{"title": "French", "code": "FREN", "faculty": "Faculty of Arts"}
+{"title": "Geography", "code": "GEOG", "faculty": "Faculty of Arts"}
+{"title": "German", "code": "GERM", "faculty": "Faculty of Arts"}
+{"title": "Greek", "code": "GREK", "faculty": "Faculty of Arts"}
+{"title": "Greek and Roman Studies", "code": "GRST", "faculty": "Faculty of Arts"}
+{"title": "History", "code": "HTST", "faculty": "Faculty of Arts"}
+{"title": "Indigenous Languages", "code": "INDL", "faculty": "Faculty of Arts"}
+{"title": "Indigenous Studies", "code": "INDG", "faculty": "Faculty of Arts"}
+{"title": "Innovation", "code": "INNO", "faculty": "Faculty of Arts"}
+{"title": "International Relations", "code": "INTR", "faculty": "Faculty of Arts"}
+{"title": "Italian", "code": "ITAL", "faculty": "Faculty of Arts"}
+{"title": "Japanese", "code": "JPNS", "faculty": "Faculty of Arts"}
+{"title": "Language", "code": "LANG", "faculty": "Faculty of Arts"}
+{"title": "Latin", "code": "LATI", "faculty": "Faculty of Arts"}
+{"title": "Latin American Studies", "code": "LAST", "faculty": "Faculty of Arts"}
+{"title": "Law and Society", "code": "LWSO", "faculty": "Faculty of Arts"}
+{"title": "Linguistics", "code": "LING", "faculty": "Faculty of Arts"}
+{"title": "Museum and Heritage Studies", "code": "MHST", "faculty": "Faculty of Arts"}
+{"title": "Music", "code": "MUSI", "faculty": "Faculty of Arts"}
+{"title": "Music Education", "code": "MUED", "faculty": "Faculty of Arts"}
+{"title": "Music Performance", "code": "MUPF", "faculty": "Faculty of Arts"}
+{"title": "Philosophy", "code": "PHIL", "faculty": "Faculty of Arts"}
+{"title": "Political Science", "code": "POLI", "faculty": "Faculty of Arts"}
+{"title": "Psychology", "code": "PSYC", "faculty": "Faculty of Arts"}
+{"title": "Religious Studies", "code": "RELS", "faculty": "Faculty of Arts"}
+{"title": "Romance Studies", "code": "ROST", "faculty": "Faculty of Arts"}
+{"title": "Russian", "code": "RUSS", "faculty": "Faculty of Arts"}
+{"title": "School of Creative and Performing Arts", "code": "SCPA", "faculty": "Faculty of Arts"}
+{"title": "Slavic", "code": "SLAV", "faculty": "Faculty of Arts"}
+{"title": "Sociology", "code": "SOCI", "faculty": "Faculty of Arts"}
+{"title": "South Asian Studies", "code": "SAST", "faculty": "Faculty of Arts"}
+{"title": "Spanish", "code": "SPAN", "faculty": "Faculty of Arts"}
+{"title": "Strategic Studies", "code": "STST", "faculty": "Faculty of Arts"}
+{"title": "Term Abroad Program", "code": "TAP", "faculty": "Faculty of Arts"}
+{"title": "Transportation Studies", "code": "TRAN", "faculty": "Faculty of Arts"}
+{"title": "Urban Studies", "code": "UBST", "faculty": "Faculty of Arts"}
+{"title": "Wellbeing", "code": "WELL", "faculty": "Faculty of Arts"}
+{"title": "Women's Studies", "code": "WMST", "faculty": "Faculty of Arts"}
+{"title": "Community Health Sciences", "code": "MDCH", "faculty": "Cumming School of Medicine"}
+{"title": "Community Rehabilitation", "code": "CORE", "faculty": "Cumming School of Medicine"}
+{"title": "Health and Society", "code": "HSOC", "faculty": "Cumming School of Medicine"}
+{"title": "Medical Science", "code": "MDSC", "faculty": "Cumming School of Medicine"}
+{"title": "Medicine", "code": "MDCN", "faculty": "Cumming School of Medicine"}
+{"title": "Accounting", "code": "ACCT", "faculty": "Haskayne School of Business"}
+{"title": "Business and Environment", "code": "BSEN", "faculty": "Haskayne School of Business"}
+{"title": "Business Technology Management", "code": "BTMA", "faculty": "Haskayne School of Business"}
+{"title": "Energy Management", "code": "ENMG", "faculty": "Haskayne School of Business"}
+{"title": "Entrepreneurship and Innovation", "code": "ENTI", "faculty": "Haskayne School of Business"}
+{"title": "Finance", "code": "FNCE", "faculty": "Haskayne School of Business"}
+{"title": "Management Studies", "code": "MGST", "faculty": "Haskayne School of Business"}
+{"title": "Marketing", "code": "MKTG", "faculty": "Haskayne School of Business"}
+{"title": "Operations Management", "code": "OPMA", "faculty": "Haskayne School of Business"}
+{"title": "Organizational Behaviour and Human Resources", "code": "OBHR", "faculty": "Haskayne School of Business"}
+{"title": "Professional Land Management", "code": "PLMA", "faculty": "Haskayne School of Business"}
+{"title": "Real Estate Studies", "code": "REAL", "faculty": "Haskayne School of Business"}
+{"title": "Risk Management and Insurance", "code": "RMIN", "faculty": "Haskayne School of Business"}
+{"title": "Strategy and Global Management", "code": "SGMA", "faculty": "Haskayne School of Business"}
+{"title": "Supply Chain Management", "code": "SCMA", "faculty": "Haskayne School of Business"}
+{"title": "Tourism Management", "code": "TOUR", "faculty": "Haskayne School of Business"}
+{"title": "Dance Education", "code": "DCED", "faculty": "Faculty of Kinesiology"}
+{"title": "Kinesiology", "code": "KNES", "faculty": "Faculty of Kinesiology"}
+{"title": "Physical Education", "code": "PHED", "faculty": "Faculty of Kinesiology"}
+{"title": "Law", "code": "LAW", "faculty": "Faculty of Law"}
+{"title": "Nursing", "code": "NURS", "faculty": "Faculty of Nursing"}
+{"title": "Biomedical Engineering", "code": "BMEN", "faculty": "Schulich School of Engineering"}
+{"title": "Chemical Engineering", "code": "ENCH", "faculty": "Schulich School of Engineering"}
+{"title": "Civil Engineering", "code": "ENCI", "faculty": "Schulich School of Engineering"}
+{"title": "Computer Engineering", "code": "ENCM", "faculty": "Schulich School of Engineering"}
+{"title": "Electrical Engineering", "code": "ENEL", "faculty": "Schulich School of Engineering"}
+{"title": "Energy and Environment, Engineering", "code": "ENEE", "faculty": "Schulich School of Engineering"}
+{"title": "Energy Engineering", "code": "ENER", "faculty": "Schulich School of Engineering"}
+{"title": "Engineering", "code": "ENGG", "faculty": "Schulich School of Engineering"}
+{"title": "Environmental Engineering", "code": "ENEN", "faculty": "Schulich School of Engineering"}
+{"title": "Geomatics Engineering", "code": "ENGO", "faculty": "Schulich School of Engineering"}
+{"title": "Manufacturing Engineering", "code": "ENMF", "faculty": "Schulich School of Engineering"}
+{"title": "Mechanical Engineering", "code": "ENME", "faculty": "Schulich School of Engineering"}
+{"title": "Petroleum Engineering", "code": "ENPE", "faculty": "Schulich School of Engineering"}
+{"title": "Software Engineering for Engineers", "code": "ENSF", "faculty": "Schulich School of Engineering"}
+{"title": "Actuarial Science", "code": "ACSC", "faculty": "Faculty of Science"}
+{"title": "Astronomy", "code": "ASTR", "faculty": "Faculty of Science"}
+{"title": "Astrophysics", "code": "ASPH", "faculty": "Faculty of Science"}
+{"title": "Biochemistry", "code": "BCEM", "faculty": "Faculty of Science"}
+{"title": "Biology", "code": "BIOL", "faculty": "Faculty of Science"}
+{"title": "Biostatistics", "code": "BIST", "faculty": "Faculty of Science"}
+{"title": "Cellular, Molecular and Microbial Biology", "code": "CMMB", "faculty": "Faculty of Science"}
+{"title": "Chemistry", "code": "CHEM", "faculty": "Faculty of Science"}
+{"title": "Computational Media Design", "code": "CMDA", "faculty": "Faculty of Science"}
+{"title": "Computer Science", "code": "CPSC", "faculty": "Faculty of Science"}
+{"title": "Data Science", "code": "DATA", "faculty": "Faculty of Science"}
+{"title": "Ecology", "code": "ECOL", "faculty": "Faculty of Science"}
+{"title": "Environmental Science", "code": "ENSC", "faculty": "Faculty of Science"}
+{"title": "Geology", "code": "GLGY", "faculty": "Faculty of Science"}
+{"title": "Geophysics", "code": "GOPH", "faculty": "Faculty of Science"}
+{"title": "Information Security and Privacy", "code": "ISEC", "faculty": "Faculty of Science"}
+{"title": "Marine Science", "code": "MRSC", "faculty": "Faculty of Science"}
+{"title": "Mathematics", "code": "MATH", "faculty": "Faculty of Science"}
+{"title": "Medical Physics", "code": "MDPH", "faculty": "Faculty of Science"}
+{"title": "Nanoscience", "code": "NANS", "faculty": "Faculty of Science"}
+{"title": "Neuroscience", "code": "NEUR", "faculty": "Faculty of Science"}
+{"title": "Physics", "code": "PHYS", "faculty": "Faculty of Science"}
+{"title": "Plant Biology", "code": "PLBI", "faculty": "Faculty of Science"}
+{"title": "Science", "code": "SCIE", "faculty": "Faculty of Science"}
+{"title": "Software Engineering", "code": "SENG", "faculty": "Faculty of Science"}
+{"title": "Space Physics", "code": "SPPH", "faculty": "Faculty of Science"}
+{"title": "Statistics", "code": "STAT", "faculty": "Faculty of Science"}
+{"title": "Zoology", "code": "ZOOL", "faculty": "Faculty of Science"}
+{"title": "Social Work", "code": "SOWK", "faculty": "Faculty of Social Work"}
+{"title": "Interprofessional Health Education", "code": "IPHE", "faculty": "Faculty of Social Work"}
+{"title": "Veterinary Medicine", "code": "VETM", "faculty": "Faculty of Veterinary Medicine"}
+{"title": "Education", "code": "EDUC", "faculty": "Werklund School of Education"}
+{"title": "Education Bridge to Teaching", "code": "EDBT", "faculty": "Werklund School of Education"}
+{"title": "Educational Psychology", "code": "EDPS", "faculty": "Werklund School of Education"}
+{"title": "Educational Research", "code": "EDER", "faculty": "Werklund School of Education"}
+{"title": "Co-operative Education", "code": "COOP", "faculty": "Other"}
+{"title": "Energy and Environmental Systems", "code": "EESS", "faculty": "Other"}
+{"title": "Internship", "code": "INTE", "faculty": "Other"}
+{"title": "Public Policy", "code": "PPOL", "faculty": "Other"}
+{"title": "Sustainable Energy Development", "code": "SEDV", "faculty": "Other"}
+{"title": "University", "code": "UNIV", "faculty": "Other"}
+{"title": "University Exchange", "code": "UNEX", "faculty": "Other"}
