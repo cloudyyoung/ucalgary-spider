@@ -32,10 +32,6 @@ class NeroSpiderMiddleware:
     def process_spider_output(self, response, result, spider):
         # Called with the results returned from the Spider, after
         # it has processed the response.
-
-        with open("data/" + spider.name + ".jsonlines", 'w'):
-            pass
-
         # Must return an iterable of Request, or item objects.
         for i in result:
             yield i
@@ -59,6 +55,17 @@ class NeroSpiderMiddleware:
     def spider_opened(self, spider):
         # spider.logger.info('Spider opened: %s' % spider.name)
         pass
+
+
+class FileStoreMiddleware:
+
+    def process_spider_output(self, response, result, spider):
+        with open("data/" + spider.name + ".jsonlines", 'w'):
+            pass
+
+        # Must return an iterable of Request, or item objects.
+        for i in result:
+            yield i
 
 
 class NeroDownloaderMiddleware:

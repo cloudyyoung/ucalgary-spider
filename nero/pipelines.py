@@ -10,7 +10,7 @@ import json
 import jsonlines
 from itemadapter import ItemAdapter
 
-class NeroPipeline:
+class FileStorePipeline:
     def process_item(self, item, spider):
 
         with jsonlines.open("data/" + spider.name + '.jsonlines', mode='a') as writer:

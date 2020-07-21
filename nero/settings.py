@@ -45,7 +45,8 @@ DOWNLOAD_DELAY = 2
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 SPIDER_MIDDLEWARES = {
-   'nero.middlewares.NeroSpiderMiddleware': 543,
+    'nero.middlewares.NeroSpiderMiddleware': 540,
+    'nero.middlewares.FileStoreMiddleware': 543,
 }
 
 # Enable or disable downloader middlewares
@@ -63,7 +64,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'nero.pipelines.NeroPipeline': 300,
+    'nero.pipelines.FileStorePipeline': 543,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
