@@ -1,4 +1,5 @@
 import scrapy
+import jsonlines
 from nero.items import CourseTitle
 from bs4 import BeautifulSoup
 

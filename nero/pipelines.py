@@ -5,9 +5,15 @@
 
 
 # useful for handling different item types with a single interface
-from itemadapter import ItemAdapter
 
+import json
+import jsonlines
+from itemadapter import ItemAdapter
 
 class NeroPipeline:
     def process_item(self, item, spider):
+
+        with jsonlines.open("data/" + spider.name + '.jsonlines', mode='a') as writer:
+            writer.write(item.__dict__['_values'])
+
         return item

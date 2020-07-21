@@ -33,6 +33,9 @@ class NeroSpiderMiddleware:
         # Called with the results returned from the Spider, after
         # it has processed the response.
 
+        with open("data/" + spider.name + ".jsonlines", 'w'):
+            pass
+
         # Must return an iterable of Request, or item objects.
         for i in result:
             yield i
