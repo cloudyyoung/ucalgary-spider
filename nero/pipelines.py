@@ -7,13 +7,17 @@
 # useful for handling different item types with a single interface
 
 import json
-import jsonlines
 from itemadapter import ItemAdapter
 
 class FileStorePipeline:
+
+    def open_spider(self, spider):
+        self.file = open("data/" + spider.name + ".jsonlines", 'w')
+
+    def close_spider(self, spider):
+        self.file.close()
+
     def process_item(self, item, spider):
-
-        with jsonlines.open("data/" + spider.name + '.jsonlines', mode='a') as writer:
-            writer.write(item.__dict__['_values'])
-
+        line = json.dumps(ItemAdapter(item).asdict()) + "\n"
+        self.file.write(line)
         return item

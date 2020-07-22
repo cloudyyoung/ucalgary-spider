@@ -1,10 +1,11 @@
 import scrapy
 import jsonlines
+from scrapy.spiders import CrawlSpider, Rule
+from scrapy.linkextractors import LinkExtractor
 from nero.items import CourseTitle
 from bs4 import BeautifulSoup
 
-
-class MySpider(scrapy.Spider):
+class MySpider(CrawlSpider):
     name = 'course-titles'
     allowed_domains = ['www.ucalgary.ca']
     start_urls = [
@@ -34,8 +35,13 @@ class MySpider(scrapy.Spider):
 
             for course_title_dom in course_titles_dom:
                 course_url = course_title_dom.get("href")
+                yield response.follow(course_url, self.parse_course_introduction)
 
                 course_code = course_title_dom.get_text(strip=True)
                 course_title = course_title_dom.previous_element.strip()
                 course_title_obj = CourseTitle(title=course_title, code=course_code, faculty=faculty_title)
                 yield course_title_obj
+
+    def parse_course_introduction(self, response):
+
+        self.logger.warning(response.url)

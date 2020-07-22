@@ -57,17 +57,6 @@ class NeroSpiderMiddleware:
         pass
 
 
-class FileStoreMiddleware:
-
-    def process_spider_output(self, response, result, spider):
-        with open("data/" + spider.name + ".jsonlines", 'w'):
-            pass
-
-        # Must return an iterable of Request, or item objects.
-        for i in result:
-            yield i
-
-
 class NeroDownloaderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
