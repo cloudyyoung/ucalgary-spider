@@ -19,5 +19,6 @@ class Course(scrapy.Item):
     number = scrapy.Field()
     title = scrapy.Field()
     description = scrapy.Field()
+    sub_topics = scrapy.Field()
     
     pass

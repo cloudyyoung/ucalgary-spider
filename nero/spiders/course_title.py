@@ -31,7 +31,7 @@ class MySpider(CrawlSpider):
 
             for course_title_dom in course_titles_dom:
                 course_url = course_title_dom.get("href")
-                if course_url == "art.html":
+                if course_url == "internship.html":
                     yield response.follow(course_url, self.parse_course_introduction)
 
                 course_code = course_title_dom.get_text(strip=True)
@@ -39,20 +39,57 @@ class MySpider(CrawlSpider):
                 course_title_obj = CourseTitle(title=course_title, code=course_code, faculty=faculty_title)
                 yield course_title_obj
 
+
     def parse_course_introduction(self, response):
 
         body = htmlmin.minify(str(response.body, encoding="utf-8"), remove_empty_space=True, remove_all_empty_space=True)
         soup = BeautifulSoup(body, 'html.parser')
 
+        code = soup.select_one(".page-title").string.split(" ")[-1]
+
         courses_dom = soup.select("#ctl00_ctl00_pageContent .item-container table[bgcolor][cellpadding][align]")
 
         for course_dom in courses_dom:
 
-            description = course_dom.select_one(".course-desc").get_text(strip=True)
             cid = int(course_dom.previous_element.attrs['name'])
 
-            course_obj = Course(cid=cid, description=description)
+            keys = course_dom.select(".course-code")
+            number = keys[1].get_text(strip=True)
+
+            description = course_dom.select_one(".course-desc").string
+            sub_topics = None
+            if description is not None:
+                description = description.strip()
+            else:
+                description = ""
+                description_dom = course_dom.select_one(".course-desc").contents
+
+                for description_dom in description_dom:
+                    if description_dom.string is not None:
+                        # Match for sub topics
+                        sub_topics_reg = re.search("[0-9]{3}\.([0-9]{2})[\.]? ([\SA-Za-z \,\(\)\'\-][^<]*)", description_dom.string)
+                        if sub_topics_reg is not None:
+
+                            if sub_topics is None:
+                                sub_topics = {}  # Intiialize sub topics dictionary
+
+                            decimal = int(sub_topics_reg.group(1))
+                            topic = sub_topics_reg.group(2).strip()
+                            sub_topics[decimal] = topic
+                    else:
+                        self.convert_link(description_dom)
+                        description += str(description_dom)
+
+            course_obj = Course(cid=cid, code=code, number=number, description=description, sub_topics=sub_topics)
             yield course_obj
             pass
         
         self.logger.warning(response.url)
+
+
+    def convert_link(self, doms):
+        for dom in doms.select("a"):
+                if dom.name == "a":
+                    href = dom.get("href").split("#")[-1]
+                    dom.attrs = {"cid": href}
+        return doms
