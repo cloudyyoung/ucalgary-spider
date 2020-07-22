@@ -5,7 +5,7 @@ import re
 import unidecode
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
-from nero.items import CourseTitle, Course
+from nero.items import CourseTitle, CourseInfo
 from bs4 import BeautifulSoup
 
 class MySpider(CrawlSpider):
@@ -51,40 +51,15 @@ class MySpider(CrawlSpider):
         code = soup.select_one(".page-title").string.split(" ")[-1]
 
         courses_dom = soup.select("#ctl00_ctl00_pageContent .item-container table[bgcolor][cellpadding][align]")
-
         for course_dom in courses_dom:
 
-            cid = int(course_dom.previous_element.attrs['name'])
+            cid = self.cid(course_dom)
+            title, number = self.key(course_dom)
 
-            keys = course_dom.select(".course-code")
-            number = keys[1].get_text(strip=True)
+            description, sub_topics = self.description(course_dom)
 
-            description = course_dom.select_one(".course-desc").string
-            sub_topics = {}
-            if description is not None:
-                description = description.strip()
-            else:
-                description = ""
-                description_dom = course_dom.select_one(".course-desc").contents
-
-                for description_dom in description_dom:
-                    sub_topics_reg = r"[0-9]{3}\.([0-9]{2})[\.]? ([A-Za-z \,\(\)\'\-][^0-9]*)"
-                    sub_topics_reg_res_all = re.findall(sub_topics_reg, description_dom.get_text())
-
-                    if sub_topics_reg_res_all:
-                        for sub_topics_reg_res in sub_topics_reg_res_all:
-                            decimal = int(sub_topics_reg_res[0])
-                            topic = sub_topics_reg_res[1].strip()
-                            sub_topics[decimal] = topic
-                    elif description_dom.string:
-                        description += str(description_dom.string.strip())
-                    else:
-                        self.convert_link(description_dom)
-                        description += str(description_dom)
-
-            course_obj = Course(cid=cid, code=code, number=number, description=description, sub_topics=sub_topics)
+            course_obj = CourseInfo(cid=cid, code=code, number=number, description=description, sub_topics=sub_topics)
             yield course_obj
-            pass
         
         self.logger.warning(response.url)
 
@@ -95,3 +70,46 @@ class MySpider(CrawlSpider):
                     href = dom.get("href").split("#")[-1]
                     dom.attrs = {"cid": href}
         return doms
+
+    def cid(self, course_dom):
+        return int(course_dom.previous_element.attrs['name'])
+
+    def key(self, course_dom):
+        keys = course_dom.select(".course-code")
+        title = keys[0].get_text(strip=True)
+        number = keys[1].get_text(strip=True)
+        return (title, number)
+
+    def description(self, course_dom):
+        description = course_dom.select_one(".course-desc").string
+        sub_topics = {}
+        if description is not None:
+            description = description.strip()
+        else:
+            description = ""
+            description_dom = course_dom.select_one(
+                ".course-desc").contents
+
+            for description_dom in description_dom:
+                sub_topics_reg = r"[0-9]{3}\.([0-9]{2})[\.]? ([A-Za-z \,\(\)\'\-][^0-9]*)"
+                sub_topics_reg_res_all = re.findall(
+                    sub_topics_reg, description_dom.get_text())
+
+                if sub_topics_reg_res_all:
+                    for sub_topics_reg_res in sub_topics_reg_res_all:
+                        decimal = int(sub_topics_reg_res[0])
+                        topic = sub_topics_reg_res[1].strip()
+                        sub_topics[decimal] = topic
+                elif description_dom.string:
+                    description += str(description_dom.string.strip())
+                else:
+                    self.convert_link(description_dom)
+                    description += str(description_dom)
+
+        if description == "":
+            description = None
+
+        if not sub_topics:
+            sub_topics = None
+
+        return (description, sub_topics)

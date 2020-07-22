@@ -13,7 +13,7 @@ class CourseTitle(scrapy.Item):
     faculty = scrapy.Field()
     pass
 
-class Course(scrapy.Item):
+class CourseInfo(scrapy.Item):
     cid = scrapy.Field(serializer=int)
     code = scrapy.Field()
     number = scrapy.Field()
