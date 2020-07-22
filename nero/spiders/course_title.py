@@ -57,7 +57,7 @@ class MySpider(CrawlSpider):
             number = keys[1].get_text(strip=True)
 
             description = course_dom.select_one(".course-desc").string
-            sub_topics = None
+            sub_topics = {}
             if description is not None:
                 description = description.strip()
             else:
@@ -69,10 +69,6 @@ class MySpider(CrawlSpider):
                         # Match for sub topics
                         sub_topics_reg = re.search("[0-9]{3}\.([0-9]{2})[\.]? ([\SA-Za-z \,\(\)\'\-][^<]*)", description_dom.string)
                         if sub_topics_reg is not None:
-
-                            if sub_topics is None:
-                                sub_topics = {}  # Intiialize sub topics dictionary
-
                             decimal = int(sub_topics_reg.group(1))
                             topic = sub_topics_reg.group(2).strip()
                             sub_topics[decimal] = topic
