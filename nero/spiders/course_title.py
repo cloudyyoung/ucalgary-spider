@@ -106,7 +106,7 @@ class MySpider(CrawlSpider):
                     self.convert_link(description_dom)
                     description += str(description_dom)
 
-        if description == "":
+        if not description:
             description = None
 
         if not sub_topics:
