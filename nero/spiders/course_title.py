@@ -2,6 +2,7 @@ import scrapy
 import jsonlines
 import htmlmin
 import re
+import unidecode
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from nero.items import CourseTitle, Course
@@ -17,8 +18,9 @@ class MySpider(CrawlSpider):
     def parse(self, response):
     
         body = str(response.body, encoding="utf-8")
-        body = re.sub("<span>(.*?)<\/span>", r"\1",body)
-        body = re.sub('<a class="link-text" href="[a-z-]*?\.html#[0-9]{4,5}?"><\/a>', "", body)
+        body = unidecode.unidecode(body)
+        body = re.sub(r"<span>(.*?)<\/span>", r"\1", body)
+        body = re.sub(r'<a class="link-text" href="[a-z-]*?\.html#[0-9]{4,5}?"><\/a>', "", body)
         body = body.replace("\r", "").replace("\n", "").replace("  ", " ")
         body = htmlmin.minify(body, remove_empty_space=True, remove_all_empty_space=True)
         soup = BeautifulSoup(body, 'html.parser')
@@ -31,7 +33,7 @@ class MySpider(CrawlSpider):
 
             for course_title_dom in course_titles_dom:
                 course_url = course_title_dom.get("href")
-                if course_url == "internship.html":
+                if course_url == "physics.html":
                     yield response.follow(course_url, self.parse_course_introduction)
 
                 course_code = course_title_dom.get_text(strip=True)
@@ -43,6 +45,7 @@ class MySpider(CrawlSpider):
     def parse_course_introduction(self, response):
 
         body = htmlmin.minify(str(response.body, encoding="utf-8"), remove_empty_space=True, remove_all_empty_space=True)
+        body = unidecode.unidecode(body)
         soup = BeautifulSoup(body, 'html.parser')
 
         code = soup.select_one(".page-title").string.split(" ")[-1]
@@ -65,13 +68,16 @@ class MySpider(CrawlSpider):
                 description_dom = course_dom.select_one(".course-desc").contents
 
                 for description_dom in description_dom:
-                    if description_dom.string is not None:
-                        # Match for sub topics
-                        sub_topics_reg = re.search("[0-9]{3}\.([0-9]{2})[\.]? ([\SA-Za-z \,\(\)\'\-][^<]*)", description_dom.string)
-                        if sub_topics_reg is not None:
-                            decimal = int(sub_topics_reg.group(1))
-                            topic = sub_topics_reg.group(2).strip()
+                    sub_topics_reg = r"[0-9]{3}\.([0-9]{2})[\.]? ([A-Za-z \,\(\)\'\-][^0-9]*)"
+                    sub_topics_reg_res_all = re.findall(sub_topics_reg, description_dom.get_text())
+
+                    if sub_topics_reg_res_all:
+                        for sub_topics_reg_res in sub_topics_reg_res_all:
+                            decimal = int(sub_topics_reg_res[0])
+                            topic = sub_topics_reg_res[1].strip()
                             sub_topics[decimal] = topic
+                    elif description_dom.string:
+                        description += str(description_dom.string.strip())
                     else:
                         self.convert_link(description_dom)
                         description += str(description_dom)
