@@ -7,14 +7,15 @@ from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from bs4 import BeautifulSoup
 from nero.utils import Utils
-from nero.items import Faculty
+from nero.items import Faculty, Department, Program
 
 
 class FacultyContact(CrawlSpider):
     name = 'faculty-contact'
     allowed_domains = ['contacts.ucalgary.ca']
     start_urls = [
-        'http://contacts.ucalgary.ca/directory/faculties'
+        'http://contacts.ucalgary.ca/directory/faculties',
+        'http://contacts.ucalgary.ca/directory/departments'
     ]
 
     def parse(self, response):
@@ -26,19 +27,42 @@ class FacultyContact(CrawlSpider):
         for faculty_dom in faculties_dom:
             detail_dom = faculty_dom.next_sibling
 
-            fid, title, code = self.title(faculty_dom)
+            title, code = self.title(faculty_dom)
             phones, rooms, email, website = self.field(detail_dom)
+            aka = self.aka(detail_dom)
+            parent_title, parent_type = self.parent(faculty_dom)
             
-            faculty_obj = Faculty(fid=fid, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website)
-            yield faculty_obj
+            if "faculties" in response.url: # This is a faculty
+                item_id = Utils.title_to_id(title, 4)
+                faculty_obj = Faculty(fid=item_id, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website, aka=aka)
+                yield faculty_obj
+            elif code != None and parent_title != None:
+                if parent_type == "Faculty": # This is a Department
+                    item_id = Utils.title_to_id(title, 5)
+                    fid = Utils.title_to_id(parent_title, 4)
+                    department_onj = Department(did=item_id, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website, aka=aka, fid=fid)
+                    yield department_onj
+                else:  # This is a Program
+                    item_id = Utils.title_to_id(title, 5)
+                    did = Utils.title_to_id(parent_title, 5)
+                    program_obj = Program(pid=item_id, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website, aka=aka, did=did)
+                    yield program_obj
 
 
     def title(self, faculty_dom):
-        title = faculty_dom.select_one(".unitis-business-unit .uofc-row-expander").get_text(strip=True)
-        code = faculty_dom.select_one(".unitis-business-unit .target").attrs['name']
-        fid = Utils.faculty_to_id(title)
+        title_dom = faculty_dom.select_one(".unitis-business-unit .uofc-row-expander")
+        if title_dom:
+            title = title_dom.get_text(strip=True)
+        else:
+            title = None
 
-        return (fid, title, code)
+        code_dom = faculty_dom.select_one(".unitis-business-unit .target")
+        if code_dom:
+            code = code_dom.attrs['name']
+        else:
+            code = None
+
+        return (title, code)
 
     def field(self, faculty_dom):
         lists = {"phones": None, "rooms": None, "email": None, "website": None}
@@ -60,3 +84,34 @@ class FacultyContact(CrawlSpider):
                 lists[item] = text
 
         return (lists['phones'], lists['rooms'], lists['email'], lists['website'])
+
+    def aka(self, faculty_dom):
+        aka = None
+        contents_dom = faculty_dom.select(".details-row-cell .content")
+
+        if contents_dom and len(contents_dom) >= 2:
+            content_dom = contents_dom[1].select("p")
+
+            for each in content_dom:
+                text = each.get_text(strip=True)
+
+                aka_reg_res = re.match(r"Also Known as:(.*)", text)
+                if aka_reg_res: 
+                    aka = aka_reg_res.group(1).split(", ")
+
+        return aka
+
+    def parent(self, faculty_dom):
+        parent_type_dom = faculty_dom.select_one(".unitis-business-unit-parents .unitis-campuscontacts-unit-type")
+        if parent_type_dom:
+            parent_type = parent_type_dom.string
+        else:
+            parent_type = None
+
+        parent_title_dom = faculty_dom.select_one(".unitis-business-unit-parents a")
+        if parent_title_dom:
+            parent_title = parent_title_dom.string
+        else:
+            parent_title = None
+        
+        return (parent_title, parent_type)

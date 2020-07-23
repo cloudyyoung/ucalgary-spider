@@ -47,3 +47,32 @@ class Faculty(scrapy.Item):
     rooms = scrapy.Field()
     email = scrapy.Field()
     website = scrapy.Field()
+
+    aka = scrapy.Field()
+
+class Department(scrapy.Item):
+    did = scrapy.Field(serializer=int)
+    code = scrapy.Field()
+    title = scrapy.Field()
+
+    phones = scrapy.Field()
+    rooms = scrapy.Field()
+    email = scrapy.Field()
+    website = scrapy.Field()
+
+    aka = scrapy.Field()
+    fid = scrapy.Field()
+
+
+class Program(scrapy.Item):
+    pid = scrapy.Field(serializer=int)
+    code = scrapy.Field()
+    title = scrapy.Field()
+
+    phones = scrapy.Field()
+    rooms = scrapy.Field()
+    email = scrapy.Field()
+    website = scrapy.Field()
+
+    aka = scrapy.Field()
+    did = scrapy.Field()

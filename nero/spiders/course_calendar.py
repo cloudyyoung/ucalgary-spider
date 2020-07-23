@@ -28,7 +28,7 @@ class CourseCalendar(CrawlSpider):
 
         for faculty_dom in faculties_dom:
             faculty_title = faculty_dom.select_one(".generic-title").get_text(strip=True)
-            faculty_id = Utils.faculty_to_id(faculty=faculty_title)
+            faculty_id = Utils.title_to_id(faculty=faculty_title)
             course_titles_dom = faculty_dom.select(".generic-body .link-text")
 
             for course_title_dom in course_titles_dom:
