@@ -23,7 +23,7 @@ class CourseInfo(scrapy.Item):
     sub_topics = scrapy.Field()
 
     units = scrapy.Field(serializer=float)
-    credits = scrapy.Field(serializer=int)
+    credits = scrapy.Field(serializer=float)
     hours = scrapy.Field()
     time_length = scrapy.Field()
 
