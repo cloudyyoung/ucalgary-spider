@@ -57,9 +57,11 @@ class MySpider(CrawlSpider):
             title, number, topic = self.key(course_dom=course_dom)
             description, sub_topics = self.description(course_dom=course_dom)
             prereq, coreq, antireq, notes, aka = self.requirements(course_dom=course_dom)
-            # print(prereq, coreq)
+            repeat, nogpa = self.repeat(course_dom=course_dom)
 
-            course_obj = CourseInfo(cid=cid, code=code, number=number, topic=topic, description=description, sub_topics=sub_topics)
+            print(repeat, nogpa)
+
+            course_obj = CourseInfo(cid=cid, code=code, number=number, topic=topic, description=description, sub_topics=sub_topics, prereq=prereq, coreq=coreq, antireq=antireq, notes=notes, aka=aka)
             yield course_obj
         
         self.logger.warning(response.url)
@@ -85,8 +87,6 @@ class MySpider(CrawlSpider):
     def description(self, course_dom):
         description_dom = course_dom.select_one(".course-desc")
         self.convert_link(description_dom)
-
-        # print(description_dom)
 
         description = []
         sub_topics = {}
@@ -123,17 +123,29 @@ class MySpider(CrawlSpider):
 
     def requirements(self, course_dom):
         req = ["prereq", "coreq", "antireq", "notes", "aka"]
-        res = {}
+        ret = {}
 
         for each in req:
             req_dom = course_dom.select_one(".course-" + each)
             self.convert_link(req_dom)
 
-            inner_html = req_dom.decode_contents()
+            inner_html = req_dom.decode_contents().strip()
 
             if inner_html:
-                res[each] = inner_html
+                ret[each] = inner_html
             else:
-                res[each] = None
+                ret[each] = None
 
-        return (res["prereq"], res["coreq"], res["antireq"], res["notes"], res["aka"])
+        return (ret["prereq"], ret["coreq"], ret["antireq"], ret["notes"], ret["aka"])
+
+    def repeat(self, course_dom):
+        repeat = ["repeat", "nogpa"]
+        ret = {}
+
+        for each in repeat:
+            repeat_dom = course_dom.select_one(".course-" + each)
+            content = repeat_dom.get_text(strip=True)
+
+            ret[each] = content != ""
+
+        return (ret["repeat"], ret["nogpa"])

@@ -15,10 +15,22 @@ class CourseTitle(scrapy.Item):
 
 class CourseInfo(scrapy.Item):
     cid = scrapy.Field(serializer=int)
+    
     code = scrapy.Field()
     number = scrapy.Field()
     topic = scrapy.Field()
+
     description = scrapy.Field()
     sub_topics = scrapy.Field()
     
+    prereq = scrapy.Field()
+    coreq = scrapy.Field()
+    antireq = scrapy.Field()
+
+    notes = scrapy.Field()
+    aka = scrapy.Field()
+
+    repeat = scrapy.Field(serializer=bool)
+    nogpa = scrapy.Field(serializer=bool)
+
     pass
