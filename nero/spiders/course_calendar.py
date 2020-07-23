@@ -34,7 +34,7 @@ class CourseCalendar(CrawlSpider):
             for course_title_dom in course_titles_dom:
                 course_url = course_title_dom.get("href")
                 # if course_url == "medical-science.html":
-                yield response.follow(course_url, self.parse_course_introduction)
+                # yield response.follow(course_url, self.parse_course_introduction)
 
                 course_code = course_title_dom.get_text(strip=True)
                 course_title = course_title_dom.previous_element.strip()
@@ -176,10 +176,10 @@ class CourseCalendar(CrawlSpider):
         faculty = re.sub(r"[A-Za-z ]+ of", "", faculty)
         faculty = re.sub(r"Faculty", "", faculty)
         faculty = re.sub(r"([^a-zA-Z]*)", "", faculty)
-        faculty = faculty.strip().rjust(4, "0").encode("utf-8")
+        faculty = faculty.strip().encode("utf-8")
         
         md5 = hashlib.md5()
         md5.update(faculty)
-        faculty_id = int(str(int(md5.hexdigest(), 16))[0:4])
+        faculty_id = int(str(int(md5.hexdigest(), 16)).rjust(4, "0")[0:4])
 
         return faculty_id
