@@ -77,7 +77,7 @@ class MySpider(CrawlSpider):
     def key(self, course_dom):
         keys = course_dom.select(".course-code")
         title = keys[0].get_text(strip=True)
-        number = keys[1].get_text(strip=True)
+        number = int(keys[1].get_text(strip=True))
         topic = keys[2].get_text(strip=True)
         return (title, number, topic)
 
