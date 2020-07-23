@@ -8,7 +8,7 @@ from scrapy.linkextractors import LinkExtractor
 from nero.items import CourseTitle, CourseInfo
 from bs4 import BeautifulSoup
 
-class MySpider(CrawlSpider):
+class CourseCalendar(CrawlSpider):
     name = 'course-calendar'
     allowed_domains = ['www.ucalgary.ca']
     start_urls = [
@@ -16,7 +16,6 @@ class MySpider(CrawlSpider):
     ]
 
     def parse(self, response):
-    
         body = str(response.body, encoding="utf-8")
         body = unidecode(body)
         body = re.sub(r"<span>(.*?)<\/span>", r"\1", body)
@@ -44,7 +43,6 @@ class MySpider(CrawlSpider):
 
 
     def parse_course_introduction(self, response):
-
         body = htmlmin.minify(str(response.body, encoding="utf-8"), remove_empty_space=True, remove_all_empty_space=True)
         body = unidecode(body)
         soup = BeautifulSoup(body, 'html.parser')
