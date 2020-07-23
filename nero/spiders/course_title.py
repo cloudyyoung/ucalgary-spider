@@ -61,7 +61,7 @@ class MySpider(CrawlSpider):
 
             print(repeat, nogpa)
 
-            course_obj = CourseInfo(cid=cid, code=code, number=number, topic=topic, description=description, sub_topics=sub_topics, prereq=prereq, coreq=coreq, antireq=antireq, notes=notes, aka=aka)
+            course_obj = CourseInfo(cid=cid, code=code, number=number, topic=topic, description=description, sub_topics=sub_topics, prereq=prereq, coreq=coreq, antireq=antireq, notes=notes, aka=aka, repeat=repeat, nogpa=nogpa)
             yield course_obj
         
         self.logger.warning(response.url)
