@@ -59,8 +59,6 @@ class MySpider(CrawlSpider):
             prereq, coreq, antireq, notes, aka = self.requirements(course_dom=course_dom)
             repeat, nogpa = self.repeat(course_dom=course_dom)
 
-            print(repeat, nogpa)
-
             course_obj = CourseInfo(cid=cid, code=code, number=number, topic=topic, description=description, sub_topics=sub_topics, prereq=prereq, coreq=coreq, antireq=antireq, notes=notes, aka=aka, repeat=repeat, nogpa=nogpa)
             yield course_obj
         
