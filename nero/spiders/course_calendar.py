@@ -1,7 +1,7 @@
 import scrapy
-import jsonlines
 import htmlmin
 import re
+import hashlib
 from unidecode import unidecode
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
@@ -29,6 +29,7 @@ class MySpider(CrawlSpider):
 
         for faculty_dom in faculties_dom:
             faculty_title = faculty_dom.select_one(".generic-title").get_text(strip=True)
+            faculty_id = self.faculty_to_id(faculty=faculty_title)
             course_titles_dom = faculty_dom.select(".generic-body .link-text")
 
             for course_title_dom in course_titles_dom:
@@ -38,7 +39,7 @@ class MySpider(CrawlSpider):
 
                 course_code = course_title_dom.get_text(strip=True)
                 course_title = course_title_dom.previous_element.strip()
-                course_title_obj = CourseTitle(title=course_title, code=course_code, faculty=faculty_title)
+                course_title_obj = CourseTitle(title=course_title, code=course_code, faculty=faculty_id)
                 yield course_title_obj
 
 
@@ -173,3 +174,16 @@ class MySpider(CrawlSpider):
                 ret[key] = list(hours_reg_res)
 
         return (ret["units"], ret["credits"], ret["hours"], ret["time_length"])
+
+    def faculty_to_id(self, faculty):
+        faculty = re.sub(r"\(.*?\)", "", faculty)
+        faculty = re.sub(r"[A-Za-z ]+ of", "", faculty)
+        faculty = re.sub(r"Faculty", "", faculty)
+        faculty = re.sub(r"([^a-zA-Z]*)", "", faculty)
+        faculty = faculty.strip().rjust(4, "0").encode("utf-8")
+        
+        md5 = hashlib.md5()
+        md5.update(faculty)
+        faculty_id = int(str(int(md5.hexdigest(), 16))[0:4])
+
+        return faculty_id

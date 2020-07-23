@@ -11,7 +11,6 @@ class CourseTitle(scrapy.Item):
     title = scrapy.Field()
     code = scrapy.Field()
     faculty = scrapy.Field()
-    pass
 
 class CourseInfo(scrapy.Item):
     cid = scrapy.Field(serializer=int)
@@ -37,5 +36,3 @@ class CourseInfo(scrapy.Item):
 
     repeat = scrapy.Field(serializer=bool)
     nogpa = scrapy.Field(serializer=bool)
-
-    pass

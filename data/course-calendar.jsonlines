@@ -1,157 +1,157 @@
-{"title": "Architectural Studies", "code": "ARST", "faculty": "School of Architecture, Planning and Landscape"}
-{"title": "Architecture", "code": "ARCH", "faculty": "School of Architecture, Planning and Landscape"}
-{"title": "Architecture, Planning and Landscape", "code": "APLA", "faculty": "School of Architecture, Planning and Landscape"}
-{"title": "Environmental Design", "code": "EVDS", "faculty": "School of Architecture, Planning and Landscape"}
-{"title": "Environmental Design Architecture", "code": "EVDA", "faculty": "School of Architecture, Planning and Landscape"}
-{"title": "Environmental Design Landscape", "code": "EVDL", "faculty": "School of Architecture, Planning and Landscape"}
-{"title": "Environmental Design Planning", "code": "EVDP", "faculty": "School of Architecture, Planning and Landscape"}
-{"title": "Landscape", "code": "LAND", "faculty": "School of Architecture, Planning and Landscape"}
-{"title": "Planning", "code": "PLAN", "faculty": "School of Architecture, Planning and Landscape"}
-{"title": "Sustainability Studies", "code": "SUST", "faculty": "School of Architecture, Planning and Landscape"}
-{"title": "Academic Writing", "code": "ACWR", "faculty": "Faculty of Arts"}
-{"title": "African Studies", "code": "AFST", "faculty": "Faculty of Arts"}
-{"title": "American Sign Language", "code": "ASL", "faculty": "Faculty of Arts"}
-{"title": "Anthropology", "code": "ANTH", "faculty": "Faculty of Arts"}
-{"title": "Arabic Language and Muslim Cultures", "code": "ALMC", "faculty": "Faculty of Arts"}
-{"title": "Archaeology", "code": "ARKY", "faculty": "Faculty of Arts"}
-{"title": "Art", "code": "ART", "faculty": "Faculty of Arts"}
-{"title": "Art History", "code": "ARHI", "faculty": "Faculty of Arts"}
-{"title": "Arts", "code": "ARTS", "faculty": "Faculty of Arts"}
-{"title": "Arts and Science Honours", "code": "ASHA", "faculty": "Faculty of Arts"}
-{"title": "Canadian Studies", "code": "CNST", "faculty": "Faculty of Arts"}
-{"title": "Central and East European Studies", "code": "CEST", "faculty": "Faculty of Arts"}
-{"title": "Chinese", "code": "CHIN", "faculty": "Faculty of Arts"}
-{"title": "Communication and Culture", "code": "CMCL", "faculty": "Faculty of Arts"}
-{"title": "Communication and Media Studies", "code": "COMS", "faculty": "Faculty of Arts"}
-{"title": "Dance", "code": "DNCE", "faculty": "Faculty of Arts"}
-{"title": "Development Studies", "code": "DEST", "faculty": "Faculty of Arts"}
-{"title": "Drama", "code": "DRAM", "faculty": "Faculty of Arts"}
-{"title": "Earth Science", "code": "EASC", "faculty": "Faculty of Arts"}
-{"title": "East Asian Language Studies", "code": "EALS", "faculty": "Faculty of Arts"}
-{"title": "East Asian Studies", "code": "EAST", "faculty": "Faculty of Arts"}
-{"title": "Economics", "code": "ECON", "faculty": "Faculty of Arts"}
-{"title": "English", "code": "ENGL", "faculty": "Faculty of Arts"}
-{"title": "Film", "code": "FILM", "faculty": "Faculty of Arts"}
-{"title": "French", "code": "FREN", "faculty": "Faculty of Arts"}
-{"title": "Geography", "code": "GEOG", "faculty": "Faculty of Arts"}
-{"title": "German", "code": "GERM", "faculty": "Faculty of Arts"}
-{"title": "Greek", "code": "GREK", "faculty": "Faculty of Arts"}
-{"title": "Greek and Roman Studies", "code": "GRST", "faculty": "Faculty of Arts"}
-{"title": "History", "code": "HTST", "faculty": "Faculty of Arts"}
-{"title": "Indigenous Languages", "code": "INDL", "faculty": "Faculty of Arts"}
-{"title": "Indigenous Studies", "code": "INDG", "faculty": "Faculty of Arts"}
-{"title": "Innovation", "code": "INNO", "faculty": "Faculty of Arts"}
-{"title": "International Relations", "code": "INTR", "faculty": "Faculty of Arts"}
-{"title": "Italian", "code": "ITAL", "faculty": "Faculty of Arts"}
-{"title": "Japanese", "code": "JPNS", "faculty": "Faculty of Arts"}
-{"title": "Language", "code": "LANG", "faculty": "Faculty of Arts"}
-{"title": "Latin", "code": "LATI", "faculty": "Faculty of Arts"}
-{"title": "Latin American Studies", "code": "LAST", "faculty": "Faculty of Arts"}
-{"title": "Law and Society", "code": "LWSO", "faculty": "Faculty of Arts"}
-{"title": "Linguistics", "code": "LING", "faculty": "Faculty of Arts"}
-{"title": "Museum and Heritage Studies", "code": "MHST", "faculty": "Faculty of Arts"}
-{"title": "Music", "code": "MUSI", "faculty": "Faculty of Arts"}
-{"title": "Music Education", "code": "MUED", "faculty": "Faculty of Arts"}
-{"title": "Music Performance", "code": "MUPF", "faculty": "Faculty of Arts"}
-{"title": "Philosophy", "code": "PHIL", "faculty": "Faculty of Arts"}
-{"title": "Political Science", "code": "POLI", "faculty": "Faculty of Arts"}
-{"title": "Psychology", "code": "PSYC", "faculty": "Faculty of Arts"}
-{"title": "Religious Studies", "code": "RELS", "faculty": "Faculty of Arts"}
-{"title": "Romance Studies", "code": "ROST", "faculty": "Faculty of Arts"}
-{"title": "Russian", "code": "RUSS", "faculty": "Faculty of Arts"}
-{"title": "School of Creative and Performing Arts", "code": "SCPA", "faculty": "Faculty of Arts"}
-{"title": "Slavic", "code": "SLAV", "faculty": "Faculty of Arts"}
-{"title": "Sociology", "code": "SOCI", "faculty": "Faculty of Arts"}
-{"title": "South Asian Studies", "code": "SAST", "faculty": "Faculty of Arts"}
-{"title": "Spanish", "code": "SPAN", "faculty": "Faculty of Arts"}
-{"title": "Strategic Studies", "code": "STST", "faculty": "Faculty of Arts"}
-{"title": "Term Abroad Program", "code": "TAP", "faculty": "Faculty of Arts"}
-{"title": "Transportation Studies", "code": "TRAN", "faculty": "Faculty of Arts"}
-{"title": "Urban Studies", "code": "UBST", "faculty": "Faculty of Arts"}
-{"title": "Wellbeing", "code": "WELL", "faculty": "Faculty of Arts"}
-{"title": "Women's Studies", "code": "WMST", "faculty": "Faculty of Arts"}
-{"title": "Community Health Sciences", "code": "MDCH", "faculty": "Cumming School of Medicine"}
-{"title": "Community Rehabilitation", "code": "CORE", "faculty": "Cumming School of Medicine"}
-{"title": "Health and Society", "code": "HSOC", "faculty": "Cumming School of Medicine"}
-{"title": "Medical Science", "code": "MDSC", "faculty": "Cumming School of Medicine"}
-{"title": "Medicine", "code": "MDCN", "faculty": "Cumming School of Medicine"}
-{"title": "Accounting", "code": "ACCT", "faculty": "Haskayne School of Business"}
-{"title": "Business and Environment", "code": "BSEN", "faculty": "Haskayne School of Business"}
-{"title": "Business Technology Management", "code": "BTMA", "faculty": "Haskayne School of Business"}
-{"title": "Energy Management", "code": "ENMG", "faculty": "Haskayne School of Business"}
-{"title": "Entrepreneurship and Innovation", "code": "ENTI", "faculty": "Haskayne School of Business"}
-{"title": "Finance", "code": "FNCE", "faculty": "Haskayne School of Business"}
-{"title": "Management Studies", "code": "MGST", "faculty": "Haskayne School of Business"}
-{"title": "Marketing", "code": "MKTG", "faculty": "Haskayne School of Business"}
-{"title": "Operations Management", "code": "OPMA", "faculty": "Haskayne School of Business"}
-{"title": "Organizational Behaviour and Human Resources", "code": "OBHR", "faculty": "Haskayne School of Business"}
-{"title": "Professional Land Management", "code": "PLMA", "faculty": "Haskayne School of Business"}
-{"title": "Real Estate Studies", "code": "REAL", "faculty": "Haskayne School of Business"}
-{"title": "Risk Management and Insurance", "code": "RMIN", "faculty": "Haskayne School of Business"}
-{"title": "Strategy and Global Management", "code": "SGMA", "faculty": "Haskayne School of Business"}
-{"title": "Supply Chain Management", "code": "SCMA", "faculty": "Haskayne School of Business"}
-{"title": "Tourism Management", "code": "TOUR", "faculty": "Haskayne School of Business"}
-{"title": "Dance Education", "code": "DCED", "faculty": "Faculty of Kinesiology"}
-{"title": "Kinesiology", "code": "KNES", "faculty": "Faculty of Kinesiology"}
-{"title": "Physical Education", "code": "PHED", "faculty": "Faculty of Kinesiology"}
-{"title": "Law", "code": "LAW", "faculty": "Faculty of Law"}
-{"title": "Nursing", "code": "NURS", "faculty": "Faculty of Nursing"}
-{"title": "Biomedical Engineering", "code": "BMEN", "faculty": "Schulich School of Engineering"}
-{"title": "Chemical Engineering", "code": "ENCH", "faculty": "Schulich School of Engineering"}
-{"title": "Civil Engineering", "code": "ENCI", "faculty": "Schulich School of Engineering"}
-{"title": "Computer Engineering", "code": "ENCM", "faculty": "Schulich School of Engineering"}
-{"title": "Electrical Engineering", "code": "ENEL", "faculty": "Schulich School of Engineering"}
-{"title": "Energy and Environment, Engineering", "code": "ENEE", "faculty": "Schulich School of Engineering"}
-{"title": "Energy Engineering", "code": "ENER", "faculty": "Schulich School of Engineering"}
-{"title": "Engineering", "code": "ENGG", "faculty": "Schulich School of Engineering"}
-{"title": "Environmental Engineering", "code": "ENEN", "faculty": "Schulich School of Engineering"}
-{"title": "Geomatics Engineering", "code": "ENGO", "faculty": "Schulich School of Engineering"}
-{"title": "Manufacturing Engineering", "code": "ENMF", "faculty": "Schulich School of Engineering"}
-{"title": "Mechanical Engineering", "code": "ENME", "faculty": "Schulich School of Engineering"}
-{"title": "Petroleum Engineering", "code": "ENPE", "faculty": "Schulich School of Engineering"}
-{"title": "Software Engineering for Engineers", "code": "ENSF", "faculty": "Schulich School of Engineering"}
-{"title": "Actuarial Science", "code": "ACSC", "faculty": "Faculty of Science"}
-{"title": "Astronomy", "code": "ASTR", "faculty": "Faculty of Science"}
-{"title": "Astrophysics", "code": "ASPH", "faculty": "Faculty of Science"}
-{"title": "Biochemistry", "code": "BCEM", "faculty": "Faculty of Science"}
-{"title": "Biology", "code": "BIOL", "faculty": "Faculty of Science"}
-{"title": "Biostatistics", "code": "BIST", "faculty": "Faculty of Science"}
-{"title": "Cellular, Molecular and Microbial Biology", "code": "CMMB", "faculty": "Faculty of Science"}
-{"title": "Chemistry", "code": "CHEM", "faculty": "Faculty of Science"}
-{"title": "Computational Media Design", "code": "CMDA", "faculty": "Faculty of Science"}
-{"title": "Computer Science", "code": "CPSC", "faculty": "Faculty of Science"}
-{"title": "Data Science", "code": "DATA", "faculty": "Faculty of Science"}
-{"title": "Ecology", "code": "ECOL", "faculty": "Faculty of Science"}
-{"title": "Environmental Science", "code": "ENSC", "faculty": "Faculty of Science"}
-{"title": "Geology", "code": "GLGY", "faculty": "Faculty of Science"}
-{"title": "Geophysics", "code": "GOPH", "faculty": "Faculty of Science"}
-{"title": "Information Security and Privacy", "code": "ISEC", "faculty": "Faculty of Science"}
-{"title": "Marine Science", "code": "MRSC", "faculty": "Faculty of Science"}
-{"title": "Mathematics", "code": "MATH", "faculty": "Faculty of Science"}
-{"title": "Medical Physics", "code": "MDPH", "faculty": "Faculty of Science"}
-{"title": "Nanoscience", "code": "NANS", "faculty": "Faculty of Science"}
-{"title": "Neuroscience", "code": "NEUR", "faculty": "Faculty of Science"}
-{"title": "Physics", "code": "PHYS", "faculty": "Faculty of Science"}
-{"title": "Plant Biology", "code": "PLBI", "faculty": "Faculty of Science"}
-{"title": "Science", "code": "SCIE", "faculty": "Faculty of Science"}
-{"title": "Software Engineering", "code": "SENG", "faculty": "Faculty of Science"}
-{"title": "Space Physics", "code": "SPPH", "faculty": "Faculty of Science"}
-{"title": "Statistics", "code": "STAT", "faculty": "Faculty of Science"}
-{"title": "Zoology", "code": "ZOOL", "faculty": "Faculty of Science"}
-{"title": "Social Work", "code": "SOWK", "faculty": "Faculty of Social Work"}
-{"title": "Interprofessional Health Education", "code": "IPHE", "faculty": "Faculty of Social Work"}
-{"title": "Veterinary Medicine", "code": "VETM", "faculty": "Faculty of Veterinary Medicine"}
-{"title": "Education", "code": "EDUC", "faculty": "Werklund School of Education"}
-{"title": "Education Bridge to Teaching", "code": "EDBT", "faculty": "Werklund School of Education"}
-{"title": "Educational Psychology", "code": "EDPS", "faculty": "Werklund School of Education"}
-{"title": "Educational Research", "code": "EDER", "faculty": "Werklund School of Education"}
-{"title": "Co-operative Education", "code": "COOP", "faculty": "Other"}
-{"title": "Energy and Environmental Systems", "code": "EESS", "faculty": "Other"}
-{"title": "Internship", "code": "INTE", "faculty": "Other"}
-{"title": "Public Policy", "code": "PPOL", "faculty": "Other"}
-{"title": "Sustainable Energy Development", "code": "SEDV", "faculty": "Other"}
-{"title": "University", "code": "UNIV", "faculty": "Other"}
-{"title": "University Exchange", "code": "UNEX", "faculty": "Other"}
+{"title": "Architectural Studies", "code": "ARST", "faculty": 3985}
+{"title": "Architecture", "code": "ARCH", "faculty": 3985}
+{"title": "Architecture, Planning and Landscape", "code": "APLA", "faculty": 3985}
+{"title": "Environmental Design", "code": "EVDS", "faculty": 3985}
+{"title": "Environmental Design Architecture", "code": "EVDA", "faculty": 3985}
+{"title": "Environmental Design Landscape", "code": "EVDL", "faculty": 3985}
+{"title": "Environmental Design Planning", "code": "EVDP", "faculty": 3985}
+{"title": "Landscape", "code": "LAND", "faculty": 3985}
+{"title": "Planning", "code": "PLAN", "faculty": 3985}
+{"title": "Sustainability Studies", "code": "SUST", "faculty": 3985}
+{"title": "Academic Writing", "code": "ACWR", "faculty": 9438}
+{"title": "African Studies", "code": "AFST", "faculty": 9438}
+{"title": "American Sign Language", "code": "ASL", "faculty": 9438}
+{"title": "Anthropology", "code": "ANTH", "faculty": 9438}
+{"title": "Arabic Language and Muslim Cultures", "code": "ALMC", "faculty": 9438}
+{"title": "Archaeology", "code": "ARKY", "faculty": 9438}
+{"title": "Art", "code": "ART", "faculty": 9438}
+{"title": "Art History", "code": "ARHI", "faculty": 9438}
+{"title": "Arts", "code": "ARTS", "faculty": 9438}
+{"title": "Arts and Science Honours", "code": "ASHA", "faculty": 9438}
+{"title": "Canadian Studies", "code": "CNST", "faculty": 9438}
+{"title": "Central and East European Studies", "code": "CEST", "faculty": 9438}
+{"title": "Chinese", "code": "CHIN", "faculty": 9438}
+{"title": "Communication and Culture", "code": "CMCL", "faculty": 9438}
+{"title": "Communication and Media Studies", "code": "COMS", "faculty": 9438}
+{"title": "Dance", "code": "DNCE", "faculty": 9438}
+{"title": "Development Studies", "code": "DEST", "faculty": 9438}
+{"title": "Drama", "code": "DRAM", "faculty": 9438}
+{"title": "Earth Science", "code": "EASC", "faculty": 9438}
+{"title": "East Asian Language Studies", "code": "EALS", "faculty": 9438}
+{"title": "East Asian Studies", "code": "EAST", "faculty": 9438}
+{"title": "Economics", "code": "ECON", "faculty": 9438}
+{"title": "English", "code": "ENGL", "faculty": 9438}
+{"title": "Film", "code": "FILM", "faculty": 9438}
+{"title": "French", "code": "FREN", "faculty": 9438}
+{"title": "Geography", "code": "GEOG", "faculty": 9438}
+{"title": "German", "code": "GERM", "faculty": 9438}
+{"title": "Greek", "code": "GREK", "faculty": 9438}
+{"title": "Greek and Roman Studies", "code": "GRST", "faculty": 9438}
+{"title": "History", "code": "HTST", "faculty": 9438}
+{"title": "Indigenous Languages", "code": "INDL", "faculty": 9438}
+{"title": "Indigenous Studies", "code": "INDG", "faculty": 9438}
+{"title": "Innovation", "code": "INNO", "faculty": 9438}
+{"title": "International Relations", "code": "INTR", "faculty": 9438}
+{"title": "Italian", "code": "ITAL", "faculty": 9438}
+{"title": "Japanese", "code": "JPNS", "faculty": 9438}
+{"title": "Language", "code": "LANG", "faculty": 9438}
+{"title": "Latin", "code": "LATI", "faculty": 9438}
+{"title": "Latin American Studies", "code": "LAST", "faculty": 9438}
+{"title": "Law and Society", "code": "LWSO", "faculty": 9438}
+{"title": "Linguistics", "code": "LING", "faculty": 9438}
+{"title": "Museum and Heritage Studies", "code": "MHST", "faculty": 9438}
+{"title": "Music", "code": "MUSI", "faculty": 9438}
+{"title": "Music Education", "code": "MUED", "faculty": 9438}
+{"title": "Music Performance", "code": "MUPF", "faculty": 9438}
+{"title": "Philosophy", "code": "PHIL", "faculty": 9438}
+{"title": "Political Science", "code": "POLI", "faculty": 9438}
+{"title": "Psychology", "code": "PSYC", "faculty": 9438}
+{"title": "Religious Studies", "code": "RELS", "faculty": 9438}
+{"title": "Romance Studies", "code": "ROST", "faculty": 9438}
+{"title": "Russian", "code": "RUSS", "faculty": 9438}
+{"title": "School of Creative and Performing Arts", "code": "SCPA", "faculty": 9438}
+{"title": "Slavic", "code": "SLAV", "faculty": 9438}
+{"title": "Sociology", "code": "SOCI", "faculty": 9438}
+{"title": "South Asian Studies", "code": "SAST", "faculty": 9438}
+{"title": "Spanish", "code": "SPAN", "faculty": 9438}
+{"title": "Strategic Studies", "code": "STST", "faculty": 9438}
+{"title": "Term Abroad Program", "code": "TAP", "faculty": 9438}
+{"title": "Transportation Studies", "code": "TRAN", "faculty": 9438}
+{"title": "Urban Studies", "code": "UBST", "faculty": 9438}
+{"title": "Wellbeing", "code": "WELL", "faculty": 9438}
+{"title": "Women's Studies", "code": "WMST", "faculty": 9438}
+{"title": "Community Health Sciences", "code": "MDCH", "faculty": 1062}
+{"title": "Community Rehabilitation", "code": "CORE", "faculty": 1062}
+{"title": "Health and Society", "code": "HSOC", "faculty": 1062}
+{"title": "Medical Science", "code": "MDSC", "faculty": 1062}
+{"title": "Medicine", "code": "MDCN", "faculty": 1062}
+{"title": "Accounting", "code": "ACCT", "faculty": 2856}
+{"title": "Business and Environment", "code": "BSEN", "faculty": 2856}
+{"title": "Business Technology Management", "code": "BTMA", "faculty": 2856}
+{"title": "Energy Management", "code": "ENMG", "faculty": 2856}
+{"title": "Entrepreneurship and Innovation", "code": "ENTI", "faculty": 2856}
+{"title": "Finance", "code": "FNCE", "faculty": 2856}
+{"title": "Management Studies", "code": "MGST", "faculty": 2856}
+{"title": "Marketing", "code": "MKTG", "faculty": 2856}
+{"title": "Operations Management", "code": "OPMA", "faculty": 2856}
+{"title": "Organizational Behaviour and Human Resources", "code": "OBHR", "faculty": 2856}
+{"title": "Professional Land Management", "code": "PLMA", "faculty": 2856}
+{"title": "Real Estate Studies", "code": "REAL", "faculty": 2856}
+{"title": "Risk Management and Insurance", "code": "RMIN", "faculty": 2856}
+{"title": "Strategy and Global Management", "code": "SGMA", "faculty": 2856}
+{"title": "Supply Chain Management", "code": "SCMA", "faculty": 2856}
+{"title": "Tourism Management", "code": "TOUR", "faculty": 2856}
+{"title": "Dance Education", "code": "DCED", "faculty": 8459}
+{"title": "Kinesiology", "code": "KNES", "faculty": 8459}
+{"title": "Physical Education", "code": "PHED", "faculty": 8459}
+{"title": "Law", "code": "LAW", "faculty": 1125}
+{"title": "Nursing", "code": "NURS", "faculty": 2567}
+{"title": "Biomedical Engineering", "code": "BMEN", "faculty": 2273}
+{"title": "Chemical Engineering", "code": "ENCH", "faculty": 2273}
+{"title": "Civil Engineering", "code": "ENCI", "faculty": 2273}
+{"title": "Computer Engineering", "code": "ENCM", "faculty": 2273}
+{"title": "Electrical Engineering", "code": "ENEL", "faculty": 2273}
+{"title": "Energy and Environment, Engineering", "code": "ENEE", "faculty": 2273}
+{"title": "Energy Engineering", "code": "ENER", "faculty": 2273}
+{"title": "Engineering", "code": "ENGG", "faculty": 2273}
+{"title": "Environmental Engineering", "code": "ENEN", "faculty": 2273}
+{"title": "Geomatics Engineering", "code": "ENGO", "faculty": 2273}
+{"title": "Manufacturing Engineering", "code": "ENMF", "faculty": 2273}
+{"title": "Mechanical Engineering", "code": "ENME", "faculty": 2273}
+{"title": "Petroleum Engineering", "code": "ENPE", "faculty": 2273}
+{"title": "Software Engineering for Engineers", "code": "ENSF", "faculty": 2273}
+{"title": "Actuarial Science", "code": "ACSC", "faculty": 7144}
+{"title": "Astronomy", "code": "ASTR", "faculty": 7144}
+{"title": "Astrophysics", "code": "ASPH", "faculty": 7144}
+{"title": "Biochemistry", "code": "BCEM", "faculty": 7144}
+{"title": "Biology", "code": "BIOL", "faculty": 7144}
+{"title": "Biostatistics", "code": "BIST", "faculty": 7144}
+{"title": "Cellular, Molecular and Microbial Biology", "code": "CMMB", "faculty": 7144}
+{"title": "Chemistry", "code": "CHEM", "faculty": 7144}
+{"title": "Computational Media Design", "code": "CMDA", "faculty": 7144}
+{"title": "Computer Science", "code": "CPSC", "faculty": 7144}
+{"title": "Data Science", "code": "DATA", "faculty": 7144}
+{"title": "Ecology", "code": "ECOL", "faculty": 7144}
+{"title": "Environmental Science", "code": "ENSC", "faculty": 7144}
+{"title": "Geology", "code": "GLGY", "faculty": 7144}
+{"title": "Geophysics", "code": "GOPH", "faculty": 7144}
+{"title": "Information Security and Privacy", "code": "ISEC", "faculty": 7144}
+{"title": "Marine Science", "code": "MRSC", "faculty": 7144}
+{"title": "Mathematics", "code": "MATH", "faculty": 7144}
+{"title": "Medical Physics", "code": "MDPH", "faculty": 7144}
+{"title": "Nanoscience", "code": "NANS", "faculty": 7144}
+{"title": "Neuroscience", "code": "NEUR", "faculty": 7144}
+{"title": "Physics", "code": "PHYS", "faculty": 7144}
+{"title": "Plant Biology", "code": "PLBI", "faculty": 7144}
+{"title": "Science", "code": "SCIE", "faculty": 7144}
+{"title": "Software Engineering", "code": "SENG", "faculty": 7144}
+{"title": "Space Physics", "code": "SPPH", "faculty": 7144}
+{"title": "Statistics", "code": "STAT", "faculty": 7144}
+{"title": "Zoology", "code": "ZOOL", "faculty": 7144}
+{"title": "Social Work", "code": "SOWK", "faculty": 2994}
+{"title": "Interprofessional Health Education", "code": "IPHE", "faculty": 2994}
+{"title": "Veterinary Medicine", "code": "VETM", "faculty": 2899}
+{"title": "Education", "code": "EDUC", "faculty": 2957}
+{"title": "Education Bridge to Teaching", "code": "EDBT", "faculty": 2957}
+{"title": "Educational Psychology", "code": "EDPS", "faculty": 2957}
+{"title": "Educational Research", "code": "EDER", "faculty": 2957}
+{"title": "Co-operative Education", "code": "COOP", "faculty": 1316}
+{"title": "Energy and Environmental Systems", "code": "EESS", "faculty": 1316}
+{"title": "Internship", "code": "INTE", "faculty": 1316}
+{"title": "Public Policy", "code": "PPOL", "faculty": 1316}
+{"title": "Sustainable Energy Development", "code": "SEDV", "faculty": 1316}
+{"title": "University", "code": "UNIV", "faculty": 1316}
+{"title": "University Exchange", "code": "UNEX", "faculty": 1316}
 {"cid": 44862, "code": "MDSC", "number": 201, "topic": "Applied Tools in Bioinformatics", "description": "To familiarize students with computational approaches to studying biology. Topics to be covered include common tools, databases, and search engines for storing, sharing, and analyzing biological information. Students will complete an original project analyzing publicly available data using publicly available computational tools.", "sub_topics": null, "units": 3.0, "credits": null, "hours": ["3-0"], "time_length": null, "prereq": "Admission to the Bioinformatics major of BHSc Honours program.", "coreq": null, "antireq": null, "notes": null, "aka": null, "repeat": false, "nogpa": false}
 {"cid": 8876, "code": "MDSC", "number": 203, "topic": "Developing Health Research Literacy I", "description": "Students will be introduced to the interdisciplinary scope of health research through reading and writing assignments. Students will learn the basics of academic research enquiry and practice academic writing and presentation skills through individual and team assignments.", "sub_topics": null, "units": 3.0, "credits": null, "hours": ["3-2T"], "time_length": null, "prereq": "Admission to the BHSc Honours program.", "coreq": null, "antireq": null, "notes": null, "aka": null, "repeat": false, "nogpa": false}
 {"cid": 8877, "code": "MDSC", "number": 205, "topic": "Developing Health Research Literacy II", "description": "Students will develop their critical thinking skills and their ability to write logically, well-argued research papers. Students will learn the fundamentals of logical reasoning as well as how to analyze theoretical issues in science, medicine, and philosophy.", "sub_topics": null, "units": 3.0, "credits": null, "hours": ["3-0"], "time_length": null, "prereq": "<course cid=\"8876\">Medical Science 203</course> and admission to the BHSc Honours program.", "coreq": null, "antireq": null, "notes": null, "aka": null, "repeat": false, "nogpa": false}
