@@ -58,8 +58,9 @@ class MySpider(CrawlSpider):
             description, sub_topics = self.description(course_dom=course_dom)
             prereq, coreq, antireq, notes, aka = self.requirements(course_dom=course_dom)
             repeat, nogpa = self.repeat(course_dom=course_dom)
+            units, credits, hours, time_length = self.hours(course_dom=course_dom)
 
-            course_obj = CourseInfo(cid=cid, code=code, number=number, topic=topic, description=description, sub_topics=sub_topics, prereq=prereq, coreq=coreq, antireq=antireq, notes=notes, aka=aka, repeat=repeat, nogpa=nogpa)
+            course_obj = CourseInfo(cid=cid, code=code, number=number, topic=topic, description=description, sub_topics=sub_topics, units=units, credits=credits, hours=hours, time_length=time_length, prereq=prereq, coreq=coreq, antireq=antireq, notes=notes, aka=aka, repeat=repeat, nogpa=nogpa)
             yield course_obj
         
         self.logger.warning(response.url)
@@ -118,12 +119,10 @@ class MySpider(CrawlSpider):
 
         return (description, sub_topics)
 
-
     def requirements(self, course_dom):
-        req = ["prereq", "coreq", "antireq", "notes", "aka"]
-        ret = {}
+        ret = {"prereq": None, "coreq": None, "antireq": None, "notes": None, "aka": None}
 
-        for each in req:
+        for each in ret.keys():
             req_dom = course_dom.select_one(".course-" + each)
             self.convert_link(req_dom)
 
@@ -137,13 +136,41 @@ class MySpider(CrawlSpider):
         return (ret["prereq"], ret["coreq"], ret["antireq"], ret["notes"], ret["aka"])
 
     def repeat(self, course_dom):
-        repeat = ["repeat", "nogpa"]
-        ret = {}
+        ret = {"repeat": False, "nogpa": False}
 
-        for each in repeat:
+        for each in ret.keys():
             repeat_dom = course_dom.select_one(".course-" + each)
             content = repeat_dom.get_text(strip=True)
 
             ret[each] = content != ""
 
         return (ret["repeat"], ret["nogpa"])
+
+    def hours(self, course_dom):
+        hours_text = course_dom.select_one(".course-hours").get_text(strip=True)
+        hours_reg = {
+            "units": "([0-9.]*?) units", # units
+            "credits": "([0-9.]*?) credit[s]?",  # credits
+            "hours": "\((.*?[0-9A-Za-z\/]-.*?[0-9A-Z\/])\)", # h(x-y)
+            "time_length": "\((.*?[0-9-] .*?[a-zA-Z])\)" # x period
+        }
+        ret = {} # [units, credits, h(x-y), x period]
+
+        for (key, reg) in hours_reg.items():
+
+            if not re.search(reg, hours_text):
+                ret[key] = None
+                continue
+            
+            hours_reg_res = re.findall(reg, hours_text) # Find text
+            hours_text = re.sub(reg, "", hours_text) # Remove matched text
+
+            if key == "units":
+                ret[key] = float(hours_reg_res[0])
+            elif key == "credits":
+                ret[key] = int(hours_reg_res[0])
+            else:
+                ret[key] = list(hours_reg_res)
+
+        return (ret["units"], ret["credits"], ret["hours"], ret["time_length"])
+                

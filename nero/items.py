@@ -22,7 +22,12 @@ class CourseInfo(scrapy.Item):
 
     description = scrapy.Field()
     sub_topics = scrapy.Field()
-    
+
+    units = scrapy.Field(serializer=float)
+    credits = scrapy.Field(serializer=int)
+    hours = scrapy.Field()
+    time_length = scrapy.Field()
+
     prereq = scrapy.Field()
     coreq = scrapy.Field()
     antireq = scrapy.Field()
