@@ -53,10 +53,10 @@ class MySpider(CrawlSpider):
         courses_dom = soup.select("#ctl00_ctl00_pageContent .item-container table[bgcolor][cellpadding][align]")
         for course_dom in courses_dom:
 
-            cid = self.cid(course_dom)
-            title, number, topic = self.key(course_dom)
+            cid = self.cid(course_dom=course_dom)
+            title, number, topic = self.key(course_dom=course_dom)
 
-            description, sub_topics = self.description(course_dom)
+            description, sub_topics = self.description(course_dom=course_dom)
 
             course_obj = CourseInfo(cid=cid, code=code, number=number, topic=topic, description=description, sub_topics=sub_topics)
             yield course_obj
