@@ -54,11 +54,11 @@ class MySpider(CrawlSpider):
         for course_dom in courses_dom:
 
             cid = self.cid(course_dom)
-            title, number = self.key(course_dom)
+            title, number, topic = self.key(course_dom)
 
             description, sub_topics = self.description(course_dom)
 
-            course_obj = CourseInfo(cid=cid, code=code, number=number, description=description, sub_topics=sub_topics)
+            course_obj = CourseInfo(cid=cid, code=code, number=number, topic=topic, description=description, sub_topics=sub_topics)
             yield course_obj
         
         self.logger.warning(response.url)
@@ -78,7 +78,8 @@ class MySpider(CrawlSpider):
         keys = course_dom.select(".course-code")
         title = keys[0].get_text(strip=True)
         number = keys[1].get_text(strip=True)
-        return (title, number)
+        topic = keys[2].get_text(strip=True)
+        return (title, number, topic)
 
     def description(self, course_dom):
         description = course_dom.select_one(".course-desc").string

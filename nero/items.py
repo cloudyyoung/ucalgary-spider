@@ -17,7 +17,7 @@ class CourseInfo(scrapy.Item):
     cid = scrapy.Field(serializer=int)
     code = scrapy.Field()
     number = scrapy.Field()
-    title = scrapy.Field()
+    topic = scrapy.Field()
     description = scrapy.Field()
     sub_topics = scrapy.Field()
     
