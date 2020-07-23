@@ -55,8 +55,9 @@ class MySpider(CrawlSpider):
 
             cid = self.cid(course_dom=course_dom)
             title, number, topic = self.key(course_dom=course_dom)
-
             description, sub_topics = self.description(course_dom=course_dom)
+            prereq, coreq, antireq, notes, aka = self.requirements(course_dom=course_dom)
+            # print(prereq, coreq)
 
             course_obj = CourseInfo(cid=cid, code=code, number=number, topic=topic, description=description, sub_topics=sub_topics)
             yield course_obj
@@ -65,10 +66,10 @@ class MySpider(CrawlSpider):
 
 
     def convert_link(self, doms):
-        for dom in doms.select("a"):
-                if dom.name == "a":
-                    href = dom.get("href").split("#")[-1]
-                    dom.attrs = {"cid": href}
+        for dom in doms.select("a.link-text"):
+            href = dom.get("href").split("#")[-1]
+            dom.attrs = {"cid": href}
+            dom.name = "course"
         return doms
 
     def cid(self, course_dom):
@@ -82,28 +83,34 @@ class MySpider(CrawlSpider):
         return (title, number, topic)
 
     def description(self, course_dom):
-        description = course_dom.select_one(".course-desc").string
+        description_dom = course_dom.select_one(".course-desc")
+        self.convert_link(description_dom)
+
+        # print(description_dom)
+
+        description = []
         sub_topics = {}
-        if description is not None:
-            description = description.strip()
-        else:
-            description = ""
-            description_dom = course_dom.select_one(".course-desc").contents
+        concat_text = " "
 
-            for description_dom in description_dom:
-                sub_topics_reg = r"[0-9]{3}\.([0-9]{2})[\.]? ([A-Za-z \,\(\)\'\-][^0-9<]*)"
-                sub_topics_reg_res_all = re.findall(sub_topics_reg, str(description_dom))
+        for description_dom in description_dom.contents:
+            sub_topics_reg = r"[0-9]{3}\.([0-9]{2})[\.]? ([A-Za-z \,\(\)\'\-][^0-9<]*)"
+            sub_topics_reg_res_all = re.findall(sub_topics_reg, str(description_dom))
 
-                if sub_topics_reg_res_all:
-                    for sub_topics_reg_res in sub_topics_reg_res_all:
-                        decimal = sub_topics_reg_res[0]
-                        topic = sub_topics_reg_res[1].strip()
-                        sub_topics[decimal] = topic
-                elif description_dom.string:
-                    description += str(description_dom.string.strip())
-                else:
-                    self.convert_link(description_dom)
-                    description += str(description_dom)
+            if sub_topics_reg_res_all: # Contain sub topics
+                for sub_topics_reg_res in sub_topics_reg_res_all:
+                    decimal = sub_topics_reg_res[0]
+                    topic = sub_topics_reg_res[1].strip()
+                    sub_topics[decimal] = topic
+                concat_text = "<br>"
+            elif description_dom.name == "a": # Link
+                description.append(str(description_dom))
+            elif description_dom.string: # Pure string
+                description.append(str(description_dom.string.strip()))
+            else:
+                description.append(description_dom.decode_contents())
+        pass
+
+        description = concat_text.join(description)
 
         if not description:
             description = None
@@ -112,3 +119,21 @@ class MySpider(CrawlSpider):
             sub_topics = None
 
         return (description, sub_topics)
+
+
+    def requirements(self, course_dom):
+        req = ["prereq", "coreq", "antireq", "notes", "aka"]
+        res = {}
+
+        for each in req:
+            req_dom = course_dom.select_one(".course-" + each)
+            self.convert_link(req_dom)
+
+            inner_html = req_dom.decode_contents()
+
+            if inner_html:
+                res[each] = inner_html
+            else:
+                res[each] = None
+
+        return (res["prereq"], res["coreq"], res["antireq"], res["notes"], res["aka"])
