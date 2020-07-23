@@ -9,7 +9,7 @@ from nero.items import CourseTitle, CourseInfo
 from bs4 import BeautifulSoup
 
 class MySpider(CrawlSpider):
-    name = 'course-titles'
+    name = 'course-calendar'
     allowed_domains = ['www.ucalgary.ca']
     start_urls = [
         'https://www.ucalgary.ca/pubs/calendar/current/course-by-faculty.html'
