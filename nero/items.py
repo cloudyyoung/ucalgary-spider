@@ -36,3 +36,14 @@ class CourseInfo(scrapy.Item):
 
     repeat = scrapy.Field(serializer=bool)
     nogpa = scrapy.Field(serializer=bool)
+
+
+class Faculty(scrapy.Item):
+    fid = scrapy.Field(serializer=int)
+    code = scrapy.Field()
+    title = scrapy.Field()
+
+    phones = scrapy.Field()
+    rooms = scrapy.Field()
+    email = scrapy.Field()
+    website = scrapy.Field()

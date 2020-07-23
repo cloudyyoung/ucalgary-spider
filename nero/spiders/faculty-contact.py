@@ -7,7 +7,7 @@ from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from bs4 import BeautifulSoup
 from nero.utils import Utils
-from nero.items import CourseTitle, CourseInfo
+from nero.items import Faculty
 
 
 class FacultyContact(CrawlSpider):
@@ -26,10 +26,11 @@ class FacultyContact(CrawlSpider):
         for faculty_dom in faculties_dom:
             detail_dom = faculty_dom.next_sibling
 
-            title, code, fid = self.title(faculty_dom)
+            fid, title, code = self.title(faculty_dom)
             phones, rooms, email, website = self.field(detail_dom)
             
-            print(title, website)
+            faculty_obj = Faculty(fid=fid, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website)
+            yield faculty_obj
 
 
     def title(self, faculty_dom):
@@ -37,7 +38,7 @@ class FacultyContact(CrawlSpider):
         code = faculty_dom.select_one(".unitis-business-unit .target").attrs['name']
         fid = Utils.faculty_to_id(title)
 
-        return (title, code, fid)
+        return (fid, title, code)
 
     def field(self, faculty_dom):
         lists = {"phones": None, "rooms": None, "email": None, "website": None}
@@ -53,8 +54,9 @@ class FacultyContact(CrawlSpider):
                         text.append(each.get_text(strip=True))
             
             if item == "website":
-                text = list(filter(lambda x: not x.find("http"), text))
+                text = list(filter(lambda x: not x.find("http"), text)) # Only leave link with http
 
             if text:
                 lists[item] = text
+
         return (lists['phones'], lists['rooms'], lists['email'], lists['website'])
