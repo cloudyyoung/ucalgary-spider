@@ -34,8 +34,8 @@ class MySpider(CrawlSpider):
 
             for course_title_dom in course_titles_dom:
                 course_url = course_title_dom.get("href")
-                if course_url == "medical-science.html":
-                    yield response.follow(course_url, self.parse_course_introduction)
+                # if course_url == "medical-science.html":
+                yield response.follow(course_url, self.parse_course_introduction)
 
                 course_code = course_title_dom.get_text(strip=True)
                 course_title = course_title_dom.previous_element.strip()
@@ -49,7 +49,7 @@ class MySpider(CrawlSpider):
         body = unidecode(body)
         soup = BeautifulSoup(body, 'html.parser')
 
-        code = soup.select_one(".page-title").string.split(" ")[-1]
+        code = soup.select_one(".page-title").string.strip().split(" ")[-1]
 
         courses_dom = soup.select("#ctl00_ctl00_pageContent .item-container table[bgcolor][cellpadding][align]")
         for course_dom in courses_dom:
@@ -69,7 +69,7 @@ class MySpider(CrawlSpider):
 
     def convert_link(self, doms):
         for dom in doms.select("a.link-text"):
-            href = dom.get("href").split("#")[-1]
+            href = dom.get("href").split("#")[-1].strip()
             dom.attrs = {"cid": href}
             dom.name = "course"
         return doms
@@ -103,11 +103,11 @@ class MySpider(CrawlSpider):
                     sub_topics[decimal] = topic
                 concat_text = "<br>"
             elif description_dom.name == "a": # Link
-                description.append(str(description_dom))
+                description.append(str(description_dom).strip())
             elif description_dom.string: # Pure string
                 description.append(str(description_dom.string.strip()))
             else:
-                description.append(description_dom.decode_contents())
+                description.append(description_dom.decode_contents().strip())
         pass
 
         description = concat_text.join(description)
@@ -166,10 +166,8 @@ class MySpider(CrawlSpider):
             hours_reg_res = re.findall(reg, hours_text) # Find text
             hours_text = re.sub(reg, "", hours_text) # Remove matched text
 
-            if key == "units":
+            if key == "units" or key == "credits":
                 ret[key] = float(hours_reg_res[0])
-            elif key == "credits":
-                ret[key] = int(hours_reg_res[0])
             else:
                 ret[key] = list(hours_reg_res)
 
