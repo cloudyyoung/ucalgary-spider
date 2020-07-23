@@ -173,4 +173,3 @@ class MySpider(CrawlSpider):
                 ret[key] = list(hours_reg_res)
 
         return (ret["units"], ret["credits"], ret["hours"], ret["time_length"])
-                
