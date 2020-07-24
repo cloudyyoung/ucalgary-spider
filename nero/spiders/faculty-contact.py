@@ -47,7 +47,32 @@ class FacultyContact(CrawlSpider):
                     did = Utils.title_to_id(parent_title, 5)
                     program_obj = Program(pid=item_id, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website, aka=aka, did=did)
                     yield program_obj
+            
+            if code == "cpsc":
+                yield response.follow("http://contacts.ucalgary.ca/info/" + code + "/contact-us/directory/1-46929", self.parse_contacts_directory)
 
+    def parse_contacts_directory(self, response):
+        
+        body = htmlmin.minify(str(response.body, encoding="utf-8"), remove_empty_space=True, remove_all_empty_space=True)
+        body = unidecode(body)
+        soup = BeautifulSoup(body, 'html.parser')
+
+        staffs_dom = soup.select(".unitis-person-list .unitis-person-list tr")
+        for staff_dom in staffs_dom:
+            
+            name, directory_id = self.staff_name(staff_dom)
+            sid = Utils.name_to_id(name)
+
+            print(name, sid)
+
+            if not name:
+                continue
+
+
+
+        print(response.url)
+
+    
 
     def title(self, faculty_dom):
         title_dom = faculty_dom.select_one(".unitis-business-unit .uofc-row-expander")
@@ -115,3 +140,15 @@ class FacultyContact(CrawlSpider):
             parent_title = None
         
         return (parent_title, parent_type)
+
+    def staff_name(self, staff_dom):
+        name_dom = staff_dom.select_one(".uofc-directory-name-cell a[href]")
+        
+        if not name_dom:
+            name = directory_id = None
+        else:
+            name_arr = name_dom.string.strip().split(",")
+            name = name_arr[1].strip() + " " + name_arr[0].strip()
+            directory_id = name_dom.attrs['href'].strip().split("/")[-1].strip()
+
+        return (name, directory_id)
