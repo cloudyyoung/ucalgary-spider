@@ -31,28 +31,31 @@ class FacultyContact(CrawlSpider):
             phones, rooms, email, website = self.faculty_field(detail_dom)
             aka = self.faculty_aka(detail_dom)
             parent_title, parent_type = self.faculty_parent(faculty_dom)
+            directory = self.faculty_directory(detail_dom)
             
-            if "faculties" in response.url: # This is a faculty
+            if "faculties" in response.url: # This is a Faculty
                 item_id = Utils.title_to_id(title)
                 faculty_obj = Faculty(fid=item_id, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website, aka=aka)
                 yield faculty_obj
-            elif code != None and parent_title != None:
+            elif code != None and parent_title != None and parent_type != None:
                 if parent_type == "Faculty": # This is a Department
                     item_id = Utils.title_to_id(title)
                     fid = Utils.title_to_id(parent_title)
                     department_obj = Department(did=item_id, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website, aka=aka, fid=fid)
                     yield department_obj
-
-                    # Contacts
-                    if code == "art":
-                        yield response.follow("http://contacts.ucalgary.ca/info/" + code + "/contact-us/directory/1-46929", self.parse_contacts_directory)
                 else:  # This is a Program
                     item_id = Utils.title_to_id(title)
                     did = Utils.title_to_id(parent_title)
                     program_obj = Program(pid=item_id, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website, aka=aka, did=did)
                     yield program_obj
+            else:
+                continue
             
-            
+            if directory: # If has contact directory
+                yield response.follow("/info/" + code + "/contact-us/directory/1-46929", self.parse_contacts_directory)
+
+
+
     def parse_contacts_directory(self, response):
         
         body = htmlmin.minify(str(response.body, encoding="utf-8"), remove_empty_space=True, remove_all_empty_space=True)
@@ -143,6 +146,14 @@ class FacultyContact(CrawlSpider):
             parent_title = None
         
         return (parent_title, parent_type)
+
+    def faculty_directory(self, faculty_dom):
+        directory_dom = faculty_dom.select_one(".unitis-directory-link a")
+        if directory_dom:
+            directory = directory_dom.attrs['href']
+        else:
+            directory = None
+        return directory
 
     def staff_name(self, staff_dom):
         name_dom = staff_dom.select_one(".uofc-directory-name-cell a[href]")
