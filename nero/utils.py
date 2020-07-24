@@ -1,6 +1,6 @@
 import re
 import hashlib
-import HumanName
+from nameparser import HumanName
 
 class Utils:
 

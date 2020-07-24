@@ -27,10 +27,10 @@ class FacultyContact(CrawlSpider):
         for faculty_dom in faculties_dom:
             detail_dom = faculty_dom.next_sibling
 
-            title, code = self.title(faculty_dom)
-            phones, rooms, email, website = self.field(detail_dom)
-            aka = self.aka(detail_dom)
-            parent_title, parent_type = self.parent(faculty_dom)
+            title, code = self.faculty_title(faculty_dom)
+            phones, rooms, email, website = self.faculty_field(detail_dom)
+            aka = self.faculty_aka(detail_dom)
+            parent_title, parent_type = self.faculty_parent(faculty_dom)
             
             if "faculties" in response.url: # This is a faculty
                 item_id = Utils.title_to_id(title, 4)
@@ -74,7 +74,7 @@ class FacultyContact(CrawlSpider):
 
     
 
-    def title(self, faculty_dom):
+    def faculty_title(self, faculty_dom):
         title_dom = faculty_dom.select_one(".unitis-business-unit .uofc-row-expander")
         if title_dom:
             title = title_dom.get_text(strip=True)
@@ -89,7 +89,7 @@ class FacultyContact(CrawlSpider):
 
         return (title, code)
 
-    def field(self, faculty_dom):
+    def faculty_field(self, faculty_dom):
         lists = {"phones": None, "rooms": None, "email": None, "website": None}
         for item in lists:
             text = []
@@ -110,7 +110,7 @@ class FacultyContact(CrawlSpider):
 
         return (lists['phones'], lists['rooms'], lists['email'], lists['website'])
 
-    def aka(self, faculty_dom):
+    def faculty_aka(self, faculty_dom):
         aka = None
         contents_dom = faculty_dom.select(".details-row-cell .content")
 
@@ -126,7 +126,7 @@ class FacultyContact(CrawlSpider):
 
         return aka
 
-    def parent(self, faculty_dom):
+    def faculty_parent(self, faculty_dom):
         parent_type_dom = faculty_dom.select_one(".unitis-business-unit-parents .unitis-campuscontacts-unit-type")
         if parent_type_dom:
             parent_type = parent_type_dom.string
