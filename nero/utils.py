@@ -5,7 +5,7 @@ from nameparser import HumanName
 class Utils:
 
     @staticmethod
-    def title_to_id(title, length = 4):
+    def title_to_id(title, length = 5):
         title = re.sub(r"\((.*?)\)", r"\1", title)
         title = re.sub(r"[A-Za-z ]+ of", "", title)
         title = re.sub(r"Faculty", "", title)

@@ -7,7 +7,7 @@ from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from bs4 import BeautifulSoup
 from nero.utils import Utils
-from nero.items import Faculty, Department, Program
+from nero.items import Faculty, Department, Program, Staff
 
 
 class FacultyContact(CrawlSpider):
@@ -33,42 +33,45 @@ class FacultyContact(CrawlSpider):
             parent_title, parent_type = self.faculty_parent(faculty_dom)
             
             if "faculties" in response.url: # This is a faculty
-                item_id = Utils.title_to_id(title, 4)
+                item_id = Utils.title_to_id(title)
                 faculty_obj = Faculty(fid=item_id, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website, aka=aka)
                 yield faculty_obj
             elif code != None and parent_title != None:
                 if parent_type == "Faculty": # This is a Department
-                    item_id = Utils.title_to_id(title, 5)
-                    fid = Utils.title_to_id(parent_title, 4)
-                    department_onj = Department(did=item_id, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website, aka=aka, fid=fid)
-                    yield department_onj
+                    item_id = Utils.title_to_id(title)
+                    fid = Utils.title_to_id(parent_title)
+                    department_obj = Department(did=item_id, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website, aka=aka, fid=fid)
+                    yield department_obj
+
+                    # Contacts
+                    if code == "art":
+                        yield response.follow("http://contacts.ucalgary.ca/info/" + code + "/contact-us/directory/1-46929", self.parse_contacts_directory)
                 else:  # This is a Program
-                    item_id = Utils.title_to_id(title, 5)
-                    did = Utils.title_to_id(parent_title, 5)
+                    item_id = Utils.title_to_id(title)
+                    did = Utils.title_to_id(parent_title)
                     program_obj = Program(pid=item_id, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website, aka=aka, did=did)
                     yield program_obj
             
-            if code == "cpsc":
-                yield response.follow("http://contacts.ucalgary.ca/info/" + code + "/contact-us/directory/1-46929", self.parse_contacts_directory)
-
+            
     def parse_contacts_directory(self, response):
         
         body = htmlmin.minify(str(response.body, encoding="utf-8"), remove_empty_space=True, remove_all_empty_space=True)
         body = unidecode(body)
         soup = BeautifulSoup(body, 'html.parser')
 
+        department_dom = soup.select_one(".headline .content a")
+        faculty = department_dom.string.replace("Contacts", "").strip()
+        did = Utils.title_to_id(faculty)
+
         staffs_dom = soup.select(".unitis-person-list .unitis-person-list tr")
         for staff_dom in staffs_dom:
             
             name, directory_id = self.staff_name(staff_dom)
             sid = Utils.name_to_id(name)
+            title, room, phone = self.staff_field(staff_dom)
 
-            print(name, sid)
-
-            if not name:
-                continue
-
-
+            staff_obj = Staff(sid=sid, name=name, directory_id=directory_id, title=title, room=room, phone=phone, did=did)
+            yield staff_obj
 
         print(response.url)
 
@@ -152,3 +155,24 @@ class FacultyContact(CrawlSpider):
             directory_id = name_dom.attrs['href'].strip().split("/")[-1].strip()
 
         return (name, directory_id)
+
+    def staff_field(self, staff_dom):
+        lists = {"title": None, "room": None, "phone": None}
+        for each in lists:
+            items_dom = staff_dom.select(".uofc-directory-" + each + "-cell li")
+
+            if not items_dom:
+                continue
+
+            text = []
+            for item_dom in items_dom:
+                if item_dom.string:
+                    text.append(item_dom.string.strip())
+                else:
+                    text.append(item_dom.get_text(strip=True))
+
+            if text:
+                lists[each] = text
+
+        return (lists['title'], lists['room'], lists['phone'])
+        
