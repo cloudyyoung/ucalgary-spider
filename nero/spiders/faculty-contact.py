@@ -51,9 +51,8 @@ class FacultyContact(CrawlSpider):
             else:
                 continue
             
-            # TODO: Academic only -> All contacts
             if directory: # If has contact directory
-                yield response.follow("/info/" + code + "/contact-us/directory/1-46929", self.parse_contacts_directory)
+                yield response.follow("/info/" + code + "/contact-us/directory", self.parse_contacts_directory)
 
 
 

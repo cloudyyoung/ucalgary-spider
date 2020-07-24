@@ -92,6 +92,8 @@ class NeroDownloaderMiddleware:
         ## Store webpage to local
         page = response.url.split("/")
         file = page[-1]
+        if not file.endswith(".html"):
+            file += ".html"
         folder = "res/" + "/".join(page[2:-1])
 
         if not os.path.exists(folder):
