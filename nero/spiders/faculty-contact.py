@@ -96,7 +96,7 @@ class FacultyContact(CrawlSpider):
                 text = each.get_text(strip=True)
 
                 aka_reg_res = re.match(r"Also Known as:(.*)", text)
-                if aka_reg_res: 
+                if aka_reg_res:
                     aka = aka_reg_res.group(1).split(", ")
 
         return aka
