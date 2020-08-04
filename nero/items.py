@@ -88,3 +88,20 @@ class Staff(scrapy.Item):
     phone = scrapy.Field()
 
     did = scrapy.Field(serialize=int)
+
+class CourseTerm(scrapy.Item):
+    key = scrapy.Field() # Course key
+    topic = scrapy.Field()
+
+    year = scrapy.Field(serialize=int)
+    term = scrapy.Field()
+
+    blocks = scrapy.Field()
+
+class Block(scrapy.Item):
+    name = scrapy.Field()
+    time = scrapy.Field()
+    room = scrapy.Field()
+
+    sid = scrapy.Field(serialize=int)
+    directory_id = scrapy.Field()

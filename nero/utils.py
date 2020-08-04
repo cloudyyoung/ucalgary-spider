@@ -1,4 +1,5 @@
 import re
+import datetime
 import hashlib
 from nameparser import HumanName
 
@@ -32,3 +33,46 @@ class Utils:
         text_id = int(str(int(md5.hexdigest(), 16)).rjust(length, "0")[0:length])
         return text_id
 
+    @staticmethod
+    def current_term():
+        now = datetime.datetime.now()
+
+        fall_start = datetime.datetime(month=8, day=24)
+        fall_end = datetime.datetime(month=12, day=31)
+
+        winter_start = datetime.datetime(month=1, day=1)
+        winder_end = datetime.datetime(month=4, day=30)
+
+        spring_start = datetime.datetime(month=5, day=1)
+        spring_end = datetime.datetime(month=6, day=26)
+
+        summer_start = datetime.datetime(month=6, day=27)
+        summer_end = datetime.datetime(month=8, day=23)
+
+        if fall_start <= now <= fall_end:
+            return "Fall"
+        elif winter_start <= now <= winter_end:
+            return "Winter"
+        elif spring_start <= now <= spring_end:
+            return "Spring"
+        elif summer_start <= now <= summer_end:
+            return "Summer"
+
+    @staticmethod
+    def current_year():
+        now = datetime.datetime.now()
+        return now.year
+
+
+    @staticmethod
+    def abbr_to_term(text):
+        if(text == "f"):
+            return "Fall"
+        elif(text == "w"):
+            return "Winter"
+        elif(text == "p"):
+            return "Spring"
+        elif(text == "s"):
+            return "Summer"
+        else:
+            return None

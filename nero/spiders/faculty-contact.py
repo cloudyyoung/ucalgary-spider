@@ -7,7 +7,7 @@ from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from bs4 import BeautifulSoup
 from nero.utils import Utils
-from nero.items import Faculty, Department, Program, Staff
+from nero.items import Faculty, Department, Program, Staff, CourseTerm, Block
 
 
 class FacultyContact(CrawlSpider):
@@ -51,8 +51,14 @@ class FacultyContact(CrawlSpider):
             else:
                 continue
             
-            if directory: # If has contact directory
-                yield response.follow("/info/" + code + "/contact-us/directory", self.parse_contacts_directory)
+            if directory and code == "cpsc": # If has contact directory
+                yield response.follow("/info/%s/contact-us/directory" % code, self.parse_contacts_directory)
+
+                year = Utils.current_year()
+                yield response.follow("/info/%s/courses/%s" % (code, "f" + year), self.parse_contacts_directory) # Fall
+                yield response.follow("/info/%s/courses/%s" % (code, "w" + (year + 1)), self.parse_contacts_directory) # Winter
+                yield response.follow("/info/%s/courses/%s" % (code, "p" + (year + 1)), self.parse_contacts_directory) # Spring
+                yield response.follow("/info/%s/courses/%s" % (code, "s" + (year + 1)), self.parse_contacts_directory) # Summer
 
 
 
@@ -79,6 +85,26 @@ class FacultyContact(CrawlSpider):
         print(response.url)
 
     
+    # TODO: Test course term
+    def parse_course_term(self, response):
+        body = htmlmin.minify(str(response.body, encoding="utf-8"), remove_empty_space=True, remove_all_empty_space=True)
+        body = unidecode(body)
+        soup = BeautifulSoup(body, 'html.parser')
+
+        term = Utils.abbr_to_term(response.url.split("/")[0])
+        year = response.url.split("/")[1:]
+
+        courses_dom = soup.select(".primary-row")
+        for course_dom in courses_dom:
+            detail_dom = course_dom.next_sibling
+
+            key, topic = self.course_title(course_dom)
+            blocks = self.course_blocks(detail_dom)
+
+            course_obj = CourseTerm(key=key, topic=topic, year=year, term=term, blocks=blocks)
+            yield course_obj
+
+
 
     def faculty_title(self, faculty_dom):
         title_dom = faculty_dom.select_one(".unitis-business-unit .uofc-row-expander")
@@ -99,7 +125,7 @@ class FacultyContact(CrawlSpider):
         lists = {"phones": None, "rooms": None, "email": None, "website": None}
         for item in lists:
             text = []
-            list_dom = faculty_dom.select(".unitis-" + item + "-list li")
+            list_dom = faculty_dom.select(".unitis-%s-list li" % item)
 
             if list_dom:
                 for each in list_dom:
@@ -170,7 +196,7 @@ class FacultyContact(CrawlSpider):
     def staff_field(self, staff_dom):
         lists = {"title": None, "room": None, "phone": None}
         for each in lists:
-            items_dom = staff_dom.select(".uofc-directory-" + each + "-cell li")
+            items_dom = staff_dom.select(".uofc-directory-%s-cell li" % each)
 
             if not items_dom:
                 continue
@@ -187,3 +213,44 @@ class FacultyContact(CrawlSpider):
 
         return (lists['title'], lists['room'], lists['phone'])
         
+
+    def course_title(self, course_dom):
+        title_dom = faculty_dom.select_one(".uofc-row-expander")
+        title_text = title_dom.get_text(strip=True)
+        titles = title_text.split(" - ")
+
+        key = titles[0]
+        topic = titles[1]
+
+        return (key, topic)
+
+    def course_blocks(self, course_dom):
+
+        def dom_text_link(dom):
+            if(dom.get_text(strip=True) != None):
+                text = dom.get_text(strip=True)
+                link = None
+            else:
+                text = dom.select_one("a").get_text(strip=True)
+                link = dom.select_one("a").attrs['href']
+            
+            return (text, link)
+
+        blocks_dom = course_dom.select(".uofc-table tr")
+        blocks = []
+
+        for block_dom in blocks_dom:
+            name = block_dom.children[1].get_text(strip=True) # LEC 1, LEC 2, TUT 1
+            time = block_dom.children[2].get_text(strip=True) # TBA, TR 16:00 - 16:50
+
+            room, room_link = dom_text_link(block_dom.children[3]) # TBA, MS 201
+
+            instructor_name, instructor_link = dom_text_link(block_dom.children[4]) # Nathaly Verwaal
+            sid = Utils.name_to_id(instructor_name)
+            directory_id = instructor_link.split("/")[-1]
+
+            # blocks.append({"name": name, "time": time, "room": room, "sid": sid, "directory_id": directory_id})
+            block_obj = Block(name=name, time=time, room=room, sid=sid, directory_id=directory_id)
+            blocks.append(block_obj)
+
+        return blocks
