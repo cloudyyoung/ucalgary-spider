@@ -51,14 +51,14 @@ class FacultyContact(CrawlSpider):
             else:
                 continue
             
-            if directory and code == "cpsc": # If has contact directory
+            if directory: # If has contact directory
                 yield response.follow("/info/%s/contact-us/directory" % code, self.parse_contacts_directory)
 
-                year = Utils.current_year()
-                yield response.follow("/info/%s/courses/%s" % (code, "f" + year), self.parse_contacts_directory) # Fall
-                yield response.follow("/info/%s/courses/%s" % (code, "w" + (year + 1)), self.parse_contacts_directory) # Winter
-                yield response.follow("/info/%s/courses/%s" % (code, "p" + (year + 1)), self.parse_contacts_directory) # Spring
-                yield response.follow("/info/%s/courses/%s" % (code, "s" + (year + 1)), self.parse_contacts_directory) # Summer
+                # year = Utils.current_year()
+                # yield response.follow("/info/%s/courses/%s" % (code, "f" + year), self.parse_contacts_directory) # Fall
+                # yield response.follow("/info/%s/courses/%s" % (code, "w" + (year + 1)), self.parse_contacts_directory) # Winter
+                # yield response.follow("/info/%s/courses/%s" % (code, "p" + (year + 1)), self.parse_contacts_directory) # Spring
+                # yield response.follow("/info/%s/courses/%s" % (code, "s" + (year + 1)), self.parse_contacts_directory) # Summer
 
 
 
@@ -86,7 +86,8 @@ class FacultyContact(CrawlSpider):
 
     
     # TODO: Test course term
-    def parse_course_term(self, response):
+    # TODO: Change to block obj
+    def parse_course_term_block(self, response):
         body = htmlmin.minify(str(response.body, encoding="utf-8"), remove_empty_space=True, remove_all_empty_space=True)
         body = unidecode(body)
         soup = BeautifulSoup(body, 'html.parser')

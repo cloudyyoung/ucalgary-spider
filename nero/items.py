@@ -99,6 +99,12 @@ class CourseTerm(scrapy.Item):
     blocks = scrapy.Field()
 
 class Block(scrapy.Item):
+    key = scrapy.Field()  # Course key
+    topic = scrapy.Field()
+
+    year = scrapy.Field(serialize=int)
+    term = scrapy.Field()
+
     name = scrapy.Field()
     time = scrapy.Field()
     room = scrapy.Field()
