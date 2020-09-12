@@ -41,7 +41,7 @@ class Utils:
         fall_end = datetime.datetime(month=12, day=31)
 
         winter_start = datetime.datetime(month=1, day=1)
-        winder_end = datetime.datetime(month=4, day=30)
+        winter_end = datetime.datetime(month=4, day=30)
 
         spring_start = datetime.datetime(month=5, day=1)
         spring_end = datetime.datetime(month=6, day=26)
