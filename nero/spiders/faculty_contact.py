@@ -52,10 +52,9 @@ class FacultyContact(CrawlSpider):
                 continue
             
             if directory: # If has contact directory
-                # yield response.follow("/info/%s/contact-us/directory" % code, self.parse_contacts_directory)
+                yield response.follow("/info/%s/contact-us/directory" % code, self.parse_contacts_directory)
 
                 year = Utils.current_year()
-                # Fall
                 yield response.follow("/info/%s/courses/%s" % (code, "f" + str(year)), self.parse_course_term_block)
                 yield response.follow("/info/%s/courses/%s" % (code, "w" + str(year + 1)), self.parse_course_term_block) # Winter
                 yield response.follow("/info/%s/courses/%s" % (code, "p" + str(year + 1)), self.parse_course_term_block) # Spring
