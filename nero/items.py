@@ -89,19 +89,19 @@ class Staff(scrapy.Item):
 
     did = scrapy.Field(serialize=int)
 
-class CourseTerm(scrapy.Item):
-    key = scrapy.Field() # Course key
+
+class Block(scrapy.Item):
+    key = scrapy.Field()  # Course key
     topic = scrapy.Field()
 
     year = scrapy.Field(serialize=int)
     term = scrapy.Field()
 
-    blocks = scrapy.Field()
-
-class Block(scrapy.Item):
     name = scrapy.Field()
     time = scrapy.Field()
     room = scrapy.Field()
 
     sid = scrapy.Field(serialize=int)
     directory_id = scrapy.Field()
+
+    note = scrapy.Field()
