@@ -32,13 +32,13 @@ class FacultyContact(CrawlSpider):
             aka = self.faculty_aka(detail_dom)
             parent_title, parent_type = self.faculty_parent(faculty_dom)
             directory = self.faculty_directory(detail_dom)
-            
-            if "faculties" in response.url: # This is a Faculty
+
+            if "faculties" in response.url:  # This is a Faculty
                 item_id = Utils.title_to_id(title)
                 faculty_obj = Faculty(fid=item_id, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website, aka=aka)
                 yield faculty_obj
             elif code != None and parent_title != None and parent_type != None:
-                if parent_type == "Faculty": # This is a Department
+                if parent_type == "Faculty":  # This is a Department
                     item_id = Utils.title_to_id(title)
                     fid = Utils.title_to_id(parent_title)
                     department_obj = Department(did=item_id, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website, aka=aka, fid=fid)
@@ -50,20 +50,20 @@ class FacultyContact(CrawlSpider):
                     yield program_obj
             else:
                 continue
-            
-            if directory: # If has contact directory
+
+            if directory:  # If has contact directory
                 yield response.follow("/info/%s/contact-us/directory" % code, self.parse_contacts_directory)
 
-                year = Utils.current_year()
+                year = Utils.current_academic_year()
                 yield response.follow("/info/%s/courses/%s" % (code, "f" + str(year)), self.parse_course_term_block)
-                yield response.follow("/info/%s/courses/%s" % (code, "w" + str(year + 1)), self.parse_course_term_block) # Winter
-                yield response.follow("/info/%s/courses/%s" % (code, "p" + str(year + 1)), self.parse_course_term_block) # Spring
-                yield response.follow("/info/%s/courses/%s" % (code, "s" + str(year + 1)), self.parse_course_term_block) # Summer
-
-
+                yield response.follow("/info/%s/courses/%s" % (code, "w" + str(year + 1)), self.parse_course_term_block)  # Winter
+                yield response.follow("/info/%s/courses/%s" % (code, "p" + str(year + 1)), self.parse_course_term_block)  # Spring
+                yield response.follow("/info/%s/courses/%s" % (code, "s" + str(year + 1)), self.parse_course_term_block)  # Summer
+                yield response.follow("/info/%s/courses/%s" % (code, "f" + str(year + 1)), self.parse_course_term_block)
+                yield response.follow("/info/%s/courses/%s" % (code, "w" + str(year + 2)), self.parse_course_term_block)  # Winter
 
     def parse_contacts_directory(self, response):
-        
+
         body = htmlmin.minify(str(response.body, encoding="utf-8"), remove_empty_space=True, remove_all_empty_space=True)
         body = unidecode(body)
         soup = BeautifulSoup(body, 'html.parser')
@@ -74,7 +74,7 @@ class FacultyContact(CrawlSpider):
 
         staffs_dom = soup.select(".unitis-person-list .unitis-person-list tr")
         for staff_dom in staffs_dom:
-            
+
             name, directory_id = self.staff_name(staff_dom)
             sid = Utils.name_to_id(name)
             title, room, phone = self.staff_field(staff_dom)
@@ -83,7 +83,6 @@ class FacultyContact(CrawlSpider):
             yield staff_obj
 
         print(response.url)
-
 
     def parse_course_term_block(self, response):
         body = htmlmin.minify(str(response.body, encoding="utf-8"), remove_empty_space=True, remove_all_empty_space=True)
@@ -102,10 +101,8 @@ class FacultyContact(CrawlSpider):
             for (name, time, room, sid, directory_id, note) in self.course_blocks(detail_dom):
                 block_obj = Block(key=key, topic=topic, year=year, term=term, name=name, time=time, room=room, sid=sid, directory_id=directory_id, note=note)
                 yield block_obj
-            
+
         print(response.url)
-
-
 
     def faculty_title(self, faculty_dom):
         title_dom = faculty_dom.select_one(".unitis-business-unit .uofc-row-expander")
@@ -134,9 +131,9 @@ class FacultyContact(CrawlSpider):
                         text.append(each.string.strip())
                     else:
                         text.append(each.get_text(strip=True))
-            
+
             if item == "website":
-                text = list(filter(lambda x: not x.find("http"), text)) # Only leave link with http
+                text = list(filter(lambda x: not x.find("http"), text))  # Only leave link with http
 
             if text:
                 lists[item] = text
@@ -171,7 +168,7 @@ class FacultyContact(CrawlSpider):
             parent_title = parent_title_dom.string
         else:
             parent_title = None
-        
+
         return (parent_title, parent_type)
 
     def faculty_directory(self, faculty_dom):
@@ -184,7 +181,7 @@ class FacultyContact(CrawlSpider):
 
     def staff_name(self, staff_dom):
         name_dom = staff_dom.select_one(".uofc-directory-name-cell a[href]")
-        
+
         if not name_dom:
             name = directory_id = None
         else:
@@ -213,7 +210,6 @@ class FacultyContact(CrawlSpider):
                 lists[each] = text
 
         return (lists['title'], lists['room'], lists['phone'])
-        
 
     def course_title(self, course_dom):
         title_dom = course_dom.select_one("a.uofc-row-expander")
@@ -236,21 +232,19 @@ class FacultyContact(CrawlSpider):
                 link = None
             return (text, link)
 
-
-        if "has-details" in course_dom.select_one(".uofc-table").attrs['class']: # If table is .uofc-table.has-details
-            blocks_dom = course_dom.select(".uofc-table tr.primary-row") # Blocks are Info + Note, means primary + detached
+        if "has-details" in course_dom.select_one(".uofc-table").attrs['class']:  # If table is .uofc-table.has-details
+            blocks_dom = course_dom.select(".uofc-table tr.primary-row")  # Blocks are Info + Note, means primary + detached
         else:
-            blocks_dom = course_dom.select(".uofc-table tr") # Blocks are only Info
-
+            blocks_dom = course_dom.select(".uofc-table tr")  # Blocks are only Info
 
         for block_dom in blocks_dom:
 
-            name = block_dom.contents[1].get_text(strip=True) # LEC 1, LEC 2, TUT 1
-            time = unidecode(block_dom.contents[2].get_text(strip=True)) # TBA, TR 16:00 - 16:50
+            name = block_dom.contents[1].get_text(strip=True)  # LEC 1, LEC 2, TUT 1
+            time = unidecode(block_dom.contents[2].get_text(strip=True))  # TBA, TR 16:00 - 16:50
 
-            room, room_link = dom_text_link(block_dom.contents[3]) # TBA, MS 201
+            room, room_link = dom_text_link(block_dom.contents[3])  # TBA, MS 201
 
-            instructor_name, instructor_link = dom_text_link(block_dom.contents[4]) # Nathaly Verwaal
+            instructor_name, instructor_link = dom_text_link(block_dom.contents[4])  # Nathaly Verwaal
 
             if instructor_name != "":
                 sid = Utils.name_to_id(instructor_name)
@@ -262,7 +256,7 @@ class FacultyContact(CrawlSpider):
             else:
                 directory_id = None
 
-            if "primary-row" in block_dom.attrs['class'] and block_dom.next_sibling != None and "attached-row" in block_dom.next_sibling.attrs['class']: # If it has attached-row
+            if "primary-row" in block_dom.attrs['class'] and block_dom.next_sibling != None and "attached-row" in block_dom.next_sibling.attrs['class']:  # If it has attached-row
                 note = block_dom.next_sibling.select_one(".details-row-cell div[style]").get_text(strip=True)
                 note = note.lstrip("Notes: ")
 
