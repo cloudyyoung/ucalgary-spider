@@ -1,4 +1,5 @@
 import re
+import datetime
 import time
 import hashlib
 from nameparser import HumanName
@@ -35,37 +36,19 @@ class Utils:
         return text_id
 
     @staticmethod
-    def current_term():
+    def current_academic_year():
         now = datetime.datetime.now()
-
         fall_start = datetime.datetime(month=8, day=24)
-        fall_end = datetime.datetime(month=12, day=31)
+        year_end = datetime.datetime(month=12, day=31)
 
-        winter_start = datetime.datetime(month=1, day=1)
-        winter_end = datetime.datetime(month=4, day=30)
-
-        spring_start = datetime.datetime(month=5, day=1)
-        spring_end = datetime.datetime(month=6, day=26)
-
-        summer_start = datetime.datetime(month=6, day=27)
-        summer_end = datetime.datetime(month=8, day=23)
-
-        if fall_start <= now <= fall_end:
-            return "Fall"
-        elif winter_start <= now <= winter_end:
-            return "Winter"
-        elif spring_start <= now <= spring_end:
-            return "Spring"
-        elif summer_start <= now <= summer_end:
-            return "Summer"
+        if now >= fall_start and now <= year_end:
+            return now.year
+        elif now < fall_start:
+            return now.year - 1
 
     @staticmethod
-    def current_year():
-        return time.strftime("%Y", time.time())
-
-    @staticmethod
-    def current_year_short():
-        return time.strftime("%y", time.time())
+    def current_academic_year_short():
+        return Utils.current_academic_year() - 2000
 
     @staticmethod
     def abbr_to_term(text):
