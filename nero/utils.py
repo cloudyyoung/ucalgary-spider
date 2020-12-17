@@ -1,12 +1,13 @@
 import re
-import datetime
+import time
 import hashlib
 from nameparser import HumanName
+
 
 class Utils:
 
     @staticmethod
-    def title_to_id(title, length = 5):
+    def title_to_id(title, length=5):
         title = re.sub(r"\((.*?)\)", r"\1", title)
         title = re.sub(r"[A-Za-z ]+ of", "", title)
         title = re.sub(r"Faculty", "", title)
@@ -24,7 +25,7 @@ class Utils:
 
         name_id = Utils.__text_to_id(name_parse, 6)
         return name_id
-    
+
     @staticmethod
     def __text_to_id(text, length):
         text = str(text).encode("utf-8")
@@ -60,9 +61,11 @@ class Utils:
 
     @staticmethod
     def current_year():
-        now = datetime.datetime.now()
-        return now.year
+        return time.strftime("%Y", time.time())
 
+    @staticmethod
+    def current_year_short():
+        return time.strftime("%y", time.time())
 
     @staticmethod
     def abbr_to_term(text):
@@ -76,3 +79,16 @@ class Utils:
             return "Summer"
         else:
             return None
+
+    @staticmethod
+    def term_to_long_id(term, year_short):
+        long_id = "32" + str(year_short)
+        if term == "p":
+            long_id += "3"
+        elif term == "s":
+            long_id += "5"
+        elif term == "f":
+            long_id += "7"
+        elif term == "w":
+            long_id += "1"
+        return long_id
