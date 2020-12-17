@@ -20,18 +20,15 @@ class CourseCalendar(CrawlSpider):
         body = str(response.body, encoding="utf-8")
         body = unidecode(body)
         body = re.sub(r"<span>(.*?)<\/span>", r"\1", body)
-        body = re.sub(
-            r'<a class="link-text" href="[a-z-]*?\.html#[0-9]{4,5}?"><\/a>', "", body)
+        body = re.sub(r'<a class="link-text" href="[a-z-]*?\.html#[0-9]{4,5}?"><\/a>', "", body)
         body = body.replace("\r", "").replace("\n", "").replace("  ", " ")
-        body = htmlmin.minify(body, remove_empty_space=True,
-                              remove_all_empty_space=True)
+        body = htmlmin.minify(body, remove_empty_space=True, remove_all_empty_space=True)
         soup = BeautifulSoup(body, 'html.parser')
 
         faculties_dom = soup.select("#ctl00_ctl00_pageContent .item-container")
 
         for faculty_dom in faculties_dom:
-            faculty_title = faculty_dom.select_one(
-                ".generic-title").get_text(strip=True)
+            faculty_title = faculty_dom.select_one(".generic-title").get_text(strip=True)
             faculty_id = Utils.title_to_id(title=faculty_title, length=4)
             course_titles_dom = faculty_dom.select(".generic-body .link-text")
 
