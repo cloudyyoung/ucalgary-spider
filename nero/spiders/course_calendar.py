@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 from nero.utils import Utils
 from nero.items import CourseTitle, CourseInfo
 
+
 class CourseCalendar(CrawlSpider):
     name = 'course-calendar'
     allowed_domains = ['www.ucalgary.ca']
@@ -19,16 +20,19 @@ class CourseCalendar(CrawlSpider):
         body = str(response.body, encoding="utf-8")
         body = unidecode(body)
         body = re.sub(r"<span>(.*?)<\/span>", r"\1", body)
-        body = re.sub(r'<a class="link-text" href="[a-z-]*?\.html#[0-9]{4,5}?"><\/a>', "", body)
+        body = re.sub(
+            r'<a class="link-text" href="[a-z-]*?\.html#[0-9]{4,5}?"><\/a>', "", body)
         body = body.replace("\r", "").replace("\n", "").replace("  ", " ")
-        body = htmlmin.minify(body, remove_empty_space=True, remove_all_empty_space=True)
+        body = htmlmin.minify(body, remove_empty_space=True,
+                              remove_all_empty_space=True)
         soup = BeautifulSoup(body, 'html.parser')
 
         faculties_dom = soup.select("#ctl00_ctl00_pageContent .item-container")
 
         for faculty_dom in faculties_dom:
-            faculty_title = faculty_dom.select_one(".generic-title").get_text(strip=True)
-            faculty_id = Utils.title_to_id(faculty=faculty_title)
+            faculty_title = faculty_dom.select_one(
+                ".generic-title").get_text(strip=True)
+            faculty_id = Utils.title_to_id(title=faculty_title, length=4)
             course_titles_dom = faculty_dom.select(".generic-body .link-text")
 
             for course_title_dom in course_titles_dom:
@@ -37,32 +41,36 @@ class CourseCalendar(CrawlSpider):
 
                 course_code = course_title_dom.get_text(strip=True)
                 course_title = course_title_dom.previous_element.strip()
-                course_title_obj = CourseTitle(title=course_title, code=course_code, faculty=faculty_id)
+                course_title_obj = CourseTitle(
+                    title=course_title, code=course_code, faculty=faculty_id)
                 yield course_title_obj
 
-
     def parse_course_introduction(self, response):
-        body = htmlmin.minify(str(response.body, encoding="utf-8"), remove_empty_space=True, remove_all_empty_space=True)
+        body = htmlmin.minify(str(response.body, encoding="utf-8"),
+                              remove_empty_space=True, remove_all_empty_space=True)
         body = unidecode(body)
         soup = BeautifulSoup(body, 'html.parser')
 
         code = soup.select_one(".page-title").string.strip().split(" ")[-1]
 
-        courses_dom = soup.select("#ctl00_ctl00_pageContent .item-container table[bgcolor][cellpadding][align]")
+        courses_dom = soup.select(
+            "#ctl00_ctl00_pageContent .item-container table[bgcolor][cellpadding][align]")
         for course_dom in courses_dom:
 
             cid = self.cid(course_dom=course_dom)
             title, number, topic = self.key(course_dom=course_dom)
             description, sub_topics = self.description(course_dom=course_dom)
-            prereq, coreq, antireq, notes, aka = self.requirements(course_dom=course_dom)
+            prereq, coreq, antireq, notes, aka = self.requirements(
+                course_dom=course_dom)
             repeat, nogpa = self.repeat(course_dom=course_dom)
-            units, credits, hours, time_length = self.hours(course_dom=course_dom)
+            units, credits, hours, time_length = self.hours(
+                course_dom=course_dom)
 
-            course_obj = CourseInfo(cid=cid, code=code, number=number, topic=topic, description=description, sub_topics=sub_topics, units=units, credits=credits, hours=hours, time_length=time_length, prereq=prereq, coreq=coreq, antireq=antireq, notes=notes, aka=aka, repeat=repeat, nogpa=nogpa)
+            course_obj = CourseInfo(cid=cid, code=code, number=number, topic=topic, description=description, sub_topics=sub_topics, units=units, credits=credits,
+                                    hours=hours, time_length=time_length, prereq=prereq, coreq=coreq, antireq=antireq, notes=notes, aka=aka, repeat=repeat, nogpa=nogpa)
             yield course_obj
-        
-        self.logger.warning(response.url)
 
+        self.logger.warning(response.url)
 
     def convert_link(self, doms):
         for dom in doms.select("a.link-text"):
@@ -91,17 +99,18 @@ class CourseCalendar(CrawlSpider):
 
         for description_dom in description_dom.contents:
             sub_topics_reg = r"[0-9]{3}\.([0-9]{2})[\.]? ([A-Za-z \,\(\)\'\-][^0-9<]*)"
-            sub_topics_reg_res_all = re.findall(sub_topics_reg, str(description_dom))
+            sub_topics_reg_res_all = re.findall(
+                sub_topics_reg, str(description_dom))
 
-            if sub_topics_reg_res_all: # Contain sub topics
+            if sub_topics_reg_res_all:  # Contain sub topics
                 for sub_topics_reg_res in sub_topics_reg_res_all:
                     decimal = sub_topics_reg_res[0]
                     topic = sub_topics_reg_res[1].strip()
                     sub_topics[decimal] = topic
                 concat_text = "<br>"
-            elif description_dom.name == "a": # Link
+            elif description_dom.name == "a":  # Link
                 description.append(str(description_dom).strip())
-            elif description_dom.string: # Pure string
+            elif description_dom.string:  # Pure string
                 description.append(str(description_dom.string.strip()))
             else:
                 description.append(description_dom.decode_contents().strip())
@@ -118,7 +127,8 @@ class CourseCalendar(CrawlSpider):
         return (description, sub_topics)
 
     def requirements(self, course_dom):
-        ret = {"prereq": None, "coreq": None, "antireq": None, "notes": None, "aka": None}
+        ret = {"prereq": None, "coreq": None,
+               "antireq": None, "notes": None, "aka": None}
 
         for each in ret.keys():
             req_dom = course_dom.select_one(".course-" + each)
@@ -145,23 +155,24 @@ class CourseCalendar(CrawlSpider):
         return (ret["repeat"], ret["nogpa"])
 
     def hours(self, course_dom):
-        hours_text = course_dom.select_one(".course-hours").get_text(strip=True)
+        hours_text = course_dom.select_one(
+            ".course-hours").get_text(strip=True)
         hours_reg = {
-            "units": "([0-9.]*?) units", # units
+            "units": "([0-9.]*?) units",  # units
             "credits": "([0-9.]*?) credit[s]?",  # credits
-            "hours": "\((.*?[0-9A-Za-z\/]-.*?[0-9A-Z\/])\)", # h(x-y)
-            "time_length": "\((.*?[0-9-] .*?[a-zA-Z])\)" # x period
+            "hours": "\((.*?[0-9A-Za-z\/]-.*?[0-9A-Z\/])\)",  # h(x-y)
+            "time_length": "\((.*?[0-9-] .*?[a-zA-Z])\)"  # x period
         }
-        ret = {} # [units, credits, h(x-y), x period]
+        ret = {}  # [units, credits, h(x-y), x period]
 
         for (key, reg) in hours_reg.items():
 
             if not re.search(reg, hours_text):
                 ret[key] = None
                 continue
-            
-            hours_reg_res = re.findall(reg, hours_text) # Find text
-            hours_text = re.sub(reg, "", hours_text) # Remove matched text
+
+            hours_reg_res = re.findall(reg, hours_text)  # Find text
+            hours_text = re.sub(reg, "", hours_text)  # Remove matched text
 
             if key == "units" or key == "credits":
                 ret[key] = float(hours_reg_res[0])
