@@ -57,14 +57,16 @@ class CourseCalendar(CrawlSpider):
             cid = self.cid(course_dom=course_dom)
             title, number, topic = self.key(course_dom=course_dom)
             description, sub_topics = self.description(course_dom=course_dom)
-            prereq, coreq, antireq, notes, aka = self.requirements(
-                course_dom=course_dom)
+            prereq, coreq, antireq, notes, aka = self.requirements(course_dom=course_dom)
             repeat, nogpa = self.repeat(course_dom=course_dom)
-            units, credits, hours, time_length = self.hours(
-                course_dom=course_dom)
+            units, credits, hours, time_length = self.hours(course_dom=course_dom)
 
-            course_obj = CourseInfo(cid=cid, code=code, number=number, topic=topic, description=description, sub_topics=sub_topics, units=units, credits=credits,
-                                    hours=hours, time_length=time_length, prereq=prereq, coreq=coreq, antireq=antireq, notes=notes, aka=aka, repeat=repeat, nogpa=nogpa)
+            course_obj = CourseInfo(cid=cid, code=code, number=number, topic=topic,
+                                    description=description, sub_topics=sub_topics,
+                                    units=units, credits=credits, hours=hours,
+                                    time_length=time_length, prereq=prereq, coreq=coreq,
+                                    antireq=antireq, notes=notes, aka=aka,
+                                    repeat=repeat, nogpa=nogpa)
             yield course_obj
 
         self.logger.warning(response.url)
@@ -124,8 +126,7 @@ class CourseCalendar(CrawlSpider):
         return (description, sub_topics)
 
     def requirements(self, course_dom):
-        ret = {"prereq": None, "coreq": None,
-               "antireq": None, "notes": None, "aka": None}
+        ret = {"prereq": None, "coreq": None, "antireq": None, "notes": None, "aka": None}
 
         for each in ret.keys():
             req_dom = course_dom.select_one(".course-" + each)
@@ -155,10 +156,10 @@ class CourseCalendar(CrawlSpider):
         hours_text = course_dom.select_one(
             ".course-hours").get_text(strip=True)
         hours_reg = {
-            "units": "([0-9.]*?) units",  # units
-            "credits": "([0-9.]*?) credit[s]?",  # credits
-            "hours": "\((.*?[0-9A-Za-z\/]-.*?[0-9A-Z\/])\)",  # h(x-y)
-            "time_length": "\((.*?[0-9-] .*?[a-zA-Z])\)"  # x period
+            "units": r"([0-9.]*?) units",  # units
+            "credits": r"([0-9.]*?) credit[s]?",  # credits
+            "hours": r"\((.*?[0-9A-Za-z\/]-.*?[0-9A-Z\/])\)",  # h(x-y)
+            "time_length": r"\((.*?[0-9-] .*?[a-zA-Z])\)"  # x period
         }
         ret = {}  # [units, credits, h(x-y), x period]
 
