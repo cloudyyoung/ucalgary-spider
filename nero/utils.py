@@ -51,14 +51,14 @@ class Utils:
         return Utils.current_academic_year() - 2000
 
     @staticmethod
-    def abbr_to_term(text):
-        if(text == "f"):
+    def abbr_to_term(abbr):
+        if(abbr == "f"):
             return "Fall"
-        elif(text == "w"):
+        elif(abbr == "w"):
             return "Winter"
-        elif(text == "p"):
+        elif(abbr == "p"):
             return "Spring"
-        elif(text == "s"):
+        elif(abbr == "s"):
             return "Summer"
         else:
             return None
