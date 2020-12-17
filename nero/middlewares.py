@@ -5,6 +5,7 @@
 
 from scrapy import signals
 import os
+import re
 
 # useful for handling different item types with a single interface
 from itemadapter import is_item, ItemAdapter
@@ -89,11 +90,16 @@ class NeroDownloaderMiddleware:
         # - return a Request object
         # - or raise IgnoreRequest
 
-        ## Store webpage to local
+        # Store webpage to local
         page = response.url.split("/")
         file = page[-1]
-        if not file.endswith(".html"):
-            file += ".html"
+
+        # Handle file name
+        if file == "":
+            file = "index.html"
+        if file.find("?") != -1:
+            file = re.sub(r"(.*)(\?).*", r"\1", file)
+
         folder = "res/" + "/".join(page[2:-1])
 
         if not os.path.exists(folder):
