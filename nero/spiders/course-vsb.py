@@ -30,24 +30,6 @@ class CourseVsbSpider(scrapy.Spider):
         body = xmltodict.parse(body)
         print(body['addcourse']['classdata']['course']['uselection'])
 
-        blocks = {}
-
-        uselectionGroup = body['addcourse']['classdata']['course']['uselection']
-        if type(uselectionGroup) is not list:
-            uselectionGroup = [uselectionGroup]
-
-        for uselection in uselectionGroup:
-            selectionGroup = uselection['selection']
-
-            if type(selectionGroup) is not list:
-                selectionGroup = [selectionGroup]
-
-            for selection in selectionGroup:
-                blockGroup = selection['block']
-                
-                for block in blockGroup:
-                    key = block['@cartid']
-
 
 
         # print(body['addcourse']['classdata']['course']['uselection']['selection'][0]['block'][0]['@key'])

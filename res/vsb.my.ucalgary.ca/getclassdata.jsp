@@ -9,7 +9,7 @@
 <errors>
 
 </errors>
-<classdata date="1608335693240">
+<classdata date="1608351810303">
  <campus n="UCALGiOFF" v="Off-Campus"/>
  <term n="2211" v="Winter 2021"/>
  <session n="1" v="Regular Academic"/>
