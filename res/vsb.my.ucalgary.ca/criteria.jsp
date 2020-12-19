@@ -76,7 +76,7 @@ It is offered by VSB Software Inc and Digarc Inc. Visit: www.vsbuilder.com or ww
 		<!-- Custom client JS -->
 		<script type="text/javascript" charset="UTF-8" src="cust/ucg/js_ucg.js?v=7515"></script>
 
-		<script type="text/javascript" charset="UTF-8" src="globalsettings.jsp?_=1608196535246"></script>
+		<script type="text/javascript" charset="UTF-8" src="globalsettings.jsp?_=1608335687092"></script>
 
 		<script type="text/javascript" charset="UTF-8" src="js/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" charset="UTF-8" src="mdl/material.js"></script>
@@ -113,7 +113,7 @@ It is offered by VSB Software Inc and Digarc Inc. Visit: www.vsbuilder.com or ww
 		})();
 		
 		</script>
-		<script type="text/javascript" src="js/i8n.jsp?v=92000008&amp;lang=en"></script>
+		<script type="text/javascript" src="js/i8n.jsp?v=95000004&amp;lang=en"></script>
 		<script src="js/popup.js"></script>
 		<script type="text/javascript" src="js/recman.js?v=7515"></script>
 		<script type="text/javascript" src="js/slider.js?v=7515"></script>
@@ -129,7 +129,7 @@ It is offered by VSB Software Inc and Digarc Inc. Visit: www.vsbuilder.com or ww
         <!-- This makes the Date Slider moveable using touch: -->
         <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js?v=7515"></script>
         <script type="text/javascript" src="js/accessibility.js?v=7515"></script>
-        <script type="text/javascript" src="api/v2/multiselectdata.js?v=92000008"></script>
+        <script type="text/javascript" src="api/v2/multiselectdata.js?v=95000004"></script>
         <script type="text/javascript" src="js/thumbnail.js?v=7515"></script>
         <!-- Support for Push Course IDs from PeopleSoft -->
         <!-- <script type="text/javascript" src="js/peoplesoftpushedcourses.js?v=7515"></script> -->
@@ -1996,7 +1996,7 @@ Favourites
 
 </div>
 
-<!-- Active sessions: 1176 -->
+<!-- Active sessions: 1322 -->
 </div>
 
 <div id="noticePopup" class="popup-wrapper center hide">
