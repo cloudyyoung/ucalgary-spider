@@ -38,8 +38,10 @@ class Utils:
     @staticmethod
     def current_academic_year():
         now = datetime.datetime.now()
-        fall_start = datetime.datetime(month=8, day=24)
-        year_end = datetime.datetime(month=12, day=31)
+        
+        year = now.year
+        fall_start = datetime.datetime(year=year, month=8, day=24)
+        year_end = datetime.datetime(year=year, month=12, day=31)
 
         if now >= fall_start and now <= year_end:
             return now.year

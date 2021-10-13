@@ -18,6 +18,10 @@ class FacultyContact(CrawlSpider):
         'http://contacts.ucalgary.ca/directory/departments'
     ]
 
+    def start_requests(self):
+        for url in self.start_urls:
+            yield scrapy.Request(url=url, callback=self.parse)
+
     def parse(self, response):
         body = htmlmin.minify(str(response.body, encoding="utf-8"), remove_empty_space=True, remove_all_empty_space=True)
         body = unidecode(body)

@@ -16,6 +16,10 @@ class CourseCalendar(CrawlSpider):
         'https://www.ucalgary.ca/pubs/calendar/current/course-by-faculty.html'
     ]
 
+    def start_requests(self):
+        for url in self.start_urls:
+            yield scrapy.Request(url=url, callback=self.parse)
+
     def parse(self, response):
         body = str(response.body, encoding="utf-8")
         body = unidecode(body)
