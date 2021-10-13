@@ -38,7 +38,7 @@ class FacultyContact(CrawlSpider):
             directory = self.faculty_directory(detail_dom)
 
             if "faculties" in response.url:  # This is a Faculty
-                item_id = Utils.title_to_id(title)
+                item_id = Utils.title_to_id(title, length=4)
                 faculty_obj = Faculty(fid=item_id, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website, aka=aka)
                 yield faculty_obj
             elif code != None and parent_title != None and parent_type != None:
