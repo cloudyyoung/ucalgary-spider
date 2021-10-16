@@ -50,6 +50,7 @@ class CourseRequisitesPipeline:
         courses = []
         last_code = ""
 
+        # Split `from` text into several pieces of courses
         _courses = re.split(',|or', courses_text)
         for _course in _courses:
             _course = _course.strip()
@@ -87,9 +88,9 @@ class CourseRequisitesPipeline:
             print("UNHANDLED PATTERN - CONSENT OF: " + string)
             return string
 
-    def prereq_or(self, string):
-        m = re.match(self.regex_or_full_incomplete, string)
-        n = re.match(self.regex_or_full_full, string)
+    def prereq_or_courses(self, string):
+        m = re.match(self.regex_or_courses_full_incomplete, string)
+        n = re.match(self.regex_or_courses_full_full, string)
 
         if(m):  # full_incomplete: ANTH 391 or 490
             code1, number1, code2, number2 = m.group(1), m.group(2), m.group(1), m.group(3)
@@ -110,19 +111,19 @@ class CourseRequisitesPipeline:
     regex_incomplete_course = r"([0-9]{3})"
     regex_complete_course = r"([A-Z]{3,4}) ([0-9]{3})"
     regex_x_units_from = r"([0-9]) units from (.*)"
-    regex_consent_of_the = r"Consent of the ([A-z ,]*)$"
-    regex_or_full_incomplete = r"([A-Z]{3,4}) ([0-9]{3}) or ([0-9]{3})"
-    regex_or_full_full = r"([A-Z]{3,4}) ([0-9]{3}) or ([A-Z]{3,4}) ([0-9]{3})"
+    regex_consent_of_the = r"[Cc]onsent of the ([A-z ,]*)$"
+    regex_or_courses_full_incomplete = r"([A-Z]{3,4}) ([0-9]{3}) or ([0-9]{3})"
+    regex_or_courses_full_full = r"([A-Z]{3,4}) ([0-9]{3}) or ([A-Z]{3,4}) ([0-9]{3})"
     regex_single_course = r"([A-Z]{3,4}) ([0-9]{3})$"
 
     # All regex and its matching handle function
     # Tests on regex101.com
     patterns = {
+        regex_single_course: prereq_single_course,
         regex_x_units_from: prereq_x_units_from,
         regex_consent_of_the: prereq_consent_of_the,
-        regex_or_full_incomplete: prereq_or,
-        regex_or_full_full: prereq_or,
-        regex_single_course: prereq_single_course,
+        regex_or_courses_full_incomplete: prereq_or_courses,
+        regex_or_courses_full_full: prereq_or_courses,
     }
 
     def open_spider(self, spider):
@@ -170,6 +171,7 @@ class CourseRequisitesPipeline:
         # For each and condition
         for _and in _ands:
             _and = str(_and).strip()
+            handled = False
 
             # Match for a specific pattern for this and condition
             for regex in self.patterns.keys():
@@ -177,7 +179,12 @@ class CourseRequisitesPipeline:
                 # If found, pass in the and conditition to associated regex function
                 if (re.search(regex, _and)):
                     prereq.append(self.patterns[regex](self, _and.strip()))
+                    handled = True
                     break
+
+            # Unhandled, add raw text
+            if(not handled):
+                prereq.append(_and)
 
         print(prereq_text, "->", prereq)
         return prereq
