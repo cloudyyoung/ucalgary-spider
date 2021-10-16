@@ -6,7 +6,7 @@ from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from bs4 import BeautifulSoup
 from nero.utils import Utils
-from nero.items import CourseTitle, CourseInfo
+from nero.items import CourseRequisite, CourseTitle, CourseInfo
 
 
 class CourseCalendar(CrawlSpider):
@@ -15,11 +15,6 @@ class CourseCalendar(CrawlSpider):
     start_urls = [
         'https://www.ucalgary.ca/pubs/calendar/current/course-by-faculty.html'
     ]
-    custom_settings = {
-        'ITEM_PIPELINES': {
-            'nero.pipelines.CourseRequisitesPipeline': 550
-        }
-    }
 
     def start_requests(self):
         for url in self.start_urls:
@@ -64,7 +59,7 @@ class CourseCalendar(CrawlSpider):
         for course_dom in courses_dom:
 
             cid = self.cid(course_dom=course_dom)
-            title, number, topic = self.key(course_dom=course_dom)
+            full_name, number, topic = self.key(course_dom=course_dom)
             description, sub_topics = self.description(course_dom=course_dom)
             prereq, coreq, antireq, notes, aka = self.requirements(course_dom=course_dom)
             repeat, nogpa = self.repeat(course_dom=course_dom)
@@ -76,7 +71,11 @@ class CourseCalendar(CrawlSpider):
                                     time_length=time_length, prereq=prereq, coreq=coreq,
                                     antireq=antireq, notes=notes, aka=aka,
                                     repeat=repeat, nogpa=nogpa)
+
+            course_requisite_obj = CourseRequisite(cid=cid, code=code, number=number, prereq=prereq)
+
             yield course_obj
+            yield course_requisite_obj
 
         self.logger.warning(response.url)
 
