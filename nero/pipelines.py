@@ -44,14 +44,15 @@ class CourseRequisitesPipeline:
 
     def prereq_x_units_from(self, string):
         m = re.match(self.regex_x_units_from, string)
-        units_text = m.group(0)
-        courses_text = m.group(1)
+        units_text = m.group(1)
+        courses_text = m.group(2)
 
         courses = []
         last_code = ""
 
         _courses = re.split(',|or', courses_text)
         for _course in _courses:
+            _course = _course.strip()
             x = re.match(self.regex_complete_course, _course)
             y = re.match(self.regex_incomplete_course, _course)
 
@@ -69,17 +70,13 @@ class CourseRequisitesPipeline:
             code, key, course_title = code.strip(), key.strip(), course_title.strip()
 
             course_title = code + " " + key
-            if(course_title == _courses):
-                courses.append(course_title)
-            else:
-                courses.append(_course)  # Has to deal with this new pattern
-                print("UNHANDLED PATTERN: " + _course)
+            courses.append(course_title)
 
         if(courses == []):
-            print("UNHANDLED PATTERN: " + string)
+            print("UNHANDLED PATTERN - X UNITS FROM []: " + string)
             return string
 
-        return {"units": int(units_text), "courses": courses}
+        return {"units": int(units_text), "from": courses}
 
     def prereq_consent_of_the(self, string):
         m = re.match(self.regex_consent_of_the, string)
@@ -87,29 +84,24 @@ class CourseRequisitesPipeline:
         if(m):
             return {"consent": m.group(1).strip()}
         else:
-            print("UNHANDLED PATTERN: " + string)
+            print("UNHANDLED PATTERN - CONSENT OF: " + string)
             return string
 
     def prereq_or(self, string):
-        m = re.match(self.regex_or, string)
-        if(m):
-            code1, number1, code2, number2 = m.group(1), m.group(2), None, None
+        m = re.match(self.regex_or_full_incomplete, string)
+        n = re.match(self.regex_or_full_full, string)
 
-            code_or_number = m.group(3)
-            if(re.match(self.regex_incomplete_course, code_or_number)):
-                # This is a number
-                code2 = code1
-                number2 = m.group(3)
-            else:
-                code2 = m.group(3)
-                number2 = m.group(4)
-
-            # Trim spaces
-            code1, number1, code2, number2 = code1.strip(), number1.strip(), code2.strip(), number2.strip()
-            return [code1 + " " + number1, code2 + " " + number2]
+        if(m):  # full_incomplete: ANTH 391 or 490
+            code1, number1, code2, number2 = m.group(1), m.group(2), m.group(1), m.group(3)
+        elif(n):  # full_full: ARCH 201 or ARST 201
+            code1, number1, code2, number2 = n.group(1), n.group(2), n.group(3), n.group(4)
         else:
-            print("UNHANDLED PATTERN: " + string)
+            print("UNHANDLED PATTERN - OR: " + string)
             return string
+
+        # Trim spaces
+        code1, number1, code2, number2 = code1.strip(), number1.strip(), code2.strip(), number2.strip()
+        return [code1 + " " + number1, code2 + " " + number2]
 
     # CourseTitle, for replacing full course names with short course codes
     course_titles = {}
@@ -118,8 +110,9 @@ class CourseRequisitesPipeline:
     regex_incomplete_course = r"([0-9]{3})"
     regex_complete_course = r"([A-Z]{3,4}) ([0-9]{3})"
     regex_x_units_from = r"([0-9]) units from (.*)"
-    regex_consent_of_the = r"Consent of the ([A-z ]*)"
-    regex_or = r"([A-Z]{3,4}) ([0-9]{3}) or ([A-Z]{3,4})? ?([0-9]{3})"
+    regex_consent_of_the = r"Consent of the ([A-z ,]*)$"
+    regex_or_full_incomplete = r"([A-Z]{3,4}) ([0-9]{3}) or ([0-9]{3})"
+    regex_or_full_full = r"([A-Z]{3,4}) ([0-9]{3}) or ([A-Z]{3,4}) ([0-9]{3})"
     regex_single_course = r"([A-Z]{3,4}) ([0-9]{3})$"
 
     # All regex and its matching handle function
@@ -127,7 +120,8 @@ class CourseRequisitesPipeline:
     patterns = {
         regex_x_units_from: prereq_x_units_from,
         regex_consent_of_the: prereq_consent_of_the,
-        regex_or: prereq_or,
+        regex_or_full_incomplete: prereq_or,
+        regex_or_full_full: prereq_or,
         regex_single_course: prereq_single_course,
     }
 
@@ -164,9 +158,9 @@ class CourseRequisitesPipeline:
         # Replace all full names with short codes, from the names longest to shortest
         for full_name in sorted(self.course_titles.keys(), key=len, reverse=True):
             code = self.course_titles[full_name]
-            prereq_text = re.sub(full_name, code, prereq_text)
+            prereq_text = re.sub(full_name + r" ([0-9]{3})", code + r" \1", prereq_text)
 
-        prereq = [prereq_text]
+        prereq = []
 
         # Split requisites into several and conditions
         _ands = prereq_text.split(";")
@@ -182,8 +176,8 @@ class CourseRequisitesPipeline:
 
                 # If found, pass in the and conditition to associated regex function
                 if (re.search(regex, _and)):
-                    prereq.append(self.patterns[regex](self, _and))
+                    prereq.append(self.patterns[regex](self, _and.strip()))
                     break
 
-        # print(_prereq, prereq)
+        print(prereq_text, "->", prereq)
         return prereq
