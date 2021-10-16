@@ -7,10 +7,13 @@ import scrapy
 
 
 class CourseTitle(scrapy.Item):
-    # define the fields for your item here like:
     title = scrapy.Field()
     code = scrapy.Field()
     faculty = scrapy.Field()
+
+
+class CourseTitleYear(CourseTitle):
+    year = scrapy.Field()
 
 
 class CourseInfo(scrapy.Item):
