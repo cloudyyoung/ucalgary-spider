@@ -17,7 +17,7 @@ class CourseCalendar(CrawlSpider):
         base_url = "https://www.ucalgary.ca/pubs/calendar/archives/%s/course-by-faculty.html"
 
         # Past x years
-        for t in range(10):
+        for t in range(8):
             year = current_year - t
 
             if(t == 0):
