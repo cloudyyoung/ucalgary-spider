@@ -42,6 +42,17 @@ class CourseInfo(scrapy.Item):
     nogpa = scrapy.Field(serializer=bool)
 
 
+class CourseRequisite(scrapy.Item):
+    cid = scrapy.Field(serializer=int)
+
+    code = scrapy.Field()
+    number = scrapy.Field()
+
+    prereq = scrapy.Field()
+    coreq = scrapy.Field()
+    antireq = scrapy.Field()
+
+
 class Faculty(scrapy.Item):
     fid = scrapy.Field(serializer=int)
     code = scrapy.Field()
