@@ -15,6 +15,11 @@ class CourseCalendar(CrawlSpider):
     start_urls = [
         'https://www.ucalgary.ca/pubs/calendar/current/course-by-faculty.html'
     ]
+    custom_settings = {
+        'ITEM_PIPELINES': {
+            'nero.pipelines.CourseRequisitesPipeline': 550
+        }
+    }
 
     def start_requests(self):
         for url in self.start_urls:
