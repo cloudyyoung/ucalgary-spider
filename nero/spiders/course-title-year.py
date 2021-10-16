@@ -9,7 +9,7 @@ from nero.items import CourseTitleYear
 
 
 class CourseCalendar(CrawlSpider):
-    name = 'course-title-years'
+    name = 'course-title-year'
     allowed_domains = ['www.ucalgary.ca']
 
     def start_requests(self):
@@ -17,7 +17,7 @@ class CourseCalendar(CrawlSpider):
         base_url = "https://www.ucalgary.ca/pubs/calendar/archives/%s/course-by-faculty.html"
 
         # Past x years
-        for t in range(5):
+        for t in range(10):
             year = current_year - t
 
             if(t == 0):
