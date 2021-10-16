@@ -100,7 +100,7 @@ class NeroDownloaderMiddleware:
         if file.find("?") != -1:
             file = re.sub(r"(.*)(\?).*", r"\1", file)
 
-        folder = "res/" + "/".join(page[2:-1])
+        folder = ".res/" + "/".join(page[2:-1])
 
         if not os.path.exists(folder):
             os.makedirs(folder)
