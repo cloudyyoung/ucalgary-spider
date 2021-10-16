@@ -42,7 +42,8 @@ class CourseRequisitesPipeline:
     # CourseTitle, for replacing full course names with short course codes
     course_titles = {}
 
-    def __init__(self, spider):
+    def __init__(self):
+        # Read all the course titles from past years
         title_year_file = open("data/course-title-year.jsonlines", "r")
         for line in title_year_file:
             course_title = json.loads(line)
@@ -50,7 +51,6 @@ class CourseRequisitesPipeline:
             code = course_title["code"]
             self.course_titles[title] = code
         title_year_file.close()
-        print(self.course_titles)
 
     def prereq_single_course(self, string):
         return string
@@ -125,12 +125,12 @@ class CourseRequisitesPipeline:
             return string
 
     # Regex string
-    regex_incomplete_course = "([0-9]{3})"
-    regex_complete_course = "([A-z ]*) ([0-9]{3})"
-    regex_x_units_from = "([0-9]) units from (.*)"
-    regex_consent_of_the = "Consent of the ([A-z ]*)"
-    regex_or = "([A-z ]*) ([0-9]{3}) or ([A-z ]*)?([0-9]{3})"
-    regex_single_course = "([A-z ]*) ([0-9]{3})$"
+    regex_incomplete_course = r"([0-9]{3})"
+    regex_complete_course = r"([A-Z]{3,4}) ([0-9]{3})"
+    regex_x_units_from = r"([0-9]) units from (.*)"
+    regex_consent_of_the = r"Consent of the ([A-z ]*)"
+    regex_or = r"([A-Z]{3,4}) ([0-9]{3}) or ([A-Z]{3,4})? ?([0-9]{3})"
+    regex_single_course = r"([A-Z]{3,4}) ([0-9]{3})$"
 
     # All regex and its matching handle function
     # Tests on regex101.com
@@ -156,6 +156,7 @@ class CourseRequisitesPipeline:
 
             line = json.dumps(ItemAdapter(course_requisite_obj).asdict()) + "\n"
             self.file.write(line)
+            self.file.flush()
 
         return item
 
@@ -171,32 +172,29 @@ class CourseRequisitesPipeline:
         # Trim trailing period
         prereq_text = prereq_text.rstrip('.')
 
-        # Replace full course names with short course codes
-        full_names = re.findall("([A-Z][A-z ]*) ([0-9]{3})", prereq_text)
-        for (full_name, _) in full_names:
-            full_name = full_name.strip()
-            if full_name in self.course_titles:
-                prereq_text = re.sub(full_name, self.course_titles[full_name], prereq_text)
-            else:
-                print("Titles error, does not exist: " + full_name)
+        # Replace all full names with short codes, from the names longest to shortest
+        for full_name in sorted(self.course_titles.keys(), key=len, reverse=True):
+            code = self.course_titles[full_name]
+            prereq_text = re.sub(full_name, code, prereq_text)
 
         prereq = [prereq_text]
 
-        # _ands = _prereq.split(";")
-        # if(len(_ands) == 1):  # If the requisite is not combined `x;y;z` but `x and y`.
-        #     _ands = _prereq.split("and")
+        # Split requisites into several and conditions
+        _ands = prereq_text.split(";")
+        if(len(_ands) == 1):  # If the requisite is not combined `x;y;z` but `x and y`.
+            _ands = prereq_text.split("and")
 
-        # # For each and condition
-        # for _and in _ands:
-        #     _and = str(_and).strip()
+        # For each and condition
+        for _and in _ands:
+            _and = str(_and).strip()
 
-        #     # Match for a specific pattern for this and condition
-        #     for regex in self.patterns.keys():
+            # Match for a specific pattern for this and condition
+            for regex in self.patterns.keys():
 
-        #         # If found, pass in the and conditition to associated regex function
-        #         if (re.search(regex, _and)):
-        #             prereq.append(self.patterns[regex](self, _and))
-        #             break
+                # If found, pass in the and conditition to associated regex function
+                if (re.search(regex, _and)):
+                    prereq.append(self.patterns[regex](self, _and))
+                    break
 
         # print(_prereq, prereq)
         return prereq

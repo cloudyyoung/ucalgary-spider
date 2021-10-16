@@ -64,7 +64,6 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'nero.pipelines.FileStorePipeline': 543,
-    'nero.pipelines.CourseRequisitesPipeline': 544,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
