@@ -770,3 +770,604 @@
 {"title": "Internship", "code": "INTE", "faculty": 1316, "year": 2017}
 {"title": "University", "code": "UNIV", "faculty": 1316, "year": 2017}
 {"title": "University Exchange", "code": "UNEX", "faculty": 1316, "year": 2017}
+{"title": "African Studies", "code": "AFST", "faculty": 9438, "year": 2016}
+{"title": "American Sign Language", "code": "ASL", "faculty": 9438, "year": 2016}
+{"title": "Anthropology", "code": "ANTH", "faculty": 9438, "year": 2016}
+{"title": "Arabic Language and Muslim Cultures", "code": "ALMC", "faculty": 9438, "year": 2016}
+{"title": "Archaeology", "code": "ARKY", "faculty": 9438, "year": 2016}
+{"title": "Art", "code": "ART", "faculty": 9438, "year": 2016}
+{"title": "Art History", "code": "ARHI", "faculty": 9438, "year": 2016}
+{"title": "Arts", "code": "ARTS", "faculty": 9438, "year": 2016}
+{"title": "Arts and Science Honours", "code": "ASHA", "faculty": 9438, "year": 2016}
+{"title": "Canadian Studies", "code": "CNST", "faculty": 9438, "year": 2016}
+{"title": "Central and East European Studies", "code": "CEST", "faculty": 9438, "year": 2016}
+{"title": "Chinese", "code": "CHIN", "faculty": 9438, "year": 2016}
+{"title": "Communication and Culture", "code": "CMCL", "faculty": 9438, "year": 2016}
+{"title": "Communication and Media Studies", "code": "COMS", "faculty": 9438, "year": 2016}
+{"title": "Comparative Literature", "code": "COLT", "faculty": 9438, "year": 2016}
+{"title": "Dance", "code": "DNCE", "faculty": 9438, "year": 2016}
+{"title": "Development Studies", "code": "DEST", "faculty": 9438, "year": 2016}
+{"title": "Drama", "code": "DRAM", "faculty": 9438, "year": 2016}
+{"title": "Earth Science", "code": "EASC", "faculty": 9438, "year": 2016}
+{"title": "East Asian Language Studies", "code": "EALS", "faculty": 9438, "year": 2016}
+{"title": "East Asian Studies", "code": "EAST", "faculty": 9438, "year": 2016}
+{"title": "Economics", "code": "ECON", "faculty": 9438, "year": 2016}
+{"title": "English", "code": "ENGL", "faculty": 9438, "year": 2016}
+{"title": "Film", "code": "FILM", "faculty": 9438, "year": 2016}
+{"title": "Fine Arts", "code": "FINA", "faculty": 9438, "year": 2016}
+{"title": "French", "code": "FREN", "faculty": 9438, "year": 2016}
+{"title": "Geography", "code": "GEOG", "faculty": 9438, "year": 2016}
+{"title": "German", "code": "GERM", "faculty": 9438, "year": 2016}
+{"title": "Greek", "code": "GREK", "faculty": 9438, "year": 2016}
+{"title": "Greek and Roman Studies", "code": "GRST", "faculty": 9438, "year": 2016}
+{"title": "History", "code": "HTST", "faculty": 9438, "year": 2016}
+{"title": "Humanities", "code": "HUMN", "faculty": 9438, "year": 2016}
+{"title": "Indigenous Languages", "code": "INDL", "faculty": 9438, "year": 2016}
+{"title": "International Relations", "code": "INTR", "faculty": 9438, "year": 2016}
+{"title": "Israel Studies", "code": "ISST", "faculty": 9438, "year": 2016}
+{"title": "Italian", "code": "ITAL", "faculty": 9438, "year": 2016}
+{"title": "Japanese", "code": "JPNS", "faculty": 9438, "year": 2016}
+{"title": "Latin", "code": "LATI", "faculty": 9438, "year": 2016}
+{"title": "Latin American Studies", "code": "LAST", "faculty": 9438, "year": 2016}
+{"title": "Law and Society", "code": "LWSO", "faculty": 9438, "year": 2016}
+{"title": "Linguistics", "code": "LING", "faculty": 9438, "year": 2016}
+{"title": "Museum and Heritage Studies", "code": "MHST", "faculty": 9438, "year": 2016}
+{"title": "Music", "code": "MUSI", "faculty": 9438, "year": 2016}
+{"title": "Music Education", "code": "MUED", "faculty": 9438, "year": 2016}
+{"title": "Music Performance", "code": "MUPF", "faculty": 9438, "year": 2016}
+{"title": "Philosophy", "code": "PHIL", "faculty": 9438, "year": 2016}
+{"title": "Political Science", "code": "POLI", "faculty": 9438, "year": 2016}
+{"title": "Psychology", "code": "PSYC", "faculty": 9438, "year": 2016}
+{"title": "Religious Studies", "code": "RELS", "faculty": 9438, "year": 2016}
+{"title": "Romance Studies", "code": "ROST", "faculty": 9438, "year": 2016}
+{"title": "Russian", "code": "RUSS", "faculty": 9438, "year": 2016}
+{"title": "School of Creative and Performing Arts", "code": "SCPA", "faculty": 9438, "year": 2016}
+{"title": "Science, Technology and Society", "code": "STAS", "faculty": 9438, "year": 2016}
+{"title": "Slavic", "code": "SLAV", "faculty": 9438, "year": 2016}
+{"title": "Sociology", "code": "SOCI", "faculty": 9438, "year": 2016}
+{"title": "South Asian Studies", "code": "SAST", "faculty": 9438, "year": 2016}
+{"title": "Spanish", "code": "SPAN", "faculty": 9438, "year": 2016}
+{"title": "Strategic Studies", "code": "STST", "faculty": 9438, "year": 2016}
+{"title": "Term Abroad Program", "code": "TAP", "faculty": 9438, "year": 2016}
+{"title": "Transportation Studies", "code": "TRAN", "faculty": 9438, "year": 2016}
+{"title": "Urban Studies", "code": "UBST", "faculty": 9438, "year": 2016}
+{"title": "Women's Studies", "code": "WMST", "faculty": 9438, "year": 2016}
+{"title": "Community Health Sciences", "code": "MDCH", "faculty": 1062, "year": 2016}
+{"title": "Health and Society", "code": "HSOC", "faculty": 1062, "year": 2016}
+{"title": "Medical Science", "code": "MDSC", "faculty": 1062, "year": 2016}
+{"title": "Medicine", "code": "MDCN", "faculty": 1062, "year": 2016}
+{"title": "Architectural Studies", "code": "ARST", "faculty": 1256, "year": 2016}
+{"title": "Environmental Design", "code": "EVDS", "faculty": 1256, "year": 2016}
+{"title": "Environmental Design Architecture", "code": "EVDA", "faculty": 1256, "year": 2016}
+{"title": "Environmental Design Landscape", "code": "EVDL", "faculty": 1256, "year": 2016}
+{"title": "Environmental Design Planning", "code": "EVDP", "faculty": 1256, "year": 2016}
+{"title": "Accounting", "code": "ACCT", "faculty": 2856, "year": 2016}
+{"title": "Business and Environment", "code": "BSEN", "faculty": 2856, "year": 2016}
+{"title": "Business Technology Management", "code": "BTMA", "faculty": 2856, "year": 2016}
+{"title": "Energy Management", "code": "ENMG", "faculty": 2856, "year": 2016}
+{"title": "Entrepreneurship and Innovation", "code": "ENTI", "faculty": 2856, "year": 2016}
+{"title": "Finance", "code": "FNCE", "faculty": 2856, "year": 2016}
+{"title": "Human Resources and Organizational Dynamics", "code": "HROD", "faculty": 2856, "year": 2016}
+{"title": "Management Studies", "code": "MGST", "faculty": 2856, "year": 2016}
+{"title": "Marketing", "code": "MKTG", "faculty": 2856, "year": 2016}
+{"title": "Operations Management", "code": "OPMA", "faculty": 2856, "year": 2016}
+{"title": "Petroleum Land Management", "code": "PLMA", "faculty": 2856, "year": 2016}
+{"title": "Risk Management and Insurance", "code": "RMIN", "faculty": 2856, "year": 2016}
+{"title": "Strategy and Global Management", "code": "SGMA", "faculty": 2856, "year": 2016}
+{"title": "Tourism Management", "code": "TOUR", "faculty": 2856, "year": 2016}
+{"title": "Athletic Therapy", "code": "ATTH", "faculty": 8459, "year": 2016}
+{"title": "Dance Education", "code": "DCED", "faculty": 8459, "year": 2016}
+{"title": "Kinesiology", "code": "KNES", "faculty": 8459, "year": 2016}
+{"title": "Physical Education", "code": "PHED", "faculty": 8459, "year": 2016}
+{"title": "Law", "code": "LAW", "faculty": 1719, "year": 2016}
+{"title": "Nursing", "code": "NURS", "faculty": 2567, "year": 2016}
+{"title": "Biomedical Engineering", "code": "BMEN", "faculty": 2273, "year": 2016}
+{"title": "Chemical Engineering", "code": "ENCH", "faculty": 2273, "year": 2016}
+{"title": "Civil Engineering", "code": "ENCI", "faculty": 2273, "year": 2016}
+{"title": "Computer Engineering", "code": "ENCM", "faculty": 2273, "year": 2016}
+{"title": "Electrical Engineering", "code": "ENEL", "faculty": 2273, "year": 2016}
+{"title": "Energy and Environment, Engineering", "code": "ENEE", "faculty": 2273, "year": 2016}
+{"title": "Energy Engineering", "code": "ENER", "faculty": 2273, "year": 2016}
+{"title": "Engineering", "code": "ENGG", "faculty": 2273, "year": 2016}
+{"title": "Environmental Engineering", "code": "ENEN", "faculty": 2273, "year": 2016}
+{"title": "Geomatics Engineering", "code": "ENGO", "faculty": 2273, "year": 2016}
+{"title": "Manufacturing Engineering", "code": "ENMF", "faculty": 2273, "year": 2016}
+{"title": "Mechanical Engineering", "code": "ENME", "faculty": 2273, "year": 2016}
+{"title": "Petroleum Engineering", "code": "ENPE", "faculty": 2273, "year": 2016}
+{"title": "Software Engineering for Engineers", "code": "ENSF", "faculty": 2273, "year": 2016}
+{"title": "Actuarial Science", "code": "ACSC", "faculty": 7144, "year": 2016}
+{"title": "Applied Mathematics", "code": "AMAT", "faculty": 7144, "year": 2016}
+{"title": "Astronomy", "code": "ASTR", "faculty": 7144, "year": 2016}
+{"title": "Astrophysics", "code": "ASPH", "faculty": 7144, "year": 2016}
+{"title": "Biochemistry", "code": "BCEM", "faculty": 7144, "year": 2016}
+{"title": "Biology", "code": "BIOL", "faculty": 7144, "year": 2016}
+{"title": "Cellular, Molecular and Microbial Biology", "code": "CMMB", "faculty": 7144, "year": 2016}
+{"title": "Chemistry", "code": "CHEM", "faculty": 7144, "year": 2016}
+{"title": "Computer Science", "code": "CPSC", "faculty": 7144, "year": 2016}
+{"title": "Ecology", "code": "ECOL", "faculty": 7144, "year": 2016}
+{"title": "Environmental Science", "code": "ENSC", "faculty": 7144, "year": 2016}
+{"title": "Geology", "code": "GLGY", "faculty": 7144, "year": 2016}
+{"title": "Geophysics", "code": "GOPH", "faculty": 7144, "year": 2016}
+{"title": "Marine Science", "code": "MRSC", "faculty": 7144, "year": 2016}
+{"title": "Mathematics", "code": "MATH", "faculty": 7144, "year": 2016}
+{"title": "Medical Physics", "code": "MDPH", "faculty": 7144, "year": 2016}
+{"title": "Nanoscience", "code": "NANS", "faculty": 7144, "year": 2016}
+{"title": "Neuroscience", "code": "NEUR", "faculty": 7144, "year": 2016}
+{"title": "Physics", "code": "PHYS", "faculty": 7144, "year": 2016}
+{"title": "Plant Biology", "code": "PLBI", "faculty": 7144, "year": 2016}
+{"title": "Pure Mathematics", "code": "PMAT", "faculty": 7144, "year": 2016}
+{"title": "Science", "code": "SCIE", "faculty": 7144, "year": 2016}
+{"title": "Space Physics", "code": "SPPH", "faculty": 7144, "year": 2016}
+{"title": "Statistics", "code": "STAT", "faculty": 7144, "year": 2016}
+{"title": "Zoology", "code": "ZOOL", "faculty": 7144, "year": 2016}
+{"title": "Social Work", "code": "SOWK", "faculty": 2994, "year": 2016}
+{"title": "Veterinary Medicine", "code": "VETM", "faculty": 2899, "year": 2016}
+{"title": "Education", "code": "EDUC", "faculty": 2957, "year": 2016}
+{"title": "Educational Psychology", "code": "EDPS", "faculty": 2957, "year": 2016}
+{"title": "Educational Research", "code": "EDER", "faculty": 2957, "year": 2016}
+{"title": "Community Rehabilitation (MD, SW)", "code": "CORE", "faculty": 1656, "year": 2016}
+{"title": "Indigenous Studies (AR, SW)", "code": "INDG", "faculty": 1656, "year": 2016}
+{"title": "Innovation (AR, EN, HA, SC)", "code": "INNO", "faculty": 1656, "year": 2016}
+{"title": "Interprofessional Health Education (KN, NU, SW)", "code": "IPHE", "faculty": 1656, "year": 2016}
+{"title": "Language (AR, ED)", "code": "LANG", "faculty": 1656, "year": 2016}
+{"title": "Software Engineering (EN, SC)", "code": "SENG", "faculty": 1656, "year": 2016}
+{"title": "Sustainable Energy Development (EN, EV, LA, HA)", "code": "SEDV", "faculty": 1656, "year": 2016}
+{"title": "Transportation Studies (AR, EN)", "code": "TRAN", "faculty": 1656, "year": 2016}
+{"title": "Academic Writing", "code": "ACWR", "faculty": 1316, "year": 2016}
+{"title": "Co-operative Education", "code": "COOP", "faculty": 1316, "year": 2016}
+{"title": "Energy and Environmental Systems", "code": "EESS", "faculty": 1316, "year": 2016}
+{"title": "International Foundations Program", "code": "IFPX", "faculty": 1316, "year": 2016}
+{"title": "International Foundations Program Engineering", "code": "IFPE", "faculty": 1316, "year": 2016}
+{"title": "Public Policy", "code": "PPOL", "faculty": 1316, "year": 2016}
+{"title": "Internship", "code": "INTE", "faculty": 1316, "year": 2016}
+{"title": "University", "code": "UNIV", "faculty": 1316, "year": 2016}
+{"title": "University Exchange", "code": "UNEX", "faculty": 1316, "year": 2016}
+{"title": "African Studies", "code": "AFST", "faculty": 9438, "year": 2015}
+{"title": "Anthropology", "code": "ANTH", "faculty": 9438, "year": 2015}
+{"title": "Arabic Language and Muslim Cultures", "code": "ALMC", "faculty": 9438, "year": 2015}
+{"title": "Archaeology", "code": "ARKY", "faculty": 9438, "year": 2015}
+{"title": "Art", "code": "ART", "faculty": 9438, "year": 2015}
+{"title": "Art History", "code": "ARHI", "faculty": 9438, "year": 2015}
+{"title": "Arts", "code": "ARTS", "faculty": 9438, "year": 2015}
+{"title": "Arts and Science Honours", "code": "ASHA", "faculty": 9438, "year": 2015}
+{"title": "Canadian Studies", "code": "CNST", "faculty": 9438, "year": 2015}
+{"title": "Central and East European Studies", "code": "CEST", "faculty": 9438, "year": 2015}
+{"title": "Chinese", "code": "CHIN", "faculty": 9438, "year": 2015}
+{"title": "Communication and Culture", "code": "CMCL", "faculty": 9438, "year": 2015}
+{"title": "Communications Studies", "code": "COMS", "faculty": 9438, "year": 2015}
+{"title": "Comparative Literature", "code": "COLT", "faculty": 9438, "year": 2015}
+{"title": "Dance", "code": "DNCE", "faculty": 9438, "year": 2015}
+{"title": "Development Studies", "code": "DEST", "faculty": 9438, "year": 2015}
+{"title": "Drama", "code": "DRAM", "faculty": 9438, "year": 2015}
+{"title": "Earth Science", "code": "EASC", "faculty": 9438, "year": 2015}
+{"title": "East Asian Language Studies", "code": "EALS", "faculty": 9438, "year": 2015}
+{"title": "East Asian Studies", "code": "EAST", "faculty": 9438, "year": 2015}
+{"title": "Economics", "code": "ECON", "faculty": 9438, "year": 2015}
+{"title": "English", "code": "ENGL", "faculty": 9438, "year": 2015}
+{"title": "Film", "code": "FILM", "faculty": 9438, "year": 2015}
+{"title": "Fine Arts", "code": "FINA", "faculty": 9438, "year": 2015}
+{"title": "French", "code": "FREN", "faculty": 9438, "year": 2015}
+{"title": "Geography", "code": "GEOG", "faculty": 9438, "year": 2015}
+{"title": "German", "code": "GERM", "faculty": 9438, "year": 2015}
+{"title": "Greek", "code": "GREK", "faculty": 9438, "year": 2015}
+{"title": "Greek and Roman Studies", "code": "GRST", "faculty": 9438, "year": 2015}
+{"title": "History", "code": "HTST", "faculty": 9438, "year": 2015}
+{"title": "Humanities", "code": "HUMN", "faculty": 9438, "year": 2015}
+{"title": "Indigenous Languages", "code": "INDL", "faculty": 9438, "year": 2015}
+{"title": "Interdisciplinary Studies", "code": "IDST", "faculty": 9438, "year": 2015}
+{"title": "International Relations", "code": "INTR", "faculty": 9438, "year": 2015}
+{"title": "Israel Studies", "code": "ISST", "faculty": 9438, "year": 2015}
+{"title": "Italian", "code": "ITAL", "faculty": 9438, "year": 2015}
+{"title": "Japanese", "code": "JPNS", "faculty": 9438, "year": 2015}
+{"title": "Latin", "code": "LATI", "faculty": 9438, "year": 2015}
+{"title": "Latin American Studies", "code": "LAST", "faculty": 9438, "year": 2015}
+{"title": "Law and Society", "code": "LWSO", "faculty": 9438, "year": 2015}
+{"title": "Linguistics", "code": "LING", "faculty": 9438, "year": 2015}
+{"title": "Museum and Heritage Studies", "code": "MHST", "faculty": 9438, "year": 2015}
+{"title": "Music", "code": "MUSI", "faculty": 9438, "year": 2015}
+{"title": "Music Education", "code": "MUED", "faculty": 9438, "year": 2015}
+{"title": "Music Performance", "code": "MUPF", "faculty": 9438, "year": 2015}
+{"title": "Philosophy", "code": "PHIL", "faculty": 9438, "year": 2015}
+{"title": "Political Science", "code": "POLI", "faculty": 9438, "year": 2015}
+{"title": "Psychology", "code": "PSYC", "faculty": 9438, "year": 2015}
+{"title": "Religious Studies", "code": "RELS", "faculty": 9438, "year": 2015}
+{"title": "Romance Studies", "code": "ROST", "faculty": 9438, "year": 2015}
+{"title": "Russian", "code": "RUSS", "faculty": 9438, "year": 2015}
+{"title": "Science, Technology and Society", "code": "STAS", "faculty": 9438, "year": 2015}
+{"title": "Slavic", "code": "SLAV", "faculty": 9438, "year": 2015}
+{"title": "Sociology", "code": "SOCI", "faculty": 9438, "year": 2015}
+{"title": "South Asian Studies", "code": "SAST", "faculty": 9438, "year": 2015}
+{"title": "Spanish", "code": "SPAN", "faculty": 9438, "year": 2015}
+{"title": "Strategic Studies", "code": "STST", "faculty": 9438, "year": 2015}
+{"title": "Term Abroad Program", "code": "TAP", "faculty": 9438, "year": 2015}
+{"title": "Transportation Studies", "code": "TRAN", "faculty": 9438, "year": 2015}
+{"title": "Urban Studies", "code": "UBST", "faculty": 9438, "year": 2015}
+{"title": "Women's Studies", "code": "WMST", "faculty": 9438, "year": 2015}
+{"title": "Community Health Sciences", "code": "MDCH", "faculty": 1062, "year": 2015}
+{"title": "Health and Society", "code": "HSOC", "faculty": 1062, "year": 2015}
+{"title": "Medical Science", "code": "MDSC", "faculty": 1062, "year": 2015}
+{"title": "Medicine", "code": "MDCN", "faculty": 1062, "year": 2015}
+{"title": "Architectural Studies", "code": "ARST", "faculty": 1256, "year": 2015}
+{"title": "Environmental Design", "code": "EVDS", "faculty": 1256, "year": 2015}
+{"title": "Environmental Design Architecture", "code": "EVDA", "faculty": 1256, "year": 2015}
+{"title": "Environmental Design Planning", "code": "EVDP", "faculty": 1256, "year": 2015}
+{"title": "Accounting", "code": "ACCT", "faculty": 2856, "year": 2015}
+{"title": "Business and Environment", "code": "BSEN", "faculty": 2856, "year": 2015}
+{"title": "Energy Management", "code": "ENMG", "faculty": 2856, "year": 2015}
+{"title": "Entrepreneurship and Innovation", "code": "ENTI", "faculty": 2856, "year": 2015}
+{"title": "Finance", "code": "FNCE", "faculty": 2856, "year": 2015}
+{"title": "Human Resources and Organizational Dynamics", "code": "HROD", "faculty": 2856, "year": 2015}
+{"title": "Management Information Systems", "code": "MGIS", "faculty": 2856, "year": 2015}
+{"title": "Management Studies", "code": "MGST", "faculty": 2856, "year": 2015}
+{"title": "Marketing", "code": "MKTG", "faculty": 2856, "year": 2015}
+{"title": "Operations Management", "code": "OPMA", "faculty": 2856, "year": 2015}
+{"title": "Petroleum Land Management", "code": "PLMA", "faculty": 2856, "year": 2015}
+{"title": "Risk Management and Insurance", "code": "RMIN", "faculty": 2856, "year": 2015}
+{"title": "Strategy and Global Management", "code": "SGMA", "faculty": 2856, "year": 2015}
+{"title": "Tourism Management", "code": "TOUR", "faculty": 2856, "year": 2015}
+{"title": "Athletic Therapy", "code": "ATTH", "faculty": 8459, "year": 2015}
+{"title": "Dance Education", "code": "DCED", "faculty": 8459, "year": 2015}
+{"title": "Kinesiology", "code": "KNES", "faculty": 8459, "year": 2015}
+{"title": "Physical Education", "code": "PHED", "faculty": 8459, "year": 2015}
+{"title": "Law", "code": "LAW", "faculty": 1719, "year": 2015}
+{"title": "Nursing", "code": "NURS", "faculty": 2567, "year": 2015}
+{"title": "Nursing Offsite", "code": "NUOS", "faculty": 2567, "year": 2015}
+{"title": "Biomedical Engineering", "code": "BMEN", "faculty": 2273, "year": 2015}
+{"title": "Chemical Engineering", "code": "ENCH", "faculty": 2273, "year": 2015}
+{"title": "Civil Engineering", "code": "ENCI", "faculty": 2273, "year": 2015}
+{"title": "Computer Engineering", "code": "ENCM", "faculty": 2273, "year": 2015}
+{"title": "Electrical Engineering", "code": "ENEL", "faculty": 2273, "year": 2015}
+{"title": "Energy and Environment, Engineering", "code": "ENEE", "faculty": 2273, "year": 2015}
+{"title": "Energy Engineering", "code": "ENER", "faculty": 2273, "year": 2015}
+{"title": "Engineering", "code": "ENGG", "faculty": 2273, "year": 2015}
+{"title": "Environmental Engineering", "code": "ENEN", "faculty": 2273, "year": 2015}
+{"title": "Geomatics Engineering", "code": "ENGO", "faculty": 2273, "year": 2015}
+{"title": "Manufacturing Engineering", "code": "ENMF", "faculty": 2273, "year": 2015}
+{"title": "Mechanical Engineering", "code": "ENME", "faculty": 2273, "year": 2015}
+{"title": "Petroleum Engineering", "code": "ENPE", "faculty": 2273, "year": 2015}
+{"title": "Software Engineering for Engineers", "code": "ENSF", "faculty": 2273, "year": 2015}
+{"title": "Actuarial Science", "code": "ACSC", "faculty": 7144, "year": 2015}
+{"title": "Applied Mathematics", "code": "AMAT", "faculty": 7144, "year": 2015}
+{"title": "Astronomy", "code": "ASTR", "faculty": 7144, "year": 2015}
+{"title": "Astrophysics", "code": "ASPH", "faculty": 7144, "year": 2015}
+{"title": "Biochemistry", "code": "BCEM", "faculty": 7144, "year": 2015}
+{"title": "Biology", "code": "BIOL", "faculty": 7144, "year": 2015}
+{"title": "Cellular, Molecular and Microbial Biology", "code": "CMMB", "faculty": 7144, "year": 2015}
+{"title": "Chemistry", "code": "CHEM", "faculty": 7144, "year": 2015}
+{"title": "Computer Science", "code": "CPSC", "faculty": 7144, "year": 2015}
+{"title": "Ecology", "code": "ECOL", "faculty": 7144, "year": 2015}
+{"title": "Environmental Science", "code": "ENSC", "faculty": 7144, "year": 2015}
+{"title": "Geology", "code": "GLGY", "faculty": 7144, "year": 2015}
+{"title": "Geophysics", "code": "GOPH", "faculty": 7144, "year": 2015}
+{"title": "Marine Science", "code": "MRSC", "faculty": 7144, "year": 2015}
+{"title": "Mathematics", "code": "MATH", "faculty": 7144, "year": 2015}
+{"title": "Medical Physics", "code": "MDPH", "faculty": 7144, "year": 2015}
+{"title": "Nanoscience", "code": "NANS", "faculty": 7144, "year": 2015}
+{"title": "Neuroscience", "code": "NEUR", "faculty": 7144, "year": 2015}
+{"title": "Physics", "code": "PHYS", "faculty": 7144, "year": 2015}
+{"title": "Plant Biology", "code": "PLBI", "faculty": 7144, "year": 2015}
+{"title": "Pure Mathematics", "code": "PMAT", "faculty": 7144, "year": 2015}
+{"title": "Science", "code": "SCIE", "faculty": 7144, "year": 2015}
+{"title": "Space Physics", "code": "SPPH", "faculty": 7144, "year": 2015}
+{"title": "Statistics", "code": "STAT", "faculty": 7144, "year": 2015}
+{"title": "Zoology", "code": "ZOOL", "faculty": 7144, "year": 2015}
+{"title": "Social Work", "code": "SOWK", "faculty": 2994, "year": 2015}
+{"title": "Veterinary Medicine", "code": "VETM", "faculty": 2899, "year": 2015}
+{"title": "Education", "code": "EDUC", "faculty": 2957, "year": 2015}
+{"title": "Educational Psychology", "code": "EDPS", "faculty": 2957, "year": 2015}
+{"title": "Educational Research", "code": "EDER", "faculty": 2957, "year": 2015}
+{"title": "Community Rehabilitation (MD, SW)", "code": "CORE", "faculty": 1656, "year": 2015}
+{"title": "Indigenous Studies (AR, SW)", "code": "INDG", "faculty": 1656, "year": 2015}
+{"title": "Innovation (AR, EN, HA, SC)", "code": "INNO", "faculty": 1656, "year": 2015}
+{"title": "Interprofessional Health Education (KN, NU, SW)", "code": "IPHE", "faculty": 1656, "year": 2015}
+{"title": "Language (AR, ED)", "code": "LANG", "faculty": 1656, "year": 2015}
+{"title": "Software Engineering (EN, SC)", "code": "SENG", "faculty": 1656, "year": 2015}
+{"title": "Sustainable Energy Development (EN, EV, LA, HA)", "code": "SEDV", "faculty": 1656, "year": 2015}
+{"title": "Transportation Studies (AR, EN)", "code": "TRAN", "faculty": 1656, "year": 2015}
+{"title": "Academic Writing", "code": "ACWR", "faculty": 1316, "year": 2015}
+{"title": "Co-operative Education", "code": "COOP", "faculty": 1316, "year": 2015}
+{"title": "Energy and Environmental Systems", "code": "EESS", "faculty": 1316, "year": 2015}
+{"title": "International Foundations Program", "code": "IFPX", "faculty": 1316, "year": 2015}
+{"title": "International Foundations Program Engineering", "code": "IFPE", "faculty": 1316, "year": 2015}
+{"title": "Public Policy", "code": "PPOL", "faculty": 1316, "year": 2015}
+{"title": "Internship", "code": "INTE", "faculty": 1316, "year": 2015}
+{"title": "University", "code": "UNIV", "faculty": 1316, "year": 2015}
+{"title": "University Exchange", "code": "UNEX", "faculty": 1316, "year": 2015}
+{"title": "African Studies AFST (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Anthropology", "code": "ANTH", "faculty": 9438, "year": 2013}
+{"title": "Archaeology", "code": "ARKY", "faculty": 9438, "year": 2013}
+{"title": "Art ART (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Art History ARHI (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Arts", "code": "ARTS", "faculty": 9438, "year": 2013}
+{"title": "Arts and Science Honours", "code": "ASHA", "faculty": 9438, "year": 2013}
+{"title": "Canadian Studies CNST (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Central and East European Studies CEST (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Chinese", "code": "CHIN", "faculty": 9438, "year": 2013}
+{"title": "Communication and Culture", "code": "CMCL", "faculty": 9438, "year": 2013}
+{"title": "Communications Studies COMS (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Comparative Literature", "code": "COLT", "faculty": 9438, "year": 2013}
+{"title": "Culture and Society CUSP (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Dance DNCE (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Development Studies DEST (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Drama DRAM (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Earth Science EASC (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "East Asian Language Studies EALS (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "East Asian Studies EAST (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Economics ECON (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "English ENGL (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Film FILM (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Fine Arts FINA (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "French FREN (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Geography GEOG (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "German GERM (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Greek GREK (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Greek and Roman Studies GRST (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "History HTST (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Humanities HUMN (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Indigenous Languages NTVE (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Interdisciplinary Studies", "code": "IDST", "faculty": 9438, "year": 2013}
+{"title": "International Relations INTR (", "code": "here)", "faculty": 9438, "year": 2013}
+{"title": "Israel Studies ISST (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Italian ITAL (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Japanese JPNS (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Latin LATI (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Latin American Studies LAST (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Law and Society LWSO (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Linguistics LING (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Museum and Heritage Studies MHST (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Music", "code": "MUSI", "faculty": 9438, "year": 2013}
+{"title": "Music Education MUED (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Music Performance MUPF (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Philosophy PHIL (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Political Science POLI (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Psychology PSYC (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Religious Studies RELS (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Romance Studies ROST (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Russian RUSS (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Science, Technology and Society STAS (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Slavic SLAV (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Sociology SOCI (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "South Asian Studies SAST (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Spanish SPAN (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Strategic Studies STST (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Term Abroad Program TAP (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Urban Studies UBST (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Women's Studies WMST (", "code": "here", "faculty": 9438, "year": 2013}
+{"title": "Continuing Education", "code": "CTED", "faculty": 2957, "year": 2013}
+{"title": "Education", "code": "EDUC", "faculty": 2957, "year": 2013}
+{"title": "Educational Psychology", "code": "EDPS", "faculty": 2957, "year": 2013}
+{"title": "Educational Research", "code": "EDER", "faculty": 2957, "year": 2013}
+{"title": "Environmental Design", "code": "EVDS", "faculty": 1256, "year": 2013}
+{"title": "Environmental Design Architecture", "code": "EVDA", "faculty": 1256, "year": 2013}
+{"title": "Environmental Design Planning", "code": "EVDP", "faculty": 1256, "year": 2013}
+{"title": "Accounting", "code": "ACCT", "faculty": 2856, "year": 2013}
+{"title": "Business and Environment", "code": "BSEN", "faculty": 2856, "year": 2013}
+{"title": "Energy Management", "code": "ENMG", "faculty": 2856, "year": 2013}
+{"title": "Entrepreneurship and Innovation", "code": "ENTI", "faculty": 2856, "year": 2013}
+{"title": "Finance", "code": "FNCE", "faculty": 2856, "year": 2013}
+{"title": "Human Resources and Organizational Dynamics", "code": "HROD", "faculty": 2856, "year": 2013}
+{"title": "Management Information Systems", "code": "MGIS", "faculty": 2856, "year": 2013}
+{"title": "Management Studies", "code": "MGST", "faculty": 2856, "year": 2013}
+{"title": "Marketing", "code": "MKTG", "faculty": 2856, "year": 2013}
+{"title": "Operations Management", "code": "OPMA", "faculty": 2856, "year": 2013}
+{"title": "Petroleum Land Management", "code": "PLMA", "faculty": 2856, "year": 2013}
+{"title": "Risk Management and Insurance", "code": "RMIN", "faculty": 2856, "year": 2013}
+{"title": "Strategy and Global Management", "code": "SGMA", "faculty": 2856, "year": 2013}
+{"title": "Tourism Management", "code": "TOUR", "faculty": 2856, "year": 2013}
+{"title": "Athletic Therapy", "code": "ATTH", "faculty": 8459, "year": 2013}
+{"title": "Dance Education", "code": "DCED", "faculty": 8459, "year": 2013}
+{"title": "Kinesiology", "code": "KNES", "faculty": 8459, "year": 2013}
+{"title": "Physical Education", "code": "PHED", "faculty": 8459, "year": 2013}
+{"title": "Law", "code": "LAW", "faculty": 1719, "year": 2013}
+{"title": "Community Health Sciences", "code": "MDCH", "faculty": 1062, "year": 2013}
+{"title": "Health and Society", "code": "HSOC", "faculty": 1062, "year": 2013}
+{"title": "Medical Science", "code": "MDSC", "faculty": 1062, "year": 2013}
+{"title": "Medicine", "code": "MDCN", "faculty": 1062, "year": 2013}
+{"title": "Nursing", "code": "NURS", "faculty": 2567, "year": 2013}
+{"title": "Nursing Offsite", "code": "NUOS", "faculty": 2567, "year": 2013}
+{"title": "Biomedical Engineering", "code": "BMEN", "faculty": 2273, "year": 2013}
+{"title": "Chemical Engineering", "code": "ENCH", "faculty": 2273, "year": 2013}
+{"title": "Civil Engineering", "code": "ENCI", "faculty": 2273, "year": 2013}
+{"title": "Computer Engineering", "code": "ENCM", "faculty": 2273, "year": 2013}
+{"title": "Electrical Engineering", "code": "ENEL", "faculty": 2273, "year": 2013}
+{"title": "Energy and Environment, Engineering", "code": "ENEE", "faculty": 2273, "year": 2013}
+{"title": "Engineering", "code": "ENGG", "faculty": 2273, "year": 2013}
+{"title": "Environmental Engineering", "code": "ENEN", "faculty": 2273, "year": 2013}
+{"title": "Geomatics Engineering", "code": "ENGO", "faculty": 2273, "year": 2013}
+{"title": "Manufacturing Engineering", "code": "ENMF", "faculty": 2273, "year": 2013}
+{"title": "Mechanical Engineering", "code": "ENME", "faculty": 2273, "year": 2013}
+{"title": "Petroleum Engineering", "code": "ENPE", "faculty": 2273, "year": 2013}
+{"title": "Software Engineering for Engineers", "code": "ENSF", "faculty": 2273, "year": 2013}
+{"title": "Actuarial Science", "code": "ACSC", "faculty": 7144, "year": 2013}
+{"title": "Applied Mathematics", "code": "AMAT", "faculty": 7144, "year": 2013}
+{"title": "Astronomy", "code": "ASTR", "faculty": 7144, "year": 2013}
+{"title": "Astrophysics", "code": "ASPH", "faculty": 7144, "year": 2013}
+{"title": "Biochemistry", "code": "BCEM", "faculty": 7144, "year": 2013}
+{"title": "Biology", "code": "BIOL", "faculty": 7144, "year": 2013}
+{"title": "Botany", "code": "BOTA", "faculty": 7144, "year": 2013}
+{"title": "Cellular, Molecular and Microbial Biology", "code": "CMMB", "faculty": 7144, "year": 2013}
+{"title": "Chemistry", "code": "CHEM", "faculty": 7144, "year": 2013}
+{"title": "Computer Science", "code": "CPSC", "faculty": 7144, "year": 2013}
+{"title": "Ecology", "code": "ECOL", "faculty": 7144, "year": 2013}
+{"title": "Environmental Science", "code": "ENSC", "faculty": 7144, "year": 2013}
+{"title": "Geology", "code": "GLGY", "faculty": 7144, "year": 2013}
+{"title": "Geophysics", "code": "GOPH", "faculty": 7144, "year": 2013}
+{"title": "Marine Science", "code": "MRSC", "faculty": 7144, "year": 2013}
+{"title": "Mathematics", "code": "MATH", "faculty": 7144, "year": 2013}
+{"title": "Medical Physics", "code": "MDPH", "faculty": 7144, "year": 2013}
+{"title": "Nanoscience", "code": "NANS", "faculty": 7144, "year": 2013}
+{"title": "Neuroscience", "code": "NEUR", "faculty": 7144, "year": 2013}
+{"title": "Physics", "code": "PHYS", "faculty": 7144, "year": 2013}
+{"title": "Pure Mathematics", "code": "PMAT", "faculty": 7144, "year": 2013}
+{"title": "Science", "code": "SCIE", "faculty": 7144, "year": 2013}
+{"title": "Space Physics", "code": "SPPH", "faculty": 7144, "year": 2013}
+{"title": "Statistics", "code": "STAT", "faculty": 7144, "year": 2013}
+{"title": "Zoology", "code": "ZOOL", "faculty": 7144, "year": 2013}
+{"title": "Social Work", "code": "SOWK", "faculty": 2994, "year": 2013}
+{"title": "Veterinary Medicine", "code": "VETM", "faculty": 1498, "year": 2013}
+{"title": "Architectural Studies (AR, EV)", "code": "ARST", "faculty": 1656, "year": 2013}
+{"title": "Community Rehabilitation (MD, SW)", "code": "CORE", "faculty": 1656, "year": 2013}
+{"title": "Indigenous Studies (AR, SW)", "code": "INDG", "faculty": 1656, "year": 2013}
+{"title": "Innovation (AR, EN, HA, SC)", "code": "INNO", "faculty": 1656, "year": 2013}
+{"title": "Interprofessional Health Education (KN, NU, SW)", "code": "IPHE", "faculty": 1656, "year": 2013}
+{"title": "Language (AR, ED)", "code": "LANG", "faculty": 1656, "year": 2013}
+{"title": "Software Engineering (EN, SC)", "code": "SENG", "faculty": 1656, "year": 2013}
+{"title": "Sustainable Energy Development (EN, EV, LA, HA)", "code": "SEDV", "faculty": 1656, "year": 2013}
+{"title": "Transportation Studies (AR, EN)", "code": "TRAN", "faculty": 1656, "year": 2013}
+{"title": "Academic Writing", "code": "ACWR", "faculty": 1316, "year": 2013}
+{"title": "Co-operative Education", "code": "COOP", "faculty": 1316, "year": 2013}
+{"title": "Energy and Environmental Systems", "code": "EESS", "faculty": 1316, "year": 2013}
+{"title": "English For Academic Purposes Program", "code": "EAPP", "faculty": 1316, "year": 2013}
+{"title": "Public Policy", "code": "PPOL", "faculty": 1316, "year": 2013}
+{"title": "Internship", "code": "INTE", "faculty": 1316, "year": 2013}
+{"title": "University", "code": "UNIV", "faculty": 1316, "year": 2013}
+{"title": "University Exchange", "code": "UNEX", "faculty": 1316, "year": 2013}
+{"title": "African Studies AFST (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Anthropology", "code": "ANTH", "faculty": 9438, "year": 2012}
+{"title": "Archaeology", "code": "ARKY", "faculty": 9438, "year": 2012}
+{"title": "Art ART (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Art History ARHI (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Arts and Science Honours", "code": "ASHA", "faculty": 9438, "year": 2012}
+{"title": "Canadian Studies CNST (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Central and East European Studies CEST (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Chinese", "code": "CHIN", "faculty": 9438, "year": 2012}
+{"title": "Communication and Culture", "code": "CMCL", "faculty": 9438, "year": 2012}
+{"title": "Communications Studies COMS (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Comparative Literature", "code": "COLT", "faculty": 9438, "year": 2012}
+{"title": "Culture and Society CUSP (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Dance DNCE (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Development Studies DEST (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Drama DRAM (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Earth Science EASC (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "East Asian Language Studies EALS (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "East Asian Studies EAST (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Economics ECON (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "English ENGL (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Film FILM (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Fine Arts FINA (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "French FREN (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Geography GEOG (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "German GERM (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Greek and Roman Studies GRST (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Greek GREK (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "History HTST (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Humanities HUMN (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Indigenous Languages NTVE (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Interdisciplinary Studies", "code": "IDST", "faculty": 9438, "year": 2012}
+{"title": "International Relations INTR (", "code": "here)", "faculty": 9438, "year": 2012}
+{"title": "Israel Studies ISST (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Italian ITAL (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Japanese JPNS (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Latin American Studies LAST (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Latin LATI (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Law and Society LWSO (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Linguistics LING (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Museum and Heritage Studies MHST (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Music", "code": "MUSI", "faculty": 9438, "year": 2012}
+{"title": "Music Education MUED (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Music Performance MUPF (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Philosophy PHIL (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Political Science POLI (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Psychology PSYC (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Religious Studies RELS (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Romance Studies ROST (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Russian RUSS (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Science, Technology and Society STAS (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Slavic SLAV (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Social Sciences SOSC (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Sociology SOCI (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "South Asian Studies SAST (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Spanish SPAN (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Strategic Studies STST (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Term Abroad Program TAP (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Urban Studies UBST (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Women's Studies WMST (", "code": "here", "faculty": 9438, "year": 2012}
+{"title": "Continuing Education", "code": "CTED", "faculty": 2957, "year": 2012}
+{"title": "Education", "code": "EDUC", "faculty": 2957, "year": 2012}
+{"title": "Educational Psychology", "code": "EDPS", "faculty": 2957, "year": 2012}
+{"title": "Educational Research", "code": "EDER", "faculty": 2957, "year": 2012}
+{"title": "Environmental Design", "code": "EVDS", "faculty": 1256, "year": 2012}
+{"title": "Environmental Design Architecture", "code": "EVDA", "faculty": 1256, "year": 2012}
+{"title": "Environmental Design Planning", "code": "EVDP", "faculty": 1256, "year": 2012}
+{"title": "Accounting", "code": "ACCT", "faculty": 2856, "year": 2012}
+{"title": "Business and Environment", "code": "BSEN", "faculty": 2856, "year": 2012}
+{"title": "Energy Management", "code": "ENMG", "faculty": 2856, "year": 2012}
+{"title": "Entrepreneurship and Innovation", "code": "ENTI", "faculty": 2856, "year": 2012}
+{"title": "Finance", "code": "FNCE", "faculty": 2856, "year": 2012}
+{"title": "Human Resources and Organizational Dynamics", "code": "HROD", "faculty": 2856, "year": 2012}
+{"title": "Management Information Systems", "code": "MGIS", "faculty": 2856, "year": 2012}
+{"title": "Management Studies", "code": "MGST", "faculty": 2856, "year": 2012}
+{"title": "Marketing", "code": "MKTG", "faculty": 2856, "year": 2012}
+{"title": "Operations Management", "code": "OPMA", "faculty": 2856, "year": 2012}
+{"title": "Petroleum Land Management", "code": "PLMA", "faculty": 2856, "year": 2012}
+{"title": "Risk Management and Insurance", "code": "RMIN", "faculty": 2856, "year": 2012}
+{"title": "Strategy and Global Management", "code": "SGMA", "faculty": 2856, "year": 2012}
+{"title": "Tourism Management", "code": "TOUR", "faculty": 2856, "year": 2012}
+{"title": "Athletic Therapy", "code": "ATTH", "faculty": 8459, "year": 2012}
+{"title": "Dance Education", "code": "DCED", "faculty": 8459, "year": 2012}
+{"title": "Kinesiology", "code": "KNES", "faculty": 8459, "year": 2012}
+{"title": "Physical Education", "code": "PHED", "faculty": 8459, "year": 2012}
+{"title": "Law", "code": "LAW", "faculty": 1719, "year": 2012}
+{"title": "Community Health Sciences", "code": "MDCH", "faculty": 1062, "year": 2012}
+{"title": "Health and Society", "code": "HSOC", "faculty": 1062, "year": 2012}
+{"title": "Medical Science", "code": "MDSC", "faculty": 1062, "year": 2012}
+{"title": "Medicine", "code": "MDCN", "faculty": 1062, "year": 2012}
+{"title": "Nursing", "code": "NURS", "faculty": 2567, "year": 2012}
+{"title": "Nursing Offsite", "code": "NUOS", "faculty": 2567, "year": 2012}
+{"title": "Biomedical Engineering", "code": "BMEN", "faculty": 2273, "year": 2012}
+{"title": "Chemical Engineering", "code": "ENCH", "faculty": 2273, "year": 2012}
+{"title": "Civil Engineering", "code": "ENCI", "faculty": 2273, "year": 2012}
+{"title": "Computer Engineering", "code": "ENCM", "faculty": 2273, "year": 2012}
+{"title": "Electrical Engineering", "code": "ENEL", "faculty": 2273, "year": 2012}
+{"title": "Energy and Environment, Engineering", "code": "ENEE", "faculty": 2273, "year": 2012}
+{"title": "Engineering", "code": "ENGG", "faculty": 2273, "year": 2012}
+{"title": "Environmental Engineering", "code": "ENEN", "faculty": 2273, "year": 2012}
+{"title": "Geomatics Engineering", "code": "ENGO", "faculty": 2273, "year": 2012}
+{"title": "Manufacturing Engineering", "code": "ENMF", "faculty": 2273, "year": 2012}
+{"title": "Mechanical Engineering", "code": "ENME", "faculty": 2273, "year": 2012}
+{"title": "Petroleum Engineering", "code": "ENPE", "faculty": 2273, "year": 2012}
+{"title": "Software Engineering for Engineers", "code": "ENSF", "faculty": 2273, "year": 2012}
+{"title": "Actuarial Science", "code": "ACSC", "faculty": 7144, "year": 2012}
+{"title": "Applied Mathematics", "code": "AMAT", "faculty": 7144, "year": 2012}
+{"title": "Astronomy", "code": "ASTR", "faculty": 7144, "year": 2012}
+{"title": "Astrophysics", "code": "ASPH", "faculty": 7144, "year": 2012}
+{"title": "Biochemistry", "code": "BCEM", "faculty": 7144, "year": 2012}
+{"title": "Biology", "code": "BIOL", "faculty": 7144, "year": 2012}
+{"title": "Botany", "code": "BOTA", "faculty": 7144, "year": 2012}
+{"title": "Cellular, Molecular and Microbial Biology", "code": "CMMB", "faculty": 7144, "year": 2012}
+{"title": "Chemistry", "code": "CHEM", "faculty": 7144, "year": 2012}
+{"title": "Computer Science", "code": "CPSC", "faculty": 7144, "year": 2012}
+{"title": "Ecology", "code": "ECOL", "faculty": 7144, "year": 2012}
+{"title": "Environmental Science", "code": "ENSC", "faculty": 7144, "year": 2012}
+{"title": "Geology", "code": "GLGY", "faculty": 7144, "year": 2012}
+{"title": "Geophysics", "code": "GOPH", "faculty": 7144, "year": 2012}
+{"title": "Marine Science", "code": "MRSC", "faculty": 7144, "year": 2012}
+{"title": "Mathematics", "code": "MATH", "faculty": 7144, "year": 2012}
+{"title": "Medical Physics", "code": "MDPH", "faculty": 7144, "year": 2012}
+{"title": "Nanoscience", "code": "NANS", "faculty": 7144, "year": 2012}
+{"title": "Neuroscience", "code": "NEUR", "faculty": 7144, "year": 2012}
+{"title": "Physics", "code": "PHYS", "faculty": 7144, "year": 2012}
+{"title": "Pure Mathematics", "code": "PMAT", "faculty": 7144, "year": 2012}
+{"title": "Science", "code": "SCIE", "faculty": 7144, "year": 2012}
+{"title": "Space Physics", "code": "SPPH", "faculty": 7144, "year": 2012}
+{"title": "Statistics", "code": "STAT", "faculty": 7144, "year": 2012}
+{"title": "Zoology", "code": "ZOOL", "faculty": 7144, "year": 2012}
+{"title": "Social Work", "code": "SOWK", "faculty": 2994, "year": 2012}
+{"title": "Veterinary Medicine", "code": "VETM", "faculty": 1498, "year": 2012}
+{"title": "Architectural Studies (AR, EV)", "code": "ARST", "faculty": 1656, "year": 2012}
+{"title": "Community Rehabilitation (MD, SW)", "code": "CORE", "faculty": 1656, "year": 2012}
+{"title": "Indigenous Studies (AR, SW)", "code": "INDG", "faculty": 1656, "year": 2012}
+{"title": "Innovation (AR, EN, HA, SC)", "code": "INNO", "faculty": 1656, "year": 2012}
+{"title": "Interprofessional Health Education (KN, NU, SW)", "code": "IPHE", "faculty": 1656, "year": 2012}
+{"title": "Language (AR, ED)", "code": "LANG", "faculty": 1656, "year": 2012}
+{"title": "Software Engineering (EN, SC)", "code": "SENG", "faculty": 1656, "year": 2012}
+{"title": "Sustainable Energy Development (EN, EV, LA, HA)", "code": "SEDV", "faculty": 1656, "year": 2012}
+{"title": "Transportation Studies (AR, EN)", "code": "TRAN", "faculty": 1656, "year": 2012}
+{"title": "Academic Writing", "code": "ACWR", "faculty": 1316, "year": 2012}
+{"title": "Co-operative Education", "code": "COOP", "faculty": 1316, "year": 2012}
+{"title": "Energy and Environmental Systems", "code": "EESS", "faculty": 1316, "year": 2012}
+{"title": "English For Academic Purposes Program", "code": "EAPP", "faculty": 1316, "year": 2012}
+{"title": "Public Policy", "code": "PPOL", "faculty": 1316, "year": 2012}
+{"title": "Internship", "code": "INTE", "faculty": 1316, "year": 2012}
+{"title": "University", "code": "UNIV", "faculty": 1316, "year": 2012}
+{"title": "University Exchange", "code": "UNEX", "faculty": 1316, "year": 2012}
