@@ -12,9 +12,10 @@ class CourseTitle(scrapy.Item):
     code = scrapy.Field()
     faculty = scrapy.Field()
 
+
 class CourseInfo(scrapy.Item):
     cid = scrapy.Field(serializer=int)
-    
+
     code = scrapy.Field()
     number = scrapy.Field()
     topic = scrapy.Field()
@@ -49,6 +50,7 @@ class Faculty(scrapy.Item):
     website = scrapy.Field()
 
     aka = scrapy.Field()
+
 
 class Department(scrapy.Item):
     did = scrapy.Field(serializer=int)
@@ -90,7 +92,7 @@ class Staff(scrapy.Item):
     did = scrapy.Field(serialize=int)
 
 
-class Block(scrapy.Item):
+class Section(scrapy.Item):
     key = scrapy.Field()  # Course key
     topic = scrapy.Field()
 
