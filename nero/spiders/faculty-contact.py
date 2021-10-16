@@ -7,7 +7,7 @@ from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from bs4 import BeautifulSoup
 from nero.utils import Utils
-from nero.items import Faculty, Department, Program, Staff, Block
+from nero.items import Faculty, Department, Program, Staff, Section
 
 
 class FacultyContact(CrawlSpider):
@@ -103,7 +103,7 @@ class FacultyContact(CrawlSpider):
             key, topic = self.course_title(course_dom)
 
             for (name, time, room, sid, directory_id, note) in self.course_blocks(detail_dom):
-                block_obj = Block(key=key, topic=topic, year=year, term=term, name=name, time=time, room=room, sid=sid, directory_id=directory_id, note=note)
+                block_obj = Section(key=key, topic=topic, year=year, term=term, name=name, time=time, room=room, sid=sid, directory_id=directory_id, note=note)
                 yield block_obj
 
         print(response.url)
