@@ -66,6 +66,20 @@ class Department(scrapy.Item):
     fid = scrapy.Field(serialize=int)
 
 
+class Program(scrapy.Item):
+    pid = scrapy.Field(serializer=int)
+    code = scrapy.Field()
+    title = scrapy.Field()
+
+    phones = scrapy.Field()
+    rooms = scrapy.Field()
+    email = scrapy.Field()
+    website = scrapy.Field()
+
+    aka = scrapy.Field()
+    did = scrapy.Field(serialize=int)
+
+
 class Staff(scrapy.Item):
     sid = scrapy.Field(serialize=int)
     name = scrapy.Field()

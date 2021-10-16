@@ -7,7 +7,7 @@ from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from bs4 import BeautifulSoup
 from nero.utils import Utils
-from nero.items import Faculty, Department, Staff, Section
+from nero.items import Faculty, Department, Program, Staff, Section
 
 
 class FacultyContact(CrawlSpider):
@@ -47,6 +47,11 @@ class FacultyContact(CrawlSpider):
                     fid = Utils.title_to_id(parent_title)
                     department_obj = Department(did=item_id, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website, aka=aka, fid=fid)
                     yield department_obj
+                else:  # This is a Program
+                    item_id = Utils.title_to_id(title)
+                    did = Utils.title_to_id(parent_title)
+                    program_obj = Program(pid=item_id, title=title, code=code, phones=phones, rooms=rooms, email=email, website=website, aka=aka, did=did)
+                    yield program_obj
             else:
                 continue
 
