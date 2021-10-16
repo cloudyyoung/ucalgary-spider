@@ -11,7 +11,7 @@ from nero.items import Faculty, Department, Program, Staff, Section
 
 
 class FacultyContact(CrawlSpider):
-    name = 'faculty-contact'
+    name = 'faculty-department-section-staff'
     allowed_domains = ['contacts.ucalgary.ca']
     start_urls = [
         'http://contacts.ucalgary.ca/directory/faculties',

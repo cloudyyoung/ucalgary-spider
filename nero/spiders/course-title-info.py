@@ -10,7 +10,7 @@ from nero.items import CourseTitle, CourseInfo
 
 
 class CourseCalendar(CrawlSpider):
-    name = 'course-calendar'
+    name = 'course-title-info'
     allowed_domains = ['www.ucalgary.ca']
     start_urls = [
         'https://www.ucalgary.ca/pubs/calendar/current/course-by-faculty.html'
