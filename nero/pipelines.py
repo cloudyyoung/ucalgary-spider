@@ -7,17 +7,30 @@
 # useful for handling different item types with a single interface
 
 import json
+import re
 from itemadapter import ItemAdapter
 
+
 class FileStorePipeline:
+    files = {}
+
+    def file_name_convert(self, item_type):
+        return str(re.sub(r"([a-z])([A-Z])", r"\1-\2", item_type)).lower()
 
     def open_spider(self, spider):
-        self.file = open("data/" + spider.name + ".jsonlines", 'w')
+        pass
 
     def close_spider(self, spider):
-        self.file.close()
+        for file in self.files.values():
+            file.close()
 
     def process_item(self, item, spider):
-        line = json.dumps(ItemAdapter(item).asdict()) + "\n"
-        self.file.write(line)
+        item_type = item.__class__.__name__
+        if(item_type not in self.files.keys()):
+            file_object = open("data/" + self.file_name_convert(item_type) + ".jsonlines", 'w')
+            self.files[item_type] = file_object
+        else:
+            line = json.dumps(ItemAdapter(item).asdict()) + "\n"
+            self.files[item_type].write(line)
+
         return item
