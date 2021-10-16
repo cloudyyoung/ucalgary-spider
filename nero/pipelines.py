@@ -39,19 +39,6 @@ class FileStorePipeline:
 
 
 class CourseRequisitesPipeline:
-    # CourseTitle, for replacing full course names with short course codes
-    course_titles = {}
-
-    def __init__(self):
-        # Read all the course titles from past years
-        title_year_file = open("data/course-title-year.jsonlines", "r")
-        for line in title_year_file:
-            course_title = json.loads(line)
-            title = course_title["title"]
-            code = course_title["code"]
-            self.course_titles[title] = code
-        title_year_file.close()
-
     def prereq_single_course(self, string):
         return string
 
@@ -124,6 +111,9 @@ class CourseRequisitesPipeline:
             print("UNHANDLED PATTERN: " + string)
             return string
 
+    # CourseTitle, for replacing full course names with short course codes
+    course_titles = {}
+
     # Regex string
     regex_incomplete_course = r"([0-9]{3})"
     regex_complete_course = r"([A-Z]{3,4}) ([0-9]{3})"
@@ -142,22 +132,21 @@ class CourseRequisitesPipeline:
     }
 
     def open_spider(self, spider):
-        self.file = open("data/course-requisites.jsonlines", 'w')
+        # Read all the course titles from past years
+        title_year_file = open("data/course-title-year.jsonlines", "r")
+        for line in title_year_file:
+            course_title = json.loads(line)
+            title = course_title["title"]
+            code = course_title["code"]
+            self.course_titles[title] = code
+        title_year_file.close()
 
     def close_spider(self, spider):
-        self.file.close()
+        pass
 
     def process_item(self, item, spider):
-        if(isinstance(item, CourseInfo)):
-            course_requisite_obj = CourseRequisite(cid=item["cid"],
-                                                   code=item["code"],
-                                                   number=item["number"],
-                                                   prereq=self.prereq(item['prereq']))
-
-            line = json.dumps(ItemAdapter(course_requisite_obj).asdict()) + "\n"
-            self.file.write(line)
-            self.file.flush()
-
+        if(isinstance(item, CourseRequisite)):
+            item["prereq"] = self.prereq(item["prereq"])
         return item
 
     def prereq(self, prereq_text):
