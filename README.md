@@ -13,6 +13,13 @@ pip install nameparser
 pip install unidecode
 pip install xmltodict
 pip install htmlmin
+
+pip install pandas
+
+pip install -U pip setuptools wheel
+pip install -U spacy
+python -m spacy download en_core_web_sm
+python -m spacy download en_core_web_trf
 ```
 
 ## Run
