@@ -152,8 +152,8 @@ class CourseDirectoryParser(Parser):
             yield (name, time, room, sid, directory_id, note)
 
 class StaffParser(Parser):
-    def name(self, staff_dom):
-        name_dom = staff_dom.select_one(".uofc-directory-name-cell a[href]")
+    def name(self):
+        name_dom = self.dom.select_one(".uofc-directory-name-cell a[href]")
 
         if not name_dom:
             name = directory_id = None
@@ -164,10 +164,10 @@ class StaffParser(Parser):
 
         return (name, directory_id)
 
-    def title_room_phone(self, staff_dom):
+    def title_room_phone(self):
         lists = {"title": None, "room": None, "phone": None}
         for each in lists:
-            items_dom = staff_dom.select(".uofc-directory-%s-cell li" % each)
+            items_dom = self.dom.select(".uofc-directory-%s-cell li" % each)
 
             if not items_dom:
                 continue

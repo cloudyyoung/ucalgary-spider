@@ -50,8 +50,8 @@ class StaffSpider(CrawlSpider):
         for staff_dom in staffs_dom:
 
             sp = StaffParser(staff_dom)
-            name, directory_id = sp.name(staff_dom)
-            title, room, phone = sp.title_room_phone(staff_dom)
+            name, directory_id = sp.name()
+            title, room, phone = sp.title_room_phone()
             sid = Utils.name_to_id(name)
 
             staff_obj = Staff(sid=sid, name=name, directory_id=directory_id, title=title, room=room, phone=phone, did=did)
