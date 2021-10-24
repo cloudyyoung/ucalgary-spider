@@ -10,6 +10,116 @@ class Parser:
     def __init__(self, dom) -> None:
         self.dom = dom
 
+class CourseInfoParser(Parser):
+
+    def __convert_link(self, doms):
+        for dom in doms.select("a.link-text"):
+            href = dom.get("href").split("#")[-1].strip()
+            dom.attrs = {"cid": href}
+            dom.name = "course"
+        return doms
+
+    def calendar_id(self):
+        return int(self.dom.previous_element.attrs['name'])
+
+    def title_number_topic(self):
+        keys = self.dom.select(".course-code")
+        title = keys[0].get_text(strip=True)
+        number = int(keys[1].get_text(strip=True))
+        topic = keys[2].get_text(strip=True)
+        return (title, number, topic)
+
+    def description_subtopics(self):
+        description_dom = self.dom.select_one(".course-desc")
+        self.__convert_link(description_dom)
+
+        description = []
+        sub_topics = {}
+        concat_text = " "
+
+        for description_dom in description_dom.contents:
+            sub_topics_reg = r"[0-9]{3}\.([0-9]{2})[\.]? ([A-Za-z \,\(\)\'\-][^0-9<]*)"
+            sub_topics_reg_res_all = re.findall(
+                sub_topics_reg, str(description_dom))
+
+            if sub_topics_reg_res_all:  # Contain sub topics
+                for sub_topics_reg_res in sub_topics_reg_res_all:
+                    decimal = sub_topics_reg_res[0]
+                    topic = sub_topics_reg_res[1].strip()
+                    sub_topics[decimal] = topic
+                concat_text = "<br>"
+            elif description_dom.name == "a":  # Link
+                description.append(str(description_dom).strip())
+            elif description_dom.string:  # Pure string
+                description.append(str(description_dom.string.strip()))
+            else:
+                description.append(description_dom.decode_contents().strip())
+        pass
+
+        description = concat_text.join(description)
+
+        if not description:
+            description = None
+
+        if not sub_topics:
+            sub_topics = None
+
+        return (description, sub_topics)
+
+    def requisites(self):
+        ret = {"prereq": None, "coreq": None, "antireq": None, "notes": None, "aka": None}
+
+        for each in ret.keys():
+            req_dom = self.dom.select_one(".course-" + each)
+            self.__convert_link(req_dom)
+
+            inner_html = req_dom.decode_contents().strip()
+
+            if inner_html:
+                ret[each] = inner_html
+            else:
+                ret[each] = None
+
+        return (ret["prereq"], ret["coreq"], ret["antireq"], ret["notes"], ret["aka"])
+
+    def repeat_nogpa(self):
+        ret = {"repeat": False, "nogpa": False}
+
+        for each in ret.keys():
+            repeat_dom = self.dom.select_one(".course-" + each)
+            content = repeat_dom.get_text(strip=True)
+
+            ret[each] = content != ""
+
+        return (ret["repeat"], ret["nogpa"])
+
+    def units_credits_hours_time_length(self):
+        hours_text = self.dom.select_one(
+            ".course-hours").get_text(strip=True)
+        hours_reg = {
+            "units": r"([0-9.]*?) units",  # units
+            "credits": r"([0-9.]*?) credit[s]?",  # credits
+            "hours": r"\((.*?[0-9A-Za-z\/]-.*?[0-9A-Z\/])\)",  # h(x-y)
+            "time_length": r"\((.*?[0-9-] .*?[a-zA-Z])\)"  # x period
+        }
+        ret = {}  # [units, credits, h(x-y), x period]
+
+        for (key, reg) in hours_reg.items():
+
+            if not re.search(reg, hours_text):
+                ret[key] = None
+                continue
+
+            hours_reg_res = re.findall(reg, hours_text)  # Find text
+            hours_text = re.sub(reg, "", hours_text)  # Remove matched text
+
+            if key == "units" or key == "credits":
+                ret[key] = float(hours_reg_res[0])
+            else:
+                ret[key] = list(hours_reg_res)
+
+        return (ret["units"], ret["credits"], ret["hours"], ret["time_length"])
+
 
 class FacultyDirectoryParser(Parser):
 
