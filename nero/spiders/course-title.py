@@ -4,13 +4,14 @@ import re
 from unidecode import unidecode
 from scrapy.spiders import CrawlSpider
 from bs4 import BeautifulSoup
-from nero.utils import Utils
-from nero.items import CourseTitleYear
+from nero.spiders.__utils import Utils
+from nero.items import CourseTitle
 
 
-class CourseCalendar(CrawlSpider):
-    name = 'course-title-year'
+class CourseTitleSpider(CrawlSpider):
+    name = 'course-title'
     allowed_domains = ['www.ucalgary.ca']
+    titles_existed = []
 
     def start_requests(self):
         current_year = Utils.current_academic_year()
@@ -49,5 +50,28 @@ class CourseCalendar(CrawlSpider):
             for course_title_dom in course_titles_dom:
                 course_code = course_title_dom.get_text(strip=True)
                 course_title = course_title_dom.previous_element.strip()
-                course_title_obj = CourseTitleYear(title=course_title, code=course_code, faculty=faculty_id, year=year)
+
+                # For 2012-2013 calendar titles: "Communications Studies COMS ("
+                regex = re.match(r"(.*) ([A-Z]{3,4})", course_title)
+                if (regex):
+                    course_title = regex.group(1)
+                    course_code = regex.group(2)
+
+                # For 2019 calendar title: "Innovation (AR, EN, HA, SC)"
+                regex = re.match(r"(.*) \(.*\)", course_title)
+                if(regex):
+                    course_title = regex.group(1)
+
+                # Check code and title
+                regex_code = re.match(r"([A-Z]{3,4})", course_code)
+                regex_title = re.match(r"([A-Z][a-z ,]*)", course_title)
+                if(not regex_code or not regex_title):
+                    continue
+
+                if [course_code, course_title] in self.titles_existed:
+                    continue
+
+                self.titles_existed.append([course_code, course_title])
+
+                course_title_obj = CourseTitle(title=course_title, code=course_code, faculty=faculty_id, year=year)
                 yield course_title_obj

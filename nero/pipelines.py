@@ -29,8 +29,9 @@ class FileStorePipeline:
         if(item_type not in self.files.keys()):
             file_object = open("data/" + self.file_name_convert(item_type) + ".jsonlines", 'w')
             self.files[item_type] = file_object
-        else:
-            line = json.dumps(ItemAdapter(item).asdict()) + "\n"
-            self.files[item_type].write(line)
+        
+        line = json.dumps(ItemAdapter(item).asdict()) + "\n"
+        self.files[item_type].write(line)
+        self.files[item_type].flush()
 
         return item
