@@ -3,11 +3,9 @@ import htmlmin
 import re
 from unidecode import unidecode
 from scrapy.spiders import CrawlSpider, Rule
-from scrapy.linkextractors import LinkExtractor
 from bs4 import BeautifulSoup
 from nero.spiders.parser import CourseInfoParser
-from nero.utils import Utils
-from nero.items import CourseTitle, CourseInfo
+from nero.items import CourseInfo
 
 
 class CourseInfoSpider(CrawlSpider):

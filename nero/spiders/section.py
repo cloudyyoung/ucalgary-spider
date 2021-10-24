@@ -35,7 +35,7 @@ class SectionSpider(CrawlSpider):
 
             if directory and code != None and parent_title != None and parent_type != None:  # If has contact directory
                 year = Utils.current_academic_year()
-                yield response.follow("/info/%s/courses/%s" % (code, "f" + str(year)), self.parse_course_term_section) # Fall
+                yield response.follow("/info/%s/courses/%s" % (code, "f" + str(year)), self.parse_course_term_section)  # Fall
                 yield response.follow("/info/%s/courses/%s" % (code, "w" + str(year + 1)), self.parse_course_term_section)  # Winter
                 # yield response.follow("/info/%s/courses/%s" % (code, "p" + str(year + 1)), self.parse_course_term_block)  # Spring
                 # yield response.follow("/info/%s/courses/%s" % (code, "s" + str(year + 1)), self.parse_course_term_block)  # Summer
@@ -60,4 +60,3 @@ class SectionSpider(CrawlSpider):
             for (name, time, room, sid, directory_id, note) in cdp.sections():
                 section_obj = Section(key=key, topic=topic, year=year, term=term, name=name, time=time, room=room, sid=sid, directory_id=directory_id, note=note)
                 yield section_obj
-

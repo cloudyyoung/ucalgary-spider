@@ -1,6 +1,5 @@
 import re
 from unidecode import unidecode
-
 from nero.utils import Utils
 
 
