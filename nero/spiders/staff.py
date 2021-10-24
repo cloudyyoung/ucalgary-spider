@@ -28,8 +28,6 @@ class StaffSpider(CrawlSpider):
 
         faculties_dom = soup.select(".primary-row")
         for faculty_dom in faculties_dom:
-            detail_dom = faculty_dom.next_sibling
-
             fdp = FacultyDirectoryParser(faculty_dom)
             title, code = fdp.title()
             directory = fdp.directory_of_people()

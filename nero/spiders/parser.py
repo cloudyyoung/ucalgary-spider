@@ -32,7 +32,7 @@ class FacultyDirectoryParser(Parser):
         lists = {"phones": None, "rooms": None, "email": None, "website": None}
         for item in lists:
             text = []
-            list_dom = self.dom.select(".unitis-%s-list li" % item)
+            list_dom = self.dom.next_sibling.select(".unitis-%s-list li" % item)
 
             if list_dom:
                 for each in list_dom:
@@ -51,7 +51,7 @@ class FacultyDirectoryParser(Parser):
 
     def aka(self):
         aka = None
-        contents_dom = self.dom.select(".details-row-cell .content")
+        contents_dom = self.dom.next_sibling.select(".details-row-cell .content")
 
         if contents_dom and len(contents_dom) >= 2:
             content_dom = contents_dom[1].select("p")
