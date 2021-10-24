@@ -8,8 +8,8 @@ from nero.utils import Utils
 from nero.items import CourseTitleYear
 
 
-class CourseCalendar(CrawlSpider):
-    name = 'course-title-year'
+class CourseTitleSpider(CrawlSpider):
+    name = 'course-title'
     allowed_domains = ['www.ucalgary.ca']
 
     def start_requests(self):
