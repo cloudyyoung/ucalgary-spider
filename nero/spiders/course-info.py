@@ -2,9 +2,9 @@ import scrapy
 import htmlmin
 import re
 from unidecode import unidecode
-from scrapy.spiders import CrawlSpider, Rule
+from scrapy.spiders import CrawlSpider
 from bs4 import BeautifulSoup
-from nero.spiders.parser import CourseInfoParser
+from nero.spiders.__parser import CourseInfoParser
 from nero.items import CourseInfo
 
 

@@ -4,8 +4,8 @@ import htmlmin
 from unidecode import unidecode
 from scrapy.spiders import CrawlSpider
 from bs4 import BeautifulSoup
-from nero.spiders.parser import FacultyDirectoryParser, CourseDirectoryParser
-from nero.utils import Utils
+from nero.spiders.__parser import FacultyDirectoryParser, CourseDirectoryParser
+from nero.spiders.__utils import Utils
 from nero.items import Section
 
 
