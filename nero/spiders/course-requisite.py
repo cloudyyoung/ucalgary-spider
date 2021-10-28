@@ -26,10 +26,11 @@ class CourseCalendar(CrawlSpider):
 
         course_info_file = open("data/course-info.jsonlines", "r")
         for line in course_info_file:
-            if count > 100:
-                break
-
             count += 1
+            if count < 100:
+                continue
+            elif count > 400:
+                break
 
             course_info = json.loads(line)
             cid = course_info["cid"]
