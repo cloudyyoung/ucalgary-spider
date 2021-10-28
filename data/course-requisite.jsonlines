@@ -1,0 +1,300 @@
+{"cid": 30110, "code": "ANTH", "number": 479, "prereq": [{"units": 3, "from": ["ANTH 379", "GEOG 351", "GEOG 452"]}]}
+{"cid": 43820, "code": "ANTH", "number": 490, "prereq": ["ANTH 203"]}
+{"cid": 8529, "code": "ANTH", "number": 501, "prereq": ["ANTH 203, an additional 3 units of a course labelled ANTH at the 300 level or above and consent of the Department"]}
+{"cid": 8530, "code": "ANTH", "number": 505, "prereq": ["ANTH 201 and consent of the Department"]}
+{"cid": 43816, "code": "ANTH", "number": 506, "prereq": ["ANTH 350, completion of 72 units and consent of the Department"]}
+{"cid": 8531, "code": "ANTH", "number": 523, "prereq": [{"consent": "Department"}]}
+{"cid": 43817, "code": "ANTH", "number": 534, "prereq": ["ANTH 201 and 3 units from ANTH 203 or ARKY 201 and a minimum of 12 units in courses labelled ANTH"]}
+{"cid": 8533, "code": "ANTH", "number": 541, "prereq": [{"consent": "Department"}]}
+{"cid": 8534, "code": "ANTH", "number": 552, "prereq": [{"consent": "Department"}]}
+{"cid": 8535, "code": "ANTH", "number": 553, "prereq": [{"consent": "Department"}]}
+{"cid": 8537, "code": "ANTH", "number": 571, "prereq": ["ANTH 413 and admission to the Anthropology Honours Program"]}
+{"cid": 8538, "code": "ANTH", "number": 573, "prereq": ["ANTH 411 and admission to the Anthropology Honours Program"]}
+{"cid": 8539, "code": "ANTH", "number": 589, "prereq": [{"consent": "Department"}]}
+{"cid": 8540, "code": "ANTH", "number": 601, "prereq": [{"consent": "Department"}]}
+{"cid": 8541, "code": "ANTH", "number": 603, "prereq": [{"consent": "Department"}]}
+{"cid": 8542, "code": "ANTH", "number": 605, "prereq": [{"consent": "Department"}]}
+{"cid": 8543, "code": "ANTH", "number": 611, "prereq": [{"consent": "Department"}]}
+{"cid": 8544, "code": "ANTH", "number": 613, "prereq": [{"consent": "Department"}]}
+{"cid": 8545, "code": "ANTH", "number": 631, "prereq": [{"consent": "Department"}]}
+{"cid": 8546, "code": "ANTH", "number": 635, "prereq": [{"consent": "Department"}]}
+{"cid": 8547, "code": "ANTH", "number": 641, "prereq": [{"consent": "Department"}]}
+{"cid": 8548, "code": "ANTH", "number": 659, "prereq": [{"consent": "Department"}]}
+{"cid": 8549, "code": "ANTH", "number": 701, "prereq": [{"consent": "Department"}]}
+{"cid": 40287, "code": "ASL", "number": 201, "prereq": null}
+{"cid": 40288, "code": "ASL", "number": 203, "prereq": ["ASL 201"]}
+{"cid": 3388, "code": "AFST", "number": 301, "prereq": null}
+{"cid": 3389, "code": "AFST", "number": 400, "prereq": [{"consent": "Program Co-ordinator"}]}
+{"cid": 3390, "code": "AFST", "number": 501, "prereq": [{"units": 3, "from": ["AFST 301", "ANTH 320", "POLI 371"]}]}
+{"cid": 3368, "code": "ACWR", "number": 201, "prereq": null}
+{"cid": 3369, "code": "ACWR", "number": 203, "prereq": null}
+{"cid": 30334, "code": "ACWR", "number": 303, "prereq": null}
+{"cid": 42743, "code": "SUST", "number": 201, "prereq": null}
+{"cid": 42744, "code": "SUST", "number": 401, "prereq": [["SUST 201", "UNIV 207"]]}
+{"cid": 42745, "code": "SUST", "number": 403, "prereq": ["SUST 401"]}
+{"cid": 42746, "code": "SUST", "number": 501, "prereq": ["SUST 403 and enrolment in the embedded Certificate in Sustainability Studies"]}
+{"cid": 42747, "code": "SUST", "number": 503, "prereq": ["Consent from the Academic Co-ordinator of Sustainability Studies"]}
+{"cid": 47204, "code": "SUST", "number": 505, "prereq": null}
+{"cid": 47258, "code": "SUST", "number": 605, "prereq": null}
+{"cid": 47420, "code": "PLAN", "number": 201, "prereq": null}
+{"cid": 47140, "code": "PLAN", "number": 500, "prereq": null}
+{"cid": 45260, "code": "PLAN", "number": 600, "prereq": null}
+{"cid": 45259, "code": "PLAN", "number": 602, "prereq": null}
+{"cid": 45261, "code": "PLAN", "number": 604, "prereq": null}
+{"cid": 45262, "code": "PLAN", "number": 606, "prereq": null}
+{"cid": 45263, "code": "PLAN", "number": 608, "prereq": null}
+{"cid": 45264, "code": "PLAN", "number": 610, "prereq": [["PLAN 606", "EVDP 625"]]}
+{"cid": 45265, "code": "PLAN", "number": 612, "prereq": null}
+{"cid": 45266, "code": "PLAN", "number": 614, "prereq": null}
+{"cid": 45276, "code": "PLAN", "number": 616, "prereq": [{"units": 6, "from": ["PLAN 610", "EVDP 636", "LAND 604", "EVDL 667"]}]}
+{"cid": 45267, "code": "PLAN", "number": 618, "prereq": [["PLAN 610", "EVDP 636"]]}
+{"cid": 45268, "code": "PLAN", "number": 620, "prereq": null}
+{"cid": 45269, "code": "PLAN", "number": 622, "prereq": null}
+{"cid": 45270, "code": "PLAN", "number": 624, "prereq": null}
+{"cid": 45271, "code": "PLAN", "number": 626, "prereq": null}
+{"cid": 45272, "code": "PLAN", "number": 628, "prereq": null}
+{"cid": 45354, "code": "PLAN", "number": 630, "prereq": [["PLAN 616", "PLAN 618"], "or one of EVDS 618, 620, 623 or 640"]}
+{"cid": 45355, "code": "PLAN", "number": 640, "prereq": ["Admission to the Certificate in Designing Smart and Secure Communities"]}
+{"cid": 45356, "code": "PLAN", "number": 642, "prereq": [["PLAN 640", "EVDS 630"]]}
+{"cid": 45357, "code": "PLAN", "number": 644, "prereq": [["PLAN 640", "EVDS 630"]]}
+{"cid": 45358, "code": "PLAN", "number": 646, "prereq": ["PLAN 640, 642 and 644", "or EVDS 630, 632 and 634"]}
+{"cid": 45359, "code": "PLAN", "number": 650, "prereq": ["Admission to the Certificate in Sustainable Urban Design"]}
+{"cid": 45360, "code": "PLAN", "number": 652, "prereq": [["PLAN 650", "EVDS 650"]]}
+{"cid": 45361, "code": "PLAN", "number": 654, "prereq": [["PLAN 652", "EVDS 652"]]}
+{"cid": 45362, "code": "PLAN", "number": 656, "prereq": [["PLAN 654", "EVDS 654"]]}
+{"cid": 45363, "code": "PLAN", "number": 660, "prereq": null}
+{"cid": 45364, "code": "PLAN", "number": 662, "prereq": null}
+{"cid": 45365, "code": "PLAN", "number": 664, "prereq": null}
+{"cid": 46498, "code": "PLAN", "number": 668, "prereq": null}
+{"cid": 45366, "code": "PLAN", "number": 670, "prereq": null}
+{"cid": 45367, "code": "PLAN", "number": 672, "prereq": null}
+{"cid": 45368, "code": "PLAN", "number": 674, "prereq": null}
+{"cid": 45369, "code": "PLAN", "number": 676, "prereq": null}
+{"cid": 45370, "code": "PLAN", "number": 680, "prereq": null}
+{"cid": 45371, "code": "PLAN", "number": 682, "prereq": null}
+{"cid": 45372, "code": "PLAN", "number": 684, "prereq": null}
+{"cid": 45373, "code": "PLAN", "number": 686, "prereq": null}
+{"cid": 45374, "code": "PLAN", "number": 688, "prereq": null}
+{"cid": 45375, "code": "PLAN", "number": 790, "prereq": [{"consent": "School"}]}
+{"cid": 45376, "code": "PLAN", "number": 792, "prereq": [{"consent": "School"}]}
+{"cid": 45273, "code": "PLAN", "number": 799, "prereq": [{"consent": "School"}]}
+{"cid": 47417, "code": "LAND", "number": 201, "prereq": null}
+{"cid": 45254, "code": "LAND", "number": 600, "prereq": null}
+{"cid": 45314, "code": "LAND", "number": 602, "prereq": null}
+{"cid": 45341, "code": "LAND", "number": 604, "prereq": [["PLAN 606", "EVDP 625"]]}
+{"cid": 45274, "code": "LAND", "number": 606, "prereq": null}
+{"cid": 45315, "code": "LAND", "number": 608, "prereq": null}
+{"cid": 45316, "code": "LAND", "number": 610, "prereq": null}
+{"cid": 45275, "code": "LAND", "number": 612, "prereq": null}
+{"cid": 45340, "code": "LAND", "number": 614, "prereq": null}
+{"cid": 45317, "code": "LAND", "number": 616, "prereq": null}
+{"cid": 47078, "code": "LAND", "number": 618, "prereq": null}
+{"cid": 47079, "code": "LAND", "number": 620, "prereq": null}
+{"cid": 45342, "code": "LAND", "number": 670, "prereq": null}
+{"cid": 45343, "code": "LAND", "number": 672, "prereq": null}
+{"cid": 45344, "code": "LAND", "number": 674, "prereq": null}
+{"cid": 45345, "code": "LAND", "number": 676, "prereq": null}
+{"cid": 46420, "code": "LAND", "number": 680, "prereq": null}
+{"cid": 45346, "code": "LAND", "number": 682, "prereq": null}
+{"cid": 45347, "code": "LAND", "number": 684, "prereq": null}
+{"cid": 45348, "code": "LAND", "number": 686, "prereq": null}
+{"cid": 45349, "code": "LAND", "number": 688, "prereq": null}
+{"cid": 45350, "code": "LAND", "number": 700, "prereq": null}
+{"cid": 45351, "code": "LAND", "number": 702, "prereq": null}
+{"cid": 45352, "code": "LAND", "number": 790, "prereq": [{"consent": "School"}]}
+{"cid": 45353, "code": "LAND", "number": 792, "prereq": [{"consent": "School"}]}
+{"cid": 45318, "code": "LAND", "number": 799, "prereq": [{"consent": "School"}]}
+{"cid": 47136, "code": "APLA", "number": 580, "prereq": null}
+{"cid": 47137, "code": "APLA", "number": 582, "prereq": null}
+{"cid": 47138, "code": "APLA", "number": 584, "prereq": null}
+{"cid": 47139, "code": "APLA", "number": 586, "prereq": null}
+{"cid": 45246, "code": "APLA", "number": 670, "prereq": null}
+{"cid": 45247, "code": "APLA", "number": 672, "prereq": null}
+{"cid": 45248, "code": "APLA", "number": 674, "prereq": null}
+{"cid": 45249, "code": "APLA", "number": 680, "prereq": null}
+{"cid": 45250, "code": "APLA", "number": 682, "prereq": null}
+{"cid": 45251, "code": "APLA", "number": 684, "prereq": null}
+{"cid": 47066, "code": "APLA", "number": 690, "prereq": null}
+{"cid": 47067, "code": "APLA", "number": 692, "prereq": null}
+{"cid": 47068, "code": "APLA", "number": 694, "prereq": null}
+{"cid": 47069, "code": "APLA", "number": 696, "prereq": null}
+{"cid": 7256, "code": "CNST", "number": 201, "prereq": null}
+{"cid": 7262, "code": "CNST", "number": 333, "prereq": null}
+{"cid": 7263, "code": "CNST", "number": 337, "prereq": null}
+{"cid": 7268, "code": "CNST", "number": 355, "prereq": null}
+{"cid": 7269, "code": "CNST", "number": 361, "prereq": null}
+{"cid": 7270, "code": "CNST", "number": 401, "prereq": null}
+{"cid": 7275, "code": "CNST", "number": 439, "prereq": null}
+{"cid": 7276, "code": "CNST", "number": 451, "prereq": null}
+{"cid": 7279, "code": "CNST", "number": 501, "prereq": [{"units": 3, "from": ["ART 361", "COMS 313", "HTST 300", "POLI 399", "SOCI 313"]}]}
+{"cid": 7281, "code": "CNST", "number": 591, "prereq": ["72 units, including 6 units from courses labelled CNST"]}
+{"cid": 41982, "code": "CNST", "number": 597, "prereq": ["Admission to the Canadian Studies Honours Program and 3 units from ART 361, COMS 313, HTST 300, POLI 399 or SOCI 313"]}
+{"cid": 41983, "code": "CNST", "number": 598, "prereq": ["Admission to the Canadian Studies Honours Program and 3 units from ART 361, COMS 313, HTST 300, POLI 399 or SOCI 313"]}
+{"cid": 47026, "code": "ASHA", "number": 222, "prereq": ["Admission to the Arts and Science Honours Academy Program"]}
+{"cid": 47025, "code": "ASHA", "number": 322, "prereq": ["Arts and Science Honours Academy 221 or 222 and admission to the Arts and Science Honours Academy"]}
+{"cid": 47024, "code": "ASHA", "number": 422, "prereq": ["Arts and Science Honours Academy 321 or 322 and admission to the Arts and Science Honours Academy"]}
+{"cid": 30201, "code": "ASHA", "number": 503, "prereq": ["Arts and Science Honours Academy 422 or 501 and admission to the Arts and Science Honours Academy"]}
+{"cid": 39545, "code": "ARTS", "number": 501, "prereq": ["Third-year standing and consent of the Faculty"]}
+{"cid": 39546, "code": "ARTS", "number": 502, "prereq": ["Acceptance to a recognized academic internship or field placement program and approval of the Faculty of Arts"]}
+{"cid": 43000, "code": "ARTS", "number": 503, "prereq": ["Admission to the BA Multidisciplinary and completion of 75 units"]}
+{"cid": 46962, "code": "ARTS", "number": 507, "prereq": ["48 units and consent of the instructor"]}
+{"cid": 46963, "code": "ARTS", "number": 509, "prereq": ["ARTS 507 or CMCL 507 or SCIE 511 and consent of the instructor"]}
+{"cid": 43750, "code": "ARTS", "number": 601, "prereq": ["Admission to MA, MSc or PhD program in the Faculty of Arts"]}
+{"cid": 7066, "code": "ARHI", "number": 201, "prereq": null}
+{"cid": 7067, "code": "ARHI", "number": 203, "prereq": null}
+{"cid": 41969, "code": "ARHI", "number": 211, "prereq": null}
+{"cid": 41970, "code": "ARHI", "number": 305, "prereq": null}
+{"cid": 40807, "code": "ARHI", "number": 311, "prereq": null}
+{"cid": 41971, "code": "ARHI", "number": 319, "prereq": null}
+{"cid": 41972, "code": "ARHI", "number": 321, "prereq": null}
+{"cid": 7074, "code": "ARHI", "number": 323, "prereq": null}
+{"cid": 7075, "code": "ARHI", "number": 325, "prereq": null}
+{"cid": 7076, "code": "ARHI", "number": 327, "prereq": null}
+{"cid": 41973, "code": "ARHI", "number": 331, "prereq": null}
+{"cid": 41974, "code": "ARHI", "number": 333, "prereq": null}
+{"cid": 43687, "code": "ARHI", "number": 340, "prereq": null}
+{"cid": 41976, "code": "ARHI", "number": 343, "prereq": null}
+{"cid": 7078, "code": "ARHI", "number": 357, "prereq": null}
+{"cid": 7079, "code": "ARHI", "number": 359, "prereq": null}
+{"cid": 7080, "code": "ARHI", "number": 365, "prereq": null}
+{"cid": 7081, "code": "ARHI", "number": 367, "prereq": null}
+{"cid": 41977, "code": "ARHI", "number": 371, "prereq": null}
+{"cid": 41978, "code": "ARHI", "number": 389, "prereq": null}
+{"cid": 7085, "code": "ARHI", "number": 411, "prereq": [{"units": 6, "from": [" "]}]}
+{"cid": 7089, "code": "ARHI", "number": 425, "prereq": null}
+{"cid": 41979, "code": "ARHI", "number": 431, "prereq": [{"units": 3, "from": ["ARHI 331", "ARHI 333", "ARHI 357", " "]}]}
+{"cid": 41980, "code": "ARHI", "number": 471, "prereq": [{"units": 6, "from": "$ARHI $300+"}]}
+{"cid": 7091, "code": "ARHI", "number": 501, "prereq": [{"units": 18, "from": [" ", " "]}]}
+{"cid": 7093, "code": "ARHI", "number": 511, "prereq": [{"units": 18, "from": [" ", " "]}]}
+{"cid": 41981, "code": "ARHI", "number": 513, "prereq": [{"units": 18, "from": [" ", " "]}]}
+{"cid": 7094, "code": "ARHI", "number": 613, "prereq": [{"consent": "Department"}]}
+{"cid": 7095, "code": "ARHI", "number": 615, "prereq": [{"consent": "Department"}]}
+{"cid": 7096, "code": "ARHI", "number": 617, "prereq": [{"consent": "Department"}]}
+{"cid": 7105, "code": "ART", "number": 231, "prereq": null}
+{"cid": 7106, "code": "ART", "number": 233, "prereq": null}
+{"cid": 7107, "code": "ART", "number": 235, "prereq": null}
+{"cid": 7108, "code": "ART", "number": 241, "prereq": null}
+{"cid": 7109, "code": "ART", "number": 243, "prereq": ["ART 241"]}
+{"cid": 30212, "code": "ART", "number": 251, "prereq": null}
+{"cid": 7110, "code": "ART", "number": 271, "prereq": null}
+{"cid": 7112, "code": "ART", "number": 301, "prereq": null}
+{"cid": 41955, "code": "ART", "number": 309, "prereq": null}
+{"cid": 30213, "code": "ART", "number": 311, "prereq": null}
+{"cid": 46937, "code": "ART", "number": 312, "prereq": ["ART 235"]}
+{"cid": 30214, "code": "ART", "number": 313, "prereq": ["ART 235"]}
+{"cid": 46938, "code": "ART", "number": 314, "prereq": null}
+{"cid": 30215, "code": "ART", "number": 315, "prereq": [{"units": 3, "from": [" "]}]}
+{"cid": 39792, "code": "ART", "number": 317, "prereq": [{"units": 3, "from": [" "]}]}
+{"cid": 41956, "code": "ART", "number": 319, "prereq": [{"units": 3, "from": [" "]}]}
+{"cid": 7115, "code": "ART", "number": 321, "prereq": null}
+{"cid": 41957, "code": "ART", "number": 323, "prereq": [{"units": 3, "from": [" "]}]}
+{"cid": 40802, "code": "ART", "number": 327, "prereq": [{"units": 15, "from": [" "]}]}
+{"cid": 40803, "code": "ART", "number": 329, "prereq": [{"units": 15, "from": [" "]}]}
+{"cid": 7116, "code": "ART", "number": 331, "prereq": [{"units": 3, "from": [" "]}]}
+{"cid": 43684, "code": "ART", "number": 332, "prereq": ["ART 336"]}
+{"cid": 40167, "code": "ART", "number": 334, "prereq": [{"units": 3, "from": [" "]}]}
+{"cid": 7118, "code": "ART", "number": 336, "prereq": ["ART 235"]}
+{"cid": 7119, "code": "ART", "number": 338, "prereq": ["ART 235"]}
+{"cid": 43685, "code": "ART", "number": 340, "prereq": ["ART 235"]}
+{"cid": 7121, "code": "ART", "number": 341, "prereq": ["ART 241"]}
+{"cid": 41958, "code": "ART", "number": 342, "prereq": null}
+{"cid": 7122, "code": "ART", "number": 343, "prereq": ["ART 241"]}
+{"cid": 41959, "code": "ART", "number": 344, "prereq": null}
+{"cid": 7123, "code": "ART", "number": 345, "prereq": ["ART 241"]}
+{"cid": 7124, "code": "ART", "number": 347, "prereq": ["ART 345"]}
+{"cid": 7125, "code": "ART", "number": 349, "prereq": null}
+{"cid": 43686, "code": "ART", "number": 350, "prereq": [["ART 231", "ART 241"]]}
+{"cid": 7126, "code": "ART", "number": 351, "prereq": [["ART 231", "ART 241"]]}
+{"cid": 7127, "code": "ART", "number": 353, "prereq": [["ART 231", "ART 241"]]}
+{"cid": 40804, "code": "ART", "number": 361, "prereq": [{"units": 6, "from": [" "]}]}
+{"cid": 40805, "code": "ART", "number": 363, "prereq": ["ART 361"]}
+{"cid": 40806, "code": "ART", "number": 365, "prereq": null}
+{"cid": 7128, "code": "ART", "number": 373, "prereq": null}
+{"cid": 7129, "code": "ART", "number": 377, "prereq": null}
+{"cid": 7130, "code": "ART", "number": 379, "prereq": null}
+{"cid": 7131, "code": "ART", "number": 381, "prereq": ["ART 233"]}
+{"cid": 7132, "code": "ART", "number": 383, "prereq": ["ART 233"]}
+{"cid": 41960, "code": "ART", "number": 397, "prereq": [{"units": 12, "from": [" "]}]}
+{"cid": 7136, "code": "ART", "number": 399, "prereq": null}
+{"cid": 7137, "code": "ART", "number": 401, "prereq": null}
+{"cid": 7138, "code": "ART", "number": 411, "prereq": null}
+{"cid": 46939, "code": "ART", "number": 414, "prereq": ["ART 314"]}
+{"cid": 41961, "code": "ART", "number": 421, "prereq": [{"units": 15, "from": [" ", " 331", " 319", " 323", " 334"]}]}
+{"cid": 7139, "code": "ART", "number": 431, "prereq": [{"units": 15, "from": "$ART $300+", "including": ["3"]}]}
+{"cid": 41962, "code": "ART", "number": 438, "prereq": [{"units": 15, "from": [" ", " 338"]}]}
+{"cid": 41963, "code": "ART", "number": 445, "prereq": [{"units": 15, "from": "$ART $300+", "including": ["3"]}]}
+{"cid": 7145, "code": "ART", "number": 451, "prereq": [["ART 231", "ART 241"]]}
+{"cid": 41964, "code": "ART", "number": 455, "prereq": [{"units": 15, "from": [" ", " 353"]}]}
+{"cid": 7148, "code": "ART", "number": 465, "prereq": [{"units": 15, "from": [" "]}]}
+{"cid": 41965, "code": "ART", "number": 475, "prereq": [{"units": 15, "from": "$ART $300+", "including": ["3"]}]}
+{"cid": 7151, "code": "ART", "number": 481, "prereq": ["ART 233"]}
+{"cid": 41966, "code": "ART", "number": 485, "prereq": [{"units": 15, "from": [" ", " 383"]}]}
+{"cid": 7155, "code": "ART", "number": 491, "prereq": null}
+{"cid": 7156, "code": "ART", "number": 499, "prereq": ["ART 399 and admission to the BFA or BFA Honours in Visual Studies"]}
+{"cid": 32219, "code": "ART", "number": 501, "prereq": [{"units": 15, "from": [" ", " 315", " 317", " 321"]}]}
+{"cid": 32220, "code": "ART", "number": 503, "prereq": ["ART 251"]}
+{"cid": 7157, "code": "ART", "number": 509, "prereq": [{"units": 12, "from": "$ART $300+"}]}
+{"cid": 7158, "code": "ART", "number": 513, "prereq": [{"consent": "Department"}]}
+{"cid": 7166, "code": "ART", "number": 560, "prereq": ["Admission to the BFA Honours Visual Studies Program"]}
+{"cid": 7167, "code": "ART", "number": 561, "prereq": ["Admission to Honours in Visual Studies and consent of the Department"]}
+{"cid": 7168, "code": "ART", "number": 563, "prereq": ["Admission to Honours in Visual Studies and ART 561"]}
+{"cid": 41967, "code": "ART", "number": 565, "prereq": ["ART 465"]}
+{"cid": 7174, "code": "ART", "number": 595, "prereq": ["Admission to Honours in Visual Studies and consent of the Department"]}
+{"cid": 7175, "code": "ART", "number": 599, "prereq": [{"units": 3, "from": [" ", " "]}]}
+{"cid": 7176, "code": "ART", "number": 601, "prereq": ["Admission to a graduate program in the Department of Art"]}
+{"cid": 7177, "code": "ART", "number": 603, "prereq": ["ART 601"]}
+{"cid": 7178, "code": "ART", "number": 605, "prereq": ["Admission to a graduate program in the Department of Art"]}
+{"cid": 43305, "code": "ART", "number": 609, "prereq": ["Consent of the Department\u00a0 of Art"]}
+{"cid": 41968, "code": "ART", "number": 611, "prereq": ["Admission to a graduate program in the Department of Art"]}
+{"cid": 7183, "code": "ART", "number": 661, "prereq": [{"consent": "Department"}, "courses must be taken sequentially"]}
+{"cid": 7186, "code": "ART", "number": 691, "prereq": ["Admission to a graduate program in the Department of Art"]}
+{"cid": 7188, "code": "ART", "number": 761, "prereq": ["Admission to a graduate program in the Department of Art"]}
+{"cid": 9364, "code": "ARKY", "number": 201, "prereq": null}
+{"cid": 9366, "code": "ARKY", "number": 205, "prereq": null}
+{"cid": 9367, "code": "ARKY", "number": 303, "prereq": null}
+{"cid": 9369, "code": "ARKY", "number": 306, "prereq": [{"consent": "Department"}]}
+{"cid": 9370, "code": "ARKY", "number": 307, "prereq": null}
+{"cid": 32258, "code": "ARKY", "number": 317, "prereq": null}
+{"cid": 32257, "code": "ARKY", "number": 321, "prereq": null}
+{"cid": 9371, "code": "ARKY", "number": 325, "prereq": null}
+{"cid": 10969, "code": "ARKY", "number": 327, "prereq": null}
+{"cid": 46965, "code": "ARKY", "number": 328, "prereq": null}
+{"cid": 40797, "code": "ARKY", "number": 329, "prereq": null}
+{"cid": 40798, "code": "ARKY", "number": 331, "prereq": null}
+{"cid": 32259, "code": "ARKY", "number": 335, "prereq": null}
+{"cid": 9372, "code": "ARKY", "number": 341, "prereq": null}
+{"cid": 9373, "code": "ARKY", "number": 343, "prereq": null}
+{"cid": 9374, "code": "ARKY", "number": 345, "prereq": null}
+{"cid": 9375, "code": "ARKY", "number": 347, "prereq": [{"consent": "Department"}]}
+{"cid": 9377, "code": "ARKY", "number": 353, "prereq": null}
+{"cid": 9379, "code": "ARKY", "number": 357, "prereq": null}
+{"cid": 9380, "code": "ARKY", "number": 395, "prereq": [["ARKY 201", "ARKY 205"]]}
+{"cid": 9381, "code": "ARKY", "number": 399, "prereq": null}
+{"cid": 9382, "code": "ARKY", "number": 401, "prereq": [["ARKY 201", "ARKY 205"]]}
+{"cid": 9385, "code": "ARKY", "number": 415, "prereq": ["ARKY 201"]}
+{"cid": 9386, "code": "ARKY", "number": 417, "prereq": ["ARKY 201"]}
+{"cid": 9387, "code": "ARKY", "number": 419, "prereq": null}
+{"cid": 9389, "code": "ARKY", "number": 423, "prereq": [{"units": 3, "from": ["ARKY 201", "ARKY 205", "ARKY 303"]}]}
+{"cid": 9394, "code": "ARKY", "number": 437, "prereq": [["ARKY 201", "ARKY 203"]]}
+{"cid": 9395, "code": "ARKY", "number": 439, "prereq": null}
+{"cid": 9397, "code": "ARKY", "number": 443, "prereq": ["ARKY 201"]}
+{"cid": 9398, "code": "ARKY", "number": 451, "prereq": ["ARKY 201 and 60 units"]}
+{"cid": 9399, "code": "ARKY", "number": 453, "prereq": [{"units": 3, "from": ["ARKY 201", "GEOG 211", "GEOG 310", "GLGY 201", "GLGY 209"]}]}
+{"cid": 9401, "code": "ARKY", "number": 471, "prereq": ["ARKY 201"]}
+{"cid": 42835, "code": "ARKY", "number": 490, "prereq": [{"consent": "Department"}]}
+{"cid": 9404, "code": "ARKY", "number": 503, "prereq": ["ARKY 451"]}
+{"cid": 9406, "code": "ARKY", "number": 506, "prereq": ["ARKY 201 and 306"]}
+{"cid": 32190, "code": "ARKY", "number": 515, "prereq": [{"consent": "Department"}]}
+{"cid": 9411, "code": "ARKY", "number": 531, "prereq": [{"consent": "Department"}]}
+{"cid": 9415, "code": "ARKY", "number": 555, "prereq": [{"units": 3, "from": ["ANTH 309", "ANTH 350", "ARKY 417"]}]}
+{"cid": 44482, "code": "ARKY", "number": 590, "prereq": ["Admission to BA or BSc Archaeology Honours program and consent of the Department"]}
+{"cid": 9417, "code": "ARKY", "number": 591, "prereq": ["ARKY 451"]}
+{"cid": 9418, "code": "ARKY", "number": 593, "prereq": ["ARKY 451"]}
+{"cid": 9419, "code": "ARKY", "number": 595, "prereq": ["9 units ANTH 201, 350, ARKY 555 and admission to the Archaeology or Anthropology major"]}
+{"cid": 9421, "code": "ARKY", "number": 597, "prereq": ["Admission to the BA or BSc Archaeology and consent of the Department"]}
+{"cid": 9424, "code": "ARKY", "number": 601, "prereq": [{"consent": "Department"}]}
+{"cid": 9425, "code": "ARKY", "number": 603, "prereq": [{"consent": "Department"}]}
+{"cid": 9429, "code": "ARKY", "number": 613, "prereq": [{"consent": "Department"}]}
+{"cid": 9430, "code": "ARKY", "number": 615, "prereq": [{"consent": "Department"}]}
+{"cid": 9431, "code": "ARKY", "number": 617, "prereq": [{"consent": "Department"}]}
+{"cid": 9432, "code": "ARKY", "number": 619, "prereq": ["ARKY 555"]}
