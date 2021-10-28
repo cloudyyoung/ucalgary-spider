@@ -10,9 +10,6 @@ class CourseTitle(scrapy.Item):
     title = scrapy.Field()
     code = scrapy.Field()
     faculty = scrapy.Field()
-
-
-class CourseTitleYear(CourseTitle):
     year = scrapy.Field()
 
 
