@@ -43,41 +43,58 @@ class CourseRequisitesPipeline:
         return string
 
     def prereq_x_units_from(self, string):
-        m = re.match(self.regex_x_units_from, string)
-        units_text = m.group(1)
-        courses_text = m.group(2)
+        x = re.match(self.regex_x_units_from, string)
+        units_text = x.group(1).strip()
+        courses_text = x.group(2).strip()
 
-        courses = []
-        last_code = ""
+        y = re.match(self.regex_x_units_from_courses_labelled_at, courses_text)
+        z = re.match(self.regex_x_units_from_courses_labelled_at_including, courses_text)
 
-        # Split `from` text into several pieces of courses
-        _courses = re.split(',|or', courses_text)
-        for _course in _courses:
-            _course = _course.strip()
-            x = re.match(self.regex_complete_course, _course)
-            y = re.match(self.regex_incomplete_course, _course)
+        if(z):
+            # courses labelled ART at the 300 level, including ...
+            code = z.group(1).strip()
+            number = z.group(2).strip()
+            including = z.group(3).strip()
 
-            code, key, course_title = "", "", ""
+            return {"units": int(units_text), "from": f"${code} ${number}+", "including": self.prereq(including)}
+        elif (y):
+            # courses labelled ARST at the 300 level or above
+            code = y.group(1).strip()
+            number = y.group(2).strip()
 
-            # If the course name is complete `Arts 241`, or incomplete `241`
-            if(x):
-                code = last_code = x.group(1)
-                key = x.group(2)
-            elif(y):
-                code = last_code
-                key = y.group(1)
+            return {"units": int(units_text), "from": f"${code} ${number}+"}
+        else:
+            courses = []
+            last_code = ""
 
-            # Trim spaces
-            code, key, course_title = code.strip(), key.strip(), course_title.strip()
+            # Split `from` text into several pieces of courses
+            _courses = re.split(',|or', courses_text)
+            for _course in _courses:
+                _course = _course.strip()
+                x = re.match(self.regex_complete_course, _course)
+                y = re.match(self.regex_incomplete_course, _course)
 
-            course_title = code + " " + key
-            courses.append(course_title)
+                code, key, course_title = "", "", ""
 
-        if(courses == []):
-            print("UNHANDLED PATTERN - X UNITS FROM []: " + string)
-            return string
+                # If the course name is complete `Arts 241`, or incomplete `241`
+                if(x):
+                    code = last_code = x.group(1)
+                    key = x.group(2)
+                elif(y):
+                    code = last_code
+                    key = y.group(1)
 
-        return {"units": int(units_text), "from": courses}
+                # Trim spaces
+                code, key, course_title = code.strip(), key.strip(), course_title.strip()
+
+                course_title = code + " " + key
+                courses.append(course_title)
+
+            if(courses == []):
+                print("UNHANDLED PATTERN - X UNITS FROM []: " + string)
+                return string
+
+            return {"units": int(units_text), "from": courses}
 
     def prereq_consent_of_the(self, string):
         m = re.match(self.regex_consent_of_the, string)
@@ -110,20 +127,24 @@ class CourseRequisitesPipeline:
     # Regex string
     regex_incomplete_course = r"([0-9]{3})"
     regex_complete_course = r"([A-Z]{3,4}) ([0-9]{3})"
-    regex_x_units_from = r"([0-9]) units from (.*)"
-    regex_consent_of_the = r"[Cc]onsent of the ([A-z ,]*)$"
-    regex_or_courses_full_incomplete = r"([A-Z]{3,4}) ([0-9]{3}) or ([0-9]{3})"
-    regex_or_courses_full_full = r"([A-Z]{3,4}) ([0-9]{3}) or ([A-Z]{3,4}) ([0-9]{3})"
-    regex_single_course = r"([A-Z]{3,4}) ([0-9]{3})$"
+    regex_x_units_from = r"^([0-9]{1,2}) units (?:from|in|of) (.*)$"
+    regex_x_units_from_courses_labelled_at = r"courses labelled ([A-Z]{3,4}) at the ([0-9]{3}) level(?: or above)$"
+    regex_x_units_from_courses_labelled_at_including = r"courses labelled ([A-Z]{3,4}) at the ([0-9]{3}) level(?:,) including ([0-9]{1,2}) units from (.*)"
+    regex_consent_of_the = r"^[Cc]onsent of the ([A-z ,-]*)$"
+    regex_or_courses_full_incomplete = r"^([A-Z]{3,4}) ([0-9]{3}) or ([0-9]{3})$"
+    regex_or_courses_full_full = r"^([A-Z]{3,4}) ([0-9]{3}) or ([A-Z]{3,4}) ([0-9]{3})$"
+    regex_single_course = r"^([A-Z]{3,4}) ([0-9]{3})$"
 
     # All regex and its matching handle function
     # Tests on regex101.com
     patterns = {
-        regex_single_course: prereq_single_course,
         regex_x_units_from: prereq_x_units_from,
+        regex_x_units_from_courses_labelled_at: prereq_x_units_from,
+        regex_x_units_from_courses_labelled_at_including: prereq_x_units_from,
         regex_consent_of_the: prereq_consent_of_the,
         regex_or_courses_full_incomplete: prereq_or_courses,
         regex_or_courses_full_full: prereq_or_courses,
+        regex_single_course: prereq_single_course,
     }
 
     def open_spider(self, spider):
@@ -160,15 +181,12 @@ class CourseRequisitesPipeline:
         for full_name in sorted(self.course_titles.keys(), key=len, reverse=True):
             code = self.course_titles[full_name]
             prereq_text = re.sub(full_name + r" ([0-9]{3})", code + r" \1", prereq_text)
+            prereq_text = re.sub(r"labelled " + full_name, r"labelled " + code, prereq_text)
 
         prereq = []
 
         # Split requisites into several and conditions
         _ands = prereq_text.split(";")
-        if(len(_ands) == 1):  # If the requisite is not combined `x;y;z` but `x and y`.
-            _ands = prereq_text.split("and")
-
-        # For each and condition
         for _and in _ands:
             _and = str(_and).strip()
             handled = False
