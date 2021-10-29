@@ -1,10 +1,6 @@
 import json
 import scrapy
-import htmlmin
-import re
-from unidecode import unidecode
 from scrapy.spiders import CrawlSpider
-from bs4 import BeautifulSoup
 from nero.items import CourseRequisite
 
 
