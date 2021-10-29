@@ -3,11 +3,9 @@ import scrapy
 import htmlmin
 import re
 from unidecode import unidecode
-from scrapy.spiders import CrawlSpider, Rule
-from scrapy.linkextractors import LinkExtractor
+from scrapy.spiders import CrawlSpider
 from bs4 import BeautifulSoup
-from nero.utils import Utils
-from nero.items import CourseRequisite, CourseTitle, CourseInfo
+from nero.items import CourseRequisite
 
 
 class CourseCalendar(CrawlSpider):
