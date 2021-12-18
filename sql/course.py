@@ -4,6 +4,7 @@ import json
 # Open data/course-info.jsonline, read each line and parse into json
 f = open("data/course-info.jsonlines", "r")
 w = open("sql/course-info.sql", "w")
+wh = open("sql/course-hours.sql", "w")
 for line in f:
     # Parse to json
     json_data = json.loads(line)
@@ -21,13 +22,23 @@ for line in f:
             json_data[key] = "false"
         elif type(json_data[key]) == int or type(json_data[key]) == float:
             json_data[key] = str(json_data[key])
+        elif type(json_data[key]) == list:
+            pass
         else:
             # Add slash to escape quotes
             json_data[key] = "'" + str(json_data[key]).replace("'", "\\'") + "'"
 
-    # sql = "INSERT INTO `course` (`course_id`, `code`, `number`, `topic`, `description`, `credits`, `units`, `prerequisites`, `antirequisites`, `corequisites`, `no_gpa`, `repeat`, `notes`) "
+    sql = ""
+    sql += "INSERT INTO `course` (`course_id`, `code`, `number`, `topic`, `description`, `credits`, `units`, `prerequisites`, `antirequisites`, `corequisites`, `no_gpa`, `repeat`, `notes`) "
     sql = "INSERT INTO `course` "
     sql += "VALUES (" + str(json_data["cid"]) + ", " + str(json_data["code"]) + ", " + str(json_data["number"]) + ", " + str(json_data["topic"]) + ", " + str(json_data["description"]) + ", " + str(json_data["credits"]) + ", " + str(json_data["units"]) + ", " + str(json_data["prereq"]) + ", " + str(json_data["antireq"]) + ", " + str(json_data["coreq"]) + ", " + str(json_data["nogpa"]) + ", " + str(json_data["repeat"]) + ", " + str(json_data["notes"]) + ");"
     
+    sql_hours = ""
+    for hour in json_data["hours"]:
+        sql_hours += "INSERT INTO `hours` "
+        sql_hours += "VALUES (" + str(json_data["cid"]) + ", '" + str(hour) + "');"
+        pass
+
     # Write to file
     w.write(sql + "\n")
+    wh.write(sql_hours + "\n")
