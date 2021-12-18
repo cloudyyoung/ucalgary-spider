@@ -1,0 +1,2 @@
+INSERT INTO `department` VALUES (83289, 'African Studies', 'afst', '["+1 (403) 220-6516"]', '["Social Sciences 110"]', '["afstprog@ucalgary.ca"]', '["http://idp.ucalgary.ca/afst"]', null, '94388');
+INSERT INTO `department` VALUES (61897, 'Anaesthesia', 'anae', null, null, null, '["http://www.albertahealthservices.ca/4432.asp", "http://medicine.ucalgary.ca/postgrad/programs/anesthesia"]', null, '10626');
