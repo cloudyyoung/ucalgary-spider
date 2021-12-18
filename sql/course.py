@@ -22,7 +22,8 @@ for line in f:
         elif type(json_data[key]) == int or type(json_data[key]) == float:
             json_data[key] = str(json_data[key])
         else:
-            json_data[key] = "'" + str(json_data[key]) + "'"
+            # Add slash to escape quotes
+            json_data[key] = "'" + str(json_data[key]).replace("'", "\\'") + "'"
 
     # sql = "INSERT INTO `course` (`course_id`, `code`, `number`, `topic`, `description`, `credits`, `units`, `prerequisites`, `antirequisites`, `corequisites`, `no_gpa`, `repeat`, `notes`) "
     sql = "INSERT INTO `course` "
