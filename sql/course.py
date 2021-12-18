@@ -5,6 +5,10 @@ import json
 f = open("data/course-info.jsonlines", "r")
 w = open("sql/course-info.sql", "w")
 wh = open("sql/course-hours.sql", "w")
+wa = open("sql/course-aka.sql", "w")
+wtl = open("sql/course-time-length.sql", "w")
+
+
 for line in f:
     # Parse to json
     json_data = json.loads(line)
@@ -37,6 +41,18 @@ for line in f:
     for hour in json_data["hours"]:
         sql_hours += "INSERT INTO `hours` "
         sql_hours += "VALUES (" + str(json_data["cid"]) + ", '" + str(hour) + "');"
+        pass
+
+    sql_aka = ""
+    for aka in json_data["aka"]:
+        sql_aka += "INSERT INTO `aka` "
+        sql_aka += "VALUES (" + str(json_data["cid"]) + ", '" + str(aka) + "');"
+        pass
+
+    sql_time_length = ""
+    for time_length in json_data["time_length"]:
+        sql_time_length += "INSERT INTO `time_length` "
+        sql_time_length += "VALUES (" + str(json_data["cid"]) + ", '" + str(time_length) + "');"
         pass
 
     # Write to file
