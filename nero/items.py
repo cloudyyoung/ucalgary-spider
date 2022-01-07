@@ -6,7 +6,7 @@
 import scrapy
 
 
-class CourseTitle(scrapy.Item):
+class CourseCode(scrapy.Item):
     title = scrapy.Field()
     code = scrapy.Field()
     faculty = scrapy.Field()
