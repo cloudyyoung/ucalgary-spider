@@ -1,2 +1,0 @@
-INSERT INTO `programs` VALUES(29816, 'Actuarial Science', 'acsc', '['+1 (403) 220-5203']', null, null, '['http://math.ucalgary.ca/undergraduate/programs/actuarial-science']', null, 25322);
-INSERT INTO `programs` VALUES(26824, 'Applied & Environmental Geology', 'aegl', null, null, null, '['http://www.ucalgary.ca/geoscience/node/49']', null, 68591);
