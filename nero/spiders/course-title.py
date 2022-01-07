@@ -5,11 +5,11 @@ from unidecode import unidecode
 from scrapy.spiders import CrawlSpider
 from bs4 import BeautifulSoup
 from nero.spiders.__utils import Utils
-from nero.items import CourseTitle
+from nero.items import CourseCode
 
 
 class CourseTitleSpider(CrawlSpider):
-    name = 'course-title'
+    name = 'course-code-title'
     allowed_domains = ['www.ucalgary.ca']
     titles_existed = []
 
@@ -73,5 +73,5 @@ class CourseTitleSpider(CrawlSpider):
 
                 self.titles_existed.append([course_code, course_title])
 
-                course_title_obj = CourseTitle(title=course_title, code=course_code, faculty=faculty_id, year=year)
+                course_title_obj = CourseCode(title=course_title, code=course_code, faculty=faculty_id, year=year)
                 yield course_title_obj
