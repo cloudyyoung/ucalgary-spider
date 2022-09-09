@@ -51,7 +51,7 @@ class CourseInfoSpider(CrawlSpider):
 
             cp = CourseInfoParser(course_dom)
 
-            cid = cp.cid()
+            cid = cp.calendar_id
             title, number, topic = cp.title_number_topic()
             description, sub_topics = cp.description_subtopics()
             prereq, coreq, antireq, notes, aka = cp.requisites()

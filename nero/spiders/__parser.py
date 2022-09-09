@@ -9,6 +9,7 @@ class Parser:
     def __init__(self, dom) -> None:
         self.dom = dom
 
+
 class CourseInfoParser(Parser):
 
     def __convert_link(self, doms):
@@ -18,6 +19,7 @@ class CourseInfoParser(Parser):
             dom.name = "course"
         return doms
 
+    @property
     def calendar_id(self):
         return int(self.dom.previous_element.attrs['name'])
 
@@ -259,6 +261,7 @@ class CourseDirectoryParser(Parser):
                 note = None
 
             yield (name, time, room, sid, directory_id, note)
+
 
 class StaffParser(Parser):
     def name(self):
