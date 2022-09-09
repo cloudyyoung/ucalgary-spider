@@ -1,0 +1,7 @@
+Scrapy
+scrapyd
+bs4
+nameparser
+unidecode
+xmltodict
+htmlmin
