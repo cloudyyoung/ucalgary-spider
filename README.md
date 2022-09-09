@@ -3,16 +3,10 @@
 
 ## Development
 
-Pip is needed to install the following packages:
+Pip is needed to install the packages in `requirements.txt`
 
 ```
-pip install Scrapy
-pip install scrapyd
-pip install bs4
-pip install nameparser
-pip install unidecode
-pip install xmltodict
-pip install htmlmin
+pip install -r requirements.txt
 ```
 
 ## Run
