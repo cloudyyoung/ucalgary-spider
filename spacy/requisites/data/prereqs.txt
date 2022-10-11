@@ -2134,7 +2134,7 @@ Admission to the Haskayne School of Business and Risk Management and Insurance 3
 Admission to the Haskayne School of Business and Risk Management and Insurance 317.
 Consent of the Haskayne School of Business.
 Admission to the Haskayne School of Business and 30 units.
-24 units.  For certain topics, consent of the Haskayne School of Business will also be required.
+24 units.ï¿½ For certain topics, consent of the Haskayne School of Business will also be required.
 Admission to the Haskayne School of Business and 60 units including Finance 317.
 Admission to the Haskayne School of Business and 60 units.
 Admission to the Haskayne School of Business and 60 units including Strategy and Global Management 395.
@@ -2526,7 +2526,7 @@ Admission to the Graduate Certificate in Precision Health - Innovation and Entre
 Consent of the Faculty.
 Consent of the Faculty.
 Admission to the Graduate Certificate in Precision Health - Innovation and Entrepreneurship specialization, or admission to the Graduate Diploma in Precision Health.
-Admission to the Graduate Certificate in Precision Health -  Innovation and Entrepreneurship specialization, or admission to the Graduate Diploma in Precision Health.
+Admission to the Graduate Certificate in Precision Health -ï¿½ Innovation and Entrepreneurship specialization, or admission to the Graduate Diploma in Precision Health.
 Admission to the Graduate Certificate in Precision Health - Innovation and Entrepreneurship specialization, or admission to the Graduate Diploma in Precision Health.
 Admission to the Master of Precision Health program with a specialization in Innovation and Entrepreneurship.
 Admission to the Graduate Diploma or Master's program in Precision Health.
@@ -3341,7 +3341,7 @@ Admission to Honours in Visual Studies and consent of the Department.
 Admission to a graduate program in the Department of Art.
 Art 601.
 Admission to a graduate program in the Department of Art.
-Consent of the Department  of Art.
+Consent of the Departmentï¿½ of Art.
 Admission to a graduate program in the Department of Art.
 Consent of the Department; courses must be taken sequentially.
 Admission to a graduate program in the Department of Art.
