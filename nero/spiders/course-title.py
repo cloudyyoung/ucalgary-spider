@@ -9,7 +9,7 @@ from nero.items import CourseCode
 
 
 class CourseTitleSpider(CrawlSpider):
-    name = 'course-code-title'
+    name = 'course-title'
     allowed_domains = ['www.ucalgary.ca']
     titles_existed = []
 
@@ -18,7 +18,7 @@ class CourseTitleSpider(CrawlSpider):
         base_url = "https://www.ucalgary.ca/pubs/calendar/archives/%s/course-by-faculty.html"
 
         # Past x years
-        for t in range(10):
+        for t in range(20):
             year = current_year - t
 
             if(t == 0):
