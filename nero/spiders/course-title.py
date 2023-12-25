@@ -18,15 +18,14 @@ class CourseTitleSpider(CrawlSpider):
         base_url = "https://www.ucalgary.ca/pubs/calendar/archives/%s/course-by-faculty.html"
 
         # Past x years
-        for t in range(20):
-            year = current_year - t
-
-            if(t == 0):
+        for year in range(current_year, 2009, -1):
+            if year == current_year:
                 url = "https://www.ucalgary.ca/pubs/calendar/current/course-by-faculty.html"
             else:
-                url = base_url % (year)
+                url = base_url % year
 
             yield scrapy.Request(url=url, callback=self.parse, meta={"year": year})
+        
 
     def parse(self, response):
         body = str(response.body, encoding="utf-8")
@@ -39,6 +38,13 @@ class CourseTitleSpider(CrawlSpider):
 
         faculties_dom = soup.select("#ctl00_ctl00_pageContent .item-container")
         year = response.meta.get("year")
+
+
+        # Exceptions
+        # Year 2023
+        if year == 2023:
+            yield CourseCode(title="Design", code="DSGN", faculty=2462, year=year)
+
 
         print(response.url)
 
