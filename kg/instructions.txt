@@ -1,0 +1,194 @@
+You are given a piece of text of prerequsite for an arbitrary course, and you must transform the requisite into json format. 
+Your json should exclusively be prerequisites. 
+
+Course title and course code might be used interchangeably in the given text. Course code is always in the format of "ABCD".
+
+You can use logical expressions "and" and "or" to help. For example:
+```json
+{
+    "type": "and",
+    "conditions": [
+        "Law 400",
+        {
+            "type": "or",
+            "conditions": [
+                "Engineering 233",
+                "Digital Engineering 233",
+                "Digital Engineering 440"
+            ]
+        }
+    ]
+}
+``` 
+
+Only course can be expressed as pure string in conditions.
+```json
+{
+    "type": "and",
+    "conditions": [
+        "Law 400",
+        {
+            "type": "or",
+            "conditions": [
+                "Engineering 233",
+                "Digital Engineering 233",
+                "Digital Engineering 440"
+            ]
+        }
+    ]
+}
+```
+
+
+When you encounter required units, simply include "units_required" field and "courses" array.
+```json
+{
+    "type": "units_required",
+    "units_required": 21,
+    "courses": [
+        "Engineering 233",
+        "Digital Engineering 233",
+        "Digital Engineering 440"
+    ]
+}
+```
+
+When you encounter "Consent of the Department", simply do:
+```json
+{
+    "type": "consent",
+    "consent": "Consent of the Department"
+}
+```
+
+When you encounter "excluding <course>", simply do:
+```json
+{
+    "type": "exclude_courses",
+    "courses": [
+        "Chinese 317",
+        "Chinese 355"
+    ]
+}
+```
+
+When you encounter expression about certain course code, or certain level of a course code, simply do:
+```json
+{
+    "type": "units_required",
+    "units_required": 3,
+    "courses": [
+        {
+            "type": "subject",
+            "code": "PHIL",
+            "level": 400,
+            "include_higher": true
+        }
+    ]
+},
+```
+
+When you encountered expression about student year stading, simply do:
+```json
+{
+    "type": "degree",
+    "degree": "BHSc Honours",
+    "year_standing": 4
+}
+```
+
+When you encountered admission, simply do:
+```json
+{
+    "type": "admission",
+    "conditions": {
+        "type": "or",
+        "conditions": [
+            {
+                "type": "degree",
+                "degree": "BA in Philosophy",
+            },
+            {
+                "type": "degree",
+                "degree": "BA Honours in Philosophy",
+            }
+        ]
+    }
+}
+```
+
+When you encountered consent, simply do:
+```json
+{
+    "type": "consent",
+    "consent": "Consent of the Department"
+}
+```
+
+
+
+
+Example json: 
+```json
+{
+    "prereq": {
+        "type": "and",
+        "conditions": [
+            "Law 400",
+            {
+                "type": "units_required",
+                "units_required": 21,
+                "conditions": [
+                    "Engineering 233",
+                    "Digital Engineering 233",
+                    "Digital Engineering 440",
+                    {
+                        "type": "subject",
+                        "subject": "Philosophy",
+                        "level": 400,
+                        "include_higher": true
+                    },
+                    {
+                        "type": "subject",
+                        "subject": "Urban Studies"
+                    }
+                ]
+            },
+            {
+                "type": "or",
+                "conditions": [
+                    "Engineering 233",
+                    "Digital Engineering 233",
+                    "Digital Engineering 440"
+                ]
+            },
+            {
+                "type": "consent",
+                "consent": "Consent of the Department"
+            },
+            {
+                "type": "units_required",
+                "units_required": 3,
+                "conditions": [
+                    {
+                        "type": "subject",
+                        "subject": "Philosophy",
+                        "level": 400,
+                        "include_higher": true
+                    }
+                ]
+            },
+            {
+                "type": "exclude_courses",
+                "conditions": [
+                    "Chinese 317",
+                    "Chinese 355"
+                ]
+            }
+        ]
+    }
+}
+```
+
+You may not use any types not specified in these examples. Output error when you exvountered anything you have not seen.
+
