@@ -22,7 +22,7 @@ ENEL 353.
 ENEL 327 or BMEN 388 or Engineering PHYS 488 or consent of the Department.
 ENCM 369.
 ENCM 369.
-ENCM 335 or 339 or Software Engineering for Software Engineers 337.
+ENCM 335 or 339 or ENSF 337.
 Consent of the Department.
 ENGG 202 and MATH 275.
 ENCI 300.
