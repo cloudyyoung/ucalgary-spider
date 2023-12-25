@@ -1,180 +1,180 @@
-Architecture 506.
-Architecture 504.
-Architecture 514.
-Architecture 512.
-Civil Engineering 413.
-Civil Engineering 551.
-Engineering 311.
-Chemistry 357.
-Chemical Engineering 350.
-Engineering 311.
-Chemical Engineering 403.
-Chemical Engineering 421.
-Chemistry 357.
-Chemical Engineering 405.
-Chemical Engineering 405.
-Prerequisite or Corequisite: Chemistry 357.
-Chemical Engineering 505.
-Nursing 223 and 207.
-Nursing 209 and 211.
-Nursing 201 and 223.
-Nursing 205 and 211.
-Nursing 222 and 224.
-Nursing 227.
-Nursing 201, 207 and 221.
-Nursing 211 and 222.
-Nursing 287, 288 and 289.
-Nursing 285, 288 and 289.
-Nursing 285, 287 and 289.
-Nursing 285, 287 and 288.
-Nursing 302.
-Nursing 301.
-Nursing 305.
-Nursing 303.
-Nursing 316.
-Nursing 314.
-Nursing 387, 388 and 389.
-Nursing 385, 388, and 389.
-Nursing 385, 387 and 389.
-Nursing 385, 387 and 388.
-Nursing 402.
-Nursing 401.
-Nursing 404.
-Nursing 403.
-Nursing 410.
-Nursing 409.
-Nursing 416.
-Nursing 412.
-Nursing 487, 488 and 489.
-Nursing 485, 488, and 489.
-Nursing 485, 487 and 489.
-Nursing 485, 487 and 488.
-Nursing 497, 498 and 499.
-Nursing 495, 498, and 499.
-Nursing 495, 497 and 499.
-Nursing 495, 497 and 498.
-Prerequisite or Corequisite: Nursing 501.
-Nursing 589, 585 and 3 units from Nursing 544, 545, 546, 547, 549, 551.
-Nursing 589, 585 and 3 units from Nursing 544, 545, 546, 547, 549, 551.
-Nursing 589, 585 and 3 units from Nursing 517, 541, 550, 552, 553.
-Nursing 589, 585 and 3 units from Nursing 517, 541, 550, 552, 553.
-Nursing 589, 585 and 3 units from Nursing 517, 541, 550, 552, 553.
-Nursing 589, 585 and 3 units from Nursing 517, 541, 550, 552, 553.
-Nursing 589, 585 and 3 units from Nursing 517, 541, 550, 552, 553.
-Nursing 589, 585 and 3 units from Nursing 544, 545, 546, 547, 549.
-Nursing 554, 585, and 589.
-Nursing 585, 589 and 3 units from Nursing 544, 545, 546, 547, 549, 551.
-Nursing 585, 589 and 3 units from Nursing 544, 545, 546, 547, 549, 551.
-Nursing 551, 585 and 589.
-Nursing 589 and two Senior Nursing Option courses.
-Nursing 585 and two Senior Nursing Option courses.
-Prerequisite or Corequisite: Law 571.
-Prerequisite or Corequisite: Law 402, 406 and 551.
-Prerequisite or Corequisite: Law 505.
-Law 620.
-Prerequisite or Corequisite: Law 503.
-Prerequisite or Corequisite: Law 509.
-Prerequisite or Corequisite: Law 527.
-Law 616.
-Prerequisite or Corequisite: Law 505 and 509.
-Prerequisite or Corequisite: Law 503.
-Prerequisite or Corequisite: Law 543.
-Prerequisite or Corequisite: One of Law 549, 597 or 563.
-Prerequisite or Corequisite: Law 549 or 597.
-Prerequisite or Corequisite: Law 527.
-Prerequisite or Corequisite: Law 503.
-Prerequisite or Corequisite: Law 503.
-Prerequisite or Corequisite: Law 503.
-Prerequisite or Corequisite: Law 697.
-Prerequisite or Corequisite: Law 503 and 531.
-Prerequisite or Corequisite: Law 503.
-Prerequisite or Corequisite: Law 508.
-Prerequisite or Corequisite: Law 515.
-Prerequisite or Corequisite: Law 509.
-Law 688.
-Prerequisite or Corequisite: Law 511.
-Law 686.
-Prerequisite or Corequisite: Law 515.
-Prerequisite or Corequisite: One of Law 531, 571, 573, 583 or 637.
-Prerequisite or Corequisite: Law 509 and 527.
-Prerequisite or Corequisite: Law 503.
-Prerequisite or Corequisite: Law 503.
-Law 707.
-Prerequisite or Corequisite: Kinesiology 323.
-Prerequisite or Corequisite: Kinesiology 395 or 396.
-Prerequisite or Corequisite: Kinesiology 323.
-Kinesiology 372.
-Prerequisite or Corequisite: Kinesiology 373.
-Prerequisite or Corequisite: Kinesiology 395 or 396.
-or Prerequisite(s): Risk Management and Insurance 317.
-Prerequisite or Corequisite: Real Estate Studies 627 or 717.
-Prerequisite or Corequisite: Educational Psychology 623.
-Prerequisite or Corequisite: Educational Psychology 602.
-Prerequisite or Corequisite: Educational Psychology 689.
-Educational Psychology 653.
-Prerequisite or Corequisite: Educational Psychology 654.
-Prerequisite or Corequisite: Educational Psychology 696.
-Prerequisite or Corequisite: Educational Psychology 652.
-Education 207.
-Education 213.
-Education 440.
-Veterinary Medicine 610.
-Prerequisite or Corequisite: Social Work 300.
-Prerequisite or Corequisite: Social Work 304.
-Social Work 410.
-Social Work 412.
-Social Work 662 and admission to the course-based MSW.
-Social Work 660.
-Prerequisite or Corequisite: Environmental Science 401.
-Chemical Engineering 331 and admission to the Oil & Gas or Chemical Engineering with Petroleum Minor program.
+ARCH 506.
+ARCH 504.
+ARCH 514.
+ARCH 512.
+ENCI 413.
+ENCI 551.
+ENGG 311.
+CHEM 357.
+ENCH 350.
+ENGG 311.
+ENCH 403.
+ENCH 421.
+CHEM 357.
+ENCH 405.
+ENCH 405.
+Prerequisite or Corequisite: CHEM 357.
+ENCH 505.
+NURS 223 and 207.
+NURS 209 and 211.
+NURS 201 and 223.
+NURS 205 and 211.
+NURS 222 and 224.
+NURS 227.
+NURS 201, 207 and 221.
+NURS 211 and 222.
+NURS 287, 288 and 289.
+NURS 285, 288 and 289.
+NURS 285, 287 and 289.
+NURS 285, 287 and 288.
+NURS 302.
+NURS 301.
+NURS 305.
+NURS 303.
+NURS 316.
+NURS 314.
+NURS 387, 388 and 389.
+NURS 385, 388, and 389.
+NURS 385, 387 and 389.
+NURS 385, 387 and 388.
+NURS 402.
+NURS 401.
+NURS 404.
+NURS 403.
+NURS 410.
+NURS 409.
+NURS 416.
+NURS 412.
+NURS 487, 488 and 489.
+NURS 485, 488, and 489.
+NURS 485, 487 and 489.
+NURS 485, 487 and 488.
+NURS 497, 498 and 499.
+NURS 495, 498, and 499.
+NURS 495, 497 and 499.
+NURS 495, 497 and 498.
+Prerequisite or Corequisite: NURS 501.
+NURS 589, 585 and 3 units from NURS 544, 545, 546, 547, 549, 551.
+NURS 589, 585 and 3 units from NURS 544, 545, 546, 547, 549, 551.
+NURS 589, 585 and 3 units from NURS 517, 541, 550, 552, 553.
+NURS 589, 585 and 3 units from NURS 517, 541, 550, 552, 553.
+NURS 589, 585 and 3 units from NURS 517, 541, 550, 552, 553.
+NURS 589, 585 and 3 units from NURS 517, 541, 550, 552, 553.
+NURS 589, 585 and 3 units from NURS 517, 541, 550, 552, 553.
+NURS 589, 585 and 3 units from NURS 544, 545, 546, 547, 549.
+NURS 554, 585, and 589.
+NURS 585, 589 and 3 units from NURS 544, 545, 546, 547, 549, 551.
+NURS 585, 589 and 3 units from NURS 544, 545, 546, 547, 549, 551.
+NURS 551, 585 and 589.
+NURS 589 and two Senior Nursing Option courses.
+NURS 585 and two Senior Nursing Option courses.
+Prerequisite or Corequisite: LAW 571.
+Prerequisite or Corequisite: LAW 402, 406 and 551.
+Prerequisite or Corequisite: LAW 505.
+LAW 620.
+Prerequisite or Corequisite: LAW 503.
+Prerequisite or Corequisite: LAW 509.
+Prerequisite or Corequisite: LAW 527.
+LAW 616.
+Prerequisite or Corequisite: LAW 505 and 509.
+Prerequisite or Corequisite: LAW 503.
+Prerequisite or Corequisite: LAW 543.
+Prerequisite or Corequisite: One of LAW 549, 597 or 563.
+Prerequisite or Corequisite: LAW 549 or 597.
+Prerequisite or Corequisite: LAW 527.
+Prerequisite or Corequisite: LAW 503.
+Prerequisite or Corequisite: LAW 503.
+Prerequisite or Corequisite: LAW 503.
+Prerequisite or Corequisite: LAW 697.
+Prerequisite or Corequisite: LAW 503 and 531.
+Prerequisite or Corequisite: LAW 503.
+Prerequisite or Corequisite: LAW 508.
+Prerequisite or Corequisite: LAW 515.
+Prerequisite or Corequisite: LAW 509.
+LAW 688.
+Prerequisite or Corequisite: LAW 511.
+LAW 686.
+Prerequisite or Corequisite: LAW 515.
+Prerequisite or Corequisite: One of LAW 531, 571, 573, 583 or 637.
+Prerequisite or Corequisite: LAW 509 and 527.
+Prerequisite or Corequisite: LAW 503.
+Prerequisite or Corequisite: LAW 503.
+LAW 707.
+Prerequisite or Corequisite: KNES 323.
+Prerequisite or Corequisite: KNES 395 or 396.
+Prerequisite or Corequisite: KNES 323.
+KNES 372.
+Prerequisite or Corequisite: KNES 373.
+Prerequisite or Corequisite: KNES 395 or 396.
+or Prerequisite(s): RMIN 317.
+Prerequisite or Corequisite: REAL 627 or 717.
+Prerequisite or Corequisite: EDPS 623.
+Prerequisite or Corequisite: EDPS 602.
+Prerequisite or Corequisite: EDPS 689.
+EDPS 653.
+Prerequisite or Corequisite: EDPS 654.
+Prerequisite or Corequisite: EDPS 696.
+Prerequisite or Corequisite: EDPS 652.
+EDUC 207.
+EDUC 213.
+EDUC 440.
+VETM 610.
+Prerequisite or Corequisite: SOWK 300.
+Prerequisite or Corequisite: SOWK 304.
+SOWK 410.
+SOWK 412.
+SOWK 662 and admission to the course-based MSW.
+SOWK 660.
+Prerequisite or Corequisite: ENSC 401.
+ENCH 331 and admission to the Oil & Gas or Chemical Engineering with Petroleum Minor program.
 Third-year standing, or higher, in Chemical Engineering or Oil & Gas Engineering.
-Petroleum Engineering 429 or 523.
-Mechanical Engineering 471; and Mechanical Engineering 485 or Energy Engineering 560.
-3 units from Engineering 213, Communications Studies 363, or Strategy and Global Management 217.
-Geomatics Engineering 327 or Electrical Engineering 327.
-Geomatics Engineering 401.
-Geomatics Engineering 501.
-Geomatics Engineering 501.
-Co-requisite or Prerequisite: Petroleum Engineering 626.
-or Prerequisite(s): Marketing 465.
-or Prerequisite(s): Finance 473.
-or Prerequisite: Finance 663.
+ENPE 429 or 523.
+ENME 471; and ENME 485 or ENER 560.
+3 units from ENGG 213, COMS 363, or SGMA 217.
+ENGO 327 or ENEL 327.
+ENGO 401.
+ENGO 501.
+ENGO 501.
+Co-requisite or Prerequisite: ENPE 626.
+or Prerequisite(s): MKTG 465.
+or Prerequisite(s): FNCE 473.
+or Prerequisite: FNCE 663.
 One other senior Business Technology Management course.
-Community Health Sciences 610 (except for graduate students in the Community Health Sciences or Mathematics and Statistics graduate programs with a specialization in Biostatistics).
-Russian 309 and 313.
-Russian 309 and 311.
-Psychology 300.
-Psychology 300.
-Philosophy 590.
-Music 462.
-Music 562.
-Prerequisite or Corequisite: Museum and Heritage Studies 331.
-Prerequisites or Corequisites: Museum and Heritage Studies 433 and consent of the Museum and Heritage Studies Program Co-ordinator.
-Prerequisite or Corequisite: Linguistics 303.
-Italian 303.
-Italian 303.
-Prerequisite or Corequisite: Film 201.
-Prerequisite or Corequisite: Economics 201.
-Prerequisites or Corequisites: Economics 301 and 303.
-Prerequisite or Corequisite: Economics 395.
-Drama 316 and 318.
-Drama 316 and 318.
-Prerequisite or Corequisite: Drama 319.
-Prerequisite or Corequisite: Drama 319.
-Drama 416 and 418.
-Drama 416 and 418.
-Drama 416 and 418.
-Drama 416 and 418.
-Dance 333.
-Prerequisite or Corequisite: Dance 395.
-Prerequisite or Corequisite: Dance 397.
-Prerequisite or Corequisite: Communication and Media Studies 201.
-Canadian Studies 598.
-Canadian Studies 597.
-Art 561 or 563.
-Arabic Language and Muslim Cultures 311.
-Arabic Language and Muslim Cultures 309.
-Anthropology 553.
-Anthropology 552.
-Planning 606.
-Planning 602.
+MDCH 610 (except for graduate students in the Community Health Sciences or Mathematics and Statistics graduate programs with a specialization in Biostatistics).
+RUSS 309 and 313.
+RUSS 309 and 311.
+PSYC 300.
+PSYC 300.
+PHIL 590.
+MUSI 462.
+MUSI 562.
+Prerequisite or Corequisite: MHST 331.
+Prerequisites or Corequisites: MHST 433 and consent of the Museum and Heritage Studies Program Co-ordinator.
+Prerequisite or Corequisite: LING 303.
+ITAL 303.
+ITAL 303.
+Prerequisite or Corequisite: FILM 201.
+Prerequisite or Corequisite: ECON 201.
+Prerequisites or Corequisites: ECON 301 and 303.
+Prerequisite or Corequisite: ECON 395.
+DRAM 316 and 318.
+DRAM 316 and 318.
+Prerequisite or Corequisite: DRAM 319.
+Prerequisite or Corequisite: DRAM 319.
+DRAM 416 and 418.
+DRAM 416 and 418.
+DRAM 416 and 418.
+DRAM 416 and 418.
+DNCE 333.
+Prerequisite or Corequisite: DNCE 395.
+Prerequisite or Corequisite: DNCE 397.
+Prerequisite or Corequisite: COMS 201.
+CNST 598.
+CNST 597.
+ART 561 or 563.
+ALMC 311.
+ALMC 309.
+ANTH 553.
+ANTH 552.
+PLAN 606.
+PLAN 602.

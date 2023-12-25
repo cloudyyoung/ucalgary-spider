@@ -1,1191 +1,1191 @@
-Credit for Architecture 406 and any of Architectural Studies 484, Environmental Design Architecture 580, or Architecture 506 will not be allowed.
-Credit for Architecture 508 and Design 431 will not be allowed.
-Credit for Computer Engineering 335 and either Computer Engineering 339 or Physics 381 will not be allowed.
-Credit for Computer Engineering 507 and Electrical Engineering 519.38 (AlgorithmsCom-AidDesignOfIcs) will not be allowed.
-Credit for Computer Engineering 509 and 519.36 (Fund Biometric Sys Design) will not be allowed.
-Credit for Computer Engineering 511 and Software Engineering for Engineers 460 will not be allowed.
-Credit for Computer Engineering 517 and 519.34 (Comp Arithmetic & Comp Complexity) will not be allowed.
-Credit for Civil Engineering 300 and 337 will not be allowed.
-Credit for Civil Engineering 317 and either Engineering 317 or Mechanical Engineering 317 will not be allowed.
-Credit for Civil Engineering 471 and Engineering 515 will not be allowed.
-Credit for Civil Engineering 481 and either Energy and Environment, Engineering 377 or 519.09 (Intro to Environmental Eng) will not be allowed.
-Credit for Civil Engineering 602 and 502 will not be allowed.
-Credit for Civil Engineering 604 and 504 will not be allowed.
-Credit for Civil Engineering 691 and either Business and Environment 691 or Engineering 684 will not be allowed.
-Credit for Civil Engineering 749 and Environmental Engineering 651 will not be allowed.
-Credit for Chemical Engineering 307 and any of Engineering 407 or Digital Engineering 407 or Chemical Engineering 407 will not be allowed.
-Credit for Chemical Engineering 327 and 427 will not be allowed.
-Credit for both Chemical Engineering 315 and 350 will not be allowed.
-Credit for Chemical Engineering 400 and either Chemical Engineering 423 or Petroleum Engineering 423 will not be allowed.
-Credit for Chemical Engineering 407 and either Engineering 407 or Digital Engineering 407 will not be allowed.
-Credit for Chemical Engineering 423 and Petroleum Engineering 423 will not be allowed.
-Credit for both Chemical Engineering 450 and 510 will not be allowed.
-Credit for both Chemical Engineering 500 and 511 will not be allowed.
-Credit for Chemical Engineering 511 and Petroleum Engineering 511 will not be allowed.
-Credit for Chemical Engineering 530 and any of 519.13, 519.14 or 651 will not be allowed.
-Credit for both Chemical Engineering 550 and 531 will not be allowed.
-Credit for Chemical Engineering 551 and Petroleum Engineering 551 will not be allowed.
-Credit for Chemical Engineering 561 and Petroleum Engineering 519.11 (Machine Learning-Energy Syst) will not be allowed.
-Credit for Chemical Engineering 565 and 519.16 (Proc Sensors and Data Acquis) and will not be allowed.
-Credit for Chemical Engineering 620 and 699 will not be allowed.
-Credit for Chemical Engineering 630 and any of 519.13 (Electrochemical Engineering), 519.14 (Fuel Cell Technology) or 651 will not be allowed.
-Credit for Chemical Engineering 638 and 539 will not be allowed.
-Credit for Chemical Engineering 643 and Environmental Engineering 641 will not be allowed.
-Credit for Chemical Engineering 687 and Petroleum Engineering 626 will not be allowed.
-Credit for Chemical Engineering 689 and either Chemical Engineering 619.91 (Adv Drilling Optimization) or Petroleum Engineering 627 will not be allowed.
-Credit for Chemical Engineering 698 and either 619.95 (Res Characterization Fld Dev I) and 619.96 (Res Characterization Fld DevII) will not be allowed.
-Credit for Chemical Engineering 699 and 620 will not be allowed.
-Credit for Biomedical Engineering 300 and Biology 331 will not be allowed.
-Credit for Biomedical Engineering 309 and any of Biology 305, Kinesiology 259 or Kinesiology 260 will not be allowed.
-Credit for Biomedical Engineering 322 and Engineering 311 will not be allowed.
-Credit for Biomedical Engineering 381 and Physics Engineering 381 will not be allowed.
-Credit for Biomedical Engineering 383 and any of Mechanical Engineering 317, Mechanical Engineering 341, Engineering 317, Civil Engineering 317 or Physics Engineering 383 will not be allowed.
-Credit for Biomedical Engineering 388 and either Electrical Engineering 327 or 343 will not be allowed
-Credit for Biomedical Engineering 401 and either 517 or 619.05 will not be allowed.
-Credit for Biomedical Engineering 500 and 503 will not be allowed.
-Credit for Biomedical Engineering 503 and 500 will not be allowed.
-Credit for Biomedical Engineering 523 and Mechanical Engineering 523 will not be allowed.
-Credit for Biomedical Engineering 525 and 405 will not be allowed.
-Credit for Biomedical Engineering 585 and any of Biomedical Engineering 407, Biomedical Engineering 519.09 (Cellular & Molecular Bioengg) or Chemical Engineering 541 will not be allowed.
-Credit for Biomedical Engineering 602 and either 605 or 607 will not be allowed.
-Credit for Biomedical Engineering 604 and either 605 or 607 will not be allowed.
-Credit for Nursing 206 and any of 201, 207, and 418 will not be allowed.
-Credit for Nursing 208 and any of 201, 401, 420 and 531 will not be allowed.
-Credit for Nursing 221 and either Zoology 269 or Kinesiology 259 will not be allowed.
-Credit for Nursing 222 and either Zoology 269 or Kinesiology 260 will not be allowed.
-Credit for Nursing 223 and 203 will not be allowed.
-Credit for Nursing 224 and 209 will not be allowed.
-Credit for Nursing 227 and 205 will not be allowed.
-Credit for Nursing 306 and 227 will not be allowed.
-Credit for Nursing 308 and either 211 or 441 will not be allowed.
-Credit for Nursing 309 and 539 will not be allowed.
-Credit for Nursing 310 and either 223 or 224 and will not be allowed.
-Credit for Nursing 312 and 213 will not be allowed.
-Credit for Nursing 313 and either 327 or 419 will not be allowed.
-Credit for Nursing 314 and any of 307, 403 or 421 will not be allowed.
-Credit for Nursing 316 and 404 will not be allowed.
-Credit for Nursing 327 and 311 will not be allowed.
-Credit for Nursing 408 and any of 501, 537 or 518 will not be allowed.
-Credit for Nursing 413 and 519 will not be allowed.
-Credit for Nursing 416 and 526 will not be allowed.
-Credit for Nursing 418 and any of 201, 202 or 207 will not be allowed.
-Credit for Nursing 419 and either 313 or 327 will not be allowed.
-Credit for Nursing 420 and any of 202, 206, 307, 401, 421 or 531 will not be allowed.
-Credit for Nursing 441 and either 211 or 308 will not be allowed.
-Credit for Nursing 504 and any of 405, 411 or 524 will not be allowed.
-Credit for Nursing 505 and 546 will not be allowed.
-Credit for Nursing 516 and 502 will not be allowed.
-Credit for Nursing 518 and any of 408, 501 or 537 will not be allowed.
-Credit for Nursing 519 and 413 will not be allowed.
-Credit for Nursing 524 and any of 405, 411 or 504 will not be allowed.
-Credit for Nursing 526 and any of 416, 502 or 543 will not be allowed.
-Credit for Nursing 533 and 532 will not be allowed.
-Credit for Nursing 541 and 503.41 (Using Research in Nursing Practice) will not be allowed.
-Credit for Nursing 543 and 542 will not be allowed.
-Credit for Nursing 544 and 503.44 (Exploring Cancer and the Role of the Nurse) will not be allowed.
-Credit for Nursing 545 and 503.45 (Transitions in Child and Youth Health) will not be allowed.
-Credit for Nursing 546 and 503.46 (Older Adult Nursing: Managing Complexity) will not be allowed.
-Credit for Nursing 547 and 503.47 (Perinatal Nursing Care: Trends) will not be allowed.
-Credit for Nursing 549 and 503.49 (Addictions and Mental Health Care) will not be allowed.
-Credit for Nursing 550 and 503.50 (Vulnerable Populations) will not be allowed.
-Credit for Nursing 551 and 503.51 (Rural Health) will not be allowed.
-Credit for Nursing 552 and 503.42 (Nurse as Educator) will not be allowed.
-Credit for Nursing 553 and 503.43 (System and Patient Safety) will not be allowed.
-Credit for Nursing 554 and 503.51 (Rural Health) will not be allowed.
-Credit for Nursing 660 and 690 will not be allowed.
-Credit for Nursing 690 and 660 will not be allowed.
-Credit for Kinesiology 244 and Sociology 399 will not be allowed.
-Credit for Kinesiology 259 and any of Biology 305, Medical Science 404, Nursing 221, Zoology 461 or 463 will not be allowed.
-Credit for Kinesiology 260 and any of Biology 305, Medical Science 404, Nursing 222, Zoology 461 or 463 will not be allowed.
-Credit for Kinesiology 311 and Leadership Studies 401 will not be allowed.
-Credit for Kinesiology 323 and any of Biology 305, Medical Science 404, Zoology 461 or 463 will not be allowed.
-Credit for Kinesiology 365 and 503.44 (Motor Control) will not be allowed.
-Credit for Kinesiology 377 and 503.55 (Sports Injury Prevention) will not be allowed.
-Kinesiology 393 and 395.
-Credit for Kinesiology 402 and 303.02 (Dance & Health Promotion) will not be allowed.
-Credit for Kinesiology 411 and either 503.30 (Advanced Coaching) or Leadership Studies 501 will not be allowed.
-Credit for Kinesiology 441 and 391 will not be allowed.
-Credit for Kinesiology 464 and 503.79 (Sensorimotor Neurosci II) will not be allowed.
-Credit for Kinesiology 478 and 503.78 (Strength Training Science) will not be allowed.
-Credit for Kinesiology 505 and 503.64 (Concussion) will not be allowed.
-Credit for Kinesiology 506 and 503.80 (Cerebral Blood Flow) will not be allowed.
-Credit for Kinesiology 608 and 603.40 (Innovation Wearable Tech) will not be allowed.
-Credit for Kinesiology 609 and 603.84 (Intro Stats for KN Students) will not be allowed.
-Credit for Kinesiology 610 and 603.39 (Qualitative Research) will not be allowed.
-Credit for Kinesiology 664 and 603.22 (Bone/Joint Biomechanics&OA) will not be allowed.
-Credit for Kinesiology 686 and 690 will not be allowed.
-Credit for Kinesiology 693 and 690 will not be allowed.
-Credit for Kinesiology 694 and 690 will not be allowed.
-Credit for Kinesiology 698 and 690 will not be allowed.
-Credit for Tourism Management 309 and 409 will not be allowed.
-Credit for Tourism Management 409 and 309 will not be allowed.
-Credit for Supply Chain Management 455 and Operations Management 559.05 will not be allowed.
-Credit for Supply Chain Management 461 and Supply Chain Management 559.01 will not be allowed.
-Credit for Strategy and Global Management 303 and Organizational Behaviour and Human Resources 491 or Management Studies 359.03 will not be allowed.
-Credit for Strategy and Global Management 409 and Management Studies 559.26 will not be allowed.
-Credit for Strategy and Global Management 533 and Management Studies 559.24 will not be allowed.
-Credit for Strategy and Global Management 551 and Management Studies 559.12 will not be allowed.
-Credit for Strategy and Global Management 555 and Business and Environment 559.04 will not be allowed.
-Credit for Strategy and Global Management 589 and 588 will not be allowed.
-Credit for Strategy and Global Management 601 and 701 will not be allowed.
-Credit for Real Estate Studies 317 and either Management Studies 559.17 or 559.22 will not be allowed.
-Credit for Real Estate Studies 427 and either Management Studies 559.19 or 559.20 will not be allowed.
-Credit for Real Estate Studies 437 and Management Studies 559.23 will not be allowed.
-Credit for Real Estate Studies 607 and any of Management Studies 789.04, 789.08, or Real Estate Studies 757 will not be allowed.
-Credit for Real Estate Studies 627 and either Management Studies 789.03 or 789.05 will not be allowed.
-Credit for Real Estate Studies 637 and Management Studies 789.09 will not be allowed
-Credit for Real Estate Studies 667 and either Management Studies 789.12 or Environmental Design 683.69 will not be allowed.
-Credit for Professional Land Management 473 and 573 will not be allowed.
-Credit for Professional Land Management 479 and 579 will not be allowed.
-Credit for Professional Land Management 483 and 583 will not be allowed.
-Credit for Professional Land Management 487 and 587 will not be allowed.
-Credit for Organizational Behaviour and Human Resources 317 and 321 will not be allowed.
-Credit for Organizational Behaviour and Human Resources 321 and 317 will not be allowed.
-Credit for Organizational Behaviour and Human Resources 409 and either Organizational Behaviour and Human Resources 559.02 or 559.05 will not be allowed.
-Credit for Organizational Behaviour and Human Resources 411 and 559.03 will not be allowed.
-Credit for Organizational Behaviour and Human Resources 413 and 559.04 will not be allowed.
-Credit for Organizational Behaviour and Human Resources 447 and Management Studies 559.04 will not be allowed.
-Credit for Organizational Behaviour and Human Resources 491 and Strategy and Global Management 303 or Management Studies 359.03 will not be allowed.
-Credit for Organizational Behaviour and Human Resources 517 and Management Studies 597.17 will not be allowed.
-Credit for University 205 and Educational Psychology 205 will not be allowed.
-Credit for University 301 and 401.32 will not be allowed.
-Credit for Sustainable Energy Development 640 and 625 will not be allowed.
-Credit for Sustainable Energy Development 641 and 625 will not be allowed
-Credit for Sustainable Energy Development 642 and 625 will not be allowed.
-Credit for Internship 591 or any of Drama 590, 591 or 593 will not be allowed.
-Credit for Educational Research 600 and 603.21 will not be allowed.
-Credit for Educational Research 602 and 603.24 will not be allowed.
-Credit for Educational Research 604 and 692 will not be allowed.
-Credit for Educational Research 606 and 603.23 will not be allowed.
-Credit for Educational Research 608 and 603.26 will not be allowed.
-Credit for Educational Research 610 and 603.08 will not be allowed.
-Credit for Educational Research 612 and 603.27 will not be allowed.
-Credit for Educational Research 614 and 603.25 will not be allowed.
-Credit for Educational Research 616 and 603.06 will not be allowed.
-Credit for Educational Research 618 and 603.05 will not be allowed.
-Credit for Educational Research 620 and 603.01 will not be allowed.
-Credit for Educational Research 624 and 603.28 will not be allowed.
-Credit for Educational Research 626 and 603.29 will not be allowed.
-Credit for Educational Research 628 and 603.30 will not be allowed.
-Credit for Educational Research 630 and 603.31 will not be allowed.
-Credit for Educational Research 681 and any of 665, 669.27 or 699.42 will not be allowed.
-Credit for Educational Research 687 and either 681 or 683 are not allowed.
-Credit for Educational Research 688 and 685 is not allowed.
-Credit for Educational Research 696 and any of Education Bridge to Teaching 601, 602, 603, 604, 605 or 606 will not be allowed.
-Credit for Educational Research 713 and either 701.06 or 701.09 will not be allowed.
-Credit for Educational Research 714 and 701.08 will not be allowed.
-Credit for Educational Research 716 and 701.07 will not be allowed.
-Credit for Educational Research 718 and 701.11 will not be allowed.
-Credit for Educational Research 720 and 701.10 will not be allowed.
-Credit for Educational Research 724 and 701.13 will not be allowed.
-Credit for Educational Research 726 and 701.12 will not be allowed.
-Credit for Educational Psychology 602 and either Educational Psychology 681 or Applied Psychology 602 will not be allowed.
-Credit for Educational Psychology 603 and 612.01 will not be allowed.
-Credit for Educational Psychology 604 and either Educational Psychology 603 or 614 will not be allowed.
-Credit for Educational Psychology 605 and 612.02 will not be allowed.
-Credit for Educational Psychology 606 and 612.03 will not be allowed.
-Credit for Educational Psychology 607 and 612.04 will not be allowed.
-Credit for Educational Psychology 608 and Applied Psychology 608 will not be allowed.
-Credit for Educational Psychology 610 and either Applied Psychology 605 or Educational Psychology 605 will not be allowed.
-Credit for Educational Psychology 610 and either Applied Psychology 605 or Educational Psychology 605 will not be allowed.
-Credit for Educational Psychology 611 and Applied Psychology 611 will not be allowed.
-Credit for Educational Psychology 614 and any of Educational Psychology 603, Educational Psychology 604 or Applied Psychology 603 will not be allowed.
-Credit for Educational Psychology 615 and Applied Psychology 615 will not be allowed.
-Credit for Educational Psychology 616 and Applied Psychology 616 will not be allowed.
-Credit for Educational Psychology 617 and Applied Psychology 617 will not be allowed.
-Credit for Educational Psychology 618 and either Educational Psychology 607 or Applied Psychology 607 will not be allowed.
-Credit for Educational Psychology 619 and Applied Psychology 619 will not be allowed.
-Credit for Educational Psychology 620 and 682.03 will not be allowed.
-Credit for Educational Psychology 621 and Applied Psychology 621 will not be allowed.
-Credit for Educational Psychology 622 and Applied Psychology 622 will not be allowed.
-Credit for Educational Psychology 623 and Applied Psychology 623 will not be allowed.
-Credit for Educational Psychology 624 and either Applied Psychology 625 or Educational Psychology 625 will not be allowed.
-Credit for Educational Psychology 625 and Applied Psychology 625 will not be allowed.
-Credit for Educational Psychology 626 and either Applied Psychology 627 or Educational Psychology 627 will not be allowed.
-Credit for Educational Psychology 627 and either Educational Psychology 626 or Applied Psychology 627 will not be allowed.
-Credit for Educational Psychology 629 and Applied Psychology 629 will not be allowed.
-Credit for Educational Psychology 630 and either Applied Psychology 631 or Educational Psychology 631 will not be allowed.
-Credit for Educational Psychology 631 and either Educational Psychology 630 or Applied Psychology 631 will not be allowed.
-Credit for Educational Psychology 632 and Applied Psychology 632 will not be allowed.
-Credit for Educational Psychology 633 and Applied Psychology 633 will not be allowed.
-Credit for Educational Psychology 634 and Applied Psychology 634 will not be allowed.
-Credit for Educational Psychology 635 and Applied Psychology 635 will not be allowed.
-Credit for Educational Psychology 636 and Applied Psychology 636 will not be allowed.
-Credit for Educational Psychology 637 and Applied Psychology 637 will not be allowed.
-Credit for Educational Psychology 638 and Applied Psychology 638 will not be allowed.
-Credit for Educational Psychology 639 and Applied Psychology 639 will not be allowed.
-Credit for Educational Psychology 640 and Applied Psychology 640 will not be allowed.
-Credit for Educational Psychology 641 and Applied Psychology 641 will not be allowed.
-Credit for Educational Psychology 642 and Applied Psychology 642 will not be allowed.
-Credit for Educational Psychology 643 and Applied Psychology 643 will not be allowed.
-Credit for Educational Psychology 644 and Applied Psychology 644 will not be allowed.
-Credit for Educational Psychology 646 and Applied Psychology 646 will not be allowed.
-Credit for Educational Psychology 648 and Applied Psychology 648 will not be allowed.
-Credit for Educational Psychology 650 and Applied Psychology 650 will not be allowed.
-Credit for Educational Psychology 651 and Applied Psychology 651 will not be allowed.
-Credit for Educational Psychology 652 and either Educational Psychology 667 or Applied Psychology 652 will not be allowed.
-Credit for Educational Psychology 654 and Applied Psychology 654 will not be allowed.
-Credit for Educational Psychology 656 and Applied Psychology 656 will not be allowed.
-Credit for Educational Psychology 657 and Applied Psychology 657 will not be allowed.
-Credit for Educational Psychology 658 and Applied Psychology 658 will not be allowed.
-Credit for Educational Psychology 660 and Applied Psychology 660 will not be allowed.
-Credit for Educational Psychology 661 and Applied Psychology 661 will not be allowed.
-Credit for Educational Psychology 664 and Applied Psychology 664 will not be allowed.
-Credit for Educational Psychology 667 and either Educational Psychology 652 or Applied Psychology 667 will not be allowed.
-Credit for Educational Psychology 668 and Applied Psychology 668 will not be allowed.
-Credit for Educational Psychology 670 and Applied Psychology 670 will not be allowed.
-Credit for Educational Psychology 671 and Applied Psychology 671 will not be allowed.
-Credit for Educational Psychology 672 and Applied Psychology 672 will not be allowed.
-Credit for Educational Psychology 673 and Applied Psychology 673 will not be allowed.
-Credit for Educational Psychology 674 and Applied Psychology 674 will not be allowed.
-Credit for Educational Psychology 675 and Applied Psychology 675 will not be allowed.
-Credit for Educational Psychology 676 and Applied Psychology 676 will not be allowed.
-Credit for Educational Psychology 677 and Applied Psychology 677 will not be allowed.
-Credit for Educational Psychology 678 and Applied Psychology 678 will not be allowed.
-Credit for Educational Psychology 679 and Applied Psychology 679 will not be allowed.
-Credit for Educational Psychology 680 and Applied Psychology 680 will not be allowed.
-Credit for Educational Psychology 681 and 602 will not be allowed.
-Credit for Educational Psychology 682 and Applied Psychology 682 will not be allowed.
-Credit for Educational Psychology 684 and Applied Psychology 684 will not be allowed.
-Credit for Educational Psychology 686 and Applied Psychology 686 will not be allowed.
-Credit for Educational Psychology 687 and Educational Psychology 651 will not be allowed.
-Credit for Educational Psychology 689 and either Educational Psychology 665 or 657 will not be allowed.
-Credit for Educational Psychology 690 and either Educational Psychology 658 or 683 will not be allowed.
-Credit for Educational Psychology 691 and Applied Psychology 691 will not be allowed.
-Credit for Educational Psychology 692 and Applied Psychology 692 will not be allowed.
-Credit for Educational Psychology 693 and Applied Psychology 693 will not be allowed.
-Credit for Educational Psychology 694 and Applied Psychology 694 will not be allowed.
-Credit for Educational Psychology 695 and Applied Psychology 695 will not be allowed.
-Credit for Educational Psychology 696 and any of Educational Psychology 660, 669 or 674 will not be allowed.
-Credit for Educational Psychology 697 and 662 will not be allowed.
-Credit for Educational Psychology 698 and Applied Psychology 698 will not be allowed.
-Credit for Educational Psychology 701 and Applied Psychology 701 will not be allowed.
-Credit for Educational Psychology 703 and Applied Psychology 703 will not be allowed.
-Credit for Educational Psychology 705 and Applied Psychology 705 will not be allowed.
-Credit for Educational Psychology 708 and 702.02 will not be allowed.
-Credit for Educational Psychology 709 and Applied Psychology 709 will not be allowed.
-Credit for Educational Psychology 710 and 702.01 will not be allowed.
-Credit for Educational Psychology 731 and Applied Psychology 731 will not be allowed.
-Credit for Educational Psychology 732 and Applied Psychology 732 will not be allowed.
-Credit for Educational Psychology 741 and Applied Psychology 741 will not be allowed.
-Credit for Educational Psychology 742 and Applied Psychology 742 will not be allowed.
-Credit for Educational Psychology 788 and Applied Psychology 788 will not be allowed.
-Credit for Educational Psychology 792 and Applied Psychology 792 will not be allowed.
-Credit for Educational Psychology 793 and Applied Psychology 793 will not be allowed.
-Credit for Educational Psychology 794 and Applied Psychology 794 will not be allowed.
-Credit for Educational Psychology 795 and Applied Psychology 795 will not be allowed.
-Credit for Educational Psychology 798 and Applied Psychology 798 will not be allowed.
-Credit for Education 561 and any of Education 207, 311 or 535.03 (Specialization II Elementary English Language Arts) will not be allowed.
-Credit for Education 562 and either of Education 305 or 535.07 (Specialization II Elementary Mathematics) will not be allowed.
-Credit for Education 563 and 535.06 (Specialization II Elementary Inclusive Education) will not be allowed.
-Credit for Education 565 and 309 will not be allowed.
-Credit for Education 567 and either of Education 535.15 (Specialization II Secondary Mathematics) or 535.17 (Specialization II Secondary Science Specialization).
-Credit for Education 568 and any of 535.02 (Specialization II Elementary English Language Learners), 535.05 (Specialization II Elementary French), 535.10 (Specialization II Elementary Second Languages), 535.14 (Specialization II Secondary French Specialization) or 535.18 (Specialization II Secondary Second Languages) will not be allowed.
-Credit for Education 570 and any of Education 440, 465, 540 or 560 will not be allowed.
-Credit for Veterinary Medicine 604 and 690.44 (Wildlife Health and Disease Ecology) will not be allowed.
-Credit for Zoology 403 and either Zoology 477.01 (Birds And Mammals) or 477.02 (Fishes, Amphibians & Reptiles) will not be allowed.
-Credit for Zoology 461 and any of Biology 305, Medical Science 404, 604, Zoology 269, Kinesiology 259, 260 or 323 will not be allowed.
-Credit for Zoology 463 and any of Biology 305, Medical Science 404, 604, Zoology 269, Kinesiology 259, 260 or 323 will not be allowed.
-Credit for Zoology 515 and 377 will not be allowed.
-Credit for Zoology 567 and Marine Science 546 will not be allowed.
-Credit for Zoology 571 and either Zoology 571.01 or 571.02 will not be allowed.
-Credit for Zoology 595 and Neuroscience 541 will not be allowed.
-Credit for Zoology 697 and 597 will not be allowed.
-Credit for Statistics 205 and any one of Statistics 213, 217, or 327 will not be allowed. Students may not register in, or have credit for, Statistics 205 if they have previous credit for one of Statistics 321, Engineering 319 or Digital Engineering 319 or are concurrently enrolled in Statistics 321, Engineering 319 or Digital Engineering 319.
-Credit for Statistics 207 and any one of Statistics 205, 213, 217, or 327 will not be allowed. Students may not register in, or have credit for, Statistics 207 if they have previous credit for one of Statistics 321, Engineering 319 or Digital Engineering 319 or are concurrently enrolled in Statistics 321, Engineering 319 or Digital Engineering 319.
-Credit for Statistics 213 and either Statistics 205 or 327 will not be allowed. Not available to students who have previous credit for one of Statistics 321, Engineering 319 or Digital Engineering 319 or are concurrently enrolled in Statistics 321 or Engineering 319.
-Credit for Statistics 217 and either Statistics 205 or 327 will not be allowed. Not available to students who have previous credit for one of Statistics 321, Engineering 319 or Digital Engineering 319 or are concurrently enrolled in Statistics 321 or Engineering 319.
-Credit for Statistics 321 and Engineering 319 will not be allowed.
-Credit for Statistics 323 and Data Science 305 will not be allowed.
-Credit for Statistics 327 and any one of Statistics 205, 213 or 217 will not be allowed.
-Credit for Statistics 407 and either 507 or Mathematics 585 will not be allowed.
-Credit for Statistics 519 and 619 will not be allowed.
-Credit for Statistics 525 and 625 will not be allowed.
-Credit for Statistics 533 and either 633 or 433 will not be allowed.
-Credit for Statistics 543 and 641 will not be allowed.
-Credit for Statistics 619 and 519 will not be allowed.
-Credit for Statistics 625 and 525 will not be allowed.
-Credit for Statistics 633 and 533 will not be allowed.
-Credit for Statistics 641 and 543 will not be allowed.
-Credit for Software Engineering 300 and any of Software Engineering 301, 311, 403, 411, Computer Science 301, 333, 451 or Software Engineering for Engineers 480 will not be allowed.
-Credit for Software Engineering 401 and 443 will not be allowed.
-Credit for Software Engineering 438 and either Software Engineering 437 or 521 will not be allowed.
-Credit for Software Engineering 511 and Engineering 515 will not be allowed.
-Credit for Software Engineering 521 and 637 will not be allowed.
-Credit for Software Engineering 541 and 641 will not be allowed.
-Credit for Software Engineering 550 and 501.05 (Engg Lrg Scale Analytics Sys) will not be allowed.
-Credit for Software Engineering 615 and Computer Science 601.93 will not be allowed.
-Credit for Software Engineering 622 and 607.25 will not be allowed.
-Credit for Software Engineering 629 and 609.17 will not be allowed.
-Credit for Software Engineering 637 and 521 will not be allowed.
-Credit for Software Engineering 639 and 607.22 will not be allowed.
-Credit for Software Engineering 641 and 541 will not be allowed.
-Credit for Software Engineering 643 and 607.26 will not be allowed.
-Credit for Software Engineering 652 and Electrical Engineering 698 will not be allowed.
-Credit for Software Engineering 696 and Computer Science 609 will not be allowed for programs offered by the Department of Computer Science.
-Credit for Science 511 and either Science 507.18 (Science Peer Mentoring) or Communication and Culture 507 will not be allowed.
-Credit for more than one of Physics 211, 221, or 227 will not be allowed.
-Credit for more than one of Physics 211, 221, or 227 will not be allowed.
-Credit for more than one of Physics 227, 321, 211 or 221 will not be allowed.
-Credit for Physics 259 and either Physics 255 or 355 will not be allowed.
+Credit for ARCH 406 and any of ARST 484, EVDA 580, or ARCH 506 will not be allowed.
+Credit for ARCH 508 and DSGN 431 will not be allowed.
+Credit for ENCM 335 and either ENCM 339 or PHYS 381 will not be allowed.
+Credit for ENCM 507 and ENEL 519.38 (AlgorithmsCom-AidDesignOfIcs) will not be allowed.
+Credit for ENCM 509 and 519.36 (Fund Biometric Sys Design) will not be allowed.
+Credit for ENCM 511 and ENSF 460 will not be allowed.
+Credit for ENCM 517 and 519.34 (Comp Arithmetic & Comp Complexity) will not be allowed.
+Credit for ENCI 300 and 337 will not be allowed.
+Credit for ENCI 317 and either ENGG 317 or ENME 317 will not be allowed.
+Credit for ENCI 471 and ENGG 515 will not be allowed.
+Credit for ENCI 481 and either ENEE 377 or 519.09 (Intro to Environmental Eng) will not be allowed.
+Credit for ENCI 602 and 502 will not be allowed.
+Credit for ENCI 604 and 504 will not be allowed.
+Credit for ENCI 691 and either BSEN 691 or ENGG 684 will not be allowed.
+Credit for ENCI 749 and ENEN 651 will not be allowed.
+Credit for ENCH 307 and any of ENGG 407 or ENDG 407 or ENCH 407 will not be allowed.
+Credit for ENCH 327 and 427 will not be allowed.
+Credit for both ENCH 315 and 350 will not be allowed.
+Credit for ENCH 400 and either ENCH 423 or ENPE 423 will not be allowed.
+Credit for ENCH 407 and either ENGG 407 or ENDG 407 will not be allowed.
+Credit for ENCH 423 and ENPE 423 will not be allowed.
+Credit for both ENCH 450 and 510 will not be allowed.
+Credit for both ENCH 500 and 511 will not be allowed.
+Credit for ENCH 511 and ENPE 511 will not be allowed.
+Credit for ENCH 530 and any of 519.13, 519.14 or 651 will not be allowed.
+Credit for both ENCH 550 and 531 will not be allowed.
+Credit for ENCH 551 and ENPE 551 will not be allowed.
+Credit for ENCH 561 and ENPE 519.11 (Machine Learning-Energy Syst) will not be allowed.
+Credit for ENCH 565 and 519.16 (Proc Sensors and Data Acquis) and will not be allowed.
+Credit for ENCH 620 and 699 will not be allowed.
+Credit for ENCH 630 and any of 519.13 (Electrochemical Engineering), 519.14 (Fuel Cell Technology) or 651 will not be allowed.
+Credit for ENCH 638 and 539 will not be allowed.
+Credit for ENCH 643 and ENEN 641 will not be allowed.
+Credit for ENCH 687 and ENPE 626 will not be allowed.
+Credit for ENCH 689 and either ENCH 619.91 (Adv Drilling Optimization) or ENPE 627 will not be allowed.
+Credit for ENCH 698 and either 619.95 (Res Characterization Fld Dev I) and 619.96 (Res Characterization Fld DevII) will not be allowed.
+Credit for ENCH 699 and 620 will not be allowed.
+Credit for BMEN 300 and BIOL 331 will not be allowed.
+Credit for BMEN 309 and any of BIOL 305, KNES 259 or KNES 260 will not be allowed.
+Credit for BMEN 322 and ENGG 311 will not be allowed.
+Credit for BMEN 381 and Physics ENGG 381 will not be allowed.
+Credit for BMEN 383 and any of ENME 317, ENME 341, ENGG 317, ENCI 317 or Physics ENGG 383 will not be allowed.
+Credit for BMEN 388 and either ENEL 327 or 343 will not be allowed
+Credit for BMEN 401 and either 517 or 619.05 will not be allowed.
+Credit for BMEN 500 and 503 will not be allowed.
+Credit for BMEN 503 and 500 will not be allowed.
+Credit for BMEN 523 and ENME 523 will not be allowed.
+Credit for BMEN 525 and 405 will not be allowed.
+Credit for BMEN 585 and any of BMEN 407, BMEN 519.09 (Cellular & Molecular Bioengg) or ENCH 541 will not be allowed.
+Credit for BMEN 602 and either 605 or 607 will not be allowed.
+Credit for BMEN 604 and either 605 or 607 will not be allowed.
+Credit for NURS 206 and any of 201, 207, and 418 will not be allowed.
+Credit for NURS 208 and any of 201, 401, 420 and 531 will not be allowed.
+Credit for NURS 221 and either ZOOL 269 or KNES 259 will not be allowed.
+Credit for NURS 222 and either ZOOL 269 or KNES 260 will not be allowed.
+Credit for NURS 223 and 203 will not be allowed.
+Credit for NURS 224 and 209 will not be allowed.
+Credit for NURS 227 and 205 will not be allowed.
+Credit for NURS 306 and 227 will not be allowed.
+Credit for NURS 308 and either 211 or 441 will not be allowed.
+Credit for NURS 309 and 539 will not be allowed.
+Credit for NURS 310 and either 223 or 224 and will not be allowed.
+Credit for NURS 312 and 213 will not be allowed.
+Credit for NURS 313 and either 327 or 419 will not be allowed.
+Credit for NURS 314 and any of 307, 403 or 421 will not be allowed.
+Credit for NURS 316 and 404 will not be allowed.
+Credit for NURS 327 and 311 will not be allowed.
+Credit for NURS 408 and any of 501, 537 or 518 will not be allowed.
+Credit for NURS 413 and 519 will not be allowed.
+Credit for NURS 416 and 526 will not be allowed.
+Credit for NURS 418 and any of 201, 202 or 207 will not be allowed.
+Credit for NURS 419 and either 313 or 327 will not be allowed.
+Credit for NURS 420 and any of 202, 206, 307, 401, 421 or 531 will not be allowed.
+Credit for NURS 441 and either 211 or 308 will not be allowed.
+Credit for NURS 504 and any of 405, 411 or 524 will not be allowed.
+Credit for NURS 505 and 546 will not be allowed.
+Credit for NURS 516 and 502 will not be allowed.
+Credit for NURS 518 and any of 408, 501 or 537 will not be allowed.
+Credit for NURS 519 and 413 will not be allowed.
+Credit for NURS 524 and any of 405, 411 or 504 will not be allowed.
+Credit for NURS 526 and any of 416, 502 or 543 will not be allowed.
+Credit for NURS 533 and 532 will not be allowed.
+Credit for NURS 541 and 503.41 (Using Research in Nursing Practice) will not be allowed.
+Credit for NURS 543 and 542 will not be allowed.
+Credit for NURS 544 and 503.44 (Exploring Cancer and the Role of the Nurse) will not be allowed.
+Credit for NURS 545 and 503.45 (Transitions in Child and Youth Health) will not be allowed.
+Credit for NURS 546 and 503.46 (Older Adult Nursing: Managing Complexity) will not be allowed.
+Credit for NURS 547 and 503.47 (Perinatal Nursing Care: Trends) will not be allowed.
+Credit for NURS 549 and 503.49 (Addictions and Mental Health Care) will not be allowed.
+Credit for NURS 550 and 503.50 (Vulnerable Populations) will not be allowed.
+Credit for NURS 551 and 503.51 (Rural Health) will not be allowed.
+Credit for NURS 552 and 503.42 (Nurse as Educator) will not be allowed.
+Credit for NURS 553 and 503.43 (System and Patient Safety) will not be allowed.
+Credit for NURS 554 and 503.51 (Rural Health) will not be allowed.
+Credit for NURS 660 and 690 will not be allowed.
+Credit for NURS 690 and 660 will not be allowed.
+Credit for KNES 244 and SOCI 399 will not be allowed.
+Credit for KNES 259 and any of BIOL 305, MDSC 404, NURS 221, ZOOL 461 or 463 will not be allowed.
+Credit for KNES 260 and any of BIOL 305, MDSC 404, NURS 222, ZOOL 461 or 463 will not be allowed.
+Credit for KNES 311 and LEAD 401 will not be allowed.
+Credit for KNES 323 and any of BIOL 305, MDSC 404, ZOOL 461 or 463 will not be allowed.
+Credit for KNES 365 and 503.44 (Motor Control) will not be allowed.
+Credit for KNES 377 and 503.55 (Sports Injury Prevention) will not be allowed.
+KNES 393 and 395.
+Credit for KNES 402 and 303.02 (Dance & Health Promotion) will not be allowed.
+Credit for KNES 411 and either 503.30 (Advanced Coaching) or LEAD 501 will not be allowed.
+Credit for KNES 441 and 391 will not be allowed.
+Credit for KNES 464 and 503.79 (Sensorimotor Neurosci II) will not be allowed.
+Credit for KNES 478 and 503.78 (Strength Training Science) will not be allowed.
+Credit for KNES 505 and 503.64 (Concussion) will not be allowed.
+Credit for KNES 506 and 503.80 (Cerebral Blood Flow) will not be allowed.
+Credit for KNES 608 and 603.40 (Innovation Wearable Tech) will not be allowed.
+Credit for KNES 609 and 603.84 (Intro Stats for KN Students) will not be allowed.
+Credit for KNES 610 and 603.39 (Qualitative Research) will not be allowed.
+Credit for KNES 664 and 603.22 (Bone/Joint Biomechanics&OA) will not be allowed.
+Credit for KNES 686 and 690 will not be allowed.
+Credit for KNES 693 and 690 will not be allowed.
+Credit for KNES 694 and 690 will not be allowed.
+Credit for KNES 698 and 690 will not be allowed.
+Credit for TOUR 309 and 409 will not be allowed.
+Credit for TOUR 409 and 309 will not be allowed.
+Credit for SCMA 455 and OPMA 559.05 will not be allowed.
+Credit for SCMA 461 and SCMA 559.01 will not be allowed.
+Credit for SGMA 303 and OBHR 491 or MGST 359.03 will not be allowed.
+Credit for SGMA 409 and MGST 559.26 will not be allowed.
+Credit for SGMA 533 and MGST 559.24 will not be allowed.
+Credit for SGMA 551 and MGST 559.12 will not be allowed.
+Credit for SGMA 555 and BSEN 559.04 will not be allowed.
+Credit for SGMA 589 and 588 will not be allowed.
+Credit for SGMA 601 and 701 will not be allowed.
+Credit for REAL 317 and either MGST 559.17 or 559.22 will not be allowed.
+Credit for REAL 427 and either MGST 559.19 or 559.20 will not be allowed.
+Credit for REAL 437 and MGST 559.23 will not be allowed.
+Credit for REAL 607 and any of MGST 789.04, 789.08, or REAL 757 will not be allowed.
+Credit for REAL 627 and either MGST 789.03 or 789.05 will not be allowed.
+Credit for REAL 637 and MGST 789.09 will not be allowed
+Credit for REAL 667 and either MGST 789.12 or EVDS 683.69 will not be allowed.
+Credit for PLMA 473 and 573 will not be allowed.
+Credit for PLMA 479 and 579 will not be allowed.
+Credit for PLMA 483 and 583 will not be allowed.
+Credit for PLMA 487 and 587 will not be allowed.
+Credit for OBHR 317 and 321 will not be allowed.
+Credit for OBHR 321 and 317 will not be allowed.
+Credit for OBHR 409 and either OBHR 559.02 or 559.05 will not be allowed.
+Credit for OBHR 411 and 559.03 will not be allowed.
+Credit for OBHR 413 and 559.04 will not be allowed.
+Credit for OBHR 447 and MGST 559.04 will not be allowed.
+Credit for OBHR 491 and SGMA 303 or MGST 359.03 will not be allowed.
+Credit for OBHR 517 and MGST 597.17 will not be allowed.
+Credit for UNIV 205 and EDPS 205 will not be allowed.
+Credit for UNIV 301 and 401.32 will not be allowed.
+Credit for SEDV 640 and 625 will not be allowed.
+Credit for SEDV 641 and 625 will not be allowed
+Credit for SEDV 642 and 625 will not be allowed.
+Credit for INTE 591 or any of DRAM 590, 591 or 593 will not be allowed.
+Credit for EDER 600 and 603.21 will not be allowed.
+Credit for EDER 602 and 603.24 will not be allowed.
+Credit for EDER 604 and 692 will not be allowed.
+Credit for EDER 606 and 603.23 will not be allowed.
+Credit for EDER 608 and 603.26 will not be allowed.
+Credit for EDER 610 and 603.08 will not be allowed.
+Credit for EDER 612 and 603.27 will not be allowed.
+Credit for EDER 614 and 603.25 will not be allowed.
+Credit for EDER 616 and 603.06 will not be allowed.
+Credit for EDER 618 and 603.05 will not be allowed.
+Credit for EDER 620 and 603.01 will not be allowed.
+Credit for EDER 624 and 603.28 will not be allowed.
+Credit for EDER 626 and 603.29 will not be allowed.
+Credit for EDER 628 and 603.30 will not be allowed.
+Credit for EDER 630 and 603.31 will not be allowed.
+Credit for EDER 681 and any of 665, 669.27 or 699.42 will not be allowed.
+Credit for EDER 687 and either 681 or 683 are not allowed.
+Credit for EDER 688 and 685 is not allowed.
+Credit for EDER 696 and any of EDBT 601, 602, 603, 604, 605 or 606 will not be allowed.
+Credit for EDER 713 and either 701.06 or 701.09 will not be allowed.
+Credit for EDER 714 and 701.08 will not be allowed.
+Credit for EDER 716 and 701.07 will not be allowed.
+Credit for EDER 718 and 701.11 will not be allowed.
+Credit for EDER 720 and 701.10 will not be allowed.
+Credit for EDER 724 and 701.13 will not be allowed.
+Credit for EDER 726 and 701.12 will not be allowed.
+Credit for EDPS 602 and either EDPS 681 or APSY 602 will not be allowed.
+Credit for EDPS 603 and 612.01 will not be allowed.
+Credit for EDPS 604 and either EDPS 603 or 614 will not be allowed.
+Credit for EDPS 605 and 612.02 will not be allowed.
+Credit for EDPS 606 and 612.03 will not be allowed.
+Credit for EDPS 607 and 612.04 will not be allowed.
+Credit for EDPS 608 and APSY 608 will not be allowed.
+Credit for EDPS 610 and either APSY 605 or EDPS 605 will not be allowed.
+Credit for EDPS 610 and either APSY 605 or EDPS 605 will not be allowed.
+Credit for EDPS 611 and APSY 611 will not be allowed.
+Credit for EDPS 614 and any of EDPS 603, EDPS 604 or APSY 603 will not be allowed.
+Credit for EDPS 615 and APSY 615 will not be allowed.
+Credit for EDPS 616 and APSY 616 will not be allowed.
+Credit for EDPS 617 and APSY 617 will not be allowed.
+Credit for EDPS 618 and either EDPS 607 or APSY 607 will not be allowed.
+Credit for EDPS 619 and APSY 619 will not be allowed.
+Credit for EDPS 620 and 682.03 will not be allowed.
+Credit for EDPS 621 and APSY 621 will not be allowed.
+Credit for EDPS 622 and APSY 622 will not be allowed.
+Credit for EDPS 623 and APSY 623 will not be allowed.
+Credit for EDPS 624 and either APSY 625 or EDPS 625 will not be allowed.
+Credit for EDPS 625 and APSY 625 will not be allowed.
+Credit for EDPS 626 and either APSY 627 or EDPS 627 will not be allowed.
+Credit for EDPS 627 and either EDPS 626 or APSY 627 will not be allowed.
+Credit for EDPS 629 and APSY 629 will not be allowed.
+Credit for EDPS 630 and either APSY 631 or EDPS 631 will not be allowed.
+Credit for EDPS 631 and either EDPS 630 or APSY 631 will not be allowed.
+Credit for EDPS 632 and APSY 632 will not be allowed.
+Credit for EDPS 633 and APSY 633 will not be allowed.
+Credit for EDPS 634 and APSY 634 will not be allowed.
+Credit for EDPS 635 and APSY 635 will not be allowed.
+Credit for EDPS 636 and APSY 636 will not be allowed.
+Credit for EDPS 637 and APSY 637 will not be allowed.
+Credit for EDPS 638 and APSY 638 will not be allowed.
+Credit for EDPS 639 and APSY 639 will not be allowed.
+Credit for EDPS 640 and APSY 640 will not be allowed.
+Credit for EDPS 641 and APSY 641 will not be allowed.
+Credit for EDPS 642 and APSY 642 will not be allowed.
+Credit for EDPS 643 and APSY 643 will not be allowed.
+Credit for EDPS 644 and APSY 644 will not be allowed.
+Credit for EDPS 646 and APSY 646 will not be allowed.
+Credit for EDPS 648 and APSY 648 will not be allowed.
+Credit for EDPS 650 and APSY 650 will not be allowed.
+Credit for EDPS 651 and APSY 651 will not be allowed.
+Credit for EDPS 652 and either EDPS 667 or APSY 652 will not be allowed.
+Credit for EDPS 654 and APSY 654 will not be allowed.
+Credit for EDPS 656 and APSY 656 will not be allowed.
+Credit for EDPS 657 and APSY 657 will not be allowed.
+Credit for EDPS 658 and APSY 658 will not be allowed.
+Credit for EDPS 660 and APSY 660 will not be allowed.
+Credit for EDPS 661 and APSY 661 will not be allowed.
+Credit for EDPS 664 and APSY 664 will not be allowed.
+Credit for EDPS 667 and either EDPS 652 or APSY 667 will not be allowed.
+Credit for EDPS 668 and APSY 668 will not be allowed.
+Credit for EDPS 670 and APSY 670 will not be allowed.
+Credit for EDPS 671 and APSY 671 will not be allowed.
+Credit for EDPS 672 and APSY 672 will not be allowed.
+Credit for EDPS 673 and APSY 673 will not be allowed.
+Credit for EDPS 674 and APSY 674 will not be allowed.
+Credit for EDPS 675 and APSY 675 will not be allowed.
+Credit for EDPS 676 and APSY 676 will not be allowed.
+Credit for EDPS 677 and APSY 677 will not be allowed.
+Credit for EDPS 678 and APSY 678 will not be allowed.
+Credit for EDPS 679 and APSY 679 will not be allowed.
+Credit for EDPS 680 and APSY 680 will not be allowed.
+Credit for EDPS 681 and 602 will not be allowed.
+Credit for EDPS 682 and APSY 682 will not be allowed.
+Credit for EDPS 684 and APSY 684 will not be allowed.
+Credit for EDPS 686 and APSY 686 will not be allowed.
+Credit for EDPS 687 and EDPS 651 will not be allowed.
+Credit for EDPS 689 and either EDPS 665 or 657 will not be allowed.
+Credit for EDPS 690 and either EDPS 658 or 683 will not be allowed.
+Credit for EDPS 691 and APSY 691 will not be allowed.
+Credit for EDPS 692 and APSY 692 will not be allowed.
+Credit for EDPS 693 and APSY 693 will not be allowed.
+Credit for EDPS 694 and APSY 694 will not be allowed.
+Credit for EDPS 695 and APSY 695 will not be allowed.
+Credit for EDPS 696 and any of EDPS 660, 669 or 674 will not be allowed.
+Credit for EDPS 697 and 662 will not be allowed.
+Credit for EDPS 698 and APSY 698 will not be allowed.
+Credit for EDPS 701 and APSY 701 will not be allowed.
+Credit for EDPS 703 and APSY 703 will not be allowed.
+Credit for EDPS 705 and APSY 705 will not be allowed.
+Credit for EDPS 708 and 702.02 will not be allowed.
+Credit for EDPS 709 and APSY 709 will not be allowed.
+Credit for EDPS 710 and 702.01 will not be allowed.
+Credit for EDPS 731 and APSY 731 will not be allowed.
+Credit for EDPS 732 and APSY 732 will not be allowed.
+Credit for EDPS 741 and APSY 741 will not be allowed.
+Credit for EDPS 742 and APSY 742 will not be allowed.
+Credit for EDPS 788 and APSY 788 will not be allowed.
+Credit for EDPS 792 and APSY 792 will not be allowed.
+Credit for EDPS 793 and APSY 793 will not be allowed.
+Credit for EDPS 794 and APSY 794 will not be allowed.
+Credit for EDPS 795 and APSY 795 will not be allowed.
+Credit for EDPS 798 and APSY 798 will not be allowed.
+Credit for EDUC 561 and any of EDUC 207, 311 or 535.03 (Specialization II Elementary English Language Arts) will not be allowed.
+Credit for EDUC 562 and either of EDUC 305 or 535.07 (Specialization II Elementary Mathematics) will not be allowed.
+Credit for EDUC 563 and 535.06 (Specialization II Elementary Inclusive Education) will not be allowed.
+Credit for EDUC 565 and 309 will not be allowed.
+Credit for EDUC 567 and either of EDUC 535.15 (Specialization II Secondary Mathematics) or 535.17 (Specialization II Secondary Science Specialization).
+Credit for EDUC 568 and any of 535.02 (Specialization II Elementary English Language Learners), 535.05 (Specialization II Elementary French), 535.10 (Specialization II Elementary Second Languages), 535.14 (Specialization II Secondary French Specialization) or 535.18 (Specialization II Secondary Second Languages) will not be allowed.
+Credit for EDUC 570 and any of EDUC 440, 465, 540 or 560 will not be allowed.
+Credit for VETM 604 and 690.44 (Wildlife Health and Disease Ecology) will not be allowed.
+Credit for ZOOL 403 and either ZOOL 477.01 (Birds And Mammals) or 477.02 (Fishes, Amphibians & Reptiles) will not be allowed.
+Credit for ZOOL 461 and any of BIOL 305, MDSC 404, 604, ZOOL 269, KNES 259, 260 or 323 will not be allowed.
+Credit for ZOOL 463 and any of BIOL 305, MDSC 404, 604, ZOOL 269, KNES 259, 260 or 323 will not be allowed.
+Credit for ZOOL 515 and 377 will not be allowed.
+Credit for ZOOL 567 and MRSC 546 will not be allowed.
+Credit for ZOOL 571 and either ZOOL 571.01 or 571.02 will not be allowed.
+Credit for ZOOL 595 and NEUR 541 will not be allowed.
+Credit for ZOOL 697 and 597 will not be allowed.
+Credit for STAT 205 and any one of STAT 213, 217, or 327 will not be allowed. Students may not register in, or have credit for, STAT 205 if they have previous credit for one of STAT 321, ENGG 319 or ENDG 319 or are concurrently enrolled in STAT 321, ENGG 319 or ENDG 319.
+Credit for STAT 207 and any one of STAT 205, 213, 217, or 327 will not be allowed. Students may not register in, or have credit for, STAT 207 if they have previous credit for one of STAT 321, ENGG 319 or ENDG 319 or are concurrently enrolled in STAT 321, ENGG 319 or ENDG 319.
+Credit for STAT 213 and either STAT 205 or 327 will not be allowed. Not available to students who have previous credit for one of STAT 321, ENGG 319 or ENDG 319 or are concurrently enrolled in STAT 321 or ENGG 319.
+Credit for STAT 217 and either STAT 205 or 327 will not be allowed. Not available to students who have previous credit for one of STAT 321, ENGG 319 or ENDG 319 or are concurrently enrolled in STAT 321 or ENGG 319.
+Credit for STAT 321 and ENGG 319 will not be allowed.
+Credit for STAT 323 and DATA 305 will not be allowed.
+Credit for STAT 327 and any one of STAT 205, 213 or 217 will not be allowed.
+Credit for STAT 407 and either 507 or MATH 585 will not be allowed.
+Credit for STAT 519 and 619 will not be allowed.
+Credit for STAT 525 and 625 will not be allowed.
+Credit for STAT 533 and either 633 or 433 will not be allowed.
+Credit for STAT 543 and 641 will not be allowed.
+Credit for STAT 619 and 519 will not be allowed.
+Credit for STAT 625 and 525 will not be allowed.
+Credit for STAT 633 and 533 will not be allowed.
+Credit for STAT 641 and 543 will not be allowed.
+Credit for SENG 300 and any of SENG 301, 311, 403, 411, CPSC 301, 333, 451 or ENSF 480 will not be allowed.
+Credit for SENG 401 and 443 will not be allowed.
+Credit for SENG 438 and either SENG 437 or 521 will not be allowed.
+Credit for SENG 511 and ENGG 515 will not be allowed.
+Credit for SENG 521 and 637 will not be allowed.
+Credit for SENG 541 and 641 will not be allowed.
+Credit for SENG 550 and 501.05 (Engg Lrg Scale Analytics Sys) will not be allowed.
+Credit for SENG 615 and CPSC 601.93 will not be allowed.
+Credit for SENG 622 and 607.25 will not be allowed.
+Credit for SENG 629 and 609.17 will not be allowed.
+Credit for SENG 637 and 521 will not be allowed.
+Credit for SENG 639 and 607.22 will not be allowed.
+Credit for SENG 641 and 541 will not be allowed.
+Credit for SENG 643 and 607.26 will not be allowed.
+Credit for SENG 652 and ENEL 698 will not be allowed.
+Credit for SENG 696 and CPSC 609 will not be allowed for programs offered by the Department of Computer Science.
+Credit for SCIE 511 and either SCIE 507.18 (Science Peer Mentoring) or CMCL 507 will not be allowed.
+Credit for more than one of PHYS 211, 221, or 227 will not be allowed.
+Credit for more than one of PHYS 211, 221, or 227 will not be allowed.
+Credit for more than one of PHYS 227, 321, 211 or 221 will not be allowed.
+Credit for PHYS 259 and either PHYS 255 or 355 will not be allowed.
 Physics Majors, Astrophysics Majors, Natural Sciences Physics Concentrators and Environmental Science Physics Concentrators are not permitted to register in this course.
 Physics Majors, Astrophysics Majors, Natural Sciences Physics Concentrators and Environmental Science Physics Concentrators are not permitted to register in this course.
-Credit for Physics 341 and Engineering 349 will not be allowed.
-Credit for Physics 343 and Physics Engineering 383 will not be allowed.
-Credit for Physics 355 and 259 will not be allowed
-Credit for Physics 365 and 369 will not be allowed. Not open to Geomatics Engineering students.
-Credit for Physics 369 and 365 will not be allowed. Not open to Electrical Engineering students.
-Credit for Physics 381 and Computer Engineering 335 will not be allowed.
-Credit for Physics 397 and Engineering Physics 388 will not be allowed.
-Credit for Physics 435 and Mathematics 433 or Physics Engineering 435 will not be allowed.
-Credit for Physics 455 and Electrical Engineering 475 will not be allowed.
-Credit for Physics 457 and Electrical Engineering 476 will not be allowed.
-Credit for Physics 497 and Engineering Physics 488 will not be allowed.
-Credit for Physics 577 and 677 will not be allowed.
-Not open to students in the Neuroscience program. Credit for Neuroscience 321 and Psychology 375 will not be allowed.
-Credit for Nanoscience 443 and Physics 543 will not be allowed.
-Credit for Mathematics 211 and 213 will not be allowed.
-Credit for Mathematics 213 and 211 will not be allowed.
-Not open to students with 50 per cent or higher in Mathematics 31 or a grade of "C" or higher in Mathematics 3 offered through University of Calgary Continuing Education, except with special departmental permission. Credit for Mathematics 249 and either 265 or 275 will not be allowed.
-Credit for Mathematics 265 and either 249 or 275 will not be allowed.
-Credit for Mathematics 267 and 277 will not be allowed.
-Credit for Mathematics 275 and either 249 or 265 will not be allowed.
-Credit for Mathematics 277 and 267 will not be allowed.
-Credit for Mathematics 307 and 421 will not be allowed.
-Credit for Mathematics 311 and 313 will not be allowed.
-Credit for Mathematics 311 and 313 will not be allowed.
-Credit for Mathematics 315 and Pure Mathematics 317 will not be allowed.
-Credit for Mathematics 318 and any of Pure Mathematics 329, Computer Science 418, 429, or 557 will not be allowed.
-Credit for Mathematics 335 and 355 will not be allowed.
-Credit for Mathematics 361 and 313 will not be allowed.
-Credit for Mathematics 367 and 377 will not be allowed.
-Credit for Mathematics 375 and 376 will not be allowed.
-Credit for Mathematics 376 and 375 will not be allowed.
-Credit for Mathematics 391 and Computer Science 491 will not be allowed.
-Credit for Mathematics 445 and 447 will not be allowed.
-Credit for Mathematics 501 and any one of Mathematics 601, Pure Mathematics 501 or 601 will not be allowed.
-Credit for Mathematics 511 and 607 will not be allowed.
-Credit for Mathematics 516 and 518 will not be allowed.
-Credit for Mathematics 518 and 516 will not be allowed.
-Credit for Mathematics 527 and 643 will not be allowed.
-Credit for Mathematics 545 and 603 will not be allowed.
-Credit for Mathematics 581 and 681 will not be allowed.
-Credit for Mathematics 583 and 683 will not be allowed.
-Credit for Mathematics 585 and Statistics 407 will not be allowed.
-Credit for Mathematics 601 and either Mathematics 501 or Pure Mathematics 501 will not be allowed.
-Credit for Mathematics 603 and either Mathematics 545 or Pure Mathematics 545 will not be allowed.
-Credit for Mathematics 605 and Applied Mathematics 605 will not be allowed.
-Credit for Mathematics 607 and any of Mathematics 511, Pure Mathematics 511, 607 or 611 will not be allowed.
-Credit for Mathematics 617 and Applied Mathematics 617 will not be allowed.
-Credit for Mathematics 621 and 521 will not be allowed.
-Credit for Mathematics 625 and either Mathematics 525 or Pure Mathematics 607 will not be allowed.
-Credit for Mathematics 643 and any of Mathematics 527, Pure Mathematics 527, or Pure Mathematics 627 will not be allowed.
-Credit for Mathematics 681 and any one of Mathematics 581, Applied Mathematics 681, or Applied Mathematics 581 will not be allowed.
-Credit for Mathematics 683 and any one of Mathematics 583, Applied Mathematics 683, or Applied Mathematics 583 will not be allowed.
-Credit for Mathematics 685 and Statistics 761 will not be allowed.
-Credit for Marine Science 513 and 511 will not be allowed.
-Credit for Geophysics 351 and 359 will not be allowed.
-Credit for Geophysics 355 and 365 will not be allowed.
-Credit for Geophysics 419 and any of 619, 599.09 (Comp Methods for Geophysic) or 699.09 (Comp Methods for Geophysicists) will not be allowed.
-Credit for Geophysics 565 and either 365 or 465 will not be allowed.
-Credit for Geophysics 619 and Geophysics 699.09 will not be allowed.
-Credit for Geophysics 705 and 699.56 will not be allowed.
-Credit for Geology 201 and any of 209, 376 or 471 will not be allowed.
-Credit for Geology 202 and 203 will not be allowed.
-Credit for Geology 209 and 201 will not be allowed.
-Credit for Geology 313 and 423 will not be allowed.
-Credit for Geology 333 and 311 will not be allowed.
-Credit for Geology 353 and 373 will not be allowed.
-Credit for Geology 376 and 201 will not be allowed.
-Credit for Geology 377 and 201 will not be allowed. This course is not open to Geology majors.
-Credit for Geology 401 and 601 will not be allowed.
-Credit for Geology 403 and 503 will not be allowed.
-Credit for Geology 431 and either 443 or 531 will not be allowed.
-Credit for Geology 433 and either 443 or 533 will not be allowed.
-Credit for Geology 435 and either Geology 437 or 439 will not be allowed.
-Credit for Geology 441 and 639 will not be allowed.
-Credit for Geology 445 and 341 will not be allowed.
-Credit for Geology 463 and 461 will not be allowed.
-Credit for Geology 483 and either 461 or 583 will not be allowed.
-Credit for Geology 493 and 491 will not be allowed.
-Credit for Geology 505 and 609 will not be allowed.
-Credit for Geology 535 and 599.18 (Early Earth Evolution) will not be allowed.
-Credit for Geology 541 and 641 will not be allowed.
-Credit for Geology 577 and any of 575, 589.01 (Aqueous Fluids), 589.02 (Petroleum Fluids), 589.07 (Analy Tech for Petro Geochem), 589.08 (Petro Generation & Migration), 591, 595.01 (Petro Glgy III Core Exam), 596, 689.01 (Aqueous Fluids), 689.02 (Petroleum Fluids), 689.07 (Analytical Techniques for Petroleum Geochemistry), 689.08 (Petroleum Generation Migration), 694.01 (Adv Petroleum Geol III Core Ex), 694.03 (Reservoir Evaluation and Hydrocarbon Play Assessment), 696, will not be allowed.
-Credit for Geology 579 and 595.05 (Basin Analysis) will not be allowed.
-Credit for Geology 581 and any of 575, 589.01 (Aqueous Fluids), 589.02 (Petroleum Fluids), 589.07 (Analy Tech for Petro Geochem), 589.08 (Petro Generation & Migration), 591, 595.01 (Petro Glgy III Core Exam), 596, 689.01 (Aqueous Fluids), 689.02 (Petroleum Fluids), 689.07 (Analytical Techniques for Petroleum Geochemistry), 689.08 (Petroleum Generation Migration), 694.01 (Adv Petroleum Geol III Core Ex), 694.03 (Reservoir Evaluation and Hydrocarbon Play Assessment), 696 will not be allowed.
-Credit for Geology 597 and 697 will not be allowed.
-Credit for Geology 601 and 401 will not be allowed.
-Credit for Geology 602 and either of 403 or 699.10 will not be allowed.
-Credit for Geology 609 and 505 will not be allowed.
-Credit for Geology 615 and 699.57 will not be allowed.
-Credit for Geology 633 and any of 435, 537 or 545 will not be allowed.
-Credit for Geology 639 and 441 will not be allowed.
-Credit for Geology 641 and 541 will not be allowed.
-Credit for Geology 647 and any of Geology 449, 699.71, or Geophysics 449 will not be allowed.
-Credit for Geology 655 and 699.37 will not be allowed.
-Credit for Geology 660 and either of 561 or 699.34 will not be allowed.
-Credit for Geology 683 and either Geology 483 or 699.02 will not be allowed.
-Credit for Geology 697 and 597 will not be allowed.
-Credit for Geology 705 and 699.56 will not be allowed.
-Credit for Data Science 211 and any one of Computer Science 215, 217, 231, 235, Computer Engineering 339, Engineering 233 or Digital Engineering 233 will not be allowed.
-Credit for Data Science 305 and Statistics 323 will not be allowed.
-Credit for Data Science 311 and either Computer Science 319 or 331 will not be allowed.
-Credit for Data Science 414 and Philosophy 314 will not be allowed.
-Credit for Data Science 443 and Computer Science 544 will not be allowed.
-Credit for Data Science 622 and Community Health Sciences 615 will not be allowed.
-Credit for Data Science 624 and Community Health Sciences 636 will not be allowed.
-Credit for Data Science 693 and 695 will not be allowed.
-Credit for Data Science 695 and 693 will not be allowed.
+Credit for PHYS 341 and ENGG 349 will not be allowed.
+Credit for PHYS 343 and Physics ENGG 383 will not be allowed.
+Credit for PHYS 355 and 259 will not be allowed
+Credit for PHYS 365 and 369 will not be allowed. Not open to Geomatics Engineering students.
+Credit for PHYS 369 and 365 will not be allowed. Not open to Electrical Engineering students.
+Credit for PHYS 381 and ENCM 335 will not be allowed.
+Credit for PHYS 397 and Engineering PHYS 388 will not be allowed.
+Credit for PHYS 435 and MATH 433 or Physics ENGG 435 will not be allowed.
+Credit for PHYS 455 and ENEL 475 will not be allowed.
+Credit for PHYS 457 and ENEL 476 will not be allowed.
+Credit for PHYS 497 and Engineering PHYS 488 will not be allowed.
+Credit for PHYS 577 and 677 will not be allowed.
+Not open to students in the Neuroscience program. Credit for NEUR 321 and PSYC 375 will not be allowed.
+Credit for NANS 443 and PHYS 543 will not be allowed.
+Credit for MATH 211 and 213 will not be allowed.
+Credit for MATH 213 and 211 will not be allowed.
+Not open to students with 50 per cent or higher in Mathematics 31 or a grade of "C" or higher in Mathematics 3 offered through University of Calgary Continuing Education, except with special departmental permission. Credit for MATH 249 and either 265 or 275 will not be allowed.
+Credit for MATH 265 and either 249 or 275 will not be allowed.
+Credit for MATH 267 and 277 will not be allowed.
+Credit for MATH 275 and either 249 or 265 will not be allowed.
+Credit for MATH 277 and 267 will not be allowed.
+Credit for MATH 307 and 421 will not be allowed.
+Credit for MATH 311 and 313 will not be allowed.
+Credit for MATH 311 and 313 will not be allowed.
+Credit for MATH 315 and PMAT 317 will not be allowed.
+Credit for MATH 318 and any of PMAT 329, CPSC 418, 429, or 557 will not be allowed.
+Credit for MATH 335 and 355 will not be allowed.
+Credit for MATH 361 and 313 will not be allowed.
+Credit for MATH 367 and 377 will not be allowed.
+Credit for MATH 375 and 376 will not be allowed.
+Credit for MATH 376 and 375 will not be allowed.
+Credit for MATH 391 and CPSC 491 will not be allowed.
+Credit for MATH 445 and 447 will not be allowed.
+Credit for MATH 501 and any one of MATH 601, PMAT 501 or 601 will not be allowed.
+Credit for MATH 511 and 607 will not be allowed.
+Credit for MATH 516 and 518 will not be allowed.
+Credit for MATH 518 and 516 will not be allowed.
+Credit for MATH 527 and 643 will not be allowed.
+Credit for MATH 545 and 603 will not be allowed.
+Credit for MATH 581 and 681 will not be allowed.
+Credit for MATH 583 and 683 will not be allowed.
+Credit for MATH 585 and STAT 407 will not be allowed.
+Credit for MATH 601 and either MATH 501 or PMAT 501 will not be allowed.
+Credit for MATH 603 and either MATH 545 or PMAT 545 will not be allowed.
+Credit for MATH 605 and AMAT 605 will not be allowed.
+Credit for MATH 607 and any of MATH 511, PMAT 511, 607 or 611 will not be allowed.
+Credit for MATH 617 and AMAT 617 will not be allowed.
+Credit for MATH 621 and 521 will not be allowed.
+Credit for MATH 625 and either MATH 525 or PMAT 607 will not be allowed.
+Credit for MATH 643 and any of MATH 527, PMAT 527, or PMAT 627 will not be allowed.
+Credit for MATH 681 and any one of MATH 581, AMAT 681, or AMAT 581 will not be allowed.
+Credit for MATH 683 and any one of MATH 583, AMAT 683, or AMAT 583 will not be allowed.
+Credit for MATH 685 and STAT 761 will not be allowed.
+Credit for MRSC 513 and 511 will not be allowed.
+Credit for GOPH 351 and 359 will not be allowed.
+Credit for GOPH 355 and 365 will not be allowed.
+Credit for GOPH 419 and any of 619, 599.09 (Comp Methods for Geophysic) or 699.09 (Comp Methods for Geophysicists) will not be allowed.
+Credit for GOPH 565 and either 365 or 465 will not be allowed.
+Credit for GOPH 619 and GOPH 699.09 will not be allowed.
+Credit for GOPH 705 and 699.56 will not be allowed.
+Credit for GLGY 201 and any of 209, 376 or 471 will not be allowed.
+Credit for GLGY 202 and 203 will not be allowed.
+Credit for GLGY 209 and 201 will not be allowed.
+Credit for GLGY 313 and 423 will not be allowed.
+Credit for GLGY 333 and 311 will not be allowed.
+Credit for GLGY 353 and 373 will not be allowed.
+Credit for GLGY 376 and 201 will not be allowed.
+Credit for GLGY 377 and 201 will not be allowed. This course is not open to Geology majors.
+Credit for GLGY 401 and 601 will not be allowed.
+Credit for GLGY 403 and 503 will not be allowed.
+Credit for GLGY 431 and either 443 or 531 will not be allowed.
+Credit for GLGY 433 and either 443 or 533 will not be allowed.
+Credit for GLGY 435 and either GLGY 437 or 439 will not be allowed.
+Credit for GLGY 441 and 639 will not be allowed.
+Credit for GLGY 445 and 341 will not be allowed.
+Credit for GLGY 463 and 461 will not be allowed.
+Credit for GLGY 483 and either 461 or 583 will not be allowed.
+Credit for GLGY 493 and 491 will not be allowed.
+Credit for GLGY 505 and 609 will not be allowed.
+Credit for GLGY 535 and 599.18 (Early Earth Evolution) will not be allowed.
+Credit for GLGY 541 and 641 will not be allowed.
+Credit for GLGY 577 and any of 575, 589.01 (Aqueous Fluids), 589.02 (Petroleum Fluids), 589.07 (Analy Tech for Petro Geochem), 589.08 (Petro Generation & Migration), 591, 595.01 (Petro Glgy III Core Exam), 596, 689.01 (Aqueous Fluids), 689.02 (Petroleum Fluids), 689.07 (Analytical Techniques for Petroleum Geochemistry), 689.08 (Petroleum Generation Migration), 694.01 (Adv Petroleum Geol III Core Ex), 694.03 (Reservoir Evaluation and Hydrocarbon Play Assessment), 696, will not be allowed.
+Credit for GLGY 579 and 595.05 (Basin Analysis) will not be allowed.
+Credit for GLGY 581 and any of 575, 589.01 (Aqueous Fluids), 589.02 (Petroleum Fluids), 589.07 (Analy Tech for Petro Geochem), 589.08 (Petro Generation & Migration), 591, 595.01 (Petro Glgy III Core Exam), 596, 689.01 (Aqueous Fluids), 689.02 (Petroleum Fluids), 689.07 (Analytical Techniques for Petroleum Geochemistry), 689.08 (Petroleum Generation Migration), 694.01 (Adv Petroleum Geol III Core Ex), 694.03 (Reservoir Evaluation and Hydrocarbon Play Assessment), 696 will not be allowed.
+Credit for GLGY 597 and 697 will not be allowed.
+Credit for GLGY 601 and 401 will not be allowed.
+Credit for GLGY 602 and either of 403 or 699.10 will not be allowed.
+Credit for GLGY 609 and 505 will not be allowed.
+Credit for GLGY 615 and 699.57 will not be allowed.
+Credit for GLGY 633 and any of 435, 537 or 545 will not be allowed.
+Credit for GLGY 639 and 441 will not be allowed.
+Credit for GLGY 641 and 541 will not be allowed.
+Credit for GLGY 647 and any of GLGY 449, 699.71, or GOPH 449 will not be allowed.
+Credit for GLGY 655 and 699.37 will not be allowed.
+Credit for GLGY 660 and either of 561 or 699.34 will not be allowed.
+Credit for GLGY 683 and either GLGY 483 or 699.02 will not be allowed.
+Credit for GLGY 697 and 597 will not be allowed.
+Credit for GLGY 705 and 699.56 will not be allowed.
+Credit for DATA 211 and any one of CPSC 215, 217, 231, 235, ENCM 339, ENGG 233 or ENDG 233 will not be allowed.
+Credit for DATA 305 and STAT 323 will not be allowed.
+Credit for DATA 311 and either CPSC 319 or 331 will not be allowed.
+Credit for DATA 414 and PHIL 314 will not be allowed.
+Credit for DATA 443 and CPSC 544 will not be allowed.
+Credit for DATA 622 and MDCH 615 will not be allowed.
+Credit for DATA 624 and MDCH 636 will not be allowed.
+Credit for DATA 693 and 695 will not be allowed.
+Credit for DATA 695 and 693 will not be allowed.
 Not open for registration to Computer Science majors.
-Credit for Computer Science 217 and any of 215, 231, 235, Data Science 211, Computer Engineering 339, Engineering 233 or Digital Engineering 233 will not be allowed.
-Credit for Computer Science 219 and any of 233, 235, Electrical Engineering 497 or Computer Engineering 493 will not be allowed.
-Credit for Computer Science 231 and any of Computer Science 215, 217, 235, Data Science 211, Computer Engineering 339, Engineering 233, or Digital Engineering 233 will not be allowed.
-Credit for Computer Science 233 and any of 219, 235, Electrical Engineering 497 or Computer Engineering 493 will not be allowed.
-Credit for Computer Science 235 and any of 215, 217, 219, 231, 233, Computer Engineering 339, 493 or Data Science 211 will not be allowed.
-Students may not register in, or have credit for, Computer Science 251 if they have previous credit for one of Mathematics 271 or 273 or are concurrently enrolled in Mathematics 271 or 273.
+Credit for CPSC 217 and any of 215, 231, 235, DATA 211, ENCM 339, ENGG 233 or ENDG 233 will not be allowed.
+Credit for CPSC 219 and any of 233, 235, ENEL 497 or ENCM 493 will not be allowed.
+Credit for CPSC 231 and any of CPSC 215, 217, 235, DATA 211, ENCM 339, ENGG 233, or ENDG 233 will not be allowed.
+Credit for CPSC 233 and any of 219, 235, ENEL 497 or ENCM 493 will not be allowed.
+Credit for CPSC 235 and any of 215, 217, 219, 231, 233, ENCM 339, 493 or DATA 211 will not be allowed.
+Students may not register in, or have credit for, CPSC 251 if they have previous credit for one of MATH 271 or 273 or are concurrently enrolled in MATH 271 or 273.
 Not open for registration to Majors in Computer Science, Bioinformatics, Electrical Engineering, Software Engineering, Computer Engineering, Natural Sciences with a primary concentration in Computer Science or any student with at least 3 units of courses numbered 300 or above and labelled Computer Science, Software Engineering or Software Engineering for Engineers.
-Credit for Computer Science 313 and Computer Science 351 will not be allowed.
-Credit for Computer Science 319 and 331 will not be allowed. Computer Science majors are not permitted to register in this course.
-Credit for Computer Science 331 and 319 will not be allowed.
-Credit for Computer Science 351 and Computer Science 313 will not be allowed.
-Credit for Computer Science 355 and 265 or Computer Engineering 369 will not be allowed.
-Credit for Computer Science 359 and any of 325, 455 or Computer Engineering 415 will not be allowed.
-Credit for Computer Science 418 and any of Computer Science 429, 557, Mathematics 318, Pure Mathematics 329 or 418 will not be allowed.
-Credit for Computer Science 441 and Electrical Engineering 573 will not be allowed.
-Credit for Computer Science 449 and 349 will not be allowed.
-Credit for Computer Science 471 and Business Technology Management 331 will not be allowed.
-Credit for Computer Science 491 and any of Mathematics 391, 493 or Engineering 407 or Chemical Engineering 407 will not be allowed.
-Credit for Computer Science 502 and any of 503, Software Engineering for Engineers 599 or 591 will not be allowed.
-Credit for Computer Science 503 and either 502 or Software Engineering for Engineers 599 will not be allowed.
-Credit for Computer Science 505 and either 601.40 or 604 will not be allowed.
-Credit for Computer Science 511 and 611 will not be allowed.
-Credit for Computer Science 518 and Computer Science 667 will not be allowed.
-Credit for Computer Science 519 and 619 will not be allowed.
-Credit for Computer Science 522 and 622 will not be allowed.
-Credit for Computer Science 525 and either 529 or 625 will not be allowed.
-Credit for Computer Science 526 and either 529 or 626 will not be allowed.
-Credit for Computer Science 527 and 627 will not be allowed.
-Credit for Computer Science 528 and 628 will not be allowed.
-Credit for Computer Science 530 and 630 will not be allowed.
-Credit for Computer Science 535 and 635 will not be allowed.
-Credit for Computer Science 544 and 599.44 will not be allowed.
-Credit for Computer Science 556 and 656 will not be allowed.
-Credit for Computer Science 561 and 661 will not be allowed.
-Credit for Computer Science 567 and 609 or Software Engineering 697 will not be allowed.
-Credit for Computer Science 568 and 662 will not be allowed.
-Credit for Computer Science 571 and 671 will not be allowed.
-Credit for Computer Science 572 and either 599.77 and 672 will not be allowed.
-Credit for Computer Science 573 and 599.87 will not be allowed.
-Computer Science 697.
-Credit for Computer Science 587 and 687 will not be allowed.
-Credit for Computer Science 589 and 689 will not be allowed.
-Credit for Computer Science 591 and 691 will not be allowed.
-Credit for Computer Science 609 and either Computer Science 567 or Software Engineering 697 will not be allowed for programs offered by the Department of Computer Science.
-Credit for Computer Science 611 and Computer Science 511 will not be allowed.
-Credit for Computer Science 615 and 601.13 will not be allowed.
-Credit for Computer Science 619 and 519 will not be allowed.
-Credit for Computer Science 622 and 522 will not be allowed.
-Credit for Computer Science 625 and 525 will not be allowed.
-Credit for Computer Science 626 and 526 will not be allowed.
-Credit for Computer Science 630 and 530 will not be allowed.
-Credit for Computer Science 635 and 535 will not be allowed.
-Credit for Computer Science 656 and 556 will not be allowed.
-Credit for Computer Science 661 and 561 will not be allowed.
-Credit for Computer Science 662 and 568 will not be allowed.
-Credit for Computer Science 667 and 518 will not be allowed.
-Credit for Computer Science 671 and 571 will not be allowed.
-Credit for Computer Science 672 and either 572 or 599.77 will not be allowed.
-Credit for Computer Science 687 and 587 will not be allowed.
-Credit for Computer Science 689 and 589 will not be allowed.
-Credit for Computer Science 691 and 591 will not be allowed.
-Credit for Computer Science 696 and 699 will not be allowed.
-Credit for Computer Science 697 and 577 will not be allowed.
-Credit for Computer Science 699 and 696 will not be allowed.
-Credit for Chemistry 201 and any of 209, 211, 301 or Engineering 204 will not be allowed.
-Credit for Chemistry 203 and any of 209, 213, 301 or Engineering 204 will not be allowed.
-Credit for Chemistry 209 and any of 201, 203, 211, 213, 301 or Engineering 204 will not be allowed.
-Credit for Chemistry 211 and any of 201, 209, 301 or Engineering 204 will not be allowed.
-Credit for Chemistry 212 and Engineering Foundations 121 will not be allowed.
-Credit for Chemistry 213 and any of 203, 209, 301 or Engineering 204 will not be allowed.
-Credit for Chemistry 301 and any of 201, 203, 209, 211, 213 or Engineering 204 will not be allowed. Registration in this course is not permitted for Honours, Majors or Minors in Chemistry programs or Environmental Science (Chemistry Concentration) or Natural Sciences (Chemistry Concentration).
-Credit for Chemistry 351 and 357 will not be allowed.
-Credit for Chemistry 353 and either 355 or 357 will not be allowed.
-Credit for Chemistry 355 and either 353 or 357 will not be allowed.
-Credit for Chemistry 357 and any of 351, 353 or 355 will not be allowed.
-Credit for Chemistry 371 and any of Physics 347, 349, or 447 will not be allowed.
-Credit for Chemistry 541 and either Chemistry 641 or Biochemistry 541 will not be allowed.
-Credit for Chemistry 641 and either Chemistry 541 or Biochemistry 541 will not be allowed.
-Credit for Cellular, Molecular and Microbial Biology 451 and either Biochemistry 401 or 413 will not be allowed.
+Credit for CPSC 313 and CPSC 351 will not be allowed.
+Credit for CPSC 319 and 331 will not be allowed. Computer Science majors are not permitted to register in this course.
+Credit for CPSC 331 and 319 will not be allowed.
+Credit for CPSC 351 and CPSC 313 will not be allowed.
+Credit for CPSC 355 and 265 or ENCM 369 will not be allowed.
+Credit for CPSC 359 and any of 325, 455 or ENCM 415 will not be allowed.
+Credit for CPSC 418 and any of CPSC 429, 557, MATH 318, PMAT 329 or 418 will not be allowed.
+Credit for CPSC 441 and ENEL 573 will not be allowed.
+Credit for CPSC 449 and 349 will not be allowed.
+Credit for CPSC 471 and BTMA 331 will not be allowed.
+Credit for CPSC 491 and any of MATH 391, 493 or ENGG 407 or ENCH 407 will not be allowed.
+Credit for CPSC 502 and any of 503, ENSF 599 or 591 will not be allowed.
+Credit for CPSC 503 and either 502 or ENSF 599 will not be allowed.
+Credit for CPSC 505 and either 601.40 or 604 will not be allowed.
+Credit for CPSC 511 and 611 will not be allowed.
+Credit for CPSC 518 and CPSC 667 will not be allowed.
+Credit for CPSC 519 and 619 will not be allowed.
+Credit for CPSC 522 and 622 will not be allowed.
+Credit for CPSC 525 and either 529 or 625 will not be allowed.
+Credit for CPSC 526 and either 529 or 626 will not be allowed.
+Credit for CPSC 527 and 627 will not be allowed.
+Credit for CPSC 528 and 628 will not be allowed.
+Credit for CPSC 530 and 630 will not be allowed.
+Credit for CPSC 535 and 635 will not be allowed.
+Credit for CPSC 544 and 599.44 will not be allowed.
+Credit for CPSC 556 and 656 will not be allowed.
+Credit for CPSC 561 and 661 will not be allowed.
+Credit for CPSC 567 and 609 or SENG 697 will not be allowed.
+Credit for CPSC 568 and 662 will not be allowed.
+Credit for CPSC 571 and 671 will not be allowed.
+Credit for CPSC 572 and either 599.77 and 672 will not be allowed.
+Credit for CPSC 573 and 599.87 will not be allowed.
+CPSC 697.
+Credit for CPSC 587 and 687 will not be allowed.
+Credit for CPSC 589 and 689 will not be allowed.
+Credit for CPSC 591 and 691 will not be allowed.
+Credit for CPSC 609 and either CPSC 567 or SENG 697 will not be allowed for programs offered by the Department of Computer Science.
+Credit for CPSC 611 and CPSC 511 will not be allowed.
+Credit for CPSC 615 and 601.13 will not be allowed.
+Credit for CPSC 619 and 519 will not be allowed.
+Credit for CPSC 622 and 522 will not be allowed.
+Credit for CPSC 625 and 525 will not be allowed.
+Credit for CPSC 626 and 526 will not be allowed.
+Credit for CPSC 630 and 530 will not be allowed.
+Credit for CPSC 635 and 535 will not be allowed.
+Credit for CPSC 656 and 556 will not be allowed.
+Credit for CPSC 661 and 561 will not be allowed.
+Credit for CPSC 662 and 568 will not be allowed.
+Credit for CPSC 667 and 518 will not be allowed.
+Credit for CPSC 671 and 571 will not be allowed.
+Credit for CPSC 672 and either 572 or 599.77 will not be allowed.
+Credit for CPSC 687 and 587 will not be allowed.
+Credit for CPSC 689 and 589 will not be allowed.
+Credit for CPSC 691 and 591 will not be allowed.
+Credit for CPSC 696 and 699 will not be allowed.
+Credit for CPSC 697 and 577 will not be allowed.
+Credit for CPSC 699 and 696 will not be allowed.
+Credit for CHEM 201 and any of 209, 211, 301 or ENGG 204 will not be allowed.
+Credit for CHEM 203 and any of 209, 213, 301 or ENGG 204 will not be allowed.
+Credit for CHEM 209 and any of 201, 203, 211, 213, 301 or ENGG 204 will not be allowed.
+Credit for CHEM 211 and any of 201, 209, 301 or ENGG 204 will not be allowed.
+Credit for CHEM 212 and ENFD 121 will not be allowed.
+Credit for CHEM 213 and any of 203, 209, 301 or ENGG 204 will not be allowed.
+Credit for CHEM 301 and any of 201, 203, 209, 211, 213 or ENGG 204 will not be allowed. Registration in this course is not permitted for Honours, Majors or Minors in Chemistry programs or Environmental Science (Chemistry Concentration) or Natural Sciences (Chemistry Concentration).
+Credit for CHEM 351 and 357 will not be allowed.
+Credit for CHEM 353 and either 355 or 357 will not be allowed.
+Credit for CHEM 355 and either 353 or 357 will not be allowed.
+Credit for CHEM 357 and any of 351, 353 or 355 will not be allowed.
+Credit for CHEM 371 and any of PHYS 347, 349, or 447 will not be allowed.
+Credit for CHEM 541 and either CHEM 641 or BCEM 541 will not be allowed.
+Credit for CHEM 641 and either CHEM 541 or BCEM 541 will not be allowed.
+Credit for CMMB 451 and either BCEM 401 or 413 will not be allowed.
 Not open for registration to Honours, Majors or Minors in the Department of Biological Sciences, or to Natural Sciences program students with a Concentration in Biological Sciences, or to Neuroscience program students.
-Not open for registration to Honours, Majors or Minors in the Department of Biological Sciences or to Natural Sciences program students with a Concentration in Biological Sciences, or to Environmental Science program students, or to Neuroscience program students. Credit for Biology 205 and either 241 or 243 will not be allowed.
+Not open for registration to Honours, Majors or Minors in the Department of Biological Sciences or to Natural Sciences program students with a Concentration in Biological Sciences, or to Environmental Science program students, or to Neuroscience program students. Credit for BIOL 205 and either 241 or 243 will not be allowed.
 Not open for credit to Honours, Majors or Minors in the Department of Biological Sciences or to Natural Sciences program students with a Concentration in Biological Sciences.
-Not open for registration to Honours, Majors and Minors in the Department of Biological Sciences or to Natural Sciences program students with a Concentration in Biological Sciences, or to Neuroscience program students. Credit for Biology 305 and any of Kinesiology 259, 260, Medical Science 404, Zoology 269, 461 or 463 will not be allowed.
+Not open for registration to Honours, Majors and Minors in the Department of Biological Sciences or to Natural Sciences program students with a Concentration in Biological Sciences, or to Neuroscience program students. Credit for BIOL 305 and any of KNES 259, 260, MDSC 404, ZOOL 269, 461 or 463 will not be allowed.
 Not open for registration to Honours, Majors and Minors in the Department of Biological Sciences or to Natural Sciences program students with a Concentration in Biological Sciences, or to Environmental Sciences program students, or to Neuroscience program students.
-Credit for Biology 309 and Botany 309 will not be allowed. Not open for registration to Honours, Majors and Minors in the Department of Biological Sciences or to Natural Sciences program students with a Concentration in Biological Sciences, or to Environmental Science program students with a Concentration in Biological Sciences, or to  Neuroscience program students.
-Credit for Biology 311 and Medical Science 341 will not be allowed
-Credit for Biology 331 and Medical Science 351 will not be allowed.
+Credit for BIOL 309 and BOTA 309 will not be allowed. Not open for registration to Honours, Majors and Minors in the Department of Biological Sciences or to Natural Sciences program students with a Concentration in Biological Sciences, or to Environmental Science program students with a Concentration in Biological Sciences, or to  Neuroscience program students.
+Credit for BIOL 311 and MDSC 341 will not be allowed
+Credit for BIOL 331 and MDSC 351 will not be allowed.
 Not open for registration to honours, majors or minors in the Department of Biological Sciences or to Environmental Science program students with a Concentration in Biological Sciences, or to Natural Sciences program students with a Concentration in Biological Sciences, or to Neuroscience program students.
-Credit for Biology 435 and 335 will not be allowed.
-Credit for Biology 453 and 351 will not be allowed.
-Credit for Biology 505 and Botany 503 will not be allowed.
-Not open to majors in the Department of Biological Sciences or Natural Sciences concentrators in Biological Sciences. Credit for Biochemistry 341 and 393 will not be allowed.
-Credit for Biochemistry 393 and 341 will not be allowed.
-Credit for Biochemistry 411 and either of Biochemistry 401 or 403 will not be allowed.
-Credit for Biochemistry 413 and any of Biochemistry 401, 403 or Cellular, Molecular and Microbial Biology 451 will not be allowed.
-Credit for Biochemistry 431 and 531 will not be allowed.
-Credit for Biochemistry 553 and Biology 553 will not be allowed.
-Credit for Astrophysics 307 and 507 will not be allowed.
-Credit for Astrophysics 409 and 309 will not be allowed.
-Credit for Astronomy 207 and any of Astronomy 205, Astrophysics 213 or 305 will not be allowed. Physics Majors, Astrophysics Majors, Natural Sciences Physics Concentrators and Environmental Science Physics Concentrators are not permitted to register in this course.
-Credit for Astronomy 209 and either of Astronomy 205 or Astrophysics 213 will not be allowed. Physics Majors, Astrophysics Majors, Natural Sciences Physics Concentrators and Environmental Science Physics Concentrators are not permitted to register in this course.
-Credit for Actuarial Science 425 and Finance 317 will be not be allowed without consent of the Department.
-Credit for Actuarial Science 513 and 539.02 (Introduction To Actuarial Practice) will not be allowed.
-Credit for Actuarial Science 515 and 539.04 (Stochastic Models In Math Finance) will not be allowed.
-Credit for Actuarial Science 517 and 539.06 (Interest Rate Modelling) will not be allowed.
-Credit for Actuarial Science 531 and 533 will not be allowed.
-Credit for Actuarial Science 537 and either 533 or 637 will not be allowed.
-Credit for Actuarial Science 617 and either 517 or 539.06 (Interest Rate Modelling) will not be allowed.
-Credit for Actuarial Science 627 and 527 will not be allowed.
-Credit for more than one of Actuarial Science 537, 637 and 533 will not be allowed.
-Credit for Sustainable Systems Engineering 315 and Engineering 209 will not be allowed.
-Credit for Sustainable Systems Engineering 401 and 403 will not be allowed.
-Credit for Sustainable Systems Engineering 403 and 401 will not be allowed.
-Credit for Software Engineering for Engineers 300 and Computer Science 471 will not be allowed.
-Credit for Software Engineering for Engineers 337 and Computer Engineering 339 will not be allowed.
-Credit for Software Engineering for Engineers 338 and Computer Science 319 will not be allowed.
-Credit for Software Engineering for Engineers 380 and any of Software Engineering for Engineers 409, Electrical Engineering 409 or Computer Engineering 493 will not be allowed.
-Credit for Software Engineering for Engineers 409 and any of Software Engineering for Engineers 380, Electrical Engineering 409 or Computer Engineering 493 will not be allowed.
-Credit for Software Engineering for Engineers 444 and Software Engineering for Engineers 544 will not be allowed.
-Credit for Software Engineering for Engineers 460 and Computer Engineering 511 will not be allowed.
-Credit for Software Engineering for Engineers 461 and Computer Science 457 will not be allowed
-Credit for Software Engineering for Engineers 462 and Computer Science 441 will not be allowed.
-Credit for Software Engineering for Engineers 480 and any of Software Engineering 300, 301, 311, 411, Computer Science 301, 333, or 451 will not be allowed.
-Credit for Software Engineering for Engineers 544 and Electrical Engineering 525 will not be allowed.
-Credit for Software Engineering for Engineers 545 and 519.45 (IntroductionToVirtualReality) will not be allowed.
-Credit for Software Engineering for Engineers 592 and 519.48 (Prog Fundmtl's Data Engineers) will not be allowed.
-Credit for Software Engineering for Engineers 593 and 519.49 (Principles of Software Dev I) will not be allowed.
-Credit for Software Engineering for Engineers 594 and 519.50 (Principles of Software Dev II) will not be allowed.
-Credit for Software Engineering for Engineers 603 and 619.02 (SoftwareDevelpmnt OpenSource) will not be allowed.
-Credit for Software Engineering for Engineers 604 and Software Engineering 609.19 (TheoreticalFoundationsOfSeng) will not be allowed.
-Credit for Software Engineering for Engineers 606 and either 614 or 619.16 (Software Engg Fundamentals) will not be allowed.
-Credit for Software Engineering for Engineers 607 and 619.21 (Software Design & Arch I) will not be allowed.
-Credit for Software Engineering for Engineers 608 and 619.22 (Software Design & Arch II) will not be allowed.
-Credit for Software Engineering for Engineers 609 and 619.23 (Team Design Project I) will not be allowed.
-Credit for Software Engineering for Engineers 610 and 619.24 (Team Design Project II) will not be allowed.
-Credit for Software Engineering for Engineers 611 and either 519.47 (Applied Data Science) or 619.25 (Machine Learning for ENSF) will not be allowed.
-Credit for Software Engineering for Engineers 612 and 619.28 (Large Scale Analytics Systems) will not be allowed.
-Credit for Software Engineering for Engineers 613 and 619.30 (Rqrm't Analysis & Process Mgmt) will not be allowed.
-Credit for Software Engineering for Engineers 614 and either 606 or 619.34 (AdvSytm analy&SoftwareDesgn) will not be allowed.
-Credit for Software Engineering for Engineers 692 and either 519.48 (Prog Fundmtl's Data Engineers) or 592 will not be allowed.
-Credit for Software Engineering for Engineers 693 and either 519.49 (Principles of Software Dev I) or 593 will not be allowed.
-Credit for Software Engineering for Engineers 694 and either 519.50 (Principles of Software Dev II) or 594 will not be allowed.
-Credit for Petroleum Engineering 313 and 513 will not be allowed.
-Credit for Petroleum Engineering 423 and Chemical Engineering 423 will not be allowed.
-Credit for Petroleum Engineering 429 and 523 will not be allowed.
-Credit for Petroleum Engineering 511 and either Chemical Engineering 500 or 511 will not be allowed.
-Credit for Petroleum Engineering 513 and 313 will not be allowed.
-Credit for Petroleum Engineering 515 and 521 will not be allowed
-Credit for Petroleum Engineering 521 and 515 will not be allowed.
-Credit for Petroleum Engineering 523 and 429 will not be allowed.
-Credit for Petroleum Engineering 551 and Chemical Engineering 551 will not be allowed.
-Credit for Petroleum Engineering 563 and Mechanical Engineering 519.18 (Corrosion in Eng Applicat) will not be allowed.
-Credit for Petroleum Engineering 571 and 519.01 (Unconventional Oil Exploitation) will not be allowed.
-Credit for Petroleum Engineering 573 and 519.02 (Unconventional Oil Exploitation) will not be allowed.
-Credit for Petroleum Engineering 626 and Chemical Engineering 687 will not be allowed.
-Credit for Petroleum Engineering 627 and either Chemical Engineering 689 or Chemical Engineering 619.91 will not be allowed.
-Credit for Mechanical Engineering 317 and any of Engineering 317, Biomedical Engineering 383, Civil Engineering 317 or Physics Engineering 383 will not be allowed.
-Credit for Mechanical Engineering 341 and Biomedical Engineering 383 or Physics Engineering 383 will not be allowed.
-Credit for Mechanical Engineering 461 and Engineering Physics 491 will not be allowed.
-Credit for Mechanical Engineering 501 and 538 will not be allowed.
-Credit for Mechanical Engineering 502 and 538 will not be allowed.
-Credit for Mechanical Engineering 547 and either 619.01 (The Finite Element Method) or 647 will not be allowed.
-Credit for Mechanical Engineering 561 and any of 560, 660 or 661 will not be allowed.
-Credit for Mechanical Engineering 562 and any of 560, 660 or 662 will not be allowed.
-Credit for Mechanical Engineering 570 and any of 519.06 (Aerodynamics), 619.31 (Aerodynamics) or 670 will not be allowed.
-Credit for Mechanical Engineering 572 and any of 519.04 (Computational Fluid Dynamics), 619.22 (Computational Fluid Dynamics) or 672 will not be allowed.
-Credit for Mechanical Engineering 587 and 519.09 (Mechanics of Materials II) will not be allowed.
-Credit for Mechanical Engineering 616 and any of Environmental Engineering 616, 619.11 (Environmental Fluid Mechanics) or Mechanical Engineering 619.06 (Environmental Fluid Mechanics) will not be allowed.
-Credit for Mechanical Engineering 620 and 619.10 (Geomatics Engineering for Pipeline Systems) will not be allowed.
-Credit for Mechanical Engineering 622 and 619.11 (Pump and Compression Stations) will not be allowed.
-Credit for Mechanical Engineering 624 and 619.12 (Fundamentals Pipeline Economics) will not be allowed.
-Credit for Mechanical Engineering 626 and 619.16 (Corrosion Science in the Pipelines Industry) will not be allowed.
-Credit for Mechanical Engineering 628 and 619.27 (Pipeline Coatings) will not be allowed
-Credit for Mechanical Engineering 630 and 619.49 (Fundamentals of Liquid Hydraulics in Pipeline Systems) will not be allowed.
-Credit for Mechanical Engineering 631 and Environmental Engineering 625 will not be allowed.
-Credit for Mechanical Engineering 632 and 619.40 (Fundamentals of Gas Hydraulics in Pipeline Systems) will not be allowed.
-Credit for Mechanical Engineering 634 and 619.57 (Pipeline Geotechnical Engineering) will not be allowed.
-Credit for Mechanical Engineering 636 and 619.67 (Analysis of Buried Steel Pipeline) will not be allowed.
-Credit for Mechanical Engineering 637 and Environmental Engineering 673 will not be allowed.
-Credit for Mechanical Engineering 640 and 619.90 (Stress Corrosion Crack Behaviour) will not be allowed.
-Credit for Mechanical Engineering 647 and either 547 or 619.01 (The Finite Element Method) will not be allowed.
-Credit for Mechanical Engineering 653 and 619.32 (Advanced Continuum Mechanics) will not be allowed.
-Credit for Mechanical Engineering 661 and any of 560, 561, 619.47 (Advanced Mechatronics I) or 660 will not be allowed.
-Credit for Mechanical Engineering 662 and any of 560, 562, 619.48 (Advanced Mechatronics II) or 660 will not be allowed.
-Credit for Mechanical Engineering 663 and either Kinesiology 663 or Medical Science 663 will not be allowed.
-Credit for Mechanical Engineering 667 and either 619.74 (Failure and Fracture Mechanics Pipeline Industry) or 638 will not be allowed.
-Credit for Mechanical Engineering 670 and any of 519.06 (Aerodynamics), 570 or 619.31 (Aerodynamics) will not be allowed.
-Credit for Mechanical Engineering 672 and and any of 519.04 (Computational Fluid Dynamics), 572 or 619.22 (Computational Fluid Dynamics) will not be allowed.
-Credit for Mechanical Engineering 685 and either Kinesiology 685 or Medical Science 685 will not be allowed.
-Credit for Mechanical Engineering 699 and 599 will not be allowed.
-Credit for Manufacturing Engineering 503 and 401 will not be allowed.
-Credit for Manufacturing Engineering 527 and either Engineering 515 or 684 will not be allowed.
-Credit for Manufacturing Engineering 529 and either Mechanical Engineering 519.16 (Intro Microsystems & Nanotech) or Manufacturing Engineering 619.01 (MEMS) will not be allowed.
-Credit for Manufacturing Engineering 618 and 619.18 (Manufacturing Optimization) will not be allowed.
-Credit for Manufacturing Engineering 619.01 (MEMS) and either Mechanical Engineering 519.16 (Intro Microsystems & Nanotech) or Manufacturing Engineering 529 will not be allowed.
-Credit for Geomatics Engineering 637 and any of Geomatics Engineering 699.28 (Earth Observation for Environment), Environmental Engineering 619.05 (Earth Observation for the Environment) or 637 will not be allowed.
-Credit for Environmental Engineering 616 and any of Mechanical Engineering 616, 619.06 or Environmental Engineering 619.11 will not be allowed.
-Credit for Environmental Engineering 681 and 682 will not be allowed.
-Credit for Environmental Engineering 682 and 681 will not be allowed.
-Credit for Environmental Engineering 691 and Political Science 755.31 will not be allowed.
-Credit for Environmental Engineering 693 and Environmental Design 683.85 will not be allowed.
-Credit for Engineering 200 and Energy Engineering 200 will not be allowed.
-Credit for Engineering 202 and either Engineering 203 or 205 will not be allowed.
-Credit for Engineering 209 and Economics 209 will not be allowed.
-Credit for Engineering 212 and 201 will not be allowed
-Credit for Engineering 213 and Communications Studies 363 will not be allowed.
-Credit for Engineering 225 and any of Engineering 325, Biomedical Engineering 327 or Electrical Engineering 341 will not be allowed.
-Credit for Engineering 317 and Civil Engineering 317 will not be allowed.
-Credit for Engineering 515 and any of Engineering 684, Manufacturing Engineering 527, Civil Engineering 471 or Software Engineering 511 will not be allowed.
-Credit for Engineering 525 and 519.01 will not be allowed.
-Credit for Engineering 684 and any of Civil Engineering 691, Engineering 515 or Manufacturing Engineering 527 will not be allowed.
-Credit for Engineering 687 and 513 will not be allowed.
-Credit for Energy Engineering 200 and Engineering 200 will not be allowed.
-Credit for Energy and Environment, Engineering 377 and either 519.09 (Intro to Environmental Eng) or Civil Engineering 481 will not be allowed.
-Credit for Electrical Engineering 327 and Engineering Physics 488 will not be allowed.
-Credit for Electrical Engineering 343 and Engineering Physics 488 will not be allowed.
-Credit for Electrical Engineering 353 and Computer Science 321 will not be allowed.
-Credit for Electrical Engineering 419 and any of Engineering 319, Digital Engineering 319 or Biomedical Engineering 319 will not be allowed.
-Credit for Electrical Engineering 500 and either 583 or 589 will not be allowed.
-Credit for Electrical Engineering 525 and either Software Engineering for Engineers 411 or 544 will not be allowed.
-Credit for Electrical Engineering 567 and 519.47 (Analog CMOS Int Circuit Design) will not be allowed.
-Credit for Computer Science 441 and Electrical Engineering 573 will not be allowed.
-Credit for Electrical Engineering 574 and 519.49 (Microwave Transistor Amplifier) will not be allowed.
-Credit for Electrical Engineering 584 and 519.53 (Electrical Engineering in Comp & Inst Bldg) will not be allowed.
-Credit for Electrical Engineering 586 and 519.50 (Power System Protection) will not be allowed.
-Credit for Electrical Engineering 602 and Software Engineering for Engineers 619.71 will not be allowed.
-Credit for Electrical Engineering 604 and 619.38 will not be allowed.
-Credit for Electrical Engineering 606 and 619.68 will not be allowed.
-Credit for Electrical Engineering 610 and Electrical Engineering 619.76 will not be allowed.
-Credit for Electrical Engineering 613 and 619.22 will not be allowed.
-Credit for Electrical Engineering 614 and 619.11 will not be allowed.
-Credit for Electrical Engineering 615 and 619.16 will not be allowed.
-Credit for Electrical Engineering 616 and 619.50 will not be allowed.
-Credit for Electrical Engineering 617 and 619.31 will not be allowed.
-Credit for Electrical Engineering 635 and 619.87 (Cryptography And Number Theory) will not be allowed.
-Credit for Electrical Engineering 637 and 619.88 (ArithmeticTechDspApplications) will not be allowed.
-Credit for Electrical Engineering 641 and 619.05 (Optimization for Engineers) will not be allowed.
-Credit for Electrical Engineering 645 and 619.51 will not be allowed.
-Credit for Electrical Engineering 649 and 619.22 (RF Power Amp & Transmitters) will not be allowed.
-Credit for Electrical Engineering 651 and 619.04 (Res Mgmt For Wireless Networks) will not be allowed.
-Credit for Electrical Engineering 653 and 619.23 (Theory&PracAdvDspProcArch) will not be allowed.
-Credit for Electrical Engineering 661 and 619.18 (Grid-Connected Inverter Systems) will not be allowed.
-Credit for Electrical Engineering 663 and 619.09 (Numerical Electromagnetic Comp) will not be allowed.
-Credit for Electrical Engineering 667 and 619.25 (Intelligent Control) will not be allowed.
-Credit for Electrical Engineering 670 and 601 or 587 will not be allowed.
-Credit for Electrical Engineering 672 and 661 or 585 will not be allowed.
-Credit for Electrical Engineering 674 and 584 or 586 will not be allowed.
-Credit for Electrical Engineering 678 and 698 will not be allowed.
-Credit for Electrical Engineering 680 and 641 will not be allowed.
-Credit for Electrical Engineering 682 and 645 will not be allowed.
-Credit for Electrical Engineering 683 and 619.19 (AlgorithmsVlsiPhysDesAutomate) will not be allowed.
-Credit for Electrical Engineering 684 and 631 will not be allowed.
-Credit for Electrical Engineering 641 and 619.64 (Software Defined Radio) will not be allowed.
-Credit for Electrical Engineering 686 and Electrical Engineering 614 or Computer Engineering 511 will not be allowed.
-Credit for Electrical Engineering 691 and 619.26 will not be allowed.
-Credit for Electrical Engineering 695 and either 519.42 (AdvancedMathForElectricalEngg) or 619.95 (AdvancedMathForElectricalEngg) will not be allowed.
-Credit for Digital Engineering 233 and any of Computer Science 217, 231, 235, Computer Engineering 339 or Engineering 233 will not be allowed.
-Credit for Digital Engineering 310 and Engineering 519.06 (Digital Engineering I) will not be allowed.
-Credit for Digital Engineering 311 and Software Engineering for Engineers 409 or Engineering 519.07 (Digital Engineering II) will not be allowed.
-Credit for Digital Engineering 319 and Biomedical Engineering 319 will not be allowed.
-Credit for Digital Engineering 407 and Chemical Engineering 407 will not be allowed.
-Credit for Digital Engineering 410 and either Software Engineering for Engineers 519.47 (Applied Data Science) or 544 will not be allowed.
-Credit for Digital Engineering 411 and either Software Engineering for Engineers 519.47 (Applied Data Science) or Electrical Engineering 525 will not be allowed
-Credit for Digital Engineering 440 and either Engineering 233 or Digital Engineering 233 will not be allowed.
+Credit for BIOL 435 and 335 will not be allowed.
+Credit for BIOL 453 and 351 will not be allowed.
+Credit for BIOL 505 and BOTA 503 will not be allowed.
+Not open to majors in the Department of Biological Sciences or Natural Sciences concentrators in Biological Sciences. Credit for BCEM 341 and 393 will not be allowed.
+Credit for BCEM 393 and 341 will not be allowed.
+Credit for BCEM 411 and either of BCEM 401 or 403 will not be allowed.
+Credit for BCEM 413 and any of BCEM 401, 403 or CMMB 451 will not be allowed.
+Credit for BCEM 431 and 531 will not be allowed.
+Credit for BCEM 553 and BIOL 553 will not be allowed.
+Credit for ASPH 307 and 507 will not be allowed.
+Credit for ASPH 409 and 309 will not be allowed.
+Credit for ASTR 207 and any of ASTR 205, ASPH 213 or 305 will not be allowed. Physics Majors, Astrophysics Majors, Natural Sciences Physics Concentrators and Environmental Science Physics Concentrators are not permitted to register in this course.
+Credit for ASTR 209 and either of ASTR 205 or ASPH 213 will not be allowed. Physics Majors, Astrophysics Majors, Natural Sciences Physics Concentrators and Environmental Science Physics Concentrators are not permitted to register in this course.
+Credit for ACSC 425 and FNCE 317 will be not be allowed without consent of the Department.
+Credit for ACSC 513 and 539.02 (Introduction To Actuarial Practice) will not be allowed.
+Credit for ACSC 515 and 539.04 (Stochastic Models In Math Finance) will not be allowed.
+Credit for ACSC 517 and 539.06 (Interest Rate Modelling) will not be allowed.
+Credit for ACSC 531 and 533 will not be allowed.
+Credit for ACSC 537 and either 533 or 637 will not be allowed.
+Credit for ACSC 617 and either 517 or 539.06 (Interest Rate Modelling) will not be allowed.
+Credit for ACSC 627 and 527 will not be allowed.
+Credit for more than one of ACSC 537, 637 and 533 will not be allowed.
+Credit for SUSE 315 and ENGG 209 will not be allowed.
+Credit for SUSE 401 and 403 will not be allowed.
+Credit for SUSE 403 and 401 will not be allowed.
+Credit for ENSF 300 and CPSC 471 will not be allowed.
+Credit for ENSF 337 and ENCM 339 will not be allowed.
+Credit for ENSF 338 and CPSC 319 will not be allowed.
+Credit for ENSF 380 and any of ENSF 409, ENEL 409 or ENCM 493 will not be allowed.
+Credit for ENSF 409 and any of ENSF 380, ENEL 409 or ENCM 493 will not be allowed.
+Credit for ENSF 444 and ENSF 544 will not be allowed.
+Credit for ENSF 460 and ENCM 511 will not be allowed.
+Credit for ENSF 461 and CPSC 457 will not be allowed
+Credit for ENSF 462 and CPSC 441 will not be allowed.
+Credit for ENSF 480 and any of SENG 300, 301, 311, 411, CPSC 301, 333, or 451 will not be allowed.
+Credit for ENSF 544 and ENEL 525 will not be allowed.
+Credit for ENSF 545 and 519.45 (IntroductionToVirtualReality) will not be allowed.
+Credit for ENSF 592 and 519.48 (Prog Fundmtl's Data Engineers) will not be allowed.
+Credit for ENSF 593 and 519.49 (Principles of Software Dev I) will not be allowed.
+Credit for ENSF 594 and 519.50 (Principles of Software Dev II) will not be allowed.
+Credit for ENSF 603 and 619.02 (SoftwareDevelpmnt OpenSource) will not be allowed.
+Credit for ENSF 604 and SENG 609.19 (TheoreticalFoundationsOfSeng) will not be allowed.
+Credit for ENSF 606 and either 614 or 619.16 (Software Engg Fundamentals) will not be allowed.
+Credit for ENSF 607 and 619.21 (Software Design & Arch I) will not be allowed.
+Credit for ENSF 608 and 619.22 (Software Design & Arch II) will not be allowed.
+Credit for ENSF 609 and 619.23 (Team Design Project I) will not be allowed.
+Credit for ENSF 610 and 619.24 (Team Design Project II) will not be allowed.
+Credit for ENSF 611 and either 519.47 (Applied Data Science) or 619.25 (Machine Learning for ENSF) will not be allowed.
+Credit for ENSF 612 and 619.28 (Large Scale Analytics Systems) will not be allowed.
+Credit for ENSF 613 and 619.30 (Rqrm't Analysis & Process Mgmt) will not be allowed.
+Credit for ENSF 614 and either 606 or 619.34 (AdvSytm analy&SoftwareDesgn) will not be allowed.
+Credit for ENSF 692 and either 519.48 (Prog Fundmtl's Data Engineers) or 592 will not be allowed.
+Credit for ENSF 693 and either 519.49 (Principles of Software Dev I) or 593 will not be allowed.
+Credit for ENSF 694 and either 519.50 (Principles of Software Dev II) or 594 will not be allowed.
+Credit for ENPE 313 and 513 will not be allowed.
+Credit for ENPE 423 and ENCH 423 will not be allowed.
+Credit for ENPE 429 and 523 will not be allowed.
+Credit for ENPE 511 and either ENCH 500 or 511 will not be allowed.
+Credit for ENPE 513 and 313 will not be allowed.
+Credit for ENPE 515 and 521 will not be allowed
+Credit for ENPE 521 and 515 will not be allowed.
+Credit for ENPE 523 and 429 will not be allowed.
+Credit for ENPE 551 and ENCH 551 will not be allowed.
+Credit for ENPE 563 and ENME 519.18 (Corrosion in Eng Applicat) will not be allowed.
+Credit for ENPE 571 and 519.01 (Unconventional Oil Exploitation) will not be allowed.
+Credit for ENPE 573 and 519.02 (Unconventional Oil Exploitation) will not be allowed.
+Credit for ENPE 626 and ENCH 687 will not be allowed.
+Credit for ENPE 627 and either ENCH 689 or ENCH 619.91 will not be allowed.
+Credit for ENME 317 and any of ENGG 317, BMEN 383, ENCI 317 or Physics ENGG 383 will not be allowed.
+Credit for ENME 341 and BMEN 383 or Physics ENGG 383 will not be allowed.
+Credit for ENME 461 and Engineering PHYS 491 will not be allowed.
+Credit for ENME 501 and 538 will not be allowed.
+Credit for ENME 502 and 538 will not be allowed.
+Credit for ENME 547 and either 619.01 (The Finite Element Method) or 647 will not be allowed.
+Credit for ENME 561 and any of 560, 660 or 661 will not be allowed.
+Credit for ENME 562 and any of 560, 660 or 662 will not be allowed.
+Credit for ENME 570 and any of 519.06 (Aerodynamics), 619.31 (Aerodynamics) or 670 will not be allowed.
+Credit for ENME 572 and any of 519.04 (Computational Fluid Dynamics), 619.22 (Computational Fluid Dynamics) or 672 will not be allowed.
+Credit for ENME 587 and 519.09 (Mechanics of Materials II) will not be allowed.
+Credit for ENME 616 and any of ENEN 616, 619.11 (Environmental Fluid Mechanics) or ENME 619.06 (Environmental Fluid Mechanics) will not be allowed.
+Credit for ENME 620 and 619.10 (Geomatics Engineering for Pipeline Systems) will not be allowed.
+Credit for ENME 622 and 619.11 (Pump and Compression Stations) will not be allowed.
+Credit for ENME 624 and 619.12 (Fundamentals Pipeline Economics) will not be allowed.
+Credit for ENME 626 and 619.16 (Corrosion Science in the Pipelines Industry) will not be allowed.
+Credit for ENME 628 and 619.27 (Pipeline Coatings) will not be allowed
+Credit for ENME 630 and 619.49 (Fundamentals of Liquid Hydraulics in Pipeline Systems) will not be allowed.
+Credit for ENME 631 and ENEN 625 will not be allowed.
+Credit for ENME 632 and 619.40 (Fundamentals of Gas Hydraulics in Pipeline Systems) will not be allowed.
+Credit for ENME 634 and 619.57 (Pipeline Geotechnical Engineering) will not be allowed.
+Credit for ENME 636 and 619.67 (Analysis of Buried Steel Pipeline) will not be allowed.
+Credit for ENME 637 and ENEN 673 will not be allowed.
+Credit for ENME 640 and 619.90 (Stress Corrosion Crack Behaviour) will not be allowed.
+Credit for ENME 647 and either 547 or 619.01 (The Finite Element Method) will not be allowed.
+Credit for ENME 653 and 619.32 (Advanced Continuum Mechanics) will not be allowed.
+Credit for ENME 661 and any of 560, 561, 619.47 (Advanced Mechatronics I) or 660 will not be allowed.
+Credit for ENME 662 and any of 560, 562, 619.48 (Advanced Mechatronics II) or 660 will not be allowed.
+Credit for ENME 663 and either KNES 663 or MDSC 663 will not be allowed.
+Credit for ENME 667 and either 619.74 (Failure and Fracture Mechanics Pipeline Industry) or 638 will not be allowed.
+Credit for ENME 670 and any of 519.06 (Aerodynamics), 570 or 619.31 (Aerodynamics) will not be allowed.
+Credit for ENME 672 and and any of 519.04 (Computational Fluid Dynamics), 572 or 619.22 (Computational Fluid Dynamics) will not be allowed.
+Credit for ENME 685 and either KNES 685 or MDSC 685 will not be allowed.
+Credit for ENME 699 and 599 will not be allowed.
+Credit for ENMF 503 and 401 will not be allowed.
+Credit for ENMF 527 and either ENGG 515 or 684 will not be allowed.
+Credit for ENMF 529 and either ENME 519.16 (Intro Microsystems & Nanotech) or ENMF 619.01 (MEMS) will not be allowed.
+Credit for ENMF 618 and 619.18 (Manufacturing Optimization) will not be allowed.
+Credit for ENMF 619.01 (MEMS) and either ENME 519.16 (Intro Microsystems & Nanotech) or ENMF 529 will not be allowed.
+Credit for ENGO 637 and any of ENGO 699.28 (Earth Observation for Environment), ENEN 619.05 (Earth Observation for the Environment) or 637 will not be allowed.
+Credit for ENEN 616 and any of ENME 616, 619.06 or ENEN 619.11 will not be allowed.
+Credit for ENEN 681 and 682 will not be allowed.
+Credit for ENEN 682 and 681 will not be allowed.
+Credit for ENEN 691 and POLI 755.31 will not be allowed.
+Credit for ENEN 693 and EVDS 683.85 will not be allowed.
+Credit for ENGG 200 and ENER 200 will not be allowed.
+Credit for ENGG 202 and either ENGG 203 or 205 will not be allowed.
+Credit for ENGG 209 and ECON 209 will not be allowed.
+Credit for ENGG 212 and 201 will not be allowed
+Credit for ENGG 213 and COMS 363 will not be allowed.
+Credit for ENGG 225 and any of ENGG 325, BMEN 327 or ENEL 341 will not be allowed.
+Credit for ENGG 317 and ENCI 317 will not be allowed.
+Credit for ENGG 515 and any of ENGG 684, ENMF 527, ENCI 471 or SENG 511 will not be allowed.
+Credit for ENGG 525 and 519.01 will not be allowed.
+Credit for ENGG 684 and any of ENCI 691, ENGG 515 or ENMF 527 will not be allowed.
+Credit for ENGG 687 and 513 will not be allowed.
+Credit for ENER 200 and ENGG 200 will not be allowed.
+Credit for ENEE 377 and either 519.09 (Intro to Environmental Eng) or ENCI 481 will not be allowed.
+Credit for ENEL 327 and Engineering PHYS 488 will not be allowed.
+Credit for ENEL 343 and Engineering PHYS 488 will not be allowed.
+Credit for ENEL 353 and CPSC 321 will not be allowed.
+Credit for ENEL 419 and any of ENGG 319, ENDG 319 or BMEN 319 will not be allowed.
+Credit for ENEL 500 and either 583 or 589 will not be allowed.
+Credit for ENEL 525 and either ENSF 411 or 544 will not be allowed.
+Credit for ENEL 567 and 519.47 (Analog CMOS Int Circuit Design) will not be allowed.
+Credit for CPSC 441 and ENEL 573 will not be allowed.
+Credit for ENEL 574 and 519.49 (Microwave Transistor Amplifier) will not be allowed.
+Credit for ENEL 584 and 519.53 (Electrical Engineering in Comp & Inst Bldg) will not be allowed.
+Credit for ENEL 586 and 519.50 (Power System Protection) will not be allowed.
+Credit for ENEL 602 and ENSF 619.71 will not be allowed.
+Credit for ENEL 604 and 619.38 will not be allowed.
+Credit for ENEL 606 and 619.68 will not be allowed.
+Credit for ENEL 610 and ENEL 619.76 will not be allowed.
+Credit for ENEL 613 and 619.22 will not be allowed.
+Credit for ENEL 614 and 619.11 will not be allowed.
+Credit for ENEL 615 and 619.16 will not be allowed.
+Credit for ENEL 616 and 619.50 will not be allowed.
+Credit for ENEL 617 and 619.31 will not be allowed.
+Credit for ENEL 635 and 619.87 (Cryptography And Number Theory) will not be allowed.
+Credit for ENEL 637 and 619.88 (ArithmeticTechDspApplications) will not be allowed.
+Credit for ENEL 641 and 619.05 (Optimization for Engineers) will not be allowed.
+Credit for ENEL 645 and 619.51 will not be allowed.
+Credit for ENEL 649 and 619.22 (RF Power Amp & Transmitters) will not be allowed.
+Credit for ENEL 651 and 619.04 (Res Mgmt For Wireless Networks) will not be allowed.
+Credit for ENEL 653 and 619.23 (Theory&PracAdvDspProcArch) will not be allowed.
+Credit for ENEL 661 and 619.18 (Grid-Connected Inverter Systems) will not be allowed.
+Credit for ENEL 663 and 619.09 (Numerical Electromagnetic Comp) will not be allowed.
+Credit for ENEL 667 and 619.25 (Intelligent Control) will not be allowed.
+Credit for ENEL 670 and 601 or 587 will not be allowed.
+Credit for ENEL 672 and 661 or 585 will not be allowed.
+Credit for ENEL 674 and 584 or 586 will not be allowed.
+Credit for ENEL 678 and 698 will not be allowed.
+Credit for ENEL 680 and 641 will not be allowed.
+Credit for ENEL 682 and 645 will not be allowed.
+Credit for ENEL 683 and 619.19 (AlgorithmsVlsiPhysDesAutomate) will not be allowed.
+Credit for ENEL 684 and 631 will not be allowed.
+Credit for ENEL 641 and 619.64 (Software Defined Radio) will not be allowed.
+Credit for ENEL 686 and ENEL 614 or ENCM 511 will not be allowed.
+Credit for ENEL 691 and 619.26 will not be allowed.
+Credit for ENEL 695 and either 519.42 (AdvancedMathForElectricalEngg) or 619.95 (AdvancedMathForElectricalEngg) will not be allowed.
+Credit for ENDG 233 and any of CPSC 217, 231, 235, ENCM 339 or ENGG 233 will not be allowed.
+Credit for ENDG 310 and ENGG 519.06 (Digital Engineering I) will not be allowed.
+Credit for ENDG 311 and ENSF 409 or ENGG 519.07 (Digital Engineering II) will not be allowed.
+Credit for ENDG 319 and BMEN 319 will not be allowed.
+Credit for ENDG 407 and ENCH 407 will not be allowed.
+Credit for ENDG 410 and either ENSF 519.47 (Applied Data Science) or 544 will not be allowed.
+Credit for ENDG 411 and either ENSF 519.47 (Applied Data Science) or ENEL 525 will not be allowed
+Credit for ENDG 440 and either ENGG 233 or ENDG 233 will not be allowed.
 Not open to students in the BSc Software Engineering program or the Digital Engineering Minor.
 Not open to students in the BSc Software Engineering program or the Digital Engineering Minor.
 Not open to students in the BSc Software Engineering program or the Digital Engineering Minor.
 Not open to students in the BSc Software Engineering program or the Digital Engineering Minor.
-Credit for Digital Engineering 510 and Computer Engineering 511 will not be allowed
-Credit for Operations Management 301 and 317 will not be allowed.
-Credit for Operations Management 317 and 301 will not be allowed.
-Credit for Operations Management 421 and 559.07 will not be allowed.
-Credit for Operations Management 631 and 797.13 will not be allowed.
-Credit for Operations Management 641 and 797.04 will not be allowed.
-Credit for Operations Management 647 and Engineering 684 will not be allowed.
-Credit for Operations Management 761 and 797.11 will not be allowed.
-Credit for Operations Management 771 and 797.10 will not be allowed.
-Credit for Operations Management 775 and 797.09 will not be allowed.
-Credit for Marketing 317 and 341 will not be allowed.
-Credit for Marketing 341 and 317 will not be allowed.
-Credit for Marketing 475 and 559.02 will not be allowed.
-Credit for Management Studies 453 and Leadership Studies 401 will not be allowed.
-Credit for Management Studies 631 and Operations Management 715 will not be allowed.
-Credit for Leadership Studies 401 and either Kinesiology 311 or Management Studies 453 will not be allowed.
-Credit for Leadership Studies 501 and Kinesiology 411 will not be allowed.
-Credit for Finance 317 and either 341 or 343 will not be allowed.
-Credit for Finance 341 and 317 will not be allowed.
-Credit for Finance 343 and either 317 or 477 will not be allowed.
-Credit for Finance 449 and Management Studies 559.15 will not be allowed.
-Credit for Finance 465 and 559.01 will not be allowed.
-Credit for Finance 469 and 559.08 will not be allowed.
-Credit for Finance 477 and 343 will not be allowed.
-Credit for Finance 481 and Finance 559.05 will not be allowed.
-Credit for Finance 483 and 559.06 will not be allowed.
-Credit for Finance 631 and Finance 789.06 will not be allowed.
-Credit for Finance 663 and Finance 785 or Entrepreneurship and Innovation 621 will not be allowed.
-Credit for Finance 669 and 668.03 will not be allowed.
-Credit for Entrepreneurship and Innovation 201 and either Management Studies 217 or Strategy and Global Management 217 will not be allowed.
-Credit for Entrepreneurship and Innovation 407 and 559.07 will not be allowed.
-Credit for Entrepreneurship and Innovation 411 and 559.06 will not be allowed.
-Credit for Entrepreneurship and Innovation 413 and 559.08 will not be allowed.
-Credit for Entrepreneurship and Innovation 415 and either Computer Science 405 or Entrepreneurship and Innovation 359.02 will not be allowed.
-Credit for Entrepreneurship and Innovation 531 and 559.04 will not be allowed.
-Credit for Entrepreneurship and Innovation 621 and Finance 663 or 785 will not be allowed.
-Credit for Entrepreneurship and Innovation 625 and 601 will not be allowed.
-Credit for Entrepreneurship and Innovation 631 and 797.02 will not be allowed.
-Credit for Business Technology Management 317 and 321 will not be allowed.
-Credit for Business Technology Management 321 and 317 will not be allowed.
-Credit for Business Technology Management 431 and 559.01 will not be allowed.
-Credit for Business Technology Management 531 and 559.03 will not be allowed.
-Credit for Accounting 217 and 301 will not be allowed.
-Credit for Accounting 301 and either 217 or 323 will not be allowed.
-Credit for Accounting 323 and 301 will not be allowed.
-Credit for Medical Science 301 and 401 will not be allowed.
-Credit for Medical Science 341 and Biology 311 will not be allowed.
-Credit for Medical Science 351 and Biology 331 will not be allowed.
-Credit for Medical Science 402 and 417 will not be allowed.
-Credit for Medical Science 404 and any of Kinesiology 259, 260, 323, Zoology 461, 463 or Biology 305 will not be allowed.
-Credit for Medical Science 417 and 402 will not be allowed.
-Credit for Medical Science 419 and 402 will not be allowed.
-Credit for Medical Science 535 and 635 will not be allowed.
-Credit for Medical Science 635 and 535 will not be allowed.
-Credit for Medical Science 569 and Medical Science 636 will not be allowed.
-Credit for Medical Science 640 and Cellular, Molecular and Microbial Biology 527 will not be allowed.
-Credit for more than one of Medical Science 685, Mechanical Engineering 685 and Kinesiology 685 is not allowed.
-Credit for Medical Science 722.01 and 722.02 will not be allowed.
-Credit for Health and Society 301 and Sociology 409 will not be allowed.
-Credit for Community Rehabilitation 435 and 425 will not be allowed.
-Credit for Community Rehabilitation 542 and either of 545 or 591.26 (Bioethics And Disability) will not be allowed.
-Credit for Community Rehabilitation 547 and 591.28 (Rsrch,Tech&MarginalizedGrps) will not be allowed.
-Credit for Community Rehabilitation 553 and 557 will not be allowed.
-Credit for Community Rehabilitation 594 and 589.01 (Development of Services and Programs) will not be allowed.
-Credit for Community Rehabilitation 595 and 589.02 (Supervision In Community Practice) will not be allowed.
-Credit for Community Rehabilitation 597 and 589.06 (Block Practicum in Community Rehabilitation) will not be allowed.
-Credit for Community Health Sciences 600 and Medical Science 644 will not be allowed.
-Credit for Community Health Sciences 602 and Medical Science 649.01 (Practicum in Community Medicine) will not be allowed.
-Credit for Community Health Sciences 603 and Medical Science 649.02 (Practicum Hospital Epidemiology) will not be allowed.
-Credit for Community Health Sciences 604 and Medical Science 649.03 (Epidemiology Of Dev Disabilities) will not be allowed.
-Credit for Community Health Sciences 607 and 700.50 (Indigenous Health Research) will not be allowed.
-Credit for Community Health Sciences 610 and either Medical Science 643.01 (Biostatistics I: Essentials of Biostatistics) or Veterinary Medicine 610 will not be allowed.
-Credit for Community Health Sciences 611 and either Medical Science 643.02 (Biostatistics II: Models for Health Outcomes) or Veterinary Medicine 611 will not be allowed.
-Credit for Community Health Sciences and Medical Science 643.03 (Biostatistics III: Models for Rept Measures Studies) will not be allowed.
-Credit for Community Health Sciences 615 and Data Science 622 will not be allowed.
-Credit for Community Health Sciences 628 and 624 will not be allowed.
-Credit for Community Health Sciences 636 and Data Science 624 will not be allowed.
-Credit for Community Health Sciences 640 and either Medical Science 647.01 (Fundamentals Of Epidemiology) or Veterinary Medicine 640 will not be allowed.
-Credit for Community Health Sciences 641 and Medical Science 659.04 (Intro To Clinical Trials) will not be allowed.
-Credit for Community Health Sciences 643 and Medical Science 647.07 (Research in Healthcare Epidemiology and Infection Control) will not be allowed.
-Credit for Community Health Sciences 644 and Medical Science 647.10 (Surveillance I: Data Handling for Infection Control) will not be allowed.
-Credit for Community Health Sciences 645 and Medical Science 647.11 (Surveillance II: Principles of Surveillance) will not be allowed.
-Credit for Community Health Sciences 646 and Medical Science 647.12 (Introduction to Population Health Surveillance) will not be allowed.
-Credit for Community Health Sciences 647 and Medical Science 647.15 (Clinical Epidemiology) will not be allowed.
-Credit for Community Health Sciences 648 and Medical Science 660 will not be allowed.
-Credit for Community Health Sciences 660 and Medical Science 645.18 (Foundations of Health Services Research) will not be allowed.
-Credit for Community Health Sciences 661 and either Medical Science 679 or Economics 679 will not be allowed.
-Credit for Community Health Sciences 662 and Medical Science 659.08 (Economic Evaluation) will not be allowed.
-Credit for Community Health Sciences 663 and Medical Science 659.06 (Decision Analysis in Health Economic Evaluation) will not be allowed.
-Credit for Community Health Sciences 664 and Medical Science 659.07 (Admin Data Analysis Methodology) will not be allowed.
-Credit for Community Health Sciences 665 and Medical Science 645.10 (Leadership in Health Care Organization) will not be allowed.
-Credit for Community Health Sciences 666 and Medical Science 645.15 (Health Policy) will not be allowed.
-Credit for Community Health Sciences 667 and Medical Science 645.17 (Intro Legal & Ethic Framework) will not be allowed.
-Credit for Community Health Sciences 681 and Medical Science 659.02 (Health Research Methods) will not be allowed.
-Credit for Community Health Sciences 683 and Medical Science 659.05 (Qualitative Health Care Research) will not be allowed.
-Credit for Community Health Sciences 687 and Medical Science 651.06 (Environmental Health) will not be allowed.
-Credit for Community Health Sciences 689 and Medical Science 651.08 (Global Health & Development) will not be allowed.
-Credit for Community Health Sciences 710 and Medical Science 712.01 (Adv Topics in Biostatistics) will not be allowed.
-Credit for Community Health Sciences 740 and either Medical Science 709 or Veterinary Medicine 740 will not be allowed.
-Credit for Community Health Sciences 741 and Medical Science 711 will not be allowed.
-Credit for Community Health Sciences 742 and Medical Science 712.02 (Adv Topics in Epidemiology) will not be allowed.
-Credit for Community Health Sciences 760 and Medical Science 712.03 (Adv Topics Hlth Services Res) will not be allowed.
-Credit for Community Health Sciences 761 and Medical Science 705 will not be allowed.
-Credit for Community Health Sciences 780 and Medical Science 712.04 (Adv Topics Pop/Public Health) will not be allowed.
-Credit for Urban Studies 253 and any of Geography 253, 352 or 354 will not be allowed.
-Credit for Urban Studies 461 and 505.03 (The Transit City) will not be allowed.
-Credit for Strategic Studies 613 and History 520 will not be allowed.
-Credit for Spanish 201 and 30 will not be allowed.
+Credit for ENDG 510 and ENCM 511 will not be allowed
+Credit for OPMA 301 and 317 will not be allowed.
+Credit for OPMA 317 and 301 will not be allowed.
+Credit for OPMA 421 and 559.07 will not be allowed.
+Credit for OPMA 631 and 797.13 will not be allowed.
+Credit for OPMA 641 and 797.04 will not be allowed.
+Credit for OPMA 647 and ENGG 684 will not be allowed.
+Credit for OPMA 761 and 797.11 will not be allowed.
+Credit for OPMA 771 and 797.10 will not be allowed.
+Credit for OPMA 775 and 797.09 will not be allowed.
+Credit for MKTG 317 and 341 will not be allowed.
+Credit for MKTG 341 and 317 will not be allowed.
+Credit for MKTG 475 and 559.02 will not be allowed.
+Credit for MGST 453 and LEAD 401 will not be allowed.
+Credit for MGST 631 and OPMA 715 will not be allowed.
+Credit for LEAD 401 and either KNES 311 or MGST 453 will not be allowed.
+Credit for LEAD 501 and KNES 411 will not be allowed.
+Credit for FNCE 317 and either 341 or 343 will not be allowed.
+Credit for FNCE 341 and 317 will not be allowed.
+Credit for FNCE 343 and either 317 or 477 will not be allowed.
+Credit for FNCE 449 and MGST 559.15 will not be allowed.
+Credit for FNCE 465 and 559.01 will not be allowed.
+Credit for FNCE 469 and 559.08 will not be allowed.
+Credit for FNCE 477 and 343 will not be allowed.
+Credit for FNCE 481 and FNCE 559.05 will not be allowed.
+Credit for FNCE 483 and 559.06 will not be allowed.
+Credit for FNCE 631 and FNCE 789.06 will not be allowed.
+Credit for FNCE 663 and FNCE 785 or ENTI 621 will not be allowed.
+Credit for FNCE 669 and 668.03 will not be allowed.
+Credit for ENTI 201 and either MGST 217 or SGMA 217 will not be allowed.
+Credit for ENTI 407 and 559.07 will not be allowed.
+Credit for ENTI 411 and 559.06 will not be allowed.
+Credit for ENTI 413 and 559.08 will not be allowed.
+Credit for ENTI 415 and either CPSC 405 or ENTI 359.02 will not be allowed.
+Credit for ENTI 531 and 559.04 will not be allowed.
+Credit for ENTI 621 and FNCE 663 or 785 will not be allowed.
+Credit for ENTI 625 and 601 will not be allowed.
+Credit for ENTI 631 and 797.02 will not be allowed.
+Credit for BTMA 317 and 321 will not be allowed.
+Credit for BTMA 321 and 317 will not be allowed.
+Credit for BTMA 431 and 559.01 will not be allowed.
+Credit for BTMA 531 and 559.03 will not be allowed.
+Credit for ACCT 217 and 301 will not be allowed.
+Credit for ACCT 301 and either 217 or 323 will not be allowed.
+Credit for ACCT 323 and 301 will not be allowed.
+Credit for MDSC 301 and 401 will not be allowed.
+Credit for MDSC 341 and BIOL 311 will not be allowed.
+Credit for MDSC 351 and BIOL 331 will not be allowed.
+Credit for MDSC 402 and 417 will not be allowed.
+Credit for MDSC 404 and any of KNES 259, 260, 323, ZOOL 461, 463 or BIOL 305 will not be allowed.
+Credit for MDSC 417 and 402 will not be allowed.
+Credit for MDSC 419 and 402 will not be allowed.
+Credit for MDSC 535 and 635 will not be allowed.
+Credit for MDSC 635 and 535 will not be allowed.
+Credit for MDSC 569 and MDSC 636 will not be allowed.
+Credit for MDSC 640 and CMMB 527 will not be allowed.
+Credit for more than one of MDSC 685, ENME 685 and KNES 685 is not allowed.
+Credit for MDSC 722.01 and 722.02 will not be allowed.
+Credit for HSOC 301 and SOCI 409 will not be allowed.
+Credit for CORE 435 and 425 will not be allowed.
+Credit for CORE 542 and either of 545 or 591.26 (Bioethics And Disability) will not be allowed.
+Credit for CORE 547 and 591.28 (Rsrch,Tech&MarginalizedGrps) will not be allowed.
+Credit for CORE 553 and 557 will not be allowed.
+Credit for CORE 594 and 589.01 (Development of Services and Programs) will not be allowed.
+Credit for CORE 595 and 589.02 (Supervision In Community Practice) will not be allowed.
+Credit for CORE 597 and 589.06 (Block Practicum in Community Rehabilitation) will not be allowed.
+Credit for MDCH 600 and MDSC 644 will not be allowed.
+Credit for MDCH 602 and MDSC 649.01 (Practicum in Community Medicine) will not be allowed.
+Credit for MDCH 603 and MDSC 649.02 (Practicum Hospital Epidemiology) will not be allowed.
+Credit for MDCH 604 and MDSC 649.03 (Epidemiology Of Dev Disabilities) will not be allowed.
+Credit for MDCH 607 and 700.50 (Indigenous Health Research) will not be allowed.
+Credit for MDCH 610 and either MDSC 643.01 (Biostatistics I: Essentials of Biostatistics) or VETM 610 will not be allowed.
+Credit for MDCH 611 and either MDSC 643.02 (Biostatistics II: Models for Health Outcomes) or VETM 611 will not be allowed.
+Credit for Community Health Sciences and MDSC 643.03 (Biostatistics III: Models for Rept Measures Studies) will not be allowed.
+Credit for MDCH 615 and DATA 622 will not be allowed.
+Credit for MDCH 628 and 624 will not be allowed.
+Credit for MDCH 636 and DATA 624 will not be allowed.
+Credit for MDCH 640 and either MDSC 647.01 (Fundamentals Of Epidemiology) or VETM 640 will not be allowed.
+Credit for MDCH 641 and MDSC 659.04 (Intro To Clinical Trials) will not be allowed.
+Credit for MDCH 643 and MDSC 647.07 (Research in Healthcare Epidemiology and Infection Control) will not be allowed.
+Credit for MDCH 644 and MDSC 647.10 (Surveillance I: Data Handling for Infection Control) will not be allowed.
+Credit for MDCH 645 and MDSC 647.11 (Surveillance II: Principles of Surveillance) will not be allowed.
+Credit for MDCH 646 and MDSC 647.12 (Introduction to Population Health Surveillance) will not be allowed.
+Credit for MDCH 647 and MDSC 647.15 (Clinical Epidemiology) will not be allowed.
+Credit for MDCH 648 and MDSC 660 will not be allowed.
+Credit for MDCH 660 and MDSC 645.18 (Foundations of Health Services Research) will not be allowed.
+Credit for MDCH 661 and either MDSC 679 or ECON 679 will not be allowed.
+Credit for MDCH 662 and MDSC 659.08 (Economic Evaluation) will not be allowed.
+Credit for MDCH 663 and MDSC 659.06 (Decision Analysis in Health Economic Evaluation) will not be allowed.
+Credit for MDCH 664 and MDSC 659.07 (Admin Data Analysis Methodology) will not be allowed.
+Credit for MDCH 665 and MDSC 645.10 (Leadership in Health Care Organization) will not be allowed.
+Credit for MDCH 666 and MDSC 645.15 (Health Policy) will not be allowed.
+Credit for MDCH 667 and MDSC 645.17 (Intro Legal & Ethic Framework) will not be allowed.
+Credit for MDCH 681 and MDSC 659.02 (Health Research Methods) will not be allowed.
+Credit for MDCH 683 and MDSC 659.05 (Qualitative Health Care Research) will not be allowed.
+Credit for MDCH 687 and MDSC 651.06 (Environmental Health) will not be allowed.
+Credit for MDCH 689 and MDSC 651.08 (Global Health & Development) will not be allowed.
+Credit for MDCH 710 and MDSC 712.01 (Adv Topics in Biostatistics) will not be allowed.
+Credit for MDCH 740 and either MDSC 709 or VETM 740 will not be allowed.
+Credit for MDCH 741 and MDSC 711 will not be allowed.
+Credit for MDCH 742 and MDSC 712.02 (Adv Topics in Epidemiology) will not be allowed.
+Credit for MDCH 760 and MDSC 712.03 (Adv Topics Hlth Services Res) will not be allowed.
+Credit for MDCH 761 and MDSC 705 will not be allowed.
+Credit for MDCH 780 and MDSC 712.04 (Adv Topics Pop/Public Health) will not be allowed.
+Credit for UBST 253 and any of GEOG 253, 352 or 354 will not be allowed.
+Credit for UBST 461 and 505.03 (The Transit City) will not be allowed.
+Credit for STST 613 and HTST 520 will not be allowed.
+Credit for SPAN 201 and 30 will not be allowed.
 Not open to students with credit in 400-level Spanish courses or higher.
 Not open to students with credit in 400-level Spanish courses or higher.
-Credit for Spanish 504 and either 571 or 593 will not be allowed.
-Credit for Spanish 508 and any of 599.01 (History Of The Spanish Language), 599.03 (Tech in Foreign Lang Classroom), 599.09 (Bilinguialism & Lang Contact), 599.11 (Neuvas technol-analisis ling), 599.19 (Phonetic Analysis), 599.27 (Spanish Sociolinguistics), 599.29 (Herencia e identidad), 599.30 (Spanish Contact & Change) or 599.34 (Res Meth in Hispan Ling) will not be allowed.
-Credit for Spanish 512 and any of 553, 555, 599.17 (Spanish American Short Story) or 599.21 (Write Nation:XIX Latin America) will not be allowed.
-Credit for Spanish 532 and 573 will not be allowed.
-Credit for Spanish 536 and 557 will not be allowed.
-Credit for Spanish 575 and any of 563, 567, 571, 581, 583, 599.16 (Spanish-Jewish Lit of Exile), 599.20 (Poesia esp del siglo de oro), 599.22 (La Celestina), 599.24 (16 cen Span scien and lit) or 599.25 (16th C Literary Masterpieces) will not be allowed.
-Credit for South Asian Studies 203 and 315 will not be allowed.
-Credit for South Asian Studies 303 and 415 will not be allowed.
-Credit for Sociology 341 and Psychology 345 will not be allowed.
-Credit for Sociology 399 and Kinesiology 244 will not be allowed.
-Credit for Sociology 445 and 401.36 will not be allowed.
-Credit for Sociology 606 and 602 will not be allowed.
-Credit for Sociology 607 and 602 will not be allowed.
-Credit for Sociology 706 and 702 will not be allowed.
-Credit for Sociology 707 and 702 will not be allowed.
-Credit for School of Creative and Performing Arts 390 and 290 will not be allowed.
-Credit for School of Creative and Performing Arts 499 and 399 will not be allowed.
-Credit for Russian 201 and Russian 30 will not be allowed.
-Credit for Russian 209 and Russian 30 will not be allowed.
-Credit for Russian 331 and 332 will not be allowed.
-Credit for Russian 333 and 334 will not be allowed.
-Credit for Religious Studies 205 and 350 will not be allowed.
-Credit for Religious Studies 300 and 207 will not be allowed.
-Credit for Religious Studies 302 and 209 will not be allowed.
-Credit for Religious Studies 310 and 211 will not be allowed.
-Credit for Religious Studies 312 and 213 will not be allowed.
-Credit for Religious Studies 314 and 215 will not be allowed.
-Credit for Religious Studies 370 and either 345 or 346 will not be allowed.
-Credit for Religious Studies 381 and 373.09 will not be allowed.
-Credit for Psychology 200 and 205 will not be allowed.
-Credit for Psychology 201 and 205 will not be allowed.
-Credit for Psychology 300 and 312 will not be allowed.
-Credit for Psychology 301 and 312 will not be allowed.
-Credit for Psychology 321 and either 421 and 423 will not be allowed.
-Credit for Psychology 345 and Sociology 341 will not be allowed.
-Credit for Psychology 349 and Linguistics 331 will not be allowed.
-Credit for Psychology 352 and either 351 or 353 will not be allowed.
-Credit for Psychology 375 and either Psychology 371 or Neuroscience 321 will not be allowed.
-Credit totaling more than 3 units from all Psychology 400 topics will not be allowed.
-Credit for Psychology 407 and 417 will not be allowed.
-Credit for Psychology 429 and 355 will not be allowed.
-Credit for Psychology 437 and 330 will not be allowed.
-Credit for Psychology 439 and 347 will not be allowed.
-Credit for Psychology 445 and 447.08 (Moral Psychology) will not be allowed.
-Credit for Psychology 467 and either Linguistics 339 or 439 will not be allowed.
-Credit for Psychology 473 and 377 will not be allowed.
-Credit for Psychology 495 and Marketing 483 will not be allowed.
-Credit for Political Science 326 and 310 will not be allowed.
-Credit for Political Science 328 and 310 will not be allowed.
-Credit for Political Science 338 and either 422 or 424 will not be allowed.
-Credit for Political Science 342 and 343 will not be allowed.
-Credit for Political Science 398 and 599 will not be allowed.
-Credit for Political Science 408 and 345 will not be allowed.
-Credit for Political Science 426 and 325 will not be allowed.
-Credit for Political Science 444 and either 442 or 445 will not be allowed.
-Credit for Political Science 453 and 553 will not be allowed.
-Credit for Political Science 477 and 377 will not be allowed.
-Credit for Political Science 481 and 571 will not be allowed.
-Credit for Political Science 483 and 383 will not be allowed.
-Credit for Political Science 487 and 385 will not be allowed.
-Credit for Political Science 590 and 499 will not be allowed.
-Credit for Political Science 591 and either 500 or 504 will not be allowed.
-Credit for Political Science 605 and 505 will not be allowed.
-Credit for Political Science 684 and 571 will not be allowed.
-Credit for Political Science 687 and 523 will not be allowed.
-Credit for Philosophy 279 and 377 will not be allowed.
-Credit for Philosophy 309 and 369 will not be allowed.
-Credit for Philosophy 311 and 469 will not be allowed.
-Credit for Philosophy 325 and 319 will not be allowed.
-Credit for Philosophy 330 and 399.02 (Philosophy of Money) will not be allowed.
-Credit for Philosophy 345 and 447 will not be allowed.
-Credit for Philosophy 377 and 279 will not be allowed.
-Credit for Philosophy 383 and 381 will not be allowed.
-Credit for Philosophy 423 and 421 will not be allowed.
-Credit for Philosophy 425 and 319 will not be allowed.
-Credit for Philosophy 451 and 349 will not be allowed.
-Credit for Philosophy 461 and 463 will not be allowed.
-Credit for Philosophy 471 and 371 will not be allowed.
-Credit for Philosophy 483 and 481 will not be allowed.
-Credit for  Philosophy 499 and 409 will not be allowed.
-Credit for Philosophy 519 and Linguistics 509 will not be allowed.
-Credit for Philosophy 599 and 589 will not be allowed.
-Credit for Music Education 341 and 417.04 (Popular Music Pedagogy) will not be allowed.
-Credit for Music Education 343 and 417.06 (Elementary Music) will not be allowed.
-Credit for Music Education 417.04 (Popular Music Pedagogy) and 341 will not be allowed.
+Credit for SPAN 504 and either 571 or 593 will not be allowed.
+Credit for SPAN 508 and any of 599.01 (History Of The Spanish Language), 599.03 (Tech in Foreign Lang Classroom), 599.09 (Bilinguialism & Lang Contact), 599.11 (Neuvas technol-analisis ling), 599.19 (Phonetic Analysis), 599.27 (Spanish Sociolinguistics), 599.29 (Herencia e identidad), 599.30 (Spanish Contact & Change) or 599.34 (Res Meth in Hispan Ling) will not be allowed.
+Credit for SPAN 512 and any of 553, 555, 599.17 (Spanish American Short Story) or 599.21 (Write Nation:XIX Latin America) will not be allowed.
+Credit for SPAN 532 and 573 will not be allowed.
+Credit for SPAN 536 and 557 will not be allowed.
+Credit for SPAN 575 and any of 563, 567, 571, 581, 583, 599.16 (Spanish-Jewish Lit of Exile), 599.20 (Poesia esp del siglo de oro), 599.22 (La Celestina), 599.24 (16 cen Span scien and lit) or 599.25 (16th C Literary Masterpieces) will not be allowed.
+Credit for SASO 203 and 315 will not be allowed.
+Credit for SASO 303 and 415 will not be allowed.
+Credit for SOCI 341 and PSYC 345 will not be allowed.
+Credit for SOCI 399 and KNES 244 will not be allowed.
+Credit for SOCI 445 and 401.36 will not be allowed.
+Credit for SOCI 606 and 602 will not be allowed.
+Credit for SOCI 607 and 602 will not be allowed.
+Credit for SOCI 706 and 702 will not be allowed.
+Credit for SOCI 707 and 702 will not be allowed.
+Credit for SCPA 390 and 290 will not be allowed.
+Credit for SCPA 499 and 399 will not be allowed.
+Credit for RUSS 201 and Russian 30 will not be allowed.
+Credit for RUSS 209 and Russian 30 will not be allowed.
+Credit for RUSS 331 and 332 will not be allowed.
+Credit for RUSS 333 and 334 will not be allowed.
+Credit for RELS 205 and 350 will not be allowed.
+Credit for RELS 300 and 207 will not be allowed.
+Credit for RELS 302 and 209 will not be allowed.
+Credit for RELS 310 and 211 will not be allowed.
+Credit for RELS 312 and 213 will not be allowed.
+Credit for RELS 314 and 215 will not be allowed.
+Credit for RELS 370 and either 345 or 346 will not be allowed.
+Credit for RELS 381 and 373.09 will not be allowed.
+Credit for PSYC 200 and 205 will not be allowed.
+Credit for PSYC 201 and 205 will not be allowed.
+Credit for PSYC 300 and 312 will not be allowed.
+Credit for PSYC 301 and 312 will not be allowed.
+Credit for PSYC 321 and either 421 and 423 will not be allowed.
+Credit for PSYC 345 and SOCI 341 will not be allowed.
+Credit for PSYC 349 and LING 331 will not be allowed.
+Credit for PSYC 352 and either 351 or 353 will not be allowed.
+Credit for PSYC 375 and either PSYC 371 or NEUR 321 will not be allowed.
+Credit totaling more than 3 units from all PSYC 400 topics will not be allowed.
+Credit for PSYC 407 and 417 will not be allowed.
+Credit for PSYC 429 and 355 will not be allowed.
+Credit for PSYC 437 and 330 will not be allowed.
+Credit for PSYC 439 and 347 will not be allowed.
+Credit for PSYC 445 and 447.08 (Moral Psychology) will not be allowed.
+Credit for PSYC 467 and either LING 339 or 439 will not be allowed.
+Credit for PSYC 473 and 377 will not be allowed.
+Credit for PSYC 495 and MKTG 483 will not be allowed.
+Credit for POLI 326 and 310 will not be allowed.
+Credit for POLI 328 and 310 will not be allowed.
+Credit for POLI 338 and either 422 or 424 will not be allowed.
+Credit for POLI 342 and 343 will not be allowed.
+Credit for POLI 398 and 599 will not be allowed.
+Credit for POLI 408 and 345 will not be allowed.
+Credit for POLI 426 and 325 will not be allowed.
+Credit for POLI 444 and either 442 or 445 will not be allowed.
+Credit for POLI 453 and 553 will not be allowed.
+Credit for POLI 477 and 377 will not be allowed.
+Credit for POLI 481 and 571 will not be allowed.
+Credit for POLI 483 and 383 will not be allowed.
+Credit for POLI 487 and 385 will not be allowed.
+Credit for POLI 590 and 499 will not be allowed.
+Credit for POLI 591 and either 500 or 504 will not be allowed.
+Credit for POLI 605 and 505 will not be allowed.
+Credit for POLI 684 and 571 will not be allowed.
+Credit for POLI 687 and 523 will not be allowed.
+Credit for PHIL 279 and 377 will not be allowed.
+Credit for PHIL 309 and 369 will not be allowed.
+Credit for PHIL 311 and 469 will not be allowed.
+Credit for PHIL 325 and 319 will not be allowed.
+Credit for PHIL 330 and 399.02 (Philosophy of Money) will not be allowed.
+Credit for PHIL 345 and 447 will not be allowed.
+Credit for PHIL 377 and 279 will not be allowed.
+Credit for PHIL 383 and 381 will not be allowed.
+Credit for PHIL 423 and 421 will not be allowed.
+Credit for PHIL 425 and 319 will not be allowed.
+Credit for PHIL 451 and 349 will not be allowed.
+Credit for PHIL 461 and 463 will not be allowed.
+Credit for PHIL 471 and 371 will not be allowed.
+Credit for PHIL 483 and 481 will not be allowed.
+Credit for  PHIL 499 and 409 will not be allowed.
+Credit for PHIL 519 and LING 509 will not be allowed.
+Credit for PHIL 599 and 589 will not be allowed.
+Credit for MUED 341 and 417.04 (Popular Music Pedagogy) will not be allowed.
+Credit for MUED 343 and 417.06 (Elementary Music) will not be allowed.
+Credit for MUED 417.04 (Popular Music Pedagogy) and 341 will not be allowed.
 Music majors and minors may not count this course toward their degree requirements.
-Credit for Music 230 and 334 or 336 will not be allowed.
-Credit for Music 232 and 307.01 (Intro to World Music) will not be allowed.
-Credit for Music 306 and any of 301, 302, 304, 402 will not be allowed.
-Credit for Music 307 and either 303 or 403 will not be allowed. Credit for Music 307.01 (Intro to World Music) and 232 will not be allowed.
-Credit for Music 308 and any of 304, 305, 401 or 405 will not be allowed.
+Credit for MUSI 230 and 334 or 336 will not be allowed.
+Credit for MUSI 232 and 307.01 (Intro to World Music) will not be allowed.
+Credit for MUSI 306 and any of 301, 302, 304, 402 will not be allowed.
+Credit for MUSI 307 and either 303 or 403 will not be allowed. Credit for MUSI 307.01 (Intro to World Music) and 232 will not be allowed.
+Credit for MUSI 308 and any of 304, 305, 401 or 405 will not be allowed.
 Music majors and minors (except Sonic Arts Minors) may not count this course toward their degree requirements.
-Credit for Music 330 and either 334 or 336 will not be allowed.
-Credit for Music 332 and either 334 or 336 will not be allowed.
-Credit for Linguistics 201 and either 205 or 207 will not be allowed.
-Credit for Linguistics 202 and any of 203, 205 or 207 will not be allowed. Students may not register in or have credit for Linguistics 202 if they have previous credit for, or are currently enrolled in Linguistics 316, 353, 373, 467, or 531.
-Credit for Linguistics 221 and 321 will not be allowed.
-Credit for Linguistics 337 and 437 will not be allowed.
-Credit for Linguistics 467 and either 339 or 439 will not be allowed.
-Credit for Linguistics 507 and either 551.02 or 599.13 will not be allowed.
-Credit for Linguistics 519 and 509 will not be allowed.
-Credit for Linguistics 671 and 699.07 (Python for Linguistics) will not be allowed.
-Credit for Law and Society 413 and 412 will not be allowed.
-Credit for Law and Society 415 and 412 will not be allowed.
-Credit for Latin American Studies 211 and 201 will not be allowed.
-Credit for Latin 201 and 205 will not be allowed.
-Credit for Latin 203 and 207 will not be allowed.
-Credit for Latin 205 and 201 will not be allowed.
-Credit for Latin 207 and 203 will not be allowed.
-Credit for Japanese 205 and Japanese 30 will not be allowed
-Credit for Japanese 310 and 311 will not be allowed.
-Credit for Japanese 312 and 313 will not be allowed.
-Credit for Italian 201 and Italian 30 will not be allowed.
-Credit for Italian 502 and 503 will not be allowed.
-Credit for Indigenous Studies 303 and either Social Work 553.30 or Social Work 553.33 will not be allowed.
-Credit for Indigenous Studies 345 and 397.13 will not be allowed.
-Credit for Indigenous Studies 350 and Art 365.03 will not be allowed.
-Credit for Indigenous Studies 415 and 315 will not be allowed.
-Credit for Indigenous Studies 493 and 399.19 will not be allowed.
-Credit for Indigenous Studies 502 and 501 will not be allowed.
-Credit for Indigenous Studies 504 and 503.02 will not be allowed.
-Credit for Indigenous Studies 505 and 503.03 will not be allowed.
-Students may not register in, or have credit for, Indigenous Studies 506.01 if they have previous credit for Indigenous Studies 312.
-Credit for History 203 and 301 will not be allowed.
-Credit for History 204 and 205 will not be allowed.
-Credit for History 305 and 207 will not be allowed.
-Credit for History 320 and either 319 or 321 will not be allowed.
-Credit for History 326 and either 323 or 325 will not be allowed.
-Credit for History 330 and 332 or 336 will not be allowed.
-Credit for History 341 and 449 will not be allowed.
-Credit for History 372 and either 371 or 373 will not be allowed.
-Students may not have credit for History 397.01 and 309; History 397.02 and 390; and History 397.03 and 403.
-Credit for History 404 and 385 will not be allowed.
-Credit for History 412 and 411.02 (Late Imperial Russia & Soviet Rus) will not be allowed.
-Credit for History 413 and 413.02 (Germany, ca. 1870 to the Present) will not be allowed.
-Credit for History 416 and 493.16 (The Holocaust) will not be allowed.
-Credit for History 418 and History 493.13 (The Vikings) will not be allowed.
-Credit for History 438 and 343 will not be allowed.
-Credit for History 439 and 441 will not be allowed.
-Credit for History 442 and 339 will not be allowed.
-Credit for History 443 and Canadian Studies 419 will not be allowed.
-Credit for History 447 and 352 will not be allowed.
-Credit for History 467 and 467.02 (Mexico:Modern Nation:1824-Present) will not be allowed.
-Credit for History 476 and 477 will not be allowed.
-Credit for History 490 and 489.02 (Espionage & State,1945 To Present) will not be allowed.
-Credit for History 496 and 498 will not be allowed.
-Credit for History 528 and either 593.10 (FurTrade:Exch&TradeHistPers) or 593.18 (Exchanges and Encounters) will not be allowed.
-Credit for History 597 and 596 will not be allowed.
-Credit for Greek 602 and either Greek 201 or 203 will not be allowed.
-Credit for Global Development Studies 402 and Development Studies 401.11 will not be allowed.
-Credit for German 202 and any of 30, 213 or 305 will not be allowed.
-Credit for German 204 and German 30 will not be allowed.
-Credit for German 457 and 357 will not be allowed.
-Credit for German 500 and 503 will not be allowed.
-Credit for Gender and Sexuality Studies 420 and Women's Studies 303.02 will not be allowed.
-Credit for Geography 204 and 205 will not be allowed.
-Credit for Geography 254 and 205 will not be allowed.
-Credit for Geography 308 and 211 will not be allowed.
-Credit for Geography 310 and 211 will not be allowed.
-Credit for Geography 324 and 321 will not be allowed.
-Credit for Geography 326 and 381 will not be allowed.
-Credit for Geography 328 and 397.06 (Southeast Asia) will not be allowed.
-Credit for Geography 330 and 397.04 (Europe) will not be allowed.
-Credit for Geography 352 and any of 251, 253, Urban Studies 253 will not be allowed.
-Credit for Geography 354 and any of 251, 253, Urban Studies 253 will not be allowed.
-Credit for Geography 380 and 231 will not be allowed.
-Credit for Geography 408 and 305 will not be allowed.
-Credit for Geography 410 and 307 will not be allowed.
-Credit for Geography 412 and any of Geography 313, 413 or Archaeology 413 will not be allowed.
-Credit for both Geography 428 and 421 will not be allowed.
-Credit for Geography 430 and 317 will not be allowed.
-Credit for Geography 434 and 593 will not be allowed.
-Credit for Geography 436 and 591 will not be allowed.
-Credit for Geography 452 and 351 will not be allowed.
-Credit for Geography 454 and 341 will not be allowed.
-Credit for both Geography 456 and 425 will not be allowed.
-Credit for Geography 458 and 365 will not be allowed.
-Credit for Geography 480 and 437 will not be allowed.
-Credit for Geography 482 and 357 will not be allowed.
-Credit for Geography 483 and 340 will not be allowed.
-Credit for Geography 484 and 333 will not be allowed.
-Credit for Geography 485 and 339 will not be allowed.
-Credit for Geography 504 and 403 will not be allowed.
-Credit for Geography 506 and 407 will not be allowed.
-Credit for Geography 510 and any of Geography 413, 417, 519 or Archaeology 413 will not be allowed.
-Credit for Geography 526 and 521 will not be allowed.
-Credit for Geography 532 and 465 will not be allowed.
-Credit for Geography 536 and 470 will not be allowed.
-Credit for Geography 538 and either 421 or 429 will not be allowed.
-Credit for Geography 558 and 451 will not be allowed.
-Credit for Geography 584 and 433 will not be allowed.
-Credit for Geography 585 and 439 will not be allowed.
-Credit for Geography 588 and 457 will not be allowed.
-Credit for Geography 682 and 607 will not be allowed.
-Credit for Geography 684 and 603 will not be allowed.
-Credit for Geography 686 and 605 will not be allowed.
-Credit for French 209 and any of 20, 30, or 31 will not be allowed
-Credit for French 211 and either 30 or 31 will not be allowed.
-Credit for French 213 and any of French Language Arts 30, Francais 30, French 215, 217 or 225 will not be allowed.
-Anti-prerequis: Les etudiants qui ont pris le cours French 315 ne peuvent s'inscrire en French 225.
-Anti-prerequis: Les etudiants qui ont pris French 315 ou 317 ne peuvent s'inscrire en French 227.
-Anti-prerequis: Les etudiants qui ont pris le cours French 215 ne peuvent s'inscrire en French 291.
-Anti-prerequis: Les etudiants qui ont pris le cours French 415 ne peuvent s'inscrire en French 329.
-Anti-prerequis: Les etudiants qui ont suivi le cours French 349 ne peuvent s'inscrire en French 489.01 (Phonologie).
-Anti-prerequis: Les etudiants qui ont pris le cours French 479 ne peuvent s'inscrire en French 579.
-Credit for Film 351 and Canadian Studies 331 will not be allowed.
-Credit for Film 595 and Film 590 or Communication and Media Studies 590 will not be allowed.
-Credit for Film 597 and Film 590 or Communication and Media Studies 590 will not be allowed.
-Credit for English 203 and 201 will not be allowed.
-Credit for English 251 and 201 will not be allowed.
-Credit for English 253.02 and 351 will not be allowed.
-Credit for English 303 and 302 will not be allowed.
-Credit for English 305 and 340 will not be allowed.
-Credit for English 307 and 340 will not be allowed.
-Credit for English 309 and any of 383, 387.03 or 387.30 will not be allowed.
-Credit for English 311 and 205 will not be allowed.
-Credit for English 322 and 388.04 will not be allowed.
-Credit for English 336.01 and 364 will not be permitted; credit for English 336.02 and 366 will not be permitted.
-Credit for English 361 and any of 317, 384 or 389 will not be allowed.
-Credit for English 376 and 385 will not be allowed.
-Credit for English 378 and 391 will not be allowed.
-Credit for English 379 and 382 will not be allowed.
-Credit for English 426 and 483 will not be allowed.
-Credit for English 429 and 433 will not be allowed.
-Credit for English 436.01 or 436.02 and 494 will not be allowed; credit for English 436.03 or 436.04 and 496 will not be allowed.
-Credit for English 441 and 443 will not be allowed.
-Credit for English 445 and 447 will not be allowed.
-Credit for Economics 209 and Engineering 209 will not be allowed.
-Credit for Economics 328 and 325 or 327 will not be allowed.
-Credit for Economics 353 and Economics 399.02 will not be allowed.
-Credit for Economics 357 and either 309 or 529 will not be allowed.
-Credit for Economics 359 and either 313 or 531 will not be allowed.
-Credit for Economics 387 and either 304 or 521 will not be allowed.
-Credit for Economics 389 and 304 will not be allowed.
-Credit for Economics 457 and either 397 or 499.57 will not be allowed.
-Credit for Economics 485 and 599.10 will not be allowed.
-Credit for Economics 487 and 499.77 will not be allowed.
-Credit for Economics 489 and 499.63 will not be allowed.
-Credit for Economics 491 and 499.80 will not be allowed.
-Credit for Economics 538 and 537 will not be allowed.
-Credit for Economics 588 and 599.88 will not be allowed.
-Credit for Economics 649 and 611.48 will not be allowed.
-Credit for Economics 669 and 611.71 will not be allowed.
-Credit for Economics 695 and 611.55 will not be allowed.
-Credit for Economics 697 and 611.57 will not be allowed.
-Credit for Economics 723 and 611.10 will not be allowed.
+Credit for MUSI 330 and either 334 or 336 will not be allowed.
+Credit for MUSI 332 and either 334 or 336 will not be allowed.
+Credit for LING 201 and either 205 or 207 will not be allowed.
+Credit for LING 202 and any of 203, 205 or 207 will not be allowed. Students may not register in or have credit for LING 202 if they have previous credit for, or are currently enrolled in LING 316, 353, 373, 467, or 531.
+Credit for LING 221 and 321 will not be allowed.
+Credit for LING 337 and 437 will not be allowed.
+Credit for LING 467 and either 339 or 439 will not be allowed.
+Credit for LING 507 and either 551.02 or 599.13 will not be allowed.
+Credit for LING 519 and 509 will not be allowed.
+Credit for LING 671 and 699.07 (Python for Linguistics) will not be allowed.
+Credit for LWSO 413 and 412 will not be allowed.
+Credit for LWSO 415 and 412 will not be allowed.
+Credit for LAST 211 and 201 will not be allowed.
+Credit for LATI 201 and 205 will not be allowed.
+Credit for LATI 203 and 207 will not be allowed.
+Credit for LATI 205 and 201 will not be allowed.
+Credit for LATI 207 and 203 will not be allowed.
+Credit for JPNS 205 and Japanese 30 will not be allowed
+Credit for JPNS 310 and 311 will not be allowed.
+Credit for JPNS 312 and 313 will not be allowed.
+Credit for ITAL 201 and Italian 30 will not be allowed.
+Credit for ITAL 502 and 503 will not be allowed.
+Credit for INDG 303 and either SOWK 553.30 or SOWK 553.33 will not be allowed.
+Credit for INDG 345 and 397.13 will not be allowed.
+Credit for INDG 350 and ART 365.03 will not be allowed.
+Credit for INDG 415 and 315 will not be allowed.
+Credit for INDG 493 and 399.19 will not be allowed.
+Credit for INDG 502 and 501 will not be allowed.
+Credit for INDG 504 and 503.02 will not be allowed.
+Credit for INDG 505 and 503.03 will not be allowed.
+Students may not register in, or have credit for, INDG 506.01 if they have previous credit for INDG 312.
+Credit for HTST 203 and 301 will not be allowed.
+Credit for HTST 204 and 205 will not be allowed.
+Credit for HTST 305 and 207 will not be allowed.
+Credit for HTST 320 and either 319 or 321 will not be allowed.
+Credit for HTST 326 and either 323 or 325 will not be allowed.
+Credit for HTST 330 and 332 or 336 will not be allowed.
+Credit for HTST 341 and 449 will not be allowed.
+Credit for HTST 372 and either 371 or 373 will not be allowed.
+Students may not have credit for HTST 397.01 and 309; HTST 397.02 and 390; and HTST 397.03 and 403.
+Credit for HTST 404 and 385 will not be allowed.
+Credit for HTST 412 and 411.02 (Late Imperial Russia & Soviet Rus) will not be allowed.
+Credit for HTST 413 and 413.02 (Germany, ca. 1870 to the Present) will not be allowed.
+Credit for HTST 416 and 493.16 (The Holocaust) will not be allowed.
+Credit for HTST 418 and HTST 493.13 (The Vikings) will not be allowed.
+Credit for HTST 438 and 343 will not be allowed.
+Credit for HTST 439 and 441 will not be allowed.
+Credit for HTST 442 and 339 will not be allowed.
+Credit for HTST 443 and CNST 419 will not be allowed.
+Credit for HTST 447 and 352 will not be allowed.
+Credit for HTST 467 and 467.02 (Mexico:Modern Nation:1824-Present) will not be allowed.
+Credit for HTST 476 and 477 will not be allowed.
+Credit for HTST 490 and 489.02 (Espionage & State,1945 To Present) will not be allowed.
+Credit for HTST 496 and 498 will not be allowed.
+Credit for HTST 528 and either 593.10 (FurTrade:Exch&TradeHistPers) or 593.18 (Exchanges and Encounters) will not be allowed.
+Credit for HTST 597 and 596 will not be allowed.
+Credit for GREK 602 and either GREK 201 or 203 will not be allowed.
+Credit for DEST 402 and DEST 401.11 will not be allowed.
+Credit for GERM 202 and any of 30, 213 or 305 will not be allowed.
+Credit for GERM 204 and German 30 will not be allowed.
+Credit for GERM 457 and 357 will not be allowed.
+Credit for GERM 500 and 503 will not be allowed.
+Credit for GSXS 420 and WMST 303.02 will not be allowed.
+Credit for GEOG 204 and 205 will not be allowed.
+Credit for GEOG 254 and 205 will not be allowed.
+Credit for GEOG 308 and 211 will not be allowed.
+Credit for GEOG 310 and 211 will not be allowed.
+Credit for GEOG 324 and 321 will not be allowed.
+Credit for GEOG 326 and 381 will not be allowed.
+Credit for GEOG 328 and 397.06 (Southeast Asia) will not be allowed.
+Credit for GEOG 330 and 397.04 (Europe) will not be allowed.
+Credit for GEOG 352 and any of 251, 253, UBST 253 will not be allowed.
+Credit for GEOG 354 and any of 251, 253, UBST 253 will not be allowed.
+Credit for GEOG 380 and 231 will not be allowed.
+Credit for GEOG 408 and 305 will not be allowed.
+Credit for GEOG 410 and 307 will not be allowed.
+Credit for GEOG 412 and any of GEOG 313, 413 or ARKY 413 will not be allowed.
+Credit for both GEOG 428 and 421 will not be allowed.
+Credit for GEOG 430 and 317 will not be allowed.
+Credit for GEOG 434 and 593 will not be allowed.
+Credit for GEOG 436 and 591 will not be allowed.
+Credit for GEOG 452 and 351 will not be allowed.
+Credit for GEOG 454 and 341 will not be allowed.
+Credit for both GEOG 456 and 425 will not be allowed.
+Credit for GEOG 458 and 365 will not be allowed.
+Credit for GEOG 480 and 437 will not be allowed.
+Credit for GEOG 482 and 357 will not be allowed.
+Credit for GEOG 483 and 340 will not be allowed.
+Credit for GEOG 484 and 333 will not be allowed.
+Credit for GEOG 485 and 339 will not be allowed.
+Credit for GEOG 504 and 403 will not be allowed.
+Credit for GEOG 506 and 407 will not be allowed.
+Credit for GEOG 510 and any of GEOG 413, 417, 519 or ARKY 413 will not be allowed.
+Credit for GEOG 526 and 521 will not be allowed.
+Credit for GEOG 532 and 465 will not be allowed.
+Credit for GEOG 536 and 470 will not be allowed.
+Credit for GEOG 538 and either 421 or 429 will not be allowed.
+Credit for GEOG 558 and 451 will not be allowed.
+Credit for GEOG 584 and 433 will not be allowed.
+Credit for GEOG 585 and 439 will not be allowed.
+Credit for GEOG 588 and 457 will not be allowed.
+Credit for GEOG 682 and 607 will not be allowed.
+Credit for GEOG 684 and 603 will not be allowed.
+Credit for GEOG 686 and 605 will not be allowed.
+Credit for FREN 209 and any of 20, 30, or 31 will not be allowed
+Credit for FREN 211 and either 30 or 31 will not be allowed.
+Credit for FREN 213 and any of French Language Arts 30, Francais 30, FREN 215, 217 or 225 will not be allowed.
+Anti-prerequis: Les etudiants qui ont pris le cours FREN 315 ne peuvent s'inscrire en FREN 225.
+Anti-prerequis: Les etudiants qui ont pris FREN 315 ou 317 ne peuvent s'inscrire en FREN 227.
+Anti-prerequis: Les etudiants qui ont pris le cours FREN 215 ne peuvent s'inscrire en FREN 291.
+Anti-prerequis: Les etudiants qui ont pris le cours FREN 415 ne peuvent s'inscrire en FREN 329.
+Anti-prerequis: Les etudiants qui ont suivi le cours FREN 349 ne peuvent s'inscrire en FREN 489.01 (Phonologie).
+Anti-prerequis: Les etudiants qui ont pris le cours FREN 479 ne peuvent s'inscrire en FREN 579.
+Credit for FILM 351 and CNST 331 will not be allowed.
+Credit for FILM 595 and FILM 590 or COMS 590 will not be allowed.
+Credit for FILM 597 and FILM 590 or COMS 590 will not be allowed.
+Credit for ENGL 203 and 201 will not be allowed.
+Credit for ENGL 251 and 201 will not be allowed.
+Credit for ENGL 253.02 and 351 will not be allowed.
+Credit for ENGL 303 and 302 will not be allowed.
+Credit for ENGL 305 and 340 will not be allowed.
+Credit for ENGL 307 and 340 will not be allowed.
+Credit for ENGL 309 and any of 383, 387.03 or 387.30 will not be allowed.
+Credit for ENGL 311 and 205 will not be allowed.
+Credit for ENGL 322 and 388.04 will not be allowed.
+Credit for ENGL 336.01 and 364 will not be permitted; credit for ENGL 336.02 and 366 will not be permitted.
+Credit for ENGL 361 and any of 317, 384 or 389 will not be allowed.
+Credit for ENGL 376 and 385 will not be allowed.
+Credit for ENGL 378 and 391 will not be allowed.
+Credit for ENGL 379 and 382 will not be allowed.
+Credit for ENGL 426 and 483 will not be allowed.
+Credit for ENGL 429 and 433 will not be allowed.
+Credit for ENGL 436.01 or 436.02 and 494 will not be allowed; credit for ENGL 436.03 or 436.04 and 496 will not be allowed.
+Credit for ENGL 441 and 443 will not be allowed.
+Credit for ENGL 445 and 447 will not be allowed.
+Credit for ECON 209 and ENGG 209 will not be allowed.
+Credit for ECON 328 and 325 or 327 will not be allowed.
+Credit for ECON 353 and ECON 399.02 will not be allowed.
+Credit for ECON 357 and either 309 or 529 will not be allowed.
+Credit for ECON 359 and either 313 or 531 will not be allowed.
+Credit for ECON 387 and either 304 or 521 will not be allowed.
+Credit for ECON 389 and 304 will not be allowed.
+Credit for ECON 457 and either 397 or 499.57 will not be allowed.
+Credit for ECON 485 and 599.10 will not be allowed.
+Credit for ECON 487 and 499.77 will not be allowed.
+Credit for ECON 489 and 499.63 will not be allowed.
+Credit for ECON 491 and 499.80 will not be allowed.
+Credit for ECON 538 and 537 will not be allowed.
+Credit for ECON 588 and 599.88 will not be allowed.
+Credit for ECON 649 and 611.48 will not be allowed.
+Credit for ECON 669 and 611.71 will not be allowed.
+Credit for ECON 695 and 611.55 will not be allowed.
+Credit for ECON 697 and 611.57 will not be allowed.
+Credit for ECON 723 and 611.10 will not be allowed.
 Not open to Drama majors or minors.
 Not open to Drama majors or minors.
-Credit for Drama 209 and 200 will not be allowed.
-Credit for Drama 210 and 200 will not be allowed.
-Credit for Drama 223 and 222 will not be allowed.
-Credit for Drama 225 and 222 will not be allowed.
-Credit for Drama 242 and 240 will not be allowed.
-Credit for Drama 243 and 240 will not be allowed.
-Credit for Drama 309 and 300 or 301 will not be allowed.
-Credit for Drama 312 and 300 or 302 will not be allowed.
-Credit for Drama 313 and either 415 or 417 will not be allowed.
-Credit for Drama 316 and 300 or 301 will not be allowed.
-Credit for Drama 318 and 300 or 301 will not be allowed.
-Credit for Drama 320 and 315 will not be allowed.
-Credit for Drama 345 and 342 will not be allowed.
-Credit for Drama 346 and 340 will not be allowed.
-Credit for Drama 347 and 344 will not be allowed.
-Credit for Drama 348 and 340 will not be allowed.
-Not open to Drama majors or minors. Credit for Drama 358 and any of 360, 366 or 368 will not be allowed.
-Credit for Drama 365 and 362 will not be allowed.
-Credit for Drama 367 and 362 will not be allowed.
-Credit for Drama 368 and either 358 or 360 will not be allowed.
-Credit for Drama 409 and 400 will not be allowed.
-Credit for Drama 411 and 410 will not be allowed.
-Credit for Drama 412 and 400 will not be allowed.
-Credit for Drama 413 and 410 will not be allowed.
-Credit for Drama 416 and Drama 400 will not be allowed.
-Credit for Drama 418 and 400 will not be allowed.
-Credit for Drama 468 and 460 will not be allowed.
-Credit for Drama 509 and 500 will not be allowed.
-Credit for Drama 511 and 510 will not be allowed.
-Credit for Drama 512 and 500 will not be allowed.
-Credit for Drama 568 and 560 will not be allowed.
-Credit for Drama 573 and either Drama 571.23 (Dramaturgy) or 571.30 (Dramaturgy) will not be allowed.
-Credit for Drama 611 and 610 will not be allowed.
+Credit for DRAM 209 and 200 will not be allowed.
+Credit for DRAM 210 and 200 will not be allowed.
+Credit for DRAM 223 and 222 will not be allowed.
+Credit for DRAM 225 and 222 will not be allowed.
+Credit for DRAM 242 and 240 will not be allowed.
+Credit for DRAM 243 and 240 will not be allowed.
+Credit for DRAM 309 and 300 or 301 will not be allowed.
+Credit for DRAM 312 and 300 or 302 will not be allowed.
+Credit for DRAM 313 and either 415 or 417 will not be allowed.
+Credit for DRAM 316 and 300 or 301 will not be allowed.
+Credit for DRAM 318 and 300 or 301 will not be allowed.
+Credit for DRAM 320 and 315 will not be allowed.
+Credit for DRAM 345 and 342 will not be allowed.
+Credit for DRAM 346 and 340 will not be allowed.
+Credit for DRAM 347 and 344 will not be allowed.
+Credit for DRAM 348 and 340 will not be allowed.
+Not open to Drama majors or minors. Credit for DRAM 358 and any of 360, 366 or 368 will not be allowed.
+Credit for DRAM 365 and 362 will not be allowed.
+Credit for DRAM 367 and 362 will not be allowed.
+Credit for DRAM 368 and either 358 or 360 will not be allowed.
+Credit for DRAM 409 and 400 will not be allowed.
+Credit for DRAM 411 and 410 will not be allowed.
+Credit for DRAM 412 and 400 will not be allowed.
+Credit for DRAM 413 and 410 will not be allowed.
+Credit for DRAM 416 and DRAM 400 will not be allowed.
+Credit for DRAM 418 and 400 will not be allowed.
+Credit for DRAM 468 and 460 will not be allowed.
+Credit for DRAM 509 and 500 will not be allowed.
+Credit for DRAM 511 and 510 will not be allowed.
+Credit for DRAM 512 and 500 will not be allowed.
+Credit for DRAM 568 and 560 will not be allowed.
+Credit for DRAM 573 and either DRAM 571.23 (Dramaturgy) or 571.30 (Dramaturgy) will not be allowed.
+Credit for DRAM 611 and 610 will not be allowed.
 Not open to Dance Majors.
 Not open to Dance majors.
 Not open to Dance majors.
-Credit for Dance 215 and either 315 or 343.01 (Intro to Hip Hop) will not be allowed.
-Credit for Dance 217 and either 317 or 343.05 (Intermediate Hip Hop) will not be allowed.
-Credit for Dance 231 and 247 or 267 will not be allowed.
-Credit for Dance 341 and 241 will not be allowed.
-Credit for Dance 359 and 309.05 (Anatomy for Dancers) will not be allowed.
-Credit for Dance 363 and 463 will not be allowed.
-Credit for Dance 431 and 430 will not be allowed.
-Credit for Dance 433 and 430 will not be allowed.
-Credit for Dance 493 and either Dance Education 491 or 493 will not be allowed.
-Credit for Communication and Media Studies 363 and Engineering 213 will not be allowed.
-Credit for Communication and Media Studies 453 and 401.54 (Race, Representation & Med) will not be allowed.
-Credit for Communication and Media Studies 479 and 401.36 (Feminist Media Studies) will not be allowed.
-Credit for Communication and Media Studies 485 and 401.46 (Environmental Media) will not be allowed.
-Credit for Communication and Media Studies 491 and 401.12 (IntroAcousticEcol/Communicatio) will not be allowed.
-Credit for Communication and Media Studies 502 and 503.04 (Political Economy of Comm) will not be allowed.
-Credit for Communication and Media Studies 581 and 580 will not be allowed.
-Credit for Communication and Media Studies 595 and 590 will not be allowed.
-Credit for Communication and Media Studies 597 and 590 will not be allowed.
-Credit for Communication and Media Studies 601 and either Communications Studies 601 or Culture and Society 601 will not be allowed.
-Credit for Communication and Media Studies 603 and Communications Studies 603 will not be allowed.
-Credit for Communication and Media Studies 613 and either Communications Studies 613 or Culture and Society 613 will not be allowed.
-Credit for Communication and Media Studies 615 and Communications Studies 615 will not be allowed.
-Credit for Communication and Media Studies 617 and Culture and Society 603 will not be allowed
-Credit for Communication and Media Studies 619 and Communications Studies 619 will not be allowed.
-Credit for Communication and Media Studies 631 and Culture and Society 607 will not be allowed.
-Credit for Communication and Media Studies 641 and Communications Studies 641 will not be allowed.
-Credit for Communication and Media Studies 711 and Communications Studies 711 will not be allowed.
-Credit for Communication and Media Studies 713 and Communications Studies 713 will not be allowed.
-Credit for Communication and Culture 201 and 301 will not be allowed.
-Credit for Communication and Culture 203 and 303 will not be allowed.
-Credit for Communication and Culture 305 and 501 will not be allowed.
-Credit for Communication and Culture 307 and 503 will not be allowed.
-Credit for Chinese 229 and either 205 or 207 will not be allowed.
-Credit for Chinese 280 and 311 will not be allowed.
-Credit for Chinese 281 and 313 will not be allowed.
-Credit for Chinese 229 and 301 will not be allowed.
-Credit for Chinese 303 and 229 will not be allowed.
-Credit for Chinese 304 and 311 will not be allowed.
-Credit for Chinese 305 and 313 will not be allowed.
-Credit for Chinese 309 and 310 will not be allowed.
-Credit for Chinese 331 and 229 will not be allowed.
-Credit for Chinese 333 and 229 will not be allowed.
-Credit for Chinese 311 and 334 will not be allowed.
-Credit for Chinese 313 and 335 will not be allowed.
-Credit for Central and East European Studies 313 and History 493.19 will not be allowed.
-Credit for Canadian Studies 451 and 401.05 (Culture Of The Calgary Stampede) will not be allowed
-Credit for Canadian Studies 597 and Interdisciplinary Studies 590 will not be allowed.
+Credit for DNCE 215 and either 315 or 343.01 (Intro to Hip Hop) will not be allowed.
+Credit for DNCE 217 and either 317 or 343.05 (Intermediate Hip Hop) will not be allowed.
+Credit for DNCE 231 and 247 or 267 will not be allowed.
+Credit for DNCE 341 and 241 will not be allowed.
+Credit for DNCE 359 and 309.05 (Anatomy for Dancers) will not be allowed.
+Credit for DNCE 363 and 463 will not be allowed.
+Credit for DNCE 431 and 430 will not be allowed.
+Credit for DNCE 433 and 430 will not be allowed.
+Credit for DNCE 493 and either DCED 491 or 493 will not be allowed.
+Credit for COMS 363 and ENGG 213 will not be allowed.
+Credit for COMS 453 and 401.54 (Race, Representation & Med) will not be allowed.
+Credit for COMS 479 and 401.36 (Feminist Media Studies) will not be allowed.
+Credit for COMS 485 and 401.46 (Environmental Media) will not be allowed.
+Credit for COMS 491 and 401.12 (IntroAcousticEcol/Communicatio) will not be allowed.
+Credit for COMS 502 and 503.04 (Political Economy of Comm) will not be allowed.
+Credit for COMS 581 and 580 will not be allowed.
+Credit for COMS 595 and 590 will not be allowed.
+Credit for COMS 597 and 590 will not be allowed.
+Credit for COMS 601 and either COMS 601 or CUSP 601 will not be allowed.
+Credit for COMS 603 and COMS 603 will not be allowed.
+Credit for COMS 613 and either COMS 613 or CUSP 613 will not be allowed.
+Credit for COMS 615 and COMS 615 will not be allowed.
+Credit for COMS 617 and CUSP 603 will not be allowed
+Credit for COMS 619 and COMS 619 will not be allowed.
+Credit for COMS 631 and CUSP 607 will not be allowed.
+Credit for COMS 641 and COMS 641 will not be allowed.
+Credit for COMS 711 and COMS 711 will not be allowed.
+Credit for COMS 713 and COMS 713 will not be allowed.
+Credit for CMCL 201 and 301 will not be allowed.
+Credit for CMCL 203 and 303 will not be allowed.
+Credit for CMCL 305 and 501 will not be allowed.
+Credit for CMCL 307 and 503 will not be allowed.
+Credit for CHIN 229 and either 205 or 207 will not be allowed.
+Credit for CHIN 280 and 311 will not be allowed.
+Credit for CHIN 281 and 313 will not be allowed.
+Credit for CHIN 229 and 301 will not be allowed.
+Credit for CHIN 303 and 229 will not be allowed.
+Credit for CHIN 304 and 311 will not be allowed.
+Credit for CHIN 305 and 313 will not be allowed.
+Credit for CHIN 309 and 310 will not be allowed.
+Credit for CHIN 331 and 229 will not be allowed.
+Credit for CHIN 333 and 229 will not be allowed.
+Credit for CHIN 311 and 334 will not be allowed.
+Credit for CHIN 313 and 335 will not be allowed.
+Credit for CEST 313 and HTST 493.19 will not be allowed.
+Credit for CNST 451 and 401.05 (Culture Of The Calgary Stampede) will not be allowed
+Credit for CNST 597 and IDST 590 will not be allowed.
 Credit for Arts and Science Honours Academy 222 and 220 will not be allowed.
 Credit for Arts and Science Honours Academy 422 and 501 will not be allowed.
-Credit for Arts 501 and Social Sciences 501 will not be allowed.
-Credit for Arts 502 and Social Sciences 502 will not be allowed.
-Credit for Art History 305 and either 301 or 303 will not be allowed.
-Credit for Art History 319 and either 419 and 423 will not be allowed.
-Credit for Art History 327 and 329 will not be allowed.
-Credit for Art History 331 and any of 405, 407 or 415 will not be allowed.
-Credit for Art History 333 and 209 will not be allowed.
-Credit for Art History 340 and either Art History 341 or Art 311.01 will not be allowed.
-Credit for Art 314 and 365.03 will not be allowed.
-Credit for Art 315 and any of Computer Science 217, 219, 231, 235, Data Science 211, Engineering 233 or Digital Engineering 233 will not be allowed.
-Credit for Art 319 and 253 will not be allowed.
-Credit for Art 336 and 337 will not be allowed.
-Credit for Art 338 and 335 will not be allowed.
-Credit for Art 342 and any of 305, 307 or 393 will not be allowed.
-Credit for Art 344 and any of 305, 307 and 393 will not be allowed.
-Credit for Art 438 and either 435 or 437 will not be allowed.
-Credit for Art 445 and either 441 or 443 will not be allowed.
-Credit for Art 475 and either 471 or 473 will not be allowed.
-Credit for Art 485 and 483 will not be allowed.
-Credit for Art 501 and either Fine Arts 507.08 or 507.09 will not be allowed when the topic is Tele-Arts.
-Credit for Art 503 and either Fine Arts 507.06 or 507.07 will not be allowed.
-Credit for Art 509 and 515 will not be allowed.
-Credit for Archaeology 317 and 427 will not be allowed.
-Credit for Archaeology 329 and 327.01 (Frauds, Myths & Mysteries) will not be allowed.
-Credit for Archaeology 331 and 327.02 (Archeology and the Media) will not be allowed.
-Credit for Archaeology 419 and Anthropology 419 will not be allowed.
-Credit for Archaeology 555 and 613 will not be allowed.
-Credit for Archaeology 613 and either 555 or 603.07 (African Ceramic Analyses) will not be allowed.
-Credit for Anthropology 201 and Archaeology 203 will not be allowed.
-Credit for Anthropology 305 and Archaeology 305 will not be allowed.
-Credit for Anthropology 309 and either Archaeology 333 or 327.03 (Human Origins) will not be allowed.
-Credit for Anthropology 320 and either 317 or 319 will not be allowed.
-Credit for Anthropology 343 and 315 will not be allowed.
-Credit for Anthropology 213 and 346 will not be allowed.
-Credit for Anthropology 361 and 461 will not be allowed.
-Credit for Anthropology 391, 365 and 490 will not be allowed.
-Credit for Anthropology 589 and Archaeology 589 will not be allowed.
-Credit for Anthropology 605 and 601.90 (Professional Skills), or the equivalent, will not be allowed.
-Credit for Sustainability Studies 201 and University 207 will not be allowed.
-Credit for Sustainability Studies 401 and University 401.30 will not be allowed.
+Credit for ARTS 501 and SOSC 501 will not be allowed.
+Credit for ARTS 502 and SOSC 502 will not be allowed.
+Credit for ARHI 305 and either 301 or 303 will not be allowed.
+Credit for ARHI 319 and either 419 and 423 will not be allowed.
+Credit for ARHI 327 and 329 will not be allowed.
+Credit for ARHI 331 and any of 405, 407 or 415 will not be allowed.
+Credit for ARHI 333 and 209 will not be allowed.
+Credit for ARHI 340 and either ARHI 341 or ART 311.01 will not be allowed.
+Credit for ART 314 and 365.03 will not be allowed.
+Credit for ART 315 and any of CPSC 217, 219, 231, 235, DATA 211, ENGG 233 or ENDG 233 will not be allowed.
+Credit for ART 319 and 253 will not be allowed.
+Credit for ART 336 and 337 will not be allowed.
+Credit for ART 338 and 335 will not be allowed.
+Credit for ART 342 and any of 305, 307 or 393 will not be allowed.
+Credit for ART 344 and any of 305, 307 and 393 will not be allowed.
+Credit for ART 438 and either 435 or 437 will not be allowed.
+Credit for ART 445 and either 441 or 443 will not be allowed.
+Credit for ART 475 and either 471 or 473 will not be allowed.
+Credit for ART 485 and 483 will not be allowed.
+Credit for ART 501 and either FINA 507.08 or 507.09 will not be allowed when the topic is Tele-Arts.
+Credit for ART 503 and either FINA 507.06 or 507.07 will not be allowed.
+Credit for ART 509 and 515 will not be allowed.
+Credit for ARKY 317 and 427 will not be allowed.
+Credit for ARKY 329 and 327.01 (Frauds, Myths & Mysteries) will not be allowed.
+Credit for ARKY 331 and 327.02 (Archeology and the Media) will not be allowed.
+Credit for ARKY 419 and ANTH 419 will not be allowed.
+Credit for ARKY 555 and 613 will not be allowed.
+Credit for ARKY 613 and either 555 or 603.07 (African Ceramic Analyses) will not be allowed.
+Credit for ANTH 201 and ARKY 203 will not be allowed.
+Credit for ANTH 305 and ARKY 305 will not be allowed.
+Credit for ANTH 309 and either ARKY 333 or 327.03 (Human Origins) will not be allowed.
+Credit for ANTH 320 and either 317 or 319 will not be allowed.
+Credit for ANTH 343 and 315 will not be allowed.
+Credit for ANTH 213 and 346 will not be allowed.
+Credit for ANTH 361 and 461 will not be allowed.
+Credit for ANTH 391, 365 and 490 will not be allowed.
+Credit for ANTH 589 and ARKY 589 will not be allowed.
+Credit for ANTH 605 and 601.90 (Professional Skills), or the equivalent, will not be allowed.
+Credit for SUST 201 and UNIV 207 will not be allowed.
+Credit for SUST 401 and UNIV 401.30 will not be allowed.
