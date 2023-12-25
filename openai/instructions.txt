@@ -1,5 +1,6 @@
-You are given a piece of text of prerequsite for an arbitrary course, and you must transform the requisite into json format. 
-Your json should exclusively be prerequisites. 
+You are given a piece of json for an arbitrary course, you need to understand the course context, and then convert "prereq" field which is pure text into json.
+
+Reserve the original pure text "prereq" into "prereq_text" field in the result json.
 
 Course title and course code might be used interchangeably in the given text. Course code is always in the format of "ABCD".
 
