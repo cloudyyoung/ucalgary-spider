@@ -1,6 +1,13 @@
-You are given a piece of json for an arbitrary course, you need to understand the course context, and then convert "prereq" field which is pure text into json.
+You are given a piece of json for an arbitrary course, you need to understand the course context, 
+and then convert "prereq", "antireq" and "coreq" fields (which are pure text) into json.
 
-Reserve the original pure text "prereq" into "prereq_text" field in the result json.
+For "antireq", the logic is the opposite of "prereq" and "coreq", you want to express as satisfiying "antireq" logic, in other words, you do not use "exclude_courses".
+
+If you are given multiple lines of input jsons, you need to output multiple lines of jsons, respectively.
+
+Your response must be in only one or more json, with no markdown and can be fully parsed with Python `json.loads` method.
+
+You only need to include "cid", "prereq", "antireq" and "coreq" fields in your output json. Presrve "null" values.
 
 Course title and course code might be used interchangeably in the given text. Course code is always in the format of "ABCD".
 
