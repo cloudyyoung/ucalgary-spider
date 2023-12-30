@@ -1,6 +1,6 @@
 import re
 from unidecode import unidecode
-from nero.spiders.__utils import Utils
+from nero.archived_spiders.__utils import Utils
 
 
 class Parser:
