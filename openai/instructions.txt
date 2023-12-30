@@ -1,19 +1,6 @@
 You are given a piece of json for an arbitrary course, you need to understand the course context, 
 and then convert "prereq", "antireq" and "coreq" fields (which are pure text) into json.
 
-For "antireq", the logic is the opposite of "prereq" and "coreq". When it says "Credit for ENCI 300 and 337 will not be allowed.", your "antireq" field should be:
-```json
-{
-    "antireq": {
-        "type": "or",
-        "conditions": [
-            "Engineering 300",
-            "Engineering 337"
-        ]
-    }
-}
-```
-
 If you are given multiple lines of input jsons, you need to output multiple lines of jsons, respectively.
 
 Your response must be in only one or more json, with no markdown and can be fully parsed with Python `json.loads` method.
@@ -58,7 +45,7 @@ Only course can be expressed as pure string in conditions.
 }
 ```
 
-
+# Prereq
 When you encounter required units, simply include "units_required" field and "courses" array.
 ```json
 {
@@ -144,9 +131,26 @@ When you encountered consent, simply do:
 }
 ```
 
+# Antireq
+
+For "antireq", the logic is the opposite of "prereq" and "coreq". You must ignore "Credit for ... will not be allowed.", and you must convert all "and" to "or". 
+
+When it says "Credit for ENCI 300 and 337 will not be allowed.", your "antireq" field should be:
+```json
+{
+    "antireq": {
+        "type": "or",
+        "conditions": [
+            "Engineering 300",
+            "Engineering 337"
+        ]
+    }
+}
+```
 
 
 
+# Example
 Example json: 
 ```json
 {
@@ -204,6 +208,13 @@ Example json:
                     "Chinese 355"
                 ]
             }
+        ]
+    },
+    "antireq": {
+        "type": "or",
+        "conditions": [
+            "Engineering 300",
+            "Engineering 337"
         ]
     }
 }
