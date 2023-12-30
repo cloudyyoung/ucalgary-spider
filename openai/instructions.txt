@@ -133,21 +133,20 @@ When you encountered consent, simply do:
 
 # Antireq
 
-For "antireq", the logic is the opposite of "prereq" and "coreq". You must ignore "Credit for ... will not be allowed.", and you must convert all "and" to "or". 
+For "antireq", the logic is the opposite of "prereq" and "coreq". The json needs to represent requirements to satify "antireq".
+You must ignore "Credit for ... will not be allowed.", and you must convert all "and" to "or". 
 
-When it says "Credit for ENCI 300 and 337 will not be allowed.", your "antireq" field should be:
+For example, when it says "Credit for ENCI 300 and 337 will not be allowed.", your "antireq" field should be:
 ```json
 {
-    "antireq": {
-        "type": "or",
-        "conditions": [
-            "Engineering 300",
-            "Engineering 337"
-        ]
-    }
+    "type": "or",
+    "conditions": [
+        "Engineering 300",
+        "Engineering 337"
+    ]
 }
 ```
-
+This means when either "Engineering 300" or "Engineering 337" is satisfied, the antireq is satisfied.
 
 
 # Example
