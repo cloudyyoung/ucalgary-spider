@@ -1,19 +1,202 @@
+import json
 from pathlib import Path
 from scrapy import Spider, Request
 
+
 class QuotesSpider(Spider):
-    name = "quotes"
+    name = "course-info"
 
     def start_requests(self):
-        urls = [
-            "https://quotes.toscrape.com/page/1/",
-            "https://quotes.toscrape.com/page/2/",
-        ]
-        for url in urls:
-            yield Request(url=url, callback=self.parse)
+        base_url = "https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses/search/$filters?catalogId=SGrVclL1qqlruuZrIFIi&skip={skip}&limit={limit}&orderBy=subjectCode&formatDependents=true&effectiveDatesRange=2024-06-21,2024-06-30&columns=customFields.rawCourseId,customFields.crseOfferNbr,customFields.catalogAttributes,displayName,department,description,name,courseNumber,subjectCode,code,courseGroupId,career,college,longName,status,institution,institutionId,credits,attributes,components"
+
+        url = base_url.format(skip=0, limit=1)
+        print(url)
+
+        yield Request(
+            url=url,
+            callback=self.parse,
+            body=json.dumps(REQUEST_BODY),
+            method="POST",
+            headers={"Content-Type": "application/json"},
+        )
 
     def parse(self, response):
-        page = response.url.split("/")[-2]
-        filename = f"quotes-{page}.html"
-        Path(filename).write_bytes(response.body)
-        self.log(f"Saved file {filename}")
+        body = str(response.body, encoding="utf-8")
+        body = json.loads(body)
+        data = body["data"]
+        print(data)
+
+
+REQUEST_BODY = {
+    "condition": "and",
+    "filters": [
+        {
+            "id": "courseNumber-course",
+            "name": "courseNumber",
+            "inputType": "text",
+            "group": "course",
+            "type": "doesNotContain",
+            "value": "A",
+        },
+        {
+            "id": "courseNumber-course",
+            "name": "courseNumber",
+            "inputType": "text",
+            "group": "course",
+            "type": "doesNotContain",
+            "value": "B",
+        },
+        {
+            "id": "status-course",
+            "name": "status",
+            "inputType": "select",
+            "group": "course",
+            "type": "doesNotContain",
+            "value": "Inactive",
+        },
+        {
+            "id": "rawCourseId-course",
+            "name": "rawCourseId",
+            "inputType": "text",
+            "group": "course",
+            "type": "isNot",
+            "value": "150073",
+            "customField": True,
+        },
+        {
+            "id": "rawCourseId-course",
+            "name": "rawCourseId",
+            "inputType": "text",
+            "group": "course",
+            "type": "isNot",
+            "value": "160740",
+            "customField": True,
+        },
+        {
+            "id": "rawCourseId-course",
+            "name": "rawCourseId",
+            "inputType": "text",
+            "group": "course",
+            "type": "isNot",
+            "value": "160726",
+            "customField": True,
+        },
+        {
+            "id": "rawCourseId-course",
+            "name": "rawCourseId",
+            "inputType": "text",
+            "group": "course",
+            "type": "isNot",
+            "value": "161071",
+            "customField": True,
+        },
+        {
+            "id": "rawCourseId-course",
+            "name": "rawCourseId",
+            "inputType": "text",
+            "group": "course",
+            "type": "isNot",
+            "value": "103199",
+            "customField": True,
+        },
+        {
+            "id": "rawCourseId-course",
+            "name": "rawCourseId",
+            "inputType": "text",
+            "group": "course",
+            "type": "isNot",
+            "customField": True,
+            "value": "150054",
+        },
+        {
+            "id": "rawCourseId-course",
+            "name": "rawCourseId",
+            "inputType": "text",
+            "group": "course",
+            "type": "isNot",
+            "value": "150087",
+            "customField": True,
+        },
+        {
+            "id": "rawCourseId-course",
+            "name": "rawCourseId",
+            "inputType": "text",
+            "group": "course",
+            "type": "isNot",
+            "value": "150135",
+            "customField": True,
+        },
+        {
+            "id": "rawCourseId-course",
+            "name": "rawCourseId",
+            "inputType": "text",
+            "group": "course",
+            "type": "isNot",
+            "value": "150178",
+            "customField": True,
+        },
+        {
+            "id": "rawCourseId-course",
+            "name": "rawCourseId",
+            "inputType": "text",
+            "group": "course",
+            "type": "isNot",
+            "value": "150211",
+            "customField": True,
+        },
+        {
+            "id": "rawCourseId-course",
+            "name": "rawCourseId",
+            "inputType": "text",
+            "group": "course",
+            "type": "isNot",
+            "value": "150243",
+            "customField": True,
+        },
+        {
+            "id": "rawCourseId-course",
+            "name": "rawCourseId",
+            "inputType": "text",
+            "group": "course",
+            "type": "isNot",
+            "value": "150250",
+            "customField": True,
+        },
+        {
+            "id": "rawCourseId-course",
+            "name": "rawCourseId",
+            "inputType": "text",
+            "group": "course",
+            "type": "isNot",
+            "value": "161388",
+            "customField": True,
+        },
+        {
+            "id": "rawCourseId-course",
+            "name": "rawCourseId",
+            "inputType": "text",
+            "group": "course",
+            "type": "isNot",
+            "value": "150345",
+            "customField": True,
+        },
+        {
+            "id": "rawCourseId-course",
+            "name": "rawCourseId",
+            "inputType": "text",
+            "group": "course",
+            "type": "isNot",
+            "value": "150382",
+            "customField": True,
+        },
+        {
+            "id": "rawCourseId-course",
+            "name": "rawCourseId",
+            "inputType": "text",
+            "group": "course",
+            "type": "isNot",
+            "value": "150390",
+            "customField": True,
+        },
+    ],
+}
