@@ -15,20 +15,20 @@ class CourseCode(scrapy.Item):
 
 class CourseInfo(scrapy.Item):
     cid = scrapy.Field(serializer=int)
+    coursedog_id = scrapy.Field(serializer=int)
 
     code = scrapy.Field()
-    number = scrapy.Field()
-    topic = scrapy.Field()
-    long_topic = scrapy.Field()
+    number = scrapy.Field(serializer=float)
+    name = scrapy.Field()
+    long_name = scrapy.Field()
 
-    description = scrapy.Field()
-    sub_topics = scrapy.Field()
+    departments = scrapy.Field(serializer=list)
 
     units = scrapy.Field(serializer=float)
     credits = scrapy.Field(serializer=float)
-    hours = scrapy.Field()
-    time_length = scrapy.Field()
+    grade_mode = scrapy.Field()
 
+    description = scrapy.Field()
     prereq = scrapy.Field()
     coreq = scrapy.Field()
     antireq = scrapy.Field()
@@ -36,7 +36,7 @@ class CourseInfo(scrapy.Item):
     notes = scrapy.Field()
     aka = scrapy.Field()
 
-    repeat = scrapy.Field(serializer=bool)
+    repeatable = scrapy.Field(serializer=bool)
     nogpa = scrapy.Field(serializer=bool)
     active = scrapy.Field(serializer=bool)
 
