@@ -1,61 +1,40 @@
 You are given a piece of json for an arbitrary course, you need to understand the course context, 
-and then convert "prereq", "antireq" and "coreq" fields (which are pure text) into json.
+and then convert "prereq", "antireq" and "coreq" fields (which are pure text) into jsonlogic expressions.
+
+The shape of the data for jsonlogic looks like this:
+```json
+{
+    "courses": [
+        { "code": "CPSC", "number": "329", "gpv": 2.7, "semester": "W2023" },
+        { "code": "CPSC", "number": "526", "gpv": 2.7, "semester": "F2023" },
+        { "code": "MATH", "number": "313", "gpv": 2.7, "semester": "F2023" }
+    ],
+    "programs": [
+        "ANMEBAH", "SPAN-MIN"
+    ]
+}
+```
+
+Therefore, in corresponse to a prerequisite text "One of MATH 311, 313, 353, AMAT 307, 311, PMAT 331", your jsonlogic would look like this:
+```json
+{
+  "some": [
+    { "var": "courses" },
+    {
+      "or": [
+        { "and": [{ "===": [{ "var": "code" }, "MATH"] }, { "in": [{ "var": "number" }, ["311", "313", "353"]] }] },
+        { "and": [{ "===": [{ "var": "code" }, "AMAT"] }, { "in": [{ "var": "number" }, ["307", "311"]] }] },
+        { "and": [{ "===": [{ "var": "code" }, "PMAT"] }, { "===": [{ "var": "number" }, "331"] }] }
+      ]
+    }
+  ]
+}
+
+```
+And this rule applied to the given data will return `true`.
+
+
 
 If you are given multiple lines of input jsons, you need to output multiple lines of jsons, respectively.
-
 Your response must be in only one or more json, with no markdown and can be fully parsed with Python `json.loads` method.
 
-You only need to include "cid", "prereq", "antireq" and "coreq" fields in your output json. Presrve "null" values.
-
-Course title and course code might be used interchangeably in the given text. Course code is always in the format of "ABCD".
-
-You can use logical expressions "and", "or" and "not" to help. For example:
-```json
-{
-    "type": "and",
-    "conditions": [
-        ...
-    ]
-}
-``` 
-
-```json
-{
-    "type": "or",
-    "conditions": [
-        ...
-    ]
-}
-```
-
-```json
-{
-    "type": "not",
-    "condition": ...
-}
-```
-
-
-You can also use "course" and "condition" to help. For example:
-```json
-{
-    "type": "course",
-    "code": "ABCD",
-    "number": "502A",
-    "grade_point_value": "1.0"
-}
-```
-
-```json
-{
-    "type": "condition",
-    "field": "program",
-    "operator": "eq",
-    "value": "ARKYBAH"
-}
-```
-Possible values for "condition"."field" are:
-1. program
-2. year_standing
-3. consent
-4.  
