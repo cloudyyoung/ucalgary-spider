@@ -77,6 +77,7 @@ class QuotesSpider(Spider):
             )
 
     def process_description(self, description_full):
+        description_full = description_full.replace("\n", "\n\n")
         (description, *more) = description_full.split("\n\n")
 
         prereq, coreq, antireq, notes, aka = None, None, None, None, None
@@ -91,8 +92,8 @@ class QuotesSpider(Spider):
             elif t.startswith(ANTIREQ_TEXT):
                 antireq = t.replace(ANTIREQ_TEXT, "").strip()
 
-            elif t.startswith(NOTES_TEXT):
-                notes = t.replace(NOTES_TEXT, "").strip()
+            elif t.startswith(NOTES_TEXT) or t.startswith(NOTES_TEXT_ALT):
+                notes = t.replace(NOTES_TEXT, "").replace(NOTES_TEXT_ALT, "").strip()
 
             elif t.startswith(AKA_TEXT):
                 aka = t.replace(AKA_TEXT, "").strip()
@@ -104,6 +105,7 @@ PREREQ_TEXT = "Prerequisite(s): "
 COREQ_TEXT = "Corequisite(s): "
 ANTIREQ_TEXT = "Antirequisite(s): "
 NOTES_TEXT = "Notes: "
+NOTES_TEXT_ALT = "NOte: "
 NOGPA_TEXT = "Not included in GPA"
 AKA_TEXT = "Also known as: "
 REQUEST_BODY = {
@@ -125,14 +127,14 @@ REQUEST_BODY = {
         #     "type": "doesNotContain",
         #     "value": "B",
         # },
-        # {
-        #     "id": "status-course",
-        #     "name": "status",
-        #     "inputType": "select",
-        #     "group": "course",
-        #     "type": "doesNotContain",
-        #     "value": "Inactive",
-        # },
+        {
+            "id": "status-course",
+            "name": "status",
+            "inputType": "select",
+            "group": "course",
+            "type": "doesNotContain",
+            "value": "Inactive",
+        },
         # {
         #     "id": "rawCourseId-course",
         #     "name": "rawCourseId",
@@ -284,6 +286,14 @@ REQUEST_BODY = {
             "name": "subjectCode",
             "type": "is",
             "value": "CPSC",
+        },
+        {
+            "group": "course",
+            "id": "career-course",
+            "inputType": "careerSelect",
+            "name": "career",
+            "type": "is",
+            "value": "Undergraduate Programs",
         },
     ],
 }
