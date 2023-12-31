@@ -133,7 +133,7 @@ When you encountered consent, simply do:
 
 # Antireq
 
-For "antireq", the logic is the opposite of "prereq" and "coreq". You must ignore "Credit for ... will not be allowed.", and you must convert all "and" to "or". 
+For "antireq", the logic is the opposite of "prereq" and "coreq". Instead of presenting what will not satisfy the requirement, you need to present what will satisfy the requirement. 
 
 When it says "Credit for ENCI 300 and 337 will not be allowed.", your "antireq" field should be:
 ```json
@@ -147,7 +147,47 @@ When it says "Credit for ENCI 300 and 337 will not be allowed.", your "antireq" 
     }
 }
 ```
+This means that when you have either "Engineering 300" or "Engineering 337", you will satisfy the antireq.
 
+
+When it says "Credit for both CPSC 471 and MGIS 331 will not be allowed.", your "antireq" field should be:
+```json
+{
+    "antireq": {
+        "type": "and",
+        "conditions": [
+            "Computer Science 471",
+            "Management Information Systems 331"
+        ]
+    }
+}
+```
+This means that when you have both "Computer Science 471" and "Management Information Systems 331", you will satisfy the antireq.
+
+
+When it says "Credit for CPSC 217 and any of 215, 231, 235, DATA 211, ENCM 339, ENGG 233 or ENDG 233 will not be allowed.", your "antireq" field should be:
+```json
+{
+    "antireq": {
+        "type": "or",
+        "conditions": [
+            "Computer Science 217",
+            {
+                "type": "and",
+                "conditions": [
+                    "Computer Science 215",
+                    "Computer Science 231",
+                    "Computer Science 235",
+                    "Data Science 211",
+                    "Engineering 233",
+                    "Digital Engineering 233"
+                ]
+            }
+        ]
+    }
+}
+```
+This means that when you have either "Computer Science 217" or all of "Computer Science 215", "Computer Science 231", "Computer Science 235", "Data Science 211", "Engineering 233", "Digital Engineering 233", you will satisfy the antireq.
 
 
 # Example
