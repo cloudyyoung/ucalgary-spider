@@ -19,6 +19,7 @@ class CourseInfo(scrapy.Item):
     code = scrapy.Field()
     number = scrapy.Field()
     topic = scrapy.Field()
+    long_topic = scrapy.Field()
 
     description = scrapy.Field()
     sub_topics = scrapy.Field()
@@ -37,6 +38,7 @@ class CourseInfo(scrapy.Item):
 
     repeat = scrapy.Field(serializer=bool)
     nogpa = scrapy.Field(serializer=bool)
+    active = scrapy.Field(serializer=bool)
 
 
 class Faculty(scrapy.Item):

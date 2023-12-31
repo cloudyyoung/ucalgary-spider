@@ -17,3 +17,16 @@ Run a crawler
 
 List of crawlers are under directory `nero/spiders`
 
+
+## Endpoints
+
+Coursedog Curriculum API: https://coursedogcurriculum.docs.apiary.io/#reference/programs/get-all-programs
+
+### Departments
+https://app.coursedog.com/api/v1/ucalgary_peoplesoft/departments
+
+### Courses
+https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses/
+
+### Programs
+https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/programs/

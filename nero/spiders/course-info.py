@@ -1,22 +1,22 @@
 import json
-from pathlib import Path
 from scrapy import Spider, Request
+from nero.items import CourseInfo
 
 
 class QuotesSpider(Spider):
     name = "course-info"
 
     def start_requests(self):
-        base_url = "https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses/search/$filters?catalogId=SGrVclL1qqlruuZrIFIi&skip={skip}&limit={limit}&orderBy=subjectCode&formatDependents=true&effectiveDatesRange=2024-06-21,2024-06-30&columns=customFields.rawCourseId,customFields.crseOfferNbr,customFields.catalogAttributes,displayName,department,description,name,courseNumber,subjectCode,code,courseGroupId,career,college,longName,status,institution,institutionId,credits,attributes,components"
+        base_url = "https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses/search/$filters?catalogId=SGrVclL1qqlruuZrIFIi&skip={skip}&limit={limit}&orderBy=code&formatDependents=true&effectiveDatesRange=2024-06-21,2024-06-30"
 
-        url = base_url.format(skip=0, limit=1)
+        url = base_url.format(skip=0, limit=20)
         print(url)
 
         yield Request(
             url=url,
             callback=self.parse,
-            body=json.dumps(REQUEST_BODY),
             method="POST",
+            body=json.dumps(REQUEST_BODY),
             headers={"Content-Type": "application/json"},
         )
 
@@ -24,7 +24,18 @@ class QuotesSpider(Spider):
         body = str(response.body, encoding="utf-8")
         body = json.loads(body)
         data = body["data"]
-        print(data)
+
+        for course in data:
+            yield CourseInfo(
+                cid=course["customFields"]["rawCourseId"],
+                code=course["subjectCode"],
+                number=course["courseNumber"],
+                topic=course["name"],
+                long_topic=course["longName"],
+                description=course["description"],
+                credits=course["credits"]["numberOfCredits"],
+            )
+            ...
 
 
 REQUEST_BODY = {
@@ -197,6 +208,14 @@ REQUEST_BODY = {
             "type": "isNot",
             "value": "150390",
             "customField": True,
+        },
+        {
+            "group": "course",
+            "id": "subjectCode-course",
+            "inputType": "subjectCodeSelect",
+            "name": "subjectCode",
+            "type": "is",
+            "value": "CPSC",
         },
     ],
 }
