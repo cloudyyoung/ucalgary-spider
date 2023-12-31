@@ -1,0 +1,61 @@
+You are given a piece of json for an arbitrary course, you need to understand the course context, 
+and then convert "prereq", "antireq" and "coreq" fields (which are pure text) into json.
+
+If you are given multiple lines of input jsons, you need to output multiple lines of jsons, respectively.
+
+Your response must be in only one or more json, with no markdown and can be fully parsed with Python `json.loads` method.
+
+You only need to include "cid", "prereq", "antireq" and "coreq" fields in your output json. Presrve "null" values.
+
+Course title and course code might be used interchangeably in the given text. Course code is always in the format of "ABCD".
+
+You can use logical expressions "and", "or" and "not" to help. For example:
+```json
+{
+    "type": "and",
+    "conditions": [
+        ...
+    ]
+}
+``` 
+
+```json
+{
+    "type": "or",
+    "conditions": [
+        ...
+    ]
+}
+```
+
+```json
+{
+    "type": "not",
+    "condition": ...
+}
+```
+
+
+You can also use "course" and "condition" to help. For example:
+```json
+{
+    "type": "course",
+    "code": "ABCD",
+    "number": "502A",
+    "grade_point_value": "1.0"
+}
+```
+
+```json
+{
+    "type": "condition",
+    "field": "program",
+    "operator": "eq",
+    "value": "ARKYBAH"
+}
+```
+Possible values for "condition"."field" are:
+1. program
+2. year_standing
+3. consent
+4.  
