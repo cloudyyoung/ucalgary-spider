@@ -28,17 +28,25 @@ class QuotesSpider(Spider):
         for course in data:
             cid = course["customFields"]["rawCourseId"]
             coursedog_id = course["id"]
+
             code = course["subjectCode"]
             number = float(course["courseNumber"])
             name = course["name"]
             long_name = course["longName"]
-            description = course["description"]
+
+            departments = course["departments"]
+
+            description_full = course["description"]
+            description, prereq, coreq, antireq, notes, aka = self.process_description(
+                description_full
+            )
+
             credits = float(course["credits"]["numberOfCredits"])
             grade_mode = course["gradeMode"]
-            nogpa = NOGPA_TEXT.upper() in description.upper()
+
+            nogpa = NOGPA_TEXT.upper() in description_full.upper()
             repeatable = bool(course["credits"]["repeatable"])
             active = course["status"] == "Active"
-            departments = course["departments"]
 
             yield CourseInfo(
                 cid=cid,
@@ -52,18 +60,46 @@ class QuotesSpider(Spider):
                 credits=credits,
                 grade_mode=grade_mode,
                 description=description,
-                prereq=None,
-                coreq=None,
-                antireq=None,
-                notes=None,
-                aka=None,
+                prereq=prereq,
+                coreq=coreq,
+                antireq=antireq,
+                notes=notes,
+                aka=aka,
                 repeatable=repeatable,
                 nogpa=nogpa,
                 active=active,
             )
 
+    def process_description(self, description_full):
+        (description, *more) = description_full.split("\n\n")
 
+        prereq, coreq, antireq, notes, aka = None, None, None, None, None
+
+        for t in more:
+            if t.startswith(PREREQ_TEXT):
+                prereq = t.replace(PREREQ_TEXT, "").strip()
+
+            elif t.startswith(COREQ_TEXT):
+                coreq = t.replace(COREQ_TEXT, "").strip()
+
+            elif t.startswith(ANTIREQ_TEXT):
+                antireq = t.replace(ANTIREQ_TEXT, "").strip()
+
+            elif t.startswith(NOTES_TEXT):
+                notes = t.replace(NOTES_TEXT, "").strip()
+
+            elif t.startswith(AKA_TEXT):
+                aka = t.replace(AKA_TEXT, "").strip()
+
+        return (description, prereq, coreq, antireq, notes, aka)
+
+
+PREREQ_TEXT = "Prerequisite(s): "
+COREQ_TEXT = "Corequisite(s): "
+ANTIREQ_TEXT = "Antirequisite(s): "
+NOTES_TEXT = "Notes: "
 NOGPA_TEXT = "Not included in GPA"
+AKA_TEXT = "Also known as: "
 REQUEST_BODY = {
     "condition": "and",
     "filters": [
