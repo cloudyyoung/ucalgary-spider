@@ -30,11 +30,13 @@ class QuotesSpider(Spider):
             coursedog_id = course["id"]
 
             code = course["subjectCode"]
-            number = float(course["courseNumber"])
+            number = course["courseNumber"]
             name = course["name"]
             long_name = course["longName"]
 
+            faculty = course["college"]
             departments = course["departments"]
+            career = course["career"]
 
             description_full = course["description"]
             description, prereq, coreq, antireq, notes, aka = self.process_description(
@@ -43,6 +45,7 @@ class QuotesSpider(Spider):
 
             credits = float(course["credits"]["numberOfCredits"])
             grade_mode = course["gradeMode"]
+            components = list(map(lambda c: c["code"], course["components"]))
 
             nogpa = NOGPA_TEXT.upper() in description_full.upper()
             repeatable = bool(course["credits"]["repeatable"])
@@ -55,10 +58,13 @@ class QuotesSpider(Spider):
                 number=number,
                 name=name,
                 long_name=long_name,
+                faculty=faculty,
                 departments=departments,
+                career=career,
                 units=credits,
                 credits=credits,
                 grade_mode=grade_mode,
+                components=components,
                 description=description,
                 prereq=prereq,
                 coreq=coreq,
@@ -103,22 +109,22 @@ AKA_TEXT = "Also known as: "
 REQUEST_BODY = {
     "condition": "and",
     "filters": [
-        {
-            "id": "courseNumber-course",
-            "name": "courseNumber",
-            "inputType": "text",
-            "group": "course",
-            "type": "doesNotContain",
-            "value": "A",
-        },
-        {
-            "id": "courseNumber-course",
-            "name": "courseNumber",
-            "inputType": "text",
-            "group": "course",
-            "type": "doesNotContain",
-            "value": "B",
-        },
+        # {
+        #     "id": "courseNumber-course",
+        #     "name": "courseNumber",
+        #     "inputType": "text",
+        #     "group": "course",
+        #     "type": "doesNotContain",
+        #     "value": "A",
+        # },
+        # {
+        #     "id": "courseNumber-course",
+        #     "name": "courseNumber",
+        #     "inputType": "text",
+        #     "group": "course",
+        #     "type": "doesNotContain",
+        #     "value": "B",
+        # },
         # {
         #     "id": "status-course",
         #     "name": "status",

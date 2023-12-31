@@ -18,15 +18,18 @@ class CourseInfo(scrapy.Item):
     coursedog_id = scrapy.Field(serializer=int)
 
     code = scrapy.Field()
-    number = scrapy.Field(serializer=float)
+    number = scrapy.Field()
     name = scrapy.Field()
     long_name = scrapy.Field()
 
+    faculty = scrapy.Field()
     departments = scrapy.Field(serializer=list)
+    career = scrapy.Field()
 
     units = scrapy.Field(serializer=float)
     credits = scrapy.Field(serializer=float)
     grade_mode = scrapy.Field()
+    components = scrapy.Field(serializer=list)
 
     description = scrapy.Field()
     prereq = scrapy.Field()
