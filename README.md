@@ -30,3 +30,6 @@ https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses/
 
 ### Programs
 https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/programs/
+
+
+AOS - Area of Study
