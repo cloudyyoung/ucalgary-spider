@@ -1,361 +1,113 @@
-{"code": "ACSC-MIN", "display_name": "Minor: Actuarial Science", "type": "minor", "departments": ["MTST"]}
-{"code": "AFST-MIN", "display_name": "Minor: African Studies", "type": "minor", "departments": ["ANAR"]}
-{"code": "AMAT-MIN", "display_name": "Minor: Applied Mathematics", "type": "minor", "departments": ["MTST"]}
-{"code": "AMATBSC", "display_name": "", "type": "major", "departments": ["MTST", "SC"]}
-{"code": "AMATBSCH", "display_name": "", "type": "major", "departments": ["MTST", "SC"]}
-{"code": "ANTH-MIN", "display_name": "Minor: Anthropology", "type": "minor", "departments": ["ANAR"]}
-{"code": "APEE-MIN", "display_name": "Minor: Applied Energy Economics", "type": "minor", "departments": ["ECON"]}
-{"code": "ARKY-MIN", "display_name": "Minor: Archaeology", "type": "minor", "departments": ["ANAR"]}
-{"code": "ARST-MIN", "display_name": "Minor: Architectural Studies", "type": "minor", "departments": ["EV"]}
-{"code": "ASPH-MIN", "display_name": "Minor: Astrophysics", "type": "minor", "departments": ["PHAS"]}
-{"code": "BINF-MIN", "display_name": "Minor: Bioinformatics", "type": "minor", "departments": ["HSOC"]}
-{"code": "BISC-MIN", "display_name": "Minor: Biological Sciences", "type": "minor", "departments": ["BISI"]}
-{"code": "CHEM-MIN", "display_name": "Minor: Chemistry", "type": "minor", "departments": ["CHEM"]}
-{"code": "CHIN-MIN", "display_name": "Minor: Chinese", "type": "minor", "departments": ["LLLC"]}
-{"code": "CMMI-MIN", "display_name": "Minor: Communication and Media Studies", "type": "minor", "departments": ["CMF"]}
-{"code": "CNST-MIN", "display_name": "Minor: Canadian Studies", "type": "minor", "departments": ["HIST"]}
-{"code": "CNST-EMC", "display_name": "Embedded Certificate: Canadian Studies", "type": "certificate", "departments": ["HIST"]}
-{"code": "CNSTBA", "display_name": "", "type": "major", "departments": ["AR", "HIST"]}
-{"code": "CNSTBAH", "display_name": "", "type": "major", "departments": ["AR", "HIST"]}
-{"code": "COMS-MIN", "display_name": "Minor: Communications Studies", "type": "minor", "departments": ["CMF"]}
-{"code": "COOP-COI", "display_name": "Co-operative Education Program", "type": "coop", "departments": []}
-{"code": "CPSC-MIN", "display_name": "Minor: Computer Science", "type": "minor", "departments": ["CPSC"]}
-{"code": "CRWR-EMC", "display_name": "Embedded Certificate: Creative Writing", "type": "certificate", "departments": ["ENGL"]}
-{"code": "DATA-MIN", "display_name": "Minor: Data Science", "type": "minor", "departments": ["SC"]}
-{"code": "DNCE-MIN", "display_name": "Minor: Dance", "type": "minor", "departments": ["SCPA"]}
-{"code": "DRAM-MIN", "display_name": "Minor: Drama", "type": "minor", "departments": ["SCPA"]}
-{"code": "EASC-MIN", "display_name": "Minor: Earth Science", "type": "minor", "departments": ["GEOG"]}
-{"code": "EASCBSC", "display_name": "", "type": "major", "departments": ["AR", "GEOG"]}
-{"code": "EASCBSCH", "display_name": "", "type": "major", "departments": ["AR", "GEOG"]}
-{"code": "EAST-MIN", "display_name": "Minor: East Asian Studies", "type": "minor", "departments": ["LLLC"]}
-{"code": "ECON-MIN", "display_name": "Minor: Economics", "type": "minor", "departments": ["ECON"]}
-{"code": "ENAE-MIN", "display_name": "Minor: Aerospace Engineering", "type": "minor", "departments": ["EN"]}
-{"code": "ENBI-MIN", "display_name": "Minor: Biomedical Engineering", "type": "minor", "departments": ["ENBI"]}
-{"code": "ENCO-MIN", "display_name": "Minor: Computer Engineering", "type": "minor", "departments": ["ENEC"]}
-{"code": "ENDI-MIN", "display_name": "Minor: Digital Engineering", "type": "minor", "departments": ["EN"]}
-{"code": "ENEE-MIN", "display_name": "Minor: Energy and Environment", "type": "minor", "departments": ["EN"]}
-{"code": "ENEM-MIN", "display_name": "Minor: Environmental Engineering", "type": "minor", "departments": []}
-{"code": "ENGL-MIN", "display_name": "Minor: English", "type": "minor", "departments": ["ENGL"]}
-{"code": "ENMF-MIN", "display_name": "Minor: Manufacturing Engineering", "type": "minor", "departments": ["ENMF"]}
-{"code": "ENPE-MIN", "display_name": "Minor: Petroleum Engineering", "type": "minor", "departments": ["ENCP"]}
-{"code": "ENPM-MIN", "display_name": "Minor: Petroleum Engineering", "type": "minor", "departments": ["ENCP"]}
-{"code": "ENSCBSC", "display_name": "", "type": "major", "departments": ["SC"]}
-{"code": "ENSCBSCH", "display_name": "", "type": "major", "departments": ["SC"]}
-{"code": "ENSF-MIN", "display_name": "Minor: Software Engineering", "type": "minor", "departments": ["ENEC"]}
-{"code": "ENST-MIN", "display_name": "Minor: Structural Engineering", "type": "minor", "departments": ["ENCI"]}
-{"code": "ENTH-EMC", "display_name": "Embedded Certificate: Entrepreneurial Thinking", "type": "certificate", "departments": ["HA"]}
-{"code": "ENTM-MIN", "display_name": "Minor: Transportation Engineering", "type": "minor", "departments": ["ENCI"]}
-{"code": "FILM-MIN", "display_name": "Minor: Film Studies", "type": "minor", "departments": ["CMF"]}
-{"code": "FREN-MIN", "display_name": "Minor: French", "type": "minor", "departments": ["LLLC"]}
-{"code": "GDST-MIN", "display_name": "Minor: Global Development Studies", "type": "minor", "departments": ["ANAR"]}
-{"code": "GEOG-MIN", "display_name": "Minor: Geography", "type": "minor", "departments": ["GEOG"]}
-{"code": "GERM-MIN", "display_name": "Minor: German", "type": "minor", "departments": ["LLLC"]}
-{"code": "GIS-EMC", "display_name": "Embedded Certificate: Geographic Information Science", "type": "certificate", "departments": ["GEOG"]}
-{"code": "GLGY-MIN", "display_name": "Minor: Geology", "type": "minor", "departments": ["ERTH"]}
-{"code": "GOPH-MIN", "display_name": "Minor: Geophysics", "type": "minor", "departments": ["ERTH"]}
-{"code": "GREK-MIN", "display_name": "Minor: Greek", "type": "minor", "departments": ["CLARE"]}
-{"code": "GRST-MIN", "display_name": "Minor: Greek and Roman Studies", "type": "minor", "departments": ["CLARE"]}
-{"code": "GSXS-MIN", "display_name": "Minor: Gender and Sexuality Studies", "type": "minor", "departments": ["PHIL"]}
-{"code": "HIST-MIN", "display_name": "Minor: History", "type": "minor", "departments": ["HIST"]}
-{"code": "HPSC-MIN", "display_name": "Minor: History and Philosophy of Science", "type": "minor", "departments": ["PHIL"]}
-{"code": "HSOC-MIN", "display_name": "Minor: Health and Society", "type": "minor", "departments": ["HSOC"]}
-{"code": "INDG-MIN", "display_name": "Minor: International Indigenous Studies", "type": "minor", "departments": ["POLI"]}
-{"code": "INTE-COI", "display_name": "Internship Program", "type": "coop", "departments": []}
-{"code": "ITST-MIN", "display_name": "Minor: Italian Studies", "type": "minor", "departments": ["LLLC"]}
-{"code": "JPNS-MIN", "display_name": "Minor: Japanese", "type": "minor", "departments": ["LLLC"]}
-{"code": "LAST-MIN", "display_name": "Minor: Latin American Studies", "type": "minor", "departments": ["HIST"]}
-{"code": "LASTBA", "display_name": "", "type": "major", "departments": ["AR", "HIST"]}
-{"code": "LATI-MIN", "display_name": "Minor: Latin", "type": "minor", "departments": ["CLARE"]}
-{"code": "LDST-EMC", "display_name": "Embedded Certificate: Leadership Studies", "type": "certificate", "departments": ["HA"]}
-{"code": "LING-MIN", "display_name": "Minor: Linguistics", "type": "minor", "departments": ["LLLC"]}
-{"code": "LSPL-MIN", "display_name": "Minor: Speech-Language Sciences for Linguistics Majors", "type": "minor", "departments": ["LLLC"]}
-{"code": "LWSO-MIN", "display_name": "Minor: Law and Society", "type": "minor", "departments": ["SOCI"]}
-{"code": "LAST-EMC", "display_name": "Embedded Certificate: Latin American Studies", "type": "certificate", "departments": ["HIST"]}
-{"code": "MATH-MIN", "display_name": "Minor: Mathematics", "type": "minor", "departments": ["MTST"]}
-{"code": "MEED-MIN", "display_name": "Minor: Entrepreneurship and Enterprise", "type": "minor", "departments": ["EN"]}
-{"code": "MGSO-MIN", "display_name": "Minor: Management and Society", "type": "minor", "departments": ["HA"]}
-{"code": "MHST-MIN", "display_name": "Minor: Museum and Heritage Studies", "type": "minor", "departments": ["ART"]}
-{"code": "MRRS-MIN", "display_name": "Minor: Medieval, Renaissance and Reformation Studies", "type": "minor", "departments": ["ENGL"]}
-{"code": "MULA-MIN", "display_name": "", "type": "minor", "departments": []}
-{"code": "MUSI-MIN", "display_name": "Minor: Music", "type": "minor", "departments": ["SCPA"]}
-{"code": "MWRE-EMC", "display_name": "Embedded Certificate: Mental Wellbeing and Resilience", "type": "certificate", "departments": ["PSYC"]}
-{"code": "NANS-MIN", "display_name": "Minor: Nanoscience", "type": "minor", "departments": ["SC"]}
-{"code": "NANSCNC", "display_name": "", "type": "major", "departments": ["SC"]}
-{"code": "NTSCMATH", "display_name": "", "type": "major", "departments": ["MTST", "SC"]}
-{"code": "NTSCMATHH", "display_name": "", "type": "major", "departments": ["MTST", "SC"]}
-{"code": "NTSCPHYSH", "display_name": "", "type": "major", "departments": ["PHAS", "SC"]}
-{"code": "NTSCCHEMH", "display_name": "", "type": "major", "departments": ["CHEM", "SC"]}
-{"code": "NTSCBISC", "display_name": "", "type": "major", "departments": ["BISI", "SC"]}
-{"code": "NTSCESCIH", "display_name": "", "type": "major", "departments": ["SC"]}
-{"code": "NTSCCHEM", "display_name": "", "type": "major", "departments": ["CHEM", "SC"]}
-{"code": "NTSCESCI", "display_name": "", "type": "major", "departments": ["SC"]}
-{"code": "NTSCCPSC", "display_name": "", "type": "major", "departments": ["CPSC", "SC"]}
-{"code": "NTSCBISCH", "display_name": "", "type": "major", "departments": ["BISI", "SC"]}
-{"code": "NTSCPHYS", "display_name": "", "type": "major", "departments": ["PHAS", "SC"]}
-{"code": "NTSCGEOS", "display_name": "", "type": "major", "departments": ["ERTH", "SC"]}
-{"code": "NTSCCPSCH", "display_name": "", "type": "major", "departments": ["CPSC", "SC"]}
-{"code": "NTSCGEOSH", "display_name": "", "type": "major", "departments": ["ERTH", "SC"]}
-{"code": "PHIL-MIN", "display_name": "Minor: Philosophy", "type": "minor", "departments": ["PHIL"]}
-{"code": "PHYS-MIN", "display_name": "Minor: Physics", "type": "minor", "departments": ["PHAS"]}
-{"code": "PLGC-EMC", "display_name": "Embedded Certificate: Pluralism and Global Citizenship", "type": "certificate", "departments": ["POLI"]}
-{"code": "PMAT-MIN", "display_name": "Minor: Pure Mathematics", "type": "minor", "departments": ["MTST"]}
-{"code": "PMATBSC", "display_name": "", "type": "major", "departments": ["MTST", "SC"]}
-{"code": "PMATBSCH", "display_name": "", "type": "major", "departments": ["MTST", "SC"]}
-{"code": "POLI-MIN", "display_name": "Minor: Political Science", "type": "minor", "departments": ["POLI"]}
-{"code": "PSPL-MIN", "display_name": "Minor: Speech-Language Sciences for Psychology Majors", "type": "minor", "departments": ["PSYC"]}
-{"code": "PSYC-MIN", "display_name": "Minor: Psychology", "type": "minor", "departments": ["PSYC"]}
-{"code": "RELS-MIN", "display_name": "Minor: Religious Studies", "type": "minor", "departments": ["CLARE"]}
-{"code": "RUSS-MIN", "display_name": "Minor: Russian", "type": "minor", "departments": ["LLLC"]}
-{"code": "RUSSBA", "display_name": "", "type": "major", "departments": ["AR", "LLLC"]}
-{"code": "RUSSBAH", "display_name": "", "type": "major", "departments": ["AR", "LLLC"]}
-{"code": "SAST-MIN", "display_name": "Minor: South Asian Studies", "type": "minor", "departments": ["CLARE"]}
-{"code": "SOCI-MIN", "display_name": "Minor: Sociology", "type": "minor", "departments": ["SOCI"]}
-{"code": "SONC-MIN", "display_name": "Minor: Sonic Arts", "type": "minor", "departments": ["SCPA"]}
-{"code": "SPAN-MIN", "display_name": "Minor: Spanish", "type": "minor", "departments": ["LLLC"]}
-{"code": "SRTY-MIN", "display_name": "Minor: Security Studies", "type": "minor", "departments": ["POLI"]}
-{"code": "STAT-MIN", "display_name": "Minor: Statistics", "type": "minor", "departments": ["MTST"]}
-{"code": "STATBSC", "display_name": "", "type": "major", "departments": ["MTST", "SC"]}
-{"code": "STATBSCH", "display_name": "", "type": "major", "departments": ["MTST", "SC"]}
-{"code": "SUST-EMC", "display_name": "Embedded Certificate: Sustainability Studies", "type": "certificate", "departments": ["EV"]}
-{"code": "TCSL-EMC", "display_name": "Embedded Certificate: Teaching Chinese as a Second Language", "type": "certificate", "departments": ["LLLC"]}
-{"code": "TRON-MIN", "display_name": "Minor: Mechatronics", "type": "minor", "departments": ["ENMF"]}
-{"code": "UBST-MIN", "display_name": "Minor: Urban Studies", "type": "minor", "departments": ["GEOG"]}
-{"code": "VSAH-MIN", "display_name": "Minor: Visual Studies & Art History", "type": "minor", "departments": ["ART"]}
-{"code": "WKPL-MIN", "display_name": "Minor: Workplace Learning", "type": "minor", "departments": ["UCALG"]}
-{"code": "WMST-MIN", "display_name": "Minor: Women's Studies", "type": "minor", "departments": ["PHIL"]}
-{"code": "WMSTBA", "display_name": "", "type": "major", "departments": []}
-{"code": "WMSTBAH", "display_name": "", "type": "major", "departments": []}
-{"code": "BEDAH", "display_name": " Bachelor of Education (BEd) Two-Year After-Degree - Honours", "type": "major", "departments": ["ED"]}
-{"code": "DNCEBED", "display_name": "Bachelor of Arts (BA) Dance (Dance Pedagogy concentration)/Bachelor of Education (BEd) Five Year Concurrent", "type": "major", "departments": ["AR", "ED", "SCPA"]}
-{"code": "DNCEBKIN", "display_name": "Bachelor of Arts (BA) Dance/Bachelor of Kinesiology (BKin) Combined", "type": "major", "departments": ["AR", "KN", "SCPA"]}
-{"code": "DESTBAH", "display_name": "Bachelor of Arts (BA) Honours in Global Development Studies", "type": "major", "departments": []}
-{"code": "ANSCBAH", "display_name": "Bachelor of Arts (BA) Honours in Social and Cultural Anthropology", "type": "major", "departments": []}
-{"code": "ANMEBA", "display_name": "Bachelor of Arts (BA) in Ancient and Medieval History", "type": "major", "departments": ["AR", "CLARE"]}
-{"code": "ANMEBAH", "display_name": "Bachelor of Arts (BA) in Ancient and Medieval History - Honours ", "type": "major", "departments": ["AR", "CLARE"]}
-{"code": "ANTHBA", "display_name": "Bachelor of Arts (BA) in Anthropology", "type": "major", "departments": ["ANAR", "AR"]}
-{"code": "ANTHBAH", "display_name": "Bachelor of Arts (BA) in Anthropology - Honours", "type": "major", "departments": ["ANAR", "AR"]}
-{"code": "ARKYBA", "display_name": "Bachelor of Arts (BA) in Archaeology", "type": "major", "departments": ["ANAR", "AR"]}
-{"code": "ARKYBAH", "display_name": "Bachelor of Arts (BA) in Archaeology - Honours ", "type": "major", "departments": ["ANAR", "AR"]}
-{"code": "ARHIBA", "display_name": "Bachelor of Arts (BA) in Art History", "type": "major", "departments": ["AR", "ART"]}
-{"code": "CMDSBA", "display_name": "Bachelor of Arts (BA) in Communication and Media Studies", "type": "major", "departments": ["AR", "CMF"]}
-{"code": "CMDSBAH", "display_name": "Bachelor of Arts (BA) in Communication and Media Studies - Honours", "type": "major", "departments": ["AR", "CMF"]}
-{"code": "COMSBAH", "display_name": "Bachelor of Arts (BA) in Communication and Media Studies - Honours", "type": "major", "departments": []}
-{"code": "COMSBA", "display_name": "Bachelor of Arts (BA) in Communications Studies", "type": "major", "departments": []}
-{"code": "CPSCBA", "display_name": "Bachelor of Arts (BA) in Computer Science", "type": "major", "departments": ["CPSC", "SC"]}
-{"code": "DNCEBA", "display_name": "Bachelor of Arts (BA) in Dance", "type": "major", "departments": ["AR", "SCPA"]}
-{"code": "EALSBA", "display_name": "Bachelor of Arts (BA) in East Asian Language Studies", "type": "major", "departments": ["AR", "LLLC"]}
-{"code": "ETASBA", "display_name": "Bachelor of Arts (BA) in East Asian Studies", "type": "major", "departments": ["AR", "LLLC"]}
-{"code": "ECONBA", "display_name": "Bachelor of Arts (BA) in Economics", "type": "major", "departments": ["AR", "ECON"]}
-{"code": "ECONBAH", "display_name": "Bachelor of Arts (BA) in Economics - Honours", "type": "major", "departments": ["AR", "ECON"]}
-{"code": "ENGLBA", "display_name": "Bachelor of Arts (BA) in English", "type": "major", "departments": ["AR", "ENGL"]}
-{"code": "ENGLBAH", "display_name": "Bachelor of Arts (BA) in English - Honours", "type": "major", "departments": ["AR", "ENGL"]}
-{"code": "FILMBA", "display_name": "Bachelor of Arts (BA) in Film Studies", "type": "major", "departments": ["AR", "CMF"]}
-{"code": "FILMBAH", "display_name": "Bachelor of Arts (BA) in Film Studies - Honours", "type": "major", "departments": ["AR", "CMF"]}
-{"code": "FRENBA", "display_name": "Bachelor of Arts (BA) in French", "type": "major", "departments": ["AR", "LLLC"]}
-{"code": "FRENBAH", "display_name": "Bachelor of Arts (BA) in French - Honours", "type": "major", "departments": ["AR", "LLLC"]}
-{"code": "GSXSBA", "display_name": "Bachelor of Arts (BA) in Gender and Sexuality Studies", "type": "major", "departments": ["AR", "PHIL"]}
-{"code": "GSXSBAH", "display_name": "Bachelor of Arts (BA) in Gender and Sexuality Studies - Honours", "type": "major", "departments": ["AR", "PHIL"]}
-{"code": "GEOGBA", "display_name": "Bachelor of Arts (BA) in Geography", "type": "major", "departments": ["AR", "GEOG"]}
-{"code": "GEOGBAH", "display_name": "Bachelor of Arts (BA) in Geography - Honours", "type": "major", "departments": ["AR", "GEOG"]}
-{"code": "GERMBA", "display_name": "Bachelor of Arts (BA) in German", "type": "major", "departments": ["AR", "LLLC"]}
-{"code": "GERMBAH", "display_name": "Bachelor of Arts (BA) in German - Honours", "type": "major", "departments": ["AR", "LLLC"]}
-{"code": "DESTBA", "display_name": "Bachelor of Arts (BA) in Global Development Studies", "type": "major", "departments": []}
-{"code": "GDSTBA", "display_name": "Bachelor of Arts (BA) in Global Development Studies", "type": "major", "departments": ["ANAR", "AR"]}
-{"code": "GDSTBAH", "display_name": "Bachelor of Arts (BA) in Global Development Studies - Honours", "type": "major", "departments": ["ANAR", "AR"]}
-{"code": "GRSTBA", "display_name": "Bachelor of Arts (BA) in Greek and Roman Studies", "type": "major", "departments": ["AR", "CLARE"]}
-{"code": "GRSTBAH", "display_name": "Bachelor of Arts (BA) in Greek and Roman Studies - Honours ", "type": "major", "departments": ["AR", "CLARE"]}
-{"code": "HISTBA", "display_name": "Bachelor of Arts (BA) in History", "type": "major", "departments": ["AR", "HIST"]}
-{"code": "HISTBAH", "display_name": "Bachelor of Arts (BA) in History - Honours", "type": "major", "departments": ["AR", "HIST"]}
-{"code": "IISTBA", "display_name": "Bachelor of Arts (BA) in International Indigenous Studies", "type": "major", "departments": ["AR", "POLI"]}
-{"code": "INTRBA", "display_name": "Bachelor of Arts (BA) in International Relations ", "type": "major", "departments": ["AR", "POLI"]}
-{"code": "ITSTBA", "display_name": "Bachelor of Arts (BA) in Italian Studies", "type": "major", "departments": ["AR", "LLLC"]}
-{"code": "LACLBA", "display_name": "Bachelor of Arts (BA) in Language and Culture", "type": "major", "departments": ["AR", "LLLC"]}
-{"code": "LACLBAH", "display_name": "Bachelor of Arts (BA) in Language and Culture - Honours", "type": "major", "departments": ["AR", "LLLC"]}
-{"code": "LWSOBA", "display_name": "Bachelor of Arts (BA) in Law and Society", "type": "major", "departments": ["AR", "SOCI"]}
-{"code": "LWSOBAH", "display_name": "Bachelor of Arts (BA) in Law and Society - Honours", "type": "major", "departments": ["AR", "SOCI"]}
-{"code": "LINGBA", "display_name": "Bachelor of Arts (BA) in Linguistics", "type": "major", "departments": ["AR", "LLLC"]}
-{"code": "LINGBAH", "display_name": "Bachelor of Arts (BA) in Linguistics - Honours", "type": "major", "departments": ["AR", "LLLC"]}
-{"code": "LILABA", "display_name": "Bachelor of Arts (BA) in Linguistics and Language", "type": "major", "departments": ["AR", "LLLC"]}
-{"code": "MULTBA", "display_name": "Bachelor of Arts (BA) in Multidisciplinary Studies", "type": "major", "departments": ["AR"]}
-{"code": "MUSIBA", "display_name": "Bachelor of Arts (BA) in Music", "type": "major", "departments": ["AR", "SCPA"]}
-{"code": "MUSIBAH", "display_name": "Bachelor of Arts (BA) in Music - Honours", "type": "major", "departments": ["AR", "SCPA"]}
-{"code": "PHILBA", "display_name": "Bachelor of Arts (BA) in Philosophy", "type": "major", "departments": ["AR", "PHIL"]}
-{"code": "PHILBAH", "display_name": "Bachelor of Arts (BA) in Philosophy - Honours", "type": "major", "departments": ["AR", "PHIL"]}
-{"code": "POLIBA", "display_name": "Bachelor of Arts (BA) in Political Science", "type": "major", "departments": ["AR", "POLI"]}
-{"code": "POLIBAH", "display_name": "Bachelor of Arts (BA) in Political Science - Honours", "type": "major", "departments": ["AR", "POLI"]}
-{"code": "PSYCBA", "display_name": "Bachelor of Arts (BA) in Psychology", "type": "major", "departments": ["AR", "PSYC"]}
-{"code": "PSYCBAH", "display_name": "Bachelor of Arts (BA) in Psychology - Honours", "type": "major", "departments": ["AR", "PSYC"]}
-{"code": "RELSBA", "display_name": "Bachelor of Arts (BA) in Religious Studies", "type": "major", "departments": ["AR", "CLARE"]}
-{"code": "RELSBAH", "display_name": "Bachelor of Arts (BA) in Religious Studies - Honours ", "type": "major", "departments": ["AR", "CLARE"]}
-{"code": "ANSCBA", "display_name": "Bachelor of Arts (BA) in Social and Cultural Anthropology", "type": "major", "departments": []}
-{"code": "SOCIBA", "display_name": "Bachelor of Arts (BA) in Sociology", "type": "major", "departments": ["AR", "SOCI"]}
-{"code": "SOCIBAH", "display_name": "Bachelor of Arts (BA) in Sociology - Honours", "type": "major", "departments": ["AR", "SOCI"]}
-{"code": "SPANBA", "display_name": "Bachelor of Arts (BA) in Spanish", "type": "major", "departments": ["AR", "LLLC"]}
-{"code": "SPANBAH", "display_name": "Bachelor of Arts (BA) in Spanish - Honours", "type": "major", "departments": ["AR", "LLLC"]}
-{"code": "UBSTBA", "display_name": "Bachelor of Arts (BA) in Urban Studies", "type": "major", "departments": ["AR", "GEOG"]}
-{"code": "BCOMMBCOMM", "display_name": "Bachelor of Commerce (BComm)", "type": "major", "departments": ["HA"]}
-{"code": "BCMSBCMS", "display_name": "Bachelor of Communication and Media Studies (BCMS)", "type": "major", "departments": ["AR", "CMF"]}
-{"code": "BCRBCR", "display_name": "Bachelor of Community Rehabilitation (BCR)", "type": "major", "departments": ["CORE", "MD"]}
-{"code": "DIPLBCR", "display_name": "Bachelor of Community Rehabilitation (BCR) Two-year Post Diploma", "type": "major", "departments": ["CORE", "MD"]}
-{"code": "PSYCBCR", "display_name": "Bachelor of Community Rehabilitation (BCR)/Bachelor of Arts (BA) or Bachelor of Science (BSc) Psychology Combined", "type": "major", "departments": ["CORE", "MD"]}
-{"code": "LANDBDCI", "display_name": "Bachelor of Design in City Innovation (BCDI) Landscape Architecture Concentration", "type": "major", "departments": ["EV"]}
-{"code": "BDCIBDCI", "display_name": "Bachelor of Design in City Innovation (BDCI)", "type": "major", "departments": ["EV"]}
-{"code": "ARCHBDCI", "display_name": "Bachelor of Design in City Innovation (BDCI) Architecture Concentration", "type": "major", "departments": ["EV"]}
-{"code": "BEDC", "display_name": "Bachelor of Education (BEd) Five-Year Concurrent", "type": "major", "departments": ["ED"]}
-{"code": "BEDCH", "display_name": "Bachelor of Education (BEd) Five-Year Concurrent - Honours", "type": "major", "departments": ["ED"]}
-{"code": "WDECBED", "display_name": "Bachelor of Education (BEd) Four-Year - (K-12) Early Childhood Education - Community-Based Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WDECBEDH", "display_name": "Bachelor of Education (BEd) Four-Year - (K-12) Early Childhood Education - Community-Based Pathway - Honours ", "type": "major", "departments": ["ED"]}
-{"code": "WDLABED", "display_name": "Bachelor of Education (BEd) Four-Year - (K-12) English Language Arts - Community-Based Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WDLABEDH", "display_name": "Bachelor of Education (BEd) Four-Year - (K-12) English Language Arts - Community-Based Pathway - Honours ", "type": "major", "departments": ["ED"]}
-{"code": "WDELBED", "display_name": "Bachelor of Education (BEd) Four-Year - (K-12) English Language Learners - On-Campus Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WDELBEDH", "display_name": "Bachelor of Education (BEd) Four-Year - (K-12) English Language Learners - On-Campus Pathway - Honours ", "type": "major", "departments": ["ED"]}
-{"code": "WDMABED", "display_name": "Bachelor of Education (BEd) Four-Year - (K-12) Mathematics - Community-Based Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WDMABEDH", "display_name": "Bachelor of Education (BEd) Four-Year - (K-12) Mathematics - Community-Based Pathway - Honours ", "type": "major", "departments": ["ED"]}
-{"code": "WDSCBED", "display_name": "Bachelor of Education (BEd) Four-Year - (K-12) Science - Community-Based Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WDSCBEDH", "display_name": "Bachelor of Education (BEd) Four-Year - (K-12) Science - Community-Based Pathway - Honours", "type": "major", "departments": ["ED"]}
-{"code": "WDSLBED", "display_name": "Bachelor of Education (BEd) Four-Year - (K-12) Second Languages - On-Campus Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WDSLBEDH", "display_name": "Bachelor of Education (BEd) Four-Year - (K-12) Second Languages - On-Campus Pathway - Honours ", "type": "major", "departments": ["ED"]}
-{"code": "WDSSBED", "display_name": "Bachelor of Education (BEd) Four-Year - (K-12) Social Studies - Community-Based Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WDSSBEDH", "display_name": "Bachelor of Education (BEd) Four-Year - (K-12) Social Studies - Community-Based Pathway - Honours ", "type": "major", "departments": ["ED"]}
-{"code": "WDRVBED", "display_name": "Bachelor of Education (BEd) Four-Year - (K-12) Social Studies - Revitalization of Indigenous Languages - Community-Based Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WDRVBEDH", "display_name": "Bachelor of Education (BEd) Four-Year - (K-12) Social Studies - Revitalization of Indigenous Languages - Community-Based Pathway - Honours ", "type": "major", "departments": ["ED"]}
-{"code": "WEECBED", "display_name": "Bachelor of Education (BEd) Four-Year - Elementary Early Childhood Education - On-Campus Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WEECBEDH", "display_name": "Bachelor of Education (BEd) Four-Year - Elementary Early Childhood Education - On-Campus Pathway - Honours ", "type": "major", "departments": ["ED"]}
-{"code": "WELABED", "display_name": "Bachelor of Education (BEd) Four-Year - Elementary English Language Arts - On-Campus Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WELABEDH", "display_name": "Bachelor of Education (BEd) Four-Year - Elementary English Language Arts - On-Campus Pathway - Honours ", "type": "major", "departments": ["ED"]}
-{"code": "WEFABED", "display_name": "Bachelor of Education (BEd) Four-Year - Elementary Fine Arts - On-Campus Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WEFABEDH", "display_name": "Bachelor of Education (BEd) Four-Year - Elementary Fine Arts - On-Campus Pathway - Honours ", "type": "major", "departments": ["ED"]}
-{"code": "WEMABED", "display_name": "Bachelor of Education (BEd) Four-Year - Elementary Mathematics - On-Campus Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WEMABEDH", "display_name": "Bachelor of Education (BEd) Four-Year - Elementary Mathematics - On-Campus Pathway - Honours ", "type": "major", "departments": ["ED"]}
-{"code": "WESCBED", "display_name": "Bachelor of Education (BEd) Four-Year - Elementary Science - On-Campus Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WESCBEDH", "display_name": "Bachelor of Education (BEd) Four-Year - Elementary Science - On-Campus Pathway - Honours", "type": "major", "departments": ["ED"]}
-{"code": "WESSBED", "display_name": "Bachelor of Education (BEd) Four-Year - Elementary Social Studies - On-Campus Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WESSBEDH", "display_name": "Bachelor of Education (BEd) Four-Year - Elementary Social Studies - On-Campus Pathway - Honours", "type": "major", "departments": ["ED"]}
-{"code": "WERVBED", "display_name": "Bachelor of Education (BEd) Four-Year - Elementary Social Studies - Revitalization of Indigenous Languages - On-Campus Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WERVBEDH", "display_name": "Bachelor of Education (BEd) Four-Year - Elementary Social Studies - Revitalization of Indigenous Languages - On-Campus Pathway - Honours ", "type": "major", "departments": ["ED"]}
-{"code": "WSLABED", "display_name": "Bachelor of Education (BEd) Four-Year - Secondary English Language Arts - On-Campus Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WSLABEDH", "display_name": "Bachelor of Education (BEd) Four-Year - Secondary English Language Arts - On-Campus Pathway - Honours", "type": "major", "departments": ["ED"]}
-{"code": "WSDRBED", "display_name": "Bachelor of Education (BEd) Four-Year - Secondary Fine Arts - Drama - On-Campus Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WSDRBEDH", "display_name": "Bachelor of Education (BEd) Four-Year - Secondary Fine Arts - Drama - On-Campus Pathway - Honours ", "type": "major", "departments": ["ED"]}
-{"code": "WSVABED", "display_name": "Bachelor of Education (BEd) Four-Year - Secondary Fine Arts Education - Visual Studies - On-Campus Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WSVABEDH", "display_name": "Bachelor of Education (BEd) Four-Year - Secondary Fine Arts Education - Visual Studies - On-Campus Pathway - Honours ", "type": "major", "departments": ["ED"]}
-{"code": "WSMABED", "display_name": "Bachelor of Education (BEd) Four-Year - Secondary Mathematics - On-Campus Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WSMABEDH", "display_name": "Bachelor of Education (BEd) Four-Year - Secondary Mathematics - On-Campus Pathway - Honours", "type": "major", "departments": ["ED"]}
-{"code": "WSBIBED", "display_name": "Bachelor of Education (BEd) Four-Year - Secondary Science - Biology - On-Campus Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WSBIBEDH", "display_name": "Bachelor of Education (BEd) Four-Year - Secondary Science - Biology - On-Campus Pathway - Honours", "type": "major", "departments": ["ED"]}
-{"code": "WSPHBED", "display_name": "Bachelor of Education (BEd) Four-Year - Secondary Sciences - Physics - On-Campus Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WSPHBEDH", "display_name": "Bachelor of Education (BEd) Four-Year - Secondary Sciences - Physics - On-Campus Pathway - Honours", "type": "major", "departments": ["ED"]}
-{"code": "WSSSBED", "display_name": "Bachelor of Education (BEd) Four-Year - Secondary Social Studies - On-Campus Pathway", "type": "major", "departments": ["ED"]}
-{"code": "WSSSBEDH", "display_name": "Bachelor of Education (BEd) Four-Year - Secondary Social Studies - On-Campus Pathway - Honours ", "type": "major", "departments": ["ED"]}
-{"code": "BEDA", "display_name": "Bachelor of Education (BEd) Two-Year After-Degree ", "type": "major", "departments": ["ED"]}
-{"code": "BFSBFS", "display_name": "Bachelor of Film Studies (BFS)", "type": "major", "departments": ["AR", "CMF"]}
-{"code": "DRAMBED", "display_name": "Bachelor of Fine Arts (BFA) Drama/Bachelor of Education (BEd) Five Year Concurrent", "type": "major", "departments": ["AR", "ED", "SCPA"]}
-{"code": "VISTBED", "display_name": "Bachelor of Fine Arts (BFA) Visual Studies/Bachelor of Education (BEd) Concurrent", "type": "major", "departments": ["AR", "ART", "ED"]}
-{"code": "DANCBFA", "display_name": "Bachelor of Fine Arts (BFA) in Dance", "type": "major", "departments": ["AR", "SCPA"]}
-{"code": "DRAMBFA", "display_name": "Bachelor of Fine Arts (BFA) in Drama", "type": "major", "departments": ["AR", "SCPA"]}
-{"code": "VISTBFA", "display_name": "Bachelor of Fine Arts (BFA) in Visual Studies", "type": "major", "departments": ["AR", "ART"]}
-{"code": "VISTBFAH", "display_name": "Bachelor of Fine Arts (BFA) in Visual Studies - Honours ", "type": "major", "departments": ["AR", "ART"]}
-{"code": "BINFBHSCH", "display_name": "Bachelor of Health Sciences (BHSc) Honours in Bioinformatics", "type": "major", "departments": ["BHSC", "MD"]}
-{"code": "BMSCBHSCH", "display_name": "Bachelor of Health Sciences (BHSc) Honours in Biomedical Sciences", "type": "major", "departments": ["BHSC", "MD"]}
-{"code": "HSOCBHSCH", "display_name": "Bachelor of Health Sciences (BHSc) Honours in Health and Society", "type": "major", "departments": ["BHSC", "MD"]}
-{"code": "KNESBKIN", "display_name": "Bachelor of Kinesiology (BKin) in Kinesiology", "type": "major", "departments": ["KN"]}
-{"code": "KNESBKINH", "display_name": "Bachelor of Kinesiology (BKin) in Kinesiology - Honours ", "type": "major", "departments": ["KN"]}
-{"code": "LECOBKIN", "display_name": "Bachelor of Kinesiology (BKin) in Leadership and Coaching", "type": "major", "departments": ["KN"]}
-{"code": "LECOBKINH", "display_name": "Bachelor of Kinesiology (BKin) in Leadership and Coaching - Honours ", "type": "major", "departments": ["KN"]}
-{"code": "MPAMBKIN", "display_name": "Bachelor of Kinesiology (BKin) in Motor and Psychosocial Aspects of Movement", "type": "major", "departments": ["KN"]}
-{"code": "MPAMBKINH", "display_name": "Bachelor of Kinesiology (BKin) in Motor and Psychosocial Aspects of Movement - Honours ", "type": "major", "departments": ["KN"]}
-{"code": "MUSCBMUS", "display_name": "Bachelor of Music (BMus) in Composition", "type": "major", "departments": ["AR", "SCPA"]}
-{"code": "INTGBMUS", "display_name": "Bachelor of Music (BMus) in Integrated Studies", "type": "major", "departments": ["AR", "SCPA"]}
-{"code": "MUEDBMUS", "display_name": "Bachelor of Music (BMus) in Music Education", "type": "major", "departments": ["AR", "SCPA"]}
-{"code": "PERFBMUS", "display_name": "Bachelor of Music (BMus) in Performance", "type": "major", "departments": ["AR", "SCPA"]}
-{"code": "MHCBN", "display_name": "Bachelor of Nursing (BN) Medicine Hat College Site", "type": "major", "departments": ["NU"]}
-{"code": "BNBN", "display_name": "Bachelor of Nursing (BN) University of Calgary Campus", "type": "major", "departments": ["NU"]}
-{"code": "NTSCBED", "display_name": "Bachelor of Science (BSc) Natural Sciences/Bachelor of Education (BEd) Five-Year Concurrent", "type": "major", "departments": ["SC"]}
-{"code": "ACSCBSC", "display_name": "Bachelor of Science (BSc) in Actuarial Science", "type": "major", "departments": ["MTST", "SC"]}
-{"code": "ACSCBSCH", "display_name": "Bachelor of Science (BSc) in Actuarial Science - Honours ", "type": "major", "departments": ["MTST", "SC"]}
-{"code": "ANTHBSC", "display_name": "Bachelor of Science (BSc) in Anthropology", "type": "major", "departments": ["ANAR", "AR"]}
-{"code": "ANTHBSCH", "display_name": "Bachelor of Science (BSc) in Anthropology - Honours", "type": "major", "departments": ["ANAR", "AR"]}
-{"code": "ARKYBSC", "display_name": "Bachelor of Science (BSc) in Archaeology", "type": "major", "departments": ["ANAR", "AR"]}
-{"code": "ARKYBSCH", "display_name": "Bachelor of Science (BSc) in Archaeology - Honours ", "type": "major", "departments": ["ANAR", "AR"]}
-{"code": "ASPHBSC", "display_name": "Bachelor of Science (BSc) in Astrophysics", "type": "major", "departments": ["PHAS", "SC"]}
-{"code": "ASPHBSCH", "display_name": "Bachelor of Science (BSc) in Astrophysics - Honours ", "type": "major", "departments": ["PHAS", "SC"]}
-{"code": "BCEMBSC", "display_name": "Bachelor of Science (BSc) in Biochemistry", "type": "major", "departments": ["BISI", "SC"]}
-{"code": "BCEMBSCH", "display_name": "Bachelor of Science (BSc) in Biochemistry - Honours ", "type": "major", "departments": ["BISI", "SC"]}
-{"code": "BISCBSC", "display_name": "Bachelor of Science (BSc) in Biological Sciences", "type": "major", "departments": ["BISI", "SC"]}
-{"code": "BISCBSCH", "display_name": "Bachelor of Science (BSc) in Biological Sciences - Honours", "type": "major", "departments": ["BISI", "SC"]}
-{"code": "BMECBSC", "display_name": "Bachelor of Science (BSc) in Biomechanics", "type": "major", "departments": ["KN"]}
-{"code": "BMECBSCH", "display_name": "Bachelor of Science (BSc) in Biomechanics - Honours", "type": "major", "departments": ["KN"]}
-{"code": "ENBIBSC", "display_name": "Bachelor of Science (BSc) in Biomedical Engineering", "type": "major", "departments": ["EN", "ENBI"]}
-{"code": "CMBIBSC", "display_name": "Bachelor of Science (BSc) in Cellular, Molecular and Microbial Biology", "type": "major", "departments": ["BISI", "SC"]}
-{"code": "CMBIBSCH", "display_name": "Bachelor of Science (BSc) in Cellular, Molecular and Microbial Biology - Honours ", "type": "major", "departments": ["BISI", "SC"]}
-{"code": "ENCHBSC", "display_name": "Bachelor of Science (BSc) in Chemical Engineering", "type": "major", "departments": ["EN", "ENCP"]}
-{"code": "CHEMBSC", "display_name": "Bachelor of Science (BSc) in Chemistry", "type": "major", "departments": ["CHEM", "SC"]}
-{"code": "CHEMBSCH", "display_name": "Bachelor of Science (BSc) in Chemistry - Honours ", "type": "major", "departments": ["CHEM", "SC"]}
-{"code": "ENCIBSC", "display_name": "Bachelor of Science (BSc) in Civil Engineering", "type": "major", "departments": ["EN", "ENCI"]}
-{"code": "MULTBSC", "display_name": "Bachelor of Science (BSc) in Communication and Culture", "type": "major", "departments": ["AR"]}
-{"code": "CPSCBSC", "display_name": "Bachelor of Science (BSc) in Computer Science", "type": "major", "departments": ["CPSC", "SC"]}
-{"code": "CPSCBSCH", "display_name": "Bachelor of Science (BSc) in Computer Science - Honours ", "type": "major", "departments": ["CPSC", "SC"]}
-{"code": "DATABSC", "display_name": "Bachelor of Science (BSc) in Data Science", "type": "major", "departments": ["CPSC", "MTST", "SC"]}
-{"code": "ECOLBSC", "display_name": "Bachelor of Science (BSc) in Ecology", "type": "major", "departments": ["BISI", "SC"]}
-{"code": "ECOLBSCH", "display_name": "Bachelor of Science (BSc) in Ecology - Honours ", "type": "major", "departments": ["BISI", "SC"]}
-{"code": "ENELBSC", "display_name": "Bachelor of Science (BSc) in Electrical Engineering", "type": "major", "departments": ["EN", "ENEC"]}
-{"code": "ENERBSC", "display_name": "Bachelor of Science (BSc) in Energy Engineering", "type": "major", "departments": ["EN"]}
-{"code": "ENSCBISC", "display_name": "Bachelor of Science (BSc) in Environmental Science with a Concentration in Biological Sciences ", "type": "major", "departments": ["BISI", "SC"]}
-{"code": "ENSCBISCH", "display_name": "Bachelor of Science (BSc) in Environmental Science with a Concentration in Biological Sciences - Honours", "type": "major", "departments": ["BISI", "SC"]}
-{"code": "ENSCCHEM", "display_name": "Bachelor of Science (BSc) in Environmental Science with a Concentration in Chemistry", "type": "major", "departments": ["CHEM", "SC"]}
-{"code": "ENSCCHEMH", "display_name": "Bachelor of Science (BSc) in Environmental Science with a Concentration in Chemistry - Honours", "type": "major", "departments": ["CHEM", "SC"]}
-{"code": "ENSCGEOG", "display_name": "Bachelor of Science (BSc) in Environmental Science with a Concentration in Geography", "type": "major", "departments": ["AR", "GEOG", "SC"]}
-{"code": "ENSCGEOGH", "display_name": "Bachelor of Science (BSc) in Environmental Science with a Concentration in Geography - Honours", "type": "major", "departments": ["AR", "GEOG", "SC"]}
-{"code": "ENSCGLGY", "display_name": "Bachelor of Science (BSc) in Environmental Science with a Concentration in Geology", "type": "major", "departments": ["ERTH", "SC"]}
-{"code": "ENSCGLGYH", "display_name": "Bachelor of Science (BSc) in Environmental Science with a Concentration in Geology - Honours", "type": "major", "departments": ["ERTH", "SC"]}
-{"code": "ENSCPHYS", "display_name": "Bachelor of Science (BSc) in Environmental Science with a Concentration in Physics", "type": "major", "departments": ["PHAS", "SC"]}
-{"code": "ENSCPHYSH", "display_name": "Bachelor of Science (BSc) in Environmental Science with a Concentration in Physics - Honours", "type": "major", "departments": ["PHAS", "SC"]}
-{"code": "ENSCSTAT", "display_name": "Bachelor of Science (BSc) in Environmental Science with a Concentration in Statistics", "type": "major", "departments": ["MTST", "SC"]}
-{"code": "ENSCSTATH", "display_name": "Bachelor of Science (BSc) in Environmental Science with a Concentration in Statistics - Honours", "type": "major", "departments": ["MTST", "SC"]}
-{"code": "EXHPBSC", "display_name": "Bachelor of Science (BSc) in Exercise and Health Physiology", "type": "major", "departments": ["KN"]}
-{"code": "EXHPBSCH", "display_name": "Bachelor of Science (BSc) in Exercise and Health Physiology - Honours ", "type": "major", "departments": ["KN"]}
-{"code": "GMTHBSC", "display_name": "Bachelor of Science (BSc) in General Mathematics", "type": "major", "departments": ["MTST", "SC"]}
-{"code": "GEOGBSC", "display_name": "Bachelor of Science (BSc) in Geography", "type": "major", "departments": ["AR", "GEOG"]}
-{"code": "GEOGBSCH", "display_name": "Bachelor of Science (BSc) in Geography - Honours", "type": "major", "departments": ["AR", "GEOG"]}
-{"code": "GLGYBSC", "display_name": "Bachelor of Science (BSc) in Geology", "type": "major", "departments": ["ERTH", "SC"]}
-{"code": "GLGYBSCH", "display_name": "Bachelor of Science (BSc) in Geology - Honours", "type": "major", "departments": ["ERTH", "SC"]}
-{"code": "ENGOBSC", "display_name": "Bachelor of Science (BSc) in Geomatics Engineering", "type": "major", "departments": ["EN", "ENGO"]}
-{"code": "GOPHBSC", "display_name": "Bachelor of Science (BSc) in Geophysics", "type": "major", "departments": ["ERTH", "SC"]}
-{"code": "GOPHBSCH", "display_name": "Bachelor of Science (BSc) in Geophysics - Honours ", "type": "major", "departments": ["ERTH", "SC"]}
-{"code": "KNESBSC", "display_name": "Bachelor of Science (BSc) in Kinesiology", "type": "major", "departments": ["KN"]}
-{"code": "KNESBSCH", "display_name": "Bachelor of Science (BSc) in Kinesiology - Honours ", "type": "major", "departments": ["KN"]}
-{"code": "MATHBSC", "display_name": "Bachelor of Science (BSc) in Mathematics", "type": "major", "departments": ["MTST", "SC"]}
-{"code": "MATHBSCH", "display_name": "Bachelor of Science (BSc) in Mathematics - Honours ", "type": "major", "departments": ["MTST", "SC"]}
-{"code": "ENMEBSC", "display_name": "Bachelor of Science (BSc) in Mechanical Engineering", "type": "major", "departments": ["EN", "ENMF"]}
-{"code": "MPAMBSC", "display_name": "Bachelor of Science (BSc) in Motor and Psychosocial Aspects of Movement", "type": "major", "departments": ["KN"]}
-{"code": "MPAMBSCH", "display_name": "Bachelor of Science (BSc) in Motor and Psychosocial Aspects of Movement - Honours ", "type": "major", "departments": ["KN"]}
-{"code": "NTSCBSC", "display_name": "Bachelor of Science (BSc) in Natural Sciences", "type": "major", "departments": ["SC"]}
-{"code": "NTSCBSCH", "display_name": "Bachelor of Science (BSc) in Natural Sciences - Honours ", "type": "major", "departments": ["SC"]}
-{"code": "NEURBSCH", "display_name": "Bachelor of Science (BSc) in Neuroscience - Honours ", "type": "major", "departments": ["SC"]}
-{"code": "ENOGBSC", "display_name": "Bachelor of Science (BSc) in Oil and Gas Engineering", "type": "major", "departments": []}
-{"code": "PHYSBSC", "display_name": "Bachelor of Science (BSc) in Physics", "type": "major", "departments": ["PHAS", "SC"]}
-{"code": "PHYSBSCH", "display_name": "Bachelor of Science (BSc) in Physics - Honours ", "type": "major", "departments": ["PHAS", "SC"]}
-{"code": "PLBIBSC", "display_name": "Bachelor of Science (BSc) in Plant Biology", "type": "major", "departments": ["BISI", "SC"]}
-{"code": "PLBIBSCH", "display_name": "Bachelor of Science (BSc) in Plant Biology - Honours ", "type": "major", "departments": ["BISI", "SC"]}
-{"code": "PSYCBSC", "display_name": "Bachelor of Science (BSc) in Psychology", "type": "major", "departments": ["AR", "PSYC"]}
-{"code": "PSYCBSCH", "display_name": "Bachelor of Science (BSc) in Psychology - Honours", "type": "major", "departments": ["AR", "PSYC"]}
-{"code": "ENSFBSC", "display_name": "Bachelor of Science (BSc) in Software Engineering", "type": "major", "departments": ["EN", "ENEC"]}
-{"code": "ENSSBSC", "display_name": "Bachelor of Science (BSc) in Sustainable Systems Engineering", "type": "major", "departments": ["EN"]}
-{"code": "ZOOLBSC", "display_name": "Bachelor of Science (BSc) in Zoology", "type": "major", "departments": ["BISI", "SC"]}
-{"code": "ZOOLBSCH", "display_name": "Bachelor of Science (BSc) in Zoology - Honours ", "type": "major", "departments": ["BISI", "SC"]}
-{"code": "DIPLBSW", "display_name": "Bachelor of Social Work (BSW) Alberta Social Work Diploma Route", "type": "major", "departments": ["SW"]}
-{"code": "DIPLBSWO", "display_name": "Bachelor of Social Work (BSW) Learning Circles Alberta Social Work Diploma Route", "type": "major", "departments": ["SW"]}
-{"code": "TRNSBSWO", "display_name": "Bachelor of Social Work (BSW) Learning Circles University Transfer Route (including After-Degree)", "type": "major", "departments": ["SW"]}
-{"code": "TRNSBSW", "display_name": "Bachelor of Social Work (BSW) University Transfer Route (including After-Degree)", "type": "major", "departments": ["SW"]}
-{"code": "MDMD", "display_name": "Doctor of Medicine (MD)", "type": "major", "departments": ["MD"]}
-{"code": "DVMDVM", "display_name": "Doctor of Veterinary Medicine (DVM)", "type": "major", "departments": ["VM"]}
-{"code": "1STYRENBCH", "display_name": "First Year Curriculum - Schulich School of Engineering", "type": "major", "departments": ["EN"]}
-{"code": "NMJPPBCER", "display_name": "Foreign Trained Lawyers Program Post-Bachelor's Certificate", "type": "major", "departments": ["LA"]}
-{"code": "JDJD", "display_name": "Juris Doctor (JD)", "type": "major", "departments": ["LA"]}
-{"code": "DEST-MIN", "display_name": "Minor in Global Development Studies", "type": "minor", "departments": ["ANAR"]}
-{"code": "ALMC-MIN", "display_name": "Minor: Arabic Language and Muslim Cultures", "type": "minor", "departments": ["LLLC"]}
-{"code": "CMRH-MIN", "display_name": "Minor: Community Rehabilitation and Disability Studies", "type": "minor", "departments": ["CORE"]}
-{"code": "QTRPDBN", "display_name": "Qatar Bachelor of Nursing (BN) Post-Diploma", "type": "major", "departments": ["NU", "QA"]}
-{"code": "QTRBN", "display_name": "Qatar Bachelor of Nursing (BN) Regular Track", "type": "major", "departments": ["NU", "QA"]}
-{"code": "QTRDIPNU", "display_name": "Qatar Diploma in Nursing Program", "type": "major", "departments": ["NU", "QA"]}
-{"code": "QTRFDNU", "display_name": "Qatar Nursing Foundation Program", "type": "major", "departments": ["NU", "QA"]}
+{"cid": "107154", "code": "CPSC", "number": "203", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": null, "antireq": "Not open for registration to Computer Science majors.", "coreq": null}
+{"cid": "160416", "code": "CPSC", "number": "217", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": null, "antireq": "Credit for CPSC 217 and any of 215, 231, 235, DATA 211, ENCM 339, ENGG 233 or ENDG 233 will not be allowed.", "coreq": null}
+{"cid": "160417", "code": "CPSC", "number": "219", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 217 or DATA 211.", "antireq": "Credit for CPSC 219 and any of 233, 235, ENEL 497 or ENCM 493 will not be allowed.", "coreq": null}
+{"cid": "107164", "code": "CPSC", "number": "231", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "Admission to Computer Science, Bioinformatics, or Natural Science with a primary concentration in Computer Science.", "antireq": "Credit for CPSC 231 and any of CPSC 215, 217, 235, DATA 211, ENCM 339, ENGG 233, or ENDG 233 will not be allowed.", "coreq": null}
+{"cid": "107165", "code": "CPSC", "number": "233", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 231 and admission to Computer Science, Bioinformatics, or Natural Science with a primary concentration in Computer Science.", "antireq": "Credit for CPSC 233 and any of 219, 235, ENEL 497 or ENCM 493 will not be allowed.", "coreq": null}
+{"cid": "107166", "code": "CPSC", "number": "235", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "Consent of the Department.", "antireq": "Credit for CPSC 235 and any of 215, 217, 219, 231, 233, ENCM 339, 493 or DATA 211 will not be allowed.", "coreq": null}
+{"cid": "164537", "code": "CPSC", "number": "251", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 219 or 231.", "antireq": "Students may not register in, or have credit for, CPSC 251 if they have previous credit for one of MATH 271 or 273 or are concurrently enrolled in MATH 271 or 273.", "coreq": null}
+{"cid": "150073", "code": "CPSC", "number": "299", "faculty": "SC", "departments": ["CPSC"], "units": 999.0, "prereq": null, "antireq": null, "coreq": null}
+{"cid": "165062", "code": "CPSC", "number": "304", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": null, "antireq": "Not open for registration to Majors in Computer Science, Bioinformatics, Electrical Engineering, Software Engineering, Computer Engineering, Natural Sciences with a primary concentration in Computer Science or any student with at least 3 units of courses numbered 300 or above and labelled Computer Science, Software Engineering or Software Engineering for Engineers.", "coreq": null}
+{"cid": "107194", "code": "CPSC", "number": "313", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "MATH 271 or 273; and PHIL 279 or 377; and 3 units from CPSC 219, 233 or 235.", "antireq": "Credit for CPSC 313 and CPSC 351 will not be allowed.", "coreq": null}
+{"cid": "161617", "code": "CPSC", "number": "319", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "3 units from CPSC 219, 233, 235, ENCM 335, 339 or ENSF 337.", "antireq": "Credit for CPSC 319 and 331 will not be allowed. Computer Science majors are not permitted to register in this course.", "coreq": null}
+{"cid": "161618", "code": "CPSC", "number": "329", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "Mathematics 30-1, Mathematics 30-2, or Mathematics 31.", "antireq": null, "coreq": null}
+{"cid": "107198", "code": "CPSC", "number": "331", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "3 units from CPSC 251, MATH 271 or 273; and 3 units from CPSC 219, 233, 235, ENCM 335, 339 or ENSF 337.", "antireq": "Credit for CPSC 331 and 319 will not be allowed.", "coreq": null}
+{"cid": "107201", "code": "CPSC", "number": "335", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 319 or 331.", "antireq": null, "coreq": null}
+{"cid": "164538", "code": "CPSC", "number": "351", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "3 units from CPSC 219, 233 or 235; and CPSC 251 or STAT 213; and MATH 271 or 273; and 3 units from MATH 249, 265 or 275; and PHIL 279 or 377.", "antireq": "Credit for CPSC 351 and CPSC 313 will not be allowed.", "coreq": null}
+{"cid": "161194", "code": "CPSC", "number": "355", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "3 units from CPSC 219, 233 or 235.", "antireq": "Credit for CPSC 355 and 265 or ENCM 369 will not be allowed.", "coreq": null}
+{"cid": "162328", "code": "CPSC", "number": "359", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 355 and PHIL 279 or 377.", "antireq": "Credit for both CPSC 359 and any of 325, 455 or ENCM 415 will not be allowed.", "coreq": null}
+{"cid": "165336", "code": "CPSC", "number": "393", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 219, 233 or DATA 311 and enrolment in one of the Majors in Computer Science, Bioinformatics, Electrical Engineering, Software Engineering, Computer Engineering, Natural Sciences with a primary concentration in Computer Science.", "antireq": null, "coreq": null}
+{"cid": "163309", "code": "CPSC", "number": "399", "faculty": "SC", "departments": ["CPSC"], "units": 999.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "164005", "code": "CPSC", "number": "405", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "SENG 300 or 301.", "antireq": "Credit for CPSC 405 and ENTI 415 will not be allowed.", "coreq": null}
+{"cid": "107211", "code": "CPSC", "number": "409", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 355.", "antireq": null, "coreq": null}
+{"cid": "107215", "code": "CPSC", "number": "411", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 319 or 331; and CPSC 355 or ENCM 369.", "antireq": null, "coreq": null}
+{"cid": "107216", "code": "CPSC", "number": "413", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 331; and 313 or 351; and MATH 211 or 213; and 3 units from MATH 249, 265 or 275.", "antireq": null, "coreq": null}
+{"cid": "161676", "code": "CPSC", "number": "418", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 331 and 3 units from CPSC 351, MATH 271, 273, 315 or PMAT 315.", "antireq": "Credit for CPSC 418 and any of CPSC 429, 557, MATH 318, PMAT 329 or 418 will not be allowed.", "coreq": null}
+{"cid": "107224", "code": "CPSC", "number": "433", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 313 or 351; and PHIL 279 or 377.", "antireq": null, "coreq": null}
+{"cid": "107225", "code": "CPSC", "number": "441", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 319 or 331; and CPSC 355 or ENCM 369.", "antireq": "Credit for CPSC 441 and ENEL 573 will not be allowed.", "coreq": null}
+{"cid": "161195", "code": "CPSC", "number": "449", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 319 or 331; CPSC 313 or 351; and PHIL 279 or 377.", "antireq": "Credit for CPSC 449 and 349 will not be allowed.", "coreq": null}
+{"cid": "107229", "code": "CPSC", "number": "453", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 319 or 331; and MATH 211 or 213; and 3 units from MATH 253, 267, 277, 283 or AMAT 219.", "antireq": null, "coreq": null}
+{"cid": "107231", "code": "CPSC", "number": "457", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 319 or 331; and CPSC 355 or ENCM 369.", "antireq": null, "coreq": null}
+{"cid": "107232", "code": "CPSC", "number": "461", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 355 and one of 319 or 331.", "antireq": null, "coreq": null}
+{"cid": "107234", "code": "CPSC", "number": "471", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 319 or 331.", "antireq": "Credit for both CPSC 471 and MGIS 331 will not be allowed.", "coreq": null}
+{"cid": "107235", "code": "CPSC", "number": "481", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "3 units from SENG 300, 301, SENG 480 or DATA 311.", "antireq": null, "coreq": null}
+{"cid": "107238", "code": "CPSC", "number": "491", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 319 or 331; and MATH 211 or 213; and 3 units from MATH 249, 265 or 275.", "antireq": "Credit for CPSC 491 and any of MATH 391, 493 or ENGG 407. ENCH 407 or ENDG 407 will not be allowed.", "coreq": null}
+{"cid": "163310", "code": "CPSC", "number": "499", "faculty": "SC", "departments": ["CPSC"], "units": 999.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "107248", "code": "CPSC", "number": "501", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 349 or 449.", "antireq": null, "coreq": null}
+{"cid": "160856", "code": "CPSC", "number": "502.01", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "161040", "code": "CPSC", "number": "502.01A", "faculty": "SC", "departments": ["CPSC"], "units": 0.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "160856", "code": "CPSC", "number": "502.01B", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "160857", "code": "CPSC", "number": "502.02", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "161041", "code": "CPSC", "number": "502.02A", "faculty": "SC", "departments": ["CPSC"], "units": 0.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "160857", "code": "CPSC", "number": "502.02B", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "160858", "code": "CPSC", "number": "502.03", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "161042", "code": "CPSC", "number": "502.03A", "faculty": "SC", "departments": ["CPSC"], "units": 0.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "160858", "code": "CPSC", "number": "502.03B", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "160859", "code": "CPSC", "number": "502.04", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "161043", "code": "CPSC", "number": "502.04A", "faculty": "SC", "departments": ["CPSC"], "units": 0.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "160859", "code": "CPSC", "number": "502.04B", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "160860", "code": "CPSC", "number": "502.05", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "161046", "code": "CPSC", "number": "502.05A", "faculty": "SC", "departments": ["CPSC"], "units": 0.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "160860", "code": "CPSC", "number": "502.05B", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "160861", "code": "CPSC", "number": "502.06", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "161045", "code": "CPSC", "number": "502.06A", "faculty": "SC", "departments": ["CPSC"], "units": 0.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "160861", "code": "CPSC", "number": "502.06B", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "162552", "code": "CPSC", "number": "502.07", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": "Credit for both CPSC 502 and any of 503, ENSF 599 or 591 will not be allowed.", "coreq": null}
+{"cid": "162553", "code": "CPSC", "number": "502.07A", "faculty": "SC", "departments": ["CPSC"], "units": 0.0, "prereq": "Consent of the Department.", "antireq": "Credit for both CPSC 502 and any of 503, ENSF 599 or 591 will not be allowed.", "coreq": null}
+{"cid": "162552", "code": "CPSC", "number": "502.07B", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": "Credit for both CPSC 502 and any of 503, ENSF 599 or 591 will not be allowed.", "coreq": null}
+{"cid": "163311", "code": "CPSC", "number": "502.08", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": "Credit for CPSC 502 and any of 503, ENSF 599 or 591 will not be allowed.", "coreq": null}
+{"cid": "163312", "code": "CPSC", "number": "502.08A", "faculty": "SC", "departments": ["CPSC"], "units": 0.0, "prereq": "Consent of the Department.", "antireq": "Credit for CPSC 502 and any of 503, ENSF 599 or 591 will not be allowed.", "coreq": null}
+{"cid": "163311", "code": "CPSC", "number": "502.08B", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": "Credit for CPSC 502 and any of 503, ENSF 599 or 591 will not be allowed.", "coreq": null}
+{"cid": "162554", "code": "CPSC", "number": "503.01", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "Consent of the Department", "antireq": "Credit for both CPSC 503 and either 502 or ENSF 599 will not be allowed.", "coreq": null}
+{"cid": "162555", "code": "CPSC", "number": "503.02", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "Consent of the Department.", "antireq": "Credit for both CPSC 503 and either 502 or ENSF 599 will not be allowed.", "coreq": null}
+{"cid": "162556", "code": "CPSC", "number": "503.03", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "Consent of the Department.", "antireq": "Credit for both CPSC 503 and either 502 or ENSF 599 will not be allowed.", "coreq": null}
+{"cid": "162557", "code": "CPSC", "number": "503.04", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "Consent of the Department.", "antireq": "Credit for both CPSC 503 and either 502 or ENSF 599 will not be allowed.", "coreq": null}
+{"cid": "162558", "code": "CPSC", "number": "503.05", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "Consent of the Department.", "antireq": "Credit for both CPSC 503 and either 502 or ENSF 599 will not be allowed.", "coreq": null}
+{"cid": "162559", "code": "CPSC", "number": "503.06", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "Consent of the Department.", "antireq": "Credit for both CPSC 503 and either 502 or ENSF 599 will not be allowed.", "coreq": null}
+{"cid": "162560", "code": "CPSC", "number": "503.07", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "Consent of the Department.", "antireq": "Credit for both CPSC 503 and either 502 or ENSF 599 will not be allowed.", "coreq": null}
+{"cid": "163313", "code": "CPSC", "number": "503.08", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "Consent of the Department.", "antireq": "Credit for CPSC 503 and either 502 or ENSF 599 will not be allowed.", "coreq": null}
+{"cid": "165337", "code": "CPSC", "number": "505", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 413 and 449.", "antireq": "Credit for CPSC 505 and either 601.40 or 604 will not be allowed.", "coreq": null}
+{"cid": "107257", "code": "CPSC", "number": "511", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 413.", "antireq": "Credit for CPSC 511 and 611 will not be allowed.", "coreq": null}
+{"cid": "107260", "code": "CPSC", "number": "513", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 313 or 351.", "antireq": null, "coreq": null}
+{"cid": "107262", "code": "CPSC", "number": "517", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 413.", "antireq": null, "coreq": null}
+{"cid": "107263", "code": "CPSC", "number": "518", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 413; and MATH 211 or 213.", "antireq": "Credit for CPSC 518 and CPSC 667 will not be allowed.", "coreq": null}
+{"cid": "107264", "code": "CPSC", "number": "519", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 413; and MATH 311 or 313.", "antireq": "Credit for CPSC 519 and CPSC 619 will not be allowed.", "coreq": null}
+{"cid": "160862", "code": "CPSC", "number": "521", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 313 or 351; and CPSC 349 or 449.", "antireq": null, "coreq": null}
+{"cid": "161902", "code": "CPSC", "number": "522", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 413.", "antireq": "Credit for CPSC 522 and 622 will not be allowed.", "coreq": null}
+{"cid": "161620", "code": "CPSC", "number": "525", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 457; and 3 units from CPSC 351, MATH 271 or 273.", "antireq": "Credit for CPSC 525 and either 529 or 625 will not be allowed.", "coreq": null}
+{"cid": "161621", "code": "CPSC", "number": "526", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 441.", "antireq": "Credit for CPSC 526 and either 529 or 626 will not be allowed.", "coreq": null}
+{"cid": "107269", "code": "CPSC", "number": "527", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 313 and 457 and consent of the Department.", "antireq": "Credit for CPSC 527 and 627 will not be allowed.", "coreq": null}
+{"cid": "107270", "code": "CPSC", "number": "528", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 313 and 457 and consent of the Department.", "antireq": "Credit for CPSC 528 and 628 will not be allowed.", "coreq": null}
+{"cid": "161622", "code": "CPSC", "number": "530", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 351; or 3 units from CPSC 219, 233 or 235 and 3 units from MATH 271, 273, 315 and 3 units from STAT 205, 213, 321.", "antireq": "Credit for CPSC 530 and 630 will not be allowed.", "coreq": null}
+{"cid": "107271", "code": "CPSC", "number": "531", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 457 and 3 units from MATH 321, STAT 205, 211, 213 or 321.", "antireq": null, "coreq": null}
+{"cid": "107273", "code": "CPSC", "number": "535", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "One of MATH 311, 313, 353, AMAT 307, 311, PMAT 331.", "antireq": "Credit for CPSC 535 and 635 will not be allowed.", "coreq": null}
+{"cid": "165061", "code": "CPSC", "number": "544", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 433", "antireq": "Credit for Computer Science 5xx and CPSC 599.44 will not be allowed.", "coreq": null}
+{"cid": "107275", "code": "CPSC", "number": "550", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "CPSC 441, 457 and consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "107276", "code": "CPSC", "number": "550A", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "CPSC 441, 457 and consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "107275", "code": "CPSC", "number": "550B", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "CPSC 441, 457 and consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "165373", "code": "CPSC", "number": "556", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "3 units from CPSC 319, 331, or DATA 311.", "antireq": "Credit for CPSC 556 and 656 will not be allowed.", "coreq": null}
+{"cid": "107283", "code": "CPSC", "number": "559", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 441 and 457.", "antireq": null, "coreq": null}
+{"cid": "107289", "code": "CPSC", "number": "561", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 413.", "antireq": "Credit for CPSC 561 and 661 will not be allowed.", "coreq": null}
+{"cid": "107290", "code": "CPSC", "number": "565", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 217 or 231 or DATA 211 and 6 units offered by the Faculty of Science at the 400 level or above.", "antireq": null, "coreq": null}
+{"cid": "107291", "code": "CPSC", "number": "567", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 457 and 433.", "antireq": "Credit for CPSC 567 and 609 or SENG 697 will not be allowed.", "coreq": null}
+{"cid": "161623", "code": "CPSC", "number": "568", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 433 and consent of the Department.", "antireq": "Credit for CPSC 568 and 662 will not be allowed.", "coreq": null}
+{"cid": "107292", "code": "CPSC", "number": "571", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 471.", "antireq": "Credit for CPSC 571 and 671 will not be allowed.", "coreq": null}
+{"cid": "162561", "code": "CPSC", "number": "572", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 471 or DATA 311.", "antireq": "Credit for CPSC 572 and either 599.77 and 672 will not be allowed.", "coreq": null}
+{"cid": "165338", "code": "CPSC", "number": "573", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "3 units from CPSC 319, 331 or DATA 311.", "antireq": "Credit for CPSC 573 and 599.87 will not be allowed.", "coreq": null}
+{"cid": "164012", "code": "CPSC", "number": "575", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "SENG 300, 301, or DATA 311.", "antireq": null, "coreq": null}
+{"cid": "164011", "code": "CPSC", "number": "577", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "3 units from CPSC 319, 331 or DATA 311.", "antireq": "CPSC 697.", "coreq": null}
+{"cid": "107293", "code": "CPSC", "number": "581", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 481 and consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "161196", "code": "CPSC", "number": "583", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "3 units from CPSC 319, 331 or DATA 311.", "antireq": null, "coreq": null}
+{"cid": "161624", "code": "CPSC", "number": "584", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 481.", "antireq": null, "coreq": null}
+{"cid": "107294", "code": "CPSC", "number": "585", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": null, "antireq": null, "coreq": null}
+{"cid": "107295", "code": "CPSC", "number": "587", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 453.", "antireq": "Credit for CPSC 587 and 687 will not be allowed.", "coreq": null}
+{"cid": "107296", "code": "CPSC", "number": "589", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 453.", "antireq": "Credit for CPSC 589 and 689 will not be allowed.", "coreq": null}
+{"cid": "107300", "code": "CPSC", "number": "591", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "CPSC 453.", "antireq": "Credit for CPSC 591 and 691 will not be allowed.", "coreq": null}
+{"cid": "107302", "code": "CPSC", "number": "594", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "107303", "code": "CPSC", "number": "594A", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "107302", "code": "CPSC", "number": "594B", "faculty": "SC", "departments": ["CPSC"], "units": 6.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "160432", "code": "CPSC", "number": "598", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "160433", "code": "CPSC", "number": "598A", "faculty": "SC", "departments": ["CPSC"], "units": 0.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "160432", "code": "CPSC", "number": "598B", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "150074", "code": "CPSC", "number": "599", "faculty": "SC", "departments": ["CPSC"], "units": 999.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "160776", "code": "CPSC", "number": "599A", "faculty": "SC", "departments": ["CPSC"], "units": 999.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "150074", "code": "CPSC", "number": "599B", "faculty": "SC", "departments": ["CPSC"], "units": 999.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
