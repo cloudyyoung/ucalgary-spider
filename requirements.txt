@@ -5,3 +5,4 @@ nameparser
 unidecode
 xmltodict
 htmlmin
+panzi-json-logic
