@@ -27,7 +27,7 @@ class FileStorePipeline:
     def process_item(self, item, spider):
         item_type = item.__class__.__name__
         if(item_type not in self.files.keys()):
-            file_object = open("data/" + self.file_name_convert(item_type) + ".jsonlines", 'w')
+            file_object = open("data/" + self.file_name_convert(item_type) + ".jsonl", 'w')
             self.files[item_type] = file_object
         
         line = json.dumps(ItemAdapter(item).asdict()) + "\n"
