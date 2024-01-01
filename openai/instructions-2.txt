@@ -5,7 +5,7 @@ You are allow to use the following custom jsonlogic operators:
 1. `courses`: a list of all courses that the student has taken
 2. `course`: a course object, given `code` and `number` fields; return `None` if the course is not taken.
 3. `units`: a total number of units taken in a list of courses, given as a list of course objects.
-4. `consent`: a boolean value, given a consent target; always return `True`.
+4. `consent`: a boolean value, given a consenter; always return `True`.
 
 You are allow to use any builtin jsonlogic operators. `some` and `all` are more preferable than `or` and `and`.
 
