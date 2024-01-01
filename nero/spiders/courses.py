@@ -4,7 +4,7 @@ from nero.items import CourseInfo
 
 
 class QuotesSpider(Spider):
-    name = "course-info"
+    name = "courses"
 
     def start_requests(self):
         base_url = "https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses/search/$filters?catalogId=SGrVclL1qqlruuZrIFIi&skip={skip}&limit={limit}&orderBy=code&formatDependents=true&effectiveDatesRange=2024-06-21,2024-06-30"
