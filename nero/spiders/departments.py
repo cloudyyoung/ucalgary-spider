@@ -1,6 +1,6 @@
 import json
 from scrapy import Spider, Request
-from nero.items import Department
+from nero.items import Department, Faculty
 
 
 class DepartmentsSpider(Spider):
@@ -28,9 +28,20 @@ class DepartmentsSpider(Spider):
 
             active = department["status"] == "Active"
 
-            yield Department(
-                id=id,
-                name=name,
-                display_name=display_name,
-                active=active,
-            )
+            if len(id) == 2:
+                # Two letters code is a faculty
+                yield Faculty(
+                    id=id,
+                    name=name,
+                    display_name=display_name,
+                    active=active,
+                )
+
+            else:
+                #  Four letters code is a department
+                yield Department(
+                    id=id,
+                    name=name,
+                    display_name=display_name,
+                    active=active,
+                )

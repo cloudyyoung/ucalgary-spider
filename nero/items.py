@@ -46,16 +46,11 @@ class Course(scrapy.Item):
 
 
 class Faculty(scrapy.Item):
-    fid = scrapy.Field(serializer=int)
-    code = scrapy.Field()
-    title = scrapy.Field()
+    id = scrapy.Field()
 
-    phones = scrapy.Field()
-    rooms = scrapy.Field()
-    email = scrapy.Field()
-    website = scrapy.Field()
-
-    aka = scrapy.Field()
+    name = scrapy.Field()
+    display_name = scrapy.Field()
+    active = scrapy.Field(serializer=bool)
 
 
 class Department(scrapy.Item):

@@ -10,7 +10,6 @@
 {"id": "MDBT", "name": "Biomedical Technology; Department of", "display_name": "Biomedical Technology", "active": true}
 {"id": "CAAP", "name": "Campus Alberta Applied Psychology", "display_name": "Campus Alberta Appl Psyc", "active": true}
 {"id": "MDCV", "name": "Cardiovascular/Respiratory Sciences; Dept of", "display_name": "Cardiovascular/Respiratory Sciences", "active": true}
-{"id": "CS", "name": "Career Services", "display_name": "Career Services (O)", "active": true}
 {"id": "CMSS", "name": "Military & Strategic Studies; Centre for", "display_name": "Centre for Military and Strategic Studies", "active": true}
 {"id": "ENCP", "name": "Chemical & Petroleum Engineering; Dept of", "display_name": "Chemical and Petroleum Engineering", "active": true}
 {"id": "CHEM", "name": "Chemistry; Department of", "display_name": "Chemistry", "active": true}
@@ -26,7 +25,6 @@
 {"id": "CMD", "name": "Computational Media Design", "display_name": "Computational Media Design", "active": true}
 {"id": "CPSC", "name": "Computer Science; Department of", "display_name": "Computer Science", "active": true}
 {"id": "CUSP", "name": "Culture and Society; Department of", "display_name": "Culture and Society (D)", "active": true}
-{"id": "MD", "name": "Cumming School of Medicine", "display_name": "Cumming School of Medicine", "active": true}
 {"id": "ANTH", "name": "Department of Anthropology", "display_name": "Dept of Anthropology", "active": true}
 {"id": "DRAD", "name": "Diagnostic Radiology; Department of", "display_name": "Diagnostic Radiology", "active": true}
 {"id": "ERTH", "name": "Earth, Energy, and Environment; Department of", "display_name": "Earth, Energy, and Environment", "active": true}
@@ -38,18 +36,8 @@
 {"id": "EMER", "name": "Emergency Medicine; Department of", "display_name": "Emergency Medicine", "active": true}
 {"id": "ENGL", "name": "English; Department of", "display_name": "English", "active": true}
 {"id": "ELFP", "name": "English Language Foundation Program", "display_name": "English Language Foundation Program", "active": true}
-{"id": "CC", "name": "Faculty of Communication and Culture", "display_name": "Fac of Communication&Culture", "active": true}
-{"id": "AR", "name": "Faculty of Arts", "display_name": "Faculty of Arts", "active": true}
-{"id": "GS", "name": "Faculty of Graduate Studies", "display_name": "Faculty of Graduate Studies", "active": true}
-{"id": "KN", "name": "Faculty of Kinesiology", "display_name": "Faculty of Kinesiology", "active": true}
-{"id": "LA", "name": "Faculty of Law", "display_name": "Faculty of Law", "active": true}
-{"id": "NU", "name": "Faculty of Nursing", "display_name": "Faculty of Nursing", "active": true}
-{"id": "SC", "name": "Faculty of Science", "display_name": "Faculty of Science", "active": true}
-{"id": "SW", "name": "Faculty of Social Work", "display_name": "Faculty of Social Work", "active": true}
-{"id": "VM", "name": "Faculty of Veterinary Medicine", "display_name": "Faculty of Veterinary Medicine", "active": true}
 {"id": "FAME", "name": "Family Medicine; Department of", "display_name": "Family Medicine", "active": true}
 {"id": "FAPR", "name": "Family Practice; Department of", "display_name": "Family Practice", "active": true}
-{"id": "FA", "name": "Faculty of Fine Arts", "display_name": "Fine Arts (F)", "active": true}
 {"id": "FISL", "name": "Italian & Spanish; Dept of French", "display_name": "French Ital & Span (D)", "active": true}
 {"id": "MDGI", "name": "Gastrointestinal Sciences; Dept of", "display_name": "Gastrointestinal Scie", "active": true}
 {"id": "GEOG", "name": "Geography; Department of", "display_name": "Geography", "active": true}
@@ -58,14 +46,11 @@
 {"id": "COMS", "name": "Graduate Program in Communications Studies", "display_name": "Grad Prog Communications Study", "active": true}
 {"id": "GSE", "name": "Graduate Science Education Office", "display_name": "Graduate Science Education (O)", "active": true}
 {"id": "GYNE", "name": "Gynaecology; Department of", "display_name": "Gynaecology", "active": true}
-{"id": "HA", "name": "Haskayne School of Business", "display_name": "Haskayne School of Business", "active": true}
 {"id": "HSOC", "name": "Health Sciences; Department of", "display_name": "Health Sciences", "active": true}
 {"id": "HIST", "name": "History; Department of", "display_name": "History", "active": true}
-{"id": "HU", "name": "Faculty of Humanities", "display_name": "Humanities (F)", "active": true}
 {"id": "MDIM", "name": "Immunology; Department of", "display_name": "Immunology", "active": true}
 {"id": "IGP", "name": "Interdisciplinary Graduate Program", "display_name": "Interdisciplinary Graduate Program", "active": true}
 {"id": "INTE", "name": "Internal Medicine; Department of", "display_name": "Internal Medicine", "active": true}
-{"id": "IS", "name": "International Students and Study Abroad; Centre fo", "display_name": "International Students (C)", "active": true}
 {"id": "MTST", "name": "Mathematics & Statistics; Department of", "display_name": "Mathematics and Statistics", "active": true}
 {"id": "ENMF", "name": "Mechanical & Manufacturing Engineering; Dept of", "display_name": "Mechanical and Manufacturing Engineering", "active": true}
 {"id": "MEDG", "name": "Medical Genetics; Department of", "display_name": "Medical Genetics ", "active": true}
@@ -77,7 +62,6 @@
 {"id": "NUMD", "name": "Nuclear Medicine; Department of", "display_name": "Nuclear Medicine", "active": true}
 {"id": "OBGY", "name": "Obstetrics and Gynaecology; Department of", "display_name": "Obstetrics and Gynaecology", "active": true}
 {"id": "ONCO", "name": "Oncology; Department of", "display_name": "Oncology", "active": true}
-{"id": "OS", "name": "Open Studies Programs", "display_name": "Open Studies", "active": true}
 {"id": "OPTH", "name": "Opthalmology; Department of", "display_name": "Opthalmology", "active": true}
 {"id": "OTOL", "name": "Otolaryngology; Department of", "display_name": "Otolaryngology", "active": true}
 {"id": "PAED", "name": "Paediatrics; Department of", "display_name": "Paediatrics", "active": true}
@@ -86,21 +70,15 @@
 {"id": "PHIL", "name": "Philosophy; Department of", "display_name": "Philosophy", "active": true}
 {"id": "PHAS", "name": "Physics & Astronomy; Department of", "display_name": "Physics and Astronomy ", "active": true}
 {"id": "POLI", "name": "Political Science; Department of", "display_name": "Political Science", "active": true}
-{"id": "PD", "name": "Office of Post Degree Continuous Learning", "display_name": "Post Degree Cont Learning (O)", "active": true}
 {"id": "PSRI", "name": "Pre-Specialty Rotating Internship", "display_name": "Pre-Specialty Rotating Intern", "active": true}
 {"id": "PSYT", "name": "Psychiatry; Department of", "display_name": "Psychiatry", "active": true}
 {"id": "PSYC", "name": "Psychology; Department of", "display_name": "Psychology", "active": true}
-{"id": "QA", "name": "University of Calgary - Qatar", "display_name": "Qatar Faculty", "active": true}
 {"id": "RAON", "name": "Radiation Oncology; Department of", "display_name": "Radiation Oncology", "active": true}
 {"id": "RADI", "name": "Radiology; Department of", "display_name": "Radiology", "active": true}
 {"id": "ADM", "name": "Recruitment and Admissions", "display_name": "Recruitment & Admissions (O)", "active": true}
-{"id": "RO", "name": "Registrar; Office of the", "display_name": "Registrar (O)", "active": true}
-{"id": "EV", "name": "School of Architecture, Planning and Landscape", "display_name": "School of Architecture, Planning and Landscape", "active": true}
 {"id": "SCPA", "name": "Creative and Performing Arts; School of", "display_name": "School of Creative and Performing Arts", "active": true}
 {"id": "LLLC", "name": "Languages, Ling, Literatures & Cultures; School of", "display_name": "School of Languages, Linguistics, Literatures and Cultures", "active": true}
 {"id": "PPOL", "name": "Public Policy; School of", "display_name": "School of Public Policy", "active": true}
-{"id": "EN", "name": "Schulich School of Engineering", "display_name": "Schulich School of Engineering", "active": true}
-{"id": "SS", "name": "Faculty of Social Sciences", "display_name": "Social Sciences (F)", "active": true}
 {"id": "SOCI", "name": "Sociology; Department of", "display_name": "Sociology", "active": true}
 {"id": "SPEC", "name": "Special", "display_name": "Special", "active": true}
 {"id": "SAFA", "name": "Student Awards and Financial Aid", "display_name": "Student Awards & Financial Aid", "active": true}
@@ -109,7 +87,5 @@
 {"id": "EDTP", "name": "Teacher Preparation; Division of", "display_name": "Teacher Preparation (DV)", "active": true}
 {"id": "UME", "name": "Undergraduate Medical Education Office", "display_name": "Undergraduate Medical Education Office", "active": true}
 {"id": "UBG", "name": "University Biochemistry Group", "display_name": "University Biochemistry Group", "active": true}
-{"id": "UC", "name": "University College", "display_name": "University College", "active": true}
 {"id": "UCALG", "name": "University of Calgary", "display_name": "University of Calgary (O)", "active": true}
 {"id": "UPGR", "name": "Upgrading", "display_name": "Upgrading (O)", "active": true}
-{"id": "ED", "name": "Werklund School of Education", "display_name": "Werklund School of Education", "active": true}
