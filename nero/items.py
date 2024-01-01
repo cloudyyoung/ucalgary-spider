@@ -59,17 +59,11 @@ class Faculty(scrapy.Item):
 
 
 class Department(scrapy.Item):
-    did = scrapy.Field(serializer=int)
-    code = scrapy.Field()
-    title = scrapy.Field()
+    id = scrapy.Field()
 
-    phones = scrapy.Field()
-    rooms = scrapy.Field()
-    email = scrapy.Field()
-    website = scrapy.Field()
-
-    aka = scrapy.Field()
-    fid = scrapy.Field(serialize=int)
+    name = scrapy.Field()
+    display_name = scrapy.Field()
+    active = scrapy.Field(serializer=bool)
 
 
 class Program(scrapy.Item):
@@ -91,6 +85,7 @@ class Program(scrapy.Item):
     requisites = scrapy.Field(serializer=json.dumps)
 
     version = scrapy.Field(serializer=int)
+    active = scrapy.Field(serializer=bool)
 
 
 class Staff(scrapy.Item):

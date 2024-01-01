@@ -49,6 +49,7 @@ class ProgramsSpider(Spider):
             transcript_description = program["transcriptDescription"]
             requisites = program["requisites"]
             version = program["version"]
+            active = program["status"] == "Active"
 
             yield Program(
                 coursedog_id=coursedog_id,
@@ -64,6 +65,7 @@ class ProgramsSpider(Spider):
                 transcript_description=transcript_description,
                 requisites=requisites,
                 version=version,
+                active=active,
             )
 
 
