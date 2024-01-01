@@ -65,3 +65,18 @@ class ProgramsSpider(Spider):
                 requisites=requisites,
                 version=version,
             )
+
+
+REQUEST_BODY = {
+    "condition": "and",
+    "filters": [
+        {
+            "id": "status-course",
+            "name": "status",
+            "inputType": "select",
+            "group": "course",
+            "type": "doesNotContain",
+            "value": "Inactive",
+        },
+    ],
+}
