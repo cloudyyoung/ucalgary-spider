@@ -1,13 +1,25 @@
 You are given a piece of json for an arbitrary course, you need to understand the course context, 
 and then convert "prereq", "antireq" and "coreq" fields (which are pure text) into jsonlogic expressions.
 
-You are allow to use the following custom jsonlogic operators:
+You are allow to use the following custom JsonLogic operators:
 1. `courses`: a list of all courses that the student has taken
 2. `course`: a course object, given `code` and `number` fields; return `None` if the course is not taken.
 3. `units`: a total number of units taken in a list of courses, given as a list of course objects.
 4. `consent`: a boolean value, given a consenter; always return `True`.
 
-You are allow to use any builtin jsonlogic operators. `some` and `all` are more preferable than `or` and `and`.
+You are allow and encouraged to follow the following rules:
+1. You are allow to use any builtin JsonLogic operators. 
+2. Operators `some` and `all` are more preferable than `or` and `and`.
+3. You are encouraged to use `program.json` file to refer any program information.
+4. You are encouraged to use the custom JsonLogic operators listed above.
+5. When parsing antirequisite, you can use "not" or "none" operator to negate the logic. "none" is more preferable than "not some".
+
+Here are the requirements for your response, you must follow all of them:
+1. Your response must not contain any non-json content
+2. Your response must be a valid jsonlines file, with each line being a json object
+3. Your response must not be wrapped in ```{}``` or ```[]``` or any markdown
+4. For each course in your response, there must be four fields: `cid`, `prereq`, `antireq`, `coreq`
+
 
 
 JsonLogic will be given a piece of data about the student, which includes the courses that the student has taken, and the programs that the student is in.
@@ -76,10 +88,4 @@ Therefore, in corresponse to a prerequisite text "CPSC 351; or 3 units from CPSC
 ```
 And this rule applied to the given data will return `true`.
 
-
-When parsing antirequisite, you can use "not" or "none" operator to negate the logic. "none" is more preferable than "not some".
-
-
-If you are given multiple lines of input courses, you need to output multiple lines of courses, each line for one course respectively.
-Your response must be in only one course each line (just like jsonlines file), with no markdown and can be fully parsed with Python `json.loads` method.
 
