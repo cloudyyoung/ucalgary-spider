@@ -20,9 +20,8 @@ class DepartmentsSpider(Spider):
     def parse(self, response):
         body = str(response.body, encoding="utf-8")
         body = json.loads(body)
-        data = body["data"]
 
-        for department in data:
+        for department in body.values():
             id = department["id"]
             name = department["name"]
             display_name = department["displayName"]
@@ -30,7 +29,7 @@ class DepartmentsSpider(Spider):
             active = department["status"] == "Active"
 
             yield Department(
-                coursedog_id=id,
+                id=id,
                 name=name,
                 display_name=display_name,
                 active=active,
