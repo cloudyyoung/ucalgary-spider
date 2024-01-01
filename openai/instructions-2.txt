@@ -3,9 +3,10 @@ and then convert "prereq", "antireq" and "coreq" fields (which are pure text) in
 
 You are allow to use the following custom JsonLogic operators:
 1. `courses`: a list of all courses that the student has taken
-2. `course`: a course object, given `code` and `number` fields; return `None` if the course is not taken.
-3. `units`: a total number of units taken in a list of courses, given as a list of course objects.
-4. `consent`: a boolean value, given a consenter; always return `True`.
+2. `course`: a course object, given `code` and `number` fields, eg. course "CPSC 251" is converted to`{ "course": ["CPSC", "251] }`.
+3. `units`: a total number of units taken in a list of courses, given as a list of course objects, eg. `{ "units": [...] }`.
+4. `consent`: a boolean value, given a consenter; always return `True`, 
+4.1 Example: When a course offered by department of CPSC, and the requisite describes "Consent of the department", it is convert to `{ "consent": "CPSC" }`.
 
 You are allow and encouraged to follow the following rules:
 1. You are allow to use any builtin JsonLogic operators. 
@@ -21,24 +22,10 @@ Here are the requirements for your response, you must follow all of them:
 4. For each course in your response, there must be four fields: `cid`, `prereq`, `antireq`, `coreq`
 
 
+Sample input:
+"CPSC 351; or 3 units from CPSC 219, 233 or 235 and 3 units from MATH 271, 273, 315 and 3 units from STAT 205, 213, 321"
 
-JsonLogic will be given a piece of data about the student, which includes the courses that the student has taken, and the programs that the student is in.
-An example of the data for jsonlogic to test against looks like this:
-```json
-data = {
-    "courses": [
-        {"code": "CPSC", "number": "329", "gpv": 2.7, "semester": "W2023", "units": 3.0, "faculty": "SC - Faculty of Science", "departments": ["CPSC"]},
-        {"code": "CPSC", "number": "526", "gpv": 2.7, "semester": "F2023", "units": 6.0, "faculty": "SC - Faculty of Science", "departments": ["CPSC"]},
-        {"code": "MATH", "number": "313", "gpv": 2.7, "semester": "F2023", "units": 3.0, "faculty": "SC - Faculty of Science", "departments": ["CPSC"]},
-        {"code": "CPSC", "number": "219", "gpv": 2.7, "semester": "F2023", "units": 3.0, "faculty": "SC - Faculty of Science", "departments": ["CPSC"]},
-        {"code": "MATH", "number": "271", "gpv": 2.7, "semester": "F2023", "units": 3.0, "faculty": "SC - Faculty of Science", "departments": ["CPSC"]},
-        {"code": "STAT", "number": "205", "gpv": 2.7, "semester": "F2023", "units": 3.0, "faculty": "SC - Faculty of Science", "departments": ["CPSC"]},
-    ],
-    "programs": ["ANMEBAH", "SPAN-MIN"],
-}
-```
-
-Therefore, in corresponse to a prerequisite text "CPSC 351; or 3 units from CPSC 219, 233 or 235 and 3 units from MATH 271, 273, 315 and 3 units from STAT 205, 213, 321", your jsonlogic would look like this:
+Sample output:
 ```json
 {
     "some": [
@@ -86,6 +73,3 @@ Therefore, in corresponse to a prerequisite text "CPSC 351; or 3 units from CPSC
     ]
 }
 ```
-And this rule applied to the given data will return `true`.
-
-
