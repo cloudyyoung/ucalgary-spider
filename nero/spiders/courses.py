@@ -34,7 +34,7 @@ class CoursesSpider(Spider):
             name = course["name"]
             long_name = course["longName"]
 
-            faculty = course["college"]
+            faculty_code, faculty_full_name = self.process_faculty(course["college"])
             departments = course["departments"]
             career = course["career"]
 
@@ -58,7 +58,7 @@ class CoursesSpider(Spider):
                 number=number,
                 name=name,
                 long_name=long_name,
-                faculty=faculty,
+                faculty=faculty_code,
                 departments=departments,
                 career=career,
                 units=credits,
@@ -99,6 +99,13 @@ class CoursesSpider(Spider):
                 aka = t.replace(AKA_TEXT, "").strip()
 
         return (description, prereq, coreq, antireq, notes, aka)
+
+    def process_faculty(self, faculty):
+        if not faculty:
+            return (None, None)
+
+        code, full_name = faculty.split(" - ")
+        return (code, full_name)
 
 
 PREREQ_TEXT = "Prerequisite(s): "
