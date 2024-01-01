@@ -1,9 +1,9 @@
 import json
 from scrapy import Spider, Request
-from nero.items import CourseInfo
+from nero.items import Course
 
 
-class QuotesSpider(Spider):
+class CoursesSpider(Spider):
     name = "courses"
 
     def start_requests(self):
@@ -51,7 +51,7 @@ class QuotesSpider(Spider):
             repeatable = bool(course["credits"]["repeatable"])
             active = course["status"] == "Active"
 
-            yield CourseInfo(
+            yield Course(
                 cid=cid,
                 coursedog_id=coursedog_id,
                 code=code,

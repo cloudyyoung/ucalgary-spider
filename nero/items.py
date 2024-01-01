@@ -4,6 +4,7 @@
 # https://docs.scrapy.org/en/latest/topics/items.html
 
 import scrapy
+import json
 
 
 class CourseCode(scrapy.Item):
@@ -13,7 +14,7 @@ class CourseCode(scrapy.Item):
     year = scrapy.Field()
 
 
-class CourseInfo(scrapy.Item):
+class Course(scrapy.Item):
     cid = scrapy.Field(serializer=int)
     coursedog_id = scrapy.Field(serializer=int)
 
@@ -72,17 +73,24 @@ class Department(scrapy.Item):
 
 
 class Program(scrapy.Item):
-    pid = scrapy.Field(serializer=int)
+    coursedog_id = scrapy.Field()
+
     code = scrapy.Field()
-    title = scrapy.Field()
+    name = scrapy.Field()
+    long_name = scrapy.Field()
 
-    phones = scrapy.Field()
-    rooms = scrapy.Field()
-    email = scrapy.Field()
-    website = scrapy.Field()
+    type = scrapy.Field()
+    career = scrapy.Field()
+    departments = scrapy.Field(serializer=list)
 
-    aka = scrapy.Field()
-    did = scrapy.Field(serialize=int)
+    admission_info = scrapy.Field()
+    general_info = scrapy.Field()
+    transcript_level = scrapy.Field(serializer=int)
+    transcript_description = scrapy.Field()
+
+    requisites = scrapy.Field(serializer=json.dumps)
+
+    version = scrapy.Field(serializer=int)
 
 
 class Staff(scrapy.Item):
