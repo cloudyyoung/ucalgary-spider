@@ -32,7 +32,9 @@ class ProgramsSpider(Spider):
             code = program["code"]
             name = program["name"]
             long_name = program["longName"]
+            display_name = program["catalogDisplayName"]
             type = program["type"]
+            degree_designation = program["degreeDesignation"]
             career = program["career"]
             departments = program["departments"]
             admission_info = (
@@ -56,7 +58,9 @@ class ProgramsSpider(Spider):
                 code=code,
                 name=name,
                 long_name=long_name,
+                display_name=display_name,
                 type=type,
+                degree_designation=degree_designation,
                 career=career,
                 departments=departments,
                 admission_info=admission_info,

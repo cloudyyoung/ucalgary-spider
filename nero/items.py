@@ -67,8 +67,10 @@ class Program(scrapy.Item):
     code = scrapy.Field()
     name = scrapy.Field()
     long_name = scrapy.Field()
+    display_name = scrapy.Field()
 
     type = scrapy.Field()
+    degree_designation = scrapy.Field()
     career = scrapy.Field()
     departments = scrapy.Field(serializer=list)
 
