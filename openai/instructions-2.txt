@@ -10,7 +10,8 @@ You are allow to use the following custom jsonlogic operators:
 You are allow to use any builtin jsonlogic operators. `some` and `all` are more preferable than `or` and `and`.
 
 
-The shape of the data for jsonlogic to test against looks like this:
+JsonLogic will be given a piece of data about the student, which includes the courses that the student has taken, and the programs that the student is in.
+An example of the data for jsonlogic to test against looks like this:
 ```json
 data = {
     "courses": [
@@ -76,7 +77,9 @@ Therefore, in corresponse to a prerequisite text "CPSC 351; or 3 units from CPSC
 And this rule applied to the given data will return `true`.
 
 
+When parsing antirequisite, you can use "not" or "none" operator to negate the logic. "none" is more preferable than "not some".
 
-If you are given multiple lines of input jsons, you need to output multiple lines of jsons, respectively.
-Your response must be in only one or more json, with no markdown and can be fully parsed with Python `json.loads` method.
+
+If you are given multiple lines of input courses, you need to output multiple lines of courses, each line for one course respectively.
+Your response must be in only one course each line (just like jsonlines file), with no markdown and can be fully parsed with Python `json.loads` method.
 
