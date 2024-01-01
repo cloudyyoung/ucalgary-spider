@@ -1,6 +1,6 @@
 import json
 from scrapy import Spider, Request
-from nero.items import Course
+from nero.items import Program
 
 
 class ProgramsSpider(Spider):
@@ -26,7 +26,45 @@ class ProgramsSpider(Spider):
         data = body["data"]
 
         for program in data:
-            print(program)
+            custom_fields = program["customFields"]
+
+            coursedog_id = program["id"]
+            code = program["code"]
+            name = program["name"]
+            long_name = program["longName"]
+            type = program["type"]
+            career = program["career"]
+            departments = program["departments"]
+            admission_info = (
+                custom_fields["programAdmissionsInfo"]
+                if "programAdmissionsInfo" in custom_fields
+                else None
+            )
+            general_info = (
+                custom_fields["generalProgramInfo"]
+                if "generalProgramInfo" in custom_fields
+                else None
+            )
+            transcript_level = program["transcriptLevel"]
+            transcript_description = program["transcriptDescription"]
+            requisites = program["requisites"]
+            version = program["version"]
+
+            yield Program(
+                coursedog_id=coursedog_id,
+                code=code,
+                name=name,
+                long_name=long_name,
+                type=type,
+                career=career,
+                departments=departments,
+                admission_info=admission_info,
+                general_info=general_info,
+                transcript_level=transcript_level,
+                transcript_description=transcript_description,
+                requisites=requisites,
+                version=version,
+            )
 
     def process_description(self, description_full):
         description_full = description_full.replace("\n", "\n\n")
