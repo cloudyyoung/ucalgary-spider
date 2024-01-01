@@ -1,35 +1,77 @@
 You are given a piece of json for an arbitrary course, you need to understand the course context, 
 and then convert "prereq", "antireq" and "coreq" fields (which are pure text) into jsonlogic expressions.
 
-The shape of the data for jsonlogic looks like this:
+You are allow to use the following custom jsonlogic operators:
+1. `courses`: a list of all courses that the student has taken
+2. `course`: a course object, given `code` and `number` fields; return `None` if the course is not taken.
+3. `units`: a total number of units taken in a list of courses, given as a list of course objects.
+4. `consent`: a boolean value, given a consent target; always return `True`.
+
+You are allow to use any builtin jsonlogic operators. `some` and `all` are more preferable than `or` and `and`.
+
+
+The shape of the data for jsonlogic to test against looks like this:
 ```json
-{
+data = {
     "courses": [
-        { "code": "CPSC", "number": "329", "gpv": 2.7, "semester": "W2023" },
-        { "code": "CPSC", "number": "526", "gpv": 2.7, "semester": "F2023" },
-        { "code": "MATH", "number": "313", "gpv": 2.7, "semester": "F2023" }
+        {"code": "CPSC", "number": "329", "gpv": 2.7, "semester": "W2023", "units": 3.0, "faculty": "SC - Faculty of Science", "departments": ["CPSC"]},
+        {"code": "CPSC", "number": "526", "gpv": 2.7, "semester": "F2023", "units": 6.0, "faculty": "SC - Faculty of Science", "departments": ["CPSC"]},
+        {"code": "MATH", "number": "313", "gpv": 2.7, "semester": "F2023", "units": 3.0, "faculty": "SC - Faculty of Science", "departments": ["CPSC"]},
+        {"code": "CPSC", "number": "219", "gpv": 2.7, "semester": "F2023", "units": 3.0, "faculty": "SC - Faculty of Science", "departments": ["CPSC"]},
+        {"code": "MATH", "number": "271", "gpv": 2.7, "semester": "F2023", "units": 3.0, "faculty": "SC - Faculty of Science", "departments": ["CPSC"]},
+        {"code": "STAT", "number": "205", "gpv": 2.7, "semester": "F2023", "units": 3.0, "faculty": "SC - Faculty of Science", "departments": ["CPSC"]},
     ],
-    "programs": [
-        "ANMEBAH", "SPAN-MIN"
-    ]
+    "programs": ["ANMEBAH", "SPAN-MIN"],
 }
 ```
 
-Therefore, in corresponse to a prerequisite text "One of MATH 311, 313, 353, AMAT 307, 311, PMAT 331", your jsonlogic would look like this:
+Therefore, in corresponse to a prerequisite text "CPSC 351; or 3 units from CPSC 219, 233 or 235 and 3 units from MATH 271, 273, 315 and 3 units from STAT 205, 213, 321", your jsonlogic would look like this:
 ```json
 {
-  "some": [
-    { "var": "courses" },
-    {
-      "or": [
-        { "and": [{ "===": [{ "var": "code" }, "MATH"] }, { "in": [{ "var": "number" }, ["311", "313", "353"]] }] },
-        { "and": [{ "===": [{ "var": "code" }, "AMAT"] }, { "in": [{ "var": "number" }, ["307", "311"]] }] },
-        { "and": [{ "===": [{ "var": "code" }, "PMAT"] }, { "===": [{ "var": "number" }, "331"] }] }
-      ]
-    }
-  ]
+    "some": [
+        {"course": ["CPSC", "351"]},
+        {
+            "all": [
+                {
+                    ">=": [
+                        {
+                            "units": [
+                                {"course": ["CPSC", "219"]},
+                                {"course": ["CPSC", "233"]},
+                                {"course": ["CPSC", "235"]},
+                            ]
+                        },
+                        3,
+                    ]
+                },
+                {
+                    ">=": [
+                        {
+                            "units": [
+                                {"course": ["MATH", "271"]},
+                                {"course": ["MATH", "273"]},
+                                {"course": ["MATH", "315"]},
+                            ]
+                        },
+                        3,
+                    ]
+                },
+                {
+                    ">=": [
+                        {
+                            "units": [
+                                {"course": ["STAT", "205"]},
+                                {"course": ["STAT", "213"]},
+                                {"course": ["STAT", "321"]},
+                            ]
+                        },
+                        3,
+                    ]
+                },
+            ]
+        },
+    ]
 }
-
 ```
 And this rule applied to the given data will return `true`.
 
