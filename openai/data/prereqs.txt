@@ -106,3 +106,19 @@ Consent of the Department.
 Consent of the Department.
 Consent of the Department.
 Consent of the Department.
+DATA 201.
+CPSC 217 or 231.
+Consent of the Faculty.
+DATA 201; and 3 units from DATA 211, CPSC 217, 231 or 235; and 3 units from STAT 205, 217, 327, BIOL 315, ECON 395, POLI 399, PSYC 300, SOCI 311, ENGG 319, ENDG 319 or LING 560.
+DATA 201; and 3 units from DATA 211, CPSC 217, 231, 235, ENGG 233 or ENDG 233.
+DATA 305.
+Consent of the Faculty.
+DATA 221.
+CPSC 217, MATH 267 and 311.
+DATA 305 and CPSC 319.
+DATA 221 and CPSC 319.
+DATA 471.
+Consent of the Faculty.
+DATA 311 or CPSC 471; 3 units from DATA 305, STAT 323, BIOL 315, SOCI 315, ECON 395, LING 560, PSYC 301 or 312; and admission to the Data Science Minor.
+DATA 443.
+Consent of the Faculty.

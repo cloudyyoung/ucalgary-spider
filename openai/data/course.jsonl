@@ -111,3 +111,20 @@
 {"cid": "150074", "code": "CPSC", "number": "599", "faculty": "SC", "departments": ["CPSC"], "units": 999.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
 {"cid": "160776", "code": "CPSC", "number": "599A", "faculty": "SC", "departments": ["CPSC"], "units": 999.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
 {"cid": "150074", "code": "CPSC", "number": "599B", "faculty": "SC", "departments": ["CPSC"], "units": 999.0, "prereq": "Consent of the Department.", "antireq": null, "coreq": null}
+{"cid": "163972", "code": "DATA", "number": "201", "faculty": "SC", "departments": ["CPSC"], "units": 3.0, "prereq": null, "antireq": null, "coreq": null}
+{"cid": "163976", "code": "DATA", "number": "211", "faculty": "SC", "departments": ["SC"], "units": 3.0, "prereq": "DATA 201.", "antireq": "Credit for DATA 211 and any one of CPSC 215, 217, 231, 235, ENCM 339, ENGG 233 and ENDG 233 will not be allowed.", "coreq": null}
+{"cid": "165633", "code": "DATA", "number": "221", "faculty": "SC", "departments": ["SC"], "units": 3.0, "prereq": "CPSC 217 or 231.", "antireq": null, "coreq": null}
+{"cid": "165634", "code": "DATA", "number": "299", "faculty": "SC", "departments": ["SC"], "units": 999.0, "prereq": "Consent of the Faculty.", "antireq": null, "coreq": null}
+{"cid": "163975", "code": "DATA", "number": "305", "faculty": "SC", "departments": ["SC"], "units": 3.0, "prereq": "DATA 201; and 3 units from DATA 211, CPSC 217, 231 or 235; and 3 units from STAT 205, 217, 327, BIOL 315, ECON 395, POLI 399, PSYC 300, SOCI 311, ENGG 319, ENDG 319 or LING 560.", "antireq": "Credit for DATA 305 and STAT 323 will not be allowed.", "coreq": null}
+{"cid": "163977", "code": "DATA", "number": "311", "faculty": "SC", "departments": ["SC"], "units": 3.0, "prereq": "DATA 201; and 3 units from DATA 211, CPSC 217, 231, 235, ENGG 233 or ENDG 233.", "antireq": "Credit for DATA 311 and either CPSC 319 or 331 will not be allowed.", "coreq": null}
+{"cid": "165635", "code": "DATA", "number": "335", "faculty": "SC", "departments": ["SC"], "units": 3.0, "prereq": "DATA 305.", "antireq": null, "coreq": null}
+{"cid": "165636", "code": "DATA", "number": "399", "faculty": "SC", "departments": ["SC"], "units": 999.0, "prereq": "Consent of the Faculty.", "antireq": null, "coreq": null}
+{"cid": "165637", "code": "DATA", "number": "414", "faculty": "SC", "departments": ["SC"], "units": 3.0, "prereq": "DATA 221.", "antireq": "Credit for DATA 414 and PHIL 314 will not be allowed.", "coreq": null}
+{"cid": "165638", "code": "DATA", "number": "433", "faculty": "SC", "departments": ["SC"], "units": 3.0, "prereq": "CPSC 217, MATH 267 and 311.", "antireq": null, "coreq": null}
+{"cid": "165639", "code": "DATA", "number": "443", "faculty": "SC", "departments": ["SC"], "units": 3.0, "prereq": "DATA 305 and CPSC 319.", "antireq": "Credit for DATA 443 and CPSC 544 will not be allowed.", "coreq": null}
+{"cid": "165640", "code": "DATA", "number": "471", "faculty": "SC", "departments": ["SC"], "units": 3.0, "prereq": "DATA 221 and CPSC 319.", "antireq": null, "coreq": null}
+{"cid": "165641", "code": "DATA", "number": "479", "faculty": "SC", "departments": ["SC"], "units": 3.0, "prereq": "DATA 471.", "antireq": null, "coreq": null}
+{"cid": "165642", "code": "DATA", "number": "499", "faculty": "SC", "departments": ["SC"], "units": 999.0, "prereq": "Consent of the Faculty.", "antireq": null, "coreq": null}
+{"cid": "163978", "code": "DATA", "number": "501", "faculty": "SC", "departments": ["MTST"], "units": 3.0, "prereq": "DATA 311 or CPSC 471; 3 units from DATA 305, STAT 323, BIOL 315, SOCI 315, ECON 395, LING 560, PSYC 301 or 312; and admission to the Data Science Minor.", "antireq": null, "coreq": null}
+{"cid": "165679", "code": "DATA", "number": "543", "faculty": "SC", "departments": ["SC"], "units": 3.0, "prereq": "DATA 443.", "antireq": null, "coreq": null}
+{"cid": "165690", "code": "DATA", "number": "599", "faculty": "SC", "departments": ["SC"], "units": 999.0, "prereq": "Consent of the Faculty.", "antireq": null, "coreq": null}

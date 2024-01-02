@@ -55,3 +55,8 @@ CPSC 697.
 Credit for CPSC 587 and 687 will not be allowed.
 Credit for CPSC 589 and 689 will not be allowed.
 Credit for CPSC 591 and 691 will not be allowed.
+Credit for DATA 211 and any one of CPSC 215, 217, 231, 235, ENCM 339, ENGG 233 and ENDG 233 will not be allowed.
+Credit for DATA 305 and STAT 323 will not be allowed.
+Credit for DATA 311 and either CPSC 319 or 331 will not be allowed.
+Credit for DATA 414 and PHIL 314 will not be allowed.
+Credit for DATA 443 and CPSC 544 will not be allowed.
