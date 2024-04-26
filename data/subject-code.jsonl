@@ -1,0 +1,167 @@
+{"code": "ARCH", "title": "Architecture"}
+{"code": "ACWR", "title": "Academic Writing"}
+{"code": "ARHI", "title": "Art History"}
+{"code": "EAST", "title": "East Asian Studies"}
+{"code": "ECOL", "title": "Ecology"}
+{"code": "EDPS", "title": "Educational Psychology"}
+{"code": "ENEE", "title": "Energy and Environment, Engineering"}
+{"code": "GERM", "title": "German"}
+{"code": "HSOC", "title": "Health and Society"}
+{"code": "INDL", "title": "Indigenous Languages"}
+{"code": "JPNS", "title": "Japanese"}
+{"code": "LATI", "title": "Latin"}
+{"code": "LWSO", "title": "Law and Society"}
+{"code": "MATH", "title": "Mathematics"}
+{"code": "MDPH", "title": "Medical Physics"}
+{"code": "REAL", "title": "Real Estate Studies"}
+{"code": "SOWK", "title": "Social Work"}
+{"code": "BCEM", "title": "Biochemistry"}
+{"code": "CPSC", "title": "Computer Science"}
+{"code": "DEST", "title": "Global Development Studies"}
+{"code": "DRAM", "title": "Drama"}
+{"code": "DSGN", "title": "Design"}
+{"code": "ENAE", "title": "Aerospace Engineering"}
+{"code": "ENCH", "title": "Chemical Engineering"}
+{"code": "ENFD", "title": "Engineering Foundations"}
+{"code": "ENSF", "title": "Software Engineering for Engineers"}
+{"code": "FREN", "title": "French"}
+{"code": "LEAD", "title": "Leadership Studies"}
+{"code": "MRSC", "title": "Marine Science"}
+{"code": "MUPF", "title": "Music Performance"}
+{"code": "OBHR", "title": "Organizational Behaviour and Human Resources"}
+{"code": "PLMA", "title": "Professional Land Management"}
+{"code": "SCMA", "title": "Supply Chain Management"}
+{"code": "STAT", "title": "Statistics"}
+{"code": "ACCT", "title": "Accounting"}
+{"code": "ANTH", "title": "Anthropology"}
+{"code": "APLA", "title": "Architecture, Planning and Landscape"}
+{"code": "ARTS", "title": "Arts"}
+{"code": "BTMA", "title": "Business Technology Management"}
+{"code": "CMDA", "title": "Computational Media Design"}
+{"code": "EDUC", "title": "Education"}
+{"code": "ENCM", "title": "Computer Engineering"}
+{"code": "ENGO", "title": "Geomatics Engineering"}
+{"code": "FILM", "title": "Film"}
+{"code": "GOPH", "title": "Geophysics"}
+{"code": "INTR", "title": "International Relations"}
+{"code": "ISEC", "title": "Information Security and Privacy"}
+{"code": "KNES", "title": "Kinesiology"}
+{"code": "MDGE", "title": "Medical Graduate Education"}
+{"code": "MUED", "title": "Music Education"}
+{"code": "NEUR", "title": "Neuroscience"}
+{"code": "NURS", "title": "Nursing"}
+{"code": "PHYS", "title": "Physics"}
+{"code": "SEDV", "title": "Sustainable Energy Development"}
+{"code": "SUSE", "title": "Sustainable Systems Engineering"}
+{"code": "UBST", "title": "Urban Studies"}
+{"code": "UNEX", "title": "University Exchange"}
+{"code": "VETM", "title": "Veterinary Medicine"}
+{"code": "ASTR", "title": "Astronomy "}
+{"code": "BMEN", "title": "Biomedical Engineering"}
+{"code": "CMCL", "title": "Communication and Culture"}
+{"code": "EASC", "title": "Earth Science"}
+{"code": "ECON", "title": "Economics"}
+{"code": "EDBT", "title": "Education Bridge to Teaching"}
+{"code": "EESS", "title": "Energy and Environmental Systems"}
+{"code": "ENME", "title": "Mechanical Engineering"}
+{"code": "ENPE", "title": "Petroleum Engineering"}
+{"code": "ENTI", "title": "Entrepreneurship and Innovation"}
+{"code": "GLGY", "title": "Geology"}
+{"code": "GRST", "title": "Greek and Roman Studies"}
+{"code": "GSXS", "title": "Gender and Sexuality Studies"}
+{"code": "HTST", "title": "History"}
+{"code": "INNO", "title": "Innovation "}
+{"code": "LAND", "title": "Landscape Architecture"}
+{"code": "LANG", "title": "Language"}
+{"code": "MDCH", "title": "Community Health Sciences"}
+{"code": "MDCN", "title": "Medicine"}
+{"code": "MKTG", "title": "Marketing"}
+{"code": "MUSI", "title": "Music"}
+{"code": "RELS", "title": "Religious Studies"}
+{"code": "RUSS", "title": "Russian"}
+{"code": "SCPA", "title": "School of Creative and Performing Arts"}
+{"code": "SENG", "title": "Software Engineering"}
+{"code": "SPPH", "title": "Space Physics"}
+{"code": "WELL", "title": "Wellbeing"}
+{"code": "ALMC", "title": "Arabic Language and Muslim Cultures"}
+{"code": "ACSC", "title": "Actuarial Science"}
+{"code": "CEST", "title": "Central and East European Studies"}
+{"code": "CMMB", "title": "Cellular, Molecular and Microbial Biology"}
+{"code": "ENEN", "title": "Environmental Engineering"}
+{"code": "LAW", "title": "Law"}
+{"code": "MGST", "title": "Management Studies"}
+{"code": "MHST", "title": "Museum and Heritage Studies"}
+{"code": "PLBI", "title": "Plant Biology"}
+{"code": "SUST", "title": "Sustainability Studies"}
+{"code": "TAP", "title": "Term Abroad Program"}
+{"code": "TOUR", "title": "Tourism Management"}
+{"code": "ARKY", "title": "Archaeology "}
+{"code": "ENEL", "title": "Electrical Engineering"}
+{"code": "ENGL", "title": "English"}
+{"code": "ENSC", "title": "Environmental Science"}
+{"code": "FINA", "title": "Fine Arts"}
+{"code": "LING", "title": "Linguistics"}
+{"code": "MDSC", "title": "Medical Science"}
+{"code": "NANS", "title": "Nanoscience"}
+{"code": "PHIL", "title": "Philosophy"}
+{"code": "QUAC", "title": "Quantum Computing"}
+{"code": "SPAN", "title": "Spanish"}
+{"code": "AFST", "title": "African Studies"}
+{"code": "ART", "title": "Art"}
+{"code": "ASHA", "title": "Arts and Science Honours Academy"}
+{"code": "ASPH", "title": "Astrophysics"}
+{"code": "BIST", "title": "Biostatistics"}
+{"code": "CHEM", "title": "Chemistry"}
+{"code": "COOP", "title": "Co-operative Education"}
+{"code": "DATA", "title": "Data Science"}
+{"code": "EALS", "title": "East Asian Language Studies"}
+{"code": "ENCI", "title": "Civil Engineering"}
+{"code": "ENMF", "title": "Manufacturing Engineering"}
+{"code": "FNCE", "title": "Finance"}
+{"code": "GEOG", "title": "Geography"}
+{"code": "INDG", "title": "Indigenous Studies"}
+{"code": "INTE", "title": "Internship"}
+{"code": "ITAL", "title": "Italian"}
+{"code": "LAST", "title": "Latin American Studies"}
+{"code": "OPMA", "title": "Operations Management"}
+{"code": "PHEN", "title": "Physics Engineering"}
+{"code": "PLAN", "title": "Planning"}
+{"code": "PPOL", "title": "Public Policy"}
+{"code": "PSYC", "title": "Psychology"}
+{"code": "RMIN", "title": "Risk Management and Insurance"}
+{"code": "ROST", "title": "Romance Studies"}
+{"code": "SAST", "title": "South Asian Studies"}
+{"code": "SCIE", "title": "Science"}
+{"code": "SOCI", "title": "Sociology"}
+{"code": "UNIV", "title": "University"}
+{"code": "ASL", "title": "American Sign Language"}
+{"code": "BIOL", "title": "Biology"}
+{"code": "CHIN", "title": "Chinese"}
+{"code": "CNST", "title": "Canadian Studies"}
+{"code": "COMS", "title": "Communication and Media Studies"}
+{"code": "CORE", "title": "Community Rehabilitation"}
+{"code": "DNCE", "title": "Dance"}
+{"code": "EDER", "title": "Educational Research"}
+{"code": "ENDG", "title": "Digital Engineering"}
+{"code": "ENER", "title": "Energy Engineering"}
+{"code": "ENGG", "title": "Engineering"}
+{"code": "ENMG", "title": "Energy Management"}
+{"code": "GREK", "title": "Greek"}
+{"code": "IPHE", "title": "Interprofessional Health Education"}
+{"code": "LLAC", "title": "Languages, Literatures and Cultures"}
+{"code": "MDPR", "title": "Medical Precision Health"}
+{"code": "PLUR", "title": "Pluralism"}
+{"code": "POLI", "title": "Political Science"}
+{"code": "SGMA", "title": "Strategy and Global Management"}
+{"code": "SLAV", "title": "Slavic"}
+{"code": "STST", "title": "Strategic Studies"}
+{"code": "ZOOL", "title": "Zoology"}
+{"code": "BIMA", "title": "Business Intelligence and Management Analytics"}
+{"code": "ESCI", "title": "Energy Science"}
+{"code": "NRSG", "title": "Nursing"}
+{"code": "ERTH", "title": "Earth"}
+{"code": "MDBT", "title": "Medicine Biomedical Technology"}
+{"code": "MDPA", "title": "Medical Pathologists\u2019 Assistant "}
+{"code": "TDST", "title": "Transdisciplinary Studies"}
+{"code": "ENPH", "title": "Engineering Physics"}
+{"code": "LWFT", "title": "Law for Foreign Trained Lawyers"}

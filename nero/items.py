@@ -7,11 +7,9 @@ import scrapy
 import json
 
 
-class CourseCode(scrapy.Item):
+class SubjectCode(scrapy.Item):
     title = scrapy.Field()
     code = scrapy.Field()
-    faculty = scrapy.Field()
-    year = scrapy.Field()
 
 
 class Course(scrapy.Item):
