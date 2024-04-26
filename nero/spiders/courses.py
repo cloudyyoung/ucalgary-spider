@@ -62,7 +62,7 @@ class CoursesSpider(Spider):
                 departments=departments,
                 career=career,
                 units=credits,
-                credits=credits,
+                # credits=credits,
                 grade_mode=grade_mode,
                 components=components,
                 description=description,

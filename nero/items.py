@@ -28,7 +28,7 @@ class Course(scrapy.Item):
     career = scrapy.Field()
 
     units = scrapy.Field(serializer=float)
-    credits = scrapy.Field(serializer=float)
+    # credits = scrapy.Field(serializer=float)
     grade_mode = scrapy.Field()
     components = scrapy.Field(serializer=list)
 
