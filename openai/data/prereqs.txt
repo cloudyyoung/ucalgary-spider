@@ -1,124 +1,124 @@
-CPSC 217 or DATA 211.
-Admission to Computer Science, Bioinformatics, or Natural Science with a primary concentration in Computer Science.
-CPSC 231 and admission to Computer Science, Bioinformatics, or Natural Science with a primary concentration in Computer Science.
-Consent of the Department.
-CPSC 219 or 231.
-MATH 271 or 273; and PHIL 279 or 377; and 3 units from CPSC 219, 233 or 235.
-3 units from CPSC 219, 233, 235, ENCM 335, 339 or ENSF 337.
-MATH 30-1, MATH 30-2, or Mathematics 31.
-3 units from CPSC 251, MATH 271 or 273; and 3 units from CPSC 219, 233, 235, ENCM 335, 339 or ENSF 337.
-CPSC 319 or 331.
-3 units from CPSC 219, 233 or 235; and CPSC 251 or STAT 213; and MATH 271 or 273; and 3 units from MATH 249, 265 or 275; and PHIL 279 or 377.
-3 units from CPSC 219, 233 or 235.
-CPSC 355 and PHIL 279 or 377.
-CPSC 219, 233 or DATA 311 and enrolment in one of the Majors in Computer Science, Bioinformatics, Electrical Engineering, Software Engineering, Computer Engineering, Natural Sciences with a primary concentration in Computer Science.
-Consent of the Department.
-SENG 300 or 301.
-CPSC 355.
-CPSC 319 or 331; and CPSC 355 or ENCM 369.
-CPSC 331; and 313 or 351; and MATH 211 or 213; and 3 units from MATH 249, 265 or 275.
-CPSC 331 and 3 units from CPSC 351, MATH 271, 273, 315 or PMAT 315.
-CPSC 313 or 351; and PHIL 279 or 377.
-CPSC 319 or 331; and CPSC 355 or ENCM 369.
-CPSC 319 or 331; CPSC 313 or 351; and PHIL 279 or 377.
-CPSC 319 or 331; and MATH 211 or 213; and 3 units from MATH 253, 267, 277, 283 or AMAT 219.
-CPSC 319 or 331; and CPSC 355 or ENCM 369.
-CPSC 355 and one of 319 or 331.
-CPSC 319 or 331.
-3 units from SENG 300, 301, SENG 480 or DATA 311.
-CPSC 319 or 331; and MATH 211 or 213; and 3 units from MATH 249, 265 or 275.
-Consent of the Department.
-CPSC 349 or 449.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-CPSC 413 and 449.
-CPSC 413.
-CPSC 313 or 351.
-CPSC 413.
-CPSC 413; and MATH 211 or 213.
-CPSC 413; and MATH 311 or 313.
-CPSC 313 or 351; and CPSC 349 or 449.
-CPSC 413.
-CPSC 457; and 3 units from CPSC 351, MATH 271 or 273.
-CPSC 441.
-CPSC 313 and 457 and consent of the Department.
-CPSC 313 and 457 and consent of the Department.
-CPSC 351; or 3 units from CPSC 219, 233 or 235 and 3 units from MATH 271, 273, 315 and 3 units from STAT 205, 213, 321.
-CPSC 457 and 3 units from MATH 321, STAT 205, 211, 213 or 321.
-One of MATH 311, 313, 353, AMAT 307, 311, PMAT 331.
-CPSC 433
-CPSC 441, 457 and consent of the Department.
-CPSC 441, 457 and consent of the Department.
-CPSC 441, 457 and consent of the Department.
-3 units from CPSC 319, 331, or DATA 311.
-CPSC 441 and 457.
-CPSC 413.
-CPSC 217 or 231 or DATA 211 and 6 units offered by the Faculty of Science at the 400 level or above.
-CPSC 457 and 433.
-CPSC 433 and consent of the Department.
-CPSC 471.
-CPSC 471 or DATA 311.
-3 units from CPSC 319, 331 or DATA 311.
-SENG 300, 301, or DATA 311.
-3 units from CPSC 319, 331 or DATA 311.
-CPSC 481 and consent of the Department.
-3 units from CPSC 319, 331 or DATA 311.
-CPSC 481.
-CPSC 453.
-CPSC 453.
-CPSC 453.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-Consent of the Department.
-DATA 201.
-CPSC 217 or 231.
-Consent of the Faculty.
-DATA 201; and 3 units from DATA 211, CPSC 217, 231 or 235; and 3 units from STAT 205, 217, 327, BIOL 315, ECON 395, POLI 399, PSYC 300, SOCI 311, ENGG 319, ENDG 319 or LING 560.
-DATA 201; and 3 units from DATA 211, CPSC 217, 231, 235, ENGG 233 or ENDG 233.
-DATA 305.
-Consent of the Faculty.
-DATA 221.
-CPSC 217, MATH 267 and 311.
-DATA 305 and CPSC 319.
-DATA 221 and CPSC 319.
-DATA 471.
-Consent of the Faculty.
-DATA 311 or CPSC 471; 3 units from DATA 305, STAT 323, BIOL 315, SOCI 315, ECON 395, LING 560, PSYC 301 or 312; and admission to the Data Science Minor.
-DATA 443.
-Consent of the Faculty.
+CPSC 219: CPSC 217 or DATA 211.
+CPSC 231: Admission to Computer Science, Bioinformatics, or Natural Science with a primary concentration in Computer Science.
+CPSC 233: CPSC 231 and admission to Computer Science, Bioinformatics, or Natural Science with a primary concentration in Computer Science.
+CPSC 235: Consent of the Department.
+CPSC 251: CPSC 219 or 231.
+CPSC 313: MATH 271 or 273; and PHIL 279 or 377; and 3 units from CPSC 219, 233 or 235.
+CPSC 319: 3 units from CPSC 219, 233, 235, ENCM 335, 339 or ENSF 337.
+CPSC 329: MATH 30-1, MATH 30-2, or Mathematics 31.
+CPSC 331: 3 units from CPSC 251, MATH 271 or 273; and 3 units from CPSC 219, 233, 235, ENCM 335, 339 or ENSF 337.
+CPSC 335: CPSC 319 or 331.
+CPSC 351: 3 units from CPSC 219, 233 or 235; and CPSC 251 or STAT 213; and MATH 271 or 273; and 3 units from MATH 249, 265 or 275; and PHIL 279 or 377.
+CPSC 355: 3 units from CPSC 219, 233 or 235.
+CPSC 359: CPSC 355 and PHIL 279 or 377.
+CPSC 393: CPSC 219, 233 or DATA 311 and enrolment in one of the Majors in Computer Science, Bioinformatics, Electrical Engineering, Software Engineering, Computer Engineering, Natural Sciences with a primary concentration in Computer Science.
+CPSC 399: Consent of the Department.
+CPSC 405: SENG 300 or 301.
+CPSC 409: CPSC 355.
+CPSC 411: CPSC 319 or 331; and CPSC 355 or ENCM 369.
+CPSC 413: CPSC 331; and 313 or 351; and MATH 211 or 213; and 3 units from MATH 249, 265 or 275.
+CPSC 418: CPSC 331 and 3 units from CPSC 351, MATH 271, 273, 315 or PMAT 315.
+CPSC 433: CPSC 313 or 351; and PHIL 279 or 377.
+CPSC 441: CPSC 319 or 331; and CPSC 355 or ENCM 369.
+CPSC 449: CPSC 319 or 331; CPSC 313 or 351; and PHIL 279 or 377.
+CPSC 453: CPSC 319 or 331; and MATH 211 or 213; and 3 units from MATH 253, 267, 277, 283 or AMAT 219.
+CPSC 457: CPSC 319 or 331; and CPSC 355 or ENCM 369.
+CPSC 461: CPSC 355 and one of 319 or 331.
+CPSC 471: CPSC 319 or 331.
+CPSC 481: 3 units from SENG 300, 301, SENG 480 or DATA 311.
+CPSC 491: CPSC 319 or 331; and MATH 211 or 213; and 3 units from MATH 249, 265 or 275.
+CPSC 499: Consent of the Department.
+CPSC 501: CPSC 349 or 449.
+CPSC 502.01: Consent of the Department.
+CPSC 502.01A: Consent of the Department.
+CPSC 502.01B: Consent of the Department.
+CPSC 502.02: Consent of the Department.
+CPSC 502.02A: Consent of the Department.
+CPSC 502.02B: Consent of the Department.
+CPSC 502.03: Consent of the Department.
+CPSC 502.03A: Consent of the Department.
+CPSC 502.03B: Consent of the Department.
+CPSC 502.04: Consent of the Department.
+CPSC 502.04A: Consent of the Department.
+CPSC 502.04B: Consent of the Department.
+CPSC 502.05: Consent of the Department.
+CPSC 502.05A: Consent of the Department.
+CPSC 502.05B: Consent of the Department.
+CPSC 502.06: Consent of the Department.
+CPSC 502.06A: Consent of the Department.
+CPSC 502.06B: Consent of the Department.
+CPSC 502.07: Consent of the Department.
+CPSC 502.07A: Consent of the Department.
+CPSC 502.07B: Consent of the Department.
+CPSC 502.08: Consent of the Department.
+CPSC 502.08A: Consent of the Department.
+CPSC 502.08B: Consent of the Department.
+CPSC 503.01: Consent of the Department
+CPSC 503.02: Consent of the Department.
+CPSC 503.03: Consent of the Department.
+CPSC 503.04: Consent of the Department.
+CPSC 503.05: Consent of the Department.
+CPSC 503.06: Consent of the Department.
+CPSC 503.07: Consent of the Department.
+CPSC 503.08: Consent of the Department.
+CPSC 505: CPSC 413 and 449.
+CPSC 511: CPSC 413.
+CPSC 513: CPSC 313 or 351.
+CPSC 517: CPSC 413.
+CPSC 518: CPSC 413; and MATH 211 or 213.
+CPSC 519: CPSC 413; and MATH 311 or 313.
+CPSC 521: CPSC 313 or 351; and CPSC 349 or 449.
+CPSC 522: CPSC 413.
+CPSC 525: CPSC 457; and 3 units from CPSC 351, MATH 271 or 273.
+CPSC 526: CPSC 441.
+CPSC 527: CPSC 313 and 457 and consent of the Department.
+CPSC 528: CPSC 313 and 457 and consent of the Department.
+CPSC 530: CPSC 351; or 3 units from CPSC 219, 233 or 235 and 3 units from MATH 271, 273, 315 and 3 units from STAT 205, 213, 321.
+CPSC 531: CPSC 457 and 3 units from MATH 321, STAT 205, 211, 213 or 321.
+CPSC 535: One of MATH 311, 313, 353, AMAT 307, 311, PMAT 331.
+CPSC 544: CPSC 433
+CPSC 550: CPSC 441, 457 and consent of the Department.
+CPSC 550A: CPSC 441, 457 and consent of the Department.
+CPSC 550B: CPSC 441, 457 and consent of the Department.
+CPSC 556: 3 units from CPSC 319, 331, or DATA 311.
+CPSC 559: CPSC 441 and 457.
+CPSC 561: CPSC 413.
+CPSC 565: CPSC 217 or 231 or DATA 211 and 6 units offered by the Faculty of Science at the 400 level or above.
+CPSC 567: CPSC 457 and 433.
+CPSC 568: CPSC 433 and consent of the Department.
+CPSC 571: CPSC 471.
+CPSC 572: CPSC 471 or DATA 311.
+CPSC 573: 3 units from CPSC 319, 331 or DATA 311.
+CPSC 575: SENG 300, 301, or DATA 311.
+CPSC 577: 3 units from CPSC 319, 331 or DATA 311.
+CPSC 581: CPSC 481 and consent of the Department.
+CPSC 583: 3 units from CPSC 319, 331 or DATA 311.
+CPSC 584: CPSC 481.
+CPSC 587: CPSC 453.
+CPSC 589: CPSC 453.
+CPSC 591: CPSC 453.
+CPSC 594: Consent of the Department.
+CPSC 594A: Consent of the Department.
+CPSC 594B: Consent of the Department.
+CPSC 598: Consent of the Department.
+CPSC 598A: Consent of the Department.
+CPSC 598B: Consent of the Department.
+CPSC 599: Consent of the Department.
+CPSC 599A: Consent of the Department.
+CPSC 599B: Consent of the Department.
+DATA 211: DATA 201.
+DATA 221: CPSC 217 or 231.
+DATA 299: Consent of the Faculty.
+DATA 305: DATA 201; and 3 units from DATA 211, CPSC 217, 231 or 235; and 3 units from STAT 205, 217, 327, BIOL 315, ECON 395, POLI 399, PSYC 300, SOCI 311, ENGG 319, ENDG 319 or LING 560.
+DATA 311: DATA 201; and 3 units from DATA 211, CPSC 217, 231, 235, ENGG 233 or ENDG 233.
+DATA 335: DATA 305.
+DATA 399: Consent of the Faculty.
+DATA 414: DATA 221.
+DATA 433: CPSC 217, MATH 267 and 311.
+DATA 443: DATA 305 and CPSC 319.
+DATA 471: DATA 221 and CPSC 319.
+DATA 479: DATA 471.
+DATA 499: Consent of the Faculty.
+DATA 501: DATA 311 or CPSC 471; 3 units from DATA 305, STAT 323, BIOL 315, SOCI 315, ECON 395, LING 560, PSYC 301 or 312; and admission to the Data Science Minor.
+DATA 543: DATA 443.
+DATA 599: Consent of the Faculty.
