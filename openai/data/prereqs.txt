@@ -1,6 +1,6 @@
 The prerequisites for SENG 300 are: 3 units from CPSC 219, 233 or 235. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
 The prerequisites for SENG 401 are: 3 units from CPSC 319, 331 or ENSF 338; and 3 units from SENG 300, 301 or ENSF 480; and admission to the Schulich School of Engineering. This course is offered by the EN faculty in the ENEC department and is worth 3.0 units.
-The prerequisites for SENG 437 are: SENG 301 or Software Engineering for Engineers 480. This course is offered by the EN faculty in the ENEC department and is worth 3.0 units.
+The prerequisites for SENG 437 are: SENG 301 or ENSF 480. This course is offered by the EN faculty in the ENEC department and is worth 3.0 units.
 The prerequisites for SENG 438 are: 3 units from CPSC 319, 331 or ENSF 338; and 3 units from SENG 300, 301 or ENSF 480; and admission to the Schulich School of Engineering. This course is offered by the EN faculty in the CPSC department and is worth 3.0 units.
 The prerequisites for SENG 471 are: 3 units from CPSC 319, 331, ENSF 338 or 409; and admission to the Schulich School of Engineering. This course is offered by the EN faculty in the ENEC department and is worth 3.0 units.
 The prerequisites for SENG 499 are: Consent of either the Department of Electrical and Computer Engineering or the Department of Computer Science. This course is offered by the SC faculty in the CPSC department and is worth 999.0 units.

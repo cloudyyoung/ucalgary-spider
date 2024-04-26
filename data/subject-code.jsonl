@@ -56,7 +56,7 @@
 {"code": "UBST", "title": "Urban Studies"}
 {"code": "UNEX", "title": "University Exchange"}
 {"code": "VETM", "title": "Veterinary Medicine"}
-{"code": "ASTR", "title": "Astronomy "}
+{"code": "ASTR", "title": "Astronomy"}
 {"code": "BMEN", "title": "Biomedical Engineering"}
 {"code": "CMCL", "title": "Communication and Culture"}
 {"code": "EASC", "title": "Earth Science"}
@@ -70,7 +70,7 @@
 {"code": "GRST", "title": "Greek and Roman Studies"}
 {"code": "GSXS", "title": "Gender and Sexuality Studies"}
 {"code": "HTST", "title": "History"}
-{"code": "INNO", "title": "Innovation "}
+{"code": "INNO", "title": "Innovation"}
 {"code": "LAND", "title": "Landscape Architecture"}
 {"code": "LANG", "title": "Language"}
 {"code": "MDCH", "title": "Community Health Sciences"}
@@ -95,7 +95,7 @@
 {"code": "SUST", "title": "Sustainability Studies"}
 {"code": "TAP", "title": "Term Abroad Program"}
 {"code": "TOUR", "title": "Tourism Management"}
-{"code": "ARKY", "title": "Archaeology "}
+{"code": "ARKY", "title": "Archaeology"}
 {"code": "ENEL", "title": "Electrical Engineering"}
 {"code": "ENGL", "title": "English"}
 {"code": "ENSC", "title": "Environmental Science"}
@@ -161,7 +161,7 @@
 {"code": "NRSG", "title": "Nursing"}
 {"code": "ERTH", "title": "Earth"}
 {"code": "MDBT", "title": "Medicine Biomedical Technology"}
-{"code": "MDPA", "title": "Medical Pathologists\u2019 Assistant "}
+{"code": "MDPA", "title": "Medical Pathologists\u2019 Assistant"}
 {"code": "TDST", "title": "Transdisciplinary Studies"}
 {"code": "ENPH", "title": "Engineering Physics"}
 {"code": "LWFT", "title": "Law for Foreign Trained Lawyers"}
