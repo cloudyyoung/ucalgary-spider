@@ -1,62 +1,7 @@
-Not open for registration to Computer Science majors.
-Credit for CPSC 217 and any of 215, 231, 235, DATA 211, ENCM 339, ENGG 233 or ENDG 233 will not be allowed.
-Credit for CPSC 219 and any of 233, 235, ENEL 497 or ENCM 493 will not be allowed.
-Credit for CPSC 231 and any of CPSC 215, 217, 235, DATA 211, ENCM 339, ENGG 233, or ENDG 233 will not be allowed.
-Credit for CPSC 233 and any of 219, 235, ENEL 497 or ENCM 493 will not be allowed.
-Credit for CPSC 235 and any of 215, 217, 219, 231, 233, ENCM 339, 493 or DATA 211 will not be allowed.
-Students may not register in, or have credit for, CPSC 251 if they have previous credit for one of MATH 271 or 273 or are concurrently enrolled in MATH 271 or 273.
-Not open for registration to Majors in Computer Science, Bioinformatics, Electrical Engineering, Software Engineering, Computer Engineering, Natural Sciences with a primary concentration in Computer Science or any student with at least 3 units of courses numbered 300 or above and labelled Computer Science, Software Engineering or Software Engineering for Engineers.
-Credit for CPSC 313 and CPSC 351 will not be allowed.
-Credit for CPSC 319 and 331 will not be allowed. Computer Science majors are not permitted to register in this course.
-Credit for CPSC 331 and 319 will not be allowed.
-Credit for CPSC 351 and CPSC 313 will not be allowed.
-Credit for CPSC 355 and 265 or ENCM 369 will not be allowed.
-Credit for both CPSC 359 and any of 325, 455 or ENCM 415 will not be allowed.
-Credit for CPSC 405 and ENTI 415 will not be allowed.
-Credit for CPSC 418 and any of CPSC 429, 557, MATH 318, PMAT 329 or 418 will not be allowed.
-Credit for CPSC 441 and ENEL 573 will not be allowed.
-Credit for CPSC 449 and 349 will not be allowed.
-Credit for both CPSC 471 and MGIS 331 will not be allowed.
-Credit for CPSC 491 and any of MATH 391, 493 or ENGG 407. ENCH 407 or ENDG 407 will not be allowed.
-Credit for both CPSC 502 and any of 503, ENSF 599 or 591 will not be allowed.
-Credit for both CPSC 502 and any of 503, ENSF 599 or 591 will not be allowed.
-Credit for both CPSC 502 and any of 503, ENSF 599 or 591 will not be allowed.
-Credit for CPSC 502 and any of 503, ENSF 599 or 591 will not be allowed.
-Credit for CPSC 502 and any of 503, ENSF 599 or 591 will not be allowed.
-Credit for CPSC 502 and any of 503, ENSF 599 or 591 will not be allowed.
-Credit for both CPSC 503 and either 502 or ENSF 599 will not be allowed.
-Credit for both CPSC 503 and either 502 or ENSF 599 will not be allowed.
-Credit for both CPSC 503 and either 502 or ENSF 599 will not be allowed.
-Credit for both CPSC 503 and either 502 or ENSF 599 will not be allowed.
-Credit for both CPSC 503 and either 502 or ENSF 599 will not be allowed.
-Credit for both CPSC 503 and either 502 or ENSF 599 will not be allowed.
-Credit for both CPSC 503 and either 502 or ENSF 599 will not be allowed.
-Credit for CPSC 503 and either 502 or ENSF 599 will not be allowed.
-Credit for CPSC 505 and either 601.40 or 604 will not be allowed.
-Credit for CPSC 511 and 611 will not be allowed.
-Credit for CPSC 518 and CPSC 667 will not be allowed.
-Credit for CPSC 519 and CPSC 619 will not be allowed.
-Credit for CPSC 522 and 622 will not be allowed.
-Credit for CPSC 525 and either 529 or 625 will not be allowed.
-Credit for CPSC 526 and either 529 or 626 will not be allowed.
-Credit for CPSC 527 and 627 will not be allowed.
-Credit for CPSC 528 and 628 will not be allowed.
-Credit for CPSC 530 and 630 will not be allowed.
-Credit for CPSC 535 and 635 will not be allowed.
-Credit for Computer Science 5xx and CPSC 599.44 will not be allowed.
-Credit for CPSC 556 and 656 will not be allowed.
-Credit for CPSC 561 and 661 will not be allowed.
-Credit for CPSC 567 and 609 or SENG 697 will not be allowed.
-Credit for CPSC 568 and 662 will not be allowed.
-Credit for CPSC 571 and 671 will not be allowed.
-Credit for CPSC 572 and either 599.77 and 672 will not be allowed.
-Credit for CPSC 573 and 599.87 will not be allowed.
-CPSC 697.
-Credit for CPSC 587 and 687 will not be allowed.
-Credit for CPSC 589 and 689 will not be allowed.
-Credit for CPSC 591 and 691 will not be allowed.
-Credit for DATA 211 and any one of CPSC 215, 217, 231, 235, ENCM 339, ENGG 233 and ENDG 233 will not be allowed.
-Credit for DATA 305 and STAT 323 will not be allowed.
-Credit for DATA 311 and either CPSC 319 or 331 will not be allowed.
-Credit for DATA 414 and PHIL 314 will not be allowed.
-Credit for DATA 443 and CPSC 544 will not be allowed.
+Credit for SENG 300 and any of SENG 301, 311, 403, 411, CPSC 301, 333, 451 or ENSF 480 will not be allowed.
+Credit for SENG 401 and 443 will not be allowed.
+Credit for SENG 438 and either SENG 437 or 521 will not be allowed.
+Credit for SENG 511 and ENGG 515 will not be allowed.
+Credit for both SENG 521 and 637 will not be allowed.
+Credit for SENG 541 and 641 will not be allowed.
+Credit for SENG 550 and 501.05 will not be allowed.

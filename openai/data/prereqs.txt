@@ -1,124 +1,15 @@
-The prerequisites for CPSC 219 are: CPSC 217 or DATA 211. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 231 are: Admission to Computer Science, Bioinformatics, or Natural Science with a primary concentration in Computer Science. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 233 are: CPSC 231 and admission to Computer Science, Bioinformatics, or Natural Science with a primary concentration in Computer Science. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 235 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 251 are: CPSC 219 or 231. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 313 are: MATH 271 or 273; and PHIL 279 or 377; and 3 units from CPSC 219, 233 or 235. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 319 are: 3 units from CPSC 219, 233, 235, ENCM 335, 339 or ENSF 337. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 329 are: MATH 30-1, MATH 30-2, or Mathematics 31. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 331 are: 3 units from CPSC 251, MATH 271 or 273; and 3 units from CPSC 219, 233, 235, ENCM 335, 339 or ENSF 337. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 335 are: CPSC 319 or 331. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 351 are: 3 units from CPSC 219, 233 or 235; and CPSC 251 or STAT 213; and MATH 271 or 273; and 3 units from MATH 249, 265 or 275; and PHIL 279 or 377. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 355 are: 3 units from CPSC 219, 233 or 235. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 359 are: CPSC 355 and PHIL 279 or 377. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 393 are: CPSC 219, 233 or DATA 311 and enrolment in one of the Majors in Computer Science, Bioinformatics, Electrical Engineering, Software Engineering, Computer Engineering, Natural Sciences with a primary concentration in Computer Science. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 399 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 999.0 units.
-The prerequisites for CPSC 405 are: SENG 300 or 301. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 409 are: CPSC 355. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 411 are: CPSC 319 or 331; and CPSC 355 or ENCM 369. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 413 are: CPSC 331; and 313 or 351; and MATH 211 or 213; and 3 units from MATH 249, 265 or 275. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 418 are: CPSC 331 and 3 units from CPSC 351, MATH 271, 273, 315 or PMAT 315. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 433 are: CPSC 313 or 351; and PHIL 279 or 377. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 441 are: CPSC 319 or 331; and CPSC 355 or ENCM 369. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 449 are: CPSC 319 or 331; CPSC 313 or 351; and PHIL 279 or 377. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 453 are: CPSC 319 or 331; and MATH 211 or 213; and 3 units from MATH 253, 267, 277, 283 or AMAT 219. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 457 are: CPSC 319 or 331; and CPSC 355 or ENCM 369. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 461 are: CPSC 355 and one of 319 or 331. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 471 are: CPSC 319 or 331. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 481 are: 3 units from SENG 300, 301, SENG 480 or DATA 311. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 491 are: CPSC 319 or 331; and MATH 211 or 213; and 3 units from MATH 249, 265 or 275. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 499 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 999.0 units.
-The prerequisites for CPSC 501 are: CPSC 349 or 449. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 502.01 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 502.01A are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 0.0 units.
-The prerequisites for CPSC 502.01B are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 502.02 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 502.02A are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 0.0 units.
-The prerequisites for CPSC 502.02B are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 502.03 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 502.03A are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 0.0 units.
-The prerequisites for CPSC 502.03B are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 502.04 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 502.04A are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 0.0 units.
-The prerequisites for CPSC 502.04B are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 502.05 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 502.05A are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 0.0 units.
-The prerequisites for CPSC 502.05B are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 502.06 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 502.06A are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 0.0 units.
-The prerequisites for CPSC 502.06B are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 502.07 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 502.07A are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 0.0 units.
-The prerequisites for CPSC 502.07B are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 502.08 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 502.08A are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 0.0 units.
-The prerequisites for CPSC 502.08B are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 503.01 are: Consent of the Department This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 503.02 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 503.03 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 503.04 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 503.05 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 503.06 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 503.07 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 503.08 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 505 are: CPSC 413 and 449. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 511 are: CPSC 413. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 513 are: CPSC 313 or 351. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 517 are: CPSC 413. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 518 are: CPSC 413; and MATH 211 or 213. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 519 are: CPSC 413; and MATH 311 or 313. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 521 are: CPSC 313 or 351; and CPSC 349 or 449. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 522 are: CPSC 413. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 525 are: CPSC 457; and 3 units from CPSC 351, MATH 271 or 273. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 526 are: CPSC 441. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 527 are: CPSC 313 and 457 and consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 528 are: CPSC 313 and 457 and consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 530 are: CPSC 351; or 3 units from CPSC 219, 233 or 235 and 3 units from MATH 271, 273, 315 and 3 units from STAT 205, 213, 321. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 531 are: CPSC 457 and 3 units from MATH 321, STAT 205, 211, 213 or 321. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 535 are: One of MATH 311, 313, 353, AMAT 307, 311, PMAT 331. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 544 are: CPSC 433 This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 550 are: CPSC 441, 457 and consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 550A are: CPSC 441, 457 and consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 550B are: CPSC 441, 457 and consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 556 are: 3 units from CPSC 319, 331, or DATA 311. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 559 are: CPSC 441 and 457. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 561 are: CPSC 413. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 565 are: CPSC 217 or 231 or DATA 211 and 6 units offered by the Faculty of Science at the 400 level or above. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 567 are: CPSC 457 and 433. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 568 are: CPSC 433 and consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 571 are: CPSC 471. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 572 are: CPSC 471 or DATA 311. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 573 are: 3 units from CPSC 319, 331 or DATA 311. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 575 are: SENG 300, 301, or DATA 311. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 577 are: 3 units from CPSC 319, 331 or DATA 311. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 581 are: CPSC 481 and consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 583 are: 3 units from CPSC 319, 331 or DATA 311. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 584 are: CPSC 481. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 587 are: CPSC 453. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 589 are: CPSC 453. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 591 are: CPSC 453. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 594 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 594A are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 594B are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 6.0 units.
-The prerequisites for CPSC 598 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 598A are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 0.0 units.
-The prerequisites for CPSC 598B are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
-The prerequisites for CPSC 599 are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 999.0 units.
-The prerequisites for CPSC 599A are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 999.0 units.
-The prerequisites for CPSC 599B are: Consent of the Department. This course is offered by the SC faculty in the CPSC department and is worth 999.0 units.
-The prerequisites for DATA 211 are: DATA 201. This course is offered by the SC faculty in the SC department and is worth 3.0 units.
-The prerequisites for DATA 221 are: CPSC 217 or 231. This course is offered by the SC faculty in the SC department and is worth 3.0 units.
-The prerequisites for DATA 299 are: Consent of the Faculty. This course is offered by the SC faculty in the SC department and is worth 999.0 units.
-The prerequisites for DATA 305 are: DATA 201; and 3 units from DATA 211, CPSC 217, 231 or 235; and 3 units from STAT 205, 217, 327, BIOL 315, ECON 395, POLI 399, PSYC 300, SOCI 311, ENGG 319, ENDG 319 or LING 560. This course is offered by the SC faculty in the SC department and is worth 3.0 units.
-The prerequisites for DATA 311 are: DATA 201; and 3 units from DATA 211, CPSC 217, 231, 235, ENGG 233 or ENDG 233. This course is offered by the SC faculty in the SC department and is worth 3.0 units.
-The prerequisites for DATA 335 are: DATA 305. This course is offered by the SC faculty in the SC department and is worth 3.0 units.
-The prerequisites for DATA 399 are: Consent of the Faculty. This course is offered by the SC faculty in the SC department and is worth 999.0 units.
-The prerequisites for DATA 414 are: DATA 221. This course is offered by the SC faculty in the SC department and is worth 3.0 units.
-The prerequisites for DATA 433 are: CPSC 217, MATH 267 and 311. This course is offered by the SC faculty in the SC department and is worth 3.0 units.
-The prerequisites for DATA 443 are: DATA 305 and CPSC 319. This course is offered by the SC faculty in the SC department and is worth 3.0 units.
-The prerequisites for DATA 471 are: DATA 221 and CPSC 319. This course is offered by the SC faculty in the SC department and is worth 3.0 units.
-The prerequisites for DATA 479 are: DATA 471. This course is offered by the SC faculty in the SC department and is worth 3.0 units.
-The prerequisites for DATA 499 are: Consent of the Faculty. This course is offered by the SC faculty in the SC department and is worth 999.0 units.
-The prerequisites for DATA 501 are: DATA 311 or CPSC 471; 3 units from DATA 305, STAT 323, BIOL 315, SOCI 315, ECON 395, LING 560, PSYC 301 or 312; and admission to the Data Science Minor. This course is offered by the SC faculty in the MTST department and is worth 3.0 units.
-The prerequisites for DATA 543 are: DATA 443. This course is offered by the SC faculty in the SC department and is worth 3.0 units.
-The prerequisites for DATA 599 are: Consent of the Faculty. This course is offered by the SC faculty in the SC department and is worth 999.0 units.
+The prerequisites for SENG 300 are: 3 units from CPSC 219, 233 or 235. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
+The prerequisites for SENG 401 are: 3 units from CPSC 319, 331 or ENSF 338; and 3 units from SENG 300, 301 or ENSF 480; and admission to the Schulich School of Engineering. This course is offered by the EN faculty in the ENEC department and is worth 3.0 units.
+The prerequisites for SENG 437 are: SENG 301 or Software Engineering for Engineers 480. This course is offered by the EN faculty in the ENEC department and is worth 3.0 units.
+The prerequisites for SENG 438 are: 3 units from CPSC 319, 331 or ENSF 338; and 3 units from SENG 300, 301 or ENSF 480; and admission to the Schulich School of Engineering. This course is offered by the EN faculty in the CPSC department and is worth 3.0 units.
+The prerequisites for SENG 471 are: 3 units from CPSC 319, 331, ENSF 338 or 409; and admission to the Schulich School of Engineering. This course is offered by the EN faculty in the ENEC department and is worth 3.0 units.
+The prerequisites for SENG 499 are: Consent of either the Department of Electrical and Computer Engineering or the Department of Computer Science. This course is offered by the SC faculty in the CPSC department and is worth 999.0 units.
+The prerequisites for SENG 501 are: Consent of either the Department of Electrical and Computer Engineering or the Department of Computer Science. This course is offered by the SC faculty in the ENEC department and is worth 999.0 units.
+The prerequisites for SENG 511 are: 3 units from SENG 300, 301, 403 or ENSF 480. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
+The prerequisites for SENG 513 are: 3 units from SENG 300, 301 or ENSF 480. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
+The prerequisites for SENG 515 are: 3 units from SENG 401, 403, 411, or 443. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
+The prerequisites for SENG 521 are: SENG 437 or 421. This course is offered by the EN faculty in the EN department and is worth 3.0 units.
+The prerequisites for SENG 523 are: 3 units from SENG 300, 301 or ENSF 480. This course is offered by the EN faculty in the ENEC department and is worth 3.0 units.
+The prerequisites for SENG 533 are: CPSC 457 or ENSF 461; and 3 units from SENG 300, 301 or ENSF 480; and admission to the Schulich School of Engineering. This course is offered by the EN faculty in the ENEC department and is worth 3.0 units.
+The prerequisites for SENG 541 are: 3 units from SENG 300, 301 or ENSF 480. This course is offered by the SC faculty in the CPSC department and is worth 3.0 units.
+The prerequisites for SENG 550 are: CPSC 319 or 331; and 3 units from SENG 300, 301 or ENSF 480. This course is offered by the EN faculty in the CPSC department and is worth 3.0 units.

@@ -292,7 +292,7 @@ REQUEST_BODY = {
             "inputType": "subjectCodeSelect",
             "name": "subjectCode",
             "type": "is",
-            "value": "CPSC",
+            "value": "SENG",
         },
         {
             "group": "course",
