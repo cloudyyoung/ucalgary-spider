@@ -7,74 +7,113 @@ class CoursesSpider(Spider):
     name = "courses"
 
     def start_requests(self):
-        base_url = "https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses/search/$filters?catalogId=SGrVclL1qqlruuZrIFIi&skip={skip}&limit={limit}&orderBy=code&formatDependents=true&effectiveDatesRange=2024-06-21,2024-06-30"
+        base_url = "https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses/search/$filters?catalogId=SGrVclL1qqlruuZrIFIi&skip={skip}&limit={limit}&orderBy=code&effectiveDatesRange=2024-06-21,2024-06-30"
 
         url = base_url.format(skip=0, limit=999)
         print(url)
 
         yield Request(
             url=url,
-            callback=self.parse,
+            callback=self.parse_filters,
             method="POST",
             body=json.dumps(REQUEST_BODY),
             headers={"Content-Type": "application/json"},
         )
 
-    def parse(self, response):
+    def parse_filters(self, response):
         body = str(response.body, encoding="utf-8")
         body = json.loads(body)
         data = body["data"]
 
         for course in data:
-            cid = course["customFields"]["rawCourseId"]
             coursedog_id = course["id"]
+            url = f"https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses/{coursedog_id}"
+            yield Request(url=url, callback=self.parse_course)
 
-            code = course["subjectCode"]
-            number = course["courseNumber"]
-            name = course["name"]
-            long_name = course["longName"]
+    def parse_course(self, response):
+        print(response.url)
 
-            faculty_code, faculty_full_name = self.process_faculty(course["college"])
-            departments = course["departments"]
-            career = course["career"]
+        course = str(response.body, encoding="utf-8")
+        course = dict(json.loads(course))
 
-            description_full = course["description"]
-            description, prereq, coreq, antireq, notes, aka = self.process_description(
-                description_full
-            )
+        print(course)
 
-            credits = float(course["credits"]["numberOfCredits"])
-            grade_mode = course["gradeMode"]
-            components = list(map(lambda c: c["code"], course["components"]))
+        coursedog_id = course["id"]
+        cid = course["customFields"]["rawCourseId"]
+        course_group_id = course["courseGroupId"]
 
-            nogpa = NOGPA_TEXT.upper() in description_full.upper()
-            repeatable = bool(course["credits"]["repeatable"])
-            active = course["status"] == "Active"
+        code = course["code"]  # CPSC 413
+        subject_code = course["subjectCode"]  # CPSC
+        course_number = course["courseNumber"]  # 413
 
-            yield Course(
-                cid=cid,
-                coursedog_id=coursedog_id,
-                code=code,
-                number=number,
-                name=name,
-                long_name=long_name,
-                faculty=faculty_code,
-                departments=departments,
-                career=career,
-                units=credits,
-                # credits=credits,
-                grade_mode=grade_mode,
-                components=components,
-                description=description,
-                prereq=prereq,
-                coreq=coreq,
-                antireq=antireq,
-                notes=notes,
-                aka=aka,
-                repeatable=repeatable,
-                nogpa=nogpa,
-                active=active,
-            )
+        name = course["name"]  # Topic
+        long_name = course["longName"]
+
+        topics = course["topics"]
+
+        faculty_code, faculty_name = self.process_faculty(course["college"])
+        departments = course["departments"]
+        department_ownership = course.get("departmentOwnership", {})
+        career = course["career"]  # Undergraduate / Graduate Programs
+
+        description_full = course["description"]
+        description, prereq, coreq, antireq, notes, aka = self.process_description(
+            description_full
+        )
+
+        requisites = course["requisites"]
+
+        credits = float(course["credits"]["numberOfCredits"])
+        grade_mode = course["gradeMode"]
+        components = list(map(lambda c: c["code"], course["components"]))
+
+        nogpa = NOGPA_TEXT.upper() in description_full.upper()
+        repeatable = bool(course["credits"]["repeatable"])
+        active = course["status"] == "Active"
+
+        start_term = course["startTerm"]
+
+        created_at = course["createdAt"]
+        last_edited_at = course["lastEditedAt"]
+        effective_start_date = course["effectiveStartDate"]
+        effective_end_date = course["effectiveEndDate"]
+        version = course["version"]
+
+        yield Course(
+            coursedog_id=coursedog_id,
+            cid=cid,
+            course_group_id=course_group_id,
+            code=code,
+            subject_code=subject_code,
+            course_number=course_number,
+            name=name,
+            long_name=long_name,
+            topics=topics,
+            faculty_code=faculty_code,
+            faculty_name=faculty_name,
+            departments=departments,
+            department_ownership=department_ownership,
+            career=career,
+            description=description,
+            prereq=prereq,
+            coreq=coreq,
+            antireq=antireq,
+            notes=notes,
+            aka=aka,
+            requisites=requisites,
+            credits=credits,
+            grade_mode=grade_mode,
+            components=components,
+            nogpa=nogpa,
+            repeatable=repeatable,
+            active=active,
+            start_term=start_term,
+            created_at=created_at,
+            last_edited_at=last_edited_at,
+            effective_start_date=effective_start_date,
+            effective_end_date=effective_end_date,
+            version=version,
+        )
 
     def process_description(self, description_full):
         description_full = description_full.replace("\n", "\n\n")

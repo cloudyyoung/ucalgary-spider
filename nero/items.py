@@ -13,34 +13,39 @@ class SubjectCode(scrapy.Item):
 
 
 class Course(scrapy.Item):
-    cid = scrapy.Field(serializer=int)
-    coursedog_id = scrapy.Field(serializer=int)
-
+    coursedog_id = scrapy.Field()
+    cid = scrapy.Field()
+    course_group_id = scrapy.Field()
     code = scrapy.Field()
-    number = scrapy.Field()
+    subject_code = scrapy.Field()
+    course_number = scrapy.Field()
     name = scrapy.Field()
     long_name = scrapy.Field()
-
-    faculty = scrapy.Field()
+    topics = scrapy.Field(serializer=list)
+    faculty_code = scrapy.Field()
+    faculty_name = scrapy.Field()
     departments = scrapy.Field(serializer=list)
+    department_ownership = scrapy.Field(seerializer=json.dumps)
     career = scrapy.Field()
-
-    units = scrapy.Field(serializer=float)
-    # credits = scrapy.Field(serializer=float)
-    grade_mode = scrapy.Field()
-    components = scrapy.Field(serializer=list)
-
     description = scrapy.Field()
     prereq = scrapy.Field()
     coreq = scrapy.Field()
     antireq = scrapy.Field()
-
     notes = scrapy.Field()
     aka = scrapy.Field()
-
-    repeatable = scrapy.Field(serializer=bool)
-    nogpa = scrapy.Field(serializer=bool)
+    requisites = scrapy.Field(seerializer=json.dumps)
+    credits = scrapy.Field()
+    grade_mode = scrapy.Field()
+    components = scrapy.Field(serializer=list)
+    nogpa = scrapy.Field()
+    repeatable = scrapy.Field()
     active = scrapy.Field(serializer=bool)
+    start_term = scrapy.Field()
+    created_at = scrapy.Field()
+    last_edited_at = scrapy.Field()
+    effective_start_date = scrapy.Field()
+    effective_end_date = scrapy.Field()
+    version = scrapy.Field()
 
 
 class Faculty(scrapy.Item):
