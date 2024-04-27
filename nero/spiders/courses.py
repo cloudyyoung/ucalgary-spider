@@ -25,17 +25,31 @@ class CoursesSpider(Spider):
         body = json.loads(body)
         data = body["data"]
 
+        id_list = []
+
         for course in data:
             coursedog_id = course["id"]
-            url = f"https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses/{coursedog_id}"
-            yield Request(url=url, callback=self.parse_course)
+            id_list.append(coursedog_id)
 
-    def parse_course(self, response):
+        # For every batch of courses, make a request
+        while id_list:
+            _id_list = id_list[:100]
+            id_list = id_list[100:]
+
+            list_str = ",".join(map(str, _id_list))
+            url = f"https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses?list={list_str}"
+            yield Request(url=url, callback=self.parse_courses)
+
+    def parse_courses(self, response):
         print(response.url)
 
-        course = str(response.body, encoding="utf-8")
-        course = dict(json.loads(course))
+        courses = str(response.body, encoding="utf-8")
+        courses = dict(json.loads(courses))
 
+        for course in courses.values():
+            yield from self.parse_course(course)
+
+    def parse_course(self, course):
         coursedog_id = course["id"]
         cid = course["customFields"]["rawCourseId"]
         course_group_id = course["courseGroupId"]
