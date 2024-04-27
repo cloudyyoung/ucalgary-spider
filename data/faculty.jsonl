@@ -1,0 +1,24 @@
+{"id": "CS", "name": "Career Services", "display_name": "Career Services (O)", "active": true}
+{"id": "MD", "name": "Cumming School of Medicine", "display_name": "Cumming School of Medicine", "active": true}
+{"id": "CC", "name": "Faculty of Communication and Culture", "display_name": "Fac of Communication&Culture", "active": true}
+{"id": "AR", "name": "Faculty of Arts", "display_name": "Faculty of Arts", "active": true}
+{"id": "GS", "name": "Faculty of Graduate Studies", "display_name": "Faculty of Graduate Studies", "active": true}
+{"id": "KN", "name": "Faculty of Kinesiology", "display_name": "Faculty of Kinesiology", "active": true}
+{"id": "LA", "name": "Faculty of Law", "display_name": "Faculty of Law", "active": true}
+{"id": "NU", "name": "Faculty of Nursing", "display_name": "Faculty of Nursing", "active": true}
+{"id": "SC", "name": "Faculty of Science", "display_name": "Faculty of Science", "active": true}
+{"id": "SW", "name": "Faculty of Social Work", "display_name": "Faculty of Social Work", "active": true}
+{"id": "VM", "name": "Faculty of Veterinary Medicine", "display_name": "Faculty of Veterinary Medicine", "active": true}
+{"id": "FA", "name": "Faculty of Fine Arts", "display_name": "Fine Arts (F)", "active": true}
+{"id": "HA", "name": "Haskayne School of Business", "display_name": "Haskayne School of Business", "active": true}
+{"id": "HU", "name": "Faculty of Humanities", "display_name": "Humanities (F)", "active": true}
+{"id": "IS", "name": "International Students and Study Abroad; Centre fo", "display_name": "International Students (C)", "active": true}
+{"id": "OS", "name": "Open Studies Programs", "display_name": "Open Studies", "active": true}
+{"id": "PD", "name": "Office of Post Degree Continuous Learning", "display_name": "Post Degree Cont Learning (O)", "active": true}
+{"id": "QA", "name": "University of Calgary - Qatar", "display_name": "Qatar Faculty", "active": true}
+{"id": "RO", "name": "Registrar; Office of the", "display_name": "Registrar (O)", "active": true}
+{"id": "EV", "name": "School of Architecture, Planning and Landscape", "display_name": "School of Architecture, Planning and Landscape", "active": true}
+{"id": "EN", "name": "Schulich School of Engineering", "display_name": "Schulich School of Engineering", "active": true}
+{"id": "SS", "name": "Faculty of Social Sciences", "display_name": "Social Sciences (F)", "active": true}
+{"id": "UC", "name": "University College", "display_name": "University College", "active": true}
+{"id": "ED", "name": "Werklund School of Education", "display_name": "Werklund School of Education", "active": true}

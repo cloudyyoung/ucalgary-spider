@@ -91,22 +91,22 @@ class NeroDownloaderMiddleware:
         # - or raise IgnoreRequest
 
         # Store webpage to local
-        page = response.url.split("/")
-        file = page[-1]
+        # page = response.url.split("/")
+        # file = page[-1]
 
-        # Handle file name
-        if file == "":
-            file = "index.html"
-        if file.find("?") != -1:
-            file = re.sub(r"(.*)(\?).*", r"\1", file)
+        # # Handle file name
+        # if file == "":
+        #     file = "index.html"
+        # if file.find("?") != -1:
+        #     file = re.sub(r"(.*)(\?).*", r"\1", file)
 
-        folder = ".res/" + "/".join(page[2:-1])
+        # folder = ".res/" + "/".join(page[2:-1])
 
-        if not os.path.exists(folder):
-            os.makedirs(folder)
+        # if not os.path.exists(folder):
+        #     os.makedirs(folder)
 
-        with open(os.path.join(folder, file), 'wb') as f:
-            f.write(response.body)
+        # with open(os.path.join(folder, file), 'wb') as f:
+        #     f.write(response.body)
 
         return response
 

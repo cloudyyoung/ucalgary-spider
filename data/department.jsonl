@@ -1,0 +1,91 @@
+{"id": "ANES", "name": "Anaesthesia; Department of", "display_name": "Anaesthesia", "active": true}
+{"id": "ANAR", "name": "Anthropology and Archaeology; Department of", "display_name": "Anthropology and Archaeology ", "active": true}
+{"id": "APSY", "name": "Applied Psychology; Division of", "display_name": "Applied Psychology", "active": true}
+{"id": "ART", "name": "Art and Art History; Department of", "display_name": "Art and Art History", "active": true}
+{"id": "BHSC", "name": "Bachelor of Health Sciences Office", "display_name": "Bachelor of Health Sciences", "active": true}
+{"id": "BMEN", "name": "BioMedical Engineering; Department of", "display_name": "BioMedical Engineering (D)", "active": true}
+{"id": "MDBC", "name": "Biochemistry & Molecular Biology; Dept of", "display_name": "Biochemistry & Molecular Biology", "active": true}
+{"id": "BISI", "name": "Biological Sciences; Department of", "display_name": "Biological Sciences", "active": true}
+{"id": "ENBI", "name": "Biomedical Engineering; Department of", "display_name": "Biomedical Engineering", "active": true}
+{"id": "MDBT", "name": "Biomedical Technology; Department of", "display_name": "Biomedical Technology", "active": true}
+{"id": "CAAP", "name": "Campus Alberta Applied Psychology", "display_name": "Campus Alberta Appl Psyc", "active": true}
+{"id": "MDCV", "name": "Cardiovascular/Respiratory Sciences; Dept of", "display_name": "Cardiovascular/Respiratory Sciences", "active": true}
+{"id": "CMSS", "name": "Military & Strategic Studies; Centre for", "display_name": "Centre for Military and Strategic Studies", "active": true}
+{"id": "ENCP", "name": "Chemical & Petroleum Engineering; Dept of", "display_name": "Chemical and Petroleum Engineering", "active": true}
+{"id": "CHEM", "name": "Chemistry; Department of", "display_name": "Chemistry", "active": true}
+{"id": "ENCI", "name": "Civil Engineering; Department of", "display_name": "Civil Engineering", "active": true}
+{"id": "CLARE", "name": "Classics and Religion; Department of", "display_name": "Classics and Religion", "active": true}
+{"id": "CLMI", "name": "Clinical Microbiology; Department of", "display_name": "Clinical Microbiology ", "active": true}
+{"id": "NRSC", "name": "Clinical Neurosciences; Department of", "display_name": "Clinical Neurosciences", "active": true}
+{"id": "MDNS", "name": "Clinical Neurosciences; Department of", "display_name": "Clinical Neurosciences", "active": true}
+{"id": "CPSY", "name": "Clinical Psychology; Division of", "display_name": "Clinical Psychology", "active": true}
+{"id": "CMF", "name": "Communication, Media & Film; Department of", "display_name": "Communication Media and Film ", "active": true}
+{"id": "MDCH", "name": "Community Health Sciences; Dept of", "display_name": "Community Health Sciences", "active": true}
+{"id": "CORE", "name": "Community Rehabilitation & Disability Studies", "display_name": "Community Rehabilitation and Disability Studies", "active": true}
+{"id": "CMD", "name": "Computational Media Design", "display_name": "Computational Media Design", "active": true}
+{"id": "CPSC", "name": "Computer Science; Department of", "display_name": "Computer Science", "active": true}
+{"id": "CUSP", "name": "Culture and Society; Department of", "display_name": "Culture and Society (D)", "active": true}
+{"id": "ANTH", "name": "Department of Anthropology", "display_name": "Dept of Anthropology", "active": true}
+{"id": "DRAD", "name": "Diagnostic Radiology; Department of", "display_name": "Diagnostic Radiology", "active": true}
+{"id": "ERTH", "name": "Earth, Energy, and Environment; Department of", "display_name": "Earth, Energy, and Environment", "active": true}
+{"id": "ECON", "name": "Economics; Department of", "display_name": "Economics", "active": true}
+{"id": "EDPS", "name": "Educational Psychology", "display_name": "Educational Psychology", "active": true}
+{"id": "EDER", "name": "Educational Research", "display_name": "Educational Research", "active": true}
+{"id": "GDER", "name": "Educational Research; Graduate Division of", "display_name": "Educational Research", "active": true}
+{"id": "ENEC", "name": "Electrical & Software Engineering; Dept of", "display_name": "Electrical and Software Engineering", "active": true}
+{"id": "EMER", "name": "Emergency Medicine; Department of", "display_name": "Emergency Medicine", "active": true}
+{"id": "ENGL", "name": "English; Department of", "display_name": "English", "active": true}
+{"id": "ELFP", "name": "English Language Foundation Program", "display_name": "English Language Foundation Program", "active": true}
+{"id": "FAME", "name": "Family Medicine; Department of", "display_name": "Family Medicine", "active": true}
+{"id": "FAPR", "name": "Family Practice; Department of", "display_name": "Family Practice", "active": true}
+{"id": "FISL", "name": "Italian & Spanish; Dept of French", "display_name": "French Ital & Span (D)", "active": true}
+{"id": "MDGI", "name": "Gastrointestinal Sciences; Dept of", "display_name": "Gastrointestinal Scie", "active": true}
+{"id": "GEOG", "name": "Geography; Department of", "display_name": "Geography", "active": true}
+{"id": "ENGO", "name": "Geomatics Engineering; Department of", "display_name": "Geomatics Engineering", "active": true}
+{"id": "GEOS", "name": "Geoscience; Department of", "display_name": "Geoscience (D)", "active": true}
+{"id": "COMS", "name": "Graduate Program in Communications Studies", "display_name": "Grad Prog Communications Study", "active": true}
+{"id": "GSE", "name": "Graduate Science Education Office", "display_name": "Graduate Science Education (O)", "active": true}
+{"id": "GYNE", "name": "Gynaecology; Department of", "display_name": "Gynaecology", "active": true}
+{"id": "HSOC", "name": "Health Sciences; Department of", "display_name": "Health Sciences", "active": true}
+{"id": "HIST", "name": "History; Department of", "display_name": "History", "active": true}
+{"id": "MDIM", "name": "Immunology; Department of", "display_name": "Immunology", "active": true}
+{"id": "IGP", "name": "Interdisciplinary Graduate Program", "display_name": "Interdisciplinary Graduate Program", "active": true}
+{"id": "INTE", "name": "Internal Medicine; Department of", "display_name": "Internal Medicine", "active": true}
+{"id": "MTST", "name": "Mathematics & Statistics; Department of", "display_name": "Mathematics and Statistics", "active": true}
+{"id": "ENMF", "name": "Mechanical & Manufacturing Engineering; Dept of", "display_name": "Mechanical and Manufacturing Engineering", "active": true}
+{"id": "MEDG", "name": "Medical Genetics; Department of", "display_name": "Medical Genetics ", "active": true}
+{"id": "MDSC", "name": "Medical Science; Department of", "display_name": "Medical Science", "active": true}
+{"id": "MDCN", "name": "Medicine; Department of", "display_name": "Medicine", "active": true}
+{"id": "MDMI", "name": "Microbiology and Infectious Diseases; Dept of", "display_name": "Microbiology and Infectious Diseases", "active": true}
+{"id": "NEPL", "name": "Nepal Programme", "display_name": "Nepal Programme", "active": true}
+{"id": "NROL", "name": "Neurology; Department of", "display_name": "Neurology", "active": true}
+{"id": "NUMD", "name": "Nuclear Medicine; Department of", "display_name": "Nuclear Medicine", "active": true}
+{"id": "OBGY", "name": "Obstetrics and Gynaecology; Department of", "display_name": "Obstetrics and Gynaecology", "active": true}
+{"id": "ONCO", "name": "Oncology; Department of", "display_name": "Oncology", "active": true}
+{"id": "OPTH", "name": "Opthalmology; Department of", "display_name": "Opthalmology", "active": true}
+{"id": "OTOL", "name": "Otolaryngology; Department of", "display_name": "Otolaryngology", "active": true}
+{"id": "PAED", "name": "Paediatrics; Department of", "display_name": "Paediatrics", "active": true}
+{"id": "PALL", "name": "Palliative Care Medicine; Department of", "display_name": "Palliative Care Medicine (D)", "active": true}
+{"id": "PATH", "name": "Pathology; Department of", "display_name": "Pathology", "active": true}
+{"id": "PHIL", "name": "Philosophy; Department of", "display_name": "Philosophy", "active": true}
+{"id": "PHAS", "name": "Physics & Astronomy; Department of", "display_name": "Physics and Astronomy ", "active": true}
+{"id": "POLI", "name": "Political Science; Department of", "display_name": "Political Science", "active": true}
+{"id": "PSRI", "name": "Pre-Specialty Rotating Internship", "display_name": "Pre-Specialty Rotating Intern", "active": true}
+{"id": "PSYT", "name": "Psychiatry; Department of", "display_name": "Psychiatry", "active": true}
+{"id": "PSYC", "name": "Psychology; Department of", "display_name": "Psychology", "active": true}
+{"id": "RAON", "name": "Radiation Oncology; Department of", "display_name": "Radiation Oncology", "active": true}
+{"id": "RADI", "name": "Radiology; Department of", "display_name": "Radiology", "active": true}
+{"id": "ADM", "name": "Recruitment and Admissions", "display_name": "Recruitment & Admissions (O)", "active": true}
+{"id": "SCPA", "name": "Creative and Performing Arts; School of", "display_name": "School of Creative and Performing Arts", "active": true}
+{"id": "LLLC", "name": "Languages, Ling, Literatures & Cultures; School of", "display_name": "School of Languages, Linguistics, Literatures and Cultures", "active": true}
+{"id": "PPOL", "name": "Public Policy; School of", "display_name": "School of Public Policy", "active": true}
+{"id": "SOCI", "name": "Sociology; Department of", "display_name": "Sociology", "active": true}
+{"id": "SPEC", "name": "Special", "display_name": "Special", "active": true}
+{"id": "SAFA", "name": "Student Awards and Financial Aid", "display_name": "Student Awards & Financial Aid", "active": true}
+{"id": "UPO", "name": "Student Success Centre", "display_name": "Student Success Centre (O)", "active": true}
+{"id": "SURG", "name": "Surgery; Department of", "display_name": "Surgery", "active": true}
+{"id": "EDTP", "name": "Teacher Preparation; Division of", "display_name": "Teacher Preparation (DV)", "active": true}
+{"id": "UME", "name": "Undergraduate Medical Education Office", "display_name": "Undergraduate Medical Education Office", "active": true}
+{"id": "UBG", "name": "University Biochemistry Group", "display_name": "University Biochemistry Group", "active": true}
+{"id": "UCALG", "name": "University of Calgary", "display_name": "University of Calgary (O)", "active": true}
+{"id": "UPGR", "name": "Upgrading", "display_name": "Upgrading (O)", "active": true}

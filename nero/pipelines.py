@@ -26,10 +26,16 @@ class FileStorePipeline:
 
     def process_item(self, item, spider):
         item_type = item.__class__.__name__
-        if(item_type not in self.files.keys()):
-            file_object = open("data/" + self.file_name_convert(item_type) + ".jsonlines", 'w')
+        if item_type not in self.files.keys():
+            file_object = open("data/" + self.file_name_convert(item_type) + ".jsonl", 'w')
             self.files[item_type] = file_object
-        
+
+        # For all string fields, remove leading and trailing whitespace
+        for field in ItemAdapter(item).field_names():
+            if isinstance(item[field], str):
+                item[field] = item[field].strip()
+                item[field] = re.sub(r"\s+", " ", item[field])
+
         line = json.dumps(ItemAdapter(item).asdict()) + "\n"
         self.files[item_type].write(line)
         self.files[item_type].flush()
