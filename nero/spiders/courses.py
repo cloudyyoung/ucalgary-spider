@@ -7,37 +7,10 @@ class CoursesSpider(Spider):
     name = "courses"
 
     def start_requests(self):
-        base_url = "https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses/search/$filters?catalogId=SGrVclL1qqlruuZrIFIi&skip={skip}&limit={limit}&orderBy=code&effectiveDatesRange=2024-06-21,2024-06-30"
+        base_url = "https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses?skip={skip}&limit={limit}"
 
-        url = base_url.format(skip=0, limit=999)
-        print(url)
-
-        yield Request(
-            url=url,
-            callback=self.parse_filters,
-            method="POST",
-            body=json.dumps(REQUEST_BODY),
-            headers={"Content-Type": "application/json"},
-        )
-
-    def parse_filters(self, response):
-        body = str(response.body, encoding="utf-8")
-        body = json.loads(body)
-        data = body["data"]
-
-        id_list = []
-
-        for course in data:
-            coursedog_id = course["id"]
-            id_list.append(coursedog_id)
-
-        # For every batch of courses, make a request
-        while id_list:
-            _id_list = id_list[:100]
-            id_list = id_list[100:]
-
-            list_str = ",".join(map(str, _id_list))
-            url = f"https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses?list={list_str}"
+        for t in range(0, 20):
+            url = base_url.format(skip=t * 1000, limit=1000)
             yield Request(url=url, callback=self.parse_courses)
 
     def parse_courses(self, response):
@@ -155,6 +128,9 @@ class CoursesSpider(Spider):
         if not faculty:
             return (None, None)
 
+        if " - " not in faculty:
+            return (None, faculty)
+
         code, full_name = faculty.split(" - ")
         return (code, full_name)
 
@@ -183,192 +159,3 @@ NOTES_TEXT = "Notes: "
 NOTES_TEXT_ALT = "NOte: "
 NOGPA_TEXT = "Not included in GPA"
 AKA_TEXT = "Also known as: "
-REQUEST_BODY = {
-    "condition": "and",
-    "filters": [
-        # {
-        #     "id": "courseNumber-course",
-        #     "name": "courseNumber",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "doesNotContain",
-        #     "value": "A",
-        # },
-        # {
-        #     "id": "courseNumber-course",
-        #     "name": "courseNumber",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "doesNotContain",
-        #     "value": "B",
-        # },
-        {
-            "id": "status-course",
-            "name": "status",
-            "inputType": "select",
-            "group": "course",
-            "type": "doesNotContain",
-            "value": "Inactive",
-        },
-        # {
-        #     "id": "rawCourseId-course",
-        #     "name": "rawCourseId",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "isNot",
-        #     "value": "150073",
-        #     "customField": True,
-        # },
-        # {
-        #     "id": "rawCourseId-course",
-        #     "name": "rawCourseId",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "isNot",
-        #     "value": "160740",
-        #     "customField": True,
-        # },
-        # {
-        #     "id": "rawCourseId-course",
-        #     "name": "rawCourseId",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "isNot",
-        #     "value": "160726",
-        #     "customField": True,
-        # },
-        # {
-        #     "id": "rawCourseId-course",
-        #     "name": "rawCourseId",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "isNot",
-        #     "value": "161071",
-        #     "customField": True,
-        # },
-        # {
-        #     "id": "rawCourseId-course",
-        #     "name": "rawCourseId",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "isNot",
-        #     "value": "103199",
-        #     "customField": True,
-        # },
-        # {
-        #     "id": "rawCourseId-course",
-        #     "name": "rawCourseId",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "isNot",
-        #     "customField": True,
-        #     "value": "150054",
-        # },
-        # {
-        #     "id": "rawCourseId-course",
-        #     "name": "rawCourseId",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "isNot",
-        #     "value": "150087",
-        #     "customField": True,
-        # },
-        # {
-        #     "id": "rawCourseId-course",
-        #     "name": "rawCourseId",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "isNot",
-        #     "value": "150135",
-        #     "customField": True,
-        # },
-        # {
-        #     "id": "rawCourseId-course",
-        #     "name": "rawCourseId",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "isNot",
-        #     "value": "150178",
-        #     "customField": True,
-        # },
-        # {
-        #     "id": "rawCourseId-course",
-        #     "name": "rawCourseId",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "isNot",
-        #     "value": "150211",
-        #     "customField": True,
-        # },
-        # {
-        #     "id": "rawCourseId-course",
-        #     "name": "rawCourseId",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "isNot",
-        #     "value": "150243",
-        #     "customField": True,
-        # },
-        # {
-        #     "id": "rawCourseId-course",
-        #     "name": "rawCourseId",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "isNot",
-        #     "value": "150250",
-        #     "customField": True,
-        # },
-        # {
-        #     "id": "rawCourseId-course",
-        #     "name": "rawCourseId",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "isNot",
-        #     "value": "161388",
-        #     "customField": True,
-        # },
-        # {
-        #     "id": "rawCourseId-course",
-        #     "name": "rawCourseId",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "isNot",
-        #     "value": "150345",
-        #     "customField": True,
-        # },
-        # {
-        #     "id": "rawCourseId-course",
-        #     "name": "rawCourseId",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "isNot",
-        #     "value": "150382",
-        #     "customField": True,
-        # },
-        # {
-        #     "id": "rawCourseId-course",
-        #     "name": "rawCourseId",
-        #     "inputType": "text",
-        #     "group": "course",
-        #     "type": "isNot",
-        #     "value": "150390",
-        #     "customField": True,
-        # },
-        {
-            "group": "course",
-            "id": "subjectCode-course",
-            "inputType": "subjectCodeSelect",
-            "name": "subjectCode",
-            "type": "is",
-            "value": "CPSC",
-        },
-        {
-            "group": "course",
-            "id": "career-course",
-            "inputType": "careerSelect",
-            "name": "career",
-            "type": "is",
-            "value": "Undergraduate Programs",
-        },
-    ],
-}
