@@ -9,7 +9,7 @@ class CoursesSpider(Spider):
     def start_requests(self):
         base_url = "https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses?skip={skip}&limit={limit}"
 
-        for t in range(0, 20):
+        for t in range(0, 2):
             url = base_url.format(skip=t * 1000, limit=1000)
             yield Request(url=url, callback=self.parse_courses)
 
