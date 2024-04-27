@@ -36,8 +36,6 @@ class CoursesSpider(Spider):
         course = str(response.body, encoding="utf-8")
         course = dict(json.loads(course))
 
-        print(course)
-
         coursedog_id = course["id"]
         cid = course["customFields"]["rawCourseId"]
         course_group_id = course["courseGroupId"]
@@ -49,7 +47,7 @@ class CoursesSpider(Spider):
         name = course["name"]  # Topic
         long_name = course["longName"]
 
-        topics = course["topics"]
+        topics = self.process_topics(course["topics"])
 
         faculty_code, faculty_name = self.process_faculty(course["college"])
         departments = course["departments"]
@@ -145,6 +143,23 @@ class CoursesSpider(Spider):
 
         code, full_name = faculty.split(" - ")
         return (code, full_name)
+
+    def process_topics(self, _topics):
+        topics = []
+        for _topic in _topics:
+            topic = {
+                "id": _topic["id"],
+                "code": _topic["code"],
+                "name": _topic["name"],
+                "long_name": _topic["longName"],
+                "description": _topic["description"],
+                "repeatable": _topic["repeatable"],
+                "repeatable": bool(_topic["repeatable"]),
+                "credits": _topic["numberOfCredits"],
+                "link": _topic["link"],
+            }
+            topics.append(topic)
+        return topics
 
 
 PREREQ_TEXT = "Prerequisite(s): "
