@@ -27,7 +27,10 @@ class FileStorePipeline:
             file.close()
 
     def process_item(self, item, spider):
-        item_type = str(item.__class__.__name__).lower()
+        if item.__tablename__:
+            tablename = item.__tablename__
+        else:
+            tablename = str(item.__class__.__name__).lower() + "s"
 
         # For all string fields, remove leading and trailing whitespace
         for field in ItemAdapter(item).field_names():
@@ -35,7 +38,7 @@ class FileStorePipeline:
                 item[field] = item[field].strip()
                 item[field] = re.sub(r"\s+", " ", item[field])
 
-        collection = client.get_database("catalog").get_collection(item_type)
+        collection = client.get_database("catalog").get_collection(tablename)
         collection.insert_one(ItemAdapter(item).asdict())
 
         return item
