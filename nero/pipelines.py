@@ -35,7 +35,7 @@ class FileStorePipeline:
                 item[field] = item[field].strip()
                 item[field] = re.sub(r"\s+", " ", item[field])
 
-        collection = client.get_database("acadmic").get_collection(item_type)
+        collection = client.get_database("catalog").get_collection(item_type)
         collection.insert_one(ItemAdapter(item).asdict())
 
         return item
