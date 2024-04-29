@@ -90,7 +90,6 @@ class CoursesSpider(Spider):
             departments=departments,
             career=career,
             
-            description_full=description_full,
             description=description,
             prereq=prereq,
             coreq=coreq,

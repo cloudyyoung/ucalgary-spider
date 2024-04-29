@@ -31,7 +31,6 @@ class Course(scrapy.Item):
     departments = scrapy.Field(serializer=list)
     career = scrapy.Field()
 
-    description_full = scrapy.Field()
     description = scrapy.Field()
     prereq = scrapy.Field()
     coreq = scrapy.Field()
