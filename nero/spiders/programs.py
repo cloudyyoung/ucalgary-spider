@@ -9,7 +9,7 @@ class ProgramsSpider(Spider):
     name = "programs"
 
     def start_requests(self):
-        base_url = "https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/programsskip={skip}&limit={limit}&sortBy=catalogDisplayName"
+        base_url = "https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/programs?skip={skip}&limit={limit}&sortBy=catalogDisplayName"
 
         # As of April 2024,
         for t in range(0, 99):
@@ -46,7 +46,7 @@ class ProgramsSpider(Spider):
         )  # Eg, "BSC-H - Bachelor of Science (Honours)""
         career = program.get("career")
         departments = program.get("departments", [])
-        
+
         admission_info = custom_fields.get("programAdmissionsInfo")
         general_info = custom_fields.get("generalProgramInfo")
 
@@ -67,29 +67,29 @@ class ProgramsSpider(Spider):
         yield Program(
             coursedog_id=coursedog_id,
             program_group_id=program_group_id,
-
+            #
             code=code,
             name=name,
             long_name=long_name,
             display_name=display_name,
-
+            #
             type=type,
             degree_designation_code=degree_designation_code,
             degree_designation_name=degree_designation_name,
             career=career,
             departments=departments,
-
+            #
             admission_info=admission_info,
             general_info=general_info,
-
+            #
             transcript_level=transcript_level,
             transcript_description=transcript_description,
-
+            #
             requisites=requisites,
-
+            #
             active=active,
             start_term=start_term,
-
+            #
             created_at=created_at,
             last_edited_at=last_edited_at,
             effective_start_date=effective_start_date,
@@ -99,10 +99,10 @@ class ProgramsSpider(Spider):
 
     def process_degree_designation(self, designation: str | None):
         if not designation:
-            return None
+            return (None, None)
 
         if " - " not in designation:
-            return None
+            return (None, designation)
 
         designation_code, designation_name = designation.split(" - ")
         return designation_code, designation_name

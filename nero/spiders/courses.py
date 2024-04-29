@@ -58,8 +58,11 @@ class CoursesSpider(Spider):
         requisites = course.get("requisites", {})
 
         credits = float(credits_fields.get("numberOfCredits"))
-        grade_mode = course.get("gradeMode")
+        grade_mode_code, grade_mode_name = self.process_grade_mode(
+            course.get("gradeMode")
+        )
         components = list(map(lambda c: c["code"], course.get("components", [])))
+        multi_term = bool(custom_fields.get("lastMultiTermCourse"))
 
         repeatable = bool(credits_fields.get("repeatable"))
         active = course.get("status") == "Active"
@@ -75,21 +78,21 @@ class CoursesSpider(Spider):
             coursedog_id=coursedog_id,
             cid=cid,
             course_group_id=course_group_id,
-
+            #
             code=code,
             subject_code=subject_code,
             course_number=course_number,
-
+            #
             name=name,
             long_name=long_name,
-
+            #
             topics=topics,
-
+            #
             faculty_code=faculty_code,
             faculty_name=faculty_name,
             departments=departments,
             career=career,
-            
+            #
             description=description,
             prereq=prereq,
             coreq=coreq,
@@ -97,17 +100,19 @@ class CoursesSpider(Spider):
             notes=notes,
             aka=aka,
             nogpa=nogpa,
-
+            #
             requisites=requisites,
-
+            #
             credits=credits,
-            grade_mode=grade_mode,
+            grade_mode_code=grade_mode_code,
+            grade_mode_name=grade_mode_name,
             components=components,
-
+            multi_term=multi_term,
+            #
             repeatable=repeatable,
             active=active,
             start_term=start_term,
-
+            #
             created_at=created_at,
             last_edited_at=last_edited_at,
             effective_start_date=effective_start_date,
@@ -116,7 +121,15 @@ class CoursesSpider(Spider):
         )
 
     def process_description(self, description_full: str | None):
-        description, prereq, coreq, antireq, notes, aka, nogpa = None, None, None, None, None, None, None
+        description, prereq, coreq, antireq, notes, aka, nogpa = (
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+        )
 
         if description_full:
             description_full = description_full.replace("\n", "\n\n")
@@ -183,6 +196,16 @@ class CoursesSpider(Spider):
             "year": year,
             "term": term,
         }
+
+    def process_grade_mode(self, grade_mode: str | None):
+        if not grade_mode:
+            return (None, None)
+
+        if " - " not in grade_mode:
+            return (None, grade_mode)
+
+        grade_mode_code, grade_mode_name = grade_mode.split(" - ")
+        return grade_mode_code, grade_mode_name
 
 
 PREREQ_TEXT = "Prerequisite(s): "

@@ -42,8 +42,10 @@ class Course(scrapy.Item):
     requisites = scrapy.Field(seerializer=dict)
 
     credits = scrapy.Field()
-    grade_mode = scrapy.Field()
+    grade_mode_code = scrapy.Field()
+    grade_mode_name = scrapy.Field()
     components = scrapy.Field(serializer=list)
+    multi_term = scrapy.Field(serializer=bool)
 
     repeatable = scrapy.Field()
     active = scrapy.Field(serializer=bool)
