@@ -121,6 +121,22 @@ class CourseSet(scrapy.Item):
     last_edited_at = scrapy.Field()
 
 
+class RequisiteSet(scrapy.Item):
+    id = scrapy.Field()
+    requisite_set_group_id = scrapy.Field()
+
+    name = scrapy.Field()
+    description = scrapy.Field()
+
+    requisites = scrapy.Field(serializer=dict)
+
+    effective_start_date = scrapy.Field()
+    effective_end_date = scrapy.Field()
+    created_at = scrapy.Field()
+    last_edited_at = scrapy.Field()
+    version = scrapy.Field()
+
+
 class Staff(scrapy.Item):
     sid = scrapy.Field(serialize=int)
     name = scrapy.Field()
