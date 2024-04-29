@@ -38,7 +38,7 @@ class CoursesSpider(Spider):
 
         faculty_code, faculty_name = self.process_faculty(course["college"])
         departments = course["departments"]
-        department_ownership = course.get("departmentOwnership", {})
+        # department_ownership = course.get("departmentOwnership", {})
         career = course["career"]  # Undergraduate / Graduate Programs
 
         description_full = course["description"]
@@ -56,7 +56,7 @@ class CoursesSpider(Spider):
         repeatable = bool(course["credits"]["repeatable"])
         active = course["status"] == "Active"
 
-        start_term = course["startTerm"]
+        start_term = self.process_start_term(course["startTerm"])
 
         created_at = course["createdAt"]
         last_edited_at = course["lastEditedAt"]
@@ -77,7 +77,7 @@ class CoursesSpider(Spider):
             faculty_code=faculty_code,
             faculty_name=faculty_name,
             departments=departments,
-            department_ownership=department_ownership,
+            # department_ownership=department_ownership,
             career=career,
             description=description,
             prereq=prereq,
@@ -150,6 +150,16 @@ class CoursesSpider(Spider):
             }
             topics.append(topic)
         return topics
+
+    def process_start_term(self, start_term):
+        id = start_term["id"]
+        year = start_term["year"]
+        term = str(start_term["semester"])
+        return {
+            "id": id,
+            "year": year,
+            "term": term,
+        }
 
 
 PREREQ_TEXT = "Prerequisite(s): "

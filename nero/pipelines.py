@@ -6,9 +6,11 @@
 
 # useful for handling different item types with a single interface
 
-import json
 import re
 from itemadapter import ItemAdapter
+from pymongo import MongoClient
+
+client = MongoClient("mongodb://root:password@localhost:27017/")
 
 
 class FileStorePipeline:
@@ -25,10 +27,7 @@ class FileStorePipeline:
             file.close()
 
     def process_item(self, item, spider):
-        item_type = item.__class__.__name__
-        if item_type not in self.files.keys():
-            file_object = open("data/" + self.file_name_convert(item_type) + ".jsonl", 'w')
-            self.files[item_type] = file_object
+        item_type = str(item.__class__.__name__).lower()
 
         # For all string fields, remove leading and trailing whitespace
         for field in ItemAdapter(item).field_names():
@@ -36,8 +35,7 @@ class FileStorePipeline:
                 item[field] = item[field].strip()
                 item[field] = re.sub(r"\s+", " ", item[field])
 
-        line = json.dumps(ItemAdapter(item).asdict()) + "\n"
-        self.files[item_type].write(line)
-        self.files[item_type].flush()
+        collection = client.get_database("acadmic").get_collection(item_type)
+        collection.insert_one(ItemAdapter(item).asdict())
 
         return item
