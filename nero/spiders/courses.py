@@ -75,21 +75,16 @@ class CoursesSpider(Spider):
             coursedog_id=coursedog_id,
             cid=cid,
             course_group_id=course_group_id,
-
             code=code,
             subject_code=subject_code,
             course_number=course_number,
-
             name=name,
             long_name=long_name,
-
             topics=topics,
-
             faculty_code=faculty_code,
             faculty_name=faculty_name,
             departments=departments,
             career=career,
-            
             description_full=description_full,
             description=description,
             prereq=prereq,
@@ -98,17 +93,13 @@ class CoursesSpider(Spider):
             notes=notes,
             aka=aka,
             nogpa=nogpa,
-
             requisites=requisites,
-
             credits=credits,
             grade_mode=grade_mode,
             components=components,
-
             repeatable=repeatable,
             active=active,
             start_term=start_term,
-
             created_at=created_at,
             last_edited_at=last_edited_at,
             effective_start_date=effective_start_date,
@@ -117,7 +108,14 @@ class CoursesSpider(Spider):
         )
 
     def process_description(self, description_full: str | None):
-        prereq, coreq, antireq, notes, aka, nogpa = None, None, None, None, None, None
+        description, prereq, coreq, antireq, notes, aka, nogpa = (
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+        )
 
         if description_full:
             description_full = description_full.replace("\n", "\n\n")
