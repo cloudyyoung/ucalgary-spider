@@ -89,25 +89,6 @@ class NeroDownloaderMiddleware:
         # - return a Response object
         # - return a Request object
         # - or raise IgnoreRequest
-
-        # Store webpage to local
-        # page = response.url.split("/")
-        # file = page[-1]
-
-        # # Handle file name
-        # if file == "":
-        #     file = "index.html"
-        # if file.find("?") != -1:
-        #     file = re.sub(r"(.*)(\?).*", r"\1", file)
-
-        # folder = ".res/" + "/".join(page[2:-1])
-
-        # if not os.path.exists(folder):
-        #     os.makedirs(folder)
-
-        # with open(os.path.join(folder, file), 'wb') as f:
-        #     f.write(response.body)
-
         return response
 
     def process_exception(self, request, exception, spider):
@@ -118,7 +99,8 @@ class NeroDownloaderMiddleware:
         # - return None: continue processing this exception
         # - return a Response object: stops process_exception() chain
         # - return a Request object: stops process_exception() chain
-        pass
+
+        print(exception)
 
     def spider_opened(self, spider):
         # spider.logger.info('Spider opened: %s' % spider.name)

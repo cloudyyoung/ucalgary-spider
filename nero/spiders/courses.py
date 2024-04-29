@@ -1,5 +1,6 @@
 import json
 from scrapy import Spider, Request
+from scrapy.exceptions import CloseSpider
 from nero.items import Course
 
 
@@ -9,18 +10,23 @@ class CoursesSpider(Spider):
     def start_requests(self):
         base_url = "https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses?skip={skip}&limit={limit}"
 
-        for t in range(0, 2):
+        # As of April 2024, approaximately 45 pages
+        for t in range(0, 99):
             url = base_url.format(skip=t * 1000, limit=1000)
             yield Request(url=url, callback=self.parse_courses)
 
     def parse_courses(self, response):
         print(response.url)
 
-        courses = str(response.body, encoding="utf-8")
-        courses = dict(json.loads(courses))
+        data = str(response.body, encoding="utf-8")
+        data = dict(json.loads(data))
+        courses = data.values()
 
-        for course in courses.values():
+        for course in courses:
             yield from self.parse_course(course)
+
+        if len(courses) < 1000:
+            raise CloseSpider("No more courses to parse")
 
     def parse_course(self, course):
         coursedog_id = course["id"]
