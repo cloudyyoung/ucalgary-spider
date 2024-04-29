@@ -16,31 +16,40 @@ class Course(scrapy.Item):
     coursedog_id = scrapy.Field()
     cid = scrapy.Field()
     course_group_id = scrapy.Field()
+
     code = scrapy.Field()
     subject_code = scrapy.Field()
     course_number = scrapy.Field()
+
     name = scrapy.Field()
     long_name = scrapy.Field()
+
     topics = scrapy.Field(serializer=list)
+
     faculty_code = scrapy.Field()
     faculty_name = scrapy.Field()
     departments = scrapy.Field(serializer=list)
-    # department_ownership = scrapy.Field(seerializer=list)
     career = scrapy.Field()
+
+    description_full = scrapy.Field()
     description = scrapy.Field()
     prereq = scrapy.Field()
     coreq = scrapy.Field()
     antireq = scrapy.Field()
     notes = scrapy.Field()
     aka = scrapy.Field()
+    nogpa = scrapy.Field(serializer=bool)
+
     requisites = scrapy.Field(seerializer=dict)
+
     credits = scrapy.Field()
     grade_mode = scrapy.Field()
     components = scrapy.Field(serializer=list)
-    nogpa = scrapy.Field()
+
     repeatable = scrapy.Field()
     active = scrapy.Field(serializer=bool)
     start_term = scrapy.Field()
+
     created_at = scrapy.Field()
     last_edited_at = scrapy.Field()
     effective_start_date = scrapy.Field()
@@ -66,6 +75,7 @@ class Department(scrapy.Item):
 
 class Program(scrapy.Item):
     coursedog_id = scrapy.Field()
+    program_group_id = scrapy.Field()
 
     code = scrapy.Field()
     name = scrapy.Field()
@@ -73,19 +83,27 @@ class Program(scrapy.Item):
     display_name = scrapy.Field()
 
     type = scrapy.Field()
-    degree_designation = scrapy.Field()
+    degree_designation_code = scrapy.Field()
+    degree_designation_name = scrapy.Field()
     career = scrapy.Field()
     departments = scrapy.Field(serializer=list)
 
     admission_info = scrapy.Field()
     general_info = scrapy.Field()
+
     transcript_level = scrapy.Field(serializer=int)
     transcript_description = scrapy.Field()
 
     requisites = scrapy.Field(serializer=json.dumps)
 
-    version = scrapy.Field(serializer=int)
     active = scrapy.Field(serializer=bool)
+    start_term = scrapy.Field()
+
+    created_at = scrapy.Field()
+    last_edited_at = scrapy.Field()
+    effective_start_date = scrapy.Field()
+    effective_end_date = scrapy.Field()
+    version = scrapy.Field(serializer=int)
 
 
 class Staff(scrapy.Item):

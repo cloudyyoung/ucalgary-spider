@@ -1,6 +1,7 @@
 import json
 from scrapy import Spider, Request
 from scrapy.exceptions import CloseSpider
+from collections import defaultdict
 from nero.items import Course
 
 
@@ -23,82 +24,91 @@ class CoursesSpider(Spider):
         courses = data.values()
 
         for course in courses:
-            yield from self.parse_course(course)
+            yield from self.parse_course(defaultdict(lambda: None, course))
 
         if len(courses) < 1000:
             raise CloseSpider("No more courses to parse")
 
-    def parse_course(self, course):
-        coursedog_id = course["id"]
-        cid = course["customFields"]["rawCourseId"]
-        course_group_id = course["courseGroupId"]
+    def parse_course(self, course: defaultdict):
+        custom_fields = defaultdict(lambda: None, course.get("customFields", {}))
+        credits_fields = defaultdict(lambda: None, course.get("credits", {}))
 
-        code = course["code"]  # CPSC 413
-        subject_code = course["subjectCode"]  # CPSC
-        course_number = course["courseNumber"]  # 413
+        coursedog_id = course.get("id")
+        cid = custom_fields.get("rawCourseId")
+        course_group_id = course.get("courseGroupId")
 
-        name = course["name"]  # Topic
-        long_name = course["longName"]
+        code = course.get("code")  # CPSC 413
+        subject_code = course.get("subjectCode")  # CPSC
+        course_number = course.get("courseNumber")  # 413, 502.06, etc
 
-        topics = self.process_topics(course["topics"])
+        name = course.get("name")  # Topic
+        long_name = course.get("longName")
 
-        faculty_code, faculty_name = self.process_faculty(course["college"])
-        departments = course["departments"]
-        # department_ownership = course.get("departmentOwnership", {})
-        career = course["career"]  # Undergraduate / Graduate Programs
+        topics = self.process_topics(course.get("topics", []))
 
-        description_full = course["description"]
-        description, prereq, coreq, antireq, notes, aka = self.process_description(
-            description_full
+        faculty_code, faculty_name = self.process_faculty(course.get("college"))
+        departments = course.get("departments", [])
+        career = course.get("career")  # Undergraduate / Graduate Programs
+
+        description_full = course.get("description")
+        description, prereq, coreq, antireq, notes, aka, nogpa = (
+            self.process_description(description_full)
         )
 
-        requisites = course["requisites"]
+        requisites = course.get("requisites", {})
 
-        credits = float(course["credits"]["numberOfCredits"])
-        grade_mode = course["gradeMode"]
-        components = list(map(lambda c: c["code"], course["components"]))
+        credits = float(credits_fields.get("numberOfCredits"))
+        grade_mode = course.get("gradeMode")
+        components = list(map(lambda c: c["code"], course.get("components", [])))
 
-        nogpa = NOGPA_TEXT.upper() in description_full.upper()
-        repeatable = bool(course["credits"]["repeatable"])
-        active = course["status"] == "Active"
+        repeatable = bool(credits_fields.get("repeatable"))
+        active = course.get("status") == "Active"
+        start_term = self.process_start_term(course.get("startTerm"))
 
-        start_term = self.process_start_term(course["startTerm"])
-
-        created_at = course["createdAt"]
-        last_edited_at = course["lastEditedAt"]
-        effective_start_date = course["effectiveStartDate"]
-        effective_end_date = course["effectiveEndDate"]
-        version = course["version"]
+        created_at = course.get("createdAt")
+        last_edited_at = course.get("lastEditedAt")
+        effective_start_date = course.get("effectiveStartDate")
+        effective_end_date = course.get("effectiveEndDate")
+        version = course.get("version")
 
         yield Course(
             coursedog_id=coursedog_id,
             cid=cid,
             course_group_id=course_group_id,
+
             code=code,
             subject_code=subject_code,
             course_number=course_number,
+
             name=name,
             long_name=long_name,
+
             topics=topics,
+
             faculty_code=faculty_code,
             faculty_name=faculty_name,
             departments=departments,
-            # department_ownership=department_ownership,
             career=career,
+            
+            description_full=description_full,
             description=description,
             prereq=prereq,
             coreq=coreq,
             antireq=antireq,
             notes=notes,
             aka=aka,
+            nogpa=nogpa,
+
             requisites=requisites,
+
             credits=credits,
             grade_mode=grade_mode,
             components=components,
-            nogpa=nogpa,
+
             repeatable=repeatable,
             active=active,
             start_term=start_term,
+
             created_at=created_at,
             last_edited_at=last_edited_at,
             effective_start_date=effective_start_date,
@@ -106,31 +116,36 @@ class CoursesSpider(Spider):
             version=version,
         )
 
-    def process_description(self, description_full):
-        description_full = description_full.replace("\n", "\n\n")
-        (description, *more) = description_full.split("\n\n")
+    def process_description(self, description_full: str | None):
+        prereq, coreq, antireq, notes, aka, nogpa = None, None, None, None, None, None
 
-        prereq, coreq, antireq, notes, aka = None, None, None, None, None
+        if description_full:
+            description_full = description_full.replace("\n", "\n\n")
+            (description, *more) = description_full.split("\n\n")
 
-        for t in more:
-            if t.startswith(PREREQ_TEXT):
-                prereq = t.replace(PREREQ_TEXT, "").strip()
+            for t in more:
+                if t.startswith(PREREQ_TEXT):
+                    prereq = t.replace(PREREQ_TEXT, "").strip()
 
-            elif t.startswith(COREQ_TEXT):
-                coreq = t.replace(COREQ_TEXT, "").strip()
+                elif t.startswith(COREQ_TEXT):
+                    coreq = t.replace(COREQ_TEXT, "").strip()
 
-            elif t.startswith(ANTIREQ_TEXT):
-                antireq = t.replace(ANTIREQ_TEXT, "").strip()
+                elif t.startswith(ANTIREQ_TEXT):
+                    antireq = t.replace(ANTIREQ_TEXT, "").strip()
 
-            elif t.startswith(NOTES_TEXT) or t.startswith(NOTES_TEXT_ALT):
-                notes = t.replace(NOTES_TEXT, "").replace(NOTES_TEXT_ALT, "").strip()
+                elif t.startswith(NOTES_TEXT) or t.startswith(NOTES_TEXT_ALT):
+                    notes = (
+                        t.replace(NOTES_TEXT, "").replace(NOTES_TEXT_ALT, "").strip()
+                    )
 
-            elif t.startswith(AKA_TEXT):
-                aka = t.replace(AKA_TEXT, "").strip()
+                elif t.startswith(AKA_TEXT):
+                    aka = t.replace(AKA_TEXT, "").strip()
 
-        return (description, prereq, coreq, antireq, notes, aka)
+            nogpa = NOGPA_TEXT.upper() in description_full.upper()
 
-    def process_faculty(self, faculty):
+        return (description, prereq, coreq, antireq, notes, aka, nogpa)
+
+    def process_faculty(self, faculty: str | None):
         if not faculty:
             return (None, None)
 
@@ -140,7 +155,7 @@ class CoursesSpider(Spider):
         code, full_name = faculty.split(" - ")
         return (code, full_name)
 
-    def process_topics(self, _topics):
+    def process_topics(self, _topics: list):
         topics = []
         for _topic in _topics:
             topic = {
@@ -157,7 +172,10 @@ class CoursesSpider(Spider):
             topics.append(topic)
         return topics
 
-    def process_start_term(self, start_term):
+    def process_start_term(self, start_term: dict | None):
+        if not start_term:
+            return None
+
         id = start_term["id"]
         year = start_term["year"]
         term = str(start_term["semester"])
