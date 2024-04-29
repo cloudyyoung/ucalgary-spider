@@ -117,7 +117,7 @@ class CoursesSpider(Spider):
         )
 
     def process_description(self, description_full: str | None):
-        description, prereq, coreq, antireq, notes, aka, nogpa = None, None, None, None, None, None
+        description, prereq, coreq, antireq, notes, aka, nogpa = None, None, None, None, None, None, None
 
         if description_full:
             description_full = description_full.replace("\n", "\n\n")
