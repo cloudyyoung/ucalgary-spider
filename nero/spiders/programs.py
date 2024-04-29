@@ -97,7 +97,7 @@ class ProgramsSpider(Spider):
             version=version,
         )
 
-    def process_degree_designation(self, designation: str):
+    def process_degree_designation(self, designation: str | None):
         if not designation:
             return None
 
@@ -107,7 +107,7 @@ class ProgramsSpider(Spider):
         designation_code, designation_name = designation.split(" - ")
         return designation_code, designation_name
 
-    def process_start_term(self, start_term):
+    def process_start_term(self, start_term: dict | None):
         if not start_term:
             return None
 
