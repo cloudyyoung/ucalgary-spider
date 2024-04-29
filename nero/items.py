@@ -107,6 +107,20 @@ class Program(scrapy.Item):
     version = scrapy.Field(serializer=int)
 
 
+class CourseSet(scrapy.Item):
+    id = scrapy.Field()
+
+    name = scrapy.Field()
+    description = scrapy.Field()
+    type = scrapy.Field()
+
+    structure = scrapy.Field(serializer=dict)
+    course_list = scrapy.Field(serializer=list)
+
+    created_at = scrapy.Field()
+    last_edited_at = scrapy.Field()
+
+
 class Staff(scrapy.Item):
     sid = scrapy.Field(serialize=int)
     name = scrapy.Field()

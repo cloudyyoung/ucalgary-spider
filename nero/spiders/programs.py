@@ -11,7 +11,6 @@ class ProgramsSpider(Spider):
     def start_requests(self):
         base_url = "https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/programs?skip={skip}&limit={limit}&sortBy=catalogDisplayName"
 
-        # As of April 2024,
         for t in range(0, 99):
             url = base_url.format(skip=t * 1000, limit=1000)
             yield Request(url=url, callback=self.parse_programs)

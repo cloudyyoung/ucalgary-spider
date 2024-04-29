@@ -33,6 +33,14 @@ https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses/1604171-2018-07-
 https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/programs/
 https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courseSets/
 
+# Terms
+https://app.coursedog.com/api/v1/ucalgary_peoplesoft/general/terms
+
+# Requisites
+https://app.coursedog.com/api/v1/ucalgary_peoplesoft/requisite-sets
+
+
+
 AOS - Area of Study
 
 
