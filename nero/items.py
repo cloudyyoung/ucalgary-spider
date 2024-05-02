@@ -43,7 +43,7 @@ class Course(scrapy.Item):
     aka = scrapy.Field()
     nogpa = scrapy.Field(serializer=bool)
 
-    requisites = scrapy.Field(seerializer=dict)
+    requisites = scrapy.Field(seerializer=list)
 
     credits = scrapy.Field()
     grade_mode_code = scrapy.Field()

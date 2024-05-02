@@ -1,4 +1,5 @@
 import json
+import re
 from scrapy import Spider, Request
 from scrapy.exceptions import CloseSpider
 from collections import defaultdict
@@ -13,7 +14,7 @@ class CoursesSpider(Spider):
 
         # As of April 2024, approaximately 45 pages
         for t in range(0, 99):
-            url = base_url.format(skip=t * 1000, limit=1000)
+            url = base_url.format(skip=t * 2000, limit=2000)
             yield Request(url=url, callback=self.parse_courses)
 
     def parse_courses(self, response):
@@ -55,7 +56,7 @@ class CoursesSpider(Spider):
             self.process_description(description_full)
         )
 
-        requisites = course.get("requisites", {})
+        requisites = self.process_requisites(course.get("requisites"))
 
         credits = float(credits_fields.get("numberOfCredits"))
         grade_mode_code, grade_mode_name = self.process_grade_mode(
@@ -206,6 +207,29 @@ class CoursesSpider(Spider):
 
         grade_mode_code, grade_mode_name = grade_mode.split(" - ")
         return grade_mode_code, grade_mode_name
+
+    def process_requisites(self, requisites: dict):
+        if not requisites or "requisitesSimple" not in requisites:
+            return None
+
+        requisites_simple = requisites["requisitesSimple"]
+
+        return convert_keys_camel_to_snake(requisites_simple)
+
+
+def convert_keys_camel_to_snake(a: list):
+    def convert_dict(d: dict):
+        e = {re.sub(r"(?<!^)(?=[A-Z])", "_", k).lower(): v for k, v in d.items()}
+
+        for k, v in e.items():
+            if isinstance(v, dict):
+                e[k] = convert_dict(v)
+            elif isinstance(v, list):
+                e[k] = convert_keys_camel_to_snake(v)
+
+        return e
+
+    return [convert_dict(i) if isinstance(i, dict) else i for i in a]
 
 
 PREREQ_TEXT = "Prerequisite(s): "
