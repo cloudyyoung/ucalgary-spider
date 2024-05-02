@@ -3,6 +3,7 @@ from scrapy import Spider, Request
 from scrapy.exceptions import CloseSpider
 from collections import defaultdict
 from nero.items import Program
+from nero.spiders.courses import convert_list_camel_to_snake
 
 
 class ProgramsSpider(Spider):
@@ -49,7 +50,7 @@ class ProgramsSpider(Spider):
         transcript_level = program.get("transcriptLevel")
         transcript_description = program.get("transcriptDescription")
 
-        requisites = program.get("requisites", {})
+        requisites = self.process_requisites(program.get("requisites"))
 
         active = program["status"] == "Active"
         start_term = self.process_start_term(program.get("startTerm"))
@@ -115,6 +116,13 @@ class ProgramsSpider(Spider):
             "year": year,
             "term": term,
         }
+
+    def process_requisites(self, requisites: dict):
+        if not requisites or "requisitesSimple" not in requisites:
+            return []
+
+        requisites_simple = requisites["requisitesSimple"]
+        return convert_list_camel_to_snake(requisites_simple)
 
 
 REQUEST_BODY = {

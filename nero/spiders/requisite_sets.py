@@ -2,6 +2,7 @@ import json
 from scrapy import Spider, Request
 from collections import defaultdict
 from nero.items import RequisiteSet
+from nero.spiders.courses import convert_list_camel_to_snake
 
 
 class RequisiteSetsSpider(Spider):
@@ -28,7 +29,7 @@ class RequisiteSetsSpider(Spider):
         name = str(course_set.get("name")).strip() if course_set.get("name") else None
         description = course_set.get("description")
 
-        requisites = course_set.get("requisites", {})
+        requisites = self.process_requisites(course_set.get("requisites"))
 
         effective_start_date = course_set.get("effectiveStartDate")
         effective_end_date = course_set.get("effectiveEndDate")
@@ -51,3 +52,9 @@ class RequisiteSetsSpider(Spider):
             last_edited_at=last_edited_at,
             version=version,
         )
+
+    def process_requisites(self, requisites):
+        if not requisites:
+            return []
+
+        return convert_list_camel_to_snake(requisites)

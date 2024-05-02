@@ -105,7 +105,7 @@ class Program(scrapy.Item):
     transcript_level = scrapy.Field(serializer=int)
     transcript_description = scrapy.Field()
 
-    requisites = scrapy.Field(serializer=json.dumps)
+    requisites = scrapy.Field(serializer=list)
 
     active = scrapy.Field(serializer=bool)
     start_term = scrapy.Field()
@@ -142,7 +142,7 @@ class RequisiteSet(scrapy.Item):
     name = scrapy.Field()
     description = scrapy.Field()
 
-    requisites = scrapy.Field(serializer=dict)
+    requisites = scrapy.Field(serializer=list)
 
     effective_start_date = scrapy.Field()
     effective_end_date = scrapy.Field()

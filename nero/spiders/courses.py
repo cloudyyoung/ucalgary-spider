@@ -27,7 +27,7 @@ class CoursesSpider(Spider):
         for course in courses:
             yield from self.parse_course(defaultdict(lambda: None, course))
 
-        if len(courses) < 1000:
+        if len(courses) < 2000:
             raise CloseSpider("No more courses to parse")
 
     def parse_course(self, course: defaultdict):
@@ -210,26 +210,28 @@ class CoursesSpider(Spider):
 
     def process_requisites(self, requisites: dict):
         if not requisites or "requisitesSimple" not in requisites:
-            return None
+            return []
 
         requisites_simple = requisites["requisitesSimple"]
+        return convert_list_camel_to_snake(requisites_simple)
 
-        return convert_keys_camel_to_snake(requisites_simple)
+
+def convert_dict_keys_camel_to_snake(d: dict):
+    e = {re.sub(r"(?<!^)(?=[A-Z])", "_", k).lower(): v for k, v in d.items()}
+
+    for k, v in e.items():
+        if isinstance(v, dict):
+            e[k] = convert_dict_keys_camel_to_snake(v)
+        elif isinstance(v, list):
+            e[k] = convert_list_camel_to_snake(v)
+
+    return e
 
 
-def convert_keys_camel_to_snake(a: list):
-    def convert_dict(d: dict):
-        e = {re.sub(r"(?<!^)(?=[A-Z])", "_", k).lower(): v for k, v in d.items()}
-
-        for k, v in e.items():
-            if isinstance(v, dict):
-                e[k] = convert_dict(v)
-            elif isinstance(v, list):
-                e[k] = convert_keys_camel_to_snake(v)
-
-        return e
-
-    return [convert_dict(i) if isinstance(i, dict) else i for i in a]
+def convert_list_camel_to_snake(a: list):
+    return [
+        convert_dict_keys_camel_to_snake(i) if isinstance(i, dict) else i for i in a
+    ]
 
 
 PREREQ_TEXT = "Prerequisite(s): "
