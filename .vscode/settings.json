@@ -3,5 +3,7 @@
         "**/__pycache__/**": true,
         "**/CVS": false
     },
-    "circleci.persistedProjectSelection": []
+    "circleci.persistedProjectSelection": [
+        "gh/cloudyyoung/ucalgary-spider"
+    ]
 }
