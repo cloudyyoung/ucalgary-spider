@@ -4,7 +4,7 @@ from nero.items import SubjectCode
 
 
 class SubjectCodeSpider(Spider):
-    name = "subject-code"
+    name = "subject-codes"
 
     def start_requests(self):
         url = "https://app.coursedog.com/api/v1/ca/ucalgary_peoplesoft/search-configurations/3HheDcKChSNwS1Wr1Khr"
