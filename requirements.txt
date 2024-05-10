@@ -6,3 +6,4 @@ unidecode
 xmltodict
 htmlmin
 panzi-json-logic
+nltk
