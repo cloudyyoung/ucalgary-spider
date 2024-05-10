@@ -58,7 +58,8 @@ class CoursesSpider(Spider):
 
         requisites = self.process_requisites(course.get("requisites"))
 
-        credits = float(credits_fields.get("numberOfCredits"))
+        credits_raw = credits_fields.get("numberOfCredits")
+        credits = float(credits_raw) if credits_raw else None
         grade_mode_code, grade_mode_name = self.process_grade_mode(
             course.get("gradeMode")
         )
@@ -208,7 +209,7 @@ class CoursesSpider(Spider):
         grade_mode_code, grade_mode_name = grade_mode.split(" - ")
         return grade_mode_code, grade_mode_name
 
-    def process_requisites(self, requisites: dict):
+    def process_requisites(self, requisites: dict | None):
         if not requisites or "requisitesSimple" not in requisites:
             return []
 
