@@ -111,7 +111,6 @@ class SubjectCodeSpider(Spider):
         soup = BeautifulSoup(body, "html.parser")
 
         faculties_dom = soup.select("#ctl00_ctl00_pageContent .item-container")
-        year = response.meta.get("year")
 
         print(response.url)
 
