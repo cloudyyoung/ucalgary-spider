@@ -45,6 +45,12 @@ class SubjectCodeSpider(Spider):
                 headers={"Content-Type": "application/json"},
             )
 
+        yield Request(
+            url="https://google.com",
+            callback=self.yield_additional_codes,
+            method="GET",
+        )
+
     def parse(self, response):
         body = str(response.body, encoding="utf-8")
         body = json.loads(body)
@@ -147,3 +153,10 @@ class SubjectCodeSpider(Spider):
                     code=course_code,
                     title=course_title,
                 )
+
+    def yield_additional_codes(self, _):
+        # Additional codes
+        yield SubjectCode(
+            code="COMS",
+            title="Communications Studies",
+        )
