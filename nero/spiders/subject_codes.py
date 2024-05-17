@@ -160,3 +160,8 @@ class SubjectCodeSpider(Spider):
             code="COMS",
             title="Communications Studies",
         )
+
+        yield SubjectCode(
+            code="MDSC",
+            title="Medical Sciences",
+        )
