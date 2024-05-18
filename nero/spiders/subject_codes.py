@@ -170,3 +170,8 @@ class SubjectCodeSpider(Spider):
             code="ENSF",
             title="Software Engineering for Software Engineers",
         )
+
+        yield SubjectCode(
+            code="LWSO",
+            title="Law and Society",
+        )
