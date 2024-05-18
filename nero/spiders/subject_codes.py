@@ -165,3 +165,8 @@ class SubjectCodeSpider(Spider):
             code="MDSC",
             title="Medical Sciences",
         )
+
+        yield SubjectCode(
+            code="ENSF",
+            title="Software Engineering for Software Engineers",
+        )
