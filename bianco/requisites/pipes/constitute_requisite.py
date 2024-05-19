@@ -113,6 +113,24 @@ def consent_of(matcher, doc: Doc, i, matches):
     doc._.json_logics.append((span, json_logic))
 
 
+consent_of_patterns = get_dynamic_patterns(
+    [
+        {"LEMMA": "consent"},
+        {"POS": "ADP", "OP": "+"},
+    ],
+    [
+        {"ENT_TYPE": {"NOT_IN": ["COURSE"]}},
+    ],
+    range(1, 200),
+    [
+        {
+            "LEMMA": {"NOT_IN": ["and", "or", ",", ";"]},
+            "ENT_TYPE": {"NOT_IN": ["COURSE", "REQUISITE"]},
+        },
+    ],
+)
+
+
 def admission_of(matcher, doc: Doc, i, matches):
     match_id, start, end = matches[i]
     span = doc[start:end]
@@ -197,14 +215,7 @@ def constitute_requisite(nlp: Language, name: str):
     )
     requisite_pattern_matcher.add(
         "Consent of",
-        [
-            [
-                {"LEMMA": "consent"},
-                {"POS": "ADP", "OP": "+"},
-                {"TEXT": {"REGEX": "[A-Za-z, ]"}, "OP": "*"},
-                {"IS_SENT_START": False},
-            ]
-        ],
+        consent_of_patterns,
         greedy="LONGEST",
         on_match=consent_of,
     )
