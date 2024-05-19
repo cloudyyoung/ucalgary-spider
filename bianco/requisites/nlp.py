@@ -16,10 +16,7 @@ nlp.add_pipe("expand_course_code")
 nlp.add_pipe("detect_entity")
 nlp.add_pipe("merge_entity_spans")
 # nlp.add_pipe("default_pipeline")
-
-
-nlp.add_pipe("constitute_requisite", f"constitute_requisite_{t}")
-
+nlp.add_pipe("constitute_requisite")
 nlp.add_pipe("detect_entity", "detect_entity_2")
 
 
