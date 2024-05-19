@@ -2,9 +2,9 @@ from spacy.language import Language
 from spacy.tokens import Doc
 from spacy.matcher import Matcher
 
-from requisites.nlp import nlp
+eng = Language(True)
 
-course_number_matcher = Matcher(nlp.vocab)
+course_number_matcher = Matcher(eng.vocab)
 course_number_matcher.add(
     "COURSE_NUMBER",
     [
