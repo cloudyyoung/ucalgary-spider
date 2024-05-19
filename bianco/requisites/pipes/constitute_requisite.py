@@ -1,5 +1,5 @@
 from spacy.language import Language
-from spacy.tokens import Doc
+from spacy.tokens import Doc, Token
 from spacy.matcher import Matcher
 import re
 

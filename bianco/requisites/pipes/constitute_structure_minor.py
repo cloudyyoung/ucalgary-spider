@@ -1,21 +1,24 @@
 from spacy.language import Language
 from spacy.tokens import Doc
 from spacy.matcher import Matcher
-import re
 
-from requisites.nlp import nlp
 from requisites.utils import (
     get_dynamic_patterns,
     find_replacement,
     find_json_logic,
     replacement_letters,
 )
-
-structure_minor_matcher = Matcher(nlp.vocab)
+from requisites.pipes.constitute_requisite import (
+    sort_matches_by_length,
+    is_longest_match,
+)
 
 
 ### A, B, C, ..., and D
 def and_list(matcher, doc, i, matches):
+    if not is_longest_match(i, matches):
+        return
+
     match_id, start, end = matches[i]
     span = doc[start:end]
     predicates = []
@@ -35,7 +38,7 @@ def and_list(matcher, doc, i, matches):
     else:
         json_logic = {"and": predicates}
 
-    doc._.json_logics.append((span, json_logic))
+    doc._.json_logics.append((span.text, json_logic))
 
 
 and_list_patterns = get_dynamic_patterns(
@@ -53,15 +56,14 @@ and_list_patterns = get_dynamic_patterns(
         {"TEXT": {"IN": [","]}, "OP": "?"},
     ],
 )
-
-structure_minor_matcher.add(
-    "A, B, C, ..., and D", and_list_patterns, greedy="LONGEST", on_match=and_list
-)
 ### A, B, C, ..., and D
 
 
 ### A, B, C, ..., or D
 def or_list(matcher, doc, i, matches):
+    if not is_longest_match(i, matches):
+        return
+
     match_id, start, end = matches[i]
     span = doc[start:end]
     predicates = []
@@ -81,7 +83,7 @@ def or_list(matcher, doc, i, matches):
     else:
         json_logic = {"or": predicates}
 
-    doc._.json_logics.append((span, json_logic))
+    doc._.json_logics.append((span.text, json_logic))
 
 
 or_list_patterns = get_dynamic_patterns(
@@ -99,33 +101,41 @@ or_list_patterns = get_dynamic_patterns(
         {"TEXT": {"IN": [","]}, "OP": "?"},
     ],
 )
-
-structure_minor_matcher.add(
-    "A, B, C, ..., or D", or_list_patterns, greedy="LONGEST", on_match=or_list
-)
 ### A, B, C, ..., or D
 
 
-@Language.component("constitute_structure_minor")
-def constitute_structure(doc: Doc):
-    sent = doc.text
-    matches = structure_minor_matcher(doc)
-    replacements = []
+@Language.factory("constitute_structure_minor")
+def constitute_structure_minor(nlp: Language, name: str):
+    matcher = Matcher(nlp.vocab)
+    matcher.add(
+        "A, B, C, ..., and D", and_list_patterns, greedy="LONGEST", on_match=and_list
+    )
+    matcher.add(
+        "A, B, C, ..., or D", or_list_patterns, greedy="LONGEST", on_match=or_list
+    )
 
-    # sort matches by length of span
-    matches = sorted(matches, key=lambda x: x[2] - x[1], reverse=True)
+    def constitute(doc: Doc):
+        while matches := matcher(doc):
+            # sort matches by length of span
+            matches = sort_matches_by_length(matches)
+            match_id, start, end = matches[0]
 
-    for match_id, start, end in matches:
-        letter = next(replacement_letters)
-        replacement = f"RQ {letter}"
-        span = doc[start:end]
-        new_sent = re.sub(re.escape(span.text), replacement, sent)
+            letter = next(replacement_letters)
+            replacement = f"RQ {letter}"
+            span = doc[start:end]
+            doc._.replacements.append((replacement, span.text))
 
-        if new_sent != sent:
-            sent = new_sent
-            replacements.append((replacement, span))
+            with doc.retokenize() as retokenizer:
+                retokenizer.merge(
+                    span,
+                    attrs={
+                        "LEMMA": replacement,
+                        "ENT_TYPE": "REQUISITE",
+                        "POS": "PROPN",
+                        "TAG": "REQUISITE",
+                    },
+                )
 
-    new_doc = nlp(sent)
-    new_doc._.replacements = doc._.replacements + replacements
-    new_doc._.json_logics = doc._.json_logics
-    return new_doc
+        return doc
+
+    return constitute
