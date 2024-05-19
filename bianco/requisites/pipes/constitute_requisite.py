@@ -247,8 +247,6 @@ def constitute_requisite(nlp: Language, name: str):
     )
 
     def constitute(doc: Doc):
-        sent = doc.text
-
         while matches := requisite_pattern_matcher(doc):
             # sort matches by length of span
             matches = sorted(matches, key=lambda x: x[2] - x[1], reverse=True)
@@ -257,22 +255,18 @@ def constitute_requisite(nlp: Language, name: str):
             letter = next(replacement_letters)
             replacement = f"RQ {letter}"
             span = doc[start:end]
-            new_sent = re.sub(re.escape(span.text), replacement, sent)
+            doc._.replacements.append((replacement, span))
 
-            if new_sent != sent:
-                sent = new_sent
-                doc._.replacements.append((replacement, span))
-
-                with doc.retokenize() as retokenizer:
-                    retokenizer.merge(
-                        span,
-                        attrs={
-                            "LEMMA": replacement,
-                            "ENT_TYPE": "REQUISITE",
-                            "POS": "PROPN",
-                            "TAG": "REQUISITE",
-                        },
-                    )
+            with doc.retokenize() as retokenizer:
+                retokenizer.merge(
+                    span,
+                    attrs={
+                        "LEMMA": replacement,
+                        "ENT_TYPE": "REQUISITE",
+                        "POS": "PROPN",
+                        "TAG": "REQUISITE",
+                    },
+                )
 
         return doc
 
