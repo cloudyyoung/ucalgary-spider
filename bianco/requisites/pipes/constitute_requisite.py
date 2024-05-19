@@ -6,8 +6,22 @@ import re
 from requisites.utils import get_dynamic_patterns, replacement_letters
 
 
+def sort_matches_by_length(matches: list[tuple[int, int, int]]):
+    return sorted(matches, key=lambda x: x[2] - x[1], reverse=True)
+
+
+def is_longest_match(i: int, matches: list[tuple[int, int, int]]):
+    match_id, _, _ = matches[i]
+    sorted_matches = sort_matches_by_length(matches)
+    longest_match_id, _, _ = sorted_matches[0]
+    return match_id == longest_match_id
+
+
 ### X Units of
-def x_units_of(matcher, doc, i, matches):
+def x_units_of(matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int, int]]):
+    if not is_longest_match(i, matches):
+        return
+
     match_id, start, end = matches[i]
     span = doc[start:end]
 
@@ -21,7 +35,7 @@ def x_units_of(matcher, doc, i, matches):
         }
     }
 
-    doc._.json_logics.append((span, json_logic))
+    doc._.json_logics.append((span.text, json_logic))
 
 
 x_units_of_patterns = get_dynamic_patterns(
@@ -44,7 +58,10 @@ x_units_of_patterns = get_dynamic_patterns(
 ### X Units of
 
 
-def x_units(matcher, doc, i, matches):
+def x_units(matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int, int]]):
+    if not is_longest_match(i, matches):
+        return
+
     match_id, start, end = matches[i]
     span = doc[start:end]
 
@@ -57,11 +74,14 @@ def x_units(matcher, doc, i, matches):
         }
     }
 
-    doc._.json_logics.append((span, json_logic))
+    doc._.json_logics.append((span.text, json_logic))
 
 
 ### X of
 def x_of(matcher, doc: Doc, i, matches):
+    if not is_longest_match(i, matches):
+        return
+
     match_id, start, end = matches[i]
     span = doc[start:end]
 
@@ -82,7 +102,7 @@ def x_of(matcher, doc: Doc, i, matches):
         },
     }
 
-    doc._.json_logics.append((span, json_logic))
+    doc._.json_logics.append((span.text, json_logic))
 
 
 x_of_patterns = get_dynamic_patterns(
@@ -104,13 +124,16 @@ x_of_patterns = get_dynamic_patterns(
 
 ### Consent of
 def consent_of(matcher, doc: Doc, i, matches):
+    if not is_longest_match(i, matches):
+        return
+
     match_id, start, end = matches[i]
     span = doc[start:end]
     consent_of = span[2:].text.strip()
     if consent_of.endswith("."):
         consent_of = consent_of[:-1]
     json_logic = {"consent": consent_of}
-    doc._.json_logics.append((span, json_logic))
+    doc._.json_logics.append((span.text, json_logic))
 
 
 consent_of_patterns = get_dynamic_patterns(
@@ -132,13 +155,16 @@ consent_of_patterns = get_dynamic_patterns(
 
 
 def admission_of(matcher, doc: Doc, i, matches):
+    if not is_longest_match(i, matches):
+        return
+
     match_id, start, end = matches[i]
     span = doc[start:end]
     admission_of = span[2:].text.strip()
     if admission_of.endswith("."):
         admission_of = admission_of[:-1]
     json_logic = {"admission": admission_of}
-    doc._.json_logics.append((span, json_logic))
+    doc._.json_logics.append((span.text, json_logic))
 
 
 admission_of_patterns = get_dynamic_patterns(
@@ -161,26 +187,36 @@ admission_of_patterns = get_dynamic_patterns(
 
 
 ### Both A and B
-def both_a_and_b(matcher, doc, i, matches):
+def both_a_and_b(
+    matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int, int]]
+):
+    if not is_longest_match(i, matches):
+        return
+
     match_id, start, end = matches[i]
     span = doc[start:end]
     a = span[1]
     b = span[3]
     json_logic = {"and": [{"course": a.text}, {"course": b.text}]}
-    doc._.json_logics.append((span, json_logic))
+    doc._.json_logics.append((span.text, json_logic))
 
 
 ### Both A and B
 
 
 ### Either A or B
-def either_a_or_b(matcher, doc, i, matches):
+def either_a_or_b(
+    matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int, int]]
+):
+    if not is_longest_match(i, matches):
+        return
+
     match_id, start, end = matches[i]
     span = doc[start:end]
     a = span[1]
     b = span[3]
     json_logic = {"or": [{"course": a.text}, {"course": b.text}]}
-    doc._.json_logics.append((span, json_logic))
+    doc._.json_logics.append((span.text, json_logic))
 
 
 ### Either A or B
@@ -249,13 +285,13 @@ def constitute_requisite(nlp: Language, name: str):
     def constitute(doc: Doc):
         while matches := requisite_pattern_matcher(doc):
             # sort matches by length of span
-            matches = sorted(matches, key=lambda x: x[2] - x[1], reverse=True)
+            matches = sort_matches_by_length(matches)
             match_id, start, end = matches[0]
 
             letter = next(replacement_letters)
             replacement = f"RQ {letter}"
             span = doc[start:end]
-            doc._.replacements.append((replacement, span))
+            doc._.replacements.append((replacement, span.text))
 
             with doc.retokenize() as retokenizer:
                 retokenizer.merge(
