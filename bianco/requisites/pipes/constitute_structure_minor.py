@@ -123,7 +123,10 @@ def constitute_structure_minor(nlp: Language, name: str):
             letter = next(replacement_letters)
             replacement = f"RQ {letter}"
             span = doc[start:end]
-            doc._.replacements.append((replacement, span.text))
+
+            doc_copy = Doc(nlp.vocab).from_json(doc.to_json())
+            span_copy = doc_copy[span.start : span.end]
+            doc._.replacements.append((replacement, span_copy))
 
             with doc.retokenize() as retokenizer:
                 retokenizer.merge(
