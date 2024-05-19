@@ -7,6 +7,8 @@ from requisites.utils import (
     find_replacement,
     find_json_logic,
     replacement_letters,
+    copy_doc,
+    copy_span,
 )
 from requisites.pipes.constitute_requisite import (
     sort_matches_by_length,
@@ -28,7 +30,7 @@ def and_list(matcher, doc, i, matches):
             predicates.append({"course": ent.text})
 
         elif ent.label_ == "REQUISITE":
-            requisite_span = find_replacement(ent.text, doc._.replacements)
+            requisite_span = find_replacement(ent.lemma_, doc._.replacements)
             requisite_logic = find_json_logic(requisite_span, doc._.json_logics)
             if requisite_logic:
                 predicates.append(requisite_logic)
@@ -38,7 +40,8 @@ def and_list(matcher, doc, i, matches):
     else:
         json_logic = {"and": predicates}
 
-    doc._.json_logics.append((span.text, json_logic))
+    span_copy = copy_span(span)
+    doc._.json_logics.append((span_copy, json_logic))
 
 
 and_list_patterns = get_dynamic_patterns(
@@ -73,7 +76,7 @@ def or_list(matcher, doc, i, matches):
             predicates.append({"course": ent.text})
 
         elif ent.label_ == "REQUISITE":
-            requisite_span = find_replacement(ent.text, doc._.replacements)
+            requisite_span = find_replacement(ent.lemma_, doc._.replacements)
             requisite_logic = find_json_logic(requisite_span, doc._.json_logics)
             if requisite_logic:
                 predicates.append(requisite_logic)
@@ -83,7 +86,8 @@ def or_list(matcher, doc, i, matches):
     else:
         json_logic = {"or": predicates}
 
-    doc._.json_logics.append((span.text, json_logic))
+    span_copy = copy_span(span)
+    doc._.json_logics.append((span_copy, json_logic))
 
 
 or_list_patterns = get_dynamic_patterns(
@@ -124,8 +128,7 @@ def constitute_structure_minor(nlp: Language, name: str):
             replacement = f"RQ {letter}"
             span = doc[start:end]
 
-            doc_copy = Doc(nlp.vocab).from_json(doc.to_json())
-            span_copy = doc_copy[span.start : span.end]
+            span_copy = copy_span(span)
             doc._.replacements.append((replacement, span_copy))
 
             with doc.retokenize() as retokenizer:

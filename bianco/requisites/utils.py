@@ -131,3 +131,12 @@ def add_token_at_index(doc, token_text, index, space_after=True):
 
     return new_doc
 
+
+def copy_doc(doc: Doc):
+    new_doc = Doc(doc.vocab).from_json(doc.to_json())
+    return new_doc
+
+def copy_span(span: Span):
+    doc_copy = copy_doc(span.doc)
+    new_span = Span(doc_copy, span.start, span.end)
+    return new_span

@@ -1,9 +1,8 @@
 from spacy.language import Language
 from spacy.tokens import Doc, Token
 from spacy.matcher import Matcher
-import re
 
-from requisites.utils import get_dynamic_patterns, replacement_letters
+from requisites.utils import get_dynamic_patterns, replacement_letters, copy_span
 
 
 def sort_matches_by_length(matches: list[tuple[int, int, int]]):
@@ -35,7 +34,8 @@ def x_units_of(matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int,
         }
     }
 
-    doc._.json_logics.append((span.text, json_logic))
+    span_copy = copy_span(span)
+    doc._.json_logics.append((span_copy, json_logic))
 
 
 x_units_of_patterns = get_dynamic_patterns(
@@ -73,7 +73,8 @@ def x_units(matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int, in
         }
     }
 
-    doc._.json_logics.append((span.text, json_logic))
+    span_copy = copy_span(span)
+    doc._.json_logics.append((span_copy, json_logic))
 
 
 ### X of
@@ -101,7 +102,8 @@ def x_of(matcher, doc: Doc, i, matches):
         },
     }
 
-    doc._.json_logics.append((span.text, json_logic))
+    span_copy = copy_span(span)
+    doc._.json_logics.append((span_copy, json_logic))
 
 
 x_of_patterns = get_dynamic_patterns(
@@ -132,7 +134,9 @@ def consent_of(matcher, doc: Doc, i, matches):
     if consent_of.endswith("."):
         consent_of = consent_of[:-1]
     json_logic = {"consent": consent_of}
-    doc._.json_logics.append((span.text, json_logic))
+
+    span_copy = copy_span(span)
+    doc._.json_logics.append((span_copy, json_logic))
 
 
 consent_of_patterns = get_dynamic_patterns(
@@ -163,7 +167,9 @@ def admission_of(matcher, doc: Doc, i, matches):
     if admission_of.endswith("."):
         admission_of = admission_of[:-1]
     json_logic = {"admission": admission_of}
-    doc._.json_logics.append((span.text, json_logic))
+
+    span_copy = copy_span(span)
+    doc._.json_logics.append((span_copy, json_logic))
 
 
 admission_of_patterns = get_dynamic_patterns(
@@ -197,7 +203,8 @@ def both_a_and_b(
     a = span[1]
     b = span[3]
     json_logic = {"and": [{"course": a.text}, {"course": b.text}]}
-    doc._.json_logics.append((span.text, json_logic))
+    span_copy = copy_span(span)
+    doc._.json_logics.append((span_copy, json_logic))
 
 
 ### Both A and B
@@ -215,7 +222,9 @@ def either_a_or_b(
     a = span[1]
     b = span[3]
     json_logic = {"or": [{"course": a.text}, {"course": b.text}]}
-    doc._.json_logics.append((span.text, json_logic))
+
+    span_copy = copy_span(span)
+    doc._.json_logics.append((span_copy, json_logic))
 
 
 ### Either A or B
@@ -291,8 +300,7 @@ def constitute_requisite(nlp: Language, name: str):
             replacement = f"RQ {letter}"
             span = doc[start:end]
 
-            doc_copy = Doc(nlp.vocab).from_json(doc.to_json())
-            span_copy = doc_copy[span.start : span.end]
+            span_copy = copy_span(span)
             doc._.replacements.append((replacement, span_copy))
 
             with doc.retokenize() as retokenizer:
