@@ -21,7 +21,7 @@ def create_detect_entity(nlp: Language, name: str):
     entity_ruler: EntityRuler = nlp.add_pipe(
         "entity_ruler", config={"overwrite_ents": True}
     )
-    entity_ruler.add_patterns(patterns)
+    entity_ruler.add_patterns(patterns, name)
 
     def detect_entity(doc):
         ents = entity_ruler.match(doc)
