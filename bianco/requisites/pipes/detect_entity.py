@@ -2,7 +2,7 @@ from spacy.language import Language
 from spacy.tokens import Doc
 from spacy.pipeline import EntityRuler
 
-from ..nlp import nlp
+from requisites.nlp import nlp
 
 subject_code_regex = r"([A-Z]{3,4})"
 

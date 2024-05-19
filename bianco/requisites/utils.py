@@ -2,9 +2,9 @@ import itertools
 from spacy.tokens import Span, Doc, Token
 from pymongo import MongoClient
 
-from expand_nlp import expand_nlp
-from constituency_nlp import constituency_nlp
-from structure_nlp import structure_nlp
+from requisites.expand_nlp import expand_nlp
+from requisites.constituency_nlp import constituency_nlp
+from requisites.structure_nlp import structure_nlp
 
 
 def get_replacement_letter():

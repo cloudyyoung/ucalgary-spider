@@ -1,8 +1,8 @@
 from spacy.language import Language
 from spacy.tokens import Doc
 
-from ..utils import subject_codes
-from ..nlp import nlp
+from requisites.utils import subject_codes
+from requisites.nlp import nlp
 
 
 @Language.component("expand_course_code")

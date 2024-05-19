@@ -3,9 +3,8 @@ from spacy.tokens import Doc
 from spacy.matcher import Matcher
 import re
 
-from ..utils import get_dynamic_patterns, replacement_letters
-
-from ..nlp import nlp
+from requisites.utils import get_dynamic_patterns, replacement_letters
+from requisites.nlp import nlp
 
 requisite_pattern_matcher = Matcher(nlp.vocab)
 

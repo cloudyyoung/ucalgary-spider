@@ -3,8 +3,8 @@ from spacy.tokens import Doc
 from spacy.matcher import Matcher
 import re
 
-from ..nlp import nlp
-from ..utils import (
+from requisites.nlp import nlp
+from requisites.utils import (
     get_dynamic_patterns,
     find_replacement,
     find_json_logic,

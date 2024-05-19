@@ -3,9 +3,9 @@ from spacy.tokens import Doc
 from spacy.matcher import Matcher
 import re
 
-from ..nlp import nlp
-from ..utils import get_dynamic_patterns, replacement_letters
-from .constitute_structure_minor import and_list, or_list
+from requisites.nlp import nlp
+from requisites.utils import get_dynamic_patterns, replacement_letters
+from requisites.pipes.constitute_structure_minor import and_list, or_list
 
 structure_major_matcher = Matcher(nlp.vocab)
 

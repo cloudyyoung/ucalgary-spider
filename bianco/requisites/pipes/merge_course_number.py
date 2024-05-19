@@ -2,7 +2,7 @@ from spacy.language import Language
 from spacy.tokens import Doc
 from spacy.matcher import Matcher
 
-from ..nlp import nlp
+from requisites.nlp import nlp
 
 course_number_matcher = Matcher(nlp.vocab)
 course_number_matcher.add(

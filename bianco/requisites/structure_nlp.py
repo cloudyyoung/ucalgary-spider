@@ -1,9 +1,9 @@
 import spacy
 
-from pipes.constitute_structure_minor import *
-from pipes.constitute_structure_major import *
-from pipes.detect_entity import *
-from pipes.merge_entity_spans import *
+from requisites.pipes.constitute_structure_minor import *
+from requisites.pipes.constitute_structure_major import *
+from requisites.pipes.detect_entity import *
+from requisites.pipes.merge_entity_spans import *
 
 structure_nlp = spacy.load("en_core_web_sm", exclude=["ner"])
 
