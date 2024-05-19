@@ -9,6 +9,7 @@ from requisites.utils import (
     replacement_letters,
     copy_doc,
     copy_span,
+    extract_entity,
 )
 from requisites.pipes.constitute_requisite import (
     sort_matches_by_length,
@@ -17,7 +18,7 @@ from requisites.pipes.constitute_requisite import (
 
 
 ### A, B, C, ..., and D
-def and_list(matcher, doc, i, matches):
+def and_list(matcher, doc: Doc, i, matches):
     if not is_longest_match(i, matches):
         return
 
@@ -26,14 +27,8 @@ def and_list(matcher, doc, i, matches):
     predicates = []
 
     for ent in span.ents:
-        if ent.label_ == "COURSE":
-            predicates.append({"course": ent.text})
-
-        elif ent.label_ == "REQUISITE":
-            requisite_span = find_replacement(ent.lemma_, doc._.replacements)
-            requisite_logic = find_json_logic(requisite_span, doc._.json_logics)
-            if requisite_logic:
-                predicates.append(requisite_logic)
+        if res := extract_entity(ent, doc._.replacements, doc._.json_logics):
+            predicates.append(res)
 
     if len(predicates) == 1:
         json_logic = predicates[0]
@@ -63,7 +58,7 @@ and_list_patterns = get_dynamic_patterns(
 
 
 ### A, B, C, ..., or D
-def or_list(matcher, doc, i, matches):
+def or_list(matcher, doc: Doc, i, matches):
     if not is_longest_match(i, matches):
         return
 
@@ -72,14 +67,8 @@ def or_list(matcher, doc, i, matches):
     predicates = []
 
     for ent in span.ents:
-        if ent.label_ == "COURSE":
-            predicates.append({"course": ent.text})
-
-        elif ent.label_ == "REQUISITE":
-            requisite_span = find_replacement(ent.lemma_, doc._.replacements)
-            requisite_logic = find_json_logic(requisite_span, doc._.json_logics)
-            if requisite_logic:
-                predicates.append(requisite_logic)
+        if res := extract_entity(ent, doc._.replacements, doc._.json_logics):
+            predicates.append(res)
 
     if len(predicates) == 1:
         json_logic = predicates[0]
