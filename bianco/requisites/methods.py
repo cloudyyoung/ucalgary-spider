@@ -1,3 +1,5 @@
+from spacy import displacy
+
 from requisites.expand_nlp import expand_nlp
 from requisites.constituency_nlp import constituency_nlp
 from requisites.structure_nlp import structure_nlp
@@ -8,12 +10,13 @@ def try_nlp(course: dict, sent: str):
     sent = replace_subject_code(sent)
     doc = expand_nlp(sent)
     print(doc)
+    displacy.serve(doc, style="dep", port=9353)
 
-    doc = constituency_nlp(doc)
-    print(doc)
+    # doc = constituency_nlp(doc)
+    # print(doc)
 
-    doc = structure_nlp(doc)
-    print(doc)
+    # doc = structure_nlp(doc)
+    # print(doc)
 
     j = extract_doc(doc)
     return j
