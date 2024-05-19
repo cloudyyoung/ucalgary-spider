@@ -2,6 +2,10 @@ import itertools
 from spacy.tokens import Span, Doc, Token
 from pymongo import MongoClient
 
+from bianco.requisites.expand_nlp import expand_nlp
+from bianco.requisites.constituency_nlp import constituency_nlp
+from bianco.requisites.structure_nlp import structure_nlp
+
 
 def get_replacement_letter():
     # Create an iterator that cycles through the alphabet
@@ -22,6 +26,14 @@ subject_codes_docs.sort(key=lambda x: len(x["title"]), reverse=True)
 subject_codes_map = {doc["title"]: doc["code"] for doc in subject_codes_docs}
 subject_codes = [doc["code"] for doc in subject_codes_docs]
 
+
+def replace_subject_code(sentence: str, loose: bool=False):
+	for subject_code in subject_codes_docs:
+		if loose:
+			sentence = re.sub(rf"{subject_code["title"]}", rf"{subject_code["code"]}", sentence)
+		else:
+			sentence = re.sub(rf"{subject_code["title"]} {course_number_regex}", rf"{subject_code["code"]} \1", sentence)
+	return sentence
 
 def get_repeating_array(
     head: list, repeat_elemnts: list, repeat_times: int, tail: list
@@ -94,3 +106,12 @@ def extract_doc(doc: Doc):
 
     token = doc[0]
     return extract_entity(token, doc._.replacements, doc._.json_logics)
+
+
+def try_nlp(course: dict, sent: str):
+    sent = replace_subject_code(sent)
+    doc = expand_nlp(sent)
+    doc = constituency_nlp(doc)
+    doc = structure_nlp(doc)
+    j = extract_doc(doc)
+    return j
