@@ -223,38 +223,38 @@ def either_a_or_b(
 
 @Language.factory("constitute_requisite")
 def constitute_requisite(nlp: Language, name: str):
-    requisite_pattern_matcher = Matcher(nlp.vocab)
-    requisite_pattern_matcher.add(
+    matcher = Matcher(nlp.vocab)
+    matcher.add(
         "X units of",
         x_units_of_patterns,
         greedy="LONGEST",
         on_match=x_units_of,
     )
-    requisite_pattern_matcher.add(
+    matcher.add(
         "x_units",
         [[{"IS_DIGIT": True}, {"LEMMA": "unit"}]],
         greedy="LONGEST",
         on_match=x_units,
     )
-    requisite_pattern_matcher.add(
+    matcher.add(
         "X of",
         x_of_patterns,
         greedy="LONGEST",
         on_match=x_of,
     )
-    requisite_pattern_matcher.add(
+    matcher.add(
         "Admission to",
         admission_of_patterns,
         greedy="LONGEST",
         on_match=admission_of,
     )
-    requisite_pattern_matcher.add(
+    matcher.add(
         "Consent of",
         consent_of_patterns,
         greedy="LONGEST",
         on_match=consent_of,
     )
-    requisite_pattern_matcher.add(
+    matcher.add(
         "Both A and B",
         [
             [
@@ -267,7 +267,7 @@ def constitute_requisite(nlp: Language, name: str):
         greedy="LONGEST",
         on_match=both_a_and_b,
     )
-    requisite_pattern_matcher.add(
+    matcher.add(
         "Either A or B",
         [
             [
@@ -282,7 +282,7 @@ def constitute_requisite(nlp: Language, name: str):
     )
 
     def constitute(doc: Doc):
-        while matches := requisite_pattern_matcher(doc):
+        while matches := matcher(doc):
             # sort matches by length of span
             matches = sort_matches_by_length(matches)
             match_id, start, end = matches[0]
