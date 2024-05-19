@@ -66,7 +66,6 @@ def x_units(matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int, in
     span = doc[start:end]
 
     units_required = int(span[0].text)
-    courses = [ent for ent in span.ents if ent.label_ == "COURSE"]
 
     json_logic = {
         "units": {
