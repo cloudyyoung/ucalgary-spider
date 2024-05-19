@@ -16,7 +16,7 @@ def merge_entity_spans(doc: Doc):
                         "ENT_IOR": "",
                         "POS": "PROPN",
                         "TAG": ent.label_,
-                        "LEMMA": ent.text,
+                        "LEMMA": ent.text if ent.label_ == "COURSE" else ent.lemma_,
                     },
                 )
     return doc
