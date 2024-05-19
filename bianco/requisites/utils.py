@@ -106,3 +106,28 @@ def extract_doc(doc: Doc):
     token = doc[0]
     return extract_entity(token, doc._.replacements, doc._.json_logics)
 
+
+def add_token_at_index(doc, token_text, index, space_after=True):
+    # Create a list of words and spaces from the original doc
+    words = [token.text for token in doc]
+    spaces = [token.whitespace_ for token in doc]
+
+    # Insert the new token at the specified index
+    words.insert(index, token_text)
+    spaces.insert(index, " " if space_after else "")
+
+    # Create a new Doc object with the modified words and spaces
+    new_doc = Doc(doc.vocab, words=words, spaces=spaces)
+
+    # Transfer annotations from the original doc to the new doc
+    new_doc.ents = [
+        Span(new_doc, ent.start, ent.end, label=ent.label_) for ent in doc.ents
+    ]
+    for token, new_token in zip(doc, new_doc):
+        new_token.tag_ = token.tag_
+        new_token.pos_ = token.pos_
+        new_token.dep_ = token.dep_
+        new_token.head = new_doc[token.head.i]
+
+    return new_doc
+
