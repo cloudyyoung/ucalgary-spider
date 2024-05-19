@@ -6,13 +6,21 @@ from requisites.pipes.detect_entity import *
 from requisites.pipes.merge_entity_spans import *
 from requisites.pipes.expand_course_code import *
 from requisites.pipes.default_pipeline import *
+from requisites.pipes.constitute_requisite import *
+
 
 nlp = spacy.load("en_core_web_sm", exclude=["ner"])
 nlp.add_pipe("merge_complex_course_number")
 nlp.add_pipe("fix_ent_head")
 nlp.add_pipe("expand_course_code")
-nlp.add_pipe("default_pipeline")
 nlp.add_pipe("detect_entity")
 nlp.add_pipe("merge_entity_spans")
+# nlp.add_pipe("default_pipeline")
+
+
+nlp.add_pipe("constitute_requisite", f"constitute_requisite_{t}")
+
+nlp.add_pipe("detect_entity", "detect_entity_2")
+
 
 print(nlp.pipe_names)

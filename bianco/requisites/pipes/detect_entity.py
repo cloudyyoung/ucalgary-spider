@@ -8,6 +8,7 @@ patterns = [
         "label": "COURSE",
         "pattern": [{"TEXT": {"IN": subject_codes}}, {"POS": "NUM"}],
     },
+    {"label": "COURSE", "pattern": [{"TAG": "COURSE"}]},
     {
         "label": "REQUISITE",
         "pattern": [
@@ -15,6 +16,7 @@ patterns = [
             {"TEXT": {"REGEX": "[A-Z]"}},
         ],
     },
+    {"label": "REQUISITE", "pattern": [{"TAG": "REQUISITE"}]},
 ]
 
 

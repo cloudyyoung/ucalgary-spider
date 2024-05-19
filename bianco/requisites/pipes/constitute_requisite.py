@@ -4,9 +4,6 @@ from spacy.matcher import Matcher
 import re
 
 from requisites.utils import get_dynamic_patterns, replacement_letters
-from requisites.nlp import nlp
-
-requisite_pattern_matcher = Matcher(nlp.vocab)
 
 
 ### X Units of
@@ -43,9 +40,7 @@ x_units_of_patterns = get_dynamic_patterns(
     ],
 )
 
-requisite_pattern_matcher.add(
-    "X units of", x_units_of_patterns, greedy="LONGEST", on_match=x_units_of
-)
+
 ### X Units of
 
 
@@ -63,14 +58,6 @@ def x_units(matcher, doc, i, matches):
     }
 
     doc._.json_logics.append((span, json_logic))
-
-
-requisite_pattern_matcher.add(
-    "x_units",
-    [[{"IS_DIGIT": True}, {"LEMMA": "unit"}]],
-    greedy="LONGEST",
-    on_match=x_units,
-)
 
 
 ### X of
@@ -112,8 +99,6 @@ x_of_patterns = get_dynamic_patterns(
         {"ENT_TYPE": "COURSE"},
     ],
 )
-
-requisite_pattern_matcher.add("X of", x_of_patterns, greedy="LONGEST", on_match=x_of)
 ### One of
 
 
@@ -126,21 +111,6 @@ def consent_of(matcher, doc: Doc, i, matches):
         consent_of = consent_of[:-1]
     json_logic = {"consent": consent_of}
     doc._.json_logics.append((span, json_logic))
-
-
-requisite_pattern_matcher.add(
-    "Consent of",
-    [
-        [
-            {"LEMMA": "consent"},
-            {"POS": "ADP", "OP": "+"},
-            {"TEXT": {"REGEX": "[A-Za-z, ]"}, "OP": "*"},
-            {"IS_SENT_START": False},
-        ]
-    ],
-    greedy="LONGEST",
-    on_match=consent_of,
-)
 
 
 def admission_of(matcher, doc: Doc, i, matches):
@@ -169,13 +139,6 @@ admission_of_patterns = get_dynamic_patterns(
         },
     ],
 )
-
-requisite_pattern_matcher.add(
-    "Admission to",
-    admission_of_patterns,
-    greedy="LONGEST",
-    on_match=admission_of,
-)
 ### Consent of
 
 
@@ -189,19 +152,6 @@ def both_a_and_b(matcher, doc, i, matches):
     doc._.json_logics.append((span, json_logic))
 
 
-requisite_pattern_matcher.add(
-    "Both A and B",
-    [
-        [
-            {"LEMMA": "both"},
-            {"ENT_TYPE": "COURSE"},
-            {"LEMMA": "and"},
-            {"ENT_TYPE": "COURSE"},
-        ]
-    ],
-    greedy="LONGEST",
-    on_match=both_a_and_b,
-)
 ### Both A and B
 
 
@@ -215,42 +165,104 @@ def either_a_or_b(matcher, doc, i, matches):
     doc._.json_logics.append((span, json_logic))
 
 
-requisite_pattern_matcher.add(
-    "Either A or B",
-    [
-        [
-            {"LEMMA": "either"},
-            {"ENT_TYPE": "COURSE"},
-            {"LEMMA": "or"},
-            {"ENT_TYPE": "COURSE"},
-        ]
-    ],
-    greedy="LONGEST",
-    on_match=either_a_or_b,
-)
 ### Either A or B
 
 
-@Language.component("constitute_requisite")
-def constitute_requisite(doc: Doc):
-    sent = doc.text
-    matches = requisite_pattern_matcher(doc)
-    replacements = []
+@Language.factory("constitute_requisite")
+def constitute_requisite(nlp: Language, name: str):
+    requisite_pattern_matcher = Matcher(nlp.vocab)
+    requisite_pattern_matcher.add(
+        "X units of",
+        x_units_of_patterns,
+        greedy="LONGEST",
+        on_match=x_units_of,
+    )
+    requisite_pattern_matcher.add(
+        "x_units",
+        [[{"IS_DIGIT": True}, {"LEMMA": "unit"}]],
+        greedy="LONGEST",
+        on_match=x_units,
+    )
+    requisite_pattern_matcher.add(
+        "X of",
+        x_of_patterns,
+        greedy="LONGEST",
+        on_match=x_of,
+    )
+    requisite_pattern_matcher.add(
+        "Admission to",
+        admission_of_patterns,
+        greedy="LONGEST",
+        on_match=admission_of,
+    )
+    requisite_pattern_matcher.add(
+        "Consent of",
+        [
+            [
+                {"LEMMA": "consent"},
+                {"POS": "ADP", "OP": "+"},
+                {"TEXT": {"REGEX": "[A-Za-z, ]"}, "OP": "*"},
+                {"IS_SENT_START": False},
+            ]
+        ],
+        greedy="LONGEST",
+        on_match=consent_of,
+    )
+    requisite_pattern_matcher.add(
+        "Both A and B",
+        [
+            [
+                {"LEMMA": "both"},
+                {"ENT_TYPE": "COURSE"},
+                {"LEMMA": "and"},
+                {"ENT_TYPE": "COURSE"},
+            ]
+        ],
+        greedy="LONGEST",
+        on_match=both_a_and_b,
+    )
+    requisite_pattern_matcher.add(
+        "Either A or B",
+        [
+            [
+                {"LEMMA": "either"},
+                {"ENT_TYPE": "COURSE"},
+                {"LEMMA": "or"},
+                {"ENT_TYPE": "COURSE"},
+            ]
+        ],
+        greedy="LONGEST",
+        on_match=either_a_or_b,
+    )
 
-    # sort matches by length of span
-    matches = sorted(matches, key=lambda x: x[2] - x[1], reverse=True)
+    def constitute(doc: Doc):
+        sent = doc.text
 
-    for match_id, start, end in matches:
-        letter = next(replacement_letters)
-        replacement = f"RQ {letter}"
-        span = doc[start:end]
-        new_sent = re.sub(re.escape(span.text), replacement, sent)
+        while matches := requisite_pattern_matcher(doc):
+            # sort matches by length of span
+            matches = sorted(matches, key=lambda x: x[2] - x[1], reverse=True)
+            match_id, start, end = matches[0]
 
-        if new_sent != sent:
-            sent = new_sent
-            replacements.append((replacement, span))
+            letter = next(replacement_letters)
+            replacement = f"RQ {letter}"
+            span = doc[start:end]
+            new_sent = re.sub(re.escape(span.text), replacement, sent)
 
-    new_doc = nlp(sent)
-    new_doc._.replacements = doc._.replacements + replacements
-    new_doc._.json_logics = doc._.json_logics
-    return new_doc
+            if new_sent != sent:
+                sent = new_sent
+                doc._.replacements.append((replacement, span))
+
+                with doc.retokenize() as retokenizer:
+                    retokenizer.merge(
+                        span,
+                        attrs={
+                            "LEMMA": replacement,
+                            "ENT_TYPE": "REQUISITE",
+                            "POS": "PROPN",
+                            "TAG": "REQUISITE",
+                        },
+                    )
+
+        return doc
+
+    return constitute

@@ -15,7 +15,7 @@ def merge_entity_spans(doc: Doc):
                         "ENT_IOE": "E",
                         "ENT_IOR": "",
                         "POS": "PROPN",
-                        "TAG": "COURSE_CODE",
+                        "TAG": ent.label_,
                     },
                 )
     return doc
