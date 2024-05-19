@@ -1,10 +1,12 @@
 from spacy.language import Language
 from spacy.pipeline import EntityRuler
 
+from requisites.utils import subject_codes
+
 patterns = [
     {
         "label": "COURSE",
-        "pattern": [{"TEXT": {"REGEX": r"([A-Z]{3,4})"}}, {"POS": "NUM"}],
+        "pattern": [{"TEXT": {"IN": subject_codes}}, {"POS": "NUM"}],
     },
     {
         "label": "REQUISITE",
