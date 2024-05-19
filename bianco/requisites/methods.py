@@ -7,7 +7,13 @@ from requisites.utils import extract_doc, replace_subject_code
 def try_nlp(course: dict, sent: str):
     sent = replace_subject_code(sent)
     doc = expand_nlp(sent)
+    print(doc)
+
     doc = constituency_nlp(doc)
+    print(doc)
+
     doc = structure_nlp(doc)
+    print(doc)
+
     j = extract_doc(doc)
     return j
