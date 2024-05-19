@@ -1,5 +1,4 @@
 import spacy
-from spacy.pipeline import EntityRuler
 
 from requisites.pipes.merge_course_number import *
 from requisites.pipes.detect_entity import *
