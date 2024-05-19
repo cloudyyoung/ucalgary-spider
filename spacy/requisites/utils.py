@@ -1,0 +1,96 @@
+import itertools
+from spacy.tokens import Span, Doc, Token
+from pymongo import MongoClient
+
+
+def get_replacement_letter():
+    # Create an iterator that cycles through the alphabet
+    for letter in itertools.cycle("ABCDEFGHIJKLMNOPQRSTUVWXYZ"):
+        yield letter
+
+
+replacement_letters = get_replacement_letter()
+
+
+# Connect to mongodb
+client = MongoClient("mongodb://root:password@localhost:27017/")
+catalog = client.get_database("catalog")
+
+# Sort by length of title
+subject_codes_docs = list(catalog.get_collection("subject_codes").find())
+subject_codes_docs.sort(key=lambda x: len(x["title"]), reverse=True)
+subject_codes_map = {doc["title"]: doc["code"] for doc in subject_codes_docs}
+subject_codes = [doc["code"] for doc in subject_codes_docs]
+
+
+def get_repeating_array(
+    head: list, repeat_elemnts: list, repeat_times: int, tail: list
+):
+    repeated_part = repeat_elemnts * repeat_times
+    return head + repeated_part + tail
+
+
+def get_dynamic_patterns(
+    head: list, repeat_tokens: list, repeat_range: range, tail: list
+):
+    patterns = []
+    for i in repeat_range:
+        patterns.append(get_repeating_array(head, repeat_tokens, i, tail))
+    return patterns
+
+
+def find_replacement(key: str, replacements: list[tuple[str, Span]]):
+    if not replacements or not key:
+        return
+
+    key = key[:-1].strip() if key.strip().endswith(".") else key
+
+    for _key, span in replacements:
+        if key == _key:
+            return span
+
+
+def find_json_logic(span: Span, json_logic: list[tuple[Span, dict]]):
+    if not json_logic or not span:
+        return
+
+    for _span, logic in json_logic:
+        if span.text == _span.text:
+            return logic
+
+
+def sanity_check(span: Span):
+    if len(span) == 0:
+        return False
+
+    token = span[0]
+    is_ent_type = token.ent_type_ in ["COURSE", "REQUISITE"]
+
+    if len(span) == 1 and is_ent_type:
+        return True
+
+    if len(span) == 2 and is_ent_type:
+        return True
+
+    return False
+
+
+def extract_entity(
+    token: Token, replacements: dict[str, Span], json_logics: list[tuple[Span, dict]]
+):
+    if token.ent_type_ == "COURSE":
+        return {"course": token.text}
+
+    elif token.ent_type_ == "REQUISITE":
+        replacement = find_replacement(token.text, replacements)
+        json_logic = find_json_logic(replacement, json_logics)
+        return json_logic
+
+
+def extract_doc(doc: Doc):
+    if not sanity_check(doc):
+        print("A - Sanity check failed")
+        return None
+
+    token = doc[0]
+    return extract_entity(token, doc._.replacements, doc._.json_logics)
