@@ -93,7 +93,7 @@ def extract_entity(
         return {"course": token.text}
 
     elif token.ent_type_ == "REQUISITE":
-        replacement = find_replacement(token.text, replacements)
+        replacement = find_replacement(token.lemma_, replacements)
         json_logic = find_json_logic(replacement, json_logics)
         return json_logic
 

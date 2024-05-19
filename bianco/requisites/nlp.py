@@ -8,6 +8,7 @@ from requisites.pipes.expand_course_code import *
 from requisites.pipes.default_pipeline import *
 from requisites.pipes.constitute_requisite import *
 from requisites.pipes.constitute_structure_minor import *
+from requisites.pipes.constitute_structure_major import *
 
 
 nlp = spacy.load("en_core_web_sm", exclude=["ner"])
@@ -21,6 +22,8 @@ nlp.add_pipe("constitute_requisite")
 nlp.add_pipe("detect_entity", "detect_entity_2")
 nlp.add_pipe("constitute_structure_minor")
 nlp.add_pipe("detect_entity", "detect_entity_3")
+nlp.add_pipe("constitute_structure_major")
+nlp.add_pipe("detect_entity", "detect_entity_4")
 
 
 print(nlp.pipe_names)

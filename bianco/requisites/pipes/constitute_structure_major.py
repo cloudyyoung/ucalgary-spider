@@ -3,11 +3,20 @@ from spacy.tokens import Doc
 from spacy.matcher import Matcher
 import re
 
-from requisites.nlp import nlp
-from requisites.utils import get_dynamic_patterns, replacement_letters
+from requisites.utils import (
+    get_dynamic_patterns,
+    find_replacement,
+    find_json_logic,
+    replacement_letters,
+    copy_doc,
+    copy_span,
+)
+from requisites.pipes.constitute_requisite import (
+    sort_matches_by_length,
+    is_longest_match,
+)
 from requisites.pipes.constitute_structure_minor import and_list, or_list
 
-structure_major_matcher = Matcher(nlp.vocab)
 
 ### A; and B; and C; ... and D
 major_and_list_patterns = get_dynamic_patterns(
@@ -20,12 +29,6 @@ major_and_list_patterns = get_dynamic_patterns(
     [
         {"ENT_TYPE": {"IN": ["COURSE", "REQUISITE"]}},
     ],
-)
-structure_major_matcher.add(
-    "A; and B; and C; ... and D",
-    major_and_list_patterns,
-    greedy="LONGEST",
-    on_match=and_list,
 )
 ### A; and B; and C; ... and D
 
@@ -42,35 +45,49 @@ major_or_list_patterns = get_dynamic_patterns(
         {"ENT_TYPE": {"IN": ["COURSE", "REQUISITE"]}},
     ],
 )
-structure_major_matcher.add(
-    "A; or B; or C; ... or D",
-    major_or_list_patterns,
-    greedy="LONGEST",
-    on_match=or_list,
-)
 ### A; or B; or C; ... or D
 
 
-@Language.component("constitute_structure_major")
-def constitute_structure(doc: Doc):
-    sent = doc.text
-    matches = structure_major_matcher(doc)
-    replacements = []
+@Language.factory("constitute_structure_major")
+def constitute_structure_major(nlp: Language, name: str):
+    matcher = Matcher(nlp.vocab)
+    matcher.add(
+        "A; and B; and C; ... and D",
+        major_and_list_patterns,
+        greedy="LONGEST",
+        on_match=and_list,
+    )
+    matcher.add(
+        "A; or B; or C; ... or D",
+        major_or_list_patterns,
+        greedy="LONGEST",
+        on_match=or_list,
+    )
 
-    # sort matches by length of span
-    matches = sorted(matches, key=lambda x: x[2] - x[1], reverse=True)
+    def constitute(doc: Doc):
+        while matches := matcher(doc):
+            # sort matches by length of span
+            matches = sort_matches_by_length(matches)
+            match_id, start, end = matches[0]
 
-    for match_id, start, end in matches:
-        letter = next(replacement_letters)
-        replacement = f"RQ {letter}"
-        span = doc[start:end]
-        new_sent = re.sub(re.escape(span.text), replacement, sent)
+            letter = next(replacement_letters)
+            replacement = f"RQ {letter}"
+            span = doc[start:end]
 
-        if new_sent != sent:
-            sent = new_sent
-            replacements.append((replacement, span))
+            span_copy = copy_span(span)
+            doc._.replacements.append((replacement, span_copy))
 
-    new_doc = nlp(sent)
-    new_doc._.replacements = doc._.replacements + replacements
-    new_doc._.json_logics = doc._.json_logics
-    return new_doc
+            with doc.retokenize() as retokenizer:
+                retokenizer.merge(
+                    span,
+                    attrs={
+                        "LEMMA": replacement,
+                        "ENT_TYPE": "REQUISITE",
+                        "POS": "PROPN",
+                        "TAG": "REQUISITE",
+                    },
+                )
+
+        return doc
+
+    return constitute
