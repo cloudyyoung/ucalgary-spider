@@ -181,3 +181,19 @@ def test_minor_and_list_with_comma():
         ]
     }
     assert_json_logic(sent, jl)
+
+
+def test_far_subject_code_inference():
+    sent = "Film 201 and 3 units from 305 or 321."
+    jl = {
+        "and": [
+            {"course": "FILM201"},
+            {
+                "units": {
+                    "from": [{"course": "FILM305"}, {"course": "FILM321"}],
+                    "required": 3,
+                }
+            },
+        ]
+    }
+    assert_json_logic(sent, jl)
