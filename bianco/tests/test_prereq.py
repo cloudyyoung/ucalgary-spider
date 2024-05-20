@@ -209,3 +209,9 @@ def test_sent_with_dirty_punct():
         ]
     }
     assert_json_logic(sent, jl)
+
+
+def x_units_from_courses_labelled():
+    sent = "6 units of courses labelled Biochemistry."
+    jl = {"units": {"from": {"course": "BCEM"}, "required": 6}}
+    assert_json_logic(sent, jl)
