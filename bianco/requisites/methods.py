@@ -29,9 +29,14 @@ def try_nlp(course: dict, sent: str, mode="prereq"):
 
 
 def convert_logic(json_logic):
+    if not json_logic:
+        return json_logic
+
     new_json_logic = {}
-    if json_logic["and"]:
+    if "and" in json_logic:
         new_json_logic["or"] = convert_logic(json_logic["and"])
-    else:
+    elif "or" in json_logic:
         new_json_logic["and"] = convert_logic(json_logic["or"])
+    else:
+        new_json_logic = json_logic
     return new_json_logic
