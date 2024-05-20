@@ -13,15 +13,16 @@ def expand_course_code(doc: Doc):
         tokens.append(token)
 
     for token in doc:
-
+        print(token)
         if token.text in subject_codes:
-            left_token = doc[token.i - 1]
+            if token.i > 0:
+                left_token = doc[token.i - 1]
 
-            if left_token.lemma_ == "label":
-                token.lemma_ = token.text
-                add_token(token)
+                if left_token.lemma_ == "label":
+                    token.lemma_ = token.text
+                    add_token(token)
 
-        elif token.pos_ == "NUM" and re.match(course_number_regex, token.text):
+        elif token.like_num and re.match(course_number_regex, token.text):
             left_tokens = list(reversed(list(doc[: token.i])))
 
             if token.i + 1 < len(doc):
@@ -31,6 +32,10 @@ def expand_course_code(doc: Doc):
                     for left_token in left_tokens:
                         if left_token.text in subject_codes:
                             add_token(left_token)
+
+                            token.pos_ = "NUM"
+                            token.dep_ = "nummod"
+                            token.tag_ = "COURSE_NUMBER"
                             break
 
             add_token(token)
