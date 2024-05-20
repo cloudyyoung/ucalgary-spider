@@ -154,15 +154,17 @@ def copy_span(span: Span):
 
 
 def sort_matches_by_length(
-    matches: list[tuple[int, int, int]], key=lambda x: x[2] - x[1]
+    matches: list[tuple[int, int, int]]
 ):
-    return sorted(matches, key=key, reverse=True)
+    def key_fn(match):
+        match_id, start, end = match
+        return end - start + match_id * 100
+    
+    return sorted(matches, key=key_fn, reverse=True)
 
 
-def is_longest_match(
-    i: int, matches: list[tuple[int, int, int]], key=lambda x: x[2] - x[1]
-):
+def is_longest_match(i: int, matches: list[tuple[int, int, int]]):
     match_id, _, _ = matches[i]
-    sorted_matches = sort_matches_by_length(matches, key=key)
+    sorted_matches = sort_matches_by_length(matches)
     longest_match_id, _, _ = sorted_matches[0]
     return match_id == longest_match_id
