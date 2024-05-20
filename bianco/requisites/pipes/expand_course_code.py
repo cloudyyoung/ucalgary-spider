@@ -19,13 +19,15 @@ def expand_course_code(doc: Doc):
 
         if token.pos_ == "NUM" and re.match(course_number_regex, token.text):
             left_tokens = list(reversed(list(doc[: token.i])))
-            right_token = doc[token.i + 1]
 
-            if right_token.pos_ not in ["NOUN", "PROPN"]:
-                for left_token in left_tokens:
-                    if left_token.text in subject_codes:
-                        add_token(left_token)
-                        break
+            if token.i + 1 < len(doc):
+                right_token = doc[token.i + 1]
+
+                if right_token.pos_ not in ["NOUN", "PROPN"]:
+                    for left_token in left_tokens:
+                        if left_token.text in subject_codes:
+                            add_token(left_token)
+                            break
 
             add_token(token)
 
