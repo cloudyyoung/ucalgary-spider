@@ -85,3 +85,35 @@ def test_x_units_from():
         }
     }
     assert_json_logic(sent, jl)
+
+
+def test_2():
+    sent = "ENEL 471; and one of BMEN 319 or ENGG 319 or ENEL 419."
+    jl = {
+        "and": [
+            {"course": "ENEL471"},
+            {
+                "courses": {
+                    "from": [
+                        {"course": "BMEN319"},
+                        {"course": "ENGG319"},
+                        {"course": "ENEL419"},
+                    ],
+                    "required": 1,
+                }
+            },
+        ]
+    }
+    assert_json_logic(sent, jl)
+
+
+def test_admission_of():
+    sent = "MATH 277 and PHYS 259 and admission to a program in Engineering."
+    jl = {
+        "and": [
+            {"course": "MATH277"},
+            {"course": "PHYS259"},
+            {"admission": "a program in Engineering"},
+        ]
+    }
+    assert_json_logic(sent, jl)
