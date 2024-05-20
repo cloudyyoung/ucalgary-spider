@@ -8,7 +8,7 @@ from bianco.requisites.utils import (
 )
 
 
-def x_of(matcher: Matcher, doc: Doc, i, matches):
+def x_of_courses(matcher: Matcher, doc: Doc, i, matches):
     if not is_longest_match(i, matches):
         return
 
@@ -36,7 +36,7 @@ def x_of(matcher: Matcher, doc: Doc, i, matches):
     doc._.json_logics.append((span_copy, json_logic))
 
 
-x_of_patterns = get_dynamic_patterns(
+x_of_courses_patterns = get_dynamic_patterns(
     [
         {"POS": "NUM"},
         {"POS": "ADP", "OP": "+"},

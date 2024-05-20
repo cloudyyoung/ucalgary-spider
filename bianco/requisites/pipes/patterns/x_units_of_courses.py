@@ -8,7 +8,9 @@ from bianco.requisites.utils import (
 )
 
 
-def x_units_of(matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int, int]]):
+def x_units_of_courses(
+    matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int, int]]
+):
     if not is_longest_match(i, matches):
         return
 
@@ -29,7 +31,7 @@ def x_units_of(matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int,
     doc._.json_logics.append((span_copy, json_logic))
 
 
-x_units_of_patterns = get_dynamic_patterns(
+x_units_of_courses_patterns = get_dynamic_patterns(
     [
         {"IS_DIGIT": True},
         {"LEMMA": "unit"},
