@@ -9,7 +9,7 @@ from bianco.requisites.utils import (
     sort_matches_by_length,
     is_longest_match,
 )
-from bianco.requisites.pipes.patterns.x_units_of import x_units_of_patterns, x_units_of
+from bianco.requisites.pipes.patterns.x_units_of_courses import x_units_of_patterns, x_units_of
 
 
 def x_units(matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int, int]]):
