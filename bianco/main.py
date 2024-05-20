@@ -1,7 +1,27 @@
 from bianco.requisites.methods import try_nlp
+from bianco.requisites.utils import catalog
 
-sent = "Software Engineering for Engineers 300; and 3 units from Engineering 319, Digital Engineering 319 or Electrical Engineering 419; and 3 units from Software Engineering for Engineers 337, Computer Engineering 335, 339, or Geomatics Engineering 333."
-sent = "Biology 30 or 212; Chemistry 30 or 212; and Mathematics 30-1 or 212."
+# Get all courses
+courses = list(
+    catalog.get_collection("courses").find(
+        {"prereq": {"$ne": None}, "career": "Undergraduate Programs", "active": True}
+    )
+)
 
-j = try_nlp({}, sent)
-print(j)
+courses_prereq = catalog.get_collection("courses_prereq")
+courses_prereq.delete_many({})
+
+for course in courses:
+    prereq = course["prereq"]
+
+    if prereq:
+        print(prereq)
+
+        result = try_nlp(course, prereq)
+
+        print(result)
+        print("")
+
+        courses_prereq.insert_one(
+            {"course": course["code"], "prereq_text": prereq, "prereq": result}
+        )
