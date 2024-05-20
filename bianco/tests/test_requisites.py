@@ -15,10 +15,10 @@ def test_1():
             {
                 "units": {
                     "from": [
-                        {"course": "MATH 311"},
-                        {"course": "MATH 313"},
-                        {"course": "MATH 367"},
-                        {"course": "MATH 375"},
+                        {"course": "MATH311"},
+                        {"course": "MATH313"},
+                        {"course": "MATH367"},
+                        {"course": "MATH375"},
                     ],
                     "required": 3,
                 }
@@ -26,10 +26,10 @@ def test_1():
             {
                 "units": {
                     "from": [
-                        {"course": "CPSC 217"},
-                        {"course": "CPSC 231"},
-                        {"course": "CPSC 235"},
-                        {"course": "DATA 211"},
+                        {"course": "CPSC217"},
+                        {"course": "CPSC231"},
+                        {"course": "CPSC235"},
+                        {"course": "DATA211"},
                     ],
                     "required": 3,
                 }
@@ -43,3 +43,45 @@ def test_x_units():
     sent = "60 units."
     json_logic = {"units": {"required": 60}}
     assert_json_logic(sent, json_logic)
+
+
+def test_or_list():
+    sent = "SGMA 395 or ENTI 317 or 381."
+    jl = {"or": [{"course": "SGMA395"}, {"course": "ENTI317"}, {"course": "ENTI381"}]}
+    assert_json_logic(sent, jl)
+
+
+def test_one_of():
+    sent = "One of FILM 321 or 323 and one of FILM 331 or 333."
+    jl = {
+        "and": [
+            {
+                "courses": {
+                    "from": [{"course": "FILM321"}, {"course": "FILM323"}],
+                    "required": 1,
+                }
+            },
+            {
+                "courses": {
+                    "from": [{"course": "FILM331"}, {"course": "FILM333"}],
+                    "required": 1,
+                }
+            },
+        ]
+    }
+    assert_json_logic(sent, jl)
+
+
+def test_x_units_from():
+    sent = "3 units from ENCI 481, ENEE 377 or 519.09."
+    jl = {
+        "units": {
+            "from": [
+                {"course": "ENCI481"},
+                {"course": "ENEE377"},
+                {"course": "ENEE519.09"},
+            ],
+            "required": 3,
+        }
+    }
+    assert_json_logic(sent, jl)

@@ -30,7 +30,7 @@ def x_units_of(matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int,
     json_logic = {
         "units": {
             "required": units_required,
-            "from": [{"course": course.text} for course in courses],
+            "from": [{"course": course.lemma_} for course in courses],
         }
     }
 
@@ -98,7 +98,7 @@ def x_of(matcher, doc: Doc, i, matches):
     json_logic = {
         "courses": {
             "required": number,
-            "from": [{"course": course.text} for course in courses],
+            "from": [{"course": course.lemma_} for course in courses],
         },
     }
 
@@ -202,7 +202,7 @@ def both_a_and_b(
     span = doc[start:end]
     a = span[1]
     b = span[3]
-    json_logic = {"and": [{"course": a.text}, {"course": b.text}]}
+    json_logic = {"and": [{"course": a.lemma_}, {"course": b.lemma_}]}
     span_copy = copy_span(span)
     doc._.json_logics.append((span_copy, json_logic))
 
@@ -221,7 +221,7 @@ def either_a_or_b(
     span = doc[start:end]
     a = span[1]
     b = span[3]
-    json_logic = {"or": [{"course": a.text}, {"course": b.text}]}
+    json_logic = {"or": [{"course": a.lemma_}, {"course": b.lemma_}]}
 
     span_copy = copy_span(span)
     doc._.json_logics.append((span_copy, json_logic))
