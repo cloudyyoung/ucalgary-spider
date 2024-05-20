@@ -17,11 +17,11 @@ for course in courses:
     if prereq:
         print(prereq)
 
-        result = try_nlp(course, prereq)
+        doc, json_logic = try_nlp(course, prereq)
 
-        print(result)
+        print(json_logic)
         print("")
 
         courses_prereq.insert_one(
-            {"course": course["code"], "prereq_text": prereq, "prereq": result}
+            {"course": course["code"], "prereq_text": prereq, "prereq": json_logic}
         )
