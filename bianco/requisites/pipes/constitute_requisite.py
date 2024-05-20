@@ -149,7 +149,7 @@ consent_of_patterns = get_dynamic_patterns(
         {"POS": "ADP", "OP": "+"},
     ],
     [
-        {"ENT_TYPE": {"NOT_IN": ["COURSE"]}},
+        {"ENT_TYPE": {"NOT_IN": ["COURSE", "REQUISITE"]}, "POS": {"NOT_IN": ["NUM"]}},
     ],
     range(1, 200),
     [
@@ -182,7 +182,7 @@ admission_of_patterns = get_dynamic_patterns(
         {"POS": "ADP", "OP": "+"},
     ],
     [
-        {"ENT_TYPE": {"NOT_IN": ["COURSE"]}},
+        {"ENT_TYPE": {"NOT_IN": ["COURSE", "REQUISITE"]}},
     ],
     range(1, 200),
     [
