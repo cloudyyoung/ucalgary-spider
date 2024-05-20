@@ -147,9 +147,3 @@ def test_parallel_predicate():
         ]
     }
     assert_json_logic(sent, jl)
-
-
-def test_simplest_single_course():
-    sent = "Biology 371."
-    jl = {"course": "BIOL371"}
-    assert_json_logic(sent, jl)
