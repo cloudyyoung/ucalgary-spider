@@ -16,7 +16,11 @@ def expand_course_code(doc: Doc):
         if token.text in subject_codes:
             continue
 
-        elif token.pos_ == "NUM" and re.match(course_number_regex, token.text):
+        elif (
+            token.pos_ == "NUM"
+            and re.match(course_number_regex, token.text)
+            and token.head.text in subject_codes
+        ):
             left_tokens = [token.head] + list(reversed(list(doc[: token.i])))
 
             for left_token in left_tokens:
