@@ -4,10 +4,7 @@ from spacy.matcher import Matcher
 
 from bianco.requisites.utils import (
     get_dynamic_patterns,
-    find_replacement,
-    find_json_logic,
     replacement_letters,
-    copy_doc,
     copy_span,
     extract_entity,
 )
@@ -17,9 +14,12 @@ from bianco.requisites.pipes.constitute_requisite import (
 )
 
 
+match_key = lambda x: (x[2] - x[1] + (1000 if x[0] == 999 else 0))
+
+
 ### A, B, C, ..., and D
 def and_list(matcher, doc: Doc, i, matches):
-    if not is_longest_match(i, matches):
+    if not is_longest_match(i, matches, match_key):
         return
 
     match_id, start, end = matches[i]
@@ -64,7 +64,7 @@ and_list_patterns = get_dynamic_patterns(
 
 ### A, B, C, ..., or D
 def or_list(matcher, doc: Doc, i, matches):
-    if not is_longest_match(i, matches):
+    if not is_longest_match(i, matches, match_key):
         return
 
     match_id, start, end = matches[i]
@@ -107,6 +107,44 @@ or_list_patterns = get_dynamic_patterns(
 ### A, B, C, ..., or D
 
 
+### A and B or C
+def a_and_b_or_c(matcher, doc: Doc, i, matches):
+    if not is_longest_match(i, matches, match_key):
+        return
+
+    match_id, start, end = matches[i]
+    span = doc[start:end]
+
+    a = span[0]
+    b = span[2]
+    c = span[4]
+
+    if res := extract_entity(a, doc._.replacements, doc._.json_logics):
+        a = res
+
+    if res := extract_entity(b, doc._.replacements, doc._.json_logics):
+        b = res
+
+    if res := extract_entity(c, doc._.replacements, doc._.json_logics):
+        c = res
+
+    json_logic = {"and": [a, {"or": [b, c]}]}
+    span_copy = copy_span(span)
+    doc._.json_logics.append((span_copy, json_logic))
+
+
+a_and_b_or_c_patterns = [
+    [
+        {"ENT_TYPE": {"IN": ["COURSE", "REQUISITE"]}},
+        {"TEXT": "and"},
+        {"ENT_TYPE": {"IN": ["COURSE", "REQUISITE"]}},
+        {"TEXT": "or"},
+        {"ENT_TYPE": {"IN": ["COURSE", "REQUISITE"]}},
+    ]
+]
+### A and B or C
+
+
 @Language.factory("constitute_structure_minor")
 def constitute_structure_minor(nlp: Language, name: str):
     matcher = Matcher(nlp.vocab)
@@ -116,11 +154,12 @@ def constitute_structure_minor(nlp: Language, name: str):
     matcher.add(
         "A, B, C, ..., or D", or_list_patterns, greedy="LONGEST", on_match=or_list
     )
+    matcher.add(999, a_and_b_or_c_patterns, greedy="LONGEST", on_match=a_and_b_or_c)
 
     def constitute(doc: Doc):
         while matches := matcher(doc):
-            # sort matches by length of span
-            matches = sort_matches_by_length(matches)
+            # sort matches by length of span, prioritize "or" over "and"
+            matches = sort_matches_by_length(matches, match_key)
             match_id, start, end = matches[0]
 
             letter = next(replacement_letters)

@@ -5,13 +5,17 @@ from spacy.matcher import Matcher
 from bianco.requisites.utils import get_dynamic_patterns, replacement_letters, copy_span
 
 
-def sort_matches_by_length(matches: list[tuple[int, int, int]]):
-    return sorted(matches, key=lambda x: x[2] - x[1], reverse=True)
+def sort_matches_by_length(
+    matches: list[tuple[int, int, int]], key=lambda x: x[2] - x[1]
+):
+    return sorted(matches, key=key, reverse=True)
 
 
-def is_longest_match(i: int, matches: list[tuple[int, int, int]]):
+def is_longest_match(
+    i: int, matches: list[tuple[int, int, int]], key=lambda x: x[2] - x[1]
+):
     match_id, _, _ = matches[i]
-    sorted_matches = sort_matches_by_length(matches)
+    sorted_matches = sort_matches_by_length(matches, key=key)
     longest_match_id, _, _ = sorted_matches[0]
     return match_id == longest_match_id
 

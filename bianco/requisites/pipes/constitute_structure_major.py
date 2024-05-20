@@ -1,21 +1,18 @@
 from spacy.language import Language
 from spacy.tokens import Doc
 from spacy.matcher import Matcher
-import re
 
 from bianco.requisites.utils import (
     get_dynamic_patterns,
-    find_replacement,
-    find_json_logic,
     replacement_letters,
-    copy_doc,
     copy_span,
 )
-from bianco.requisites.pipes.constitute_requisite import (
-    sort_matches_by_length,
-    is_longest_match,
+from bianco.requisites.pipes.constitute_requisite import sort_matches_by_length
+from bianco.requisites.pipes.constitute_structure_minor import (
+    and_list,
+    or_list,
+    match_key,
 )
-from bianco.requisites.pipes.constitute_structure_minor import and_list, or_list
 
 
 ### A; and B; and C; ... and D
@@ -76,7 +73,7 @@ def constitute_structure_major(nlp: Language, name: str):
     def constitute(doc: Doc):
         while matches := matcher(doc):
             # sort matches by length of span
-            matches = sort_matches_by_length(matches)
+            matches = sort_matches_by_length(matches, match_key)
             match_id, start, end = matches[0]
 
             letter = next(replacement_letters)
