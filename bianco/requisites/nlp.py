@@ -1,5 +1,6 @@
 import spacy
 
+from bianco.requisites.pipes.prevent_num_root import *
 from bianco.requisites.pipes.merge_course_number import *
 from bianco.requisites.pipes.fix_ent_head import *
 from bianco.requisites.pipes.detect_entity import *
@@ -12,6 +13,7 @@ from bianco.requisites.pipes.constitute_structure_major import *
 
 
 nlp = spacy.load("en_core_web_sm", exclude=["ner"])
+nlp.add_pipe("prevent_num_root")
 nlp.add_pipe("merge_complex_course_number")
 nlp.add_pipe("fix_ent_head")
 nlp.add_pipe("expand_course_code")
