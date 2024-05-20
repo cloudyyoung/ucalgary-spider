@@ -8,3 +8,4 @@ htmlmin
 panzi-json-logic
 nltk
 pytest
+tqdm
