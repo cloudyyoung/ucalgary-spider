@@ -9,7 +9,7 @@ from bianco.requisites.utils import (
 )
 from bianco.requisites.pipes.constitute_requisite import sort_matches_by_length
 from bianco.requisites.pipes.constitute_structure_minor import (
-    and_list,
+    ands_minor,
     or_list,
     match_key,
 )
@@ -61,7 +61,7 @@ def constitute_structure_major(nlp: Language, name: str):
         "A; and B; and C; ... and D",
         major_and_list_patterns_1 + major_and_list_patterns_2,
         greedy="LONGEST",
-        on_match=and_list,
+        on_match=ands_minor,
     )
     matcher.add(
         "A; or B; or C; ... or D",
