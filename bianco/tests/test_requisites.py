@@ -165,3 +165,19 @@ def test_minor_or_list_with_comma():
         ]
     }
     assert_json_logic(sent, jl)
+
+
+def test_minor_and_list_with_comma():
+    sent = "Chemistry 351, and one of 353 or 355."
+    jl = {
+        "and": [
+            {"course": "CHEM351"},
+            {
+                "courses": {
+                    "from": [{"course": "CHEM353"}, {"course": "CHEM355"}],
+                    "required": 1,
+                }
+            },
+        ]
+    }
+    assert_json_logic(sent, jl)

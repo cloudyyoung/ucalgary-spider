@@ -53,6 +53,7 @@ and_list_patterns = get_dynamic_patterns(
     ],
     range(0, 20),
     [
+        {"TEXT": ",", "OP": "?"},
         {"TEXT": {"IN": ["and", ","]}},
         {"ENT_TYPE": {"IN": ["COURSE", "REQUISITE"]}},
         {"TEXT": {"IN": [","]}, "OP": "?"},
