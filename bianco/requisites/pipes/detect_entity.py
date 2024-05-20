@@ -22,9 +22,11 @@ patterns = [
 
 @Language.factory("detect_entity")
 def create_detect_entity(nlp: Language, name: str):
-    entity_ruler: EntityRuler = nlp.add_pipe(
-        "entity_ruler", name, config={"overwrite_ents": True}
-    )
+    entity_ruler = nlp.add_pipe("entity_ruler", name, config={"overwrite_ents": True})
+
+    if not isinstance(entity_ruler, EntityRuler):
+        return entity_ruler
+
     entity_ruler.add_patterns(patterns)
 
     def detect_entity(doc):
