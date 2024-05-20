@@ -99,6 +99,7 @@ def extract_entity(
 
 def clean_text(text: str):
      text = text.replace(";,", ";")
+     text = text.replace(": and", "; and")
      return text
 
 def extract_doc(doc: Doc):
