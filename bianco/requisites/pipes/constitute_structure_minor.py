@@ -89,7 +89,8 @@ or_list_patterns = get_dynamic_patterns(
     ],
     range(0, 20),
     [
-        {"TEXT": {"IN": ["or"]}},
+        {"TEXT": ",", "OP": "?"},
+        {"TEXT": "or"},
         {"ENT_TYPE": {"IN": ["COURSE", "REQUISITE"]}},
         {"TEXT": {"IN": [","]}, "OP": "?"},
     ],
