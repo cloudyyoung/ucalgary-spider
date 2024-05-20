@@ -3,246 +3,41 @@ from spacy.tokens import Doc
 from spacy.matcher import Matcher
 
 from bianco.requisites.utils import (
-    get_dynamic_patterns,
     replacement_letters,
     copy_span,
     sort_matches_by_length,
-    is_longest_match,
 )
-from bianco.requisites.pipes.patterns.x_units_of_courses import x_units_of_patterns, x_units_of
-
-
-def x_units(matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int, int]]):
-    if not is_longest_match(i, matches):
-        return
-
-    match_id, start, end = matches[i]
-    span = doc[start:end]
-
-    units_required = int(span[0].text)
-
-    json_logic = {
-        "units": {
-            "required": units_required,
-        }
-    }
-
-    span_copy = copy_span(span)
-    doc._.json_logics.append((span_copy, json_logic))
-
-
-### X of
-def x_of(matcher, doc: Doc, i, matches):
-    if not is_longest_match(i, matches):
-        return
-
-    match_id, start, end = matches[i]
-    span = doc[start:end]
-
-    number_token = span[0]
-    switch = {
-        "one": 1,
-        "two": 2,
-        "three": 3,
-    }
-    number = switch.get(number_token.lemma_, 1)
-
-    courses = [ent for ent in span.ents if ent.label_ == "COURSE"]
-
-    json_logic = {
-        "courses": {
-            "required": number,
-            "from": [{"course": course.lemma_} for course in courses],
-        },
-    }
-
-    span_copy = copy_span(span)
-    doc._.json_logics.append((span_copy, json_logic))
-
-
-x_of_patterns = get_dynamic_patterns(
-    [
-        {"POS": "NUM"},
-        {"POS": "ADP", "OP": "+"},
-    ],
-    [
-        {"ENT_TYPE": "COURSE"},
-        {"TEXT": {"IN": ["or", ","]}},
-    ],
-    range(1, 20),
-    [
-        {"ENT_TYPE": "COURSE"},
-    ],
+from bianco.requisites.pipes.patterns.x_units_of_courses import (
+    x_units_of_patterns,
+    x_units_of,
 )
-### One of
-
-
-### Consent of
-def consent_of(matcher, doc: Doc, i, matches):
-    if not is_longest_match(i, matches):
-        return
-
-    match_id, start, end = matches[i]
-    span = doc[start:end]
-    consent_of = span[2:].text.strip()
-    if consent_of.endswith("."):
-        consent_of = consent_of[:-1]
-    json_logic = {"consent": consent_of}
-
-    span_copy = copy_span(span)
-    doc._.json_logics.append((span_copy, json_logic))
-
-
-consent_of_patterns = get_dynamic_patterns(
-    [
-        {"LEMMA": "consent"},
-        {"POS": "ADP", "OP": "+"},
-    ],
-    [
-        {"ENT_TYPE": {"NOT_IN": ["COURSE", "REQUISITE"]}, "POS": {"NOT_IN": ["NUM"]}},
-    ],
-    range(1, 200),
-    [
-        {
-            "LEMMA": {"NOT_IN": ["and", "or", ",", ";"]},
-            "ENT_TYPE": {"NOT_IN": ["COURSE", "REQUISITE"]},
-        },
-    ],
+from bianco.requisites.pipes.patterns.x_units import x_units_patterns, x_units
+from bianco.requisites.pipes.patterns.x_of_courses import x_of_patterns, x_of
+from bianco.requisites.pipes.patterns.consent_of import consent_of_patterns, consent_of
+from bianco.requisites.pipes.patterns.admission_of import (
+    admission_of_patterns,
+    admission_of,
 )
-
-
-def admission_of(matcher, doc: Doc, i, matches):
-    if not is_longest_match(i, matches):
-        return
-
-    match_id, start, end = matches[i]
-    span = doc[start:end]
-    admission_of = span[2:].text.strip()
-    if admission_of.endswith("."):
-        admission_of = admission_of[:-1]
-    json_logic = {"admission": admission_of}
-
-    span_copy = copy_span(span)
-    doc._.json_logics.append((span_copy, json_logic))
-
-
-admission_of_patterns = get_dynamic_patterns(
-    [
-        {"LEMMA": "admission"},
-        {"POS": "ADP", "OP": "+"},
-    ],
-    [
-        {"ENT_TYPE": {"NOT_IN": ["COURSE", "REQUISITE"]}},
-    ],
-    range(1, 200),
-    [
-        {
-            "LEMMA": {"NOT_IN": ["and", "or", ",", ";"]},
-            "ENT_TYPE": {"NOT_IN": ["COURSE", "REQUISITE"]},
-        },
-    ],
+from bianco.requisites.pipes.patterns.both_a_and_b import (
+    both_a_and_b,
+    both_a_and_b_patterns,
 )
-### Consent of
-
-
-### Both A and B
-def both_a_and_b(
-    matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int, int]]
-):
-    if not is_longest_match(i, matches):
-        return
-
-    match_id, start, end = matches[i]
-    span = doc[start:end]
-    a = span[1]
-    b = span[3]
-    json_logic = {"and": [{"course": a.lemma_}, {"course": b.lemma_}]}
-    span_copy = copy_span(span)
-    doc._.json_logics.append((span_copy, json_logic))
-
-
-### Both A and B
-
-
-### Either A or B
-def either_a_or_b(
-    matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int, int]]
-):
-    if not is_longest_match(i, matches):
-        return
-
-    match_id, start, end = matches[i]
-    span = doc[start:end]
-    a = span[1]
-    b = span[3]
-    json_logic = {"or": [{"course": a.lemma_}, {"course": b.lemma_}]}
-
-    span_copy = copy_span(span)
-    doc._.json_logics.append((span_copy, json_logic))
-
-
-### Either A or B
+from bianco.requisites.pipes.patterns.either_a_or_b import (
+    either_a_or_b,
+    either_a_or_b_patterns,
+)
 
 
 @Language.factory("constitute_requisite")
 def constitute_requisite(nlp: Language, name: str):
     matcher = Matcher(nlp.vocab)
-    matcher.add(
-        "X units of",
-        x_units_of_patterns,
-        greedy="LONGEST",
-        on_match=x_units_of,
-    )
-    matcher.add(
-        "x_units",
-        [[{"IS_DIGIT": True}, {"LEMMA": "unit"}]],
-        greedy="LONGEST",
-        on_match=x_units,
-    )
-    matcher.add(
-        "X of",
-        x_of_patterns,
-        greedy="LONGEST",
-        on_match=x_of,
-    )
-    matcher.add(
-        "Admission to",
-        admission_of_patterns,
-        greedy="LONGEST",
-        on_match=admission_of,
-    )
-    matcher.add(
-        "Consent of",
-        consent_of_patterns,
-        greedy="LONGEST",
-        on_match=consent_of,
-    )
-    matcher.add(
-        "Both A and B",
-        [
-            [
-                {"LEMMA": "both"},
-                {"ENT_TYPE": "COURSE"},
-                {"LEMMA": "and"},
-                {"ENT_TYPE": "COURSE"},
-            ]
-        ],
-        greedy="LONGEST",
-        on_match=both_a_and_b,
-    )
-    matcher.add(
-        "Either A or B",
-        [
-            [
-                {"LEMMA": "either"},
-                {"ENT_TYPE": "COURSE"},
-                {"LEMMA": "or"},
-                {"ENT_TYPE": "COURSE"},
-            ]
-        ],
-        greedy="LONGEST",
-        on_match=either_a_or_b,
-    )
+    matcher.add(1, x_units_of_patterns, greedy="LONGEST", on_match=x_units_of)
+    matcher.add(2, x_units_patterns, greedy="LONGEST", on_match=x_units)
+    matcher.add(3, x_of_patterns, greedy="LONGEST", on_match=x_of)
+    matcher.add(4, admission_of_patterns, greedy="LONGEST", on_match=admission_of)
+    matcher.add(5, consent_of_patterns, greedy="LONGEST", on_match=consent_of)
+    matcher.add(6, both_a_and_b_patterns, greedy="LONGEST", on_match=both_a_and_b)
+    matcher.add(7, either_a_or_b_patterns, greedy="LONGEST", on_match=either_a_or_b)
 
     def constitute(doc: Doc):
         while matches := matcher(doc):
