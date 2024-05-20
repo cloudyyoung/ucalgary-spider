@@ -27,12 +27,15 @@ subject_codes = [doc["code"] for doc in subject_codes_docs]
 
 
 def replace_subject_code(sentence: str, loose: bool=False):
-	for subject_code in subject_codes_docs:
-		if loose:
-			sentence = re.sub(rf"{subject_code["title"]}", rf"{subject_code["code"]}", sentence)
-		else:
-			sentence = re.sub(rf"{subject_code["title"]} {course_number_regex}", rf"{subject_code["code"]} \1", sentence)
-	return sentence
+    for subject_code in subject_codes_docs:
+        if loose:
+            sentence = re.sub(rf"{subject_code["title"]}", rf"{subject_code["code"]}", sentence)
+        else:
+            sentence = re.sub(rf"{subject_code["title"]} {course_number_regex}", rf"{subject_code["code"]} \1", sentence)
+
+        sentence = re.sub(rf"labelled {subject_code["title"]}", rf"labelled {subject_code["code"]}", sentence)
+
+    return sentence
 
 def get_repeating_array(
     head: list, repeat_elemnts: list, repeat_times: int, tail: list

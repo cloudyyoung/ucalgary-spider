@@ -29,6 +29,10 @@ from bianco.requisites.pipes.patterns.either_a_or_b import (
     either_a_or_b,
     either_a_or_b_patterns,
 )
+from bianco.requisites.pipes.patterns.courses_labelled import (
+    courses_labelled_patterns,
+    courses_labelled,
+)
 
 
 @Language.factory("constitute_requisite")
@@ -38,11 +42,14 @@ def constitute_requisite(nlp: Language, name: str):
         1, x_units_of_courses_patterns, greedy="LONGEST", on_match=x_units_of_courses
     )
     matcher.add(2, x_of_courses_patterns, greedy="LONGEST", on_match=x_of_courses)
-    matcher.add(3, x_units_patterns, greedy="LONGEST", on_match=x_units)
-    matcher.add(4, admission_of_patterns, greedy="LONGEST", on_match=admission_of)
-    matcher.add(5, consent_of_patterns, greedy="LONGEST", on_match=consent_of)
-    matcher.add(6, both_a_and_b_patterns, greedy="LONGEST", on_match=both_a_and_b)
-    matcher.add(7, either_a_or_b_patterns, greedy="LONGEST", on_match=either_a_or_b)
+    matcher.add(3, admission_of_patterns, greedy="LONGEST", on_match=admission_of)
+    matcher.add(4, consent_of_patterns, greedy="LONGEST", on_match=consent_of)
+    matcher.add(
+        5, courses_labelled_patterns, greedy="LONGEST", on_match=courses_labelled
+    )
+    matcher.add(6, x_units_patterns, greedy="LONGEST", on_match=x_units)
+    matcher.add(7, both_a_and_b_patterns, greedy="LONGEST", on_match=both_a_and_b)
+    matcher.add(8, either_a_or_b_patterns, greedy="LONGEST", on_match=either_a_or_b)
 
     def constitute(doc: Doc):
         while matches := matcher(doc):
