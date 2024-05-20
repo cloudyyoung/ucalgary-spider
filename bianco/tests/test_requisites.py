@@ -197,3 +197,15 @@ def test_far_subject_code_inference():
         ]
     }
     assert_json_logic(sent, jl)
+
+
+def test_sent_with_dirty_punct():
+    sent = "Chemistry 201 or 211; and 203 or 213;, and 351."
+    jl = {
+        "and": [
+            {"or": [{"course": "CHEM201"}, {"course": "CHEM211"}]},
+            {"or": [{"course": "CHEM203"}, {"course": "CHEM213"}]},
+            {"course": "CHEM351"},
+        ]
+    }
+    assert_json_logic(sent, jl)

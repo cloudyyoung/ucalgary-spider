@@ -97,10 +97,12 @@ def extract_entity(
         json_logic = find_json_logic(replacement, json_logics)
         return json_logic
 
+def clean_text(text: str):
+     text = text.replace(";,", ";")
+     return text
 
 def extract_doc(doc: Doc):
     if not sanity_check(doc):
-        print("A - Sanity check failed")
         return None
 
     token = doc[0]
