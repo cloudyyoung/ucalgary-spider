@@ -17,12 +17,13 @@ def try_nlp(course: dict, sent: str, mode="prereq"):
             sent = sent.replace("Credit for ", "")
             sent = sent.replace(" will not be allowed", "")
             sent = sent.replace("any of", "one of")
+            sent = sent.replace("either of", "one of")
             is_convertable = True
 
         doc = nlp(sent)
         json_logic = extract_doc(doc)
 
-        if is_convertable:
+        if is_convertable and sent.count("and") == 1 and sent.count("or") == 0:
             json_logic = convert_logic(json_logic)
 
     return doc, json_logic
