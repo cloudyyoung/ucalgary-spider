@@ -143,7 +143,8 @@ def test_parallel_predicate():
                     {"course": "BIOL244.72"},
                 ]
             },
-            {"and": [{"units": {"required": 72}}, {"consent": "the Department"}]},
+            {"units": {"required": 72}},
+            {"consent": "the Department"},
         ]
     }
     assert_json_logic(sent, jl)

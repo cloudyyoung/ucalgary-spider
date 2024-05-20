@@ -28,7 +28,11 @@ def and_list(matcher, doc: Doc, i, matches):
 
     for ent in span.ents:
         if res := extract_entity(ent, doc._.replacements, doc._.json_logics):
-            predicates.append(res)
+            # If both parent and nested logic operator are "and", merge them
+            if res.get("and"):
+                predicates.extend(res["and"])
+            else:
+                predicates.append(res)
 
     if len(predicates) == 1:
         json_logic = predicates[0]
@@ -68,7 +72,11 @@ def or_list(matcher, doc: Doc, i, matches):
 
     for ent in span.ents:
         if res := extract_entity(ent, doc._.replacements, doc._.json_logics):
-            predicates.append(res)
+            # If both parent and nested logic operator are "or", merge them
+            if res.get("or"):
+                predicates.extend(res["or"])
+            else:
+                predicates.append(res)
 
     if len(predicates) == 1:
         json_logic = predicates[0]
