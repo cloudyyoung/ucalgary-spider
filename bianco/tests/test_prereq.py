@@ -156,7 +156,7 @@ def test_simplest_single_course():
     assert_json_logic(sent, jl)
 
 
-def test_minor_or_list_with_comma():
+def test_ors_minor_with_comma():
     sent = "Chemistry 351; Chemistry 353, or 355."
     jl = {
         "and": [

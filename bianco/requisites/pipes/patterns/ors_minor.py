@@ -47,6 +47,5 @@ ors_minor_patterns = get_dynamic_patterns(
         {"TEXT": ",", "OP": "?"},
         {"TEXT": "or"},
         {"ENT_TYPE": {"IN": ["COURSE", "REQUISITE"]}},
-        {"TEXT": {"IN": [","]}, "OP": "?"},
     ],
 )

@@ -16,8 +16,8 @@ from bianco.requisites.pipes.patterns.a_and_b_or_c import (
 def constitute_structure_minor(nlp: Language, name: str):
     matcher = Matcher(nlp.vocab)
     matcher.add(11, a_and_b_or_c_patterns, greedy="LONGEST", on_match=a_and_b_or_c)
-    matcher.add(12, ands_minor_patterns, greedy="LONGEST", on_match=ands_minor)
-    matcher.add(13, ors_minor_patterns, greedy="LONGEST", on_match=ors_minor)
+    matcher.add(12, ors_minor_patterns, greedy="LONGEST", on_match=ors_minor)
+    matcher.add(13, ands_minor_patterns, greedy="LONGEST", on_match=ands_minor)
 
     def constitute(doc: Doc):
         while matches := matcher(doc):

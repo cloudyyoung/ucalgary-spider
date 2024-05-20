@@ -17,6 +17,7 @@ ors_major_patterns = major_or_list_patterns = get_dynamic_patterns(
     ],
     range(1, 20),
     [
+        {"LEMMA": "or"},
         {"ENT_TYPE": {"IN": ["COURSE", "REQUISITE"]}},
     ],
 )
