@@ -19,7 +19,7 @@ from bianco.requisites.pipes.constitute_structure_minor import and_list, or_list
 
 
 ### A; and B; and C; ... and D
-major_and_list_patterns = get_dynamic_patterns(
+major_and_list_patterns_1 = get_dynamic_patterns(
     [],
     [
         {"ENT_TYPE": {"IN": ["COURSE", "REQUISITE"]}},
@@ -62,7 +62,7 @@ def constitute_structure_major(nlp: Language, name: str):
     matcher = Matcher(nlp.vocab)
     matcher.add(
         "A; and B; and C; ... and D",
-        major_and_list_patterns + major_and_list_patterns_2,
+        major_and_list_patterns_1 + major_and_list_patterns_2,
         greedy="LONGEST",
         on_match=and_list,
     )
