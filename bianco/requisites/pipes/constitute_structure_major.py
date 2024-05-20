@@ -30,6 +30,15 @@ major_and_list_patterns = get_dynamic_patterns(
         {"ENT_TYPE": {"IN": ["COURSE", "REQUISITE"]}},
     ],
 )
+major_and_list_patterns_2 = get_dynamic_patterns(
+    [{"ENT_TYPE": {"IN": ["COURSE", "REQUISITE"]}}],
+    [
+        {"TEXT": {"IN": [",", ";"]}, "OP": "?"},
+        {"ENT_TYPE": {"IN": ["COURSE", "REQUISITE"]}},
+    ],
+    range(1, 20),
+    [],
+)
 ### A; and B; and C; ... and D
 
 
@@ -53,7 +62,7 @@ def constitute_structure_major(nlp: Language, name: str):
     matcher = Matcher(nlp.vocab)
     matcher.add(
         "A; and B; and C; ... and D",
-        major_and_list_patterns,
+        major_and_list_patterns + major_and_list_patterns_2,
         greedy="LONGEST",
         on_match=and_list,
     )
