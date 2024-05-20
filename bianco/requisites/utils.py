@@ -61,7 +61,7 @@ def find_replacement(key: str, replacements: list[tuple[str, Span]]):
             return span
 
 
-def find_json_logic(span: Span, json_logic: list[tuple[Span, dict]]):
+def find_json_logic(span: Span | None, json_logic: list[tuple[Span, dict]]):
     if not json_logic or not span:
         return
 
@@ -70,24 +70,24 @@ def find_json_logic(span: Span, json_logic: list[tuple[Span, dict]]):
             return logic
 
 
-def sanity_check(span: Span):
-    if len(span) == 0:
+def sanity_check(doc: Doc):
+    if len(doc) == 0:
         return False
 
-    token = span[0]
+    token = doc[0]
     is_ent_type = token.ent_type_ in ["COURSE", "REQUISITE"]
 
-    if len(span) == 1 and is_ent_type:
+    if len(doc) == 1 and is_ent_type:
         return True
 
-    if len(span) == 2 and is_ent_type:
+    if len(doc) == 2 and is_ent_type:
         return True
 
     return False
 
 
 def extract_entity(
-    token: Token | Span, replacements: dict[str, Span], json_logics: list[tuple[Span, dict]]
+    token: Token | Span, replacements: list[tuple[str, Span]], json_logics: list[tuple[Span, dict]]
 ):
     if (isinstance(token, Token) and token.ent_type_ == "COURSE") or (isinstance(token, Span) and token.label_ == "COURSE"):
         return {"course": token.lemma_}
