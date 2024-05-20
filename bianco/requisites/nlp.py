@@ -1,14 +1,14 @@
 import spacy
 
-from requisites.pipes.merge_course_number import *
-from requisites.pipes.fix_ent_head import *
-from requisites.pipes.detect_entity import *
-from requisites.pipes.merge_entity_spans import *
-from requisites.pipes.expand_course_code import *
-from requisites.pipes.default_pipeline import *
-from requisites.pipes.constitute_requisite import *
-from requisites.pipes.constitute_structure_minor import *
-from requisites.pipes.constitute_structure_major import *
+from bianco.requisites.pipes.merge_course_number import *
+from bianco.requisites.pipes.fix_ent_head import *
+from bianco.requisites.pipes.detect_entity import *
+from bianco.requisites.pipes.merge_entity_spans import *
+from bianco.requisites.pipes.expand_course_code import *
+from bianco.requisites.pipes.default_pipeline import *
+from bianco.requisites.pipes.constitute_requisite import *
+from bianco.requisites.pipes.constitute_structure_minor import *
+from bianco.requisites.pipes.constitute_structure_major import *
 
 
 nlp = spacy.load("en_core_web_sm", exclude=["ner"])

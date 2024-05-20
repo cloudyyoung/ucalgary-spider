@@ -1,5 +1,5 @@
-from requisites.nlp import nlp
-from requisites.utils import extract_doc, replace_subject_code
+from bianco.requisites.nlp import nlp
+from bianco.requisites.utils import extract_doc, replace_subject_code
 
 
 def try_nlp(course: dict, sent: str):

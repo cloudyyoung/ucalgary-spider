@@ -1,7 +1,7 @@
 from spacy.language import Language
 from spacy.pipeline import EntityRuler
 
-from requisites.utils import subject_codes
+from bianco.requisites.utils import subject_codes
 
 patterns = [
     {

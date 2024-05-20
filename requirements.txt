@@ -7,3 +7,4 @@ xmltodict
 htmlmin
 panzi-json-logic
 nltk
+pytest

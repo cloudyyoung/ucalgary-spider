@@ -2,7 +2,7 @@ from spacy.language import Language
 from spacy.tokens import Doc, Token
 from spacy.matcher import Matcher
 
-from requisites.utils import get_dynamic_patterns, replacement_letters, copy_span
+from bianco.requisites.utils import get_dynamic_patterns, replacement_letters, copy_span
 
 
 def sort_matches_by_length(matches: list[tuple[int, int, int]]):

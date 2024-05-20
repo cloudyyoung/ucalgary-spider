@@ -1,7 +1,7 @@
 from spacy.language import Language
 from spacy.tokens import Doc
 
-from requisites.utils import subject_codes
+from bianco.requisites.utils import subject_codes
 
 
 @Language.component("fix_ent_head")

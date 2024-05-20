@@ -2,7 +2,7 @@ from spacy.language import Language
 from spacy.tokens import Doc
 import re
 
-from requisites.utils import subject_codes, course_number_regex
+from bianco.requisites.utils import subject_codes, course_number_regex
 
 
 @Language.component("expand_course_code")

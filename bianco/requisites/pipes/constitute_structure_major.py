@@ -3,7 +3,7 @@ from spacy.tokens import Doc
 from spacy.matcher import Matcher
 import re
 
-from requisites.utils import (
+from bianco.requisites.utils import (
     get_dynamic_patterns,
     find_replacement,
     find_json_logic,
@@ -11,11 +11,11 @@ from requisites.utils import (
     copy_doc,
     copy_span,
 )
-from requisites.pipes.constitute_requisite import (
+from bianco.requisites.pipes.constitute_requisite import (
     sort_matches_by_length,
     is_longest_match,
 )
-from requisites.pipes.constitute_structure_minor import and_list, or_list
+from bianco.requisites.pipes.constitute_structure_minor import and_list, or_list
 
 
 ### A; and B; and C; ... and D
