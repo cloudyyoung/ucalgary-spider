@@ -211,7 +211,13 @@ def test_sent_with_dirty_punct():
     assert_json_logic(sent, jl)
 
 
-def x_units_from_courses_labelled():
+def test_x_units_from_courses_labelled():
     sent = "6 units of courses labelled Biochemistry."
     jl = {"units": {"from": {"course": "BCEM"}, "required": 6}}
+    assert_json_logic(sent, jl)
+
+
+def test_course_number_like_number_problem():
+    sent = "Nursing 485, 488, and 489."
+    jl = {"and": [{"course": "NRSG485"}, {"course": "NRSG488"}, {"course": "NRSG489"}]}
     assert_json_logic(sent, jl)
