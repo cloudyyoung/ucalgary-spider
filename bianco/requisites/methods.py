@@ -11,22 +11,36 @@ def try_nlp(course: dict, sent: str, mode="prereq"):
         json_logic = extract_doc(doc)
 
     elif mode == "antireq":
-        is_convertable = False
-
-        if sent.startswith("Credit for "):
+        if sent.startswith("Credit for ") and sent.endswith(" will not be allowed."):
             sent = sent.replace("Credit for ", "")
             sent = sent.replace(" will not be allowed", "")
             sent = sent.replace("any of", "one of")
             sent = sent.replace("either of", "one of")
-            is_convertable = True
+        elif sent.startswith("Not open to students with credit in "):
+            sent = sent.replace("Not open to students with credit in ", "")
 
         doc = nlp(sent)
         json_logic = extract_doc(doc)
 
-        if is_convertable and sent.count("and") == 1 and sent.count("or") == 0:
+        if is_convertable(json_logic):
             json_logic = convert_logic(json_logic)
 
     return doc, json_logic
+
+
+def is_convertable(json_logic):
+    if not json_logic:
+        return False
+
+    if "and" in json_logic:
+        predicates = json_logic["and"]
+
+        for predicate in predicates:
+            if "course" not in predicate:
+                return False
+
+        return True
+    return False
 
 
 def convert_logic(json_logic):
