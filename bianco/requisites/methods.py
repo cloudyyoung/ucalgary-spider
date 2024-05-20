@@ -17,6 +17,7 @@ def try_nlp(course: dict, sent: str, mode="prereq"):
             sent = sent.replace("Credit for ", "")
             sent = sent.replace(" will not be allowed", "")
             sent = sent.replace("any of", "one of")
+            sent = sent.replace("any one of", "one of")
             sent = sent.replace("either of", "one of")
             sent = re.sub(r"either (.*) and (.*)", r"\1 or \2", sent)
             sent = re.sub(r"both (.*) or (.*)", r"\1 and \2", sent)

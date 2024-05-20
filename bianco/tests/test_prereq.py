@@ -1,8 +1,8 @@
 from bianco.requisites.methods import try_nlp
 
 
-def assert_json_logic(sent, expected):
-    doc, json_logic = try_nlp({}, sent)
+def assert_json_logic(sent: str, expected: dict, mode="prereq"):
+    doc, json_logic = try_nlp({}, sent, mode)
     assert json_logic == expected
 
 
