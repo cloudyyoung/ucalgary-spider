@@ -37,8 +37,8 @@ def constitute_requisite(nlp: Language, name: str):
     matcher.add(
         1, x_units_of_courses_patterns, greedy="LONGEST", on_match=x_units_of_courses
     )
-    matcher.add(2, x_units_patterns, greedy="LONGEST", on_match=x_units)
-    matcher.add(3, x_of_courses_patterns, greedy="LONGEST", on_match=x_of_courses)
+    matcher.add(2, x_of_courses_patterns, greedy="LONGEST", on_match=x_of_courses)
+    matcher.add(3, x_units_patterns, greedy="LONGEST", on_match=x_units)
     matcher.add(4, admission_of_patterns, greedy="LONGEST", on_match=admission_of)
     matcher.add(5, consent_of_patterns, greedy="LONGEST", on_match=consent_of)
     matcher.add(6, both_a_and_b_patterns, greedy="LONGEST", on_match=both_a_and_b)
