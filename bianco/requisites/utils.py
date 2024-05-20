@@ -153,9 +153,7 @@ def copy_span(span: Span):
     return new_span
 
 
-def sort_matches(
-    matches: list[tuple[int, int, int]]
-):
+def sort_matches(matches: list[tuple[int, int, int]]):
     def key_fn(match: tuple[int, int, int]):
         match_id, start, end = match
         return end - start + match_id * 100
