@@ -19,8 +19,8 @@ def try_nlp(course: dict, sent: str, mode="prereq"):
             sent = sent.replace("any of", "one of")
             sent = sent.replace("any one of", "one of")
             sent = sent.replace("either of", "one of")
-            sent = re.sub(r"either (.*) and (.*)", r"\1 or \2", sent)
-            sent = re.sub(r"both (.*) or (.*)", r"\1 and \2", sent)
+            sent = re.sub(r"either (.*?) and (.*?)", r"\1 or \2", sent)
+            sent = re.sub(r"both (.*?) and (.*?)", r"\1 and \2", sent)
         elif sent.startswith("Not open to students with credit in "):
             sent = sent.replace("Not open to students with credit in ", "")
         elif sent.startswith("Not for credit with "):
