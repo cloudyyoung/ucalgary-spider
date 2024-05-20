@@ -24,6 +24,3 @@ nlp.add_pipe("constitute_structure_minor")
 nlp.add_pipe("detect_entity", "detect_entity_3")
 nlp.add_pipe("constitute_structure_major")
 nlp.add_pipe("detect_entity", "detect_entity_4")
-
-
-print(nlp.pipe_names)
