@@ -1,65 +1,15 @@
 from spacy.language import Language
-from spacy.tokens import Doc, Token
+from spacy.tokens import Doc
 from spacy.matcher import Matcher
 
-from bianco.requisites.utils import get_dynamic_patterns, replacement_letters, copy_span
-
-
-def sort_matches_by_length(
-    matches: list[tuple[int, int, int]], key=lambda x: x[2] - x[1]
-):
-    return sorted(matches, key=key, reverse=True)
-
-
-def is_longest_match(
-    i: int, matches: list[tuple[int, int, int]], key=lambda x: x[2] - x[1]
-):
-    match_id, _, _ = matches[i]
-    sorted_matches = sort_matches_by_length(matches, key=key)
-    longest_match_id, _, _ = sorted_matches[0]
-    return match_id == longest_match_id
-
-
-### X Units of
-def x_units_of(matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int, int]]):
-    if not is_longest_match(i, matches):
-        return
-
-    match_id, start, end = matches[i]
-    span = doc[start:end]
-
-    units_required = int(span[0].text)
-    courses = [ent for ent in span.ents if ent.label_ == "COURSE"]
-
-    json_logic = {
-        "units": {
-            "required": units_required,
-            "from": [{"course": course.lemma_} for course in courses],
-        }
-    }
-
-    span_copy = copy_span(span)
-    doc._.json_logics.append((span_copy, json_logic))
-
-
-x_units_of_patterns = get_dynamic_patterns(
-    [
-        {"IS_DIGIT": True},
-        {"LEMMA": "unit"},
-        {"POS": "ADP", "OP": "+"},
-    ],
-    [
-        {"ENT_TYPE": "COURSE"},
-        {"TEXT": {"IN": ["or", ","]}, "OP": "{1,2}"},
-    ],
-    range(1, 20),
-    [
-        {"ENT_TYPE": "COURSE"},
-    ],
+from bianco.requisites.utils import (
+    get_dynamic_patterns,
+    replacement_letters,
+    copy_span,
+    sort_matches_by_length,
+    is_longest_match,
 )
-
-
-### X Units of
+from bianco.requisites.pipes.patterns.x_units_of import x_units_of_patterns, x_units_of
 
 
 def x_units(matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int, int]]):

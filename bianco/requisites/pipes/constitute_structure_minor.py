@@ -8,7 +8,7 @@ from bianco.requisites.utils import (
     copy_span,
     extract_entity,
 )
-from bianco.requisites.pipes.constitute_requisite import (
+from bianco.requisites.utils import (
     sort_matches_by_length,
     is_longest_match,
 )
