@@ -10,6 +10,8 @@ def recursive_find_subject_code(ancestors):
             return ancestor
         elif ancestor.pos_ == "NUM" or ancestor.tag_ == "COURSE_NUMBER":
             return recursive_find_subject_code(ancestor.ancestors)
+        elif ancestor.pos_ not in ["NOUN", "PROPN"]:
+            continue
         else:
             return None
     return None
