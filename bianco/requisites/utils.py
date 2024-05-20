@@ -90,7 +90,7 @@ def extract_entity(
     token: Token | Span, replacements: dict[str, Span], json_logics: list[tuple[Span, dict]]
 ):
     if (isinstance(token, Token) and token.ent_type_ == "COURSE") or (isinstance(token, Span) and token.label_ == "COURSE"):
-        return {"course": token.text}
+        return {"course": token.lemma_}
 
     elif (isinstance(token, Token) and token.ent_type_ == "REQUISITE") or (isinstance(token, Span) and token.label_ == "REQUISITE"):
         replacement = find_replacement(token.lemma_, replacements)
