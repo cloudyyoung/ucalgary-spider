@@ -1,3 +1,5 @@
+from tqdm import tqdm
+
 from bianco.requisites.methods import try_nlp
 from bianco.requisites.utils import catalog
 
@@ -17,7 +19,7 @@ courses_antireq.delete_many({})
 courses_coreq = catalog.get_collection("courses_coreq")
 courses_coreq.delete_many({})
 
-for course in courses:
+for course in tqdm(courses):
     prereq = course["prereq"]
     antireq = course["antireq"]
     coreq = course["coreq"]
