@@ -31,12 +31,8 @@ for course in courses:
         )
 
     if antireq:
-        antireq_procesed = antireq.replace("Credit for ", "")
-        antireq_procesed = antireq_procesed.replace(" will not be allowed", "")
-        antireq_procesed = antireq_procesed.replace("any of", "one of")
-        print(antireq_procesed)
-
-        doc, json_logic = try_nlp(course, antireq_procesed)
+        print(antireq)
+        doc, json_logic = try_nlp(course, antireq, mode="antireq")
 
         print(json_logic)
         print("")
