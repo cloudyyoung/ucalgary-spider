@@ -2,16 +2,8 @@ from spacy.language import Language
 from spacy.tokens import Doc
 from spacy.matcher import Matcher
 
-from bianco.requisites.utils import (
-    get_dynamic_patterns,
-    replacement_letters,
-    copy_span,
-    extract_entity,
-)
-from bianco.requisites.utils import (
-    sort_matches_by_length,
-    is_longest_match,
-)
+from bianco.requisites.utils import replacement_letters, copy_span
+from bianco.requisites.utils import sort_matches_by_length
 from bianco.requisites.pipes.patterns.ands_minor import ands_minor_patterns, ands_minor
 from bianco.requisites.pipes.patterns.ors_minor import ors_minor_patterns, ors_minor
 from bianco.requisites.pipes.patterns.a_and_b_or_c import (
