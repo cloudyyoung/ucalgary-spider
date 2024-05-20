@@ -13,7 +13,6 @@ def expand_course_code(doc: Doc):
         tokens.append(token)
 
     for token in doc:
-        print(token)
         if token.text in subject_codes:
             if token.i > 0:
                 left_token = doc[token.i - 1]
