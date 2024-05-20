@@ -80,7 +80,10 @@ def sanity_check(doc: Doc):
     if len(doc) == 1 and is_ent_type:
         return True
 
-    if len(doc) == 2 and is_ent_type:
+    token_2 = doc[1]
+    is_punct = token_2.is_punct
+    
+    if len(doc) == 2 and is_ent_type and is_punct:
         return True
 
     return False
