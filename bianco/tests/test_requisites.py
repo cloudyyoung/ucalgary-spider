@@ -117,3 +117,33 @@ def test_admission_of():
         ]
     }
     assert_json_logic(sent, jl)
+
+
+def test_course_number_head_to_subject_code():
+    sent = "Biology 315, 72 units and consent of the Department."
+    jl = {
+        "and": [
+            {"course": "BIOL315"},
+            {"units": {"required": 72}},
+            {"consent": "the Department"},
+        ]
+    }
+    assert_json_logic(sent, jl)
+
+
+def test_parallel_predicate():
+    sent = "Biology 315, 327, 233 or 244.72, 72 units and consent of the Department."
+    jl = {
+        "and": [
+            {
+                "or": [
+                    {"course": "BIOL315"},
+                    {"course": "BIOL327"},
+                    {"course": "BIOL233"},
+                    {"course": "BIOL244.72"},
+                ]
+            },
+            {"and": [{"units": {"required": 72}}, {"consent": "the Department"}]},
+        ]
+    }
+    assert_json_logic(sent, jl)
