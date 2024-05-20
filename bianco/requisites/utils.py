@@ -2,9 +2,18 @@ import itertools
 from spacy.tokens import Span, Doc, Token
 from pymongo import MongoClient
 import re
+import os
+from pymongo import MongoClient
+from dotenv import load_dotenv
+
+
+load_dotenv()
+
+MONGO_DB = os.getenv("MONGO_DB")
+MONGO_CLIENT = MongoClient(MONGO_DB)
+CATALOG_DB = MONGO_CLIENT.get_database("catalog")
 
 course_number_regex = r"(\d{2}-\d|\d{3}\.\d{1,2}|\d{2,3})"  # 101, 30-1, 599.45
-
 
 def get_replacement_letter():
     # Create an iterator that cycles through the alphabet
@@ -14,13 +23,8 @@ def get_replacement_letter():
 
 replacement_letters = get_replacement_letter()
 
-
-# Connect to mongodb
-client = MongoClient("mongodb://root:password@localhost:27017/")
-catalog = client.get_database("catalog")
-
 # Sort by length of title
-subject_codes_docs = list(catalog.get_collection("subject_codes").find())
+subject_codes_docs = list(CATALOG_DB.get_collection("subject_codes").find())
 subject_codes_docs.sort(key=lambda x: len(x["title"]), reverse=True)
 subject_codes_map = {doc["title"]: doc["code"] for doc in subject_codes_docs}
 subject_codes = [doc["code"] for doc in subject_codes_docs]

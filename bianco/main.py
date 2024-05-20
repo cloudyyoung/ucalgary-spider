@@ -1,22 +1,22 @@
 from tqdm import tqdm
 
 from bianco.requisites.methods import try_nlp
-from bianco.requisites.utils import catalog
+from bianco.requisites.utils import CATALOG_DB
 
 # Get all courses
 courses = list(
-    catalog.get_collection("courses").find(
+    CATALOG_DB.get_collection("courses").find(
         {"prereq": {"$ne": None}, "career": "Undergraduate Programs", "active": True}
     )
 )
 
-courses_prereq = catalog.get_collection("courses_prereq")
+courses_prereq = CATALOG_DB.get_collection("courses_prereq")
 courses_prereq.delete_many({})
 
-courses_antireq = catalog.get_collection("courses_antireq")
+courses_antireq = CATALOG_DB.get_collection("courses_antireq")
 courses_antireq.delete_many({})
 
-courses_coreq = catalog.get_collection("courses_coreq")
+courses_coreq = CATALOG_DB.get_collection("courses_coreq")
 courses_coreq.delete_many({})
 
 for course in tqdm(courses):
