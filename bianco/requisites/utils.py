@@ -153,7 +153,7 @@ def copy_span(span: Span):
     return new_span
 
 
-def sort_matches_by_length(
+def sort_matches(
     matches: list[tuple[int, int, int]]
 ):
     def key_fn(match: tuple[int, int, int]):
@@ -163,8 +163,8 @@ def sort_matches_by_length(
     return sorted(matches, key=key_fn, reverse=True)
 
 
-def is_longest_match(i: int, matches: list[tuple[int, int, int]]):
+def is_top_match(i: int, matches: list[tuple[int, int, int]]):
     match_id, _, _ = matches[i]
-    sorted_matches = sort_matches_by_length(matches)
+    sorted_matches = sort_matches(matches)
     longest_match_id, _, _ = sorted_matches[0]
     return match_id == longest_match_id

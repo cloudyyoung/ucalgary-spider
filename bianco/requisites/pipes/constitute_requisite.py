@@ -5,7 +5,7 @@ from spacy.matcher import Matcher
 from bianco.requisites.utils import (
     replacement_letters,
     copy_span,
-    sort_matches_by_length,
+    sort_matches,
 )
 from bianco.requisites.pipes.patterns.x_units_of_courses import (
     x_units_of_courses_patterns,
@@ -47,7 +47,7 @@ def constitute_requisite(nlp: Language, name: str):
     def constitute(doc: Doc):
         while matches := matcher(doc):
             # sort matches by length of span
-            matches = sort_matches_by_length(matches)
+            matches = sort_matches(matches)
             match_id, start, end = matches[0]
 
             letter = next(replacement_letters)

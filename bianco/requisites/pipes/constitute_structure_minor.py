@@ -3,7 +3,7 @@ from spacy.tokens import Doc
 from spacy.matcher import Matcher
 
 from bianco.requisites.utils import replacement_letters, copy_span
-from bianco.requisites.utils import sort_matches_by_length
+from bianco.requisites.utils import sort_matches
 from bianco.requisites.pipes.patterns.ands_minor import ands_minor_patterns, ands_minor
 from bianco.requisites.pipes.patterns.ors_minor import ors_minor_patterns, ors_minor
 from bianco.requisites.pipes.patterns.a_and_b_or_c import (
@@ -21,7 +21,7 @@ def constitute_structure_minor(nlp: Language, name: str):
 
     def constitute(doc: Doc):
         while matches := matcher(doc):
-            matches = sort_matches_by_length(matches)
+            matches = sort_matches(matches)
             match_id, start, end = matches[0]
 
             letter = next(replacement_letters)

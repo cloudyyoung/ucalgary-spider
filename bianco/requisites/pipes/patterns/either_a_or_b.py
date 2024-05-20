@@ -3,14 +3,14 @@ from spacy.matcher import Matcher
 
 from bianco.requisites.utils import (
     copy_span,
-    is_longest_match,
+    is_top_match,
 )
 
 
 def either_a_or_b(
     matcher: Matcher, doc: Doc, i: int, matches: list[tuple[int, int, int]]
 ):
-    if not is_longest_match(i, matches):
+    if not is_top_match(i, matches):
         return
 
     match_id, start, end = matches[i]

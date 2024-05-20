@@ -3,13 +3,13 @@ from spacy.matcher import Matcher
 
 from bianco.requisites.utils import (
     copy_span,
-    is_longest_match,
+    is_top_match,
     extract_entity,
 )
 
 
 def a_and_b_or_c(matcher: Matcher, doc: Doc, i, matches):
-    if not is_longest_match(i, matches):
+    if not is_top_match(i, matches):
         return
 
     match_id, start, end = matches[i]

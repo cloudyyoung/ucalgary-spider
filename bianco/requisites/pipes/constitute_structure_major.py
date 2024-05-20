@@ -7,7 +7,7 @@ from bianco.requisites.utils import (
     replacement_letters,
     copy_span,
 )
-from bianco.requisites.pipes.constitute_requisite import sort_matches_by_length
+from bianco.requisites.pipes.constitute_requisite import sort_matches
 from bianco.requisites.pipes.constitute_structure_minor import (
     ands_minor,
     or_list,
@@ -73,7 +73,7 @@ def constitute_structure_major(nlp: Language, name: str):
     def constitute(doc: Doc):
         while matches := matcher(doc):
             # sort matches by length of span
-            matches = sort_matches_by_length(matches, match_key)
+            matches = sort_matches(matches, match_key)
             match_id, start, end = matches[0]
 
             letter = next(replacement_letters)
