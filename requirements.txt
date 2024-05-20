@@ -9,3 +9,4 @@ panzi-json-logic
 nltk
 pytest
 tqdm
+python-dotenv

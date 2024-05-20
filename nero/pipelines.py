@@ -7,10 +7,15 @@
 # useful for handling different item types with a single interface
 
 import re
-from itemadapter import ItemAdapter
+import os
+from itemadapter.adapter import ItemAdapter
 from pymongo import MongoClient
+from dotenv import load_dotenv
 
-client = MongoClient("mongodb://root:password@localhost:27017/")
+load_dotenv()
+
+MONGO_DB = os.getenv("MONGO_DB")
+MONGO_CLIENT = MongoClient(MONGO_DB)
 
 
 class FileStorePipeline:
@@ -38,7 +43,7 @@ class FileStorePipeline:
                 item[field] = item[field].strip()
                 item[field] = re.sub(r"\s+", " ", item[field])
 
-        collection = client.get_database("catalog").get_collection(tablename)
+        collection = MONGO_CLIENT.get_database("catalog").get_collection(tablename)
         collection.insert_one(ItemAdapter(item).asdict())
 
         return item
