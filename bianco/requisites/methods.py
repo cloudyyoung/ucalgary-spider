@@ -18,6 +18,8 @@ def try_nlp(course: dict, sent: str, mode="prereq"):
             sent = sent.replace("either of", "one of")
         elif sent.startswith("Not open to students with credit in "):
             sent = sent.replace("Not open to students with credit in ", "")
+        elif sent.startswith("Not for credit with "):
+            sent = sent.replace("Not for credit with ", "")
 
         doc = nlp(sent)
         json_logic = extract_doc(doc)

@@ -175,3 +175,8 @@ class SubjectCodeSpider(Spider):
             code="LWSO",
             title="Law and Society",
         )
+
+        yield SubjectCode(
+            code="ASHA",
+            title="Arts and Science Honours Academy",
+        )
