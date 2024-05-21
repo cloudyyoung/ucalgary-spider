@@ -14,7 +14,7 @@ def courses_labelled(matcher: Matcher, doc: Doc, i: int, matches: list):
     subject_code = span[-1]
 
     span_copy = copy_span(span)
-    doc._.json_logics.append((span_copy, {"course": subject_code.text}))
+    doc._.json_logics.append((span_copy, {"subject_codes": [subject_code.text]}))
 
 
 courses_labelled_patterns = [
