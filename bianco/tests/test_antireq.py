@@ -24,7 +24,7 @@ def test_and_either():
     sent = "Credit for Nursing 222 and either Zoology 269 or Kinesiology 260 will not be allowed."
     jl = {
         "and": [
-            {"course": "NRSG222"},
+            {"course": "NURS222"},
             {"or": [{"course": "ZOOL269"}, {"course": "KNES260"}]},
         ]
     }

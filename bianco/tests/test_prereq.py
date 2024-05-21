@@ -219,5 +219,5 @@ def test_x_units_from_courses_labelled():
 
 def test_course_number_like_number_problem():
     sent = "Nursing 485, 488, and 489."
-    jl = {"and": [{"course": "NRSG485"}, {"course": "NRSG488"}, {"course": "NRSG489"}]}
+    jl = {"and": [{"course": "NURS485"}, {"course": "NURS488"}, {"course": "NURS489"}]}
     assert_json_logic(sent, jl)
