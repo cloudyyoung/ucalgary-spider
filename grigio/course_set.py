@@ -21,7 +21,7 @@ for course_set in tqdm(course_sets, desc="Course Sets"):
     course_codes = []
     for course in courses:
         course_code = course["code"]
-        course_codes.append(course_code)
+        course_codes.append({"course": course_code})
 
     course_set["courses"] = course_codes
 
