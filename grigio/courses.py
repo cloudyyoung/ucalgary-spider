@@ -7,7 +7,7 @@ from grigio.utils import DIRTY_CATALOG_DB, CATALOG_DB
 # Only process all active undergraduate courses
 dirty_courses = list(
     DIRTY_CATALOG_DB.get_collection("courses").find(
-        {"prereq": {"$ne": None}, "career": "Undergraduate Programs", "active": True}
+        {"career": "Undergraduate Programs", "active": True}
     )
 )
 

@@ -2,7 +2,11 @@ from tqdm import tqdm
 
 from grigio.utils import DIRTY_CATALOG_DB, CATALOG_DB, process_requisites
 
-programs = list(DIRTY_CATALOG_DB.get_collection("programs").find({}))
+programs = list(
+    DIRTY_CATALOG_DB.get_collection("programs").find(
+        {"career": "Undergraduate Programs", "active": True}
+    )
+)
 
 
 # Process all course sets
