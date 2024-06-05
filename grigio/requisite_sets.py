@@ -1,4 +1,3 @@
-import re
 from tqdm import tqdm
 
 from grigio.utils import DIRTY_CATALOG_DB, CATALOG_DB, process_requisites
