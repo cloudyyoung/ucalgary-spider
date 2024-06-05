@@ -6,7 +6,7 @@ from bianco.requisites.utils import CATALOG_DB
 # Get all courses
 courses = list(
     CATALOG_DB.get_collection("courses").find(
-        {"prereq": {"$ne": None}, "career": "Undergraduate Programs", "active": True}
+        {"career": "Undergraduate Programs", "active": True}
     )
 )
 

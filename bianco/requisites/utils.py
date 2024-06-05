@@ -11,7 +11,7 @@ load_dotenv()
 
 MONGO_DB = os.getenv("MONGO_DB")
 MONGO_CLIENT = MongoClient(MONGO_DB)
-CATALOG_DB = MONGO_CLIENT.get_database("catalog")
+CATALOG_DB = MONGO_CLIENT.get_database("catalog_lab")
 
 course_number_regex = r"(\d{2}-\d|\d{3}\.\d{1,2}|\d{2,3})"  # 101, 30-1, 599.45
 
