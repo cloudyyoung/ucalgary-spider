@@ -4,3 +4,4 @@ import grigio.faculties
 import grigio.subject_codes
 import grigio.course_sets
 import grigio.requisite_sets
+import grigio.programs
