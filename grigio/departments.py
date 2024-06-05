@@ -1,7 +1,5 @@
 from tqdm import tqdm
 
-from bianco.requisites.methods import try_nlp
-
 from grigio.utils import DIRTY_CATALOG_DB, CATALOG_DB
 
 # Departments
