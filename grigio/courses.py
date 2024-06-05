@@ -16,7 +16,7 @@ courses_catalog = CATALOG_DB.get_collection("courses")
 courses_catalog.delete_many({})
 
 
-for dirty_course in tqdm(dirty_courses, title="Courses"):
+for dirty_course in tqdm(dirty_courses, desc="Courses"):
     course = dirty_course.copy()
 
     # Process prereq, antireq, coreq
