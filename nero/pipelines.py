@@ -16,7 +16,7 @@ load_dotenv()
 
 MONGO_DB = os.getenv("MONGO_DB")
 MONGO_CLIENT = MongoClient(MONGO_DB)
-
+MONGO_COLLECTION = "dirty_catalog"
 
 class FileStorePipeline:
     files = {}
@@ -43,7 +43,9 @@ class FileStorePipeline:
                 item[field] = item[field].strip()
                 item[field] = re.sub(r"\s+", " ", item[field])
 
-        collection = MONGO_CLIENT.get_database("catalog").get_collection(tablename)
+        collection = MONGO_CLIENT.get_database(MONGO_COLLECTION).get_collection(
+            tablename
+        )
         collection.insert_one(ItemAdapter(item).asdict())
 
         return item

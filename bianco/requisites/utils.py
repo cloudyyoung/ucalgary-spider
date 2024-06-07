@@ -11,7 +11,8 @@ load_dotenv()
 
 MONGO_DB = os.getenv("MONGO_DB")
 MONGO_CLIENT = MongoClient(MONGO_DB)
-CATALOG_DB = MONGO_CLIENT.get_database("catalog")
+DIRTY_CATALOG_DB = MONGO_CLIENT.get_database("dirty_catalog")
+LAB_CATALOG_DB = MONGO_CLIENT.get_database("lab_catalog")
 
 course_number_regex = r"(\d{2}-\d|\d{3}\.\d{1,2}|\d{2,3})"  # 101, 30-1, 599.45
 
@@ -24,7 +25,7 @@ def get_replacement_letter():
 replacement_letters = get_replacement_letter()
 
 # Sort by length of title
-subject_codes_docs = list(CATALOG_DB.get_collection("subject_codes").find())
+subject_codes_docs = list(DIRTY_CATALOG_DB.get_collection("subject_codes").find())
 subject_codes_docs.sort(key=lambda x: len(x["title"]), reverse=True)
 subject_codes_map = {doc["title"]: doc["code"] for doc in subject_codes_docs}
 subject_codes = [doc["code"] for doc in subject_codes_docs]
