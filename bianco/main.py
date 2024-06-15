@@ -1,6 +1,6 @@
 from tqdm import tqdm
 
-from bianco.requisites.methods import try_nlp
+from bianco.requisites.methods import Mode, try_nlp
 from bianco.requisites.utils import DIRTY_CATALOG_DB, LAB_CATALOG_DB
 
 # Get all courses
@@ -31,7 +31,7 @@ for course in tqdm(courses, desc="Courses"):
         )
 
     if antireq:
-        doc, json_logic = try_nlp(course, antireq, mode="antireq")
+        doc, json_logic = try_nlp(course, antireq, mode=Mode.ANTIREQ)
         courses_antireq.insert_one(
             {"course": course["code"], "antireq_text": antireq, "antireq": json_logic}
         )

@@ -1,21 +1,28 @@
 import re
+from enum import StrEnum
 
 from bianco.requisites.nlp import nlp
 from bianco.requisites.utils import extract_doc, replace_subject_code, clean_text
 
 
-def try_nlp(course: dict, sent: str, mode="prereq"):
+class Mode(StrEnum):
+    PREREQ = "prereq"
+    ANTIREQ = "antireq"
+
+
+def try_nlp(course: dict, sent: str, mode: Mode = Mode.PREREQ):
     sent = replace_subject_code(sent)
     sent = clean_text(sent)
 
-    if mode == "prereq":
+    if mode == Mode.PREREQ:
         doc = nlp(sent)
         json_logic = extract_doc(doc)
 
-    elif mode == "antireq":
+    elif mode == Mode.ANTIREQ:
         if sent.startswith("Credit for ") and sent.endswith(" will not be allowed."):
             sent = sent.replace("Credit for ", "")
             sent = sent.replace(" will not be allowed", "")
+            sent = sent.replace("and", "or")
             sent = sent.replace("any of", "one of")
             sent = sent.replace("any one of", "one of")
             sent = sent.replace("either of", "one of")
