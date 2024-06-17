@@ -63,16 +63,7 @@ class SubjectCodeSpider(Spider):
             value = str(option["value"])
             label = str(option["label"])
             code, title = label.split(" - ", 1)
-
-            if code in self.subject_codes:
-                continue
-
-            yield SubjectCode(
-                code=code,
-                title=title,
-            )
-
-            self.subject_codes.append(code)
+            yield from self.yield_subject_code(code, title)
 
     def parse_extra(self, response):
         body = str(response.body, encoding="utf-8")
@@ -93,15 +84,7 @@ class SubjectCodeSpider(Spider):
 
         for string in strings:
             code, title = re.findall(r"^<p>([A-Z]+) - (.+)</p>", string)[0]
-
-            if code in self.subject_codes:
-                continue
-
-            yield SubjectCode(
-                code=code,
-                title=title,
-            )
-            self.subject_codes.append(code)
+            yield from self.yield_subject_code(code, title)
 
     def parse_archive(self, response):
         body = str(response.body, encoding="utf-8")
@@ -144,34 +127,28 @@ class SubjectCodeSpider(Spider):
                 if not regex_code or not regex_title:
                     continue
 
-                if course_code in self.subject_codes:
-                    continue
-
-                self.subject_codes.append(course_code)
-
-                yield SubjectCode(
-                    code=course_code,
-                    title=course_title,
-                )
+                yield from self.yield_subject_code(course_code, course_title)
 
     def yield_additional_codes(self, _):
         # Additional codes
-        yield SubjectCode(
-            code="COMS",
-            title="Communications Studies",
+        yield from self.yield_subject_code("ENGG", "Engineering")
+        yield from self.yield_subject_code("COMS", "Communications Studies")
+        yield from self.yield_subject_code("MDSC", "Medical Sciences")
+        yield from self.yield_subject_code(
+            "ENSF", "Software Engineering for Software Engineers"
         )
+        yield from self.yield_subject_code("ASHA", "Arts and Science Honours Academy")
+
+    def yield_subject_code(self, subject_code, title):
+        if subject_code in self.subject_codes:
+            return
+
+        if subject_code == "NRSG":
+            title = "Nursing (Graduate)"
 
         yield SubjectCode(
-            code="MDSC",
-            title="Medical Sciences",
+            code=subject_code,
+            title=title,
         )
 
-        yield SubjectCode(
-            code="ENSF",
-            title="Software Engineering for Software Engineers",
-        )
-        
-        yield SubjectCode(
-            code="ASHA",
-            title="Arts and Science Honours Academy",
-        )
+        self.subject_codes.append(subject_code)

@@ -1,6 +1,6 @@
 from tqdm import tqdm
 
-from bianco.requisites.methods import try_nlp
+from bianco.requisites.methods import Mode, try_nlp
 
 from grigio.utils import DIRTY_CATALOG_DB, CATALOG_DB
 
@@ -33,7 +33,7 @@ for dirty_course in tqdm(dirty_courses, desc="Courses"):
         course["prereq_text"] = None
 
     if antireq:
-        doc, json_logic = try_nlp(course, antireq, mode="antireq")
+        doc, json_logic = try_nlp(course, antireq, mode=Mode.ANTIREQ)
         course["antireq"] = json_logic
         course["antireq_text"] = antireq
     else:

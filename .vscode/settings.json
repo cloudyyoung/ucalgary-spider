@@ -6,5 +6,10 @@
     "circleci.persistedProjectSelection": [
         "gh/cloudyyoung/ucalgary-spider"
     ],
-    "python.analysis.typeCheckingMode": "basic"
+    "python.analysis.typeCheckingMode": "basic",
+    "python.testing.pytestArgs": [
+        "bianco"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
 }
