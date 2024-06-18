@@ -45,7 +45,7 @@ class Course(scrapy.Item):
 
     requisites = scrapy.Field(seerializer=list)
 
-    credits = scrapy.Field()
+    units = scrapy.Field()
     grade_mode_code = scrapy.Field()
     grade_mode_name = scrapy.Field()
     components = scrapy.Field(serializer=list)

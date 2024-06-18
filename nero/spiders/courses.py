@@ -59,7 +59,7 @@ class CoursesSpider(Spider):
         requisites = self.process_requisites(course.get("requisites"))
 
         credits_raw = credits_fields.get("numberOfCredits")
-        credits = float(credits_raw) if credits_raw else None
+        units = float(credits_raw) if credits_raw else None
         grade_mode_code, grade_mode_name = self.process_grade_mode(
             course.get("gradeMode")
         )
@@ -105,7 +105,7 @@ class CoursesSpider(Spider):
             #
             requisites=requisites,
             #
-            credits=credits,
+            units=units,
             grade_mode_code=grade_mode_code,
             grade_mode_name=grade_mode_name,
             components=components,
@@ -180,7 +180,7 @@ class CoursesSpider(Spider):
                 "description": _topic["description"],
                 "repeatable": _topic["repeatable"],
                 "repeatable": bool(_topic["repeatable"]),
-                "credits": _topic["numberOfCredits"],
+                "units": _topic["numberOfCredits"],
                 "link": _topic["link"],
             }
             topics.append(topic)
