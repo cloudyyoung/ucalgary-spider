@@ -17,6 +17,12 @@ Run a crawler
 
 List of crawlers are under directory `nero/spiders`
 
+## Clean raw data
+
+Run clean script
+
+`python3 grigio/main.py`
+
 
 ## Endpoints
 
