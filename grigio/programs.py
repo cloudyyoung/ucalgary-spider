@@ -21,5 +21,19 @@ for programs in tqdm(programs, desc="Programs"):
     requisites = programs["requisites"]
     programs["requisites"] = process_requisites(requisites)
 
+    # Process start term
+    start_term = programs["start_term"]
+    year = start_term["year"]
+    term_no = start_term["term"]
+    term_mappings = {
+        "0": "F",
+        "1": "W",
+        "3": "P",
+        "5": "S",
+        "7": "F",
+    }
+    term = term_mappings[term_no]
+    programs["start_term"] = f"{year}{term}"
+
     # Insert course set
     programs_catalog.insert_one(programs)
