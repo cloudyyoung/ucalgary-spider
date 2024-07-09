@@ -63,7 +63,7 @@ for dirty_course in tqdm(dirty_courses, desc="Courses"):
         "7": "F",
     }
     term = term_mappings[term_no]
-    course["start_term"] = f"{year}{term}"
+    course["start_term"] = f"{term}{year}"
 
     # Insert course
     courses_catalog.insert_one(course)

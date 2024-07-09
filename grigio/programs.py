@@ -33,7 +33,7 @@ for programs in tqdm(programs, desc="Programs"):
         "7": "F",
     }
     term = term_mappings[term_no]
-    programs["start_term"] = f"{year}{term}"
+    programs["start_term"] = f"{term}{year}"
 
     # Insert course set
     programs_catalog.insert_one(programs)
