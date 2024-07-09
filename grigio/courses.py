@@ -51,5 +51,19 @@ for dirty_course in tqdm(dirty_courses, desc="Courses"):
     course.pop("_id")
     course.pop("requisites")
 
+    # Process start term
+    start_term = course["start_term"]
+    year = start_term["year"]
+    term_no = start_term["term"]
+    term_mappings = {
+        "0": "F",
+        "1": "W",
+        "3": "P",
+        "5": "S",
+        "7": "F",
+    }
+    term = term_mappings[term_no]
+    course["start_term"] = f"{year}{term}"
+
     # Insert course
     courses_catalog.insert_one(course)
