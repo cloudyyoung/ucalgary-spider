@@ -121,7 +121,15 @@ response_format = {
                 "program": {
                     "type": "object",
                     "description": "a program",
-                    "required": ["program", "from", "honours", "degree"],
+                    "required": [
+                        "program",
+                        "faculty",
+                        "honours",
+                        "major",
+                        "minor",
+                        "degree",
+                        "career",
+                    ],
                     "additionalProperties": False,
                     "properties": {
                         "program": {
@@ -131,9 +139,17 @@ response_format = {
                                 {"type": "null"},
                             ],
                         },
-                        "from": {
+                        "faculty": {
                             "anyOf": [
-                                {"$ref": "#/$defs/faculty"},
+                                {
+                                    "type": "string",
+                                    "enum": [
+                                        "Arts",
+                                        "Science",
+                                        "Engineering",
+                                        "Business",
+                                    ],
+                                },
                                 {"type": "null"},
                             ]
                         },
@@ -144,8 +160,29 @@ response_format = {
                                 {"type": "null"},
                             ],
                         },
+                        "major": {
+                            "description": "major",
+                            "anyOf": [
+                                {"type": "boolean"},
+                                {"type": "null"},
+                            ],
+                        },
+                        "minor": {
+                            "description": "minor",
+                            "anyOf": [
+                                {"type": "boolean"},
+                                {"type": "null"},
+                            ],
+                        },
                         "degree": {
-                            "description": "degree level",
+                            "description": "degree name; eg, BSc, BA, BEng, etc",
+                            "anyOf": [
+                                {"type": "string"},
+                                {"type": "null"},
+                            ],
+                        },
+                        "career": {
+                            "description": "career level; eg, undergraduate, master, doctoral",
                             "anyOf": [
                                 {
                                     "type": "string",
@@ -185,7 +222,8 @@ completion = openai_client.chat.completions.create(
             # "content": "Both MATH 349 and 353; or both MATH 283 and 381; or MATH 267.",
             # "content": "MATH 431 or PMAT 431; MATH 429 or PMAT 429 or MATH 327 or PMAT 427.",
             # "content": "MATH 445 or 447; 3 units of Mathematics in the Field of Mathematics at the 400 level or above.",
-            "content": "MATH 277 and PHYS 259 and admission to a program in Engineering.",
+            # "content": "MATH 277 and PHYS 259 and admission to a program in Engineering.",
+            "content": "Anthropology 201 and admission to the BSc Anthropology or BSc Archaeology major or Honours programs.",
         },
     ],
     response_format=response_format,  # type: ignore
