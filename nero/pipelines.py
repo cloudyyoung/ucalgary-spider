@@ -16,7 +16,8 @@ load_dotenv()
 
 MONGO_DB = os.getenv("MONGO_DB")
 MONGO_CLIENT = MongoClient(MONGO_DB)
-MONGO_COLLECTION = "dirty_catalog"
+MONGO_COLLECTION = "catalog"
+
 
 class FileStorePipeline:
     files = {}
