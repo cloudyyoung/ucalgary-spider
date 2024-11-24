@@ -10,3 +10,4 @@ nltk
 pytest
 tqdm
 python-dotenv
+openai
