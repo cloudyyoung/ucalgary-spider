@@ -292,7 +292,7 @@ def generate_prereq(prereq, course):
         messages=[
             {
                 "role": "system",
-                "content": "You are an admission bot of a university. You are provided with with a course information and its pre-requisite (prereq). You must convert the pre-requisite text into json format. Use full course name and do not use abbreviated name. If there are nested 'and' conditions, properly flatten them. No 'units' should be 0.",
+                "content": "You are an admission bot of a university. You are provided with with a course information and its pre-requisite (prereq). You must convert the pre-requisite text into json format. Use full subject name and do not use the capital letters abbreviated name. Try to avoid nested 'and'. No 'units' should be 0. The department and the faculty of the course is also provided, refer to them when requisite mentions consent from the department or faculty.",
             },
             {
                 "role": "user",
@@ -313,6 +313,17 @@ def generate_prereq(prereq, course):
     return requisite
 
 
+def slim_json(json):
+    if json is None:
+        return None
+
+    if isinstance(json, dict):
+        return {k: slim_json(v) for k, v in json.items() if v is not None}
+    if isinstance(json, list):
+        return [slim_json(v) for v in json]
+    return json
+
+
 courses = courses_collection.find(
     {"career": {"$regex": "Undergraduate"}, "active": True}
 )
@@ -322,8 +333,10 @@ for course in tqdm(courses):
     prereq = course["prereq"]
     if prereq:
         prereq_json = generate_prereq(prereq, course)
+        prereq_json = slim_json(prereq_json)
     else:
         prereq_json = None
+
     courses_collection.update_one(
         {"_id": course["_id"]}, {"$set": {"prereq_json": prereq_json}}
     )
