@@ -96,6 +96,18 @@ response_format = {
                             "anyOf": [
                                 {"$ref": "#/$defs/faculty"},
                                 {"$ref": "#/$defs/program"},
+                                {
+                                    "type": "object",
+                                    "description": "admission to a department",
+                                    "required": ["department"],
+                                    "additionalProperties": False,
+                                    "properties": {
+                                        "department": {
+                                            "type": "string",
+                                            "description": "department",
+                                        }
+                                    },
+                                },
                             ]
                         }
                     },
@@ -124,16 +136,16 @@ response_format = {
                     "required": [
                         "program",
                         "faculty",
+                        "department",
                         "honours",
-                        "major",
-                        "minor",
+                        "type",
                         "degree",
                         "career",
                     ],
                     "additionalProperties": False,
                     "properties": {
                         "program": {
-                            "description": "program",
+                            "description": "the field name of the program; leave null if no specific program name is specified",
                             "anyOf": [
                                 {"type": "string"},
                                 {"type": "null"},
@@ -153,6 +165,13 @@ response_format = {
                                 {"type": "null"},
                             ]
                         },
+                        "department": {
+                            "description": "department",
+                            "anyOf": [
+                                {"type": "string"},
+                                {"type": "null"},
+                            ],
+                        },
                         "honours": {
                             "description": "honours program",
                             "anyOf": [
@@ -160,17 +179,13 @@ response_format = {
                                 {"type": "null"},
                             ],
                         },
-                        "major": {
-                            "description": "major",
+                        "type": {
+                            "description": "type of program; eg, major, minor, concentration",
                             "anyOf": [
-                                {"type": "boolean"},
-                                {"type": "null"},
-                            ],
-                        },
-                        "minor": {
-                            "description": "minor",
-                            "anyOf": [
-                                {"type": "boolean"},
+                                {
+                                    "type": "string",
+                                    "enum": ["major", "minor", "concentration"],
+                                },
                                 {"type": "null"},
                             ],
                         },
@@ -223,7 +238,11 @@ completion = openai_client.chat.completions.create(
             # "content": "MATH 431 or PMAT 431; MATH 429 or PMAT 429 or MATH 327 or PMAT 427.",
             # "content": "MATH 445 or 447; 3 units of Mathematics in the Field of Mathematics at the 400 level or above.",
             # "content": "MATH 277 and PHYS 259 and admission to a program in Engineering.",
-            "content": "Anthropology 201 and admission to the BSc Anthropology or BSc Archaeology major or Honours programs.",
+            # "content": "Anthropology 201 and admission to the BSc Anthropology or BSc Archaeology major or Honours programs.",
+            # "content": "Anthropology 411 and admission to the Anthropology Honours Program.",
+            # "content": "Architecture 504, 506 and admission to the Minor in Architectural Studies or the Master of Architecture Programs.",
+            # "content": "Arts and Science Honours Academy 222 or 220 and admission to the Arts and Science Honours Academy.",
+            "content": "Chemistry 351, Biology 311 and admission to a Major offered by the Department of Biological Sciences or the Neuroscience Major or a primary concentration in Biological Sciences in either the Natural Sciences or Environmental Science Major. Or, Chemistry 351, and Medical Science 341, and admission to either the Biomedical Science or Bioinformatics Major.",
         },
     ],
     response_format=response_format,  # type: ignore
