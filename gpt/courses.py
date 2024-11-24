@@ -1,3 +1,4 @@
+from bson.json_util import dumps, loads
 from gpt.utils import courses_collection, openai_client
 
 any_of = [
@@ -283,49 +284,53 @@ response_format = {
     },
 }
 
-courses = courses_collection.find()
 
-# for course in courses[:100]:
-#     print(course)
+def generate_prereq(course):
+    completion = openai_client.chat.completions.create(
+        model="gpt-4o",
+        messages=[
+            {
+                "role": "system",
+                "content": "You are an admission bot of a university. You are provided with with a course information and its pre-requisite (prereq). You must convert the pre-requisite text into json format. If there are nested 'and' conditions, properly flatten them. No 'units' should be 0.",
+            },
+            {
+                "role": "user",
+                "content": dumps(course),
+            },
+        ],
+        response_format=response_format,  # type: ignore
+    )
+    json_str = completion.choices[0].message.content
 
-completion = openai_client.chat.completions.create(
-    model="gpt-4o",
-    messages=[
-        {
-            "role": "system",
-            "content": "You are an admission bot of a university. You are provided with with some course requisites. You must convert the requisite text into json format.",
-        },
-        {
-            "role": "user",
-            # "content": "Digital Engineering 319 and 3 units from Sustainable Systems Engineering 315, Engineering 209 or Economic 209.",
-            # "content": "Actuarial Science 327; Statistics 323; 3 units from Mathematics 311, 313, 367 or 375; and 3 units from Computer Science 217, 231, 235 or Data Science 211.",
-            # "content": "SGMA 395 or ENTI 317 or 381.",
-            # "content": "One of FILM 321 or 323 and one of FILM 331 or 333.",
-            # "content": "ENCI 473; and ENGG 319 or ENDG 319.",
-            # "content": "ENEL 471; and one of BMEN 319 or ENGG 319 or ENEL 419.",
-            # "content": "One of GEOG 211, 251, 253, UBST 253, GLGY 201, 209; and consent of the Department.",
-            # "content": "Both MATH 349 and 353; or both MATH 283 and 381; or MATH 267.",
-            # "content": "MATH 431 or PMAT 431; MATH 429 or PMAT 429 or MATH 327 or PMAT 427.",
-            # "content": "MATH 445 or 447; 3 units of Mathematics in the Field of Mathematics at the 400 level or above.",
-            # "content": "MATH 277 and PHYS 259 and admission to a program in Engineering.",
-            # "content": "Anthropology 201 and admission to the BSc Anthropology or BSc Archaeology major or Honours programs.",
-            # "content": "Anthropology 411 and admission to the Anthropology Honours Program.",
-            # "content": "Architecture 504, 506 and admission to the Minor in Architectural Studies or the Master of Architecture Programs.",
-            # "content": "Arts and Science Honours Academy 222 or 220 and admission to the Arts and Science Honours Academy.",
-            # "content": "Chemistry 351, Biology 311 and admission to a Major offered by the Department of Biological Sciences or the Neuroscience Major or a primary concentration in Biological Sciences in either the Natural Sciences or Environmental Science Major. Or, Chemistry 351, and Medical Science 341, and admission to either the Biomedical Science or Bioinformatics Major.",
-            # "content": "Communication and Media Studies 201; and an additional 3 units of a course labelled Communication and Media Studies and admission to a majors or minor program in the Department of Communication, Media and Film and consent of the Department.",
-            # "content": "78 units, including Communication and Media Studies 313, 369, 371, 381, and admission to the BA in Communication and Media Studies.",
-            # "content": "Communication and Media Studies 595 and admission to the Honours Program.",
-            # "content": "Fourth- or fifth-year standing in Schulich School of Engineering and admission to the Biomedical Engineering minor.",
-            # "content": "Dance 433 and admission to the BFA Dance program.",
-            # "content": "Educational Psychology 661 and admission to a doctoral program in Educational Psychology.",
-            # "content": "24 units including at least one of Community Rehabilitation 205 or 209 or admission to BCR program.",
-            # "content": "Admission to the MEng with specialization in Software Engineering and completion of Software Engineering for Engineers 692, 693 and 694; or admission to the MEng with specialization in Software Engineering, foundation courses exempt cohort.",
-            "content": "Completion of 60 units including 3 units from Political Science 321, 426, 427, 428.",
-        },
-    ],
-    response_format=response_format,  # type: ignore
-)
+    if json_str is None:
+        return None
 
-research_paper = completion.choices[0].message.content
-print(research_paper)
+    json = loads(json_str)
+    requisite = json["requisite"]
+    if isinstance(requisite, str):
+        requisite = {"and": [requisite]}
+    return requisite
+
+
+courses = courses_collection.find({"prereq": {"$ne": None}})
+for course in courses[0:50]:
+    print(
+        course["subject_code"],
+        course["course_number"],
+        course["long_name"],
+        course["prereq"],
+    )
+    prereq = course["prereq"]
+
+    if not prereq:
+        print()
+        continue
+
+    prereq_json = generate_prereq(course)
+    print(prereq_json)
+
+    courses_collection.update_one(
+        {"_id": course["_id"]}, {"$set": {"prereq_json": prereq_json}}
+    )
+
+    print()
