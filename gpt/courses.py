@@ -1,4 +1,5 @@
 from bson.json_util import dumps, loads
+from tqdm import tqdm
 from gpt.utils import courses_collection, openai_client
 
 any_of = [
@@ -291,7 +292,7 @@ def generate_prereq(course):
         messages=[
             {
                 "role": "system",
-                "content": "You are an admission bot of a university. You are provided with with a course information and its pre-requisite (prereq). You must convert the pre-requisite text into json format. If there are nested 'and' conditions, properly flatten them. No 'units' should be 0.",
+                "content": "You are an admission bot of a university. You are provided with with a course information and its pre-requisite (prereq). You must convert the pre-requisite text into json format. Use full course name and do not use abbreviated name. If there are nested 'and' conditions, properly flatten them. No 'units' should be 0.",
             },
             {
                 "role": "user",
@@ -313,24 +314,12 @@ def generate_prereq(course):
 
 
 courses = courses_collection.find({"prereq": {"$ne": None}})
-for course in courses[0:50]:
-    print(
-        course["subject_code"],
-        course["course_number"],
-        course["long_name"],
-        course["prereq"],
-    )
+for course in tqdm(courses):
     prereq = course["prereq"]
-
-    if not prereq:
-        print()
-        continue
-
-    prereq_json = generate_prereq(course)
-    print(prereq_json)
-
+    if prereq:
+        prereq_json = generate_prereq(course)
+    else:
+        prereq_json = None
     courses_collection.update_one(
         {"_id": course["_id"]}, {"$set": {"prereq_json": prereq_json}}
     )
-
-    print()
