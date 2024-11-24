@@ -75,9 +75,10 @@ response_format = {
                             "description": "include a list of courses",
                             "additionalProperties": False,
                             "anyOf": [
-                                {"type": "array", "items": {"type": "string"}},
                                 {"$ref": "#/$defs/and"},
                                 {"$ref": "#/$defs/or"},
+                                {"$ref": "#/$defs/units"},
+                                {"type": "array", "items": {"type": "string"}},
                                 {"type": "null"},
                             ],
                         },
@@ -318,7 +319,9 @@ completion = openai_client.chat.completions.create(
             # "content": "Fourth- or fifth-year standing in Schulich School of Engineering and admission to the Biomedical Engineering minor.",
             # "content": "Dance 433 and admission to the BFA Dance program.",
             # "content": "Educational Psychology 661 and admission to a doctoral program in Educational Psychology.",
-            "content": "24 units including at least one of Community Rehabilitation 205 or 209 or admission to BCR program.",
+            # "content": "24 units including at least one of Community Rehabilitation 205 or 209 or admission to BCR program.",
+            # "content": "Admission to the MEng with specialization in Software Engineering and completion of Software Engineering for Engineers 692, 693 and 694; or admission to the MEng with specialization in Software Engineering, foundation courses exempt cohort.",
+            "content": "Completion of 60 units including 3 units from Political Science 321, 426, 427, 428.",
         },
     ],
     response_format=response_format,  # type: ignore
