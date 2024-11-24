@@ -6,6 +6,7 @@ any_of = [
     {"$ref": "#/$defs/units"},
     {"$ref": "#/$defs/consent"},
     {"$ref": "#/$defs/admission"},
+    {"$ref": "#/$defs/program"},
     {"type": "string"},
 ]
 
@@ -75,6 +76,8 @@ response_format = {
                             "additionalProperties": False,
                             "anyOf": [
                                 {"type": "array", "items": {"type": "string"}},
+                                {"$ref": "#/$defs/and"},
+                                {"$ref": "#/$defs/or"},
                                 {"type": "null"},
                             ],
                         },
@@ -93,8 +96,11 @@ response_format = {
                             ],
                         },
                         "subject": {
-                            "type": "string",
                             "description": "subject of study",
+                            "anyOf": [
+                                {"type": "string"},
+                                {"type": "null"},
+                            ],
                         },
                     },
                 },
@@ -179,6 +185,8 @@ response_format = {
                         "type",
                         "degree",
                         "career",
+                        "year",
+                        "gpa",
                     ],
                     "additionalProperties": False,
                     "properties": {
@@ -244,6 +252,29 @@ response_format = {
                                 {"type": "null"},
                             ],
                         },
+                        "year": {
+                            "description": "academic standing",
+                            "anyOf": [
+                                {
+                                    "type": "string",
+                                    "enum": [
+                                        "first",
+                                        "second",
+                                        "third",
+                                        "fourth",
+                                        "fifth",
+                                    ],
+                                },
+                                {"type": "null"},
+                            ],
+                        },
+                        "gpa": {
+                            "description": "minimum GPA",
+                            "anyOf": [
+                                {"type": "number"},
+                                {"type": "null"},
+                            ],
+                        },
                     },
                 },
             },
@@ -281,7 +312,13 @@ completion = openai_client.chat.completions.create(
             # "content": "Architecture 504, 506 and admission to the Minor in Architectural Studies or the Master of Architecture Programs.",
             # "content": "Arts and Science Honours Academy 222 or 220 and admission to the Arts and Science Honours Academy.",
             # "content": "Chemistry 351, Biology 311 and admission to a Major offered by the Department of Biological Sciences or the Neuroscience Major or a primary concentration in Biological Sciences in either the Natural Sciences or Environmental Science Major. Or, Chemistry 351, and Medical Science 341, and admission to either the Biomedical Science or Bioinformatics Major.",
-            "content": "Communication and Media Studies 201; and an additional 3 units of a course labelled Communication and Media Studies and admission to a majors or minor program in the Department of Communication, Media and Film and consent of the Department.",
+            # "content": "Communication and Media Studies 201; and an additional 3 units of a course labelled Communication and Media Studies and admission to a majors or minor program in the Department of Communication, Media and Film and consent of the Department.",
+            # "content": "78 units, including Communication and Media Studies 313, 369, 371, 381, and admission to the BA in Communication and Media Studies.",
+            # "content": "Communication and Media Studies 595 and admission to the Honours Program.",
+            # "content": "Fourth- or fifth-year standing in Schulich School of Engineering and admission to the Biomedical Engineering minor.",
+            # "content": "Dance 433 and admission to the BFA Dance program.",
+            # "content": "Educational Psychology 661 and admission to a doctoral program in Educational Psychology.",
+            "content": "24 units including at least one of Community Rehabilitation 205 or 209 or admission to BCR program.",
         },
     ],
     response_format=response_format,  # type: ignore
