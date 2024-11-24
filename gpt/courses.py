@@ -321,15 +321,14 @@ def generate_prereq(prereq):
     return requisite
 
 
-def slim_json(json):
-    if json is None:
+def slim_json(body):
+    if body is None:
         return None
-
-    if isinstance(json, dict):
-        return {k: slim_json(v) for k, v in json.items() if v is not None}
-    if isinstance(json, list):
-        return [slim_json(v) for v in json]
-    return json
+    if isinstance(body, dict):
+        return {k: slim_json(v) for k, v in body.items() if v is not None}
+    if isinstance(body, list):
+        return [slim_json(v) for v in body]
+    return body
 
 
 courses = courses_collection.find(
@@ -339,10 +338,10 @@ courses = list(courses)
 
 for course in tqdm(courses):
     prereq = course["prereq"]
+    prereq_json = None
+
     if prereq:
         prereq_json = slim_json(generate_prereq(prereq))
-    else:
-        prereq_json = None
 
     courses_collection.update_one(
         {"_id": course["_id"]}, {"$set": {"prereq_json": prereq_json}}
