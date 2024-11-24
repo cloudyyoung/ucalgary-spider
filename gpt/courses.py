@@ -93,9 +93,67 @@ response_format = {
                     "additionalProperties": False,
                     "properties": {
                         "admission": {
-                            "type": "string",
-                            "description": "admission",
+                            "anyOf": [
+                                {"$ref": "#/$defs/faculty"},
+                                {"$ref": "#/$defs/program"},
+                            ]
                         }
+                    },
+                },
+                "faculty": {
+                    "type": "object",
+                    "description": "a faculty",
+                    "required": ["faculty"],
+                    "additionalProperties": False,
+                    "properties": {
+                        "faculty": {
+                            "type": "string",
+                            "description": "faculty",
+                            "enum": [
+                                "Arts",
+                                "Science",
+                                "Engineering",
+                                "Business",
+                            ],
+                        }
+                    },
+                },
+                "program": {
+                    "type": "object",
+                    "description": "a program",
+                    "required": ["program", "from", "honours", "degree"],
+                    "additionalProperties": False,
+                    "properties": {
+                        "program": {
+                            "description": "program",
+                            "anyOf": [
+                                {"type": "string"},
+                                {"type": "null"},
+                            ],
+                        },
+                        "from": {
+                            "anyOf": [
+                                {"$ref": "#/$defs/faculty"},
+                                {"type": "null"},
+                            ]
+                        },
+                        "honours": {
+                            "description": "honours program",
+                            "anyOf": [
+                                {"type": "boolean"},
+                                {"type": "null"},
+                            ],
+                        },
+                        "degree": {
+                            "description": "degree level",
+                            "anyOf": [
+                                {
+                                    "type": "string",
+                                    "enum": ["undergraduate", "master", "doctoral"],
+                                },
+                                {"type": "null"},
+                            ],
+                        },
                     },
                 },
             },
