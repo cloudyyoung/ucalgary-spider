@@ -313,7 +313,11 @@ def generate_prereq(course):
     return requisite
 
 
-courses = courses_collection.find({"prereq": {"$ne": None}})
+courses = courses_collection.find(
+    {"career": {"$regex": "Undergraduate"}, "active": True}
+)
+courses = list(courses)
+
 for course in tqdm(courses):
     prereq = course["prereq"]
     if prereq:
