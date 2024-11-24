@@ -1,4 +1,4 @@
-from bson.json_util import dumps, loads
+from bson.json_util import loads
 from tqdm import tqdm
 from gpt.utils import courses_collection, openai_client
 
@@ -286,7 +286,7 @@ response_format = {
 }
 
 
-def generate_prereq(course):
+def generate_prereq(prereq):
     completion = openai_client.chat.completions.create(
         model="gpt-4o",
         messages=[
@@ -296,7 +296,7 @@ def generate_prereq(course):
             },
             {
                 "role": "user",
-                "content": dumps(course),
+                "content": prereq,
             },
         ],
         response_format=response_format,  # type: ignore
