@@ -12,6 +12,24 @@ any_of = [
     {"type": "string"},
 ]
 
+faculties = [
+    "Faculty of Arts",
+    "Faculty of Science",
+    "Schulich School of Engineering",
+    "Haskayne School of Business",
+    "Cumming School of Medicine",
+    "School of Architecture, Planning and Landscape",
+    "Faculty of Graduate Studies",
+    "Faculty of Law",
+    "Faculty of Nursing",
+    "Faculty of Nursing (Qatar)",
+    "Faculty of Kinesiology",
+    "Faculty of Social Work",
+    "Werklund School of Education",
+    "Faculty of Veterinary Medicine",
+    "Faculty of Public Policy",
+]
+
 response_format = {
     "type": "json_schema",
     "json_schema": {
@@ -168,12 +186,7 @@ response_format = {
                         "faculty": {
                             "type": "string",
                             "description": "faculty",
-                            "enum": [
-                                "Arts",
-                                "Science",
-                                "Engineering",
-                                "Business",
-                            ],
+                            "enum": faculties,
                         }
                     },
                 },
@@ -204,12 +217,7 @@ response_format = {
                             "anyOf": [
                                 {
                                     "type": "string",
-                                    "enum": [
-                                        "Arts",
-                                        "Science",
-                                        "Engineering",
-                                        "Business",
-                                    ],
+                                    "enum": faculties,
                                 },
                                 {"type": "null"},
                             ]
@@ -286,17 +294,17 @@ response_format = {
 }
 
 
-def generate_prereq(prereq, course):
+def generate_prereq(prereq):
     completion = openai_client.chat.completions.create(
         model="gpt-4o",
         messages=[
             {
                 "role": "system",
-                "content": "You are an admission bot of a university. You are provided with with a course information and its pre-requisite (prereq). You must convert the pre-requisite text into json format. Use full subject name and do not use the capital letters abbreviated name. Try to avoid nested 'and'. No 'units' should be 0. The department and the faculty of the course is also provided, refer to them when requisite mentions consent from the department or faculty.",
+                "content": "You are an admission bot of a university. You are provided with with a course information and its pre-requisite (prereq). You must convert the pre-requisite text into json format. Use full subject name for courses, do not use the capital letters abbreviated name. Try to avoid nested 'and'. No 'units' should be 0.",
             },
             {
                 "role": "user",
-                "content": f"Requisite to parse: '{prereq}'. The departments of this course: {course['departments']}, and the faculty: {course['faculty_name']}.",
+                "content": prereq,
             },
         ],
         response_format=response_format,  # type: ignore
@@ -332,7 +340,7 @@ courses = list(courses)
 for course in tqdm(courses):
     prereq = course["prereq"]
     if prereq:
-        prereq_json = generate_prereq(prereq, course)
+        prereq_json = generate_prereq(prereq)
         prereq_json = slim_json(prereq_json)
     else:
         prereq_json = None
