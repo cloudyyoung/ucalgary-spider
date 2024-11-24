@@ -1,4 +1,4 @@
-from bson.json_util import loads
+from bson.json_util import dumps, loads
 from tqdm import tqdm
 from gpt.utils import courses_collection, openai_client
 
@@ -124,7 +124,7 @@ response_format = {
                                     "properties": {
                                         "department": {
                                             "type": "string",
-                                            "description": "department name",
+                                            "description": "name of the department; exclude 'Department of' prefix",
                                         }
                                     },
                                 },
@@ -286,7 +286,7 @@ response_format = {
 }
 
 
-def generate_prereq(prereq):
+def generate_prereq(prereq, course):
     completion = openai_client.chat.completions.create(
         model="gpt-4o",
         messages=[
@@ -296,7 +296,7 @@ def generate_prereq(prereq):
             },
             {
                 "role": "user",
-                "content": prereq,
+                "content": f"Requisite to parse: '{prereq}'. The departments of this course: {course['departments']}, and the faculty: {course['faculty_name']}.",
             },
         ],
         response_format=response_format,  # type: ignore
@@ -321,7 +321,7 @@ courses = list(courses)
 for course in tqdm(courses):
     prereq = course["prereq"]
     if prereq:
-        prereq_json = generate_prereq(prereq)
+        prereq_json = generate_prereq(prereq, course)
     else:
         prereq_json = None
     courses_collection.update_one(
