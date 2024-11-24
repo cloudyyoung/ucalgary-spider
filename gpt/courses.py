@@ -4,6 +4,8 @@ any_of = [
     {"$ref": "#/$defs/and"},
     {"$ref": "#/$defs/or"},
     {"$ref": "#/$defs/units"},
+    {"$ref": "#/$defs/consent"},
+    {"$ref": "#/$defs/admission"},
     {"type": "string"},
 ]
 
@@ -49,32 +51,50 @@ response_format = {
                 "units": {
                     "type": "object",
                     "description": "X units",
-                    "required": ["units"],
+                    "required": ["units", "from", "include", "field", "level"],
                     "additionalProperties": False,
                     "properties": {
-                        "units": {
-                            "type": "object",
-                            "description": "units",
-                            "required": ["number", "from", "include"],
+                        "units": {"type": "number", "description": "X units"},
+                        "from": {
+                            "type": "array",
+                            "description": "from a list of courses",
+                            "items": {"type": "string"},
                             "additionalProperties": False,
-                            "properties": {
-                                "number": {
-                                    "type": "integer",
-                                    "description": "number of units",
-                                },
-                                "from": {
-                                    "type": "array",
-                                    "description": "from a list of objects",
-                                    "items": {"anyOf": any_of},
-                                    "additionalProperties": False,
-                                },
-                                "include": {
-                                    "type": "array",
-                                    "description": "include a list of objects",
-                                    "items": {"anyOf": any_of},
-                                    "additionalProperties": False,
-                                },
-                            },
+                        },
+                        "include": {
+                            "type": "array",
+                            "description": "include a list of courses",
+                            "items": {"type": "string"},
+                            "additionalProperties": False,
+                        },
+                        "field": {
+                            "type": "string",
+                            "description": "field of study",
+                        },
+                        "level": {
+                            "type": "string",
+                            "description": "course level of study; when suffixed with +, it means at or above the level",
+                        },
+                    },
+                },
+                "consent": {
+                    "type": "object",
+                    "description": "consent",
+                    "required": ["consent"],
+                    "additionalProperties": False,
+                    "properties": {
+                        "consent": {"type": "string", "description": "consent"}
+                    },
+                },
+                "admission": {
+                    "type": "object",
+                    "description": "admission to a program, a department, or a course",
+                    "required": ["admission"],
+                    "additionalProperties": False,
+                    "properties": {
+                        "admission": {
+                            "type": "string",
+                            "description": "admission",
                         }
                     },
                 },
@@ -97,7 +117,17 @@ completion = openai_client.chat.completions.create(
         },
         {
             "role": "user",
-            "content": "Digital Engineering 319 and 3 units from Sustainable Systems Engineering 315, Engineering 209 or Economic 209.",
+            # "content": "Digital Engineering 319 and 3 units from Sustainable Systems Engineering 315, Engineering 209 or Economic 209.",
+            # "content": "Actuarial Science 327; Statistics 323; 3 units from Mathematics 311, 313, 367 or 375; and 3 units from Computer Science 217, 231, 235 or Data Science 211.",
+            # "content": "SGMA 395 or ENTI 317 or 381.",
+            # "content": "One of FILM 321 or 323 and one of FILM 331 or 333.",
+            # "content": "ENCI 473; and ENGG 319 or ENDG 319.",
+            # "content": "ENEL 471; and one of BMEN 319 or ENGG 319 or ENEL 419.",
+            # "content": "One of GEOG 211, 251, 253, UBST 253, GLGY 201, 209; and consent of the Department.",
+            # "content": "Both MATH 349 and 353; or both MATH 283 and 381; or MATH 267.",
+            # "content": "MATH 431 or PMAT 431; MATH 429 or PMAT 429 or MATH 327 or PMAT 427.",
+            # "content": "MATH 445 or 447; 3 units of Mathematics in the Field of Mathematics at the 400 level or above.",
+            "content": "MATH 277 and PHYS 259 and admission to a program in Engineering.",
         },
     ],
     response_format=response_format,  # type: ignore
