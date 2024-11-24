@@ -321,7 +321,7 @@ courses = list(courses)
 for course in tqdm(courses):
     prereq = course["prereq"]
     if prereq:
-        prereq_json = generate_prereq(course)
+        prereq_json = generate_prereq(prereq)
     else:
         prereq_json = None
     courses_collection.update_one(
