@@ -51,29 +51,50 @@ response_format = {
                 "units": {
                     "type": "object",
                     "description": "X units",
-                    "required": ["units", "from", "include", "field", "level"],
+                    "required": [
+                        "units",
+                        "from",
+                        "include",
+                        "field",
+                        "level",
+                        "subject",
+                    ],
                     "additionalProperties": False,
                     "properties": {
                         "units": {"type": "number", "description": "X units"},
                         "from": {
-                            "type": "array",
                             "description": "from a list of courses",
-                            "items": {"type": "string"},
                             "additionalProperties": False,
+                            "anyOf": [
+                                {"type": "array", "items": {"type": "string"}},
+                                {"type": "null"},
+                            ],
                         },
                         "include": {
-                            "type": "array",
                             "description": "include a list of courses",
-                            "items": {"type": "string"},
                             "additionalProperties": False,
+                            "anyOf": [
+                                {"type": "array", "items": {"type": "string"}},
+                                {"type": "null"},
+                            ],
                         },
                         "field": {
-                            "type": "string",
                             "description": "field of study",
+                            "anyOf": [
+                                {"type": "string"},
+                                {"type": "null"},
+                            ],
                         },
                         "level": {
-                            "type": "string",
                             "description": "course level of study; when suffixed with +, it means at or above the level",
+                            "anyOf": [
+                                {"type": "string"},
+                                {"type": "null"},
+                            ],
+                        },
+                        "subject": {
+                            "type": "string",
+                            "description": "subject of study",
                         },
                     },
                 },
@@ -83,7 +104,24 @@ response_format = {
                     "required": ["consent"],
                     "additionalProperties": False,
                     "properties": {
-                        "consent": {"type": "string", "description": "consent"}
+                        "consent": {
+                            "anyOf": [
+                                {"$ref": "#/$defs/faculty"},
+                                {
+                                    "type": "object",
+                                    "description": "consent to a department",
+                                    "required": ["department"],
+                                    "additionalProperties": False,
+                                    "properties": {
+                                        "department": {
+                                            "type": "string",
+                                            "description": "department name",
+                                        }
+                                    },
+                                },
+                                {"type": "string", "description": "consent"},
+                            ]
+                        }
                     },
                 },
                 "admission": {
@@ -242,7 +280,8 @@ completion = openai_client.chat.completions.create(
             # "content": "Anthropology 411 and admission to the Anthropology Honours Program.",
             # "content": "Architecture 504, 506 and admission to the Minor in Architectural Studies or the Master of Architecture Programs.",
             # "content": "Arts and Science Honours Academy 222 or 220 and admission to the Arts and Science Honours Academy.",
-            "content": "Chemistry 351, Biology 311 and admission to a Major offered by the Department of Biological Sciences or the Neuroscience Major or a primary concentration in Biological Sciences in either the Natural Sciences or Environmental Science Major. Or, Chemistry 351, and Medical Science 341, and admission to either the Biomedical Science or Bioinformatics Major.",
+            # "content": "Chemistry 351, Biology 311 and admission to a Major offered by the Department of Biological Sciences or the Neuroscience Major or a primary concentration in Biological Sciences in either the Natural Sciences or Environmental Science Major. Or, Chemistry 351, and Medical Science 341, and admission to either the Biomedical Science or Bioinformatics Major.",
+            "content": "Communication and Media Studies 201; and an additional 3 units of a course labelled Communication and Media Studies and admission to a majors or minor program in the Department of Communication, Media and Film and consent of the Department.",
         },
     ],
     response_format=response_format,  # type: ignore
