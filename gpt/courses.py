@@ -332,17 +332,20 @@ def slim_json(body):
 
 
 courses = courses_collection.find(
-    {"career": {"$regex": "Undergraduate"}, "active": True}
+    {"career": {"$regex": "Undergraduate"}, "active": True, "prereq_json": None}
 )
 courses = list(courses)
 
 for course in tqdm(courses):
-    prereq = course["prereq"]
-    prereq_json = None
+    try:
+        prereq = course["prereq"]
+        prereq_json = None
 
-    if prereq:
-        prereq_json = slim_json(generate_prereq(prereq))
+        if prereq:
+            prereq_json = slim_json(generate_prereq(prereq))
 
-    courses_collection.update_one(
-        {"_id": course["_id"]}, {"$set": {"prereq_json": prereq_json}}
-    )
+        courses_collection.update_one(
+            {"_id": course["_id"]}, {"$set": {"prereq_json": prereq_json}}
+        )
+    except:
+        print(f"Error: {course['subject']} {course['number']}")
