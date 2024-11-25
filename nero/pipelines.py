@@ -19,18 +19,12 @@ MONGO_CLIENT = MongoClient(MONGO_DB)
 MONGO_COLLECTION = "catalog"
 
 
-class FileStorePipeline:
-    files = {}
-
-    def file_name_convert(self, item_type):
-        return str(re.sub(r"([a-z])([A-Z])", r"\1-\2", item_type)).lower()
-
+class DatabaseStorePipeline:
     def open_spider(self, spider):
         pass
 
     def close_spider(self, spider):
-        for file in self.files.values():
-            file.close()
+        pass
 
     def process_item(self, item, spider):
         if item.__tablename__:
