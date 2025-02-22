@@ -7,40 +7,41 @@
 # useful for handling different item types with a single interface
 
 import re
-import os
 from itemadapter.adapter import ItemAdapter
-from pymongo import MongoClient
-from dotenv import load_dotenv
-
-load_dotenv()
-
-MONGO_DB = os.getenv("MONGO_DB")
-MONGO_CLIENT = MongoClient(MONGO_DB)
-MONGO_COLLECTION = "catalog"
+from prisma import Prisma
+from nero.items import Course, Subject
+import asyncio
+from concurrent.futures import ThreadPoolExecutor
 
 
 class DatabaseStorePipeline:
+    def __init__(self) -> None:
+        self.prisma = Prisma()
+        self.loop = asyncio.get_event_loop()
+        self.executor = ThreadPoolExecutor()
+
     def open_spider(self, spider):
-        pass
+        self.loop.run_in_executor(self.executor, self.prisma.connect)
 
     def close_spider(self, spider):
-        pass
+        self.loop.run_in_executor(self.executor, self.prisma.disconnect)
 
     def process_item(self, item, spider):
-        if item.__tablename__:
-            tablename = item.__tablename__
-        else:
-            tablename = str(item.__class__.__name__).lower() + "s"
+        adapted_item = ItemAdapter(item)
 
         # For all string fields, remove leading and trailing whitespace
-        for field in ItemAdapter(item).field_names():
+        for field in adapted_item.field_names():
             if isinstance(item[field], str):
                 item[field] = item[field].strip()
                 item[field] = re.sub(r"\s+", " ", item[field])
 
-        collection = MONGO_CLIENT.get_database(MONGO_COLLECTION).get_collection(
-            tablename
-        )
-        collection.insert_one(ItemAdapter(item).asdict())
+        print(item)
 
+        if isinstance(item, Subject):
+            self.loop.run_in_executor(self.executor, self.create_subject, item)
+
+        return item
+
+    def create_subject(self, item):
+        asyncio.run(self.prisma.subject.create(data=item))
         return item

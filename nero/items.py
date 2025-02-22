@@ -4,19 +4,14 @@
 # https://docs.scrapy.org/en/latest/topics/items.html
 
 import scrapy
-import json
 
 
-class SubjectCode(scrapy.Item):
-    __tablename__ = "subject_codes"
-
+class Subject(scrapy.Item):
     title = scrapy.Field()
     code = scrapy.Field()
 
 
 class Course(scrapy.Item):
-    __tablename__ = "courses"
-
     coursedog_id = scrapy.Field()
     cid = scrapy.Field()
     course_group_id = scrapy.Field()
@@ -63,8 +58,6 @@ class Course(scrapy.Item):
 
 
 class Faculty(scrapy.Item):
-    __tablename__ = "faculties"
-
     id = scrapy.Field()
 
     name = scrapy.Field()
@@ -73,8 +66,6 @@ class Faculty(scrapy.Item):
 
 
 class Department(scrapy.Item):
-    __tablename__ = "departments"
-
     id = scrapy.Field()
 
     name = scrapy.Field()
@@ -83,8 +74,6 @@ class Department(scrapy.Item):
 
 
 class Program(scrapy.Item):
-    __tablename__ = "programs"
-
     coursedog_id = scrapy.Field()
     program_group_id = scrapy.Field()
 
@@ -118,8 +107,6 @@ class Program(scrapy.Item):
 
 
 class CourseSet(scrapy.Item):
-    __tablename__ = "course_sets"
-
     id = scrapy.Field()
 
     name = scrapy.Field()
@@ -134,8 +121,6 @@ class CourseSet(scrapy.Item):
 
 
 class RequisiteSet(scrapy.Item):
-    __tablename__ = "requisite_sets"
-
     id = scrapy.Field()
     requisite_set_group_id = scrapy.Field()
 
