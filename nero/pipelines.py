@@ -10,23 +10,20 @@ import re
 from itemadapter.adapter import ItemAdapter
 from prisma import Prisma
 from nero.items import Course, Subject
-import asyncio
-from concurrent.futures import ThreadPoolExecutor
 
 
 class DatabaseStorePipeline:
     def __init__(self) -> None:
         self.prisma = Prisma()
-        self.loop = asyncio.get_event_loop()
-        self.executor = ThreadPoolExecutor()
 
-    def open_spider(self, spider):
-        self.loop.run_in_executor(self.executor, self.prisma.connect)
+    def open_spider(self, spider): ...
 
-    def close_spider(self, spider):
-        self.loop.run_in_executor(self.executor, self.prisma.disconnect)
+    def close_spider(self, spider): ...
 
-    def process_item(self, item, spider):
+    async def process_item(self, item, spider):
+        if not self.prisma.is_connected():
+            await self.prisma.connect()
+
         adapted_item = ItemAdapter(item)
 
         # For all string fields, remove leading and trailing whitespace
@@ -35,13 +32,9 @@ class DatabaseStorePipeline:
                 item[field] = item[field].strip()
                 item[field] = re.sub(r"\s+", " ", item[field])
 
-        print(item)
-
         if isinstance(item, Subject):
-            self.loop.run_in_executor(self.executor, self.create_subject, item)
+            await self.prisma.subject.create(
+                data={"title": item["title"], "code": item["code"]}
+            )
 
-        return item
-
-    def create_subject(self, item):
-        asyncio.run(self.prisma.subject.create(data=item))
         return item
