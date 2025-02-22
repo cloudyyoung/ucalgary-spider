@@ -22,26 +22,20 @@ class DepartmentsSpider(Spider):
         body = json.loads(body)
 
         for department in body.values():
-            id = department["id"]
+            code = department["id"]
             name = department["name"]
             display_name = department["displayName"]
-
             active = department["status"] == "Active"
 
-            if len(id) == 2:
+            if len(code) == 2:
                 # Two letters code is a faculty
-                yield Faculty(
-                    id=id,
-                    name=name,
-                    display_name=display_name,
-                    active=active,
-                )
+                yield Faculty(code=code, name=display_name)
 
             else:
                 #  Four letters code is a department
                 yield Department(
-                    id=id,
+                    code=code,
                     name=name,
                     display_name=display_name,
-                    active=active,
+                    is_active=active,
                 )
