@@ -35,7 +35,7 @@ class CoursesSpider(Spider):
         credits_fields = defaultdict(lambda: None, course.get("credits", {}))
 
         coursedog_id = course.get("id")
-        cid = custom_fields.get("rawCourseId")
+        course_id = custom_fields.get("rawCourseId")
         course_group_id = course.get("courseGroupId")
 
         code = course.get("code")  # CPSC 413
@@ -48,8 +48,8 @@ class CoursesSpider(Spider):
         topics = self.process_topics(course.get("topics", []))
 
         faculty_code, faculty_name = self.process_faculty(course.get("college"))
-        departments = course.get("departments", [])
-        career = course.get("career")  # Undergraduate / Graduate Programs
+        departments = filter_departments(course.get("departments", []))
+        career = career_serializer(course.get("career", ""))
 
         description_full = course.get("description")
         description, prereq, coreq, antireq, notes, aka, nogpa = (
@@ -63,8 +63,17 @@ class CoursesSpider(Spider):
         grade_mode_code, grade_mode_name = self.process_grade_mode(
             course.get("gradeMode")
         )
-        components = list(map(lambda c: c["code"], course.get("components", [])))
+
+        components = list(
+            map(lambda c: component_serializer(c["code"]), course.get("components", []))
+        )
         multi_term = bool(custom_fields.get("lastMultiTermCourse"))
+
+        # If grade mode is null but multi_term is true, then set grade_mode to MTG
+        if not grade_mode_code and multi_term:
+            grade_mode_code = "MTG"
+        elif not grade_mode_code:
+            grade_mode_code = "GRD"
 
         repeatable = bool(credits_fields.get("repeatable"))
         active = course.get("status") == "Active"
@@ -77,49 +86,44 @@ class CoursesSpider(Spider):
         version = course.get("version")
 
         yield Course(
-            coursedog_id=coursedog_id,
-            cid=cid,
-            course_group_id=course_group_id,
-            #
+            cid=course_group_id,  # course_group_id is more accurate, so swap it with cid
             code=code,
-            subject_code=subject_code,
             course_number=course_number,
             #
-            name=name,
-            long_name=long_name,
-            #
-            topics=topics,
-            #
-            faculty_code=faculty_code,
-            faculty_name=faculty_name,
-            departments=departments,
-            career=career,
+            subject_code=subject_code,
             #
             description=description,
+            name=name,
+            long_name=long_name,
+            notes=notes,
+            version=version,
+            units=units,
+            aka=aka,
+            #
             prereq=prereq,
             coreq=coreq,
             antireq=antireq,
-            notes=notes,
-            aka=aka,
-            nogpa=nogpa,
             #
-            requisites=requisites,
+            is_active=active,
+            is_multi_term=multi_term,
+            is_nogpa=nogpa,
+            is_repeatable=repeatable,
             #
-            units=units,
-            grade_mode_code=grade_mode_code,
-            grade_mode_name=grade_mode_name,
             components=components,
-            multi_term=multi_term,
+            course_group_id=course_id,
+            coursedog_id=coursedog_id,
             #
-            repeatable=repeatable,
-            active=active,
-            start_term=start_term,
+            course_created_at=created_at,
+            course_last_updated_at=last_edited_at,
+            course_effective_start_date=effective_start_date,
+            course_effective_end_date=effective_end_date,
             #
-            created_at=created_at,
-            last_edited_at=last_edited_at,
-            effective_start_date=effective_start_date,
-            effective_end_date=effective_end_date,
-            version=version,
+            departments=departments,
+            faculties=[faculty_code] if faculty_code else [],
+            #
+            career=career,
+            topics=topics,
+            grade_mode=grade_mode_code,
         )
 
     def process_description(self, description_full: str | None):
@@ -173,13 +177,13 @@ class CoursesSpider(Spider):
         topics = []
         for _topic in _topics:
             topic = {
-                "id": _topic["id"],
-                "code": _topic["code"],
+                # "id": _topic["id"],
+                # "code": _topic["code"],
+                "number": _topic["code"],
                 "name": _topic["name"],
                 "long_name": _topic["longName"],
                 "description": _topic["description"],
-                "repeatable": _topic["repeatable"],
-                "repeatable": bool(_topic["repeatable"]),
+                "is_repeatable": bool(_topic["repeatable"]),
                 "units": _topic["numberOfCredits"],
                 "link": _topic["link"],
             }
@@ -233,6 +237,39 @@ def convert_list_camel_to_snake(a: list):
     return [
         convert_dict_keys_camel_to_snake(i) if isinstance(i, dict) else i for i in a
     ]
+
+
+def component_serializer(component_abbr: str):
+    if component_abbr == "LEC":
+        return "LECTURE"
+    elif component_abbr == "TUT":
+        return "TUTORIAL"
+    elif component_abbr == "LAB":
+        return "LAB"
+    elif component_abbr == "SEM":
+        return "SEMINAR"
+    elif component_abbr == "SEC":
+        return "SECTION"
+    raise ValueError(f"Unknown component abbreviation: {component_abbr}")
+
+
+def career_serializer(career: str):
+    if career == "Undergraduate Programs":
+        return "UNDERGRADUATE_PROGRAM"
+    elif career == "Graduate Programs":
+        return "GRADUATE_PROGRAM"
+    elif career == "Medicine Programs":
+        return "MEDICINE_PROGRAM"
+
+
+def filter_departments(departments: list):
+    departments = [d for d in departments if len(d) > 2]
+
+    # if it contains ANTH (Anthropology) or ARKY (Archaeology), then replace with ANAR (Anthropology and Archaeology)
+    departments = [d.replace("ANTH", "ANAR") for d in departments]
+    departments = [d.replace("ARKY", "ANAR") for d in departments]
+
+    return departments
 
 
 PREREQ_TEXT = "Prerequisite(s): "

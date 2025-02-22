@@ -63,7 +63,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    "nero.pipelines.DatabaseStorePipeline": 543,
+    "nero.pipelines.PlanUcalgaryApiPipeline": 543,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

@@ -7,34 +7,47 @@
 # useful for handling different item types with a single interface
 
 import re
+import json
 from itemadapter.adapter import ItemAdapter
-from prisma import Prisma
+import requests
 from nero.items import Course, Subject
 
 
-class DatabaseStorePipeline:
-    def __init__(self) -> None:
-        self.prisma = Prisma()
-
+class PlanUcalgaryApiPipeline:
     def open_spider(self, spider): ...
 
     def close_spider(self, spider): ...
 
     async def process_item(self, item, spider):
-        if not self.prisma.is_connected():
-            await self.prisma.connect()
-
         adapted_item = ItemAdapter(item)
 
         # For all string fields, remove leading and trailing whitespace
         for field in adapted_item.field_names():
             if isinstance(item[field], str):
-                item[field] = item[field].strip()
-                item[field] = re.sub(r"\s+", " ", item[field])
+                adapted_item[field] = item[field].strip()
+                adapted_item[field] = re.sub(r"\s+", " ", item[field])
 
-        if isinstance(item, Subject):
-            await self.prisma.subject.create(
-                data={"title": item["title"], "code": item["code"]}
+        if hasattr(item, "__collection_name__"):
+            collection_name = item.__collection_name__
+        else:
+            collection_name = item.__class__.__name__.lower() + "s"
+
+        if isinstance(item, Course):
+            if not adapted_item.get("is_active"):
+                return item
+
+        url = f"http://localhost:5150/{collection_name}"
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImMzYzc3MWNiLWI4NjctNGVjNC1hOTYyLThiYWZlMDhkNjE5NSIsImVtYWlsIjoiY2xvdWR5LnlvdW5nQG91dGxvb2suY29tIiwiaWF0IjoxNzQwMjE2NDkwLCJleHAiOjE3NDAyNTI0OTAsImlzcyI6InBsYW4tdWNhbGdhcnktYXBpIn0.-gGBpTQTVX_VfHfDe_J81kJm4VqF7MglR8QiGLPz-70",
+        }
+
+        response = requests.post(url, json=adapted_item.asdict(), headers=headers)
+
+        if response.status_code > 299:
+            spider.logger.error(
+                f"Failed to POST /{collection_name}\n{json.dumps(adapted_item.asdict())}\n{response.text}\n\n"
             )
+            # exit()
 
         return item
