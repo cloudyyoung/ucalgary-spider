@@ -2,7 +2,7 @@ import json
 import re
 import htmlmin
 from scrapy import Spider, Request
-from nero.items import Subject
+from nero.items import Subject, Department
 from unidecode import unidecode
 from bs4 import BeautifulSoup
 
@@ -149,6 +149,13 @@ class SubjectCodeSpider(Spider):
         yield Subject(
             code=subject_code,
             title=title,
+        )
+
+        yield Department(
+            code=subject_code,
+            name=f"{title}; Department of",
+            display_name=title,
+            is_active=False,
         )
 
         self.subject_codes.append(subject_code)

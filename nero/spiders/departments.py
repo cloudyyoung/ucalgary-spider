@@ -33,9 +33,14 @@ class DepartmentsSpider(Spider):
             display_name = department["displayName"]
             active = department["status"] == "Active"
 
-            if len(code) == 2:
+            if len(code) == 2 or code == "UCALG":
                 # Two letters code is a faculty
-                yield Faculty(code=code, name=display_name)
+                yield Faculty(
+                    code=code,
+                    name=name,
+                    display_name=display_name,
+                    is_active=active,
+                )
 
             else:
                 #  Four letters code is a department
@@ -51,12 +56,21 @@ class DepartmentsSpider(Spider):
         # This is a list of departments that are not in the API
         # but are in the course descriptions
         faculties = [
-            {"code": "SS", "name": "Faculty of Social Sciences"},
+            {
+                "code": "SS",
+                "name": "Faculty of Social Sciences",
+                "display_name": "Faculty of Social Sciences",
+            },
         ]
         departments = []
 
         for faculty in faculties:
-            yield Faculty(code=faculty["code"], name=faculty["name"])
+            yield Faculty(
+                code=faculty["code"],
+                name=faculty["name"],
+                display_name=faculty["display_name"],
+                is_active=False,
+            )
 
         for department in departments:
             yield Department(

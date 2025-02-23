@@ -56,7 +56,9 @@ class Faculty(scrapy.Item):
     __collection_name__ = "faculties"
 
     name = scrapy.Field()
+    display_name = scrapy.Field()
     code = scrapy.Field()
+    is_active = scrapy.Field(serializer=bool)
 
 
 class Department(scrapy.Item):

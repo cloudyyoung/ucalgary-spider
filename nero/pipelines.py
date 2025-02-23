@@ -39,12 +39,12 @@ class PlanUcalgaryApiPipeline:
         url = f"http://localhost:5150/{collection_name}"
         headers = {
             "Content-Type": "application/json",
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImMzYzc3MWNiLWI4NjctNGVjNC1hOTYyLThiYWZlMDhkNjE5NSIsImVtYWlsIjoiY2xvdWR5LnlvdW5nQG91dGxvb2suY29tIiwiaWF0IjoxNzQwMjE2NDkwLCJleHAiOjE3NDAyNTI0OTAsImlzcyI6InBsYW4tdWNhbGdhcnktYXBpIn0.-gGBpTQTVX_VfHfDe_J81kJm4VqF7MglR8QiGLPz-70",
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImMzYzc3MWNiLWI4NjctNGVjNC1hOTYyLThiYWZlMDhkNjE5NSIsImVtYWlsIjoiY2xvdWR5LnlvdW5nQG91dGxvb2suY29tIiwiaWF0IjoxNzQwMjk1Njk2LCJleHAiOjE3NDAzMzE2OTYsImlzcyI6InBsYW4tdWNhbGdhcnktYXBpIn0.uqwPA2FaRICf2k6PfZ7BWrJVPM8a1ODNKbgyZpdGhnc",
         }
 
         response = requests.post(url, json=adapted_item.asdict(), headers=headers)
 
-        if response.status_code > 299:
+        if response.status_code > 299 and response.status_code != 403:
             spider.logger.error(
                 f"Failed to POST /{collection_name}\n{json.dumps(adapted_item.asdict())}\n{response.text}\n\n"
             )

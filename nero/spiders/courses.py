@@ -161,6 +161,9 @@ class CoursesSpider(Spider):
 
             nogpa = NOGPA_TEXT.upper() in description_full.upper()
 
+        if not nogpa:
+            nogpa = False
+
         return (description, prereq, coreq, antireq, notes, aka, nogpa)
 
     def process_faculty(self, faculty: str | None):
@@ -263,12 +266,7 @@ def career_serializer(career: str):
 
 
 def filter_departments(departments: list):
-    departments = [d for d in departments if len(d) > 2]
-
-    # if it contains ANTH (Anthropology) or ARKY (Archaeology), then replace with ANAR (Anthropology and Archaeology)
-    departments = [d.replace("ANTH", "ANAR") for d in departments]
-    departments = [d.replace("ARKY", "ANAR") for d in departments]
-
+    departments = [d for d in departments if len(d) > 2 and d != "UCALG"]
     return departments
 
 
