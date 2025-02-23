@@ -3,7 +3,7 @@ import re
 from scrapy import Spider, Request
 from scrapy.exceptions import CloseSpider
 from collections import defaultdict
-from nero.items import Course
+from nero.items import Course, Faculty
 
 
 class CoursesSpider(Spider):
@@ -84,6 +84,16 @@ class CoursesSpider(Spider):
         effective_start_date = course.get("effectiveStartDate")
         effective_end_date = course.get("effectiveEndDate")
         version = course.get("version")
+
+        if not active:
+            return
+
+        yield Faculty(
+            code=faculty_code,
+            name=faculty_name,
+            display_name=faculty_name,
+            is_active=True,
+        )
 
         yield Course(
             cid=course_group_id,  # course_group_id is more accurate, so swap it with cid
