@@ -17,11 +17,11 @@ class DepartmentsSpider(Spider):
             headers={"Content-Type": "application/json"},
         )
 
-        yield Request(
-            url="https://google.com",
-            callback=self.yield_additional_departments,
-            method="GET",
-        )
+        # yield Request(
+        #     url="https://google.com",
+        #     callback=self.yield_additional_departments,
+        #     method="GET",
+        # )
 
     def parse(self, response):
         body = str(response.body, encoding="utf-8")
@@ -43,6 +43,10 @@ class DepartmentsSpider(Spider):
                 )
 
             else:
+                if code == "MDNS" and display_name == "Clinical Neurosciences":
+                    display_name = "Neuroscience Medicine"
+                    name = f"{display_name}; Department of"
+
                 #  Four letters code is a department
                 yield Department(
                     code=code,
