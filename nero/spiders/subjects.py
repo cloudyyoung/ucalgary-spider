@@ -36,20 +36,21 @@ class SubjectCodeSpider(Spider):
             headers={"Content-Type": "application/json"},
         )
 
-        for year in range(2009, 2023):
-            print(url_archive % year)
-            yield Request(
-                url=url_archive % year,
-                callback=self.parse_archive,
-                method="GET",
-                headers={"Content-Type": "application/json"},
-            )
+        # for year in range(2009, 2023):
+        #     print(url_archive % year)
+        #     yield Request(
+        #         url=url_archive % year,
+        #         callback=self.parse_archive,
+        #         method="GET",
+        #         headers={"Content-Type": "application/json"},
+        #         meta={"year": year},
+        #     )
 
-        yield Request(
-            url="https://google.com",
-            callback=self.yield_additional_subjects,
-            method="GET",
-        )
+        # yield Request(
+        #     url="https://google.com",
+        #     callback=self.yield_additional_subjects,
+        #     method="GET",
+        # )
 
     def parse(self, response):
         body = str(response.body, encoding="utf-8")
@@ -84,6 +85,7 @@ class SubjectCodeSpider(Spider):
 
         for string in strings:
             code, title = re.findall(r"^<p>([A-Z]+) - (.+)</p>", string)[0]
+            title = title.replace("&amp;", "&")
             yield from self.yield_subject(code, title)
 
     def parse_archive(self, response):
@@ -99,6 +101,8 @@ class SubjectCodeSpider(Spider):
         )
         soup = BeautifulSoup(body, "html.parser")
 
+        year = response.meta["year"]
+
         faculties_dom = soup.select("#ctl00_ctl00_pageContent .item-container")
 
         print(response.url)
@@ -109,6 +113,7 @@ class SubjectCodeSpider(Spider):
             for course_title_dom in course_titles_dom:
                 course_code = course_title_dom.get_text(strip=True)
                 course_title = str(course_title_dom.previous_element).strip()
+                course_title = re.sub(r"\s+", " ", course_title)
 
                 # For 2012-2013 calendar titles: "Communications Studies COMS ("
                 regex = re.match(r"(.*) ([A-Z]{3,4})", course_title)
@@ -127,7 +132,7 @@ class SubjectCodeSpider(Spider):
                 if not regex_code or not regex_title:
                     continue
 
-                yield from self.yield_subject(course_code, course_title)
+                yield from self.yield_subject(course_code, course_title, year)
 
     def yield_additional_subjects(self, _):
         # Additional codes
@@ -137,14 +142,30 @@ class SubjectCodeSpider(Spider):
         yield from self.yield_subject(
             "ENSF", "Software Engineering for Software Engineers"
         )
-        yield from self.yield_subject("ASHA", "Arts and Science Honours Academy")
+        yield Subject(
+            code="ASHA",
+            title="Arts and Science Honours Academy",
+        )
+        yield Department(
+            code="ASHA",
+            name="Arts and Science Honours Academy",
+            display_name="Arts and Science Honours Academy",
+            is_active=False,
+        )
 
-    def yield_subject(self, subject_code, title):
-        if subject_code in self.subject_codes:
-            return
-
+    def yield_subject(self, subject_code, title, year=None):
         if subject_code == "NRSG":
             title = "Nursing (Graduate)"
+
+        if (subject_code, title) in self.subject_codes:
+            return
+
+        # if title exists but with different subject code
+        name = f"{title}; Subject of"
+        display_name = title
+        if title in [t for _, t in self.subject_codes]:
+            if year:
+                name = f"{title} ({year}); Subject of"
 
         yield Subject(
             code=subject_code,
@@ -153,9 +174,9 @@ class SubjectCodeSpider(Spider):
 
         yield Department(
             code=subject_code,
-            name=f"{title}; Department of",
-            display_name=title,
+            name=name,
+            display_name=display_name,
             is_active=False,
         )
 
-        self.subject_codes.append(subject_code)
+        self.subject_codes.append((subject_code, title))
