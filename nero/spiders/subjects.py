@@ -19,6 +19,7 @@ class SubjectCodeSpider(Spider):
         url_archive = (
             "https://www.ucalgary.ca/pubs/calendar/archives/%s/course-by-faculty.html"
         )
+        url_catalog_questions = "https://app.coursedog.com/api/v1/ucalgary_peoplesoft/general/courseTemplate/questions"
 
         print(url)
         yield Request(
@@ -28,13 +29,13 @@ class SubjectCodeSpider(Spider):
             headers={"Content-Type": "application/json"},
         )
 
-        print(url_extra)
-        yield Request(
-            url=url_extra,
-            callback=self.parse_extra,
-            method="GET",
-            headers={"Content-Type": "application/json"},
-        )
+        # print(url_extra)
+        # yield Request(
+        #     url=url_extra,
+        #     callback=self.parse_extra,
+        #     method="GET",
+        #     headers={"Content-Type": "application/json"},
+        # )
 
         # for year in range(2009, 2023):
         #     print(url_archive % year)
@@ -51,6 +52,14 @@ class SubjectCodeSpider(Spider):
         #     callback=self.yield_additional_subjects,
         #     method="GET",
         # )
+
+        print(url_catalog_questions)
+        yield Request(
+            url=url_catalog_questions,
+            callback=self.parse_catalog_questions,
+            method="GET",
+            headers={"Content-Type": "application/json"},
+        )
 
     def parse(self, response):
         body = str(response.body, encoding="utf-8")
@@ -133,6 +142,28 @@ class SubjectCodeSpider(Spider):
                     continue
 
                 yield from self.yield_subject(course_code, course_title, year)
+
+    def parse_catalog_questions(self, response):
+        body = str(response.body, encoding="utf-8")
+        body = json.loads(body)
+
+        w3rO8 = body["w3rO8"]
+        actions = w3rO8["actions"]
+
+        for action in actions:
+            effects = action["effects"]
+
+            for effect in effects:
+                value = str(effect["value"])
+                value = value.replace("<p>", "")
+                value = value.replace("</p>", "")
+
+                if " - " not in value:
+                    print("Skipping value:", value)
+                    continue
+
+                subject_code, title = value.split(" - ", 1)
+                yield from self.yield_subject(subject_code, title)
 
     def yield_additional_subjects(self, _):
         # Additional codes

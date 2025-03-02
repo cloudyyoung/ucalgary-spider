@@ -39,7 +39,7 @@ class PlanUcalgaryApiPipeline:
         url = f"http://localhost:5150/{collection_name}"
         headers = {
             "Content-Type": "application/json",
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImMzYzc3MWNiLWI4NjctNGVjNC1hOTYyLThiYWZlMDhkNjE5NSIsImVtYWlsIjoiY2xvdWR5LnlvdW5nQG91dGxvb2suY29tIiwiaWF0IjoxNzQwMjk1Njk2LCJleHAiOjE3NDAzMzE2OTYsImlzcyI6InBsYW4tdWNhbGdhcnktYXBpIn0.uqwPA2FaRICf2k6PfZ7BWrJVPM8a1ODNKbgyZpdGhnc",
+            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImMzYzc3MWNiLWI4NjctNGVjNC1hOTYyLThiYWZlMDhkNjE5NSIsImVtYWlsIjoiY2xvdWR5LnlvdW5nQG91dGxvb2suY29tIiwiaWF0IjoxNzQwMzc5NjU5LCJleHAiOjE3NDEyNDM2NTksImlzcyI6InBsYW4tdWNhbGdhcnktYXBpIn0.VmsC4GJel-nIfIeI0SPP2s7_ntO4KXllQl2Cm1LLgSg",
         }
 
         response = requests.post(url, json=adapted_item.asdict(), headers=headers)
