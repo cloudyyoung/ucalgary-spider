@@ -192,22 +192,22 @@ class SubjectCodeSpider(Spider):
             return
 
         # if title exists but with different subject code
-        name = f"{title}; Subject of"
-        display_name = title
-        if title in [t for _, t in self.subject_codes]:
-            if year:
-                name = f"{title} ({year}); Subject of"
+        # name = f"{title}; Subject of"
+        # display_name = title
+        # if title in [t for _, t in self.subject_codes]:
+        #     if year:
+        #         name = f"{title} ({year}); Subject of"
 
         yield Subject(
             code=subject_code,
             title=title,
         )
 
-        yield Department(
-            code=subject_code,
-            name=name,
-            display_name=display_name,
-            is_active=False,
-        )
+        # yield Department(
+        #     code=subject_code,
+        #     name=name,
+        #     display_name=display_name,
+        #     is_active=False,
+        # )
 
         self.subject_codes.append((subject_code, title))
