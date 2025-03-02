@@ -14,6 +14,11 @@ from nero.items import Course, Subject
 
 
 class PlanUcalgaryApiPipeline:
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImMzYzc3MWNiLWI4NjctNGVjNC1hOTYyLThiYWZlMDhkNjE5NSIsImVtYWlsIjoiY2xvdWR5LnlvdW5nQG91dGxvb2suY29tIiwiaWF0IjoxNzQwMzc5NjU5LCJleHAiOjE3NDEyNDM2NTksImlzcyI6InBsYW4tdWNhbGdhcnktYXBpIn0.VmsC4GJel-nIfIeI0SPP2s7_ntO4KXllQl2Cm1LLgSg",
+    }
+
     def open_spider(self, spider): ...
 
     def close_spider(self, spider): ...
@@ -34,15 +39,13 @@ class PlanUcalgaryApiPipeline:
 
         if isinstance(item, Course):
             if not adapted_item.get("is_active"):
-                return item
+                adapted_item["departments"] = []
+                adapted_item["faculties"] = []
+                adapted_item["topics"] = []
 
         url = f"http://localhost:5150/{collection_name}"
-        headers = {
-            "Content-Type": "application/json",
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImMzYzc3MWNiLWI4NjctNGVjNC1hOTYyLThiYWZlMDhkNjE5NSIsImVtYWlsIjoiY2xvdWR5LnlvdW5nQG91dGxvb2suY29tIiwiaWF0IjoxNzQwMzc5NjU5LCJleHAiOjE3NDEyNDM2NTksImlzcyI6InBsYW4tdWNhbGdhcnktYXBpIn0.VmsC4GJel-nIfIeI0SPP2s7_ntO4KXllQl2Cm1LLgSg",
-        }
 
-        response = requests.post(url, json=adapted_item.asdict(), headers=headers)
+        response = requests.post(url, json=adapted_item.asdict(), headers=self.headers)
 
         if response.status_code == 403:
             response_json = response.json()
@@ -54,13 +57,10 @@ class PlanUcalgaryApiPipeline:
                 if existing_id:
                     url += f"/{existing_id}"
                     response = requests.put(
-                        url, json=adapted_item.asdict(), headers=headers
+                        url, json=adapted_item.asdict(), headers=self.headers
                     )
 
         if response.status_code > 299 and response.status_code != 403:
             spider.logger.error(
                 f"Failed to POST /{collection_name}\n{json.dumps(adapted_item.asdict())}\n{response.text}\n\n"
             )
-            # exit()
-
-        return item

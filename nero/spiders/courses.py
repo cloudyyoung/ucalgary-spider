@@ -85,15 +85,12 @@ class CoursesSpider(Spider):
         effective_end_date = course.get("effectiveEndDate")
         version = course.get("version")
 
-        if not active:
-            return
-
-        yield Faculty(
-            code=faculty_code,
-            name=faculty_name,
-            display_name=faculty_name,
-            is_active=True,
-        )
+        # yield Faculty(
+        #     code=faculty_code,
+        #     name=faculty_name,
+        #     display_name=faculty_name,
+        #     is_active=True,
+        # )
 
         yield Course(
             cid=course_group_id,  # course_group_id is more accurate, so swap it with cid
