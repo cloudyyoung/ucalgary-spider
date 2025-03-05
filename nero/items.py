@@ -69,7 +69,7 @@ class Department(scrapy.Item):
 
 
 class Program(scrapy.Item):
-    pdf = scrapy.Field()
+    pid = scrapy.Field()
     coursedog_id = scrapy.Field()
     program_group_id = scrapy.Field()
 
