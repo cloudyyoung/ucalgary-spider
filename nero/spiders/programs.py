@@ -6,6 +6,14 @@ from nero.items import Program
 from nero.spiders.courses import convert_list_camel_to_snake
 
 
+TERMS = {
+    1: "Winter",
+    3: "Spring",
+    5: "Summer",
+    7: "Fall",
+}
+
+
 class ProgramsSpider(Spider):
     name = "programs"
 
@@ -42,7 +50,9 @@ class ProgramsSpider(Spider):
             self.process_degree_designation(program.get("degreeDesignation"))
         )  # Eg, "BSC-H - Bachelor of Science (Honours)""
         career = program.get("career")
-        departments = program.get("departments", [])
+        departments, faculties = self.process_departments(
+            program.get("departments", [])
+        )
 
         admission_info = custom_fields.get("programAdmissionsInfo")
         general_info = custom_fields.get("generalProgramInfo")
@@ -50,7 +60,7 @@ class ProgramsSpider(Spider):
         transcript_level = program.get("transcriptLevel")
         transcript_description = program.get("transcriptDescription")
 
-        requisites = self.process_requisites(program.get("requisites"))
+        requisites = self.process_requisites(program.get("requisites", {}))
 
         active = program["status"] == "Active"
         start_term = self.process_start_term(program.get("startTerm"))
@@ -62,6 +72,7 @@ class ProgramsSpider(Spider):
         version = program.get("version")
 
         yield Program(
+            pid=program_group_id,
             coursedog_id=coursedog_id,
             program_group_id=program_group_id,
             #
@@ -75,6 +86,7 @@ class ProgramsSpider(Spider):
             degree_designation_name=degree_designation_name,
             career=career,
             departments=departments,
+            faculties=faculties,
             #
             admission_info=admission_info,
             general_info=general_info,
@@ -84,15 +96,27 @@ class ProgramsSpider(Spider):
             #
             requisites=requisites,
             #
-            active=active,
+            is_active=active,
             start_term=start_term,
             #
-            created_at=created_at,
-            last_edited_at=last_edited_at,
-            effective_start_date=effective_start_date,
-            effective_end_date=effective_end_date,
+            program_created_at=created_at,
+            program_last_edited_at=last_edited_at,
+            program_effective_start_date=effective_start_date,
+            program_effective_end_date=effective_end_date,
             version=version,
         )
+
+    def process_departments(self, input: list[str]):
+        departments = []
+        faculties = []
+
+        for item in input:
+            if len(item) == 2:
+                faculties.append(item)
+            else:
+                departments.append(item)
+
+        return departments, faculties
 
     def process_degree_designation(self, designation: str | None):
         if not designation:
@@ -110,9 +134,8 @@ class ProgramsSpider(Spider):
 
         id = start_term["id"]
         year = start_term["year"]
-        term = str(start_term["semester"])
+        term = TERMS[start_term["semester"]]
         return {
-            "id": id,
             "year": year,
             "term": term,
         }

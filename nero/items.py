@@ -69,6 +69,7 @@ class Department(scrapy.Item):
 
 
 class Program(scrapy.Item):
+    pdf = scrapy.Field()
     coursedog_id = scrapy.Field()
     program_group_id = scrapy.Field()
 
@@ -82,6 +83,7 @@ class Program(scrapy.Item):
     degree_designation_name = scrapy.Field()
     career = scrapy.Field()
     departments = scrapy.Field(serializer=list)
+    faculties = scrapy.Field(serializer=list)
 
     admission_info = scrapy.Field()
     general_info = scrapy.Field()
@@ -91,13 +93,13 @@ class Program(scrapy.Item):
 
     requisites = scrapy.Field(serializer=list)
 
-    active = scrapy.Field(serializer=bool)
+    is_active = scrapy.Field(serializer=bool)
     start_term = scrapy.Field()
 
-    created_at = scrapy.Field()
-    last_edited_at = scrapy.Field()
-    effective_start_date = scrapy.Field()
-    effective_end_date = scrapy.Field()
+    program_created_at = scrapy.Field()
+    program_last_edited_at = scrapy.Field()
+    program_effective_start_date = scrapy.Field()
+    program_effective_end_date = scrapy.Field()
     version = scrapy.Field(serializer=int)
 
 
