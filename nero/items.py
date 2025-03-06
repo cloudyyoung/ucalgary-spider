@@ -104,20 +104,25 @@ class Program(scrapy.Item):
 
 
 class CourseSet(scrapy.Item):
-    id = scrapy.Field()
+    __collection_name__ = "course-sets"
 
+    csid = scrapy.Field()
+    course_set_group_id = scrapy.Field()
+
+    type = scrapy.Field()
     name = scrapy.Field()
     description = scrapy.Field()
-    type = scrapy.Field()
 
     structure = scrapy.Field(serializer=dict)
     course_list = scrapy.Field(serializer=list)
 
-    created_at = scrapy.Field()
-    last_edited_at = scrapy.Field()
+    course_set_created_at = scrapy.Field()
+    course_set_last_updated_at = scrapy.Field()
 
 
 class RequisiteSet(scrapy.Item):
+    __collection_name__ = "requisite-sets"
+
     id = scrapy.Field()
     requisite_set_group_id = scrapy.Field()
 

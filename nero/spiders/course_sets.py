@@ -27,12 +27,13 @@ class CourseSetsSpider(Spider):
             yield from self.parse_course_set(defaultdict(lambda: None, course_set))
 
         if len(course_sets) < 2000:
-            raise CloseSpider("No more courses to parse")
+            raise CloseSpider("No more course sets to parse")
 
     def parse_course_set(self, course_set: defaultdict):
         id = course_set.get("id")
+        course_set_group_id = course_set.get("courseSetGroupId")
 
-        name = str(course_set.get("name")).strip() if course_set.get("name") else None
+        name = str(course_set.get("name", "")).strip()
         description = course_set.get("description")
         type = course_set.get("type")  # static or dynamic
 
@@ -49,17 +50,18 @@ class CourseSetsSpider(Spider):
         last_edited_at = course_set.get("lastEditedAt")
 
         yield CourseSet(
-            id=id,
+            csid=id,
+            course_set_group_id=course_set_group_id,
             #
+            type=type,
             name=name,
             description=description,
-            type=type,
             #
             structure=structure,
             course_list=course_list,
             #
-            created_at=created_at,
-            last_edited_at=last_edited_at,
+            course_set_created_at=created_at,
+            course_set_last_updated_at=last_edited_at,
         )
 
     def process_structure(self, structure):
