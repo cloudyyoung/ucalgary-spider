@@ -97,7 +97,7 @@ class Program(scrapy.Item):
     start_term = scrapy.Field()
 
     program_created_at = scrapy.Field()
-    program_last_edited_at = scrapy.Field()
+    program_last_updated_at = scrapy.Field()
     program_effective_start_date = scrapy.Field()
     program_effective_end_date = scrapy.Field()
     version = scrapy.Field(serializer=int)

@@ -3,14 +3,15 @@ from scrapy import Spider, Request
 from scrapy.exceptions import CloseSpider
 from collections import defaultdict
 from nero.items import Program
-from nero.spiders.courses import convert_list_camel_to_snake
+from nero.spiders.courses import career_serializer, convert_list_camel_to_snake
 
 
 TERMS = {
-    1: "Winter",
-    3: "Spring",
-    5: "Summer",
-    7: "Fall",
+    0: None,
+    1: "WINTER",
+    3: "SPRIMG",
+    5: "SUMMER",
+    7: "FALL",
 }
 
 
@@ -49,7 +50,7 @@ class ProgramsSpider(Spider):
         degree_designation_code, degree_designation_name = (
             self.process_degree_designation(program.get("degreeDesignation"))
         )  # Eg, "BSC-H - Bachelor of Science (Honours)""
-        career = program.get("career")
+        career = career_serializer(program.get("career", ""))
         departments, faculties = self.process_departments(
             program.get("departments", [])
         )
@@ -57,7 +58,7 @@ class ProgramsSpider(Spider):
         admission_info = custom_fields.get("programAdmissionsInfo")
         general_info = custom_fields.get("generalProgramInfo")
 
-        transcript_level = program.get("transcriptLevel")
+        transcript_level = int(program.get("transcriptLevel", None))
         transcript_description = program.get("transcriptDescription")
 
         requisites = self.process_requisites(program.get("requisites", {}))
@@ -100,7 +101,7 @@ class ProgramsSpider(Spider):
             start_term=start_term,
             #
             program_created_at=created_at,
-            program_last_edited_at=last_edited_at,
+            program_last_updated_at=last_edited_at,
             program_effective_start_date=effective_start_date,
             program_effective_end_date=effective_end_date,
             version=version,
@@ -132,7 +133,6 @@ class ProgramsSpider(Spider):
         if not start_term:
             return None
 
-        id = start_term["id"]
         year = start_term["year"]
         term = TERMS[start_term["semester"]]
         return {
