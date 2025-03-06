@@ -16,7 +16,7 @@ from nero.items import Course, Subject
 class PlanUcalgaryApiPipeline:
     headers = {
         "Content-Type": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImMzYzc3MWNiLWI4NjctNGVjNC1hOTYyLThiYWZlMDhkNjE5NSIsImVtYWlsIjoiY2xvdWR5LnlvdW5nQG91dGxvb2suY29tIiwiaWF0IjoxNzQwMzc5NjU5LCJleHAiOjE3NDEyNDM2NTksImlzcyI6InBsYW4tdWNhbGdhcnktYXBpIn0.VmsC4GJel-nIfIeI0SPP2s7_ntO4KXllQl2Cm1LLgSg",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc2YTc5ZTY0LTM0MzUtNGIxYS04NzM2LWEwYmE4NTY5NGJiNCIsImVtYWlsIjoiY2xvdWR5LnlvdW5nQG91dGxvb2suY29tIiwiaWF0IjoxNzQxMjQyMjYwLCJleHAiOjE3NDk4ODIyNjAsImlzcyI6InBsYW4tdWNhbGdhcnktYXBpIn0.QSWciqgbzksoouVSyP4eS2Rew0SPSPAdHtElkezmWvg",
     }
 
     def open_spider(self, spider): ...
@@ -64,3 +64,4 @@ class PlanUcalgaryApiPipeline:
             spider.logger.error(
                 f"Failed to POST /{collection_name}\n{json.dumps(adapted_item.asdict())}\n{response.text}\n\n"
             )
+            # exit(-1)
