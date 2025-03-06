@@ -9,7 +9,7 @@ from nero.spiders.courses import career_serializer, convert_list_camel_to_snake
 TERMS = {
     0: None,
     1: "WINTER",
-    3: "SPRIMG",
+    3: "SPRING",
     5: "SUMMER",
     7: "FALL",
 }
@@ -44,7 +44,10 @@ class ProgramsSpider(Spider):
         code = program.get("code")
         name = program.get("name")
         long_name = program.get("longName")
-        display_name = program.get("catalogDisplayName")
+        display_name = program.get("catalogDisplayName", "")
+
+        if display_name == "":
+            display_name = long_name
 
         type = program.get("type")  # MAJ, MIN, etc
         degree_designation_code, degree_designation_name = (
@@ -58,8 +61,12 @@ class ProgramsSpider(Spider):
         admission_info = custom_fields.get("programAdmissionsInfo")
         general_info = custom_fields.get("generalProgramInfo")
 
-        transcript_level = int(program.get("transcriptLevel", None))
-        transcript_description = program.get("transcriptDescription")
+        transcript_level = int(program.get("transcriptLevel", ""))
+        transcript_description = str(program.get("transcriptDescription", "")).strip()
+
+        if transcript_description == "":
+            transcript_level = None
+            transcript_description = None
 
         requisites = self.process_requisites(program.get("requisites", {}))
 
@@ -133,7 +140,7 @@ class ProgramsSpider(Spider):
         if not start_term:
             return None
 
-        year = start_term["year"]
+        year = int(start_term["year"])
         term = TERMS[start_term["semester"]]
         return {
             "year": year,
