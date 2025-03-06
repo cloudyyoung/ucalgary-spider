@@ -10,7 +10,7 @@ import re
 import json
 from itemadapter.adapter import ItemAdapter
 import requests
-from nero.items import Course, Subject
+from nero.items import Course, Program, Subject
 
 
 class PlanUcalgaryApiPipeline:
@@ -43,6 +43,11 @@ class PlanUcalgaryApiPipeline:
                 adapted_item["faculties"] = []
                 adapted_item["topics"] = []
 
+        elif isinstance(item, Program):
+            if not adapted_item.get("is_active"):
+                adapted_item["departments"] = []
+                adapted_item["faculties"] = []
+
         url = f"http://localhost:5150/{collection_name}"
 
         response = requests.post(url, json=adapted_item.asdict(), headers=self.headers)
@@ -64,4 +69,4 @@ class PlanUcalgaryApiPipeline:
             spider.logger.error(
                 f"Failed to POST /{collection_name}\n{json.dumps(adapted_item.asdict())}\n{response.text}\n\n"
             )
-            # exit(-1)
+            exit(-1)

@@ -112,7 +112,7 @@ class ProgramsSpider(Spider):
         faculties = []
 
         for item in input:
-            if len(item) == 2:
+            if len(item) == 2 or item == "UCALG":
                 faculties.append(item)
             else:
                 departments.append(item)
