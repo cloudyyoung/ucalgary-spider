@@ -16,7 +16,11 @@ class CourseSetsSpider(Spider):
 
         for t in range(0, 99):
             url = base_url.format(skip=t * 2000, limit=2000)
-            yield Request(url=url, callback=self.parse_course_sets)
+            yield Request(
+                url=url,
+                callback=self.parse_course_sets,
+                headers={"Origin": "https://calendar.ucalgary.ca"},
+            )
 
     def parse_course_sets(self, response):
         print(response.url)
