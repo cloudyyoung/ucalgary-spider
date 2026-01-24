@@ -20,7 +20,11 @@ class ProgramsSpider(Spider):
 
     def start_requests(self):
         url = "https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/programs?sortBy=catalogDisplayName"
-        yield Request(url=url, callback=self.parse_programs)
+        yield Request(
+            url=url,
+            callback=self.parse_programs,
+            headers={"Origin": "https://calendar.ucalgary.ca"},
+        )
 
     def parse_programs(self, response):
         print(response.url)

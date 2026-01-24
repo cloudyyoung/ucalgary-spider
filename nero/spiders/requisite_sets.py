@@ -12,7 +12,11 @@ class RequisiteSetsSpider(Spider):
     def start_requests(self):
         # This endpoint does not support limit and skip
         url = "https://app.coursedog.com/api/v1/ucalgary_peoplesoft/requisite-sets"
-        yield Request(url=url, callback=self.parse_requisite_sets)
+        yield Request(
+            url=url,
+            callback=self.parse_requisite_sets,
+            headers={"Origin": "https://calendar.ucalgary.ca"},
+        )
 
     def parse_requisite_sets(self, response):
         print(response.url)
@@ -55,7 +59,7 @@ class RequisiteSetsSpider(Spider):
             #
             name=name,
             description=description,
-            json=requisites,
+            raw_json=requisites,
             #
             requisite_set_created_at=created_at_iso,
             requisite_set_last_updated_at=last_edited_at_iso,

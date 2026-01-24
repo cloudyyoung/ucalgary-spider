@@ -73,8 +73,7 @@ class CourseSetsSpider(Spider):
             type=type,
             name=name,
             description=description,
-            #
-            json=structure,
+            raw_json=structure,
             #
             course_set_created_at=created_at_iso,
             course_set_last_updated_at=last_edited_at_iso,

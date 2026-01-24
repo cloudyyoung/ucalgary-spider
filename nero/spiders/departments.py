@@ -14,7 +14,10 @@ class DepartmentsSpider(Spider):
             url=url,
             callback=self.parse,
             method="GET",
-            headers={"Content-Type": "application/json"},
+            headers={
+                "Content-Type": "application/json",
+                "Origin": "https://calendar.ucalgary.ca",
+            },
         )
 
         # yield Request(

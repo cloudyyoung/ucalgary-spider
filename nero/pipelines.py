@@ -52,20 +52,17 @@ class PlanUcalgaryApiPipeline:
 
         response = requests.post(url, json=adapted_item.asdict(), headers=self.headers)
 
-        if response.status_code == 403:
+        if response.status_code == 409:
             response_json = response.json()
-            existing = response_json.get("existing", None)
+            existing_id = response_json.get("existing_id", None)
 
-            if existing:
-                existing_id = existing.get("id", None)
+            if existing_id:
+                url += f"/{existing_id}"
+                response = requests.put(
+                    url, json=adapted_item.asdict(), headers=self.headers
+                )
 
-                if existing_id:
-                    url += f"/{existing_id}"
-                    response = requests.put(
-                        url, json=adapted_item.asdict(), headers=self.headers
-                    )
-
-        if response.status_code > 299 and response.status_code != 403:
+        if response.status_code > 299 and response.status_code != 409:
             spider.logger.error(
                 f"Failed to POST /{collection_name}\n{json.dumps(adapted_item.asdict())}\n{response.text}\n\n"
             )

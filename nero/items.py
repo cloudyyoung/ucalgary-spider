@@ -113,7 +113,7 @@ class CourseSet(scrapy.Item):
     name = scrapy.Field()
     description = scrapy.Field()
 
-    json = scrapy.Field(serializer=dict)
+    raw_json = scrapy.Field(serializer=dict)
 
     course_set_created_at = scrapy.Field()
     course_set_last_updated_at = scrapy.Field()
@@ -127,7 +127,7 @@ class RequisiteSet(scrapy.Item):
 
     name = scrapy.Field()
     description = scrapy.Field()
-    json = scrapy.Field(serializer=list)
+    raw_json = scrapy.Field(serializer=list)
 
     requisite_set_created_at = scrapy.Field()
     requisite_set_last_updated_at = scrapy.Field()
