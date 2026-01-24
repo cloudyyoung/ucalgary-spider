@@ -113,8 +113,7 @@ class CourseSet(scrapy.Item):
     name = scrapy.Field()
     description = scrapy.Field()
 
-    structure = scrapy.Field(serializer=dict)
-    course_list = scrapy.Field(serializer=list)
+    json = scrapy.Field(serializer=dict)
 
     course_set_created_at = scrapy.Field()
     course_set_last_updated_at = scrapy.Field()
@@ -123,18 +122,15 @@ class CourseSet(scrapy.Item):
 class RequisiteSet(scrapy.Item):
     __collection_name__ = "requisite-sets"
 
-    id = scrapy.Field()
+    csid = scrapy.Field()
     requisite_set_group_id = scrapy.Field()
 
     name = scrapy.Field()
     description = scrapy.Field()
+    json = scrapy.Field(serializer=list)
 
-    requisites = scrapy.Field(serializer=list)
-
-    effective_start_date = scrapy.Field()
-    effective_end_date = scrapy.Field()
-    created_at = scrapy.Field()
-    last_edited_at = scrapy.Field()
+    requisite_set_created_at = scrapy.Field()
+    requisite_set_last_updated_at = scrapy.Field()
     version = scrapy.Field()
 
 

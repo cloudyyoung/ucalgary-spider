@@ -1,9 +1,11 @@
+from datetime import datetime
 import json
 from scrapy import Spider, Request
 from scrapy.exceptions import CloseSpider
 from collections import defaultdict
 from nero.items import CourseSet
 from nero.spiders.courses import convert_dict_keys_camel_to_snake
+from datetime import datetime, timezone
 
 
 class CourseSetsSpider(Spider):
@@ -49,6 +51,17 @@ class CourseSetsSpider(Spider):
         created_at = course_set.get("createdAt")
         last_edited_at = course_set.get("lastEditedAt")
 
+        created_at_iso = (
+            datetime.fromtimestamp(created_at / 1000, timezone.utc).isoformat()
+            if created_at
+            else None
+        )
+        last_edited_at_iso = (
+            datetime.fromtimestamp(last_edited_at / 1000, timezone.utc).isoformat()
+            if last_edited_at
+            else None
+        )
+
         yield CourseSet(
             csid=id,
             course_set_group_id=course_set_group_id,
@@ -57,11 +70,10 @@ class CourseSetsSpider(Spider):
             name=name,
             description=description,
             #
-            structure=structure,
-            course_list=course_list,
+            json=structure,
             #
-            course_set_created_at=created_at,
-            course_set_last_updated_at=last_edited_at,
+            course_set_created_at=created_at_iso,
+            course_set_last_updated_at=last_edited_at_iso,
         )
 
     def process_structure(self, structure):

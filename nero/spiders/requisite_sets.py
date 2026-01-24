@@ -3,6 +3,7 @@ from scrapy import Spider, Request
 from collections import defaultdict
 from nero.items import RequisiteSet
 from nero.spiders.courses import convert_list_camel_to_snake
+from datetime import datetime, timezone
 
 
 class RequisiteSetsSpider(Spider):
@@ -37,19 +38,28 @@ class RequisiteSetsSpider(Spider):
         last_edited_at = course_set.get("lastEditedAt")
         version = course_set.get("version")
 
+        created_at_iso = (
+            datetime.fromtimestamp(created_at / 1000, timezone.utc).isoformat()
+            if created_at
+            else None
+        )
+        last_edited_at_iso = (
+            datetime.fromtimestamp(last_edited_at / 1000, timezone.utc).isoformat()
+            if last_edited_at
+            else None
+        )
+
         yield RequisiteSet(
-            id=id,
+            csid=id,
             requisite_set_group_id=requisite_set_group_id,
             #
             name=name,
             description=description,
+            json=requisites,
             #
-            requisites=requisites,
+            requisite_set_created_at=created_at_iso,
+            requisite_set_last_updated_at=last_edited_at_iso,
             #
-            effective_start_date=effective_start_date,
-            effective_end_date=effective_end_date,
-            created_at=created_at,
-            last_edited_at=last_edited_at,
             version=version,
         )
 
