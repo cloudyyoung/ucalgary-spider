@@ -127,7 +127,7 @@ class CoursesSpider(Spider):
             code=code,
             course_number=course_number,
             #
-            subject_code=subject_code,
+            subject=subject_code,
             #
             description=description,
             name=name,

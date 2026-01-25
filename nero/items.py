@@ -9,6 +9,8 @@ import scrapy
 class Subject(scrapy.Item):
     title = scrapy.Field()
     code = scrapy.Field()
+    faculties = scrapy.Field(serializer=list)
+    departments = scrapy.Field(serializer=list)
 
 
 class Course(scrapy.Item):
@@ -16,7 +18,7 @@ class Course(scrapy.Item):
     code = scrapy.Field()
     course_number = scrapy.Field()
 
-    subject_code = scrapy.Field()
+    subject = scrapy.Field()
 
     description = scrapy.Field()
     name = scrapy.Field()

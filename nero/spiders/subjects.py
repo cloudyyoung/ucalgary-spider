@@ -1,3 +1,4 @@
+from collections import defaultdict
 import json
 import re
 import htmlmin
@@ -12,8 +13,43 @@ class SubjectCodeSpider(Spider):
 
     # List of titles that have been processed
     subject_codes = []
+    subject_codes_faculties = defaultdict(set)
+    subject_codes_departments = defaultdict(set)
 
     def start_requests(self):
+        ## Request subject code belongs to which department/faculty
+        url = "https://app.coursedog.com/api/v1/cm/ucalgary_peoplesoft/courses/search/%24filters?catalogId=R7TegZ8xGZCLE3avlAjI&skip=0&limit=99999&orderBy=code&formatDependents=false&columns=department%2CsubjectCode"
+        print(url)
+
+        yield Request(
+            url=url,
+            callback=self.parse,
+            method="GET",
+            headers={
+                "Content-Type": "application/json",
+                "Origin": "https://calendar.ucalgary.ca",
+            },
+        )
+
+    def parse(self, response):
+        body = str(response.body, encoding="utf-8")
+        body = json.loads(body)
+        data = body["data"]
+
+        for course in data:
+            subject_code = course["subjectCode"]
+            departments = course["departments"]
+
+            for department in departments:
+                if len(department) == 2 or department == "UCALG":
+                    self.subject_codes_faculties[subject_code].add(department)
+                else:
+                    self.subject_codes_departments[subject_code].add(department)
+
+        print(self.subject_codes_faculties)
+        print(self.subject_codes_departments)
+
+        ## Now proceed to get subject titles from other sources
         url = "https://app.coursedog.com/api/v1/ca/ucalgary_peoplesoft/search-configurations/3HheDcKChSNwS1Wr1Khr"
         url_extra = "https://calendar.ucalgary.ca/courses"
         url_archive = (
@@ -24,7 +60,7 @@ class SubjectCodeSpider(Spider):
         print(url)
         yield Request(
             url=url,
-            callback=self.parse,
+            callback=self.parse_main,
             method="GET",
             headers={
                 "Content-Type": "application/json",
@@ -64,7 +100,7 @@ class SubjectCodeSpider(Spider):
             headers={"Content-Type": "application/json"},
         )
 
-    def parse(self, response):
+    def parse_main(self, response):
         body = str(response.body, encoding="utf-8")
         body = json.loads(body)
 
@@ -204,6 +240,8 @@ class SubjectCodeSpider(Spider):
         yield Subject(
             code=subject_code,
             title=title,
+            faculties=list(self.subject_codes_faculties.get(subject_code, [])),
+            departments=list(self.subject_codes_departments.get(subject_code, [])),
         )
 
         # yield Department(
