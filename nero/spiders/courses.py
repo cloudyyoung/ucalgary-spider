@@ -1,3 +1,4 @@
+from datetime import datetime, timezone
 import json
 import re
 from scrapy import Spider, Request
@@ -63,7 +64,7 @@ class CoursesSpider(Spider):
         requisites = self.process_requisites(course.get("requisites"))
 
         credits_raw = credits_fields.get("numberOfCredits")
-        units = float(credits_raw) if credits_raw else None
+        units = int(credits_raw) if credits_raw else None
         grade_mode_code, grade_mode_name = self.process_grade_mode(
             course.get("gradeMode")
         )
@@ -88,6 +89,31 @@ class CoursesSpider(Spider):
         effective_start_date = course.get("effectiveStartDate")
         effective_end_date = course.get("effectiveEndDate")
         version = course.get("version")
+
+        created_at_iso = (
+            datetime.fromtimestamp(int(created_at) / 1000, timezone.utc).isoformat()
+            if created_at
+            else None
+        )
+        last_edited_at_iso = (
+            datetime.fromtimestamp(int(last_edited_at) / 1000, timezone.utc).isoformat()
+            if last_edited_at
+            else None
+        )
+        effective_start_date_iso = (
+            datetime.strptime(effective_start_date, "%Y-%m-%d")
+            .replace(tzinfo=timezone.utc)
+            .isoformat()
+            if effective_start_date
+            else None
+        )
+        effective_end_date_iso = (
+            datetime.strptime(effective_end_date, "%Y-%m-%d")
+            .replace(tzinfo=timezone.utc)
+            .isoformat()
+            if effective_end_date
+            else None
+        )
 
         # yield Faculty(
         #     code=faculty_code,
@@ -117,17 +143,17 @@ class CoursesSpider(Spider):
             #
             is_active=active,
             is_multi_term=multi_term,
-            is_nogpa=nogpa,
+            is_no_gpa=nogpa,
             is_repeatable=repeatable,
             #
             components=components,
             course_group_id=course_id,
             coursedog_id=coursedog_id,
             #
-            course_created_at=created_at,
-            course_last_updated_at=last_edited_at,
-            course_effective_start_date=effective_start_date,
-            course_effective_end_date=effective_end_date,
+            course_created_at=created_at_iso,
+            course_last_updated_at=last_edited_at_iso,
+            course_effective_start_date=effective_start_date_iso,
+            # course_effective_end_date=effective_end_date_iso,
             #
             departments=departments,
             faculties=[faculty_code] if faculty_code else [],
@@ -135,6 +161,8 @@ class CoursesSpider(Spider):
             career=career,
             topics=topics,
             grade_mode=grade_mode_code,
+            #
+            raw_json=requisites,
         )
 
     def process_description(self, description_full: str | None):

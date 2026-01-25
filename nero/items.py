@@ -32,7 +32,7 @@ class Course(scrapy.Item):
 
     is_active = scrapy.Field(serializer=bool)
     is_multi_term = scrapy.Field(serializer=bool)
-    is_nogpa = scrapy.Field(serializer=bool)
+    is_no_gpa = scrapy.Field(serializer=bool)
     is_repeatable = scrapy.Field(serializer=bool)
 
     components = scrapy.Field(serializer=int)
@@ -42,7 +42,7 @@ class Course(scrapy.Item):
     course_created_at = scrapy.Field()
     course_last_updated_at = scrapy.Field()
     course_effective_start_date = scrapy.Field()
-    course_effective_end_date = scrapy.Field()
+    # course_effective_end_date = scrapy.Field()
 
     departments = scrapy.Field(serializer=list)
     faculties = scrapy.Field(serializer=list)
@@ -50,6 +50,8 @@ class Course(scrapy.Item):
     career = scrapy.Field()
     topics = scrapy.Field(serializer=list)
     grade_mode = scrapy.Field()
+
+    raw_json = scrapy.Field(serializer=dict)
 
 
 class Faculty(scrapy.Item):
