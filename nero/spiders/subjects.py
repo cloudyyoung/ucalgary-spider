@@ -46,8 +46,6 @@ class SubjectCodeSpider(Spider):
                 else:
                     self.subject_codes_departments[subject_code].add(department)
 
-        print(self.subject_codes_faculties)
-        print(self.subject_codes_departments)
 
         ## Now proceed to get subject titles from other sources
         url = "https://app.coursedog.com/api/v1/ca/ucalgary_peoplesoft/search-configurations/3HheDcKChSNwS1Wr1Khr"
