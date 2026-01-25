@@ -66,4 +66,3 @@ class PlanUcalgaryApiPipeline:
             spider.logger.error(
                 f"Failed to POST /{collection_name}\n{json.dumps(adapted_item.asdict())}\n{response.text}\n\n"
             )
-            exit(-1)
