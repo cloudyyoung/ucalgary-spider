@@ -226,7 +226,7 @@ class CoursesSpider(Spider):
                 "long_name": _topic["longName"],
                 "description": _topic["description"],
                 "is_repeatable": bool(_topic["repeatable"]),
-                "units": _topic["numberOfCredits"],
+                "units": int(_topic["numberOfCredits"]),
                 "link": _topic["link"],
             }
             topics.append(topic)

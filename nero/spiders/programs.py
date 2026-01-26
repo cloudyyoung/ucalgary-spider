@@ -1,6 +1,7 @@
 import json
 from scrapy import Spider, Request
 from scrapy.exceptions import CloseSpider
+from datetime import datetime, timezone
 from collections import defaultdict
 from nero.items import Program
 from nero.spiders.courses import career_serializer, convert_list_camel_to_snake
@@ -83,6 +84,31 @@ class ProgramsSpider(Spider):
         effective_end_date = program.get("effectiveEndDate")
         version = program.get("version")
 
+        created_at_iso = (
+            datetime.fromtimestamp(int(created_at) / 1000, timezone.utc).isoformat()
+            if created_at
+            else None
+        )
+        last_edited_at_iso = (
+            datetime.fromtimestamp(int(last_edited_at) / 1000, timezone.utc).isoformat()
+            if last_edited_at
+            else None
+        )
+        effective_start_date_iso = (
+            datetime.strptime(effective_start_date, "%Y-%m-%d")
+            .replace(tzinfo=timezone.utc)
+            .isoformat()
+            if effective_start_date
+            else None
+        )
+        effective_end_date_iso = (
+            datetime.strptime(effective_end_date, "%Y-%m-%d")
+            .replace(tzinfo=timezone.utc)
+            .isoformat()
+            if effective_end_date
+            else None
+        )
+
         yield Program(
             pid=program_group_id,
             coursedog_id=coursedog_id,
@@ -111,10 +137,10 @@ class ProgramsSpider(Spider):
             is_active=active,
             start_term=start_term,
             #
-            program_created_at=created_at,
-            program_last_updated_at=last_edited_at,
-            program_effective_start_date=effective_start_date,
-            program_effective_end_date=effective_end_date,
+            program_created_at=created_at_iso,
+            program_last_updated_at=last_edited_at_iso,
+            program_effective_start_date=effective_start_date_iso,
+            # program_effective_end_date=effective_end_date_iso,
             version=version,
         )
 
