@@ -53,11 +53,9 @@ class PlanUcalgaryApiPipeline:
         response = requests.post(url, json=adapted_item.asdict(), headers=self.headers)
 
         if response.status_code == 409:
-            response_json = response.json()
-            existing_id = response_json.get("existing_id", None)
-
+            existing_id = response.headers.get("Location")
             if existing_id:
-                url += f"/{existing_id}"
+                url = f"http://localhost:5150/{collection_name}/{existing_id}"
                 response = requests.put(
                     url, json=adapted_item.asdict(), headers=self.headers
                 )
