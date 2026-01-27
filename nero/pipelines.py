@@ -37,16 +37,16 @@ class PlanUcalgaryApiPipeline:
         else:
             collection_name = item.__class__.__name__.lower() + "s"
 
-        if isinstance(item, Course):
-            if not adapted_item.get("is_active"):
-                adapted_item["departments"] = []
-                adapted_item["faculties"] = []
-                adapted_item["topics"] = []
+        # if isinstance(item, Course):
+        #     if not adapted_item.get("is_active"):
+        #         adapted_item["departments"] = []
+        #         adapted_item["faculties"] = []
+        #         adapted_item["topics"] = []
 
-        elif isinstance(item, Program):
-            if not adapted_item.get("is_active"):
-                adapted_item["departments"] = []
-                adapted_item["faculties"] = []
+        # elif isinstance(item, Program):
+        #     if not adapted_item.get("is_active"):
+        #         adapted_item["departments"] = []
+        #         adapted_item["faculties"] = []
 
         url = f"http://localhost:5150/{collection_name}"
 
