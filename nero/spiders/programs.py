@@ -66,7 +66,8 @@ class ProgramsSpider(Spider):
         admission_info = custom_fields.get("programAdmissionsInfo")
         general_info = custom_fields.get("generalProgramInfo")
 
-        transcript_level = int(program.get("transcriptLevel", ""))
+        transcript_level = program.get("transcriptLevel", "")
+        transcript_level = int(transcript_level) if transcript_level.isdigit() else None
         transcript_description = str(program.get("transcriptDescription", "")).strip()
 
         if transcript_description == "":
